@@ -1,0 +1,474 @@
+{
+  "schema_version": 1,
+  "evidence_class": "native_copied_Art1_recompute_diagnostics_not_accepted_repair",
+  "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+  "source_sha256": "8afa16c8ff3adebd87e48b67dfb20d3224402bd517010dc112950a28f219690a",
+  "runtime": {
+    "official_release_url": "https://github.com/FreeCAD/FreeCAD/releases/tag/1.1.4",
+    "release_tag": "1.1.4",
+    "official_asset_url": "https://github.com/FreeCAD/FreeCAD/releases/download/1.1.4/FreeCAD_1.1.4-Windows-x86_64-py311.7z",
+    "archive_bytes": 418088341,
+    "archive_sha256": "4828741fc91ee37fafcdb97a1abacb18b04ba451ac4372d9ff7a7349b36f4d6d",
+    "published_asset_digest": "sha256:4828741fc91ee37fafcdb97a1abacb18b04ba451ac4372d9ff7a7349b36f4d6d",
+    "official_sidecar_sha256_verified": true,
+    "github_asset_digest_verified": true,
+    "native_executable_sha256": "1692e54224b48989974e8b91d3ac7a38d1d502d3db4dee1d4cf79ba91356e42d",
+    "authenticode_status": "Valid",
+    "authenticode_signer": "CN=The FreeCAD project association AISBL, O=The FreeCAD project association AISBL, L=Brussels, C=BE",
+    "freecad_version": [
+      "1",
+      "1",
+      "4",
+      "20260928 (Git shallow)",
+      "Unknown",
+      "2026/09/28 13:46:34",
+      "(HEAD detached at 4fd3bf320)",
+      "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+    ],
+    "python_version": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:00:26) [MSC v.1944 64 bit (AMD64)]",
+    "opencascade_version": "7.8.1",
+    "capability_capture_sha256": "ba3590b0cb2cbdc53c77face11efc1d11b6fa19128418d5b6ae0e1f5dce69dca",
+    "whole_runtime_and_addon_bundle_independently_verified": false,
+    "external_addons_requested": false,
+    "network_or_cloud_actions_requested_from_CAD": false
+  },
+  "runs": [
+    {
+      "experiment": "unchanged",
+      "capture_path": "arm-01/hardware/cad/thor-art1-desktop-native-unchanged-v1.json",
+      "capture_sha256": "271e0bd532a14a72d78fcc2c6603c55748d9bf1a7810da72794a9e4bc4c19b47",
+      "runner_relative_path": ".work/cad/native-art1-unchanged-03/runner.json",
+      "runner_sha256": "56d5ead26bc50cdf93630e1169c6b09b141ea7fb9db04a4834199bfd708776f3",
+      "capture_snapshot_sha256": {
+        ".work/cad/native-art1-unchanged-03/capture-tool/tools/probe_thor_art1_freecad.py": "1a6b4b9f27d6f7d2d68248d9d7143cb87ec3c0b9ce28e0bc1fa14d1ee3d9f061",
+        ".work/cad/native-art1-unchanged-03/capture-tool/tools/thor_art1_diagnostics.py": "78aa05ea0b50ca91291fbe68cb1113f72dfdd4065ad320b91a5c575c8b8bc374",
+        ".work/cad/native-art1-unchanged-03/capture-tool/hardware/cad/thor-art1-migration-evidence.json": "0f1f2246ae8216bcd6569081884c69bb754ca054571db0429b362ff3df19c8f6"
+      },
+      "source_and_copy_bytes_unchanged": true,
+      "actual_parameter_and_data_paths_isolated": true,
+      "algebraic_base_minus_pocket_mm3": {
+        "source_saved_brep": {
+          "Pocket": 119.38316867488902,
+          "Pocket001": 98.21441408642568
+        },
+        "force_rebuild_attempt": {
+          "Pocket": 119.38316867488902,
+          "Pocket001": 98.21441408642568
+        }
+      },
+      "pocket_own_states": [
+        "Touched"
+      ],
+      "body_own_states": [
+        "Touched"
+      ],
+      "bounded_metric_first_changed_feature": "Groove"
+    },
+    {
+      "experiment": "intersection",
+      "capture_path": "arm-01/hardware/cad/thor-art1-desktop-native-intersection-v1.json",
+      "capture_sha256": "b780aa106372f3fad20d1b17b40bccd7eedd2bfbfc140d2c91decfe85253bfe5",
+      "runner_relative_path": ".work/cad/native-art1-intersection-02/runner.json",
+      "runner_sha256": "1bc523df3b6ccbe3c76e810484e76d4134ff7d419032ace868f4ed923437f2e9",
+      "capture_snapshot_sha256": {
+        ".work/cad/native-art1-intersection-02/capture-tool/tools/probe_thor_art1_freecad.py": "1a6b4b9f27d6f7d2d68248d9d7143cb87ec3c0b9ce28e0bc1fa14d1ee3d9f061",
+        ".work/cad/native-art1-intersection-02/capture-tool/tools/thor_art1_diagnostics.py": "78aa05ea0b50ca91291fbe68cb1113f72dfdd4065ad320b91a5c575c8b8bc374",
+        ".work/cad/native-art1-intersection-02/capture-tool/hardware/cad/thor-art1-migration-evidence.json": "0f1f2246ae8216bcd6569081884c69bb754ca054571db0429b362ff3df19c8f6"
+      },
+      "source_and_copy_bytes_unchanged": true,
+      "actual_parameter_and_data_paths_isolated": true,
+      "algebraic_base_minus_pocket_mm3": {
+        "source_saved_brep": {
+          "Pocket": 119.38316867488902,
+          "Pocket001": 98.21441408642568
+        },
+        "force_rebuild_attempt": {
+          "Pocket": 0.0,
+          "Pocket001": 214.7480342668132
+        }
+      },
+      "pocket_own_states": [
+        "Up-to-date"
+      ],
+      "body_own_states": [
+        "Touched"
+      ],
+      "bounded_metric_first_changed_feature": "Groove"
+    },
+    {
+      "experiment": "intersection_freeze_bolt_frame",
+      "capture_path": "arm-01/hardware/cad/thor-art1-desktop-native-freeze-frame-v1.json",
+      "capture_sha256": "17203ea27de9ff6751573f3dfd834733c11bf4266003e2324135245e9a7a5a97",
+      "runner_relative_path": ".work/cad/native-art1-freeze-frame-02/runner.json",
+      "runner_sha256": "f73ba9b683131b9af70caa3890299b614825a62f31da40cd13dcdec5278d26f6",
+      "capture_snapshot_sha256": {
+        ".work/cad/native-art1-freeze-frame-02/capture-tool/tools/probe_thor_art1_freecad.py": "1a6b4b9f27d6f7d2d68248d9d7143cb87ec3c0b9ce28e0bc1fa14d1ee3d9f061",
+        ".work/cad/native-art1-freeze-frame-02/capture-tool/tools/thor_art1_diagnostics.py": "78aa05ea0b50ca91291fbe68cb1113f72dfdd4065ad320b91a5c575c8b8bc374",
+        ".work/cad/native-art1-freeze-frame-02/capture-tool/hardware/cad/thor-art1-migration-evidence.json": "0f1f2246ae8216bcd6569081884c69bb754ca054571db0429b362ff3df19c8f6"
+      },
+      "source_and_copy_bytes_unchanged": true,
+      "actual_parameter_and_data_paths_isolated": true,
+      "algebraic_base_minus_pocket_mm3": {
+        "source_saved_brep": {
+          "Pocket": 119.38316867488902,
+          "Pocket001": 98.21441408642568
+        },
+        "force_rebuild_attempt": {
+          "Pocket": 0.0,
+          "Pocket001": 214.74803418165538
+        }
+      },
+      "pocket_own_states": [
+        "Up-to-date"
+      ],
+      "body_own_states": [
+        "Touched"
+      ],
+      "bounded_metric_first_changed_feature": "Groove"
+    },
+    {
+      "experiment": "intersection_pocket_length",
+      "capture_path": "arm-01/hardware/cad/thor-art1-desktop-native-pocket-length-v1.json",
+      "capture_sha256": "f0e11ff2d660ec305ccd2eb0b0019c35b7c6ebfb93d7377ddbaefcfd611c7c2d",
+      "runner_relative_path": ".work/cad/native-art1-pocket-length-01/runner.json",
+      "runner_sha256": "2e6ec61e42a7063e340f6b368b640c3f2cdea567d22ced52a44425178a9a762d",
+      "capture_snapshot_sha256": {
+        ".work/cad/native-art1-pocket-length-01/capture-tool/tools/probe_thor_art1_freecad.py": "1a6b4b9f27d6f7d2d68248d9d7143cb87ec3c0b9ce28e0bc1fa14d1ee3d9f061",
+        ".work/cad/native-art1-pocket-length-01/capture-tool/tools/thor_art1_diagnostics.py": "78aa05ea0b50ca91291fbe68cb1113f72dfdd4065ad320b91a5c575c8b8bc374",
+        ".work/cad/native-art1-pocket-length-01/capture-tool/hardware/cad/thor-art1-migration-evidence.json": "0f1f2246ae8216bcd6569081884c69bb754ca054571db0429b362ff3df19c8f6"
+      },
+      "source_and_copy_bytes_unchanged": true,
+      "actual_parameter_and_data_paths_isolated": true,
+      "algebraic_base_minus_pocket_mm3": {
+        "source_saved_brep": {
+          "Pocket": 119.38316867488902,
+          "Pocket001": 98.21441408642568
+        },
+        "force_rebuild_attempt": {
+          "Pocket": 45.497757129604,
+          "Pocket001": 144.86064040497877
+        }
+      },
+      "pocket_own_states": [
+        "Up-to-date"
+      ],
+      "body_own_states": [
+        "Touched"
+      ],
+      "bounded_metric_first_changed_feature": "Groove"
+    },
+    {
+      "experiment": "intersection_pocket_through_all",
+      "capture_path": "arm-01/hardware/cad/thor-art1-desktop-native-through-all-v1.json",
+      "capture_sha256": "0fb00d5016ee56cbfcf3a9c088db9f492c920f83301ffa25c194b396dae71764",
+      "runner_relative_path": ".work/cad/native-art1-pocket-through-all-01/runner.json",
+      "runner_sha256": "44174069641bf7bb584ecfd7e7472b2bb01f057dda62e298fe44612f7bcd0638",
+      "capture_snapshot_sha256": {
+        ".work/cad/native-art1-pocket-through-all-01/capture-tool/tools/probe_thor_art1_freecad.py": "1a6b4b9f27d6f7d2d68248d9d7143cb87ec3c0b9ce28e0bc1fa14d1ee3d9f061",
+        ".work/cad/native-art1-pocket-through-all-01/capture-tool/tools/thor_art1_diagnostics.py": "78aa05ea0b50ca91291fbe68cb1113f72dfdd4065ad320b91a5c575c8b8bc374",
+        ".work/cad/native-art1-pocket-through-all-01/capture-tool/hardware/cad/thor-art1-migration-evidence.json": "0f1f2246ae8216bcd6569081884c69bb754ca054571db0429b362ff3df19c8f6"
+      },
+      "source_and_copy_bytes_unchanged": true,
+      "actual_parameter_and_data_paths_isolated": true,
+      "algebraic_base_minus_pocket_mm3": {
+        "source_saved_brep": {
+          "Pocket": 119.38316867488902,
+          "Pocket001": 98.21441408642568
+        },
+        "force_rebuild_attempt": {
+          "Pocket": 119.38625615206547,
+          "Pocket001": 98.21216935635312
+        }
+      },
+      "pocket_own_states": [
+        "Up-to-date"
+      ],
+      "body_own_states": [
+        "Up-to-date"
+      ],
+      "bounded_metric_first_changed_feature": "Groove"
+    },
+    {
+      "experiment": "intersection_pocket_through_all",
+      "capture_path": "arm-01/hardware/cad/thor-art1-desktop-native-through-all-audit-v1.json",
+      "capture_sha256": "5a73ea26c350833ed54ae24d54483cbd786a9daea3280cc56d5509ad8d480835",
+      "runner_relative_path": ".work/cad/native-art1-through-all-audit-01/runner.json",
+      "runner_sha256": "6c55929a681c09f947e7990d33ed50c0e467b7e7b783d2f7256fee0707de4532",
+      "capture_snapshot_sha256": {
+        ".work/cad/native-art1-through-all-audit-01/capture-tool/tools/probe_thor_art1_freecad.py": "e4f19cb5b2946dd8f475699ee48173cd8e9298863b885a09f29f3e1471b2c280",
+        ".work/cad/native-art1-through-all-audit-01/capture-tool/tools/thor_art1_diagnostics.py": "78aa05ea0b50ca91291fbe68cb1113f72dfdd4065ad320b91a5c575c8b8bc374",
+        ".work/cad/native-art1-through-all-audit-01/capture-tool/hardware/cad/thor-art1-migration-evidence.json": "0f1f2246ae8216bcd6569081884c69bb754ca054571db0429b362ff3df19c8f6"
+      },
+      "source_and_copy_bytes_unchanged": true,
+      "actual_parameter_and_data_paths_isolated": true,
+      "algebraic_base_minus_pocket_mm3": {
+        "source_saved_brep": {
+          "Pocket": 119.38316867488902,
+          "Pocket001": 98.21441408642568
+        },
+        "force_rebuild_attempt": {
+          "Pocket": 119.38625615101773,
+          "Pocket001": 98.21216935536359
+        }
+      },
+      "pocket_own_states": [
+        "Up-to-date"
+      ],
+      "body_own_states": [
+        "Up-to-date"
+      ],
+      "bounded_metric_first_changed_feature": "Groove"
+    }
+  ],
+  "detailed_through_all_gate": {
+    "source_object_count": 89,
+    "runtime_object_count": 90,
+    "all_runtime_own_states_up_to_date": true,
+    "all_original_names_and_types_preserved": true,
+    "additional_runtime_objects": {
+      "Origin001": {
+        "type": "App::Point",
+        "states": [
+          "Up-to-date"
+        ]
+      }
+    },
+    "assembly_target_name_type_contract_preserved": true,
+    "datum_count": 24,
+    "exact_datum_matrix_threshold": 1e-12,
+    "datum_threshold_failures": {
+      "LCS_Optodisk": 5.513256575183599e-12,
+      "LCS_Bearing": 5.040000000000004e-12,
+      "HoleAxis_5": 1.0551559626037488e-11,
+      "HoleAxis_6": 5.6701310313655995e-12,
+      "HoleAxis_7": 5.040412531798211e-12,
+      "HoleAxis_8": 5.044853423896711e-12,
+      "HoleAxis_9": 5.044853423896711e-12,
+      "HoleAxis_10": 5.040412531798211e-12,
+      "HoleAxis_11": 5.6701310313655995e-12,
+      "HoleAxis_12": 1.0551559626037488e-11,
+      "HoleAxis_13": 5.197620112085133e-12,
+      "HoleAxis_14": 4.725109192804666e-12,
+      "HoleAxis_15": 4.718003765447065e-12,
+      "HoleAxis_16": 8.661515948915621e-12
+    },
+    "body_geometry_comparison": {
+      "saved": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 1,
+        "face_count": 280,
+        "edge_count": 824,
+        "volume_mm3": 298648.10044680384,
+        "raw_native_volume_mm3": 298648.10044680384,
+        "area_mm2": 129397.75256407335,
+        "length_mm": 22610.468273496455,
+        "bounds_mm": [
+          -81.17941502192954,
+          81.17941502192954,
+          -81.17941502192954,
+          81.17941502192954,
+          -6.0000000023e-07,
+          161.5614141209609
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": [
+          0.000691337281180332,
+          1.8578894916978796,
+          67.83237825168747
+        ],
+        "centroid_measurement": "volume_weighted_native_solid_centroids",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "attempted": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 1,
+        "face_count": 280,
+        "edge_count": 827,
+        "volume_mm3": 298644.4439677678,
+        "raw_native_volume_mm3": 298644.4439677678,
+        "area_mm2": 129397.59183915974,
+        "length_mm": 22610.46822238003,
+        "bounds_mm": [
+          -81.17941502192954,
+          81.17941502192954,
+          -81.17941502192954,
+          81.17941502192954,
+          0.0,
+          161.50486690949165
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": [
+          0.0007636744957244523,
+          1.8578745777532835,
+          67.8317486074857
+        ],
+        "centroid_measurement": "volume_weighted_native_solid_centroids",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "source_minus_attempted_mm3": 0.0,
+      "attempted_minus_source_mm3": 0.0,
+      "maximum_surface_distance_mm": null,
+      "equivalence_accepted": false
+    },
+    "removed_bolt_solid_comparison": {
+      "saved": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 1,
+        "face_count": 3,
+        "edge_count": 3,
+        "volume_mm3": 118.55575590439678,
+        "raw_native_volume_mm3": 118.55575590439678,
+        "area_mm2": 158.49300788019713,
+        "length_mm": 68.3318950574709,
+        "bounds_mm": [
+          -33.20000000000011,
+          -29.79893115636656,
+          -68.836972317918,
+          -54.999999999999986,
+          6.294337499204238,
+          9.704967526004555
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": [
+          -31.47439096683743,
+          -61.53489264308843,
+          7.999995693219405
+        ],
+        "centroid_measurement": "volume_weighted_native_solid_centroids",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "attempted": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 1,
+        "face_count": 3,
+        "edge_count": 3,
+        "volume_mm3": 118.55575613062553,
+        "raw_native_volume_mm3": 118.55575613062553,
+        "area_mm2": 158.4930082232862,
+        "length_mm": 68.3318950586503,
+        "bounds_mm": [
+          -33.20000000000011,
+          -29.798931186492915,
+          -68.83697230282651,
+          -54.99999999999999,
+          6.294337425616332,
+          9.704966918753259
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": [
+          -31.474390967022902,
+          -61.53489265252054,
+          7.9999956905146465
+        ],
+        "centroid_measurement": "volume_weighted_native_solid_centroids",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "source_minus_attempted_mm3": 0.0,
+      "attempted_minus_source_mm3": 0.0,
+      "maximum_surface_distance_mm": null,
+      "equivalence_accepted": false
+    },
+    "all_53_subshape_reference_semantics_verified": false,
+    "full_dependency_closure_checked": false,
+    "maximum_surface_distance_measured": false
+  },
+  "interpretation": {
+    "a1": "Groove is first significant bounded captured metric drift; all-shape semantic equivalence is not established.",
+    "a2": "Same-frame UpToFirst yields an empty cut. Type-only Length/ThroughAll controls restore material removal; frame freeze does not. This localizes the operation behavior, not a fully diagnosed kernel defect.",
+    "conflicting_metrics": "Algebraic base-minus-cut volume differs from actual Boolean removed-solid volume. Zero both-direction Boolean differences conflict with volume/bounds/COM drift and do not establish equivalence.",
+    "through_all": "A diagnostic candidate reconstructs the named bolt circle/cylinder and all own states, but fails exact original Body/datum comparisons. No geometry adoption or original source repair is accepted."
+  },
+  "preservation": {
+    "source_saved": false,
+    "new_candidate_saved": false,
+    "all_native_input_copies_remained_pinned_bytes": true,
+    "original_reports_unchanged": true
+  },
+  "qualification": {
+    "exact_migration_accepted": false,
+    "copied_candidate_accepted": false,
+    "assembly_revalidated": false,
+    "physical_validation": false,
+    "fabrication_released": false
+  },
+  "preliminary_runs_not_in_reproducible_snapshot_set": [
+    "native-art1-unchanged-01",
+    "native-art1-unchanged-02",
+    "native-art1-intersection-01",
+    "native-art1-freeze-frame-01"
+  ],
+  "preliminary_scope": "First run failed on generic Shape COM API; other early runs preceded retained script snapshots. They remain local historical diagnostics and are not substituted for the six source-pinned captures above.",
+  "free_bytes_after": 722940440576
+}

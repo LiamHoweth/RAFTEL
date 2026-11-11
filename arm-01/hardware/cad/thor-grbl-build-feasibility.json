@@ -1,0 +1,542 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-11-11T20:35:09.243340+00:00",
+  "evidence_class": "host_avr_cross_compilation_not_firmware_execution_or_hardware_validation",
+  "source_revision": "1f6437a77e3abcb652d3f8ce718faf7e041ae6ff",
+  "source_tree": "0748cdaf21d34b189ffb7fd926f6217040e2f952",
+  "source_files": {
+    ".gitignore": {
+      "git_blob": "b61325d288a8c51f1be67fe920e4c0a9315ba56b",
+      "sha256": "3a1cf67ffc7ac7e4a1d8643b6271b326a372378673ab967018abb5963e4cccdb",
+      "bytes": 42
+    },
+    "COPYING": {
+      "git_blob": "cdf88d6a9f8cccaa054d8a50642c7baa9de027a0",
+      "sha256": "ad370acdba3ebfb015919bb70cdd474d370a6cca956790becf86ea3c0bf2f5b9",
+      "bytes": 35285
+    },
+    "Makefile": {
+      "git_blob": "52ff5d46b74d7c33fe44bda8f05f337cbdb8e41d",
+      "sha256": "64cbfb821e47b82a8e4d3c7404104d753fba0ed3543e63c0c0df63adb5c73be3",
+      "bytes": 3496
+    },
+    "README.md": {
+      "git_blob": "e0d667766a203b0c960391bcc53918e56020120f",
+      "sha256": "eab73c66e7e129c0b530f7621c48dae046170c3e1e6f449468952544f321efda",
+      "bytes": 5415
+    },
+    "build/.gitignore": {
+      "git_blob": "86d0cb2726c6c7c179b99520c452dd1b68e7a813",
+      "sha256": "45b54d1600ef763e350ad223fdfa8f11768e7b8762b9296e795647b4f9f16845",
+      "bytes": 70
+    },
+    "doc/log/commit_log_v0.7.txt": {
+      "git_blob": "5d536a3c09f1391dad056eacb9176b902c9c0bd0",
+      "sha256": "024a239aadb45ce81c59a31af48f2c5265d16d54a9b104aa60b53d7e6a644d80",
+      "bytes": 16560
+    },
+    "doc/log/commit_log_v0.8c.txt": {
+      "git_blob": "f62cf89ebdb640e49e4ac5bf3ad46712c6708ccd",
+      "sha256": "335ec9ba1526155cf35d9968f4443bd36045c9eb1e6be8871cdbba8e25c44833",
+      "bytes": 26836
+    },
+    "doc/log/commit_log_v0.9g.txt": {
+      "git_blob": "bb9f107dee6eb2488f4d1b09522357db235a2de0",
+      "sha256": "c7272d49cf539858dbb24b566deb126ff67c8cc0dd7ea4927f237e1e906342b1",
+      "bytes": 70478
+    },
+    "doc/log/commit_log_v0.9i.txt": {
+      "git_blob": "49d67a75774cf9ea2b794c57f17c75eee5b96cb6",
+      "sha256": "a1ac7ccacdb0a1a50e7ca8198640d8b2c7d5a8c313bca73d88c7d9eec3300664",
+      "bytes": 24430
+    },
+    "doc/log/commit_log_v0.9j.txt": {
+      "git_blob": "8c66a42607029b7079d31360706ddb3b09c86a64",
+      "sha256": "091e8b7ea24a582e863fdce056a53891ba41146909c0da96b1f38b21f8af5113",
+      "bytes": 1347
+    },
+    "doc/media/COPYING": {
+      "git_blob": "ee26e1938e0d3ba28e09467ed27a3a016f06d888",
+      "sha256": "0e50fc8d7d55aa19a1a28cbe3bd161a11956a1aac862367f583bec9a29245980",
+      "bytes": 60
+    },
+    "doc/media/Grbl Logo 150px.png": {
+      "git_blob": "999886e6cb8cb83f97ad83b22c9300f42d83f506",
+      "sha256": "0aaca6623b92ecc30fcfa9eb656b9634fb8a98f377dc10ce8c34408ad1492231",
+      "bytes": 10481
+    },
+    "doc/media/Grbl Logo 250px.png": {
+      "git_blob": "bc9319b3d7c5593ea2b521ca856b2685297d2fc6",
+      "sha256": "2c9e054d04c75c5b9c9e67ddb09731124f3ec31686c81e6aeac7a607d66d4af6",
+      "bytes": 42049
+    },
+    "doc/media/Grbl Logo 320px.png": {
+      "git_blob": "0a2f2017dfa06403ff0c833c954ba27b354c07d8",
+      "sha256": "3ec3a390c4e9d201804becba899d3a3b1196056f35e6900bd61ce6fd8dc535a7",
+      "bytes": 58580
+    },
+    "doc/media/Grbl Logo 640px.png": {
+      "git_blob": "96a386a11e466452e8acc902f7b156a77fc280a5",
+      "sha256": "5a16a30b17a4afaaa9a9050afcf13a3062203be817fb78d17d80044835564343",
+      "bytes": 48868
+    },
+    "doc/media/Grbl Logo.pdf": {
+      "git_blob": "99a83ce5c74c9f2f264d3cd4c43c9c97b1302de1",
+      "sha256": "eebb49f17e1e11bb6ac02fc4222f439fd251c642515872efe01058398ccf1434",
+      "bytes": 4837
+    },
+    "doc/media/Grbl Logo.svg": {
+      "git_blob": "df083ebfef979291a212e85a678faa3190178c72",
+      "sha256": "33076df5f1d5301ea17058ff89cc2beca81936791e3aa9924dabe363d75b4cf4",
+      "bytes": 5687
+    },
+    "doc/script/simple_stream.py": {
+      "git_blob": "67c2a2c3e15b8058bbee6260f0049f684fd6376d",
+      "sha256": "06c41a301ce20c46ed9536e288f7ab29b4d8e38c3ce6d22a4b6af24cc470c5a2",
+      "bytes": 2395
+    },
+    "doc/script/stream.py": {
+      "git_blob": "d3857002544256ce00d0c2bba3d4bd4bafd35b09",
+      "sha256": "5fbc8f93c82dabb972e94d660eb24374085e32cf5f61f263d69ba42df3b3915f",
+      "bytes": 5679
+    },
+    "grbl/config.h": {
+      "git_blob": "600d5adfa1ab4dbd1b642dff3fa0bb7f32e16625",
+      "sha256": "a5b19542474d8e8de295c9bec22b5933917d54b1086525cdf6615e3ef25dc17a",
+      "bytes": 28913
+    },
+    "grbl/coolant_control.c": {
+      "git_blob": "4429dd4f2b44e09c466c8f7f3c9894fd2d4d8c6d",
+      "sha256": "ba9bfb57899d0574dd8f8ac0ccb4f8bc265580408614c81d76a19d2f53f9897b",
+      "bytes": 1566
+    },
+    "grbl/coolant_control.h": {
+      "git_blob": "7694a78d9360c6cd7a07fd5788b2c70431a7f84b",
+      "sha256": "9b348e58a0723d8d5261ace92925219cb837e30f30bd831ac819ecd854b14783",
+      "bytes": 894
+    },
+    "grbl/cpu_map.h": {
+      "git_blob": "1804d25061d48471e0335ae0cfa8a0dec1e9f2c0",
+      "sha256": "cb0890a257cd334ac7b9433b2ced679e1f1fd719f80f55ba11399ad23b9cdf29",
+      "bytes": 1681
+    },
+    "grbl/cpu_map/cpu_map_atmega2560.h": {
+      "git_blob": "04e16b31a5a4a83674765aba4d5895c9ac3030b9",
+      "sha256": "da2dc56badc90c5544955019b8417f43a1aa67f8fb469b66b1d70b9746b12bd7",
+      "bytes": 6477
+    },
+    "grbl/cpu_map/cpu_map_atmega328p.h": {
+      "git_blob": "aa5942944673c9202ffcd72111fe66f8a68892bf",
+      "sha256": "557fbbe89b5a2cbdf9f426b8f80f13b91206e0f84e661e65d8d77af7068b9a08",
+      "bytes": 6325
+    },
+    "grbl/defaults.h": {
+      "git_blob": "ef09e52f4c482a96d1bbda118e58b0742182e677",
+      "sha256": "441008ec09e939e066689aa7eb2b44d90ce7bb0b750d94d1fb239fb331e18f69",
+      "bytes": 3653
+    },
+    "grbl/defaults/defaults_generic.h": {
+      "git_blob": "f62f51115edb7df83d3db45ff15fce80c77ad3ac",
+      "sha256": "c6a1a016fcdeb6d165dc2694ab8b9ae24a53498f3282f76856f172f0a3916b7d",
+      "bytes": 3641
+    },
+    "grbl/defaults/defaults_oxcnc.h": {
+      "git_blob": "1c89ab8af8b7dd0872b9b533547905139cd7ce8d",
+      "sha256": "9ba310b9057f8303ff386be7cc1d8f30dec48f61a105b0f90b96e15728994c58",
+      "bytes": 2848
+    },
+    "grbl/defaults/defaults_shapeoko.h": {
+      "git_blob": "46346ea3960dfb013bccf2f8c95268ef1f026784",
+      "sha256": "a1d2cee14996e5756527e4ca5220c8f68a4c5115a178ad2625808a347d506daf",
+      "bytes": 3259
+    },
+    "grbl/defaults/defaults_shapeoko2.h": {
+      "git_blob": "24f62e45f0572dd7bd3ba27afc6aff4d174727b5",
+      "sha256": "58b09c3a83c0952cbf3abc18d1a9b894001baa79dde419201c07cf255460f7e6",
+      "bytes": 3218
+    },
+    "grbl/defaults/defaults_shapeoko3.h": {
+      "git_blob": "4c621e02e792c7aeff67551e181e88d62d75e3aa",
+      "sha256": "ed9bcf166f74c04491b989ce0af984d2a1ea64a30712f0f46887fdde73862b90",
+      "bytes": 3164
+    },
+    "grbl/defaults/defaults_sherline.h": {
+      "git_blob": "8cabaec55eba24495bb4eaa2c7bd6f8164b3af67",
+      "sha256": "669fceb7b02699635b629a79b39d03e4bb6b1c360a12a66ad196ad7dc64ae281",
+      "bytes": 3191
+    },
+    "grbl/defaults/defaults_simulator.h": {
+      "git_blob": "0843722f4a26dd6d432b22fb087ea51dbf9c8fa9",
+      "sha256": "b4ac14152ea43ccb37ea768543cda0e959442d740cadf9a45125d44a470d7b59",
+      "bytes": 2892
+    },
+    "grbl/defaults/defaults_thor.h": {
+      "git_blob": "c3d10bf8f244592cdee4170fe5651ac5c428df9d",
+      "sha256": "8ad4d21602aee8b99006ae107eae4098ef28ab1a901255e4973496d07ea5cec4",
+      "bytes": 3639
+    },
+    "grbl/defaults/defaults_x_carve_1000mm.h": {
+      "git_blob": "f88e5ad12d2a8307c4d81cc41d21ed38a4fe03ce",
+      "sha256": "54b110a3dacb211940cb73029b2310a6a0d008ec32066dcc47607eed51bb4b14",
+      "bytes": 3230
+    },
+    "grbl/defaults/defaults_x_carve_500mm.h": {
+      "git_blob": "ee572eae8200c96701aa056cb21159d44070dd70",
+      "sha256": "a4d2617ab90c11a740583d1867001a14f56348b75e03b7e695c9acece5d1f26d",
+      "bytes": 3230
+    },
+    "grbl/defaults/defaults_zen_toolworks_7x7.h": {
+      "git_blob": "44fa02a3fb02358bc02facf2e89449cb0af3232a",
+      "sha256": "ec767095bc4e1dc92ef161d1c8d3499525896664ca5c537abcad0cffba776d68",
+      "bytes": 3248
+    },
+    "grbl/eeprom.c": {
+      "git_blob": "02caf202f601ad70b8df06109ff21b75a433efe1",
+      "sha256": "911eb89de3904b5d4aa8c032e72dcbab7338c0630d9aecce3fdc66e07c7ce385",
+      "bytes": 5599
+    },
+    "grbl/eeprom.h": {
+      "git_blob": "c9718a2b68a6dd6eefca98cff2f0f1300446c4f8",
+      "sha256": "fcb6c0d3d51eae11aa00b8b0e850fe7d1603999c77202651c5459ea61c0b0e7d",
+      "bytes": 1059
+    },
+    "grbl/examples/grblUpload/grblUpload.ino": {
+      "git_blob": "581b6b3d777a30265a92782554a64d2058e9e3c4",
+      "sha256": "9cc71facd5af6b9ccb4f35bbf4e85cfcb070caf5084989707c82984ee71583ec",
+      "bytes": 1231
+    },
+    "grbl/examples/grblUpload/license.txt": {
+      "git_blob": "1abcdb9597feeba8da836bd407ba39b653c52213",
+      "sha256": "178d0f401ed9a4e65a97412f323482206c849d615425c540777dc131c5359190",
+      "bytes": 1081
+    },
+    "grbl/gcode.c": {
+      "git_blob": "1e83c1382c83d2fb6d7118496009889d0b2bf328",
+      "sha256": "fd6be78b5b6c2258f7aefee5913a1968989ed19f91383b08a16cc3a10cf07321",
+      "bytes": 61237
+    },
+    "grbl/gcode.h": {
+      "git_blob": "114dc26b0237df130505e843832a19b774ee6437",
+      "sha256": "ab0ca9b81ceb1c67373998d5d26febc99e62c975dad7aa50e8928ebb04e1da52",
+      "bytes": 8085
+    },
+    "grbl/grbl.h": {
+      "git_blob": "50f5bf361d0896f70a8a3417e5b83ffc54f95b9b",
+      "sha256": "79757012d849e7dd55c4f42fa3f1c6753ed60306a8b47b461b94f0ba2b9a3e07",
+      "bytes": 1612
+    },
+    "grbl/limits.c": {
+      "git_blob": "90f49ba07bf1d2b237b77916532d38899a0f905a",
+      "sha256": "c7dec7f667406a1d5cf662b64dae98ea49206804d29959b80e218fbd57122e13",
+      "bytes": 15199
+    },
+    "grbl/limits.h": {
+      "git_blob": "74512ceb894c446361f25beebc6be37c32509ae5",
+      "sha256": "10ffecda8543f24ac5483a3fc908cb7e260c6bfb1a0f253291ad3b9bc38a2be4",
+      "bytes": 1220
+    },
+    "grbl/main.c": {
+      "git_blob": "32b2e2b893f8ebed9777c20de6cd26fe80f7696e",
+      "sha256": "301098133af49bdafddb046237b308859761f4015e5d17f67cccdc5521c1dfee",
+      "bytes": 3262
+    },
+    "grbl/motion_control.c": {
+      "git_blob": "7980fe9ff54345f2ea433a636811096b5843a0e8",
+      "sha256": "ea83c5dab98a5043a89dfac3ec631564115e4d66e06f42a606ee83b68a4cbd01",
+      "bytes": 18097
+    },
+    "grbl/motion_control.h": {
+      "git_blob": "584d231f6b89ad8019a8dde4e9c6d258577a70ef",
+      "sha256": "a757aa1f0bc7244f480a79b17de82917eca3ca8a8ca242eac89239a94b49557b",
+      "bytes": 2741
+    },
+    "grbl/nuts_bolts.c": {
+      "git_blob": "b33e2306d1dd31ac7b7c5d6a84afdebffd61b791",
+      "sha256": "b0231ef219c3235af94c93cecae50e5deef9bd0c0e3824ef7fdb04bc98f6833c",
+      "bytes": 4108
+    },
+    "grbl/nuts_bolts.h": {
+      "git_blob": "87e93909939ffaba5e0420ce0ea25c80c7c68da3",
+      "sha256": "ab55ecb79a6094aad35727a4b140a8ba76a43f0963e01661a115c2d54a57a623",
+      "bytes": 2954
+    },
+    "grbl/planner.c": {
+      "git_blob": "c0d769dcf5b2474d7646115ca6ce1ffd6967600e",
+      "sha256": "595ac7dc4b9e4ebd494818ec523b70b5df2025fe532bbd9722851d80aa40f290",
+      "bytes": 25041
+    },
+    "grbl/planner.h": {
+      "git_blob": "02258dd4efa940819d7d74844cc50fa55ab10238",
+      "sha256": "3288a033f50e3cac3feacb1c38017f47c3a9a48376dee3714279a9fb088106bf",
+      "bytes": 4073
+    },
+    "grbl/print.c": {
+      "git_blob": "f029c4ff09d0eb68f4bbd0d6034387c3b356a1dc",
+      "sha256": "b3a337586f152cfe1ce9cf564f5ca473e4aaf3eb34c42f0ba8c81b8b4b429d8c",
+      "bytes": 5231
+    },
+    "grbl/print.h": {
+      "git_blob": "e6399aa9d2aa065e49ac5d0f230007c7dd88d997",
+      "sha256": "0417d4adc9dfc97b325cd3e85195fc821f1f224d3555641b1f7199a6544b037b",
+      "bytes": 1841
+    },
+    "grbl/probe.c": {
+      "git_blob": "37816bfa57efe77a74e70c8f4938ef2e567e4edc",
+      "sha256": "c86c926bb19831213681d58a068174d3c450457022e1e672a7e50665b2b7c374",
+      "bytes": 2495
+    },
+    "grbl/probe.h": {
+      "git_blob": "81bd486968ca0b092df7802bf8759e2e49c227b2",
+      "sha256": "3bbe4a24a63a5c5ef6b1e5c8c67caed07ee68edab619abadd85baa5c7a1143a2",
+      "bytes": 1596
+    },
+    "grbl/protocol.c": {
+      "git_blob": "d07a43a6244e31b44a12feb8240049ff72cea9ed",
+      "sha256": "03517e39db895751a2ee403328dcddd68727d9f979f34d748298bff162f4641d",
+      "bytes": 19986
+    },
+    "grbl/protocol.h": {
+      "git_blob": "3fc3780d681904e3e40ccbbe2191efa251167fd7",
+      "sha256": "add4eea0db054350415c3f9c4d5ca0f61703b9cc0f2cc61260d3156db819f33b",
+      "bytes": 2123
+    },
+    "grbl/report.c": {
+      "git_blob": "525e0681e99c279694ace2416c78313499d8c74d",
+      "sha256": "cc765ac84d012a2c6a01a3d39bc6bae41928bec4ca411e9d311adab389e468d7",
+      "bytes": 22394
+    },
+    "grbl/report.h": {
+      "git_blob": "69a1d8318f0d3f04e5820a65d87cde70f0219390",
+      "sha256": "98dcd202eca9a4de9443e654d7d6063671eba961986c6e973bc1ba0a17588504",
+      "bytes": 3475
+    },
+    "grbl/serial.c": {
+      "git_blob": "56f84e092f6cbb05b42449c3d457b8d79217f9c5",
+      "sha256": "c4c3346ad6adf96431f2e75cda574c9bb53dfec3d149a6ce1a481e95b2a51357",
+      "bytes": 6380
+    },
+    "grbl/serial.h": {
+      "git_blob": "b48fd35e452d0f664fd8a2ea53d17b6b02b4a5aa",
+      "sha256": "e0643c6cc62ae09aa98734a25fff785e583a972ca62b900b9fccc9175ffe4c0a",
+      "bytes": 1855
+    },
+    "grbl/settings.c": {
+      "git_blob": "e4662b3e28d1c7d94ea433619933cc2accc65aa0",
+      "sha256": "5e7c5921c53a8387785376e22b073d92873febf61a0da93d6f5d437774348cc7",
+      "bytes": 14152
+    },
+    "grbl/settings.h": {
+      "git_blob": "3442b9e1bb7816da35dfea12af8092c9e31a503e",
+      "sha256": "96d1f873a79361c9c92b4036f5b85b7b7f1481c6d69569e70a6fe21cf7f57bab",
+      "bytes": 5593
+    },
+    "grbl/spindle_control.c": {
+      "git_blob": "0f515edcc4951bd21b96f012340cf13665e20cb8",
+      "sha256": "cfd72a7ad21c27751c21033cb936461af03461a03eeae48eb57d0b4498c57c5f",
+      "bytes": 4093
+    },
+    "grbl/spindle_control.h": {
+      "git_blob": "1aec91ca41b679f9994fa4b6506d977c8ac1bdeb",
+      "sha256": "b423e7e2f539b76ed933a4dc63fffd55cbe22dee578eec19e4d11b7418a4e7e7",
+      "bytes": 1113
+    },
+    "grbl/stepper.c": {
+      "git_blob": "13263e07003903cf678010bb72b890a79fcfe4f6",
+      "sha256": "6552c7d798d9713255acf2eac4fd1722b7b95dc5bf728efb40fc0658d0cc6bee",
+      "bytes": 48558
+    },
+    "grbl/stepper.h": {
+      "git_blob": "074570461f1d345510e09200653e04528378ff7b",
+      "sha256": "7a0efa793bdf1dc82eaa304a2bea0d1846b67eddb56c67a323b1eb7dcfd7d891",
+      "bytes": 1742
+    },
+    "grbl/system.c": {
+      "git_blob": "b3371d9040a7eda1cd2dbb67548c76688851f4a6",
+      "sha256": "1097cf083260ecc7a207863fb1c4f0ef2a7b6b50555a489f2b0c1fd554be175c",
+      "bytes": 13179
+    },
+    "grbl/system.h": {
+      "git_blob": "ee43ed256d3a437498107b0a116a72c256485117",
+      "sha256": "26493cdecb555eb6775bc153064d6b07631ed90a05510b3d5c8a50a1cca88ea4",
+      "bytes": 5551
+    },
+    "test.gcode": {
+      "git_blob": "da8a379dfc5dbefa148eba1edf7d68e52bd52525",
+      "sha256": "9974de8207dc90b5ad538fa10fdb8458cc17e7274a6d4ead0db19bfa8e588864",
+      "bytes": 219
+    }
+  },
+  "source_file_count": 72,
+  "toolchain": {
+    "version": "7.3.0-atmel3.6.1-arduino7",
+    "compiler_version_line": "avr-gcc.exe (GCC) 7.3.0",
+    "official_url": "https://downloads.arduino.cc/tools/avr-gcc-7.3.0-atmel3.6.1-arduino7-i686-w64-mingw32.zip",
+    "archive_sha256": "a54f64755fff4cb792a1495e5defdd789902a2a3503982e81b898299cf39800e",
+    "archive_bytes": 52519412,
+    "extracted_file_count": 1628,
+    "extracted_manifest_sha256": "a18822f9dd74c5fa5f3963f57d6d7de9a6565aff62bbacaaee082bd5d322dc1a",
+    "official_index": {
+      "url": "https://downloads.arduino.cc/packages/package_index.json",
+      "accessed_on": "2026-11-11",
+      "snapshot_sha256": "3199ffc5d57635cdeafccc05a1c57cf567dd4aa09d9b50083ed49ccc1a44c51c",
+      "package": "arduino",
+      "tool": "avr-gcc",
+      "selected_entry": {
+        "host": "i686-mingw32",
+        "url": "https://downloads.arduino.cc/tools/avr-gcc-7.3.0-atmel3.6.1-arduino7-i686-w64-mingw32.zip",
+        "archiveFileName": "avr-gcc-7.3.0-atmel3.6.1-arduino7-i686-w64-mingw32.zip",
+        "checksum": "SHA-256:a54f64755fff4cb792a1495e5defdd789902a2a3503982e81b898299cf39800e",
+        "size": "52519412"
+      }
+    }
+  },
+  "build_flags": [
+    "-Wall",
+    "-Os",
+    "-DF_CPU=16000000",
+    "-mmcu=atmega2560",
+    "-I.",
+    "-ffunction-sections",
+    "-fdata-sections"
+  ],
+  "compiler_environment": {
+    "global_environment_modified": false,
+    "path_scope": "byte_verified_toolchain_and_windows_system32_only",
+    "compiler_search_overrides_removed": true,
+    "temporary_files": "private_per_build_directory",
+    "source_date_epoch": "0"
+  },
+  "translation_units": [
+    "main.c",
+    "motion_control.c",
+    "gcode.c",
+    "spindle_control.c",
+    "coolant_control.c",
+    "serial.c",
+    "protocol.c",
+    "stepper.c",
+    "eeprom.c",
+    "settings.c",
+    "planner.c",
+    "nuts_bolts.c",
+    "limits.c",
+    "print.c",
+    "probe.c",
+    "report.c",
+    "system.c"
+  ],
+  "active_macros": {
+    "DEFAULTS_THOR": "",
+    "CPU_MAP_ATMEGA2560": "",
+    "F_CPU": "16000000",
+    "N_AXIS": "7",
+    "__AVR_ATmega2560__": "1",
+    "__SIZEOF_DOUBLE__": "4",
+    "__SIZEOF_FLOAT__": "4",
+    "__SIZEOF_INT__": "2",
+    "__SIZEOF_LONG__": "4",
+    "COREXY": null
+  },
+  "all_macros_sha256": "5e7aa3aa406e2b29d0997e44c15093a2bf384a605065ca703e4f0214ad6da617",
+  "artifacts": {
+    "build/main.elf": {
+      "sha256": "32048673548dcbf94d1b6382da9ea296c7ee0011cd3de21734e873a1fc2ce68b",
+      "bytes": 56976
+    },
+    "build/grbl.hex": {
+      "sha256": "7f13139cbac7e25754cf93f43c7af42443f73fab9ae2c09931f4bc9713f79db4",
+      "bytes": 89007
+    }
+  },
+  "size": {
+    "text_bytes": 31640,
+    "data_bytes": 0,
+    "bss_bytes": 2075,
+    "flash_image_bytes": 31640,
+    "static_sram_bytes": 2075,
+    "berkeley_output": "   text\t   data\t    bss\t    dec\t    hex\tfilename\r\n  31640\t      0\t   2075\t  33715\t   83b3\tbuild/main.elf\r\n",
+    "device_memory_output": "AVR Memory Usage\r\n----------------\r\nDevice: atmega2560\r\n\r\nProgram:   31640 bytes (12.1% Full)\r\n(.text + .data + .bootloader)\r\n\r\nData:       2075 bytes (25.3% Full)\r\n(.data + .bss + .noinit)\r\n\r\n\r\n"
+  },
+  "warning_lines": [
+    "grbl/nuts_bolts.h:58:19: warning: left shift count >= width of type [-Wshift-count-overflow]",
+    "grbl/nuts_bolts.h:58:19: warning: 'word_bit' may be used uninitialized in this function [-Wmaybe-uninitialized]",
+    "grbl/spindle_control.c:118:1: warning: return type defaults to 'int' [-Wimplicit-int]",
+    "grbl/spindle_control.c:118:1: warning: conflicting types for 'spindle_set_state'",
+    "grbl/eeprom.c:133:26: warning: '<<' in boolean context, did you mean '<' ? [-Wint-in-bool-context]",
+    "grbl/eeprom.c:144:26: warning: '<<' in boolean context, did you mean '<' ? [-Wint-in-bool-context]"
+  ],
+  "compiler_command_count": 23,
+  "build_succeeded": true,
+  "upstream_original_preserved": true,
+  "copied_source_unmodified": true,
+  "firmware_executed": false,
+  "firmware_flashed": false,
+  "hardware_connected": false,
+  "makefile_or_upload_target_invoked": false,
+  "license": {
+    "upstream": "GPL-3.0-or-later",
+    "notice_file": "COPYING",
+    "notice_sha256": "ad370acdba3ebfb015919bb70cdd474d370a6cca956790becf86ea3c0bf2f5b9",
+    "binary_distribution": "none; diagnostic ELF/HEX remain local ignored scratch"
+  },
+  "reproduction": {
+    "script": "arm-01/tools/build_thor_grbl_diagnostic.py",
+    "script_sha256": "c12dfa0274f97cb73339feddc83e08824f9fb632bea1f931a298d8421a2c345f",
+    "source_checkout": ".work/controller/grbl-source/upstream",
+    "toolchain_archive": ".work/controller/toolchain/avr-gcc-7.3.0-atmel3.6.1-arduino7-i686-w64-mingw32.zip",
+    "output_requirement": "new isolated scratch directory, never reused or deleted",
+    "network_required_by_script": false,
+    "global_installation": false
+  },
+  "successful_build_captures": [
+    {
+      "raw_report_path": ".work/controller/grbl-build-02/report.json",
+      "raw_report_sha256": "805e8858ae6dc5592db7f0a3ed9c20b077406ca40265475cfb7a66be7289255d",
+      "checked_at_utc": "2026-11-11T20:32:13.622544+00:00",
+      "artifacts": {
+        "build/main.elf": {
+          "sha256": "32048673548dcbf94d1b6382da9ea296c7ee0011cd3de21734e873a1fc2ce68b",
+          "bytes": 56976
+        },
+        "build/grbl.hex": {
+          "sha256": "7f13139cbac7e25754cf93f43c7af42443f73fab9ae2c09931f4bc9713f79db4",
+          "bytes": 89007
+        }
+      },
+      "compiler_environment_isolated": false
+    },
+    {
+      "raw_report_path": ".work/controller/grbl-build-03/report.json",
+      "raw_report_sha256": "a8d96131729a3d3c3fa63c93de0659580732a51ed580acc1de2cfee0a726d534",
+      "checked_at_utc": "2026-11-11T20:35:09.243340+00:00",
+      "artifacts": {
+        "build/main.elf": {
+          "sha256": "32048673548dcbf94d1b6382da9ea296c7ee0011cd3de21734e873a1fc2ce68b",
+          "bytes": 56976
+        },
+        "build/grbl.hex": {
+          "sha256": "7f13139cbac7e25754cf93f43c7af42443f73fab9ae2c09931f4bc9713f79db4",
+          "bytes": 89007
+        }
+      },
+      "compiler_environment_isolated": true
+    }
+  ],
+  "byte_identical_artifacts_across_two_fresh_builds": true,
+  "preserved_failed_attempts": [
+    {
+      "path": ".work/controller/grbl-build-01",
+      "stage": "version guard before compiling",
+      "reason": "Windows official version string includes avr-gcc.exe rather than avr-gcc; strict expected string corrected; no source or toolchain changes."
+    }
+  ],
+  "warning_scope": "six compiler warnings preserved from unmodified pinned source; successful build is not firmware correctness",
+  "unresolved_gates": [
+    "Review signed-int16 bit(WORD_Z) shift warning at gcode.c:852/nuts_bolts.h:58",
+    "Review possibly uninitialized word_bit in gc_execute_line",
+    "Review conflicting/implicit spindle_set_state return type",
+    "Review EEPROM checksum boolean-shift warnings",
+    "Installed firmware/settings and release-binary equivalence unknown",
+    "No runtime parser/planner/stepper, electrical, feedback, motion, flashing or physical validation"
+  ]
+}

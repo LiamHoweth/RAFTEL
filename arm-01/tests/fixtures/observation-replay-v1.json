@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "run_id": "synthetic-observation-replay-v1",
+  "source_kind": "synthetic",
+  "provenance": {
+    "description": "Hand-counted logical observation fixture, not camera or physical data",
+    "source_id": "raftel-observation-fixture-v1",
+    "source_sha256": null
+  },
+  "time_domain": "simulation:observation-fixture-v1",
+  "units": {
+    "position": "m",
+    "mass": "kg",
+    "timestamp": "s",
+    "position_covariance": "m^2"
+  },
+  "coordinate_frame": "arm_base",
+  "presented_ids": [
+    "object-a",
+    "object-b",
+    "object-c",
+    "object-d"
+  ],
+  "observations": [
+    {
+      "sequence": 0,
+      "observation_id": "observation-0",
+      "object_id": "object-a",
+      "timestamp_s": 8.0,
+      "category": "red",
+      "position_m": [
+        0.01,
+        0.2,
+        0.02
+      ],
+      "mass_kg": 0.02,
+      "position_covariance_m2": [
+        [
+          1e-06,
+          0,
+          0
+        ],
+        [
+          0,
+          4e-06,
+          0
+        ],
+        [
+          0,
+          0,
+          9e-06
+        ]
+      ],
+      "uncertainty_evidence": "Synthetic diagonal covariance; no physical accuracy claim"
+    },
+    {
+      "sequence": 1,
+      "observation_id": "observation-1",
+      "object_id": "object-a",
+      "timestamp_s": 9.5,
+      "category": "red",
+      "position_m": [
+        0.03,
+        0.21,
+        0.02
+      ],
+      "mass_kg": 0.02,
+      "position_covariance_m2": [
+        [
+          1e-06,
+          0,
+          0
+        ],
+        [
+          0,
+          4e-06,
+          0
+        ],
+        [
+          0,
+          0,
+          9e-06
+        ]
+      ],
+      "uncertainty_evidence": "Synthetic diagonal covariance; no physical accuracy claim"
+    },
+    {
+      "sequence": 2,
+      "observation_id": "observation-2",
+      "object_id": "object-b",
+      "timestamp_s": 9.6,
+      "category": "green",
+      "position_m": [
+        -0.03,
+        0.19,
+        0.02
+      ],
+      "mass_kg": 0.03,
+      "position_covariance_m2": null,
+      "uncertainty_evidence": "Unknown covariance deliberately retained as null"
+    },
+    {
+      "sequence": 3,
+      "observation_id": "observation-3",
+      "object_id": "object-d",
+      "timestamp_s": 10.2,
+      "category": "blue",
+      "position_m": [
+        0.04,
+        0.22,
+        0.02
+      ],
+      "mass_kg": 0.04,
+      "position_covariance_m2": [
+        [
+          1e-06,
+          0,
+          0
+        ],
+        [
+          0,
+          4e-06,
+          0
+        ],
+        [
+          0,
+          0,
+          9e-06
+        ]
+      ],
+      "uncertainty_evidence": "Future timestamp counterexample; no automatic correction"
+    }
+  ]
+}

@@ -7,8 +7,10 @@ report's restore/recompute mode, object states and feature diagnostics.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
+import shutil
 import subprocess
 from pathlib import Path
 
@@ -45,7 +47,21 @@ def run_audit(
     report.parent.mkdir(parents=True, exist_ok=True)
     run_directory = report.with_suffix(".run")
     run_directory.mkdir(exist_ok=False)
+    native_paths = {}
+    for label in ("home", "data", "temp"):
+        path = run_directory / label
+        path.mkdir()
+        native_paths[label] = str(path)
+    worker_source = Path(__file__).with_name("audit_freecad_assembly.py").resolve()
+    worker_snapshot = run_directory / worker_source.name
+    runner_snapshot = run_directory / Path(__file__).name
+    shutil.copyfile(worker_source, worker_snapshot)
+    shutil.copyfile(Path(__file__).resolve(), runner_snapshot)
+    worker_sha256 = hashlib.sha256(worker_snapshot.read_bytes()).hexdigest()
+    source_sha256 = hashlib.sha256(source.read_bytes()).hexdigest()
     env = os.environ.copy()
+    for key in ("PYTHONPATH", "PYTHONHOME"):
+        env.pop(key, None)
     env.update(
         RAFTEL_RUN_FREECAD_AUDIT="1",
         RAFTEL_FREECAD_ASSEMBLY=str(source.resolve()),
@@ -55,7 +71,12 @@ def run_audit(
         RAFTEL_FREECAD_VALIDATE_SHAPES=str(int(validate_shapes)),
         RAFTEL_FREECAD_DOCUMENTS=",".join(document_names),
         RAFTEL_FREECAD_OBJECTS=",".join(object_names),
+        RAFTEL_FREECAD_ISOLATION_ROOT=str(run_directory),
+        FREECAD_USER_HOME=native_paths["home"],
+        FREECAD_USER_DATA=native_paths["data"],
+        FREECAD_USER_TEMP=native_paths["temp"],
         PYTHONNOUSERSITE="1",
+        PYTHONDONTWRITEBYTECODE="1",
     )
     command = [
         str(freecad.resolve()),
@@ -68,7 +89,7 @@ def run_audit(
     ]
     for path in module_paths:
         command.extend(("-M", str(path.resolve())))
-    command.append(str(Path(__file__).with_name("audit_freecad_assembly.py").resolve()))
+    command.append(str(worker_snapshot))
     metadata = {
         "command": command,
         "timeout_s": timeout_s,
@@ -76,6 +97,11 @@ def run_audit(
         "shape_scope": shape_scope,
         "validate_shapes": validate_shapes,
         "outcome": "starting",
+        "worker_snapshot_sha256": worker_sha256,
+        "runner_snapshot_sha256": hashlib.sha256(runner_snapshot.read_bytes()).hexdigest(),
+        "freecad_executable_sha256": hashlib.sha256(freecad.read_bytes()).hexdigest(),
+        "master_source_sha256_before": source_sha256,
+        "task_native_directories": native_paths,
     }
     try:
         result = subprocess.run(
@@ -88,15 +114,28 @@ def run_audit(
         stdout, stderr = error.stdout or b"", error.stderr or b""
     for name, value in (("stdout.log", stdout), ("stderr.log", stderr)):
         text = value.decode(errors="replace") if isinstance(value, bytes) else value
-        (run_directory / name).write_text(text)
+        (run_directory / name).write_text(text, encoding="utf-8", newline="\n")
+    metadata["worker_snapshot_unchanged"] = (
+        hashlib.sha256(worker_snapshot.read_bytes()).hexdigest() == worker_sha256
+    )
+    metadata["runner_snapshot_unchanged"] = (
+        hashlib.sha256(runner_snapshot.read_bytes()).hexdigest()
+        == metadata["runner_snapshot_sha256"]
+    )
+    metadata["master_source_sha256_after"] = (
+        hashlib.sha256(source.read_bytes()).hexdigest() if source.is_file() else None
+    )
+    metadata["master_source_unchanged"] = metadata["master_source_sha256_after"] == source_sha256
     metadata["checkpoint_exists"] = report.exists()
     metadata["audit_status"] = None
     if report.exists():
         try:
-            metadata["audit_status"] = json.loads(report.read_text()).get("status")
+            metadata["audit_status"] = json.loads(report.read_text(encoding="utf-8")).get("status")
         except (OSError, ValueError, AttributeError) as error:
             metadata["report_read_error"] = str(error)
-    (run_directory / "runner.json").write_text(json.dumps(metadata, indent=2) + "\n")
+    (run_directory / "runner.json").write_text(
+        json.dumps(metadata, indent=2) + "\n", encoding="utf-8", newline="\n"
+    )
     return metadata
 
 
@@ -131,7 +170,13 @@ def main() -> int:
     print(json.dumps(metadata, indent=2))
     if metadata["outcome"] == "timed_out":
         return 124
-    return int(bool(metadata["process_returncode"]) or metadata["audit_status"] != "complete")
+    return int(
+        bool(metadata["process_returncode"])
+        or metadata["audit_status"] != "complete"
+        or not metadata["worker_snapshot_unchanged"]
+        or not metadata["runner_snapshot_unchanged"]
+        or not metadata["master_source_unchanged"]
+    )
 
 
 if __name__ == "__main__":

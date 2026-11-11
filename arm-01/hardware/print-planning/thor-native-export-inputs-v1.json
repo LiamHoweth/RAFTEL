@@ -1,0 +1,2374 @@
+{
+  "schema_version": 1,
+  "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+  "evidence_class": "selected_saved_BRep_properties_request",
+  "selections": [
+    {
+      "selection_id": "base-top",
+      "source_file": "freecad-src/BaseTop.fcstd",
+      "source_sha256": "cad90f1414909eaa797edb9bc00a685c3f0856cfa4be5abbcd539afb96417490",
+      "object_name": "Body",
+      "object_type": "PartDesign::Body",
+      "brep_entry": "PartShape.brp",
+      "brep_sha256": "798ede264d95a7bd495aee52a2cb6b08975a3e11eb2536a4b35d95a6527abdb6",
+      "xml_placement": {
+        "position_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selection_evidence": "Exact nonempty saved Shape entry selected from pinned original archive by read-only ZIP/XML inspection; no native validity or feature-history rebuild claim",
+      "uniform_density": null,
+      "tessellation": {
+        "linear_deflection_mm": 0.1,
+        "angular_deflection_rad": 0.2,
+        "relative": false,
+        "filename": "base-top-cached-native-draft.stl"
+      },
+      "reference_capture": {
+        "frame_policy": "Raw saved BRep coordinates as stored in the selected archive entry. Apply no XML/object/ancestor/link placement while reading. Native worker must record the actual Shape.Placement and compare it separately with XML placement. No source-to-installed transform is inferred from bounds, COM or identity own placement.",
+        "input_canonical_sha256": {
+          "printable_asset_manifest": "4a0deebe94a6da554fc3ce7d56d749e0a639c2d2a127eb8f59cea0a360b4128d",
+          "source_inspection": "063784958f351e6ef676cf9be3145544b6ebd73d1bdcb1b74d22e645ea563a3b",
+          "mounted_inventory": "e52e699ff7c0d9e1dc3eedf9416e7e1da84ae6e13a5152cb5be6cd4f14b29c31",
+          "upstream_slicer_plan": "38aaaa84b2f2e6fed01b6e558e7ba4a651119aee848b4bdd421b81ff99ffb941"
+        },
+        "archive_shape_entry_bytes": 19656,
+        "archive_bytes": 24072,
+        "document_xml_sha256": "919b096a8248852032c31776b80fe6e98d4b6f37be2376ed29f5e77a7026deb8",
+        "raw_xml_placement_attributes": {
+          "A": "0.0000000000000000",
+          "Ox": "0.0000000000000000",
+          "Oy": "0.0000000000000000",
+          "Oz": "1.0000000000000000",
+          "Px": "0.0000000000000000",
+          "Py": "0.0000000000000000",
+          "Pz": "0.0000000000000000",
+          "Q0": "0.0000000000000000",
+          "Q1": "0.0000000000000000",
+          "Q2": "0.0000000000000000",
+          "Q3": "1.0000000000000000"
+        },
+        "saved_xml_context": {
+          "object_saved_properties": {
+            "Placement": {
+              "tag": "Property",
+              "attributes": {
+                "name": "Placement",
+                "status": "8388608",
+                "type": "App::PropertyPlacement"
+              },
+              "children": [
+                {
+                  "tag": "PropertyPlacement",
+                  "attributes": {
+                    "A": "0.0000000000000000",
+                    "Ox": "0.0000000000000000",
+                    "Oy": "0.0000000000000000",
+                    "Oz": "1.0000000000000000",
+                    "Px": "0.0000000000000000",
+                    "Py": "0.0000000000000000",
+                    "Pz": "0.0000000000000000",
+                    "Q0": "0.0000000000000000",
+                    "Q1": "0.0000000000000000",
+                    "Q2": "0.0000000000000000",
+                    "Q3": "1.0000000000000000"
+                  }
+                }
+              ]
+            },
+            "Tip": {
+              "tag": "Property",
+              "attributes": {
+                "name": "Tip",
+                "type": "App::PropertyLink"
+              },
+              "children": [
+                {
+                  "tag": "Link",
+                  "attributes": {
+                    "value": "PolarPattern"
+                  }
+                }
+              ]
+            },
+            "Group": {
+              "tag": "Property",
+              "attributes": {
+                "name": "Group",
+                "type": "App::PropertyLinkList"
+              },
+              "children": [
+                {
+                  "tag": "LinkList",
+                  "attributes": {
+                    "count": "7"
+                  },
+                  "children": [
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Sketch"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Revolution"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Sketch001"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Pocket"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "PolarPattern"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "LCS_Bot"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "LCS_Top"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "ExpressionEngine": {
+              "tag": "Property",
+              "attributes": {
+                "name": "ExpressionEngine",
+                "status": "67108864",
+                "type": "App::PropertyExpressionEngine"
+              },
+              "children": [
+                {
+                  "tag": "ExpressionEngine",
+                  "attributes": {
+                    "count": "0"
+                  }
+                }
+              ]
+            }
+          },
+          "direct_containing_groups": [],
+          "saved_Source_link_context": [],
+          "context_interpretation": "saved XML only; no attachment evaluation, external-document execution or mounted transform recovery"
+        },
+        "preserved_raw_source_shape_reference": {
+          "frame": "native source raw Shape coordinates, mm",
+          "bounds_mm": {
+            "XMin": -75.0,
+            "XMax": 75.0,
+            "YMin": -75.0,
+            "YMax": 75.00000000000001,
+            "ZMin": -4.95e-14,
+            "ZMax": 27.50000000000005
+          },
+          "volume_mm3": 222336.2316002709,
+          "center_of_mass_mm": null,
+          "center_of_mass_status": "no_matching_raw-source_COM_field_in_these_preserved_captures"
+        },
+        "preserved_installed_references": [
+          {
+            "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::BaseTop_BaseTop",
+            "volume_mm3": 222336.2316002709,
+            "zero_world_com_m": [
+              8.90120542573539e-18,
+              2.5626506782169243e-17,
+              0.07949844347828727
+            ],
+            "frame": "native Assembly::Model zero-pose frame, metres",
+            "source_to_installed_transform": null
+          }
+        ],
+        "installed_COM_is_not_raw_source_COM": true,
+        "frame_invariant_volume_reference_mm3": 222336.2316002709,
+        "volume_reference_scope": "Volume is invariant under rigid transforms/reflection; this reference does not recover a placement",
+        "mirrored_source_frame_correspondence": null
+      },
+      "upstream_stl_reference": {
+        "source_path": "stl/BaseTop.stl",
+        "sha256": "a1046a975f0d0a1405f314fb094461657c5495c3650ea7c22d56b9c1bc6b6f2b",
+        "git_blob_sha1": "b1f189aa085a573ac638e1bea0e666c0b74aa987",
+        "mesh_kind": "pinned_upstream_STL_not_this_native_BRep_export",
+        "mesh_comparison": {
+          "source_envelope_xyz_mm": [
+            150.0,
+            150.0,
+            27.5000000000001
+          ],
+          "mesh_envelope_xyz_interpreted_mm": [
+            150.0,
+            149.95338439941406,
+            27.500000000000057
+          ],
+          "axis_aligned_extent_delta_mm": [
+            0.0,
+            -0.0466156005859375,
+            -4.263256414560601e-14
+          ],
+          "sorted_extent_absolute_delta_mm": [
+            4.263256414560601e-14,
+            0.0466156005859375,
+            0.0
+          ],
+          "source_volume_mm3": 222336.2316002709,
+          "mesh_absolute_signed_volume_proxy_mm3": 222266.25928298527,
+          "relative_volume_proxy_delta": -0.00031471396623935024,
+          "comparison_scope": "extent/volume diagnostics only; source STL may use a different frame or geometry revision; not native final-solid equivalence",
+          "native_source_hash": "cad90f1414909eaa797edb9bc00a685c3f0856cfa4be5abbcd539afb96417490"
+        },
+        "native_to_STL_transform": null
+      }
+    },
+    {
+      "selection_id": "base-bearing-fix",
+      "source_file": "freecad-src/BaseBearingFix.fcstd",
+      "source_sha256": "a8ddcd5f8aee6cc4ff33671e3c27e2d3029fe334f4f02baeb579eb6ecaadec82",
+      "object_name": "Body",
+      "object_type": "PartDesign::Body",
+      "brep_entry": "PartShape.brp",
+      "brep_sha256": "c0f869fab89cb05a4725ca3755924309e17eed89dabf44f23559fb208f272cec",
+      "xml_placement": {
+        "position_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selection_evidence": "Exact nonempty saved Shape entry selected from pinned original archive by read-only ZIP/XML inspection; no native validity or feature-history rebuild claim",
+      "uniform_density": null,
+      "tessellation": {
+        "linear_deflection_mm": 0.1,
+        "angular_deflection_rad": 0.2,
+        "relative": false,
+        "filename": "base-bearing-fix-cached-native-draft.stl"
+      },
+      "reference_capture": {
+        "frame_policy": "Raw saved BRep coordinates as stored in the selected archive entry. Apply no XML/object/ancestor/link placement while reading. Native worker must record the actual Shape.Placement and compare it separately with XML placement. No source-to-installed transform is inferred from bounds, COM or identity own placement.",
+        "input_canonical_sha256": {
+          "printable_asset_manifest": "4a0deebe94a6da554fc3ce7d56d749e0a639c2d2a127eb8f59cea0a360b4128d",
+          "source_inspection": "063784958f351e6ef676cf9be3145544b6ebd73d1bdcb1b74d22e645ea563a3b",
+          "mounted_inventory": "e52e699ff7c0d9e1dc3eedf9416e7e1da84ae6e13a5152cb5be6cd4f14b29c31",
+          "upstream_slicer_plan": "38aaaa84b2f2e6fed01b6e558e7ba4a651119aee848b4bdd421b81ff99ffb941"
+        },
+        "archive_shape_entry_bytes": 23528,
+        "archive_bytes": 25853,
+        "document_xml_sha256": "9021fbf5a533c1e38842158ccd3c7c4b71996e9e98a7cfccbcddf8dd74a3d0f7",
+        "raw_xml_placement_attributes": {
+          "A": "0.0000000000000000",
+          "Ox": "0.0000000000000000",
+          "Oy": "0.0000000000000000",
+          "Oz": "1.0000000000000000",
+          "Px": "0.0000000000000000",
+          "Py": "0.0000000000000000",
+          "Pz": "0.0000000000000000",
+          "Q0": "0.0000000000000000",
+          "Q1": "0.0000000000000000",
+          "Q2": "0.0000000000000000",
+          "Q3": "1.0000000000000000"
+        },
+        "saved_xml_context": {
+          "object_saved_properties": {
+            "Placement": {
+              "tag": "Property",
+              "attributes": {
+                "name": "Placement",
+                "status": "8388608",
+                "type": "App::PropertyPlacement"
+              },
+              "children": [
+                {
+                  "tag": "PropertyPlacement",
+                  "attributes": {
+                    "A": "0.0000000000000000",
+                    "Ox": "0.0000000000000000",
+                    "Oy": "0.0000000000000000",
+                    "Oz": "1.0000000000000000",
+                    "Px": "0.0000000000000000",
+                    "Py": "0.0000000000000000",
+                    "Pz": "0.0000000000000000",
+                    "Q0": "0.0000000000000000",
+                    "Q1": "0.0000000000000000",
+                    "Q2": "0.0000000000000000",
+                    "Q3": "1.0000000000000000"
+                  }
+                }
+              ]
+            },
+            "Tip": {
+              "tag": "Property",
+              "attributes": {
+                "name": "Tip",
+                "type": "App::PropertyLink"
+              },
+              "children": [
+                {
+                  "tag": "Link",
+                  "attributes": {
+                    "value": "PolarPattern"
+                  }
+                }
+              ]
+            },
+            "Group": {
+              "tag": "Property",
+              "attributes": {
+                "name": "Group",
+                "type": "App::PropertyLinkList"
+              },
+              "children": [
+                {
+                  "tag": "LinkList",
+                  "attributes": {
+                    "count": "11"
+                  },
+                  "children": [
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Sketch"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Pad"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Sketch001"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Pocket"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Sketch002"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Pocket001"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "PolarPattern"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "HoleAxis_1"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "HoleAxis_2"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "HoleAxis_3"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "LCS_Bot"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "ExpressionEngine": {
+              "tag": "Property",
+              "attributes": {
+                "name": "ExpressionEngine",
+                "status": "67108864",
+                "type": "App::PropertyExpressionEngine"
+              },
+              "children": [
+                {
+                  "tag": "ExpressionEngine",
+                  "attributes": {
+                    "count": "0"
+                  }
+                }
+              ]
+            }
+          },
+          "direct_containing_groups": [],
+          "saved_Source_link_context": [],
+          "context_interpretation": "saved XML only; no attachment evaluation, external-document execution or mounted transform recovery"
+        },
+        "preserved_raw_source_shape_reference": {
+          "frame": "native source raw Shape coordinates, mm",
+          "bounds_mm": {
+            "XMin": -75.0,
+            "XMax": 75.0,
+            "YMin": -75.0,
+            "YMax": 75.0,
+            "ZMin": -1.7763568394002505e-15,
+            "ZMax": 5.000000000000001
+          },
+          "volume_mm3": 50341.94096864344,
+          "center_of_mass_mm": null,
+          "center_of_mass_status": "no_matching_raw-source_COM_field_in_these_preserved_captures"
+        },
+        "preserved_installed_references": [
+          {
+            "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::BaseBearingFix_BaseBearingFix",
+            "volume_mm3": 50341.94096864344,
+            "zero_world_com_m": [
+              -2.9723367625594246e-18,
+              1.3693153537228829e-17,
+              0.09549673543446023
+            ],
+            "frame": "native Assembly::Model zero-pose frame, metres",
+            "source_to_installed_transform": null
+          }
+        ],
+        "installed_COM_is_not_raw_source_COM": true,
+        "frame_invariant_volume_reference_mm3": 50341.94096864344,
+        "volume_reference_scope": "Volume is invariant under rigid transforms/reflection; this reference does not recover a placement",
+        "mirrored_source_frame_correspondence": null
+      },
+      "upstream_stl_reference": {
+        "source_path": "stl/BaseBearingFix.stl",
+        "sha256": "418c384c89808d8ed28d43005d69ec3d66e5378b548fd718249578586906ac06",
+        "git_blob_sha1": "b3dfe9dad5eec2c0a3c8046d1238ae1db1b1d686",
+        "mesh_kind": "pinned_upstream_STL_not_this_native_BRep_export",
+        "mesh_comparison": {
+          "source_envelope_xyz_mm": [
+            150.0,
+            150.0,
+            5.000000000000003
+          ],
+          "mesh_envelope_xyz_interpreted_mm": [
+            150.0,
+            149.95338439941406,
+            5.0
+          ],
+          "axis_aligned_extent_delta_mm": [
+            0.0,
+            -0.0466156005859375,
+            -2.6645352591003757e-15
+          ],
+          "sorted_extent_absolute_delta_mm": [
+            2.6645352591003757e-15,
+            0.0466156005859375,
+            0.0
+          ],
+          "source_volume_mm3": 50341.94096864344,
+          "mesh_absolute_signed_volume_proxy_mm3": 50321.07883750616,
+          "relative_volume_proxy_delta": -0.0004144085574744049,
+          "comparison_scope": "extent/volume diagnostics only; source STL may use a different frame or geometry revision; not native final-solid equivalence",
+          "native_source_hash": "a8ddcd5f8aee6cc4ff33671e3c27e2d3029fe334f4f02baeb579eb6ecaadec82"
+        },
+        "native_to_STL_transform": null
+      }
+    },
+    {
+      "selection_id": "common-bearing-fix",
+      "source_file": "freecad-src/CommonBearingFix.fcstd",
+      "source_sha256": "cf0d6322f0c0a947079c2a3782dcf878feb71a0e34b0de220c3722a24ec8e72b",
+      "object_name": "Body",
+      "object_type": "PartDesign::Body",
+      "brep_entry": "PartShape.brp",
+      "brep_sha256": "d5926a093c6e4f71b844d5eb06a950ffe48bad0df844c2a9d9f1b2e502f9f77a",
+      "xml_placement": {
+        "position_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selection_evidence": "Exact nonempty saved Shape entry selected from pinned original archive by read-only ZIP/XML inspection; no native validity or feature-history rebuild claim",
+      "uniform_density": null,
+      "tessellation": {
+        "linear_deflection_mm": 0.1,
+        "angular_deflection_rad": 0.2,
+        "relative": false,
+        "filename": "common-bearing-fix-cached-native-draft.stl"
+      },
+      "reference_capture": {
+        "frame_policy": "Raw saved BRep coordinates as stored in the selected archive entry. Apply no XML/object/ancestor/link placement while reading. Native worker must record the actual Shape.Placement and compare it separately with XML placement. No source-to-installed transform is inferred from bounds, COM or identity own placement.",
+        "input_canonical_sha256": {
+          "printable_asset_manifest": "4a0deebe94a6da554fc3ce7d56d749e0a639c2d2a127eb8f59cea0a360b4128d",
+          "source_inspection": "063784958f351e6ef676cf9be3145544b6ebd73d1bdcb1b74d22e645ea563a3b",
+          "mounted_inventory": "e52e699ff7c0d9e1dc3eedf9416e7e1da84ae6e13a5152cb5be6cd4f14b29c31",
+          "upstream_slicer_plan": "38aaaa84b2f2e6fed01b6e558e7ba4a651119aee848b4bdd421b81ff99ffb941"
+        },
+        "archive_shape_entry_bytes": 24234,
+        "archive_bytes": 28897,
+        "document_xml_sha256": "6c3c8f8b76432828505153435e93fbdf4cf0ffddf0a4e8df4abf246a95335cf3",
+        "raw_xml_placement_attributes": {
+          "A": "0.0000000000000000",
+          "Ox": "0.0000000000000000",
+          "Oy": "0.0000000000000000",
+          "Oz": "1.0000000000000000",
+          "Px": "0.0000000000000000",
+          "Py": "0.0000000000000000",
+          "Pz": "0.0000000000000000",
+          "Q0": "0.0000000000000000",
+          "Q1": "0.0000000000000000",
+          "Q2": "0.0000000000000000",
+          "Q3": "1.0000000000000000"
+        },
+        "saved_xml_context": {
+          "object_saved_properties": {
+            "Placement": {
+              "tag": "Property",
+              "attributes": {
+                "name": "Placement",
+                "status": "8388608",
+                "type": "App::PropertyPlacement"
+              },
+              "children": [
+                {
+                  "tag": "PropertyPlacement",
+                  "attributes": {
+                    "A": "0.0000000000000000",
+                    "Ox": "0.0000000000000000",
+                    "Oy": "0.0000000000000000",
+                    "Oz": "1.0000000000000000",
+                    "Px": "0.0000000000000000",
+                    "Py": "0.0000000000000000",
+                    "Pz": "0.0000000000000000",
+                    "Q0": "0.0000000000000000",
+                    "Q1": "0.0000000000000000",
+                    "Q2": "0.0000000000000000",
+                    "Q3": "1.0000000000000000"
+                  }
+                }
+              ]
+            },
+            "Tip": {
+              "tag": "Property",
+              "attributes": {
+                "name": "Tip",
+                "type": "App::PropertyLink"
+              },
+              "children": [
+                {
+                  "tag": "Link",
+                  "attributes": {
+                    "value": "Pocket001"
+                  }
+                }
+              ]
+            },
+            "Group": {
+              "tag": "Property",
+              "attributes": {
+                "name": "Group",
+                "type": "App::PropertyLinkList"
+              },
+              "children": [
+                {
+                  "tag": "LinkList",
+                  "attributes": {
+                    "count": "9"
+                  },
+                  "children": [
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Sketch"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Pad"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Sketch001"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Pocket"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Sketch002"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Pocket001"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "LCS_CommonBearingFix"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "HoleAxis_1"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "HoleAxis_2"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "ExpressionEngine": {
+              "tag": "Property",
+              "attributes": {
+                "name": "ExpressionEngine",
+                "status": "67108864",
+                "type": "App::PropertyExpressionEngine"
+              },
+              "children": [
+                {
+                  "tag": "ExpressionEngine",
+                  "attributes": {
+                    "count": "0"
+                  }
+                }
+              ]
+            }
+          },
+          "direct_containing_groups": [],
+          "saved_Source_link_context": [],
+          "context_interpretation": "saved XML only; no attachment evaluation, external-document execution or mounted transform recovery"
+        },
+        "preserved_raw_source_shape_reference": {
+          "frame": "native source raw Shape coordinates, mm",
+          "bounds_mm": {
+            "XMin": -15.0,
+            "XMax": 15.0,
+            "YMin": -7.9,
+            "YMax": 7.9,
+            "ZMin": 0.0,
+            "ZMax": 4.0
+          },
+          "volume_mm3": 983.1716475189406,
+          "center_of_mass_mm": null,
+          "center_of_mass_status": "no_matching_raw-source_COM_field_in_these_preserved_captures"
+        },
+        "preserved_installed_references": [
+          {
+            "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::CommonBearingFix_CommonBearingFix",
+            "volume_mm3": 983.1716475189403,
+            "zero_world_com_m": [
+              1.279749547099781e-16,
+              0.0659442808160354,
+              0.36199999999999993
+            ],
+            "frame": "native Assembly::Model zero-pose frame, metres",
+            "source_to_installed_transform": null
+          },
+          {
+            "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::CommonBearingFix_CommonBearingFix001",
+            "volume_mm3": 983.1716475189404,
+            "zero_world_com_m": [
+              2.4253818691867615e-18,
+              0.06594428081603532,
+              0.20199999999999987
+            ],
+            "frame": "native Assembly::Model zero-pose frame, metres",
+            "source_to_installed_transform": null
+          },
+          {
+            "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::CommonBearingFix_CommonBearingFix002",
+            "volume_mm3": 983.1716475189404,
+            "zero_world_com_m": [
+              -2.391726914009909e-17,
+              -0.06594428081603533,
+              0.202
+            ],
+            "frame": "native Assembly::Model zero-pose frame, metres",
+            "source_to_installed_transform": null
+          },
+          {
+            "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::CommonBearingFix_CommonBearingFix003",
+            "volume_mm3": 983.1716475189406,
+            "zero_world_com_m": [
+              -5.298819878620228e-17,
+              -0.06594428081603533,
+              0.362
+            ],
+            "frame": "native Assembly::Model zero-pose frame, metres",
+            "source_to_installed_transform": null
+          }
+        ],
+        "installed_COM_is_not_raw_source_COM": true,
+        "frame_invariant_volume_reference_mm3": 983.1716475189406,
+        "volume_reference_scope": "Volume is invariant under rigid transforms/reflection; this reference does not recover a placement",
+        "mirrored_source_frame_correspondence": null
+      },
+      "upstream_stl_reference": {
+        "source_path": "stl/CommonBearingFix.stl",
+        "sha256": "7379ce4217c8b55254c52bd0e660ea00dadaf537fae61cda99953850f911468e",
+        "git_blob_sha1": "45c0c7b59f771cb48bc10c5de9cdb1e7cf165b74",
+        "mesh_kind": "pinned_upstream_STL_not_this_native_BRep_export",
+        "mesh_comparison": {
+          "source_envelope_xyz_mm": [
+            30.0,
+            15.8,
+            4.0
+          ],
+          "mesh_envelope_xyz_interpreted_mm": [
+            30.0,
+            15.800000190734863,
+            4.0
+          ],
+          "axis_aligned_extent_delta_mm": [
+            0.0,
+            1.9073486257070726e-07,
+            0.0
+          ],
+          "sorted_extent_absolute_delta_mm": [
+            0.0,
+            1.9073486257070726e-07,
+            0.0
+          ],
+          "source_volume_mm3": 983.1716475189406,
+          "mesh_absolute_signed_volume_proxy_mm3": 981.4598703903237,
+          "relative_volume_proxy_delta": -0.0017410765789846433,
+          "comparison_scope": "extent/volume diagnostics only; source STL may use a different frame or geometry revision; not native final-solid equivalence",
+          "native_source_hash": "cf0d6322f0c0a947079c2a3782dcf878feb71a0e34b0de220c3722a24ec8e72b"
+        },
+        "native_to_STL_transform": null
+      }
+    },
+    {
+      "selection_id": "art2-window",
+      "source_file": "freecad-src/Art2BodyAWindow.fcstd",
+      "source_sha256": "ced59ddf86e57b3f3615bb4ee44d96b75b7032a9239733845a26e8e334941e98",
+      "object_name": "Body",
+      "object_type": "PartDesign::Body",
+      "brep_entry": "PartShape.brp",
+      "brep_sha256": "1bf191b3a417f60f6814143f39bb06068f6ac5a39d1a598390ae26edae6d78ba",
+      "xml_placement": {
+        "position_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selection_evidence": "Exact nonempty saved Shape entry selected from pinned original archive by read-only ZIP/XML inspection; no native validity or feature-history rebuild claim",
+      "uniform_density": null,
+      "tessellation": {
+        "linear_deflection_mm": 0.1,
+        "angular_deflection_rad": 0.2,
+        "relative": false,
+        "filename": "art2-window-cached-native-draft.stl"
+      },
+      "reference_capture": {
+        "frame_policy": "Raw saved BRep coordinates as stored in the selected archive entry. Apply no XML/object/ancestor/link placement while reading. Native worker must record the actual Shape.Placement and compare it separately with XML placement. No source-to-installed transform is inferred from bounds, COM or identity own placement.",
+        "input_canonical_sha256": {
+          "printable_asset_manifest": "4a0deebe94a6da554fc3ce7d56d749e0a639c2d2a127eb8f59cea0a360b4128d",
+          "source_inspection": "063784958f351e6ef676cf9be3145544b6ebd73d1bdcb1b74d22e645ea563a3b",
+          "mounted_inventory": "e52e699ff7c0d9e1dc3eedf9416e7e1da84ae6e13a5152cb5be6cd4f14b29c31",
+          "upstream_slicer_plan": "38aaaa84b2f2e6fed01b6e558e7ba4a651119aee848b4bdd421b81ff99ffb941"
+        },
+        "archive_shape_entry_bytes": 100176,
+        "archive_bytes": 158019,
+        "document_xml_sha256": "704c4125f963240a70a84807044a56f73487d089e481019d0ffe13b8437d3444",
+        "raw_xml_placement_attributes": {
+          "A": "0.0000000000000000",
+          "Ox": "0.0000000000000000",
+          "Oy": "0.0000000000000000",
+          "Oz": "1.0000000000000000",
+          "Px": "0.0000000000000000",
+          "Py": "0.0000000000000000",
+          "Pz": "0.0000000000000000",
+          "Q0": "0.0000000000000000",
+          "Q1": "0.0000000000000000",
+          "Q2": "0.0000000000000000",
+          "Q3": "1.0000000000000000"
+        },
+        "saved_xml_context": {
+          "object_saved_properties": {
+            "Placement": {
+              "tag": "Property",
+              "attributes": {
+                "name": "Placement",
+                "status": "8388608",
+                "type": "App::PropertyPlacement"
+              },
+              "children": [
+                {
+                  "tag": "PropertyPlacement",
+                  "attributes": {
+                    "A": "0.0000000000000000",
+                    "Ox": "0.0000000000000000",
+                    "Oy": "0.0000000000000000",
+                    "Oz": "1.0000000000000000",
+                    "Px": "0.0000000000000000",
+                    "Py": "0.0000000000000000",
+                    "Pz": "0.0000000000000000",
+                    "Q0": "0.0000000000000000",
+                    "Q1": "0.0000000000000000",
+                    "Q2": "0.0000000000000000",
+                    "Q3": "1.0000000000000000"
+                  }
+                }
+              ]
+            },
+            "Tip": {
+              "tag": "Property",
+              "attributes": {
+                "name": "Tip",
+                "type": "App::PropertyLink"
+              },
+              "children": [
+                {
+                  "tag": "Link",
+                  "attributes": {
+                    "value": "PolarPattern"
+                  }
+                }
+              ]
+            },
+            "Group": {
+              "tag": "Property",
+              "attributes": {
+                "name": "Group",
+                "type": "App::PropertyLinkList"
+              },
+              "children": [
+                {
+                  "tag": "LinkList",
+                  "attributes": {
+                    "count": "23"
+                  },
+                  "children": [
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Sketch"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Revolution"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Sketch001"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Pocket"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Sketch002"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Pocket001"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Sketch003"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Pocket002"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Sketch004"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Pad"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Sketch005"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Pocket003"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Sketch006"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Pocket004"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "PolarPattern"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "LCS_Art2BodyAWindow"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "LCS_Bearing"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "LCS_BearingFix"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "HoleAxis_1"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "HoleAxis_2"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "HoleAxis_3"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "HoleAxis_4"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "HoleAxis_5"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "ExpressionEngine": {
+              "tag": "Property",
+              "attributes": {
+                "name": "ExpressionEngine",
+                "status": "67108864",
+                "type": "App::PropertyExpressionEngine"
+              },
+              "children": [
+                {
+                  "tag": "ExpressionEngine",
+                  "attributes": {
+                    "count": "0"
+                  }
+                }
+              ]
+            }
+          },
+          "direct_containing_groups": [],
+          "saved_Source_link_context": [],
+          "context_interpretation": "saved XML only; no attachment evaluation, external-document execution or mounted transform recovery"
+        },
+        "preserved_raw_source_shape_reference": {
+          "frame": "native source raw Shape coordinates, mm",
+          "bounds_mm": {
+            "XMin": -48.799999999999955,
+            "XMax": 48.799999999999955,
+            "YMin": -48.799999999999955,
+            "YMax": 48.799999999999976,
+            "ZMin": -1.6250399999999985e-13,
+            "ZMax": 11.000000000000014
+          },
+          "volume_mm3": 39011.93801416927,
+          "center_of_mass_mm": null,
+          "center_of_mass_status": "no_matching_raw-source_COM_field_in_these_preserved_captures"
+        },
+        "preserved_installed_references": [
+          {
+            "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Unnamed_Art2BodyAWindow",
+            "volume_mm3": 39011.938014169275,
+            "zero_world_com_m": [
+              -4.240250559418941e-14,
+              -0.06506421325448318,
+              0.362
+            ],
+            "frame": "native Assembly::Model zero-pose frame, metres",
+            "source_to_installed_transform": null
+          }
+        ],
+        "installed_COM_is_not_raw_source_COM": true,
+        "frame_invariant_volume_reference_mm3": 39011.93801416927,
+        "volume_reference_scope": "Volume is invariant under rigid transforms/reflection; this reference does not recover a placement",
+        "mirrored_source_frame_correspondence": null
+      },
+      "upstream_stl_reference": {
+        "source_path": "stl/Art2BodyAWindow.stl",
+        "sha256": "4a9e72245dbbdfdcb3f855a46783ec3720dd7493696e41929002652663441493",
+        "git_blob_sha1": "d8e8fe6a6ffee60a47642852a37ffb6ff2e3bfd9",
+        "mesh_kind": "pinned_upstream_STL_not_this_native_BRep_export",
+        "mesh_comparison": {
+          "source_envelope_xyz_mm": [
+            97.59999999999991,
+            97.59999999999994,
+            11.000000000000176
+          ],
+          "mesh_envelope_xyz_interpreted_mm": [
+            97.5999984741211,
+            97.58971786499023,
+            11.000000000000162
+          ],
+          "axis_aligned_extent_delta_mm": [
+            -1.5258788153005298e-06,
+            -0.010282135009703097,
+            -1.4210854715202004e-14
+          ],
+          "sorted_extent_absolute_delta_mm": [
+            1.4210854715202004e-14,
+            0.010282135009674676,
+            1.5258788437222393e-06
+          ],
+          "source_volume_mm3": 39011.93801416927,
+          "mesh_absolute_signed_volume_proxy_mm3": 38994.95299464005,
+          "relative_volume_proxy_delta": -0.00043538005015407075,
+          "comparison_scope": "extent/volume diagnostics only; source STL may use a different frame or geometry revision; not native final-solid equivalence",
+          "native_source_hash": "ced59ddf86e57b3f3615bb4ee44d96b75b7032a9239733845a26e8e334941e98"
+        },
+        "native_to_STL_transform": null
+      }
+    },
+    {
+      "selection_id": "art3-tensioner-body",
+      "source_file": "freecad-src/Art3TensionerBody.fcstd",
+      "source_sha256": "f105e77dbb72523f842e58b9bcd9a54c3ec5f5eaf771a0798851cf7f13752a55",
+      "object_name": "Body",
+      "object_type": "PartDesign::Body",
+      "brep_entry": "PartShape.brp",
+      "brep_sha256": "e3ddeed778265d533c28e93dcf38af4ca7dbf021c7111cf18175976ef1adefcb",
+      "xml_placement": {
+        "position_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selection_evidence": "Exact nonempty saved Shape entry selected from pinned original archive by read-only ZIP/XML inspection; no native validity or feature-history rebuild claim",
+      "uniform_density": null,
+      "tessellation": {
+        "linear_deflection_mm": 0.1,
+        "angular_deflection_rad": 0.2,
+        "relative": false,
+        "filename": "art3-tensioner-body-cached-native-draft.stl"
+      },
+      "reference_capture": {
+        "frame_policy": "Raw saved BRep coordinates as stored in the selected archive entry. Apply no XML/object/ancestor/link placement while reading. Native worker must record the actual Shape.Placement and compare it separately with XML placement. No source-to-installed transform is inferred from bounds, COM or identity own placement.",
+        "input_canonical_sha256": {
+          "printable_asset_manifest": "4a0deebe94a6da554fc3ce7d56d749e0a639c2d2a127eb8f59cea0a360b4128d",
+          "source_inspection": "063784958f351e6ef676cf9be3145544b6ebd73d1bdcb1b74d22e645ea563a3b",
+          "mounted_inventory": "e52e699ff7c0d9e1dc3eedf9416e7e1da84ae6e13a5152cb5be6cd4f14b29c31",
+          "upstream_slicer_plan": "38aaaa84b2f2e6fed01b6e558e7ba4a651119aee848b4bdd421b81ff99ffb941"
+        },
+        "archive_shape_entry_bytes": 25920,
+        "archive_bytes": 33816,
+        "document_xml_sha256": "e0da25d4415c4131ad351d39d10341eb5a19b1ed6355a1044f8bc8b311c4533d",
+        "raw_xml_placement_attributes": {
+          "A": "0.0000000000000000",
+          "Ox": "0.0000000000000000",
+          "Oy": "0.0000000000000000",
+          "Oz": "1.0000000000000000",
+          "Px": "0.0000000000000000",
+          "Py": "0.0000000000000000",
+          "Pz": "0.0000000000000000",
+          "Q0": "0.0000000000000000",
+          "Q1": "0.0000000000000000",
+          "Q2": "0.0000000000000000",
+          "Q3": "1.0000000000000000"
+        },
+        "saved_xml_context": {
+          "object_saved_properties": {
+            "Placement": {
+              "tag": "Property",
+              "attributes": {
+                "name": "Placement",
+                "status": "8388608",
+                "type": "App::PropertyPlacement"
+              },
+              "children": [
+                {
+                  "tag": "PropertyPlacement",
+                  "attributes": {
+                    "A": "0.0000000000000000",
+                    "Ox": "0.0000000000000000",
+                    "Oy": "0.0000000000000000",
+                    "Oz": "1.0000000000000000",
+                    "Px": "0.0000000000000000",
+                    "Py": "0.0000000000000000",
+                    "Pz": "0.0000000000000000",
+                    "Q0": "0.0000000000000000",
+                    "Q1": "0.0000000000000000",
+                    "Q2": "0.0000000000000000",
+                    "Q3": "1.0000000000000000"
+                  }
+                }
+              ]
+            },
+            "Tip": {
+              "tag": "Property",
+              "attributes": {
+                "name": "Tip",
+                "type": "App::PropertyLink"
+              },
+              "children": [
+                {
+                  "tag": "Link",
+                  "attributes": {
+                    "value": "Pocket001"
+                  }
+                }
+              ]
+            },
+            "Group": {
+              "tag": "Property",
+              "attributes": {
+                "name": "Group",
+                "type": "App::PropertyLinkList"
+              },
+              "children": [
+                {
+                  "tag": "LinkList",
+                  "attributes": {
+                    "count": "10"
+                  },
+                  "children": [
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Sketch"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Pad"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Sketch001"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Pocket"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "DatumPlane"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Sketch002"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Pocket001"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "LCS_Art3TensionerBody"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "LCS_TopShaft"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "HoleAxis_1"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "ExpressionEngine": {
+              "tag": "Property",
+              "attributes": {
+                "name": "ExpressionEngine",
+                "status": "67108864",
+                "type": "App::PropertyExpressionEngine"
+              },
+              "children": [
+                {
+                  "tag": "ExpressionEngine",
+                  "attributes": {
+                    "count": "0"
+                  }
+                }
+              ]
+            }
+          },
+          "direct_containing_groups": [],
+          "saved_Source_link_context": [],
+          "context_interpretation": "saved XML only; no attachment evaluation, external-document execution or mounted transform recovery"
+        },
+        "preserved_raw_source_shape_reference": {
+          "frame": "native source raw Shape coordinates, mm",
+          "bounds_mm": {
+            "XMin": -5.7,
+            "XMax": 5.7,
+            "YMin": -13.5,
+            "YMax": 7.06e-15,
+            "ZMin": 0.0,
+            "ZMax": 10.600000000000009
+          },
+          "volume_mm3": 872.4812942676833,
+          "center_of_mass_mm": null,
+          "center_of_mass_status": "no_matching_raw-source_COM_field_in_these_preserved_captures"
+        },
+        "preserved_installed_references": [
+          {
+            "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art3TensionerBody_Art3TensionerBody",
+            "volume_mm3": 872.4812942676833,
+            "zero_world_com_m": [
+              -0.01724429550294443,
+              -0.05771127747118361,
+              0.30185
+            ],
+            "frame": "native Assembly::Model zero-pose frame, metres",
+            "source_to_installed_transform": null
+          },
+          {
+            "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art3TensionerBody_Art3TensionerBody001",
+            "volume_mm3": 872.4812942676834,
+            "zero_world_com_m": [
+              0.01724429550294438,
+              -0.05771127747118362,
+              0.30185
+            ],
+            "frame": "native Assembly::Model zero-pose frame, metres",
+            "source_to_installed_transform": null
+          }
+        ],
+        "installed_COM_is_not_raw_source_COM": true,
+        "frame_invariant_volume_reference_mm3": 872.4812942676833,
+        "volume_reference_scope": "Volume is invariant under rigid transforms/reflection; this reference does not recover a placement",
+        "mirrored_source_frame_correspondence": null
+      },
+      "upstream_stl_reference": {
+        "source_path": "stl/Art3TensionerBody.stl",
+        "sha256": "274f9b05fdf294b297400cee0c45248f8f1b971dd147e29a8c03d07a5371f9ad",
+        "git_blob_sha1": "e05880ae9aa09148b241bdd0302b2e2b88d65e92",
+        "mesh_kind": "pinned_upstream_STL_not_this_native_BRep_export",
+        "mesh_comparison": {
+          "source_envelope_xyz_mm": [
+            11.4,
+            13.500000000000007,
+            10.600000000000009
+          ],
+          "mesh_envelope_xyz_interpreted_mm": [
+            11.399999618530273,
+            13.500000000000005,
+            10.600000381469727
+          ],
+          "axis_aligned_extent_delta_mm": [
+            -3.8146972691777137e-07,
+            -1.7763568394002505e-15,
+            3.8146971803598717e-07
+          ],
+          "sorted_extent_absolute_delta_mm": [
+            3.8146971803598717e-07,
+            3.8146972691777137e-07,
+            1.7763568394002505e-15
+          ],
+          "source_volume_mm3": 872.4812942676833,
+          "mesh_absolute_signed_volume_proxy_mm3": 874.092241951388,
+          "relative_volume_proxy_delta": 0.00184639796209825,
+          "comparison_scope": "extent/volume diagnostics only; source STL may use a different frame or geometry revision; not native final-solid equivalence",
+          "native_source_hash": "f105e77dbb72523f842e58b9bcd9a54c3ec5f5eaf771a0798851cf7f13752a55"
+        },
+        "native_to_STL_transform": null
+      }
+    },
+    {
+      "selection_id": "art4-transmission-column",
+      "source_file": "freecad-src/Art4TransmissionColumn.fcstd",
+      "source_sha256": "f31295eaaf973347c73779e69ca33f095656b1e7bc4511eac5ce879aaaddbb2c",
+      "object_name": "Body",
+      "object_type": "PartDesign::Body",
+      "brep_entry": "PartShape1.brp",
+      "brep_sha256": "95cc8bc005dead7f10f6c613c38b3b37176188d33fdaf23a09af4a7a693ad038",
+      "xml_placement": {
+        "position_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selection_evidence": "Exact nonempty saved Shape entry selected from pinned original archive by read-only ZIP/XML inspection; no native validity or feature-history rebuild claim",
+      "uniform_density": null,
+      "tessellation": {
+        "linear_deflection_mm": 0.1,
+        "angular_deflection_rad": 0.2,
+        "relative": false,
+        "filename": "art4-transmission-column-cached-native-draft.stl"
+      },
+      "reference_capture": {
+        "frame_policy": "Raw saved BRep coordinates as stored in the selected archive entry. Apply no XML/object/ancestor/link placement while reading. Native worker must record the actual Shape.Placement and compare it separately with XML placement. No source-to-installed transform is inferred from bounds, COM or identity own placement.",
+        "input_canonical_sha256": {
+          "printable_asset_manifest": "4a0deebe94a6da554fc3ce7d56d749e0a639c2d2a127eb8f59cea0a360b4128d",
+          "source_inspection": "063784958f351e6ef676cf9be3145544b6ebd73d1bdcb1b74d22e645ea563a3b",
+          "mounted_inventory": "e52e699ff7c0d9e1dc3eedf9416e7e1da84ae6e13a5152cb5be6cd4f14b29c31",
+          "upstream_slicer_plan": "38aaaa84b2f2e6fed01b6e558e7ba4a651119aee848b4bdd421b81ff99ffb941"
+        },
+        "archive_shape_entry_bytes": 774154,
+        "archive_bytes": 1934896,
+        "document_xml_sha256": "06bbf6f5ac8f618ae08e0ce29ed6d4dfca1614f4ae2f28f4e0123ab15ab2a8a6",
+        "raw_xml_placement_attributes": {
+          "A": "0.0000000000000000",
+          "Ox": "0.0000000000000000",
+          "Oy": "0.0000000000000000",
+          "Oz": "1.0000000000000000",
+          "Px": "0.0000000000000000",
+          "Py": "0.0000000000000000",
+          "Pz": "0.0000000000000000",
+          "Q0": "0.0000000000000000",
+          "Q1": "0.0000000000000000",
+          "Q2": "0.0000000000000000",
+          "Q3": "1.0000000000000000"
+        },
+        "saved_xml_context": {
+          "object_saved_properties": {
+            "Placement": {
+              "tag": "Property",
+              "attributes": {
+                "name": "Placement",
+                "status": "8388608",
+                "type": "App::PropertyPlacement"
+              },
+              "children": [
+                {
+                  "tag": "PropertyPlacement",
+                  "attributes": {
+                    "A": "0.0000000000000000",
+                    "Ox": "0.0000000000000000",
+                    "Oy": "0.0000000000000000",
+                    "Oz": "1.0000000000000000",
+                    "Px": "0.0000000000000000",
+                    "Py": "0.0000000000000000",
+                    "Pz": "0.0000000000000000",
+                    "Q0": "0.0000000000000000",
+                    "Q1": "0.0000000000000000",
+                    "Q2": "0.0000000000000000",
+                    "Q3": "1.0000000000000000"
+                  }
+                }
+              ]
+            },
+            "Tip": {
+              "tag": "Property",
+              "attributes": {
+                "name": "Tip",
+                "type": "App::PropertyLink"
+              },
+              "children": [
+                {
+                  "tag": "Link",
+                  "attributes": {
+                    "value": "Pocket003"
+                  }
+                }
+              ]
+            },
+            "Group": {
+              "tag": "Property",
+              "attributes": {
+                "name": "Group",
+                "type": "App::PropertyLinkList"
+              },
+              "children": [
+                {
+                  "tag": "LinkList",
+                  "attributes": {
+                    "count": "22"
+                  },
+                  "children": [
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "BaseFeature"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Sketch"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Revolution"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Sketch001"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Pocket"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Sketch002"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Pocket001"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Sketch003"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Pocket002"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Sketch004"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Pocket003"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "LCS_Art4TransmissionColumn"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "LCS_OptoRing"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "LCS_Art4Body"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "HoleAxis_1"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "HoleAxis_2"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "HoleAxis_3"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "HoleAxis_4"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "HoleAxis_5"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "HoleAxis_6"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "HoleAxis_7"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "HoleAxis_8"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "ExpressionEngine": {
+              "tag": "Property",
+              "attributes": {
+                "name": "ExpressionEngine",
+                "status": "67108864",
+                "type": "App::PropertyExpressionEngine"
+              },
+              "children": [
+                {
+                  "tag": "ExpressionEngine",
+                  "attributes": {
+                    "count": "0"
+                  }
+                }
+              ]
+            }
+          },
+          "direct_containing_groups": [],
+          "saved_Source_link_context": [],
+          "context_interpretation": "saved XML only; no attachment evaluation, external-document execution or mounted transform recovery"
+        },
+        "preserved_raw_source_shape_reference": {
+          "frame": "native source raw Shape coordinates, mm",
+          "bounds_mm": {
+            "XMin": -37.88372701023379,
+            "XMax": 37.88372701023379,
+            "YMin": -37.88372701023378,
+            "YMax": 37.883727010233805,
+            "ZMin": -3.55e-15,
+            "ZMax": 76.00000000000001
+          },
+          "volume_mm3": 78484.25760901181,
+          "center_of_mass_mm": null,
+          "center_of_mass_status": "no_matching_raw-source_COM_field_in_these_preserved_captures"
+        },
+        "preserved_installed_references": [
+          {
+            "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4TransmissionColumn_Art4TransmissionColumn",
+            "volume_mm3": 78484.25760901181,
+            "zero_world_com_m": [
+              1.8862715586023272e-08,
+              -1.2746101728402854e-08,
+              0.42500960266232723
+            ],
+            "frame": "native Assembly::Model zero-pose frame, metres",
+            "source_to_installed_transform": null
+          }
+        ],
+        "installed_COM_is_not_raw_source_COM": true,
+        "frame_invariant_volume_reference_mm3": 78484.25760901181,
+        "volume_reference_scope": "Volume is invariant under rigid transforms/reflection; this reference does not recover a placement",
+        "mirrored_source_frame_correspondence": null
+      },
+      "upstream_stl_reference": {
+        "source_path": "stl/Art4TransmissionColumn.stl",
+        "sha256": "f62c1a9b123f354d3796c7610339678e283a51ea651351c7138fde3e8268530e",
+        "git_blob_sha1": "03cd04328bba267091716245c3896fb9c126cfb0",
+        "mesh_kind": "pinned_upstream_STL_not_this_native_BRep_export",
+        "mesh_comparison": {
+          "source_envelope_xyz_mm": [
+            75.76745402046758,
+            75.76745402046758,
+            76.00000000000001
+          ],
+          "mesh_envelope_xyz_interpreted_mm": [
+            70.0,
+            69.97824096679688,
+            76.0
+          ],
+          "axis_aligned_extent_delta_mm": [
+            -5.767454020467582,
+            -5.789213053670707,
+            -1.4210854715202004e-14
+          ],
+          "sorted_extent_absolute_delta_mm": [
+            5.789213053670707,
+            5.767454020467582,
+            1.4210854715202004e-14
+          ],
+          "source_volume_mm3": 78484.25760901181,
+          "mesh_absolute_signed_volume_proxy_mm3": 78420.22836871957,
+          "relative_volume_proxy_delta": -0.0008158227171009515,
+          "comparison_scope": "extent/volume diagnostics only; source STL may use a different frame or geometry revision; not native final-solid equivalence",
+          "native_source_hash": "f31295eaaf973347c73779e69ca33f095656b1e7bc4511eac5ce879aaaddbb2c"
+        },
+        "native_to_STL_transform": null
+      }
+    },
+    {
+      "selection_id": "gripper-finger-nominal",
+      "source_file": "freecad-src/GripperFinger.FCStd",
+      "source_sha256": "ab4daca4dd2f447029f4c76150b7f617fbdda74ae467cf6962938efe148d57a6",
+      "object_name": "Body",
+      "object_type": "PartDesign::Body",
+      "brep_entry": "PartShape.brp",
+      "brep_sha256": "3d0fb39b628be445fc9c72b8b3d4e4d13d357662278b39f6a62e4d170510771b",
+      "xml_placement": {
+        "position_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selection_evidence": "Exact nonempty saved Shape entry selected from pinned original archive by read-only ZIP/XML inspection; no native validity or feature-history rebuild claim",
+      "uniform_density": null,
+      "tessellation": {
+        "linear_deflection_mm": 0.1,
+        "angular_deflection_rad": 0.2,
+        "relative": false,
+        "filename": "gripper-finger-nominal-cached-native-draft.stl"
+      },
+      "reference_capture": {
+        "frame_policy": "Raw saved BRep coordinates as stored in the selected archive entry. Apply no XML/object/ancestor/link placement while reading. Native worker must record the actual Shape.Placement and compare it separately with XML placement. No source-to-installed transform is inferred from bounds, COM or identity own placement.",
+        "input_canonical_sha256": {
+          "printable_asset_manifest": "4a0deebe94a6da554fc3ce7d56d749e0a639c2d2a127eb8f59cea0a360b4128d",
+          "source_inspection": "063784958f351e6ef676cf9be3145544b6ebd73d1bdcb1b74d22e645ea563a3b",
+          "mounted_inventory": "e52e699ff7c0d9e1dc3eedf9416e7e1da84ae6e13a5152cb5be6cd4f14b29c31",
+          "upstream_slicer_plan": "38aaaa84b2f2e6fed01b6e558e7ba4a651119aee848b4bdd421b81ff99ffb941"
+        },
+        "archive_shape_entry_bytes": 68551,
+        "archive_bytes": 91555,
+        "document_xml_sha256": "5b4f8f67cc57f5417a02a0f40d1bcf5c925b986f1cf5ec1acfc82f3688094f20",
+        "raw_xml_placement_attributes": {
+          "A": "0.0000000000000000",
+          "Ox": "0.0000000000000000",
+          "Oy": "0.0000000000000000",
+          "Oz": "1.0000000000000000",
+          "Px": "0.0000000000000000",
+          "Py": "0.0000000000000000",
+          "Pz": "0.0000000000000000",
+          "Q0": "0.0000000000000000",
+          "Q1": "0.0000000000000000",
+          "Q2": "0.0000000000000000",
+          "Q3": "1.0000000000000000"
+        },
+        "saved_xml_context": {
+          "object_saved_properties": {
+            "Placement": {
+              "tag": "Property",
+              "attributes": {
+                "name": "Placement",
+                "status": "8388608",
+                "type": "App::PropertyPlacement"
+              },
+              "children": [
+                {
+                  "tag": "PropertyPlacement",
+                  "attributes": {
+                    "A": "0.0000000000000000",
+                    "Ox": "0.0000000000000000",
+                    "Oy": "0.0000000000000000",
+                    "Oz": "1.0000000000000000",
+                    "Px": "0.0000000000000000",
+                    "Py": "0.0000000000000000",
+                    "Pz": "0.0000000000000000",
+                    "Q0": "0.0000000000000000",
+                    "Q1": "0.0000000000000000",
+                    "Q2": "0.0000000000000000",
+                    "Q3": "1.0000000000000000"
+                  }
+                }
+              ]
+            },
+            "Tip": {
+              "tag": "Property",
+              "attributes": {
+                "name": "Tip",
+                "type": "App::PropertyLink"
+              },
+              "children": [
+                {
+                  "tag": "Link",
+                  "attributes": {
+                    "value": "Pocket003"
+                  }
+                }
+              ]
+            },
+            "Group": {
+              "tag": "Property",
+              "attributes": {
+                "name": "Group",
+                "type": "App::PropertyLinkList"
+              },
+              "children": [
+                {
+                  "tag": "LinkList",
+                  "attributes": {
+                    "count": "17"
+                  },
+                  "children": [
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Sketch"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Pad"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Sketch001"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Pocket"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Sketch002"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Pocket001"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Fillet"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Fillet001"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Sketch003"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Pocket002"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Sketch004"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "Pocket003"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "HoleAxis_1"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "HoleAxis_2"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "HoleAxis_3"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "HoleAxis_4"
+                      }
+                    },
+                    {
+                      "tag": "Link",
+                      "attributes": {
+                        "value": "LCS_GripperFinger"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "ExpressionEngine": {
+              "tag": "Property",
+              "attributes": {
+                "name": "ExpressionEngine",
+                "status": "67108864",
+                "type": "App::PropertyExpressionEngine"
+              },
+              "children": [
+                {
+                  "tag": "ExpressionEngine",
+                  "attributes": {
+                    "count": "0"
+                  }
+                }
+              ]
+            }
+          },
+          "direct_containing_groups": [],
+          "saved_Source_link_context": [],
+          "context_interpretation": "saved XML only; no attachment evaluation, external-document execution or mounted transform recovery"
+        },
+        "preserved_raw_source_shape_reference": {
+          "frame": "native source raw Shape coordinates, mm",
+          "bounds_mm": {
+            "XMin": -1.5242557054092885,
+            "XMax": 18.5,
+            "YMin": -1.78000000751573e-15,
+            "YMax": 61.524255705409296,
+            "ZMin": -4.440892098500626e-16,
+            "ZMax": 15.5
+          },
+          "volume_mm3": 12593.042562615727,
+          "center_of_mass_mm": null,
+          "center_of_mass_status": "no_matching_raw-source_COM_field_in_these_preserved_captures"
+        },
+        "preserved_installed_references": [
+          {
+            "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed1_GripperFinger",
+            "volume_mm3": 12593.04256261573,
+            "zero_world_com_m": [
+              -0.0001496004977267916,
+              0.04381730687865155,
+              0.673167737396456
+            ],
+            "frame": "native Assembly::Model zero-pose frame, metres",
+            "source_to_installed_transform": null
+          }
+        ],
+        "installed_COM_is_not_raw_source_COM": true,
+        "frame_invariant_volume_reference_mm3": 12593.042562615727,
+        "volume_reference_scope": "Volume is invariant under rigid transforms/reflection; this reference does not recover a placement",
+        "mirrored_source_frame_correspondence": null
+      },
+      "upstream_stl_reference": {
+        "source_path": "stl/GripperFinger.stl",
+        "sha256": "f0178f849a8e3ed9b071dba73d161dfd525e8f5e7dbf31e44788dc58c04776ac",
+        "git_blob_sha1": "3f2a3482a3e8102c8be2ba4211ec7c3692a2dbf5",
+        "mesh_kind": "pinned_upstream_STL_not_this_native_BRep_export",
+        "mesh_comparison": {
+          "source_envelope_xyz_mm": [
+            20.02425570540929,
+            61.524255705409296,
+            15.5
+          ],
+          "mesh_envelope_xyz_interpreted_mm": [
+            18.5,
+            60.0,
+            15.5
+          ],
+          "axis_aligned_extent_delta_mm": [
+            -1.5242557054092885,
+            -1.5242557054092956,
+            0.0
+          ],
+          "sorted_extent_absolute_delta_mm": [
+            0.0,
+            1.5242557054092885,
+            1.5242557054092956
+          ],
+          "source_volume_mm3": 12593.042562615727,
+          "mesh_absolute_signed_volume_proxy_mm3": 12590.996456800145,
+          "relative_volume_proxy_delta": -0.00016247906773980916,
+          "comparison_scope": "extent/volume diagnostics only; source STL may use a different frame or geometry revision; not native final-solid equivalence",
+          "native_source_hash": "ab4daca4dd2f447029f4c76150b7f617fbdda74ae467cf6962938efe148d57a6"
+        },
+        "native_to_STL_transform": null
+      }
+    },
+    {
+      "selection_id": "gripper-finger-reflected",
+      "source_file": "freecad-src/AssemblyArt56.FCStd",
+      "source_sha256": "a04836216dcae82eb033c15daba6e41dedb85b03f86ff21e56b77cdff835a473",
+      "object_name": "Unnamed1_GripperFinger_mirrored",
+      "object_type": "Part::Mirroring",
+      "brep_entry": "PartShape52.brp",
+      "brep_sha256": "72569677844f3cc4632795cafcf3a98f7c60429723cf75de2aa64a27147e682d",
+      "xml_placement": {
+        "position_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selection_evidence": "Exact nonempty saved Shape entry selected from pinned original archive by read-only ZIP/XML inspection; no native validity or feature-history rebuild claim",
+      "uniform_density": null,
+      "tessellation": {
+        "linear_deflection_mm": 0.1,
+        "angular_deflection_rad": 0.2,
+        "relative": false,
+        "filename": "gripper-finger-reflected-cached-native-draft.stl"
+      },
+      "reference_capture": {
+        "frame_policy": "Raw saved BRep coordinates as stored in the selected archive entry. Apply no XML/object/ancestor/link placement while reading. Native worker must record the actual Shape.Placement and compare it separately with XML placement. No source-to-installed transform is inferred from bounds, COM or identity own placement.",
+        "input_canonical_sha256": {
+          "printable_asset_manifest": "4a0deebe94a6da554fc3ce7d56d749e0a639c2d2a127eb8f59cea0a360b4128d",
+          "source_inspection": "063784958f351e6ef676cf9be3145544b6ebd73d1bdcb1b74d22e645ea563a3b",
+          "mounted_inventory": "e52e699ff7c0d9e1dc3eedf9416e7e1da84ae6e13a5152cb5be6cd4f14b29c31",
+          "upstream_slicer_plan": "38aaaa84b2f2e6fed01b6e558e7ba4a651119aee848b4bdd421b81ff99ffb941"
+        },
+        "archive_shape_entry_bytes": 69252,
+        "archive_bytes": 1258035,
+        "document_xml_sha256": "0a17f4d6d11a91664177995cdcf7618fbdf4de1a98e8800a257a271431e11f41",
+        "raw_xml_placement_attributes": {
+          "A": "0.0000000000000000",
+          "Ox": "0.0000000000000000",
+          "Oy": "0.0000000000000000",
+          "Oz": "1.0000000000000000",
+          "Px": "0.0000000000000000",
+          "Py": "0.0000000000000000",
+          "Pz": "0.0000000000000000",
+          "Q0": "0.0000000000000000",
+          "Q1": "0.0000000000000000",
+          "Q2": "0.0000000000000000",
+          "Q3": "1.0000000000000000"
+        },
+        "saved_xml_context": {
+          "object_saved_properties": {
+            "Placement": {
+              "tag": "Property",
+              "attributes": {
+                "name": "Placement",
+                "status": "8388608",
+                "type": "App::PropertyPlacement"
+              },
+              "children": [
+                {
+                  "tag": "PropertyPlacement",
+                  "attributes": {
+                    "A": "0.0000000000000000",
+                    "Ox": "0.0000000000000000",
+                    "Oy": "0.0000000000000000",
+                    "Oz": "1.0000000000000000",
+                    "Px": "0.0000000000000000",
+                    "Py": "0.0000000000000000",
+                    "Pz": "0.0000000000000000",
+                    "Q0": "0.0000000000000000",
+                    "Q1": "0.0000000000000000",
+                    "Q2": "0.0000000000000000",
+                    "Q3": "1.0000000000000000"
+                  }
+                }
+              ]
+            },
+            "Source": {
+              "tag": "Property",
+              "attributes": {
+                "name": "Source",
+                "type": "App::PropertyLink"
+              },
+              "children": [
+                {
+                  "tag": "Link",
+                  "attributes": {
+                    "value": "Unnamed1_GripperFinger_link"
+                  }
+                }
+              ]
+            },
+            "Base": {
+              "tag": "Property",
+              "attributes": {
+                "name": "Base",
+                "type": "App::PropertyPosition"
+              },
+              "children": [
+                {
+                  "tag": "PropertyVector",
+                  "attributes": {
+                    "valueX": "0.0000000000000000",
+                    "valueY": "0.0000000000000000",
+                    "valueZ": "0.0000000000000000"
+                  }
+                }
+              ]
+            },
+            "Normal": {
+              "tag": "Property",
+              "attributes": {
+                "name": "Normal",
+                "type": "App::PropertyDirection"
+              },
+              "children": [
+                {
+                  "tag": "PropertyVector",
+                  "attributes": {
+                    "valueX": "1.0000000000000000",
+                    "valueY": "0.0000000000000000",
+                    "valueZ": "0.0000000000000000"
+                  }
+                }
+              ]
+            },
+            "ExpressionEngine": {
+              "tag": "Property",
+              "attributes": {
+                "name": "ExpressionEngine",
+                "status": "67108864",
+                "type": "App::PropertyExpressionEngine"
+              },
+              "children": [
+                {
+                  "tag": "ExpressionEngine",
+                  "attributes": {
+                    "count": "0"
+                  }
+                }
+              ]
+            }
+          },
+          "direct_containing_groups": [
+            {
+              "name": "GripperFinger_sym",
+              "type": "App::Part",
+              "xml_placement": {
+                "position_mm": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "quaternion_xyzw": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "raw_xml_placement_attributes": {
+                "A": "0.0000000000000000",
+                "Ox": "0.0000000000000000",
+                "Oy": "0.0000000000000000",
+                "Oz": "1.0000000000000000",
+                "Px": "0.0000000000000000",
+                "Py": "0.0000000000000000",
+                "Pz": "0.0000000000000000",
+                "Q0": "0.0000000000000000",
+                "Q1": "0.0000000000000000",
+                "Q2": "0.0000000000000000",
+                "Q3": "1.0000000000000000"
+              },
+              "group_members": [
+                "LCS_GripperFinger_sym",
+                "Unnamed1_GripperFinger_link",
+                "Unnamed1_GripperFinger_mirrored",
+                "LCS_GripperFinger_sym001",
+                "HoleAxis_5",
+                "HoleAxis_6",
+                "HoleAxis_7",
+                "HoleAxis_8"
+              ]
+            }
+          ],
+          "saved_Source_link_context": [
+            {
+              "name": "Unnamed1_GripperFinger_link",
+              "type": "App::Link",
+              "saved_properties": {
+                "ExpressionEngine": {
+                  "tag": "Property",
+                  "attributes": {
+                    "name": "ExpressionEngine",
+                    "status": "67108864",
+                    "type": "App::PropertyExpressionEngine"
+                  },
+                  "children": [
+                    {
+                      "tag": "ExpressionEngine",
+                      "attributes": {
+                        "count": "0"
+                      }
+                    }
+                  ]
+                },
+                "LinkPlacement": {
+                  "tag": "Property",
+                  "attributes": {
+                    "name": "LinkPlacement",
+                    "status": "264",
+                    "type": "App::PropertyPlacement"
+                  },
+                  "children": [
+                    {
+                      "tag": "PropertyPlacement",
+                      "attributes": {
+                        "A": "0.0000000000000000",
+                        "Ox": "0.0000000000000000",
+                        "Oy": "0.0000000000000000",
+                        "Oz": "1.0000000000000000",
+                        "Px": "0.0000000000000000",
+                        "Py": "0.0000000000000000",
+                        "Pz": "0.0000000000000000",
+                        "Q0": "0.0000000000000000",
+                        "Q1": "0.0000000000000000",
+                        "Q2": "0.0000000000000000",
+                        "Q3": "1.0000000000000000"
+                      }
+                    }
+                  ]
+                },
+                "LinkTransform": {
+                  "tag": "Property",
+                  "attributes": {
+                    "name": "LinkTransform",
+                    "status": "256",
+                    "type": "App::PropertyBool"
+                  },
+                  "children": [
+                    {
+                      "tag": "Bool",
+                      "attributes": {
+                        "value": "false"
+                      }
+                    }
+                  ]
+                },
+                "LinkedObject": {
+                  "tag": "Property",
+                  "attributes": {
+                    "name": "LinkedObject",
+                    "status": "256",
+                    "type": "App::PropertyXLink"
+                  },
+                  "children": [
+                    {
+                      "tag": "XLink",
+                      "attributes": {
+                        "file": "",
+                        "name": "Unnamed1_GripperFinger",
+                        "stamp": ""
+                      }
+                    }
+                  ]
+                },
+                "Placement": {
+                  "tag": "Property",
+                  "attributes": {
+                    "name": "Placement",
+                    "status": "256",
+                    "type": "App::PropertyPlacement"
+                  },
+                  "children": [
+                    {
+                      "tag": "PropertyPlacement",
+                      "attributes": {
+                        "A": "0.0000000000000000",
+                        "Ox": "0.0000000000000000",
+                        "Oy": "0.0000000000000000",
+                        "Oz": "1.0000000000000000",
+                        "Px": "0.0000000000000000",
+                        "Py": "0.0000000000000000",
+                        "Pz": "0.0000000000000000",
+                        "Q0": "0.0000000000000000",
+                        "Q1": "0.0000000000000000",
+                        "Q2": "0.0000000000000000",
+                        "Q3": "1.0000000000000000"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "context_interpretation": "saved XML only; no attachment evaluation, external-document execution or mounted transform recovery"
+        },
+        "preserved_raw_source_shape_reference": null,
+        "preserved_installed_references": [
+          {
+            "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::GripperFinger_sym001/AssemblyArt56::Unnamed1_GripperFinger_mirrored",
+            "volume_mm3": 12593.042562615727,
+            "zero_world_com_m": [
+              8.88662707627379e-05,
+              -0.043817472145170254,
+              0.673167737396456
+            ],
+            "frame": "native Assembly::Model zero-pose frame, metres",
+            "source_to_installed_transform": null
+          }
+        ],
+        "installed_COM_is_not_raw_source_COM": true,
+        "frame_invariant_volume_reference_mm3": 12593.042562615727,
+        "volume_reference_scope": "Volume is invariant under rigid transforms/reflection; this reference does not recover a placement",
+        "mirrored_source_frame_correspondence": "actual saved mirrored BRep selected; its full source-to-installed frame relationship remains unverified"
+      },
+      "upstream_stl_reference": null
+    }
+  ]
+}

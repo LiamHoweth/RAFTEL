@@ -150,6 +150,73 @@ def test_no_captured_metrics_does_not_establish_equivalence(probe):
     assert not result["full_shape_equivalence_verified"]
 
 
+def generic_shape(solids):
+    identity = [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]
+    return SimpleNamespace(
+        isNull=lambda: False,
+        isValid=lambda: True,
+        Solids=solids,
+        Faces=[],
+        Edges=[],
+        Volume=sum(s.Volume for s in solids),
+        Area=0,
+        Length=20,
+        BoundBox=SimpleNamespace(XMin=0, XMax=10, YMin=0, YMax=10, ZMin=0, ZMax=10),
+        Placement=SimpleNamespace(toMatrix=lambda: SimpleNamespace(A=identity)),
+    )
+
+
+def test_generic_non_solid_brep_does_not_require_or_invent_center_of_mass(probe):
+    measured = probe["native_shape_metrics"](generic_shape([]))
+    assert measured["center_of_mass_mm"] is None
+    assert measured["solid_count"] == 0
+    assert measured["centroid_measurement"] == "unmeasured_no_available_volumetric_centroid"
+
+
+def test_generic_solid_brep_centroid_is_volume_weighted(probe):
+    shape = generic_shape(
+        [
+            SimpleNamespace(Volume=1, CenterOfMass=[0, 0, 0]),
+            SimpleNamespace(Volume=3, CenterOfMass=[4, 8, 12]),
+        ]
+    )
+    measured = probe["native_shape_metrics"](shape)
+    assert measured["center_of_mass_mm"] == [3, 6, 9]
+    assert measured["centroid_measurement"] == "volume_weighted_native_solid_centroids"
+
+
+def test_unbounded_datum_pseudovolume_is_not_ranked_as_solid_drift(probe):
+    shape = generic_shape([])
+    shape.Volume = 1e102
+    shape.BoundBox.XMin, shape.BoundBox.XMax = -1e100, 1e100
+    measured = probe["native_shape_metrics"](shape)
+    assert measured["volume_mm3"] is None
+    assert measured["raw_native_volume_mm3"] == 1e102
+    summary = probe["feature_drift_summary"](
+        {"DatumPlane": {"shape": measured}},
+        {
+            "DatumPlane": {
+                "shape": dict(measured, raw_native_volume_mm3=2e102),
+                "states": ["Up-to-date"],
+            }
+        },
+    )
+    assert summary["first_changed_captured_feature"] is None
+    assert summary["features"][0]["unmeasured_metric_fields"] == [
+        "unbounded_construction_geometry_metrics"
+    ]
+
+
+def test_unmeasured_centroid_remains_unknown_in_first_drift_summary(probe):
+    shape = probe["native_shape_metrics"](generic_shape([]))
+    summary = probe["feature_drift_summary"](
+        {"Sketch": {"shape": shape}},
+        {"Sketch": {"shape": shape, "states": ["Up-to-date"]}},
+    )
+    assert summary["features"][0]["unmeasured_metric_fields"] == ["volume_mm3", "center_of_mass_mm"]
+    assert not summary["full_shape_equivalence_verified"]
+
+
 def fixture_paths(tmp_path, probe):
     source = tmp_path / "upstream" / "Art1Body.fcstd"
     source.parent.mkdir()
@@ -193,6 +260,10 @@ def test_runner_uses_fresh_copy_isolated_preferences_and_explicit_opt_in(
     def fake_run(command, **kwargs):
         env = kwargs["env"]
         assert env["RAFTEL_RUN_THOR_ART1_PROBE"] == "1"
+        for variable in ("FREECAD_USER_HOME", "FREECAD_USER_DATA", "FREECAD_USER_TEMP"):
+            directory = Path(env[variable])
+            assert directory.is_dir()
+            assert directory.is_relative_to(output)
         assert command[1:5] == [
             "-u",
             str((output / "user.cfg").resolve()),
@@ -203,6 +274,10 @@ def test_runner_uses_fresh_copy_isolated_preferences_and_explicit_opt_in(
         assert Path(env["RAFTEL_THOR_ART1_COPY"]).resolve() != source.resolve()
         assert kwargs["timeout"] == 12
         assert kwargs["input"] == ""
+        capture_script = Path(command[-1])
+        assert capture_script.is_relative_to(output)
+        assert capture_script.read_bytes() == PATH.read_bytes()
+        assert (capture_script.parent / "thor_art1_diagnostics.py").is_file()
         digest = hashlib.sha256(source.read_bytes()).hexdigest()
         native = {
             "schema_version": 1,
@@ -239,6 +314,7 @@ def test_runner_uses_fresh_copy_isolated_preferences_and_explicit_opt_in(
     assert result["native_executable_sha256"] == executable_sha256
     assert result["executable_matches_caller_pin"]
     assert not result["full_runtime_and_addon_bundle_verified"]
+    assert result["capture_snapshot_bytes_unchanged"]
     assert (output / "runner.json").is_file()
 
 
@@ -366,6 +442,14 @@ def test_native_existing_session_rejected_without_touching_open_documents(
     }
     for key, value in env.items():
         monkeypatch.setenv(key, value)
+    for variable, folder in (
+        ("FREECAD_USER_HOME", "user-home"),
+        ("FREECAD_USER_DATA", "user-data"),
+        ("FREECAD_USER_TEMP", "user-temp"),
+    ):
+        directory = output / folder
+        directory.mkdir()
+        monkeypatch.setenv(variable, str(directory))
     globals_ = probe["native_capture"].__globals__
     monkeypatch.setitem(globals_["DIAGNOSTICS"], "source_fingerprint", lambda *args: {})
     monkeypatch.setitem(
@@ -379,3 +463,33 @@ def test_native_existing_session_rejected_without_touching_open_documents(
     assert "no documents already open" in result["errors"][0]["message"]
     assert not result["native_document_saved"]
     assert result["source_and_copy_bytes_unchanged"]
+
+
+def test_preserved_native_capture_ledger_keeps_conflicting_metrics_and_repair_gates():
+    ledger_path = ROOT / "hardware/cad/thor-art1-desktop-native-evidence-v1.json"
+    ledger = json.loads(ledger_path.read_text(encoding="utf-8"))
+    assert len(ledger["runs"]) == 6
+    assert all(value is False for value in ledger["qualification"].values())
+    assert ledger["preservation"]["source_saved"] is False
+    assert ledger["preservation"]["new_candidate_saved"] is False
+    for run in ledger["runs"]:
+        capture_path = ROOT.parent / run["capture_path"]
+        assert hashlib.sha256(capture_path.read_bytes()).hexdigest() == run["capture_sha256"]
+        capture = json.loads(capture_path.read_text(encoding="utf-8"))
+        assert capture["source_and_copy_bytes_unchanged"]
+        assert not capture["native_document_saved"]
+        assert not capture["migration_accepted"]
+    gate = ledger["detailed_through_all_gate"]
+    assert gate["source_object_count"] == 89
+    assert gate["runtime_object_count"] == 90
+    assert gate["assembly_target_name_type_contract_preserved"]
+    assert len(gate["datum_threshold_failures"]) == 14
+    body = gate["body_geometry_comparison"]
+    assert body["source_minus_attempted_mm3"] == body["attempted_minus_source_mm3"] == 0
+    assert body["saved"]["volume_mm3"] - body["attempted"]["volume_mm3"] > 3.65
+    assert not body["equivalence_accepted"]
+    removed = gate["removed_bolt_solid_comparison"]
+    saved_algebraic = ledger["runs"][-1]["algebraic_base_minus_pocket_mm3"]["source_saved_brep"][
+        "Pocket"
+    ]
+    assert abs(saved_algebraic - removed["saved"]["volume_mm3"]) > 0.8

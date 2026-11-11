@@ -1,0 +1,1468 @@
+{
+  "schema_version": 1,
+  "evidence_class": "host_STL_audit_of_selected_native_cached_exports_not_surface_or_physical_qualification",
+  "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+  "audit_mode": "ordinary_Python_host_only_no_native_process_or_mesh_repair",
+  "input_bindings": {
+    "native_capture_raw_sha256": "c8498b9eee2f81a391d6813ef0513cfce2ab3b20d11f750a5daba3b18ccd854c",
+    "launcher_raw_sha256": "074fc5121f4ca065b557979cc4a59b08d1072b09656a1230926cb1921126e166",
+    "request_raw_sha256": "5835d9740e02324ca6ea8a1b012c78d013ab01d8749eef71fe1d62b395b20b01",
+    "upstream_plan_canonical_sha256": "38aaaa84b2f2e6fed01b6e558e7ba4a651119aee848b4bdd421b81ff99ffb941"
+  },
+  "native_run_context": {
+    "capture_script_sha256": "3175d54684cca3b7eb4fad4490845f926b9c125060afa6d9ad2a64d7fe1d5d34",
+    "runner_declared_executable_sha256": "1692e54224b48989974e8b91d3ac7a38d1d502d3db4dee1d4cf79ba91356e42d",
+    "full_runtime_bundle_verified_by_worker": false,
+    "freecad_version": [
+      "1",
+      "1",
+      "4",
+      "20260928 (Git shallow)",
+      "Unknown",
+      "2026/09/28 13:46:34",
+      "(HEAD detached at 4fd3bf320)",
+      "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+    ],
+    "opencascade_version": "7.8.1",
+    "fixture_summary": {
+      "verified": true,
+      "case_count": 9,
+      "maximum_relative_volume_error": 2.823443157514334e-16,
+      "maximum_com_error_mm": 8.881784197001252e-16,
+      "maximum_relative_tensor_error": 4.4011999916468124e-15,
+      "contract": "Solid.MatrixOfInertia is centroidal geometric mm^5 in parallel storage-frame axes; aggregate solids in their one common BRep frame"
+    },
+    "originals_and_copies_unchanged": true,
+    "document_opened_recomputed_or_saved": false,
+    "source_execution_authentication_boundary": "Worker checks requested archive/BRep/XML pins; launcher and independent audit must authenticate those hashes against the declared upstream revision."
+  },
+  "counts": {
+    "selected_exports": 8,
+    "candidate_geometry_variants": 7,
+    "blocked_geometry_variants": 1,
+    "candidate_installed_instances": 11,
+    "blocked_installed_instances": 1
+  },
+  "selections": [
+    {
+      "selection_id": "base-top",
+      "source_reference": "BaseTop::Body",
+      "installed_asset_id": "BaseTop::Body",
+      "geometry_variant": "nominal",
+      "installed_quantity": 1,
+      "source_binding": {
+        "source_file": "freecad-src/BaseTop.fcstd",
+        "source_sha256": "cad90f1414909eaa797edb9bc00a685c3f0856cfa4be5abbcd539afb96417490",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "798ede264d95a7bd495aee52a2cb6b08975a3e11eb2536a4b35d95a6527abdb6",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_export": {
+        "filename": "base-top-cached-native-draft.stl",
+        "sha256": "80bda88d73eee0b39e79398dcd243e8fd01ab73e8d6397c182935ffe35880fb8",
+        "bytes": 105284,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 1046,
+        "triangle_count": 2104,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "base-top-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false
+      },
+      "mesh": {
+        "encoding": "binary",
+        "triangle_count": 2104,
+        "exact_vertex_count": 1046,
+        "connected_components_by_vertex": 1,
+        "bounds_interpreted_mm": {
+          "min": [
+            -74.95111083984375,
+            -74.98777770996094,
+            -5.699999798330566e-14
+          ],
+          "max": [
+            75.0,
+            74.98777770996094,
+            27.5
+          ]
+        },
+        "envelope_xyz_interpreted_mm": [
+          149.95111083984375,
+          149.97555541992188,
+          27.500000000000057
+        ],
+        "surface_area_interpreted_mm2": 42176.19555408943,
+        "algebraic_signed_volume_interpreted_mm3": 222240.5449651501,
+        "absolute_signed_volume_interpreted_mm3": 222240.5449651501,
+        "topology": {
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "nonmanifold_vertices": 0,
+          "inconsistent_winding_edges": 0,
+          "duplicate_facets": 0,
+          "zero_area_facets": 0,
+          "closed_consistently_oriented_two_manifold": true,
+          "exact_vertex_matching_no_weld": true
+        },
+        "stored_normal_warnings": {
+          "zero_normals": 0,
+          "opposed_to_winding": 0
+        },
+        "nonzero_binary_attribute_words": 0,
+        "self_intersections": "not_checked",
+        "units": "STL_unitless_coordinates_explicitly_interpreted_as_mm_not_encoded_units",
+        "solid_fidelity": "not_established_by_topology_bounds_or_volume"
+      },
+      "native_comparison": {
+        "native_bounds_mm": {
+          "XMin": -75.0,
+          "XMax": 75.0,
+          "YMin": -75.0,
+          "YMax": 75.00000000000001,
+          "ZMin": -4.95e-14,
+          "ZMax": 27.50000000000005
+        },
+        "native_volume_mm3": 222336.2316002709,
+        "native_raw_com_mm": [
+          3.324862026671749e-14,
+          1.2668090598821867e-14,
+          13.998443478287275
+        ],
+        "native_raw_shape_placement_matrix_not_reapplied": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "mesh_bound_delta_min_mm": [
+          0.04888916015625,
+          0.0122222900390625,
+          -7.499997983305658e-15
+        ],
+        "mesh_bound_delta_max_mm": [
+          0.0,
+          -0.01222229003907671,
+          -4.973799150320701e-14
+        ],
+        "inside_native_bounds_at_float32_serialization_tolerance": true,
+        "float32_bound_comparison_tolerance_mm": 1.5000000000000002e-05,
+        "relative_winding_volume_proxy_delta": -0.00043036906055349267,
+        "coarse_unit_scale_sanity_band": [
+          0.9,
+          1.1
+        ],
+        "scale_screen_is_not_surface_or_manufacturing_tolerance": true,
+        "bidirectional_surface_distance_mm": null,
+        "native_mesh_surface_equivalence_established": false
+      },
+      "upstream_comparison": {
+        "upstream_source_path": "stl/BaseTop.stl",
+        "upstream_sha256": "a1046a975f0d0a1405f314fb094461657c5495c3650ea7c22d56b9c1bc6b6f2b",
+        "upstream_topology": {
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "nonmanifold_vertices": 0,
+          "inconsistent_winding_edges": 0,
+          "duplicate_facets": 0,
+          "zero_area_facets": 0,
+          "closed_consistently_oriented_two_manifold": true,
+          "exact_vertex_matching_no_weld": true
+        },
+        "upstream_triangle_count": 3666,
+        "native_export_triangle_count": 2104,
+        "extent_delta_from_upstream_xyz_mm": [
+          -0.04888916015625,
+          0.0221710205078125,
+          0.0
+        ],
+        "signed_volume_proxy_delta_from_upstream_mm3": -25.714317835168913,
+        "geometry_equivalence_or_common_native_to_STL_transform_established": false
+      },
+      "draft_candidate": true,
+      "blockers": [],
+      "installed_frame_correspondence": null,
+      "qualification": {
+        "self_intersections_checked": false,
+        "surface_fidelity_qualified": false,
+        "printed_strength_or_fit": false,
+        "manufacturing_release": false
+      }
+    },
+    {
+      "selection_id": "base-bearing-fix",
+      "source_reference": "BaseBearingFix::Body",
+      "installed_asset_id": "BaseBearingFix::Body",
+      "geometry_variant": "nominal",
+      "installed_quantity": 1,
+      "source_binding": {
+        "source_file": "freecad-src/BaseBearingFix.fcstd",
+        "source_sha256": "a8ddcd5f8aee6cc4ff33671e3c27e2d3029fe334f4f02baeb579eb6ecaadec82",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "c0f869fab89cb05a4725ca3755924309e17eed89dabf44f23559fb208f272cec",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_export": {
+        "filename": "base-bearing-fix-cached-native-draft.stl",
+        "sha256": "12c53ca3815a7ab2614fcfe004978a0a0201551edf03c847950fea9ee30edf19",
+        "bytes": 107684,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 1070,
+        "triangle_count": 2152,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "base-bearing-fix-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false
+      },
+      "mesh": {
+        "encoding": "binary",
+        "triangle_count": 2152,
+        "exact_vertex_count": 1070,
+        "connected_components_by_vertex": 1,
+        "bounds_interpreted_mm": {
+          "min": [
+            -74.95111083984375,
+            -74.98777770996094,
+            0.0
+          ],
+          "max": [
+            75.0,
+            74.98777770996094,
+            5.0
+          ]
+        },
+        "envelope_xyz_interpreted_mm": [
+          149.95111083984375,
+          149.97555541992188,
+          5.0
+        ],
+        "surface_area_interpreted_mm2": 24317.495583702024,
+        "algebraic_signed_volume_interpreted_mm3": 50316.27285533601,
+        "absolute_signed_volume_interpreted_mm3": 50316.27285533601,
+        "topology": {
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "nonmanifold_vertices": 0,
+          "inconsistent_winding_edges": 0,
+          "duplicate_facets": 0,
+          "zero_area_facets": 0,
+          "closed_consistently_oriented_two_manifold": true,
+          "exact_vertex_matching_no_weld": true
+        },
+        "stored_normal_warnings": {
+          "zero_normals": 0,
+          "opposed_to_winding": 0
+        },
+        "nonzero_binary_attribute_words": 0,
+        "self_intersections": "not_checked",
+        "units": "STL_unitless_coordinates_explicitly_interpreted_as_mm_not_encoded_units",
+        "solid_fidelity": "not_established_by_topology_bounds_or_volume"
+      },
+      "native_comparison": {
+        "native_bounds_mm": {
+          "XMin": -75.0,
+          "XMax": 75.0,
+          "YMin": -75.0,
+          "YMax": 75.0,
+          "ZMin": -1.7763568394002505e-15,
+          "ZMax": 5.000000000000001
+        },
+        "native_volume_mm3": 50341.94096864344,
+        "native_raw_com_mm": [
+          2.0482714776081538e-15,
+          -1.833733671243463e-15,
+          2.49673543446024
+        ],
+        "native_raw_shape_placement_matrix_not_reapplied": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "mesh_bound_delta_min_mm": [
+          0.04888916015625,
+          0.0122222900390625,
+          1.7763568394002505e-15
+        ],
+        "mesh_bound_delta_max_mm": [
+          0.0,
+          -0.0122222900390625,
+          -8.881784197001252e-16
+        ],
+        "inside_native_bounds_at_float32_serialization_tolerance": true,
+        "float32_bound_comparison_tolerance_mm": 1.4999999999999999e-05,
+        "relative_winding_volume_proxy_delta": -0.0005098753209261675,
+        "coarse_unit_scale_sanity_band": [
+          0.9,
+          1.1
+        ],
+        "scale_screen_is_not_surface_or_manufacturing_tolerance": true,
+        "bidirectional_surface_distance_mm": null,
+        "native_mesh_surface_equivalence_established": false
+      },
+      "upstream_comparison": {
+        "upstream_source_path": "stl/BaseBearingFix.stl",
+        "upstream_sha256": "418c384c89808d8ed28d43005d69ec3d66e5378b548fd718249578586906ac06",
+        "upstream_topology": {
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "nonmanifold_vertices": 0,
+          "inconsistent_winding_edges": 0,
+          "duplicate_facets": 0,
+          "zero_area_facets": 0,
+          "closed_consistently_oriented_two_manifold": true,
+          "exact_vertex_matching_no_weld": true
+        },
+        "upstream_triangle_count": 4044,
+        "native_export_triangle_count": 2152,
+        "extent_delta_from_upstream_xyz_mm": [
+          -0.04888916015625,
+          0.0221710205078125,
+          0.0
+        ],
+        "signed_volume_proxy_delta_from_upstream_mm3": -4.805982170153584,
+        "geometry_equivalence_or_common_native_to_STL_transform_established": false
+      },
+      "draft_candidate": true,
+      "blockers": [],
+      "installed_frame_correspondence": null,
+      "qualification": {
+        "self_intersections_checked": false,
+        "surface_fidelity_qualified": false,
+        "printed_strength_or_fit": false,
+        "manufacturing_release": false
+      }
+    },
+    {
+      "selection_id": "common-bearing-fix",
+      "source_reference": "CommonBearingFix::Body",
+      "installed_asset_id": "CommonBearingFix::Body",
+      "geometry_variant": "nominal",
+      "installed_quantity": 4,
+      "source_binding": {
+        "source_file": "freecad-src/CommonBearingFix.fcstd",
+        "source_sha256": "cf0d6322f0c0a947079c2a3782dcf878feb71a0e34b0de220c3722a24ec8e72b",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "d5926a093c6e4f71b844d5eb06a950ffe48bad0df844c2a9d9f1b2e502f9f77a",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_export": {
+        "filename": "common-bearing-fix-cached-native-draft.stl",
+        "sha256": "21e4dce1081e09a15a2189f2800025592f67b4b427b8f4e1e7ae4d6bf5eb2306",
+        "bytes": 61084,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 608,
+        "triangle_count": 1220,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "common-bearing-fix-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false
+      },
+      "mesh": {
+        "encoding": "binary",
+        "triangle_count": 1220,
+        "exact_vertex_count": 608,
+        "connected_components_by_vertex": 1,
+        "bounds_interpreted_mm": {
+          "min": [
+            -15.0,
+            -7.890181541442871,
+            0.0
+          ],
+          "max": [
+            15.0,
+            7.890181541442871,
+            4.0
+          ]
+        },
+        "envelope_xyz_interpreted_mm": [
+          30.0,
+          15.780363082885742,
+          4.0
+        ],
+        "surface_area_interpreted_mm2": 1000.1625592114151,
+        "algebraic_signed_volume_interpreted_mm3": 982.524985056714,
+        "absolute_signed_volume_interpreted_mm3": 982.524985056714,
+        "topology": {
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "nonmanifold_vertices": 0,
+          "inconsistent_winding_edges": 0,
+          "duplicate_facets": 0,
+          "zero_area_facets": 0,
+          "closed_consistently_oriented_two_manifold": true,
+          "exact_vertex_matching_no_weld": true
+        },
+        "stored_normal_warnings": {
+          "zero_normals": 0,
+          "opposed_to_winding": 0
+        },
+        "nonzero_binary_attribute_words": 0,
+        "self_intersections": "not_checked",
+        "units": "STL_unitless_coordinates_explicitly_interpreted_as_mm_not_encoded_units",
+        "solid_fidelity": "not_established_by_topology_bounds_or_volume"
+      },
+      "native_comparison": {
+        "native_bounds_mm": {
+          "XMin": -15.0,
+          "XMax": 15.0,
+          "YMin": -7.9,
+          "YMax": 7.9,
+          "ZMin": 0.0,
+          "ZMax": 4.0
+        },
+        "native_volume_mm3": 983.1716475189406,
+        "native_raw_com_mm": [
+          -4.047146121735478e-16,
+          -9.147984369927724e-16,
+          1.944280816035313
+        ],
+        "native_raw_shape_placement_matrix_not_reapplied": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "mesh_bound_delta_min_mm": [
+          0.0,
+          0.009818458557129262,
+          0.0
+        ],
+        "mesh_bound_delta_max_mm": [
+          0.0,
+          -0.009818458557129262,
+          0.0
+        ],
+        "inside_native_bounds_at_float32_serialization_tolerance": true,
+        "float32_bound_comparison_tolerance_mm": 1e-05,
+        "relative_winding_volume_proxy_delta": -0.0006577309911840468,
+        "coarse_unit_scale_sanity_band": [
+          0.9,
+          1.1
+        ],
+        "scale_screen_is_not_surface_or_manufacturing_tolerance": true,
+        "bidirectional_surface_distance_mm": null,
+        "native_mesh_surface_equivalence_established": false
+      },
+      "upstream_comparison": {
+        "upstream_source_path": "stl/CommonBearingFix.stl",
+        "upstream_sha256": "7379ce4217c8b55254c52bd0e660ea00dadaf537fae61cda99953850f911468e",
+        "upstream_topology": {
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "nonmanifold_vertices": 0,
+          "inconsistent_winding_edges": 0,
+          "duplicate_facets": 0,
+          "zero_area_facets": 0,
+          "closed_consistently_oriented_two_manifold": true,
+          "exact_vertex_matching_no_weld": true
+        },
+        "upstream_triangle_count": 540,
+        "native_export_triangle_count": 1220,
+        "extent_delta_from_upstream_xyz_mm": [
+          0.0,
+          -0.019637107849121094,
+          0.0
+        ],
+        "signed_volume_proxy_delta_from_upstream_mm3": 1.0651146663902864,
+        "geometry_equivalence_or_common_native_to_STL_transform_established": false
+      },
+      "draft_candidate": true,
+      "blockers": [],
+      "installed_frame_correspondence": null,
+      "qualification": {
+        "self_intersections_checked": false,
+        "surface_fidelity_qualified": false,
+        "printed_strength_or_fit": false,
+        "manufacturing_release": false
+      }
+    },
+    {
+      "selection_id": "art2-window",
+      "source_reference": "Art2BodyAWindow::Body",
+      "installed_asset_id": "Art2BodyAWindow::Body",
+      "geometry_variant": "nominal",
+      "installed_quantity": 1,
+      "source_binding": {
+        "source_file": "freecad-src/Art2BodyAWindow.fcstd",
+        "source_sha256": "ced59ddf86e57b3f3615bb4ee44d96b75b7032a9239733845a26e8e334941e98",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "1bf191b3a417f60f6814143f39bb06068f6ac5a39d1a598390ae26edae6d78ba",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_export": {
+        "filename": "art2-window-cached-native-draft.stl",
+        "sha256": "280b420e4dcddb8cf14f5aae155534dd511f39b570936558dbf3187ad44aaf41",
+        "bytes": 168584,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 1671,
+        "triangle_count": 3370,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "art2-window-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false
+      },
+      "mesh": {
+        "encoding": "binary",
+        "triangle_count": 3370,
+        "exact_vertex_count": 1671,
+        "connected_components_by_vertex": 1,
+        "bounds_interpreted_mm": {
+          "min": [
+            -48.79999923706055,
+            -48.75086212158203,
+            -1.6234036955432157e-13
+          ],
+          "max": [
+            48.79999923706055,
+            48.77144241333008,
+            11.0
+          ]
+        },
+        "envelope_xyz_interpreted_mm": [
+          97.5999984741211,
+          97.52230453491211,
+          11.000000000000162
+        ],
+        "surface_area_interpreted_mm2": 17779.709396747003,
+        "algebraic_signed_volume_interpreted_mm3": 38953.97377633785,
+        "absolute_signed_volume_interpreted_mm3": 38953.97377633785,
+        "topology": {
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "nonmanifold_vertices": 0,
+          "inconsistent_winding_edges": 0,
+          "duplicate_facets": 0,
+          "zero_area_facets": 0,
+          "closed_consistently_oriented_two_manifold": true,
+          "exact_vertex_matching_no_weld": true
+        },
+        "stored_normal_warnings": {
+          "zero_normals": 0,
+          "opposed_to_winding": 0
+        },
+        "nonzero_binary_attribute_words": 0,
+        "self_intersections": "not_checked",
+        "units": "STL_unitless_coordinates_explicitly_interpreted_as_mm_not_encoded_units",
+        "solid_fidelity": "not_established_by_topology_bounds_or_volume"
+      },
+      "native_comparison": {
+        "native_bounds_mm": {
+          "XMin": -48.799999999999955,
+          "XMax": 48.799999999999955,
+          "YMin": -48.799999999999955,
+          "YMax": 48.799999999999976,
+          "ZMin": -1.6250399999999985e-13,
+          "ZMax": 11.000000000000014
+        },
+        "native_volume_mm3": 39011.93801416927,
+        "native_raw_com_mm": [
+          4.236792169250291e-11,
+          1.8045596851162218e-14,
+          2.9357867455168325
+        ],
+        "native_raw_shape_placement_matrix_not_reapplied": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "mesh_bound_delta_min_mm": [
+          7.629394076502649e-07,
+          0.049137878417923275,
+          1.6363044567827659e-16
+        ],
+        "mesh_bound_delta_max_mm": [
+          -7.629394076502649e-07,
+          -0.028557586669897717,
+          -1.4210854715202004e-14
+        ],
+        "inside_native_bounds_at_float32_serialization_tolerance": true,
+        "float32_bound_comparison_tolerance_mm": 1e-05,
+        "relative_winding_volume_proxy_delta": -0.0014858076984117785,
+        "coarse_unit_scale_sanity_band": [
+          0.9,
+          1.1
+        ],
+        "scale_screen_is_not_surface_or_manufacturing_tolerance": true,
+        "bidirectional_surface_distance_mm": null,
+        "native_mesh_surface_equivalence_established": false
+      },
+      "upstream_comparison": {
+        "upstream_source_path": "stl/Art2BodyAWindow.stl",
+        "upstream_sha256": "4a9e72245dbbdfdcb3f855a46783ec3720dd7493696e41929002652663441493",
+        "upstream_topology": {
+          "boundary_edges": 504,
+          "nonmanifold_edges": 0,
+          "nonmanifold_vertices": 0,
+          "inconsistent_winding_edges": 0,
+          "duplicate_facets": 0,
+          "zero_area_facets": 0,
+          "closed_consistently_oriented_two_manifold": false,
+          "exact_vertex_matching_no_weld": true
+        },
+        "upstream_triangle_count": 6692,
+        "native_export_triangle_count": 3370,
+        "extent_delta_from_upstream_xyz_mm": [
+          0.0,
+          -0.067413330078125,
+          0.0
+        ],
+        "signed_volume_proxy_delta_from_upstream_mm3": -40.979218302200024,
+        "geometry_equivalence_or_common_native_to_STL_transform_established": false
+      },
+      "draft_candidate": true,
+      "blockers": [],
+      "installed_frame_correspondence": null,
+      "qualification": {
+        "self_intersections_checked": false,
+        "surface_fidelity_qualified": false,
+        "printed_strength_or_fit": false,
+        "manufacturing_release": false
+      }
+    },
+    {
+      "selection_id": "art3-tensioner-body",
+      "source_reference": "Art3TensionerBody::Body",
+      "installed_asset_id": "Art3TensionerBody::Body",
+      "geometry_variant": "nominal",
+      "installed_quantity": 2,
+      "source_binding": {
+        "source_file": "freecad-src/Art3TensionerBody.fcstd",
+        "source_sha256": "f105e77dbb72523f842e58b9bcd9a54c3ec5f5eaf771a0798851cf7f13752a55",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "e3ddeed778265d533c28e93dcf38af4ca7dbf021c7111cf18175976ef1adefcb",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_export": {
+        "filename": "art3-tensioner-body-cached-native-draft.stl",
+        "sha256": "ff90420848c5fb07b472a87cf268039014d000723a57ada408074b7f9f9b10e6",
+        "bytes": 40284,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 400,
+        "triangle_count": 804,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "art3-tensioner-body-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false
+      },
+      "mesh": {
+        "encoding": "binary",
+        "triangle_count": 804,
+        "exact_vertex_count": 400,
+        "connected_components_by_vertex": 1,
+        "bounds_interpreted_mm": {
+          "min": [
+            -5.699999809265137,
+            -13.5,
+            0.0
+          ],
+          "max": [
+            5.699999809265137,
+            4.99999991225835e-15,
+            10.600000381469727
+          ]
+        },
+        "envelope_xyz_interpreted_mm": [
+          11.399999618530273,
+          13.500000000000005,
+          10.600000381469727
+        ],
+        "surface_area_interpreted_mm2": 966.4071257357201,
+        "algebraic_signed_volume_interpreted_mm3": 872.7563602734925,
+        "absolute_signed_volume_interpreted_mm3": 872.7563602734925,
+        "topology": {
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "nonmanifold_vertices": 0,
+          "inconsistent_winding_edges": 0,
+          "duplicate_facets": 0,
+          "zero_area_facets": 0,
+          "closed_consistently_oriented_two_manifold": true,
+          "exact_vertex_matching_no_weld": true
+        },
+        "stored_normal_warnings": {
+          "zero_normals": 0,
+          "opposed_to_winding": 0
+        },
+        "nonzero_binary_attribute_words": 0,
+        "self_intersections": "not_checked",
+        "units": "STL_unitless_coordinates_explicitly_interpreted_as_mm_not_encoded_units",
+        "solid_fidelity": "not_established_by_topology_bounds_or_volume"
+      },
+      "native_comparison": {
+        "native_bounds_mm": {
+          "XMin": -5.7,
+          "XMax": 5.7,
+          "YMin": -13.5,
+          "YMax": 7.06e-15,
+          "ZMin": 0.0,
+          "ZMax": 10.600000000000009
+        },
+        "native_volume_mm3": 872.4812942676833,
+        "native_raw_com_mm": [
+          -2.8340879474334156e-15,
+          -6.74429550294441,
+          5.2887225288164155
+        ],
+        "native_raw_shape_placement_matrix_not_reapplied": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "mesh_bound_delta_min_mm": [
+          1.9073486345888568e-07,
+          0.0,
+          0.0
+        ],
+        "mesh_bound_delta_max_mm": [
+          -1.9073486345888568e-07,
+          -2.06000008774165e-15,
+          3.8146971803598717e-07
+        ],
+        "inside_native_bounds_at_float32_serialization_tolerance": true,
+        "float32_bound_comparison_tolerance_mm": 1e-05,
+        "relative_winding_volume_proxy_delta": 0.0003152686568943519,
+        "coarse_unit_scale_sanity_band": [
+          0.9,
+          1.1
+        ],
+        "scale_screen_is_not_surface_or_manufacturing_tolerance": true,
+        "bidirectional_surface_distance_mm": null,
+        "native_mesh_surface_equivalence_established": false
+      },
+      "upstream_comparison": {
+        "upstream_source_path": "stl/Art3TensionerBody.stl",
+        "upstream_sha256": "274f9b05fdf294b297400cee0c45248f8f1b971dd147e29a8c03d07a5371f9ad",
+        "upstream_topology": {
+          "boundary_edges": 6,
+          "nonmanifold_edges": 0,
+          "nonmanifold_vertices": 0,
+          "inconsistent_winding_edges": 0,
+          "duplicate_facets": 0,
+          "zero_area_facets": 0,
+          "closed_consistently_oriented_two_manifold": false,
+          "exact_vertex_matching_no_weld": true
+        },
+        "upstream_triangle_count": 360,
+        "native_export_triangle_count": 804,
+        "extent_delta_from_upstream_xyz_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "signed_volume_proxy_delta_from_upstream_mm3": -1.335881677895486,
+        "geometry_equivalence_or_common_native_to_STL_transform_established": false
+      },
+      "draft_candidate": true,
+      "blockers": [],
+      "installed_frame_correspondence": null,
+      "qualification": {
+        "self_intersections_checked": false,
+        "surface_fidelity_qualified": false,
+        "printed_strength_or_fit": false,
+        "manufacturing_release": false
+      }
+    },
+    {
+      "selection_id": "art4-transmission-column",
+      "source_reference": "Art4TransmissionColumn::Body",
+      "installed_asset_id": "Art4TransmissionColumn::Body",
+      "geometry_variant": "nominal",
+      "installed_quantity": 1,
+      "source_binding": {
+        "source_file": "freecad-src/Art4TransmissionColumn.fcstd",
+        "source_sha256": "f31295eaaf973347c73779e69ca33f095656b1e7bc4511eac5ce879aaaddbb2c",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape1.brp",
+        "brep_sha256": "95cc8bc005dead7f10f6c613c38b3b37176188d33fdaf23a09af4a7a693ad038",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_export": {
+        "filename": "art4-transmission-column-cached-native-draft.stl",
+        "sha256": "dd007abd74dcfd50c6311ea98c7d26bd1f07e2d6267b8ddd303c21f4ed1d2cda",
+        "bytes": 700884,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 6988,
+        "triangle_count": 14016,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "art4-transmission-column-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false
+      },
+      "mesh": {
+        "encoding": "binary",
+        "triangle_count": 14016,
+        "exact_vertex_count": 6988,
+        "connected_components_by_vertex": 1,
+        "bounds_interpreted_mm": {
+          "min": [
+            -34.95649337768555,
+            -34.98912048339844,
+            -4.000000014509975e-15
+          ],
+          "max": [
+            35.0,
+            34.98912048339844,
+            76.0
+          ]
+        },
+        "envelope_xyz_interpreted_mm": [
+          69.95649337768555,
+          69.97824096679688,
+          76.0
+        ],
+        "surface_area_interpreted_mm2": 26545.39903093673,
+        "algebraic_signed_volume_interpreted_mm3": 78300.861160232,
+        "absolute_signed_volume_interpreted_mm3": 78300.861160232,
+        "topology": {
+          "boundary_edges": 0,
+          "nonmanifold_edges": 3,
+          "nonmanifold_vertices": 4,
+          "inconsistent_winding_edges": 0,
+          "duplicate_facets": 0,
+          "zero_area_facets": 0,
+          "closed_consistently_oriented_two_manifold": false,
+          "exact_vertex_matching_no_weld": true
+        },
+        "stored_normal_warnings": {
+          "zero_normals": 0,
+          "opposed_to_winding": 0
+        },
+        "nonzero_binary_attribute_words": 0,
+        "self_intersections": "not_checked",
+        "units": "STL_unitless_coordinates_explicitly_interpreted_as_mm_not_encoded_units",
+        "solid_fidelity": "not_established_by_topology_bounds_or_volume"
+      },
+      "native_comparison": {
+        "native_bounds_mm": {
+          "XMin": -37.88372701023379,
+          "XMax": 37.88372701023379,
+          "YMin": -37.88372701023378,
+          "YMax": 37.883727010233805,
+          "ZMin": -3.55e-15,
+          "ZMax": 76.00000000000001
+        },
+        "native_volume_mm3": 78484.25760901181,
+        "native_raw_com_mm": [
+          4.3250991503408155e-06,
+          -2.2350809083218857e-05,
+          49.50960266232722
+        ],
+        "native_raw_shape_placement_matrix_not_reapplied": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "mesh_bound_delta_min_mm": [
+          2.927233632548244,
+          2.8946065268353394,
+          -4.500000145099748e-16
+        ],
+        "mesh_bound_delta_max_mm": [
+          -2.883727010233791,
+          -2.894606526835368,
+          -1.4210854715202004e-14
+        ],
+        "inside_native_bounds_at_float32_serialization_tolerance": true,
+        "float32_bound_comparison_tolerance_mm": 1.5200000000000002e-05,
+        "relative_winding_volume_proxy_delta": -0.002336729101693802,
+        "coarse_unit_scale_sanity_band": [
+          0.9,
+          1.1
+        ],
+        "scale_screen_is_not_surface_or_manufacturing_tolerance": true,
+        "bidirectional_surface_distance_mm": null,
+        "native_mesh_surface_equivalence_established": false
+      },
+      "upstream_comparison": {
+        "upstream_source_path": "stl/Art4TransmissionColumn.stl",
+        "upstream_sha256": "f62c1a9b123f354d3796c7610339678e283a51ea651351c7138fde3e8268530e",
+        "upstream_topology": {
+          "boundary_edges": 0,
+          "nonmanifold_edges": 3,
+          "nonmanifold_vertices": 4,
+          "inconsistent_winding_edges": 0,
+          "duplicate_facets": 0,
+          "zero_area_facets": 0,
+          "closed_consistently_oriented_two_manifold": false,
+          "exact_vertex_matching_no_weld": true
+        },
+        "upstream_triangle_count": 42604,
+        "native_export_triangle_count": 14016,
+        "extent_delta_from_upstream_xyz_mm": [
+          -0.043506622314453125,
+          0.0,
+          0.0
+        ],
+        "signed_volume_proxy_delta_from_upstream_mm3": -119.3672084875725,
+        "geometry_equivalence_or_common_native_to_STL_transform_established": false
+      },
+      "draft_candidate": false,
+      "blockers": [
+        "exact_vertex_topology_or_winding_failure"
+      ],
+      "installed_frame_correspondence": null,
+      "qualification": {
+        "self_intersections_checked": false,
+        "surface_fidelity_qualified": false,
+        "printed_strength_or_fit": false,
+        "manufacturing_release": false
+      }
+    },
+    {
+      "selection_id": "gripper-finger-nominal",
+      "source_reference": "GripperFinger::Body",
+      "installed_asset_id": "GripperFinger::Body",
+      "geometry_variant": "nominal",
+      "installed_quantity": 1,
+      "source_binding": {
+        "source_file": "freecad-src/GripperFinger.FCStd",
+        "source_sha256": "ab4daca4dd2f447029f4c76150b7f617fbdda74ae467cf6962938efe148d57a6",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "3d0fb39b628be445fc9c72b8b3d4e4d13d357662278b39f6a62e4d170510771b",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_export": {
+        "filename": "gripper-finger-nominal-cached-native-draft.stl",
+        "sha256": "7af8d717fd7c7bfbfd1b2533ff1a2e0a982f55497f951cb7d81c8632f39333ac",
+        "bytes": 149484,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 1488,
+        "triangle_count": 2988,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "gripper-finger-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false
+      },
+      "mesh": {
+        "encoding": "binary",
+        "triangle_count": 2988,
+        "exact_vertex_count": 1488,
+        "connected_components_by_vertex": 1,
+        "bounds_interpreted_mm": {
+          "min": [
+            0.0,
+            -2.0000000072549875e-15,
+            0.0
+          ],
+          "max": [
+            18.5,
+            60.0,
+            15.5
+          ]
+        },
+        "envelope_xyz_interpreted_mm": [
+          18.5,
+          60.0,
+          15.5
+        ],
+        "surface_area_interpreted_mm2": 5096.342485298937,
+        "algebraic_signed_volume_interpreted_mm3": 12584.849631506726,
+        "absolute_signed_volume_interpreted_mm3": 12584.849631506726,
+        "topology": {
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "nonmanifold_vertices": 0,
+          "inconsistent_winding_edges": 0,
+          "duplicate_facets": 0,
+          "zero_area_facets": 0,
+          "closed_consistently_oriented_two_manifold": true,
+          "exact_vertex_matching_no_weld": true
+        },
+        "stored_normal_warnings": {
+          "zero_normals": 0,
+          "opposed_to_winding": 0
+        },
+        "nonzero_binary_attribute_words": 0,
+        "self_intersections": "not_checked",
+        "units": "STL_unitless_coordinates_explicitly_interpreted_as_mm_not_encoded_units",
+        "solid_fidelity": "not_established_by_topology_bounds_or_volume"
+      },
+      "native_comparison": {
+        "native_bounds_mm": {
+          "XMin": -1.5242557054092885,
+          "XMax": 18.5,
+          "YMin": -1.78000000751573e-15,
+          "YMax": 61.524255705409296,
+          "ZMin": -4.440892098500626e-16,
+          "ZMax": 15.5
+        },
+        "native_volume_mm3": 12593.042562615725,
+        "native_raw_com_mm": [
+          9.682448262842927,
+          32.16773739645597,
+          7.755367225910253
+        ],
+        "native_raw_shape_placement_matrix_not_reapplied": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "mesh_bound_delta_min_mm": [
+          1.5242557054092885,
+          -2.1999999973925744e-16,
+          4.440892098500626e-16
+        ],
+        "mesh_bound_delta_max_mm": [
+          0.0,
+          -1.5242557054092956,
+          0.0
+        ],
+        "inside_native_bounds_at_float32_serialization_tolerance": true,
+        "float32_bound_comparison_tolerance_mm": 1.230485114108186e-05,
+        "relative_winding_volume_proxy_delta": -0.0006505918699362123,
+        "coarse_unit_scale_sanity_band": [
+          0.9,
+          1.1
+        ],
+        "scale_screen_is_not_surface_or_manufacturing_tolerance": true,
+        "bidirectional_surface_distance_mm": null,
+        "native_mesh_surface_equivalence_established": false
+      },
+      "upstream_comparison": {
+        "upstream_source_path": "stl/GripperFinger.stl",
+        "upstream_sha256": "f0178f849a8e3ed9b071dba73d161dfd525e8f5e7dbf31e44788dc58c04776ac",
+        "upstream_topology": {
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "nonmanifold_vertices": 0,
+          "inconsistent_winding_edges": 0,
+          "duplicate_facets": 0,
+          "zero_area_facets": 0,
+          "closed_consistently_oriented_two_manifold": true,
+          "exact_vertex_matching_no_weld": true
+        },
+        "upstream_triangle_count": 7920,
+        "native_export_triangle_count": 2988,
+        "extent_delta_from_upstream_xyz_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "signed_volume_proxy_delta_from_upstream_mm3": -6.14682529341917,
+        "geometry_equivalence_or_common_native_to_STL_transform_established": false
+      },
+      "draft_candidate": true,
+      "blockers": [],
+      "installed_frame_correspondence": null,
+      "qualification": {
+        "self_intersections_checked": false,
+        "surface_fidelity_qualified": false,
+        "printed_strength_or_fit": false,
+        "manufacturing_release": false
+      }
+    },
+    {
+      "selection_id": "gripper-finger-reflected",
+      "source_reference": "AssemblyArt56::Unnamed1_GripperFinger_mirrored",
+      "installed_asset_id": "GripperFinger::Body",
+      "geometry_variant": "reflected",
+      "installed_quantity": 1,
+      "source_binding": {
+        "source_file": "freecad-src/AssemblyArt56.FCStd",
+        "source_sha256": "a04836216dcae82eb033c15daba6e41dedb85b03f86ff21e56b77cdff835a473",
+        "object_name": "Unnamed1_GripperFinger_mirrored",
+        "object_type": "Part::Mirroring",
+        "brep_entry": "PartShape52.brp",
+        "brep_sha256": "72569677844f3cc4632795cafcf3a98f7c60429723cf75de2aa64a27147e682d",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_export": {
+        "filename": "gripper-finger-reflected-cached-native-draft.stl",
+        "sha256": "611ac95463b9c753e49a3d9c09659bbc030e640d99480786d744166991041781",
+        "bytes": 149484,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 1488,
+        "triangle_count": 2988,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "gripper-finger-reflected-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false
+      },
+      "mesh": {
+        "encoding": "binary",
+        "triangle_count": 2988,
+        "exact_vertex_count": 1488,
+        "connected_components_by_vertex": 1,
+        "bounds_interpreted_mm": {
+          "min": [
+            -18.5,
+            -2.0000000072549875e-15,
+            0.0
+          ],
+          "max": [
+            0.0,
+            60.0,
+            15.5
+          ]
+        },
+        "envelope_xyz_interpreted_mm": [
+          18.5,
+          60.0,
+          15.5
+        ],
+        "surface_area_interpreted_mm2": 5096.342485298937,
+        "algebraic_signed_volume_interpreted_mm3": 12584.849631506726,
+        "absolute_signed_volume_interpreted_mm3": 12584.849631506726,
+        "topology": {
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "nonmanifold_vertices": 0,
+          "inconsistent_winding_edges": 0,
+          "duplicate_facets": 0,
+          "zero_area_facets": 0,
+          "closed_consistently_oriented_two_manifold": true,
+          "exact_vertex_matching_no_weld": true
+        },
+        "stored_normal_warnings": {
+          "zero_normals": 0,
+          "opposed_to_winding": 0
+        },
+        "nonzero_binary_attribute_words": 0,
+        "self_intersections": "not_checked",
+        "units": "STL_unitless_coordinates_explicitly_interpreted_as_mm_not_encoded_units",
+        "solid_fidelity": "not_established_by_topology_bounds_or_volume"
+      },
+      "native_comparison": {
+        "native_bounds_mm": {
+          "XMin": -18.5,
+          "XMax": 1.5242557054092885,
+          "YMin": -1.78000000751573e-15,
+          "YMax": 61.524255705409296,
+          "ZMin": -4.440892098500626e-16,
+          "ZMax": 15.5
+        },
+        "native_volume_mm3": 12593.042562615725,
+        "native_raw_com_mm": [
+          -9.682448262842927,
+          32.16773739645597,
+          7.755367225910253
+        ],
+        "native_raw_shape_placement_matrix_not_reapplied": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "mesh_bound_delta_min_mm": [
+          0.0,
+          -2.1999999973925744e-16,
+          4.440892098500626e-16
+        ],
+        "mesh_bound_delta_max_mm": [
+          -1.5242557054092885,
+          -1.5242557054092956,
+          0.0
+        ],
+        "inside_native_bounds_at_float32_serialization_tolerance": true,
+        "float32_bound_comparison_tolerance_mm": 1.230485114108186e-05,
+        "relative_winding_volume_proxy_delta": -0.0006505918699362123,
+        "coarse_unit_scale_sanity_band": [
+          0.9,
+          1.1
+        ],
+        "scale_screen_is_not_surface_or_manufacturing_tolerance": true,
+        "bidirectional_surface_distance_mm": null,
+        "native_mesh_surface_equivalence_established": false
+      },
+      "upstream_comparison": null,
+      "draft_candidate": true,
+      "blockers": [],
+      "installed_frame_correspondence": null,
+      "qualification": {
+        "self_intersections_checked": false,
+        "surface_fidelity_qualified": false,
+        "printed_strength_or_fit": false,
+        "manufacturing_release": false
+      }
+    }
+  ],
+  "finger_vertex_reflection_check": {
+    "test": "exact_unindexed_float32_vertex_multiset_X_reflection",
+    "matches": true,
+    "native_saved_variant_not_new_reflection_operation": true,
+    "installed_link_transform_established": false,
+    "surface_equivalence_from_point_cloud_alone": false
+  },
+  "qualification": {
+    "whole_assembly_or_history_rebuilt": false,
+    "native_to_installed_frames_complete": false,
+    "mesh_self_intersections_checked": false,
+    "bidirectional_surface_fidelity_checked": false,
+    "slicer_import_verified": false,
+    "physical_fit_strength_or_print_qualified": false,
+    "manufacturing_release": false
+  }
+}

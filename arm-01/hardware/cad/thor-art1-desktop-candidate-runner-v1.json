@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "evidence_class": "native_probe_process_metadata_only",
+  "experiment": "intersection_pocket_through_all",
+  "timeout_s": 180,
+  "command": [
+    "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\runtime\\extracted\\FreeCAD_1.1.4-Windows-x86_64-py311\\bin\\freecadcmd.exe",
+    "-u",
+    "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\native-art1-candidate-study-02\\user.cfg",
+    "-s",
+    "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\native-art1-candidate-study-02\\system.cfg",
+    "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\native-art1-candidate-study-02\\capture-tool\\tools\\prepare_thor_art1_candidate.py"
+  ],
+  "source_sha256_before": "8afa16c8ff3adebd87e48b67dfb20d3224402bd517010dc112950a28f219690a",
+  "free_bytes_before": 722684448768,
+  "isolated_user_directories": {
+    "FREECAD_USER_HOME": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\native-art1-candidate-study-02\\user-home",
+    "FREECAD_USER_DATA": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\native-art1-candidate-study-02\\user-data",
+    "FREECAD_USER_TEMP": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\native-art1-candidate-study-02\\user-temp"
+  },
+  "capture_snapshot_sha256_before": {
+    "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\native-art1-candidate-study-02\\capture-tool\\tools\\probe_thor_art1_freecad.py": "49248268990c2432d3b5e7c0080f53e5e6806a8a413dfd39a56e45f9f773ff89",
+    "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\native-art1-candidate-study-02\\capture-tool\\tools\\thor_art1_diagnostics.py": "78aa05ea0b50ca91291fbe68cb1113f72dfdd4065ad320b91a5c575c8b8bc374",
+    "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\native-art1-candidate-study-02\\capture-tool\\hardware\\cad\\thor-art1-migration-evidence.json": "0f1f2246ae8216bcd6569081884c69bb754ca054571db0429b362ff3df19c8f6",
+    "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\native-art1-candidate-study-02\\capture-tool\\tools\\prepare_thor_art1_candidate.py": "c1b702f56cd4884f57b67eaf77410512e32b5a7870035c936e146fa4beaba271"
+  },
+  "native_executable_sha256": "1692e54224b48989974e8b91d3ac7a38d1d502d3db4dee1d4cf79ba91356e42d",
+  "expected_native_executable_sha256": "1692e54224b48989974e8b91d3ac7a38d1d502d3db4dee1d4cf79ba91356e42d",
+  "executable_matches_caller_pin": true,
+  "full_runtime_and_addon_bundle_verified": false,
+  "outcome": "process_completed",
+  "native_probe_completed": false,
+  "migration_accepted": false,
+  "process_returncode": 0,
+  "source_sha256_after": "8afa16c8ff3adebd87e48b67dfb20d3224402bd517010dc112950a28f219690a",
+  "copy_sha256_after": "8afa16c8ff3adebd87e48b67dfb20d3224402bd517010dc112950a28f219690a",
+  "capture_snapshot_sha256_after": {
+    "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\native-art1-candidate-study-02\\capture-tool\\tools\\probe_thor_art1_freecad.py": "49248268990c2432d3b5e7c0080f53e5e6806a8a413dfd39a56e45f9f773ff89",
+    "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\native-art1-candidate-study-02\\capture-tool\\tools\\thor_art1_diagnostics.py": "78aa05ea0b50ca91291fbe68cb1113f72dfdd4065ad320b91a5c575c8b8bc374",
+    "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\native-art1-candidate-study-02\\capture-tool\\hardware\\cad\\thor-art1-migration-evidence.json": "0f1f2246ae8216bcd6569081884c69bb754ca054571db0429b362ff3df19c8f6",
+    "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\native-art1-candidate-study-02\\capture-tool\\tools\\prepare_thor_art1_candidate.py": "c1b702f56cd4884f57b67eaf77410512e32b5a7870035c936e146fa4beaba271"
+  },
+  "capture_snapshot_bytes_unchanged": true,
+  "source_and_copy_bytes_unchanged": true,
+  "native_audit_status": "complete_probe_not_migration_acceptance"
+}

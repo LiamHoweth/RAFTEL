@@ -8,6 +8,77 @@ import pytest
 TOOLS = runpy.run_path(str(Path(__file__).parents[1] / "tools" / "audit_freecad_assembly.py"))
 
 
+def test_actual_native_paths_must_stay_inside_requested_isolation_root(tmp_path):
+    from types import SimpleNamespace
+
+    root = tmp_path / "task"
+    values = {
+        key: str(root / key)
+        for key in (
+            "UserParameter",
+            "SystemParameter",
+            "UserHomePath",
+            "UserAppData",
+            "AppTempPath",
+        )
+    }
+    app = SimpleNamespace(ConfigGet=values.__getitem__, listDocuments=lambda: {})
+    result = TOOLS["_runtime_isolation"](app, root)
+    assert result["verified"] and result["actual_paths"] == values
+    values["UserAppData"] = str(tmp_path / "task-other")
+    with pytest.raises(ValueError, match="escaped"):
+        TOOLS["_runtime_isolation"](app, root)
+    values["UserAppData"] = str(root / "data")
+    app.listDocuments = lambda: {"Unrelated": object()}
+    with pytest.raises(ValueError, match="fresh process"):
+        TOOLS["_runtime_isolation"](app, root)
+    assert TOOLS["_runtime_isolation"](app, None) == {"requested": False, "verified": False}
+
+
+def test_final_state_inventory_catches_later_recompute_touching_an_inspected_parent(
+    tmp_path, monkeypatch
+):
+    import sys
+    from types import SimpleNamespace
+
+    source = tmp_path / "Assembly.FCStd"
+    source.write_bytes(b"native fixture")
+    a = SimpleNamespace(Name="BodyA", Label="A", TypeId="Part::Feature", State=["Up-to-date"])
+    b = SimpleNamespace(Name="BodyB", Label="B", TypeId="Part::Feature", State=["Up-to-date"])
+    documents = {}
+
+    class Document:
+        def __init__(self, name, obj):
+            self.Name = name
+            self.Objects = [obj]
+
+        def recompute(self, objects, force):
+            if self.Name == "B":
+                a.State = ["Touched"]
+            return 1
+
+    def open_document(*args):
+        documents.update(A=Document("A", a), B=Document("B", b))
+        return documents["A"]
+
+    app = SimpleNamespace(
+        Version=lambda: ["fixture"],
+        listDocuments=lambda: documents,
+        openDocument=open_document,
+        closeDocument=documents.pop,
+    )
+    monkeypatch.setitem(sys.modules, "FreeCAD", app)
+    result = TOOLS["audit"](source, recompute="changed", shape_scope="none")
+    assert result["documents"][0]["objects"][0]["state"] == ["Up-to-date"]
+    assert result["final_loaded_object_states"] == {
+        "object_count": 2,
+        "state_token_counts": {"Touched": 1, "Up-to-date": 1},
+        "not_up_to_date": [{"object": "A::BodyA", "state": ["Touched"]}],
+        "scope": "all newly loaded documents after every requested recompute",
+    }
+    assert not documents
+
+
 def test_missing_native_source_rejected_before_importing_freecad(tmp_path):
     with pytest.raises(ValueError, match="existing native"):
         TOOLS["audit"](tmp_path / "missing.FCStd")
