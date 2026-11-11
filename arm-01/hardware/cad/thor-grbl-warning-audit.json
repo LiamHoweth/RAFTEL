@@ -1,0 +1,342 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-11-11T21:00:05.034204+00:00",
+  "evidence_class": "pinned_source_consumer_audit_and_optional_static_object_data_not_runtime_validation",
+  "source_revision": "1f6437a77e3abcb652d3f8ce718faf7e041ae6ff",
+  "source_files": {
+    "grbl/gcode.c": {
+      "git_blob": "1e83c1382c83d2fb6d7118496009889d0b2bf328",
+      "sha256": "fd6be78b5b6c2258f7aefee5913a1968989ed19f91383b08a16cc3a10cf07321",
+      "bytes": 61237
+    },
+    "grbl/gcode.h": {
+      "git_blob": "114dc26b0237df130505e843832a19b774ee6437",
+      "sha256": "ab0ca9b81ceb1c67373998d5d26febc99e62c975dad7aa50e8928ebb04e1da52",
+      "bytes": 8085
+    },
+    "grbl/nuts_bolts.h": {
+      "git_blob": "87e93909939ffaba5e0420ce0ea25c80c7c68da3",
+      "sha256": "ab55ecb79a6094aad35727a4b140a8ba76a43f0963e01661a115c2d54a57a623",
+      "bytes": 2954
+    },
+    "grbl/spindle_control.c": {
+      "git_blob": "0f515edcc4951bd21b96f012340cf13665e20cb8",
+      "sha256": "cfd72a7ad21c27751c21033cb936461af03461a03eeae48eb57d0b4498c57c5f",
+      "bytes": 4093
+    },
+    "grbl/spindle_control.h": {
+      "git_blob": "1aec91ca41b679f9994fa4b6506d977c8ac1bdeb",
+      "sha256": "b423e7e2f539b76ed933a4dc63fffd55cbe22dee578eec19e4d11b7418a4e7e7",
+      "bytes": 1113
+    },
+    "grbl/protocol.c": {
+      "git_blob": "d07a43a6244e31b44a12feb8240049ff72cea9ed",
+      "sha256": "03517e39db895751a2ee403328dcddd68727d9f979f34d748298bff162f4641d",
+      "bytes": 19986
+    },
+    "grbl/eeprom.c": {
+      "git_blob": "02caf202f601ad70b8df06109ff21b75a433efe1",
+      "sha256": "911eb89de3904b5d4aa8c032e72dcbab7338c0630d9aecce3fdc66e07c7ce385",
+      "bytes": 5599
+    },
+    "grbl/settings.c": {
+      "git_blob": "e4662b3e28d1c7d94ea433619933cc2accc65aa0",
+      "sha256": "5e7c5921c53a8387785376e22b073d92873febf61a0da93d6f5d437774348cc7",
+      "bytes": 14152
+    },
+    "grbl/defaults/defaults_thor.h": {
+      "git_blob": "c3d10bf8f244592cdee4170fe5651ac5c428df9d",
+      "sha256": "8ad4d21602aee8b99006ae107eae4098ef28ab1a901255e4973496d07ea5cec4",
+      "bytes": 3639
+    }
+  },
+  "findings": [
+    {
+      "id": "axis_word_mask_width",
+      "compiler_warning_count": 1,
+      "proven": [
+        "WORD_Z is 16, value_words has 16 bits, and bit(n) shifts signed int literal 1",
+        "On this AVR ABI, 1<<16 exceeds operand width; uint16 storage cannot track bit 16 even after widening only the literal",
+        "Z independently writes xyz[G_AXIS] and axis_words bit G_AXIS (6)",
+        "axis_words drives target presence/conversion and motion dispatch; value_words handles duplicate/unused-word bookkeeping"
+      ],
+      "not_proven": [
+        "Z motion always fails",
+        "all compiler versions encode the undefined shift identically",
+        "the complete firmware parser matches offline replay"
+      ],
+      "references": [
+        {
+          "path": "grbl/gcode.h",
+          "line": 144
+        },
+        {
+          "path": "grbl/nuts_bolts.h",
+          "line": 58
+        },
+        {
+          "path": "grbl/gcode.c",
+          "line": 97
+        },
+        {
+          "path": "grbl/gcode.c",
+          "line": 373
+        },
+        {
+          "path": "grbl/gcode.c",
+          "line": 378
+        },
+        {
+          "path": "grbl/gcode.c",
+          "line": 620
+        },
+        {
+          "path": "grbl/gcode.c",
+          "line": 852
+        },
+        {
+          "path": "grbl/gcode.c",
+          "line": 989
+        }
+      ]
+    },
+    {
+      "id": "m95_unassigned_modal_word_bit",
+      "compiler_warning_count": 1,
+      "proven": [
+        "word_bit is a local declaration without an initializer",
+        "M95 enabled-homing branch has no word_bit assignment and no return before the later modal mask",
+        "If M95 is first and the enabled-homing path returns from its calls, word_bit is read without an earlier assignment",
+        "sys.abort only skips idle cleanup in this branch; it does not itself return before modal-mask use",
+        "With prior words, M95 can reuse a stale prior word_bit instead of a defined M95 modal-group assignment"
+      ],
+      "not_proven": [
+        "every command path leaves word_bit unassigned",
+        "M95 is present in the modeled G0/G90/G91 replay subset",
+        "installed homing setting or runtime result"
+      ],
+      "references": [
+        {
+          "path": "grbl/gcode.c",
+          "line": 105
+        },
+        {
+          "path": "grbl/gcode.c",
+          "line": 315
+        },
+        {
+          "path": "grbl/gcode.c",
+          "line": 339
+        }
+      ],
+      "default_homing_flag": 71
+    },
+    {
+      "id": "spindle_signature_and_empty_reenable_body",
+      "compiler_warning_count": 2,
+      "proven": [
+        "definition omits return type while header declares void, producing implicit-int/conflicting-type warnings",
+        "spindle_set_state body is empty in the pinned source",
+        "its only call is the protocol re-energize spindle path; normal speed/modal changes call spindle_run instead"
+      ],
+      "not_proven": [
+        "all M3/S control is empty",
+        "physical servo behavior",
+        "safe recovery behavior"
+      ],
+      "references": [
+        {
+          "path": "grbl/spindle_control.c",
+          "line": 118
+        },
+        {
+          "path": "grbl/spindle_control.h",
+          "line": 32
+        },
+        {
+          "path": "grbl/protocol.c",
+          "line": 309
+        },
+        {
+          "path": "grbl/gcode.c",
+          "line": 888
+        }
+      ]
+    },
+    {
+      "id": "eeprom_logical_or_checksum",
+      "compiler_warning_count": 2,
+      "proven": [
+        "both write/read checksum loops use logical OR, not a bitwise rotate",
+        "For uchar state c, ((c<<1)||(c>>7)) is 0 if c==0 and 1 otherwise on the captured 16-bit-int ABI",
+        "source recurrence is c_next=(int(c!=0)+next_byte) modulo 256",
+        "records [1,42] and [2,42] have the same modeled checksum 43",
+        "startup/build-info/coordinate/global-settings writers and readers all call these checksum functions",
+        "both loops agree with each other; changing only one side can break stored-record compatibility"
+      ],
+      "not_proven": [
+        "the intended checksum algorithm",
+        "all corruption is detected",
+        "owner EEPROM contents or measured failures"
+      ],
+      "references": [
+        {
+          "path": "grbl/eeprom.c",
+          "line": 130
+        },
+        {
+          "path": "grbl/eeprom.c",
+          "line": 140
+        },
+        {
+          "path": "grbl/settings.c",
+          "line": 54
+        },
+        {
+          "path": "grbl/settings.c",
+          "line": 181
+        }
+      ]
+    }
+  ],
+  "compiler_warning_count_explained": 6,
+  "checksum_collision_fixture": {
+    "input_a_hex": "012a",
+    "input_b_hex": "022a",
+    "checksum_a": 43,
+    "checksum_b": 43,
+    "evidence_class": "defined_C_expression_model_not_EEPROM_access"
+  },
+  "static_probes": {
+    "evidence_class": "host_avr_static_object_encoding_not_firmware_execution",
+    "toolchain_archive_sha256": "a54f64755fff4cb792a1495e5defdd789902a2a3503982e81b898299cf39800e",
+    "probe_source_sha256": "405101e972c3e202e585843270da8550dfa067582850818043306f4338140b27",
+    "relocatable_object_sha256": "7121d86e9ec23e89b819284ac1eec77e661103e88cc198032e8b99b36b17becf",
+    "relocatable_object_bytes": 2184,
+    "strict_diagnostic_object_sha256": "7121d86e9ec23e89b819284ac1eec77e661103e88cc198032e8b99b36b17becf",
+    "additional_diagnostic_flag": "-Wshift-overflow=2",
+    "sign_bit_scope": "WORD_Y=15 reaches signed int16 sign bit; matching 0x8000 encoding does not establish portable C semantics, unlike unsigned 1U<<15",
+    "sections": {
+      "warning_checksum_pair_2_42": {
+        "section": ".rodata.warning_checksum_pair_2_42",
+        "bytes_hex": "2b",
+        "unsigned_little_endian": 43
+      },
+      "warning_checksum_pair_1_42": {
+        "section": ".rodata.warning_checksum_pair_1_42",
+        "bytes_hex": "2b",
+        "unsigned_little_endian": 43
+      },
+      "warning_bitwise_or_2": {
+        "section": ".rodata.warning_bitwise_or_2",
+        "bytes_hex": "04",
+        "unsigned_little_endian": 4
+      },
+      "warning_logical_or_2": {
+        "section": ".rodata.warning_logical_or_2",
+        "bytes_hex": "01",
+        "unsigned_little_endian": 1
+      },
+      "warning_axis_word_mask_encoding": {
+        "section": ".rodata.warning_axis_word_mask_encoding",
+        "bytes_hex": "00fc",
+        "unsigned_little_endian": 64512
+      },
+      "warning_axis_g_mask": {
+        "section": ".rodata.warning_axis_g_mask",
+        "bytes_hex": "40",
+        "unsigned_little_endian": 64
+      },
+      "warning_wide_value_u32": {
+        "section": ".rodata.warning_wide_value_u32",
+        "bytes_hex": "00000100",
+        "unsigned_little_endian": 65536
+      },
+      "warning_wide_cast_u16": {
+        "section": ".rodata.warning_wide_cast_u16",
+        "bytes_hex": "0000",
+        "unsigned_little_endian": 0
+      },
+      "warning_unsigned_shift15": {
+        "section": ".rodata.warning_unsigned_shift15",
+        "bytes_hex": "0080",
+        "unsigned_little_endian": 32768
+      },
+      "warning_shift15_encoding": {
+        "section": ".rodata.warning_shift15_encoding",
+        "bytes_hex": "0080",
+        "unsigned_little_endian": 32768
+      },
+      "warning_shift16_encoding": {
+        "section": ".rodata.warning_shift16_encoding",
+        "bytes_hex": "0000",
+        "unsigned_little_endian": 0
+      }
+    },
+    "compile_log": [
+      {
+        "tool": "avr-gcc.exe",
+        "arguments": [
+          "-Wall",
+          "-Os",
+          "-DF_CPU=16000000",
+          "-mmcu=atmega2560",
+          "-I.",
+          "-ffunction-sections",
+          "-fdata-sections",
+          "-c",
+          "warning-probes.c",
+          "-o",
+          "warning-probes.o"
+        ],
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "warning-probes.c:2:46: warning: left shift count >= width of type [-Wshift-count-overflow]\r\n const uint16_t warning_shift16_encoding = (1 << 16);\r\n                                              ^~\r\nwarning-probes.c:5:40: warning: large integer implicitly truncated to unsigned type [-Woverflow]\r\n const uint16_t warning_wide_cast_u16 = ((uint32_t)1 << 16);\r\n                                        ^\r\nwarning-probes.c:9:55: warning: left shift count >= width of type [-Wshift-count-overflow]\r\n     (1<<10)|(1<<11)|(1<<12)|(1<<13)|(1<<14)|(1<<15)|(1<<16);\r\n                                                       ^~\r\n"
+      },
+      {
+        "tool": "avr-gcc.exe",
+        "arguments": [
+          "-Wall",
+          "-Os",
+          "-DF_CPU=16000000",
+          "-mmcu=atmega2560",
+          "-I.",
+          "-ffunction-sections",
+          "-fdata-sections",
+          "-Wshift-overflow=2",
+          "-c",
+          "warning-probes.c",
+          "-o",
+          "warning-probes-strict.o"
+        ],
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "warning-probes.c:2:46: warning: left shift count >= width of type [-Wshift-count-overflow]\r\n const uint16_t warning_shift16_encoding = (1 << 16);\r\n                                              ^~\r\nwarning-probes.c:3:46: warning: result of '1 << 15' requires 17 bits to represent, but 'int' only has 16 bits [-Wshift-overflow=]\r\n const uint16_t warning_shift15_encoding = (1 << 15);\r\n                                              ^~\r\nwarning-probes.c:5:40: warning: large integer implicitly truncated to unsigned type [-Woverflow]\r\n const uint16_t warning_wide_cast_u16 = ((uint32_t)1 << 16);\r\n                                        ^\r\nwarning-probes.c:9:47: warning: result of '1 << 15' requires 17 bits to represent, but 'int' only has 16 bits [-Wshift-overflow=]\r\n     (1<<10)|(1<<11)|(1<<12)|(1<<13)|(1<<14)|(1<<15)|(1<<16);\r\n                                               ^~\r\nwarning-probes.c:9:55: warning: left shift count >= width of type [-Wshift-count-overflow]\r\n     (1<<10)|(1<<11)|(1<<12)|(1<<13)|(1<<14)|(1<<15)|(1<<16);\r\n                                                       ^~\r\n"
+      }
+    ],
+    "undefined_shift_scope": "encoding observed only for pinned compiler; no portable C or runtime behavior inferred",
+    "firmware_linked": false,
+    "firmware_executed": false
+  },
+  "source_preserved": true,
+  "source_patch_accepted": false,
+  "firmware_executed": false,
+  "firmware_flashed": false,
+  "hardware_connected": false,
+  "reproduction": {
+    "script": "arm-01/tools/audit_thor_grbl_warnings.py",
+    "script_sha256": "fecee7e990f0eb89b3f3895fb7f82f114e6091d0875ff10c50979451fcecb328",
+    "raw_capture_path": ".work/controller/grbl-warning-audit-04/report.json",
+    "raw_capture_sha256": "609b4a71d56aa53745cbbd32b60e782194c28821270ceccee37ddf1ae3bf63b8",
+    "source_checkout": ".work/controller/grbl-source/upstream",
+    "compiler_root": ".work/controller/grbl-build-03/toolchain",
+    "capture_kind": "source audit plus two compiler invocations producing ET_REL objects only; never linked/executed"
+  },
+  "prior_build_evidence": "arm-01/hardware/cad/thor-grbl-build-feasibility.json",
+  "review_scope": "consumer paths distinguish bookkeeping defects from target dispatch; no Z/Y motion failure inferred",
+  "additional_compiler_documentation": {
+    "url": "https://gcc.gnu.org/onlinedocs/gcc-7.3.0/gcc/Warning-Options.html",
+    "accessed_on": "2026-11-11",
+    "scope": "GCC7.3 default shift-overflow level1 excludes signed sign-bit case; level2 diagnoses it; absence of warning is not portable defined-C evidence."
+  }
+}
