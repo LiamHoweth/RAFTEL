@@ -29,4 +29,5 @@ jobs:
       - run: python tools/thor_load_analysis.py --cad-inventory hardware/cad/thor-mounted-geometry.json --output thor-load-ci.json
       - run: python tools/thor_load_analysis.py --cad-inventory hardware/cad/thor-mounted-geometry.json --compare-materials --output thor-material-ci.json
       - run: python tools/thor_load_analysis.py --cad-inventory hardware/cad/thor-mounted-geometry.json --wrist-membership hardware/cad/thor-wrist-membership.json --output thor-wrist-ci.json
+      - run: python tools/thor_load_analysis.py --cad-inventory hardware/cad/thor-mounted-geometry-v2.json --wrist-membership hardware/cad/thor-wrist-membership-v2.json --output thor-wrist-v2-ci.json
       - run: python tools/thor_elbow_loads.py --load-study hardware/cad/thor-load-study.json --drum-pitch-radius-mm 37 --carrier-coupling 1 --belt-sign 1 --shoulder-b-fraction 0.5 --geometry-evidence "Explicit CAD-surface-radius scenario; not calibrated pitch radius" --output thor-elbow-ci.json

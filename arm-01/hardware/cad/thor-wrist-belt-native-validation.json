@@ -1,0 +1,214 @@
+{
+  "schema_version": 2,
+  "validation_level": "native CAD inspection; not kinematics or physical validation",
+  "freecad_version": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "assembly_filename": "Assembly.FCStd",
+  "audit_mode": "none",
+  "shape_scope": "all",
+  "shape_validation_requested": true,
+  "object_checkpoint_interval_s": 2.0,
+  "document_filter": [
+    "AssemblyArt4"
+  ],
+  "object_filter": [
+    "AssemblyArt4::Pad046"
+  ],
+  "created_at_utc": "2026-11-11T19:02:38.321862+00:00",
+  "documents": [
+    {
+      "name": "AssemblyArt4",
+      "objects": [
+        {
+          "name": "Pad046",
+          "label": "GT2-208mm",
+          "type": "PartDesign::Pad",
+          "state": [
+            "Touched"
+          ],
+          "placement": {
+            "translation_mm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "quaternion_xyzw": [
+              0.7071067811865475,
+              -0.0,
+              -0.0,
+              0.7071067811865476
+            ],
+            "matrix": [
+              [
+                1.0,
+                0.0,
+                -0.0,
+                0.0
+              ],
+              [
+                -0.0,
+                2.220446049250313e-16,
+                -1.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                2.220446049250313e-16,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          "global_placement": {
+            "translation_mm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "quaternion_xyzw": [
+              0.7071067811865475,
+              0.0,
+              0.0,
+              0.7071067811865476
+            ],
+            "matrix": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                2.220446049250313e-16,
+                -1.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                2.220446049250313e-16,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          "visibility": true,
+          "linked_object_direct": "AssemblyArt4::Pad046",
+          "in_list": [
+            "AssemblyArt4::Part"
+          ],
+          "out_list": [
+            "AssemblyArt4::Sketch075"
+          ],
+          "shape_null": false,
+          "bounds_mm": {
+            "xmin": -37.5,
+            "xmax": 7.5,
+            "ymin": -6.000000000000001,
+            "ymax": 1.0366784201858685e-14,
+            "zmin": -7.5,
+            "zmax": 90.9
+          },
+          "volume_mm3": 2013.9894452343387,
+          "solid_count": 1,
+          "shape_center_of_mass_mm": [
+            -13.32021940479536,
+            -2.9999999999999853,
+            42.95770758036233
+          ],
+          "center_of_mass_source": "Shape.CenterOfMass",
+          "shape_coordinates": "raw FreeCAD Shape values; inspect placements before aggregation",
+          "shape_valid": true
+        }
+      ],
+      "status": "complete",
+      "native_object_count": 238,
+      "object_count": 1
+    }
+  ],
+  "errors": [],
+  "saved_source_changes": false,
+  "restore_completed": true,
+  "status": "complete",
+  "stage": "finished",
+  "completed_document_count": 1,
+  "current_document": null,
+  "current_object": null,
+  "updated_at_utc": "2026-11-11T19:02:48.787436+00:00",
+  "master_document": "Assembly",
+  "loaded_document_names": [
+    "Art1Body",
+    "Art1Bot",
+    "Art1FanHolder",
+    "Art1GearMotor",
+    "Art1Top",
+    "Art23Optodisk",
+    "Art2BodyA",
+    "Art2BodyACover1",
+    "Art2BodyACover2",
+    "Art2BodyAWindow",
+    "Art2BodyB",
+    "Art2BodyBCover",
+    "Art2BodyUnion",
+    "Art2MotorGear",
+    "Art2SideCover",
+    "Art3Body",
+    "Art3Pulley",
+    "Art3TensionerBody",
+    "Art3TensionerPulley",
+    "Art4BearingFix",
+    "Art4BearingRing",
+    "Art4Body",
+    "Art4BodyBot",
+    "Art4BodyFan",
+    "Art4MotorFix",
+    "Art4MotorGear",
+    "Art4Optodisk",
+    "Art4TransmissionColumn",
+    "Art56GearPlate",
+    "Art56MotorCoverRing",
+    "Art56MotorHolderA",
+    "Art56MotorHolderB",
+    "Art56SmallGear",
+    "Assembly",
+    "AssemblyArt1",
+    "AssemblyArt2",
+    "AssemblyArt3",
+    "AssemblyArt4",
+    "AssemblyArt56",
+    "AssemblyBase",
+    "BaseBearingFix",
+    "BaseBot",
+    "BaseBoxBody",
+    "BaseBoxCover",
+    "BaseTop",
+    "CommonBearingFix",
+    "CommonBearingFixThrough",
+    "GripperActiveArm",
+    "GripperArm",
+    "GripperBot",
+    "GripperFinger",
+    "GripperPassiveArm",
+    "GripperTop"
+  ]
+}

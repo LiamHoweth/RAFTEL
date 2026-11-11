@@ -1,0 +1,232 @@
+{
+  "schema_version": 1,
+  "validation_class": "source_CAD_and_conditional_gravity_closure_not_physical_mass_or_inertia_validation",
+  "native_source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+  "baseline_inventory_sha256": "721446cdf1a931afab75db4f960cea3b909ca87935d6b14b661fdfbd5a0f1b66",
+  "native_probe": {
+    "schema_version": 1,
+    "validation_class": "saved_native_BRep_geometry_not_mass_or_articulation_validation",
+    "source_filename": "AssemblyArt4.FCStd",
+    "source_sha256": "9306c0461c1a979526c8f73554ddef8fa89b8880e613b42beed7ac19feb401da",
+    "freecad_version": [
+      "1",
+      "1",
+      "4",
+      "20260928 (Git shallow)",
+      "Unknown",
+      "2026/09/28 13:46:34",
+      "(HEAD detached at 4fd3bf320)",
+      "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+    ],
+    "document_opened_or_recomputed": false,
+    "source_saved": false,
+    "objects": {
+      "Chamfer_solid": {
+        "brep_file": "PartShape1.brp",
+        "brep_sha256": "40295ad529385974f872d185bdb25a15e021606b99048d88353fa12ea3e8749d",
+        "shape_valid": true,
+        "solid_count": 1,
+        "volume_mm3": 58556.762301874995,
+        "com_mm": [
+          0.0005079628780753877,
+          -0.0001452494660113374,
+          17.38887305884945
+        ],
+        "bounds_mm": {
+          "XMin": -21.15000000000195,
+          "XMax": 21.150000000005388,
+          "YMin": -21.150000000000226,
+          "YMax": 21.150000000007108,
+          "ZMin": 0.0,
+          "ZMax": 54.0
+        }
+      },
+      "Pad046": {
+        "brep_file": "PartShape28.brp",
+        "brep_sha256": "1e961247d11f045d76f9cb150beeb5900504bc992aa769d265b31ac5fbe77dbf",
+        "shape_valid": true,
+        "solid_count": 1,
+        "volume_mm3": 2013.9894452343387,
+        "com_mm": [
+          -13.32021940479536,
+          -2.9999999999999853,
+          42.95770758036233
+        ],
+        "bounds_mm": {
+          "XMin": -37.5,
+          "XMax": 7.5,
+          "YMin": -6.000000000000001,
+          "YMax": 1.0366784201858685e-14,
+          "ZMin": -7.5,
+          "ZMax": 90.9
+        }
+      },
+      "Cut002001": {
+        "brep_file": "PartShape15.brp",
+        "brep_sha256": "1796f6c23db339c9dd2a4e7fc78e6030b9ac0a93fdc23a3f0e15389d1a34b965",
+        "shape_valid": true,
+        "solid_count": 1,
+        "volume_mm3": 2237.929081681582,
+        "com_mm": [
+          -0.11797169336275568,
+          -3.4130578425193504e-06,
+          8.478966665467505
+        ],
+        "bounds_mm": {
+          "XMin": -9.0,
+          "XMax": 9.0,
+          "YMin": -9.0,
+          "YMax": 9.0,
+          "ZMin": 0.0,
+          "ZMax": 14.6
+        }
+      },
+      "Pocket001": {
+        "brep_file": "PartShape16.brp",
+        "brep_sha256": "5ba19e2848f8898ea840bd1c0fceb3b3a7c9c8f22149dcf3cbc86433fe5720dc",
+        "shape_valid": true,
+        "solid_count": 1,
+        "volume_mm3": 33.194923086577724,
+        "com_mm": [
+          4.138212431639697,
+          3.350578240604255e-06,
+          11.999999784782107
+        ],
+        "bounds_mm": {
+          "XMin": 1.5947715424001576,
+          "XMax": 7.594771542400158,
+          "YMin": -1.499996649420915,
+          "YMax": 1.500003350579085,
+          "ZMin": 10.499999784782414,
+          "ZMax": 13.499999784782416
+        }
+      }
+    }
+  },
+  "motor_partition": {
+    "source_asset": "AssemblyArt4::Stepper_Nema17x34/Chamfer_solid",
+    "source_asset_solid_count": 1,
+    "manufacturer_total_mass_per_motor_kg": 0.23,
+    "wrist_motor_count": 2,
+    "manufacturer_motor_mass_total_entire_arm_kg": 2.12,
+    "internal_rotor_mass_kg": null,
+    "internal_rotor_COM_or_eccentricity_m": null,
+    "CAD_internal_density_partition_available": false,
+    "reason": "Saved solid fuses outer housing and exposed shaft; no separate rotor, stator, magnet or winding volume/mass evidence. Whole-asset centroid is not a rotor centroid.",
+    "conditional_gravity_closure": "Assume rotating internal mass COM lies on its fixed shaft axis (balanced rotor). Then its gravitational potential is independent of phase and fixed whole-asset mass can remain unsplit. No inertia, balance tolerance or friction is established.",
+    "counterexample_bound": {
+      "status": "analytical sensitivity conditional on actual rotating mass lying within CAD radial envelope and supplier-listed total mass; not a physical guarantee",
+      "maximum_rotating_mass_each_kg": 0.23,
+      "radial_envelope_assumed_m": 0.029910616844190958,
+      "shaft_angle_coefficient_magnitudes_q5_q6": [
+        2,
+        4
+      ],
+      "formula": "sum(m_total * rho_max * g * abs(dtheta/dq)); actual m_rotor*eccentricity remains unknown",
+      "two_motor_generalized_gravity_magnitude_bounds_nm": [
+        0.2698571146210784,
+        0.5397142292421568
+      ]
+    }
+  },
+  "driver_pulley_motion_records": [
+    {
+      "assembly_link": "Pulley_GT2x20001",
+      "driven_side": "negative_y",
+      "axis_origin_native_m": [
+        0.024000000000000035,
+        -0.02790000000000001,
+        0.4780999999999999
+      ],
+      "axis_common_native_unit": [
+        0,
+        1,
+        0
+      ],
+      "zero_pose_leaf_ids": [
+        "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Pulley_GT2x20001/AssemblyArt4::Cut002001",
+        "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Pulley_GT2x20001/AssemblyArt4::Pocket001"
+      ],
+      "leaf_masses_kg": {
+        "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Pulley_GT2x20001/AssemblyArt4::Cut002001": 0.0060424085205402715,
+        "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Pulley_GT2x20001/AssemblyArt4::Pocket001": 0.0002605801462296351
+      },
+      "angle_relation": "2*q5 + 4*s*q6",
+      "relation_status": "conditional ideal uncrossed 20/40 belt stage; mesh sign s comes from separate handedness evidence",
+      "mass_action": "move existing records; add no mass"
+    },
+    {
+      "assembly_link": "Pulley_GT2x20002",
+      "driven_side": "positive_y",
+      "axis_origin_native_m": [
+        -0.023999999999999955,
+        0.027900000000000015,
+        0.4781000000000001
+      ],
+      "axis_common_native_unit": [
+        0,
+        1,
+        0
+      ],
+      "zero_pose_leaf_ids": [
+        "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Pulley_GT2x20002/AssemblyArt4::Cut002001",
+        "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Pulley_GT2x20002/AssemblyArt4::Pocket001"
+      ],
+      "leaf_masses_kg": {
+        "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Pulley_GT2x20002/AssemblyArt4::Cut002001": 0.0060424085205402715,
+        "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Pulley_GT2x20002/AssemblyArt4::Pocket001": 0.0002605801462296351
+      },
+      "angle_relation": "2*q5 - 4*s*q6",
+      "relation_status": "conditional ideal uncrossed 20/40 belt stage; mesh sign s comes from separate handedness evidence",
+      "mass_action": "move existing records; add no mass"
+    }
+  ],
+  "belt_additions": [
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Belt_GT2_208mm/AssemblyArt4::Pad046",
+      "present_in_frozen_516_leaf_inventory": false,
+      "source_leaf": "AssemblyArt4::Pad046",
+      "zero_world_com_native_m": [
+        0.010777359538944212,
+        -0.023500000000000004,
+        0.5210878432209555
+      ],
+      "source_volume_mm3": 2013.9894452343387,
+      "density_assumed_kg_m3": 1200,
+      "mass_assumed_kg": 0.0024167873342812065,
+      "density_evidence": "Unmeasured belt density scenario, same value as frozen baseline; not manufacturer or measured mass",
+      "motion_assumption": "uniform circulating closed belt occupies fixed spatial path in Art4, hence no q5/q6 COM derivative; upstream q1-q4 carry retained"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Belt_GT2_208mm001/AssemblyArt4::Pad046",
+      "present_in_frozen_516_leaf_inventory": false,
+      "source_leaf": "AssemblyArt4::Pad046",
+      "zero_world_com_native_m": [
+        -0.012285668506988714,
+        0.023499999999999986,
+        0.5215231196855277
+      ],
+      "source_volume_mm3": 2013.9894452343387,
+      "density_assumed_kg_m3": 1200,
+      "mass_assumed_kg": 0.0024167873342812065,
+      "density_evidence": "Unmeasured belt density scenario, same value as frozen baseline; not manufacturer or measured mass",
+      "motion_assumption": "uniform circulating closed belt occupies fixed spatial path in Art4, hence no q5/q6 COM derivative; upstream q1-q4 carry retained"
+    }
+  ],
+  "belt_mass_delta_assumed_kg": 0.004833574668562413,
+  "belt_path_check": {
+    "label_length_mm": 208,
+    "strip_width_mm": 6,
+    "strip_thickness_mm": 1.5,
+    "implied_uniform_strip_centerline_length_mm": 223.77660502603763,
+    "source_centerline_pitch_or_fit_calibrated": false,
+    "interpretation": "Saved smooth envelope has no teeth and its strip length differs from label. It is a schematic spatial COM/mass scenario; do not claim installed belt fit or calibrated effective pitch from this geometry."
+  },
+  "conservation_contract": [
+    "Retain every frozen baseline record exactly once; reclassify four input pulley/grub-screw leaves without changing masses.",
+    "Add the two omitted source belts only in a separately versioned inventory/study with explicit density assumption; preserve frozen baseline reports.",
+    "Keep each whole manufacturer motor mass unsplit and total seven-motor sum2.120kg; do not add a second rotor mass.",
+    "Bearing race COM and jaw pose remain separately declared; moving inertia and measured balance/COM are not closed."
+  ],
+  "physical_or_full_dynamic_closure": false
+}

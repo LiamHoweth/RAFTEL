@@ -1,0 +1,1493 @@
+{
+  "schema_version": 1,
+  "validation_class": "source_dependency_mapping_and_failed_native_migration_probe_not_repaired_history",
+  "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+  "source_file": "freecad-src/Art1Body.fcstd",
+  "source_sha256": "8afa16c8ff3adebd87e48b67dfb20d3224402bd517010dc112950a28f219690a",
+  "assembly_source_sha256": "79f823e0a2d4a3581815305e41a0bb0693db4652206923a7d03d947c8a47085b",
+  "source_saved": false,
+  "source_unchanged": true,
+  "freecad_version": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "native_probe": {
+    "report_sha256": "ae0ec0ebba6020542d464671217065c1c55f695643712c3193ea992451bb4fba",
+    "script_sha256": "718b72ac8091f7802040d388f8f9c49e90ee959dc34cbffdec59d7f87cc0af3f",
+    "scope": "One source document opened hidden; in-memory Intersection=True, forced recompute; no native saves; separate user/system preferences"
+  },
+  "body_tip": "Pocket018",
+  "ordered_body_members": [
+    "Sketch",
+    "Pad",
+    "Sketch001",
+    "Pad001",
+    "DatumPlane",
+    "Sketch002",
+    "Groove",
+    "Thickness",
+    "Sketch003",
+    "Pad002",
+    "Sketch004",
+    "Pocket",
+    "DatumPlane001",
+    "Sketch005",
+    "Pocket001",
+    "MultiTransform",
+    "Mirrored",
+    "Mirrored001",
+    "DatumPlane002",
+    "Sketch006",
+    "Revolution",
+    "Sketch007",
+    "Pocket002",
+    "Sketch008",
+    "Pocket003",
+    "Sketch009",
+    "Pocket004",
+    "Sketch010",
+    "Pocket005",
+    "Sketch011",
+    "Pocket006",
+    "Sketch012",
+    "Pocket007",
+    "Sketch013",
+    "Pocket008",
+    "Sketch014",
+    "Pocket009",
+    "Sketch015",
+    "Pocket010",
+    "Sketch016",
+    "Pocket011",
+    "Sketch017",
+    "Pocket012",
+    "Fillet",
+    "Sketch018",
+    "Pocket013",
+    "Sketch019",
+    "Pocket014",
+    "LCS_Motor2A",
+    "LCS_Motor2V",
+    "LCS_Motor3",
+    "LCS_BearingFix",
+    "LCS_Optodisk",
+    "HoleAxis_1",
+    "HoleAxis_2",
+    "HoleAxis_3",
+    "HoleAxis_4",
+    "LCS_Bot",
+    "Sketch020",
+    "Pocket015",
+    "LCS_Bearing",
+    "LCS_Art2BodyCover1",
+    "HoleAxis_5",
+    "HoleAxis_6",
+    "HoleAxis_7",
+    "HoleAxis_8",
+    "HoleAxis_9",
+    "HoleAxis_10",
+    "HoleAxis_11",
+    "HoleAxis_12",
+    "Sketch021",
+    "Pocket016",
+    "HoleAxis_13",
+    "HoleAxis_14",
+    "HoleAxis_15",
+    "HoleAxis_16",
+    "Sketch022",
+    "Pocket017",
+    "Sketch023",
+    "Pocket018"
+  ],
+  "critical_reference_chain": {
+    "Groove": [
+      {
+        "property": "BaseFeature",
+        "links": [
+          {
+            "value": "Pad001"
+          }
+        ]
+      },
+      {
+        "property": "Profile",
+        "links": [
+          {
+            "value": "Sketch002",
+            "count": "0"
+          }
+        ]
+      },
+      {
+        "property": "ReferenceAxis",
+        "links": [
+          {
+            "value": "Sketch002",
+            "count": "1",
+            "subelements": [
+              "V_Axis"
+            ]
+          }
+        ]
+      }
+    ],
+    "Thickness": [
+      {
+        "property": "Base",
+        "links": [
+          {
+            "value": "Groove",
+            "count": "1",
+            "subelements": [
+              "Face2"
+            ]
+          }
+        ]
+      },
+      {
+        "property": "BaseFeature",
+        "links": [
+          {
+            "value": "Groove"
+          }
+        ]
+      }
+    ],
+    "Sketch003": [
+      {
+        "property": "ExternalGeometry",
+        "links": [
+          {
+            "obj": "Thickness",
+            "sub": "Edge18"
+          }
+        ]
+      },
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Thickness",
+            "sub": "Face8"
+          }
+        ]
+      }
+    ],
+    "Pad002": [
+      {
+        "property": "BaseFeature",
+        "links": [
+          {
+            "value": "Thickness"
+          }
+        ]
+      },
+      {
+        "property": "Profile",
+        "links": [
+          {
+            "value": "Sketch003",
+            "count": "0"
+          }
+        ]
+      }
+    ],
+    "Sketch004": [
+      {
+        "property": "ExternalGeometry",
+        "links": [
+          {
+            "obj": "Pad002",
+            "sub": "Edge22"
+          }
+        ]
+      },
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pad002",
+            "sub": "Face9"
+          }
+        ]
+      }
+    ],
+    "Pocket": [
+      {
+        "property": "BaseFeature",
+        "links": [
+          {
+            "value": "Pad002"
+          }
+        ]
+      },
+      {
+        "property": "Profile",
+        "links": [
+          {
+            "value": "Sketch004",
+            "count": "0"
+          }
+        ]
+      }
+    ],
+    "DatumPlane001": [
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pocket",
+            "sub": "Face7"
+          }
+        ]
+      }
+    ],
+    "Sketch005": [
+      {
+        "property": "ExternalGeometry",
+        "links": [
+          {
+            "obj": "Pocket",
+            "sub": "Edge13"
+          }
+        ]
+      },
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "DatumPlane001",
+            "sub": ""
+          }
+        ]
+      }
+    ],
+    "Pocket001": [
+      {
+        "property": "BaseFeature",
+        "links": [
+          {
+            "value": "Pocket"
+          }
+        ]
+      },
+      {
+        "property": "Profile",
+        "links": [
+          {
+            "value": "Sketch005",
+            "count": "0"
+          }
+        ]
+      }
+    ],
+    "MultiTransform": [
+      {
+        "property": "BaseFeature",
+        "links": [
+          {
+            "value": "Pocket001"
+          }
+        ]
+      },
+      {
+        "property": "Originals",
+        "links": [
+          {
+            "value": "Pad002"
+          },
+          {
+            "value": "Pocket"
+          },
+          {
+            "value": "Pocket001"
+          }
+        ]
+      },
+      {
+        "property": "Transformations",
+        "links": [
+          {
+            "value": "Mirrored"
+          },
+          {
+            "value": "Mirrored001"
+          }
+        ]
+      }
+    ],
+    "Mirrored": [
+      {
+        "property": "MirrorPlane",
+        "links": [
+          {
+            "value": "Sketch003",
+            "count": "1",
+            "subelements": [
+              "V_Axis"
+            ]
+          }
+        ]
+      }
+    ],
+    "Mirrored001": [
+      {
+        "property": "MirrorPlane",
+        "links": [
+          {
+            "value": "XZ_Plane",
+            "count": "1",
+            "subelements": [
+              ""
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "all_subshape_attachment_dependencies": {
+    "Sketch": [
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "XY_Plane",
+            "sub": ""
+          }
+        ]
+      }
+    ],
+    "Sketch001": [
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pad",
+            "sub": "Face3"
+          }
+        ]
+      }
+    ],
+    "DatumPlane": [
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pad001",
+            "sub": "Face2"
+          }
+        ]
+      }
+    ],
+    "Sketch002": [
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "DatumPlane",
+            "sub": ""
+          }
+        ]
+      }
+    ],
+    "Sketch003": [
+      {
+        "property": "ExternalGeometry",
+        "links": [
+          {
+            "obj": "Thickness",
+            "sub": "Edge18"
+          }
+        ]
+      },
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Thickness",
+            "sub": "Face8"
+          }
+        ]
+      }
+    ],
+    "Sketch004": [
+      {
+        "property": "ExternalGeometry",
+        "links": [
+          {
+            "obj": "Pad002",
+            "sub": "Edge22"
+          }
+        ]
+      },
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pad002",
+            "sub": "Face9"
+          }
+        ]
+      }
+    ],
+    "DatumPlane001": [
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pocket",
+            "sub": "Face7"
+          }
+        ]
+      }
+    ],
+    "Sketch005": [
+      {
+        "property": "ExternalGeometry",
+        "links": [
+          {
+            "obj": "Pocket",
+            "sub": "Edge13"
+          }
+        ]
+      },
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "DatumPlane001",
+            "sub": ""
+          }
+        ]
+      }
+    ],
+    "Mirrored": [
+      {
+        "property": "MirrorPlane",
+        "links": [
+          {
+            "value": "Sketch003",
+            "count": "1",
+            "subelements": [
+              "V_Axis"
+            ]
+          }
+        ]
+      }
+    ],
+    "Mirrored001": [
+      {
+        "property": "MirrorPlane",
+        "links": [
+          {
+            "value": "XZ_Plane",
+            "count": "1",
+            "subelements": [
+              ""
+            ]
+          }
+        ]
+      }
+    ],
+    "DatumPlane002": [
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "YZ_Plane",
+            "sub": ""
+          }
+        ]
+      }
+    ],
+    "Sketch006": [
+      {
+        "property": "ExternalGeometry",
+        "links": [
+          {
+            "obj": "MultiTransform",
+            "sub": "Edge26"
+          }
+        ]
+      },
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "DatumPlane002",
+            "sub": ""
+          }
+        ]
+      }
+    ],
+    "Sketch007": [
+      {
+        "property": "ExternalGeometry",
+        "links": [
+          {
+            "obj": "Revolution",
+            "sub": "Edge87"
+          }
+        ]
+      },
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Revolution",
+            "sub": "Face35"
+          }
+        ]
+      }
+    ],
+    "Sketch008": [
+      {
+        "property": "ExternalGeometry",
+        "links": [
+          {
+            "obj": "Pocket002",
+            "sub": "Edge109"
+          }
+        ]
+      },
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pocket002",
+            "sub": "Face35"
+          }
+        ]
+      }
+    ],
+    "Sketch009": [
+      {
+        "property": "ExternalGeometry",
+        "links": [
+          {
+            "obj": "Pocket003",
+            "sub": "Edge111"
+          }
+        ]
+      },
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pocket003",
+            "sub": "Face11"
+          }
+        ]
+      }
+    ],
+    "Sketch010": [
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pocket004",
+            "sub": "Face11"
+          }
+        ]
+      }
+    ],
+    "Sketch011": [
+      {
+        "property": "ExternalGeometry",
+        "links": [
+          {
+            "obj": "Pocket005",
+            "sub": "Edge74"
+          },
+          {
+            "obj": "Pocket005",
+            "sub": "Edge66"
+          }
+        ]
+      },
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pocket005",
+            "sub": "Face11"
+          }
+        ]
+      }
+    ],
+    "Sketch012": [
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pocket006",
+            "sub": "Face9"
+          }
+        ]
+      }
+    ],
+    "Sketch013": [
+      {
+        "property": "ExternalGeometry",
+        "links": [
+          {
+            "obj": "Pocket007",
+            "sub": "Edge68"
+          },
+          {
+            "obj": "Pocket007",
+            "sub": "Edge73"
+          }
+        ]
+      },
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pocket007",
+            "sub": "Face9"
+          }
+        ]
+      }
+    ],
+    "Sketch014": [
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "XZ_Plane",
+            "sub": ""
+          }
+        ]
+      }
+    ],
+    "Sketch015": [
+      {
+        "property": "ExternalGeometry",
+        "links": [
+          {
+            "obj": "Pocket009",
+            "sub": "Edge312"
+          }
+        ]
+      },
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pocket009",
+            "sub": "Face99"
+          }
+        ]
+      }
+    ],
+    "Sketch016": [
+      {
+        "property": "ExternalGeometry",
+        "links": [
+          {
+            "obj": "Pocket010",
+            "sub": "Edge242"
+          }
+        ]
+      },
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pocket010",
+            "sub": "Face63"
+          }
+        ]
+      }
+    ],
+    "Sketch017": [
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "YZ_Plane",
+            "sub": ""
+          }
+        ]
+      }
+    ],
+    "Sketch018": [
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "YZ_Plane",
+            "sub": ""
+          }
+        ]
+      }
+    ],
+    "Sketch019": [
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "XY_Plane",
+            "sub": ""
+          }
+        ]
+      }
+    ],
+    "LCS_Motor2A": [
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pocket014",
+            "sub": "Edge354"
+          }
+        ]
+      }
+    ],
+    "LCS_Motor2V": [
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pocket014",
+            "sub": "Edge289"
+          }
+        ]
+      }
+    ],
+    "LCS_Motor3": [
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pocket014",
+            "sub": "Edge351"
+          }
+        ]
+      }
+    ],
+    "LCS_BearingFix": [
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pocket014",
+            "sub": "Edge635"
+          },
+          {
+            "obj": "Pocket014",
+            "sub": "Edge644"
+          }
+        ]
+      }
+    ],
+    "LCS_Optodisk": [
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pocket014",
+            "sub": "Edge240"
+          },
+          {
+            "obj": "Pocket014",
+            "sub": "Edge238"
+          }
+        ]
+      }
+    ],
+    "HoleAxis_1": [
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pocket014",
+            "sub": "Edge101"
+          }
+        ]
+      }
+    ],
+    "HoleAxis_2": [
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pocket014",
+            "sub": "Edge102"
+          }
+        ]
+      }
+    ],
+    "HoleAxis_3": [
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pocket014",
+            "sub": "Edge99"
+          }
+        ]
+      }
+    ],
+    "HoleAxis_4": [
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pocket014",
+            "sub": "Edge100"
+          }
+        ]
+      }
+    ],
+    "LCS_Bot": [
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pocket014",
+            "sub": "Edge79"
+          },
+          {
+            "obj": "Pocket014",
+            "sub": "Edge87"
+          },
+          {
+            "obj": "Pocket014",
+            "sub": "Edge90"
+          },
+          {
+            "obj": "Pocket014",
+            "sub": "Edge98"
+          }
+        ]
+      }
+    ],
+    "Sketch020": [
+      {
+        "property": "ExternalGeometry",
+        "links": [
+          {
+            "obj": "Pocket014",
+            "sub": "Edge702"
+          }
+        ]
+      },
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pocket014",
+            "sub": "Face240"
+          }
+        ]
+      }
+    ],
+    "LCS_Bearing": [
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pocket015",
+            "sub": "Edge703"
+          }
+        ]
+      }
+    ],
+    "LCS_Art2BodyCover1": [
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pocket015",
+            "sub": "Edge163"
+          },
+          {
+            "obj": "Pocket015",
+            "sub": "Edge161"
+          },
+          {
+            "obj": "Pocket015",
+            "sub": "Edge162"
+          },
+          {
+            "obj": "Pocket015",
+            "sub": "Edge168"
+          }
+        ]
+      }
+    ],
+    "HoleAxis_5": [
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pocket015",
+            "sub": "Edge605"
+          }
+        ]
+      }
+    ],
+    "HoleAxis_6": [
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pocket015",
+            "sub": "Edge658"
+          }
+        ]
+      }
+    ],
+    "HoleAxis_7": [
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pocket015",
+            "sub": "Edge650"
+          }
+        ]
+      }
+    ],
+    "HoleAxis_8": [
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pocket015",
+            "sub": "Edge544"
+          }
+        ]
+      }
+    ],
+    "HoleAxis_9": [
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pocket015",
+            "sub": "Edge561"
+          }
+        ]
+      }
+    ],
+    "HoleAxis_10": [
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pocket015",
+            "sub": "Edge654"
+          }
+        ]
+      }
+    ],
+    "HoleAxis_11": [
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pocket015",
+            "sub": "Edge662"
+          }
+        ]
+      }
+    ],
+    "HoleAxis_12": [
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pocket015",
+            "sub": "Edge609"
+          }
+        ]
+      }
+    ],
+    "Sketch021": [
+      {
+        "property": "ExternalGeometry",
+        "links": [
+          {
+            "obj": "Pocket015",
+            "sub": "Edge476"
+          },
+          {
+            "obj": "Pocket015",
+            "sub": "Edge614"
+          },
+          {
+            "obj": "Pocket015",
+            "sub": "Edge613"
+          },
+          {
+            "obj": "Pocket015",
+            "sub": "Edge464"
+          }
+        ]
+      },
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pocket015",
+            "sub": "Face190"
+          }
+        ]
+      }
+    ],
+    "HoleAxis_13": [
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pocket016",
+            "sub": "Edge464"
+          }
+        ]
+      }
+    ],
+    "HoleAxis_14": [
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pocket016",
+            "sub": "Edge787"
+          }
+        ]
+      }
+    ],
+    "HoleAxis_15": [
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pocket016",
+            "sub": "Edge785"
+          }
+        ]
+      }
+    ],
+    "HoleAxis_16": [
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pocket016",
+            "sub": "Edge476"
+          }
+        ]
+      }
+    ],
+    "Sketch022": [
+      {
+        "property": "ExternalGeometry",
+        "links": [
+          {
+            "obj": "Pocket016",
+            "sub": "Edge357"
+          }
+        ]
+      },
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pocket016",
+            "sub": "Face47"
+          }
+        ]
+      }
+    ],
+    "Sketch023": [
+      {
+        "property": "Support",
+        "links": [
+          {
+            "obj": "Pocket017",
+            "sub": "Face83"
+          }
+        ]
+      }
+    ]
+  },
+  "assembly_contract": {
+    "unique_target_names": [
+      "Body",
+      "HoleAxis_1",
+      "HoleAxis_10",
+      "HoleAxis_11",
+      "HoleAxis_12",
+      "HoleAxis_13",
+      "HoleAxis_14",
+      "HoleAxis_15",
+      "HoleAxis_16",
+      "HoleAxis_2",
+      "HoleAxis_3",
+      "HoleAxis_4",
+      "HoleAxis_5",
+      "HoleAxis_6",
+      "HoleAxis_7",
+      "HoleAxis_8",
+      "HoleAxis_9",
+      "LCS_Art2BodyCover1",
+      "LCS_Bearing",
+      "LCS_BearingFix",
+      "LCS_Bot",
+      "LCS_Motor2A",
+      "LCS_Motor2V",
+      "LCS_Motor3",
+      "LCS_Optodisk"
+    ],
+    "unique_target_count": 25,
+    "consumers": [
+      {
+        "assembly_object": "Art1Body_Art1Body",
+        "property": "ExpressionEngine",
+        "target": "LCS_Bot"
+      },
+      {
+        "assembly_object": "Art1Body_Art1Body",
+        "property": "LinkedObject",
+        "target": "Body"
+      },
+      {
+        "assembly_object": "Art23Optodisk_Art23Optodisk",
+        "property": "ExpressionEngine",
+        "target": "LCS_Optodisk"
+      },
+      {
+        "assembly_object": "Bearing_625ZZ001",
+        "property": "ExpressionEngine",
+        "target": "LCS_Bearing"
+      },
+      {
+        "assembly_object": "CommonBearingFixThrough_CommonBearingFixThrough",
+        "property": "ExpressionEngine",
+        "target": "LCS_BearingFix"
+      },
+      {
+        "assembly_object": "Nema17_GearBox001",
+        "property": "ExpressionEngine",
+        "target": "LCS_Motor2A"
+      },
+      {
+        "assembly_object": "Nema17_GearBox002",
+        "property": "ExpressionEngine",
+        "target": "LCS_Motor2V"
+      },
+      {
+        "assembly_object": "Nema17_GearBox003",
+        "property": "ExpressionEngine",
+        "target": "LCS_Motor3"
+      },
+      {
+        "assembly_object": "Nut",
+        "property": "ExpressionEngine",
+        "target": "HoleAxis_15"
+      },
+      {
+        "assembly_object": "Art2BodyACover1_Art2BodyACover1",
+        "property": "ExpressionEngine",
+        "target": "LCS_Art2BodyCover1"
+      },
+      {
+        "assembly_object": "Screw025",
+        "property": "ExpressionEngine",
+        "target": "HoleAxis_5"
+      },
+      {
+        "assembly_object": "Screw026",
+        "property": "ExpressionEngine",
+        "target": "HoleAxis_6"
+      },
+      {
+        "assembly_object": "Screw027",
+        "property": "ExpressionEngine",
+        "target": "HoleAxis_12"
+      },
+      {
+        "assembly_object": "Screw028",
+        "property": "ExpressionEngine",
+        "target": "HoleAxis_11"
+      },
+      {
+        "assembly_object": "Screw029",
+        "property": "ExpressionEngine",
+        "target": "HoleAxis_7"
+      },
+      {
+        "assembly_object": "Screw030",
+        "property": "ExpressionEngine",
+        "target": "HoleAxis_8"
+      },
+      {
+        "assembly_object": "Screw031",
+        "property": "ExpressionEngine",
+        "target": "HoleAxis_10"
+      },
+      {
+        "assembly_object": "Screw032",
+        "property": "ExpressionEngine",
+        "target": "HoleAxis_9"
+      },
+      {
+        "assembly_object": "Nut020",
+        "property": "ExpressionEngine",
+        "target": "HoleAxis_14"
+      },
+      {
+        "assembly_object": "Nut021",
+        "property": "ExpressionEngine",
+        "target": "HoleAxis_16"
+      },
+      {
+        "assembly_object": "Nut022",
+        "property": "ExpressionEngine",
+        "target": "HoleAxis_13"
+      },
+      {
+        "assembly_object": "Screw037",
+        "property": "ExpressionEngine",
+        "target": "HoleAxis_3"
+      },
+      {
+        "assembly_object": "Screw038",
+        "property": "ExpressionEngine",
+        "target": "HoleAxis_4"
+      },
+      {
+        "assembly_object": "Screw039",
+        "property": "ExpressionEngine",
+        "target": "HoleAxis_1"
+      },
+      {
+        "assembly_object": "Screw040",
+        "property": "ExpressionEngine",
+        "target": "HoleAxis_2"
+      }
+    ]
+  },
+  "failed_migration_probe": {
+    "changed_property": "Thickness.Intersection",
+    "old_value": false,
+    "new_value": true,
+    "feature_measurements": [
+      {
+        "name": "Groove",
+        "saved": {
+          "valid": true,
+          "volume_mm3": 1461442.4342475636,
+          "edges": 17,
+          "solids": 1,
+          "bounds_mm": [
+            -75.0,
+            75.0,
+            -75.0,
+            75.0,
+            0.0,
+            161.4999999849089
+          ]
+        },
+        "intersection_rebuild": {
+          "valid": true,
+          "volume_mm3": 1461439.5700106574,
+          "edges": 17,
+          "solids": 1,
+          "bounds_mm": [
+            -75.0,
+            75.0,
+            -75.0,
+            75.0,
+            0.0,
+            161.49999998863402
+          ]
+        },
+        "volume_change_mm3": -2.864236906170845,
+        "state": [
+          "Up-to-date"
+        ]
+      },
+      {
+        "name": "Thickness",
+        "saved": {
+          "valid": true,
+          "volume_mm3": 320854.8748546027,
+          "edges": 40,
+          "solids": 1,
+          "bounds_mm": [
+            -75.0,
+            75.0,
+            -75.0,
+            75.0,
+            0.0,
+            161.4999999995797
+          ]
+        },
+        "intersection_rebuild": {
+          "valid": true,
+          "volume_mm3": 320852.0343296336,
+          "edges": 40,
+          "solids": 1,
+          "bounds_mm": [
+            -75.0,
+            75.0,
+            -75.0,
+            75.0,
+            0.0,
+            161.4999999995751
+          ]
+        },
+        "volume_change_mm3": -2.840524969098624,
+        "state": [
+          "Up-to-date"
+        ]
+      },
+      {
+        "name": "Pad002",
+        "saved": {
+          "valid": true,
+          "volume_mm3": 324917.60821008566,
+          "edges": 48,
+          "solids": 1,
+          "bounds_mm": [
+            -75.0,
+            75.0,
+            -75.0,
+            75.0,
+            0.0,
+            161.4999999995797
+          ]
+        },
+        "intersection_rebuild": {
+          "valid": true,
+          "volume_mm3": 324914.7586609686,
+          "edges": 48,
+          "solids": 1,
+          "bounds_mm": [
+            -75.0,
+            75.0,
+            -75.0,
+            75.0,
+            0.0,
+            161.4999999995751
+          ]
+        },
+        "volume_change_mm3": -2.8495491170324385,
+        "state": [
+          "Up-to-date"
+        ]
+      },
+      {
+        "name": "Pocket",
+        "saved": {
+          "valid": true,
+          "volume_mm3": 324798.22504141054,
+          "edges": 51,
+          "solids": 1,
+          "bounds_mm": [
+            -75.0,
+            75.0,
+            -75.0,
+            75.0,
+            0.0,
+            161.4999999995797
+          ]
+        },
+        "intersection_rebuild": {
+          "valid": true,
+          "volume_mm3": 324914.7586609686,
+          "edges": 48,
+          "solids": 1,
+          "bounds_mm": [
+            -75.0,
+            75.0,
+            -75.0,
+            75.0,
+            0.0,
+            161.4999999995751
+          ]
+        },
+        "volume_change_mm3": 116.53361955808941,
+        "state": [
+          "Up-to-date"
+        ]
+      }
+    ],
+    "first_invalid_feature": "Sketch005",
+    "invalid_features": {
+      "Sketch005": [
+        "Touched",
+        "Invalid"
+      ]
+    },
+    "saved_pocket_edge13": {
+      "curve_type": "Circle",
+      "length_mm": 10.681415022205297,
+      "vertices_mm": [
+        [
+          -33.2,
+          -54.99999999999999,
+          8.0
+        ]
+      ],
+      "Radius": 1.7,
+      "Center": [
+        -31.500000000000004,
+        -54.99999999999999,
+        8.0
+      ],
+      "Axis": [
+        0.0,
+        1.0,
+        -0.0
+      ]
+    },
+    "rebuilt_pocket_edge13": {
+      "curve_type": "BSplineCurve",
+      "length_mm": 64.38233271570728,
+      "vertices_mm": [
+        [
+          30.000000000085283,
+          -35.0,
+          135.31186914128534
+        ],
+        [
+          -30.000000000085294,
+          -35.0,
+          135.3118691412853
+        ]
+      ]
+    },
+    "saved_pocket_edge_count": 51,
+    "rebuilt_pocket_edge_count": 48,
+    "rebuilt_pocket_radius_1_7_circles": 0,
+    "rebuilt_sketch_geometry": {
+      "Sketch003": [
+        "<Line segment (-43.3013,55,0) (-20,55,0) >",
+        "<Line segment (-20,55,0) (-20,67.082,0) >",
+        "ArcOfCircle (Radius : 70, Position : (0, 0, 0), Direction : (0, 0, 1), Parameter : (1.86055, 2.23774))"
+      ],
+      "Sketch004": [
+        "Circle (Radius : 1.7, Position : (31.5, 8, 0), Direction : (0, 0, 1))"
+      ],
+      "Sketch005": [
+        "Circle (Radius : 2.95, Position : (31.5, 8, 0), Direction : (0, 0, 1))"
+      ]
+    },
+    "pocket_equals_its_base_volume": true,
+    "fully_constrained_flag_did_not_prevent_invalid_solver_state": true,
+    "interpretation": "The old Edge13 circle is no longer that subelement; the Pocket also loses its saved cutting volume while reporting Up-to-date. Remapping Sketch005 alone is not an established repair. Root cause of the lost Pocket cut is not isolated."
+  },
+  "adoption_status": "rejected_incomplete_migration; validated_static_compatibility_snapshot_remains_operational",
+  "physical_or_fabrication_validation": false
+}

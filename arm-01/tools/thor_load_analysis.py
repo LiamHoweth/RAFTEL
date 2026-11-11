@@ -340,6 +340,25 @@ def analyze(data: dict, payloads_kg: tuple[float, ...] = (0, 0.1, 0.2)) -> dict:
                 rows[-1]["conditional_modeled_wrist_gravity_contribution_nm"] = (
                     modeled_wrist_contribution
                 )
+                closure = data.get("wrist_conditional_gravity_closure")
+                if closure is not None:
+                    if (
+                        not isinstance(closure, dict)
+                        or not isinstance(closure.get("assumptions"), list)
+                        or not closure["assumptions"]
+                        or any(
+                            not isinstance(item, str) or not item.strip()
+                            for item in closure["assumptions"]
+                        )
+                        or not isinstance(closure.get("evidence"), str)
+                        or not closure["evidence"].strip()
+                    ):
+                        raise ValueError(
+                            "conditional wrist gravity closure requires assumptions/evidence"
+                        )
+                    rows[-1]["conditional_modeled_holding_torque_nm"] = finite_number(
+                        -(modeled_wrist_contribution + payload_torque)
+                    )
         scenarios.append(
             {
                 "payload_kg": payload_kg,
@@ -445,6 +464,7 @@ def build_thor_snapshot(
     material: str = "PLA",
     material_density_kg_m3: float | None = None,
     material_density_source: str | None = None,
+    instance_mass_overrides: dict[str, dict] | None = None,
 ) -> dict:
     """Mass-scenario overlay on installed native CAD leaves, with source frames.
 
@@ -452,6 +472,8 @@ def build_thor_snapshot(
     axis lines, not a calibration of all physical signs or the gripper TCP.
     Purchased asset masses are counted once; geometry volume supplies a COM
     proxy only. CAD material classification remains an explicit assumption.
+    Optional positive per-leaf mass scenarios require evidence and cannot replace
+    a whole purchased-asset mass. No internal rotor/stator split is inferred.
     """
     from raftel_arm01.kinematics import thor_model
 
@@ -467,6 +489,17 @@ def build_thor_snapshot(
         raise ValueError("installed CAD leaf has invalid native state")
     if inventory.get("missing_object_records") or inventory.get("errors"):
         raise ValueError("installed geometry inventory has unresolved records/errors")
+    overrides = {} if instance_mass_overrides is None else instance_mass_overrides
+    if not isinstance(overrides, dict) or not set(overrides) <= set(instance_ids):
+        raise ValueError("instance mass overrides must reference installed geometry leaves")
+    for override in overrides.values():
+        if (
+            not isinstance(override, dict)
+            or finite_number(override.get("mass_kg")) <= 0
+            or not isinstance(override.get("evidence"), str)
+            or not override["evidence"].strip()
+        ):
+            raise ValueError("instance mass override requires positive mass and evidence")
     groups = {}
     assets = {}
     assignments = []
@@ -492,6 +525,8 @@ def build_thor_snapshot(
             None,
         )
         if product or allowance:
+            if path in overrides:
+                raise ValueError("whole purchased-asset mass cannot be replaced by a leaf override")
             key = "/".join(segments[:3])
             record = assets.setdefault(
                 key,
@@ -508,7 +543,10 @@ def build_thor_snapshot(
         linked = leaf.get("linked_object") or leaf["object_reference"]
         source_doc = linked.split("::", 1)[0]
         source_custom_print = not source_doc.startswith("Assembly")
-        if source_custom_print or "GripperFinger" in asset:
+        if path in overrides:
+            mass = finite_number(overrides[path]["mass_kg"])
+            category = "explicit_instance_mass_scenario"
+        elif source_custom_print or "GripperFinger" in asset:
             mass = dense_volume_mass_kg(volume, reference["density_kg_m3"], fraction)
             category = f"printed_{material}_scenario"
         elif "Screw" in leaf["label"] or "Nut" in leaf["label"]:
@@ -550,6 +588,8 @@ def build_thor_snapshot(
                 "volume_mm3": volume,
             }
         )
+        if path in overrides:
+            assignments[-1]["mass_evidence"] = overrides[path]["evidence"]
     for path, record in assets.items():
         total_volume = math.fsum(part[0] for part in record["parts"])
         com = vector(
@@ -676,6 +716,10 @@ def build_thor_snapshot(
         summary["printed_material_density_kg_m3"] = reference["density_kg_m3"]
         summary["printed_material_reference"] = reference
         snapshot["sources"][-1] = reference["source"]
+    if overrides:
+        snapshot["mass_assignment_summary"]["explicit_instance_mass_overrides"] = copy.deepcopy(
+            overrides
+        )
     return snapshot
 
 
@@ -938,6 +982,17 @@ def wrist_motion_classes(memberships: dict, scenario_name: str) -> dict:
 
 def wrist_load_study(inventory: dict, memberships: dict) -> dict:
     """Traceable reference-material COM-motion study, retaining unresolved totals."""
+    if memberships.get("schema_version") == 2:
+        required = memberships.get("required_instance_mass_overrides")
+        overrides = memberships.get("instance_mass_overrides")
+        if (
+            not isinstance(required, list)
+            or not required
+            or len(set(required)) != len(required)
+            or not isinstance(overrides, dict)
+            or set(required) != set(overrides)
+        ):
+            raise ValueError("revised wrist study requires explicit masses for every added belt")
     poses = {
         "upright": (0.0,) * 6,
         "shoulder_horizontal": (0, math.pi / 2, 0, 0, 0, 0),
@@ -946,7 +1001,21 @@ def wrist_load_study(inventory: dict, memberships: dict) -> dict:
     }
     cases = []
     for family in MATERIAL_REFERENCES:
-        zero = expand_mass_assignments(build_thor_snapshot(inventory, material=family), memberships)
+        zero = expand_mass_assignments(
+            build_thor_snapshot(
+                inventory,
+                material=family,
+                instance_mass_overrides=memberships.get("instance_mass_overrides"),
+            ),
+            memberships,
+        )
+        if memberships.get("schema_version") == 2:
+            zero["wrist_conditional_gravity_closure"] = copy.deepcopy(
+                memberships["conditional_gravity_closure"]
+            )
+            zero["sources"][1] = (
+                "hardware/cad/thor-mounted-geometry-v2.json and thor-axis-evidence.json"
+            )
         for scenario_name, scenario in memberships["motion_scenarios"].items():
             classes = wrist_motion_classes(memberships, scenario_name)
             results = {}
@@ -971,7 +1040,9 @@ def wrist_load_study(inventory: dict, memberships: dict) -> dict:
                     "poses": results,
                 }
             )
-    return {
+            if memberships.get("schema_version") == 2:
+                cases[-1]["phase_evidence_class"] = scenario["phase_evidence_class"]
+    report = {
         "schema_version": 1,
         "validation_class": "conditional_CAD_COM_motion_not_full_wrist_load_or_actuator_validation",
         "coordinate_frame": zero["coordinate_frame"],
@@ -990,6 +1061,21 @@ def wrist_load_study(inventory: dict, memberships: dict) -> dict:
         "pose_feasibility_or_collision_limits_validated": False,
         "cases": cases,
     }
+    if memberships.get("schema_version") == 2:
+        report.update(
+            schema_version=2,
+            validation_class="revised_conditional_CAD_gravity_model_not_physical_or_actuator_validation",
+            sources=[*zero["sources"], "hardware/cad/thor-wrist-membership-v2.json"],
+            conditional_gravity_closure=memberships["conditional_gravity_closure"],
+            chosen_intended_phase=memberships["chosen_intended_phase"],
+            inventory_coverage_revision=memberships["inventory_coverage_revision"],
+            contribution_scope=(
+                "Revised declared COM paths including input pulleys and two added belts; "
+                "balanced internal motor rotors and uniform circulating fixed belt paths are "
+                "explicit gravity-only assumptions. Jaws are frozen at the saved CAD pose."
+            ),
+        )
+    return report
 
 
 def nominal_payload_increment_report() -> dict:

@@ -18,6 +18,8 @@ Manufacturer drawings: [base motor](https://files.omc-stepperonline.com/17HS15-0
 
 ## CAD-derived mass and load results
 
+**Coverage revision:** the original 516-leaf inventory omitted two installed Art4 belt instances because their links target groups. The [revised 518-leaf inventory](../hardware/cad/thor-mounted-geometry-v2.json) preserves all original rows and adds those belts. The [revised wrist study](../hardware/cad/thor-wrist-load-study-v2.json) below also corrects four input-pulley/grub-screw motion assignments. Original reports and the tables in this baseline section remain historical conditional calculations; conservation within their ledger did not establish complete assembly coverage.
+
 The frozen [mounted-geometry ledger](../hardware/cad/thor-mounted-geometry.json) contains **516 installed positive-solid leaves**, with 14 hidden procedural inputs excluded; all selected solid shapes passed native topology validity. Seven motor assets receive manufacturer-listed masses once per complete asset. Their CAD solid centroids are still uniform-volume COM proxies. This model also includes explicit unmeasured masses for fans, controller, switches and servo, and declared density assumptions for printed and metal parts. The servo horn is a separate polymer-density item, not a second 55 g servo.
 
 [The reproducible snapshot](../config/thor-load-snapshot.json) includes the complete per-instance mass-assignment ledger for the 50% scenario. [The load-study report](../hardware/cad/thor-load-study.json) contains three material-fraction cases, four hypothetical poses and 0/100/200 g payload sweeps, plus force/moment reactions and conditional wrist bounds.
@@ -82,6 +84,24 @@ python tools/thor_load_analysis.py --cad-inventory hardware/cad/thor-mounted-geo
 The CLI checks the inventory file SHA-256 against the membership's source digest. The report records canonical membership and inventory hashes. Tests conserve mass and manufacturer motor totals, reject duplicate/mixed-class assignments, preserve the zero-wrist proximal baseline and compare all six generalized COM moments against finite differences of potential energy for both handedness branches.
 
 The [separate elbow transmission analysis](thor-elbow-loads.md) consumes the unchanged baseline q2/q3 loads and explicitly maps the remote motor's carrier coupling into shoulder reaction and shaft effort. Its [mechanism evidence](thor-elbow-mechanism.md) keeps the smooth-drum pitch radius, routing sign and load-sharing assumptions visible. A source controller channel effort is not automatically a physical motor torque.
+
+## Revised conditional wrist gravity model
+
+The [v2 membership](../hardware/cad/thor-wrist-membership-v2.json) covers **518 installed leaves with 517 mass records**. It corrects four existing Art4 input-pulley/grub-screw records to their own shaft axes and adds two installed belt leaves recovered by the [extractor completeness audit](thor-geometry-completeness.md). All previous mass allocations remain unchanged, including seven complete motor masses totaling **2.120 kg**; no rotor/stator mass split is invented. See the [moving-mass evidence](thor-moving-mass-closure.md).
+
+Each new belt explicitly receives **0.002416787334 kg**, calculated from its saved 2013.989445 mm³ solid volume and an **unmeasured 1200 kg/m³ density scenario**. This is an assumed whole-belt mass, not a measured product mass. The source's 208 mm label differs from the approximately 223.78 mm smooth-strip path; neither model volume nor path proves physical belt fit. The v2 API requires a positive per-instance mass and evidence for each added belt; it rejects missing overrides and attempts to override purchased motor masses by a geometry leaf.
+
+The input pulley on the native negative-Y side rotates about its own +Y axis by `2*q5 + 4*s*q6`. The positive-Y input rotates about its actual −Y axis by `−2*q5 + 4*s*q6`. Both are twice their corresponding side-pulley angle under an ideal uncrossed no-slip 20/40 belt stage. The [handedness study](thor-wrist-handedness.md) supports **s=+1 as the intended arrangement**; s=−1 is retained as an opposite-phase sensitivity case. Intersecting saved gear solids and pitch-apex/module discrepancies prevent claiming conjugate gear articulation or physical sign calibration.
+
+The [v2 report](../hardware/cad/thor-wrist-load-study-v2.json) adds `conditional_modeled_holding_torque_nm` for wrist self-mass plus payload. It requires explicit gravity-only closure assumptions: internal motor rotor COMs remain on their axes, uniform circulating belts have fixed spatial COMs on fixed Art4 paths, bearing centroids follow their declared supports, and all gripper mass remains included at the saved jaw pose. Actual rotor eccentricity, belt density/tension redistribution and COMs remain unknown. The original full wrist arm/holding fields remain **null**; the conditional field neither supplies a physical demand nor qualifies an actuator. The [separate jaw-coordinate study](thor-gripper-kinematics.md) does not remove any jaw mass from this fixed-pose report.
+
+At 50% whole-part fraction the revised PLA/PETG/ABS masses are **5.65472/5.70700/5.30619 kg**, respectively: each adds the same **4.83357 g** belt scenario. For the chosen s=+1 PLA case at q2=90°, q5=45°, q6=30° and 200 g payload, conditional wrist holding is approximately **−0.28637 N·m at q5** and **+0.007377 N·m at q6**; shoulder/elbow modeled holding magnitudes are **5.71110/2.21785 N·m**. These signed, pose-specific results depend on every stated assumption and do not include dynamics, friction or physical capacity.
+
+```sh
+python tools/thor_load_analysis.py --cad-inventory hardware/cad/thor-mounted-geometry-v2.json --wrist-membership hardware/cad/thor-wrist-membership-v2.json --output /path/to/new-wrist-load-study-v2.json
+```
+
+The same input-file digest check binds v2 membership to its inventory. Tests independently check both pulley axes/ratios, fixed uniform-belt COMs, conservation of every old mass plus the two explicit belt masses, all six gravity potential gradients with 200 g payload in both phase cases, revised report reproduction and unchanged historical reports. This establishes the declared conditional gravity calculation, not physical completeness, inertia, gear contact or safe operation.
 
 ## Installed mass belongs to the carrying link
 

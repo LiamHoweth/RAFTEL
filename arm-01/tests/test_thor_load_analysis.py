@@ -507,3 +507,187 @@ def test_carried_roll_payload_point_follows_fold_and_not_fixed_world_roll():
     pose = loads.articulate_wrist_snapshot(expanded, (0, 0, 0, 0, math.pi / 2, 0.7), classes)
     # Original axis-centred payload is invariant under its roll, then folds about +ROS X.
     assert pose["payload_position_m"] == pytest.approx([0, -(0.7025242557054092 - 0.556), 0.556])
+
+
+@pytest.mark.parametrize(
+    "bad_override",
+    [
+        {"mass_kg": 0, "evidence": "test"},
+        {"mass_kg": 0.1},
+        {"mass_kg": math.nan, "evidence": "test"},
+    ],
+)
+def test_explicit_leaf_mass_scenario_requires_positive_mass_and_provenance(bad_override):
+    inventory = native_inventory_fixture()
+    path = inventory["mounted_bodies"][-1]["instance_id"]
+    with pytest.raises(ValueError):
+        loads.build_thor_snapshot(inventory, instance_mass_overrides={path: bad_override})
+
+
+def test_leaf_mass_override_cannot_replace_a_manufacturer_whole_motor_mass():
+    inventory = native_inventory_fixture()
+    path = next(
+        row["instance_id"]
+        for row in inventory["mounted_bodies"]
+        if "Stepper_Nema17" in row["instance_id"]
+    )
+    with pytest.raises(ValueError, match="whole purchased-asset"):
+        loads.build_thor_snapshot(
+            inventory, instance_mass_overrides={path: {"mass_kg": 0.01, "evidence": "test-only"}}
+        )
+    with pytest.raises(ValueError, match="installed geometry"):
+        loads.build_thor_snapshot(
+            inventory,
+            instance_mass_overrides={"absent": {"mass_kg": 0.01, "evidence": "test-only"}},
+        )
+
+
+def test_missing_explicit_revised_belt_mass_is_not_silently_replaced_by_density():
+    with pytest.raises(ValueError, match="explicit masses"):
+        loads.wrist_load_study(
+            {},
+            {
+                "schema_version": 2,
+                "required_instance_mass_overrides": ["belt"],
+                "instance_mass_overrides": {},
+            },
+        )
+
+
+def test_original_wrist_and_material_reports_remain_reproducible():
+    import json
+
+    root = Path(__file__).parents[1] / "hardware/cad"
+    inventory = json.loads((root / "thor-mounted-geometry.json").read_text())
+    membership = json.loads((root / "thor-wrist-membership.json").read_text())
+    assert json.loads(json.dumps(loads.wrist_load_study(inventory, membership))) == json.loads(
+        (root / "thor-wrist-load-study.json").read_text()
+    )
+    assert loads.material_comparison_report(inventory) == json.loads(
+        (root / "thor-material-comparison.json").read_text()
+    )
+
+
+def revised_wrist_inputs():
+    import json
+
+    root = Path(__file__).parents[1] / "hardware/cad"
+    inventory = json.loads((root / "thor-mounted-geometry-v2.json").read_text())
+    membership = json.loads((root / "thor-wrist-membership-v2.json").read_text())
+    model = loads.build_thor_snapshot(
+        inventory, instance_mass_overrides=membership["instance_mass_overrides"]
+    )
+    expanded = loads.expand_mass_assignments(model, membership)
+    expanded["wrist_conditional_gravity_closure"] = membership["conditional_gravity_closure"]
+    return inventory, membership, expanded
+
+
+def test_revised_coverage_preserves_all_old_masses_and_adds_only_explicit_belts():
+    baseline, _, _, _ = wrist_inputs()
+    inventory, membership, expanded = revised_wrist_inputs()
+    previous = {
+        a["instance_path"]: a["mass_kg"]
+        for body in baseline["bodies"]
+        for a in body["mass_assignments"]
+    }
+    current = {b["instance_path"]: b["mass_kg"] for b in expanded["bodies"]}
+    assert len(inventory["mounted_bodies"]) == len(membership["memberships"]) == 518
+    assert len(expanded["bodies"]) == 517
+    assert {path: current[path] for path in previous} == previous
+    assert set(current) - set(previous) == set(membership["instance_mass_overrides"])
+    belt_delta = sum(v["mass_kg"] for v in membership["instance_mass_overrides"].values())
+    assert belt_delta == pytest.approx(0.004833574668562413)
+    assert sum(current.values()) == pytest.approx(sum(previous.values()) + belt_delta)
+    motors = [
+        b
+        for b in expanded["bodies"]
+        if b["mass_assignment"]["category"].startswith("manufacturer_motor_mass_")
+    ]
+    assert len(motors) == 7
+    assert sum(b["mass_kg"] for b in motors) == pytest.approx(2.120)
+    assert not membership["conditional_gravity_closure"]["rotor_stator_mass_split_invented"]
+
+
+@pytest.mark.parametrize("scenario_name", ["bevel_sign_positive", "bevel_sign_negative"])
+def test_revised_input_pulleys_follow_actual_own_axes_at_twice_side_angle(scenario_name):
+    inventory, membership, expanded = revised_wrist_inputs()
+    classes = loads.wrist_motion_classes(membership, scenario_name)
+    q5, q6 = 0.31, -0.43
+    posed = loads.articulate_wrist_snapshot(expanded, (0, 0, 0, 0, q5, q6), classes)
+    points = {b["id"]: b["com_m"] for b in posed["bodies"]}
+    sign = membership["motion_scenarios"][scenario_name]["side_rotor_sign_s"]
+    checked = 0
+    for leaf in inventory["mounted_bodies"]:
+        path = leaf["instance_id"]
+        if "/AssemblyArt4::Pulley_GT2x20001/" in path:
+            origin, angle = (0.024, -0.0279, 0.4781), 2 * (q5 + 2 * sign * q6)
+        elif "/AssemblyArt4::Pulley_GT2x20002/" in path:
+            origin, angle = (-0.024, 0.0279, 0.4781), 2 * (q5 - 2 * sign * q6)
+        elif "/AssemblyArt4::Belt_GT2_208mm" in path:
+            x, y, z = leaf["zero_world_com_m"]
+            assert points[path] == pytest.approx([y, -x, z])
+            continue
+        else:
+            continue
+        x, y, z = [leaf["zero_world_com_m"][i] - origin[i] for i in range(3)]
+        # Independent common-native-Y point rotation; second motor's actual -Y
+        # axis is represented equivalently by the negated angle in the ledger.
+        moved_x = origin[0] + x * math.cos(angle) + z * math.sin(angle)
+        moved_z = origin[2] - x * math.sin(angle) + z * math.cos(angle)
+        assert points[path] == pytest.approx([y + origin[1], -moved_x, moved_z], abs=1e-12)
+        checked += 1
+    assert checked == 4
+
+
+@pytest.mark.parametrize("scenario_name", ["bevel_sign_positive", "bevel_sign_negative"])
+def test_revised_conditional_holding_matches_total_COM_potential_gradient(scenario_name):
+    _, membership, expanded = revised_wrist_inputs()
+    classes = loads.wrist_motion_classes(membership, scenario_name)
+    angles = (0.2, 0.6, -0.3, 0.4, -0.5, 0.7)
+    posed = loads.articulate_wrist_snapshot(expanded, angles, classes)
+    rows = loads.analyze(posed, (0.2,))["scenarios"][0]["joints"]
+
+    def potential(coordinates):
+        moved = loads.articulate_wrist_snapshot(expanded, tuple(coordinates), classes)
+        return loads.GRAVITY_M_S2 * (
+            math.fsum(b["mass_kg"] * b["com_m"][2] for b in moved["bodies"])
+            + 0.2 * moved["payload_position_m"][2]
+        )
+
+    epsilon = 1e-6
+    for index, row in enumerate(rows):
+        plus, minus = list(angles), list(angles)
+        plus[index] += epsilon
+        minus[index] -= epsilon
+        gradient = (potential(plus) - potential(minus)) / (2 * epsilon)
+        if index < 4:
+            holding = row["required_ideal_holding_torque_nm"]
+        else:
+            holding = row["conditional_modeled_holding_torque_nm"]
+            assert row["required_ideal_holding_torque_nm"] is None
+            assert row["arm_gravity_torque_nm"] is None
+        assert holding == pytest.approx(gradient, abs=1e-8)
+
+
+def test_revised_report_reproduces_and_distinguishes_intended_phase_from_sensitivity():
+    import json
+
+    inventory, membership, _ = revised_wrist_inputs()
+    report = loads.wrist_load_study(inventory, membership)
+    path = Path(__file__).parents[1] / "hardware/cad/thor-wrist-load-study-v2.json"
+    assert json.loads(json.dumps(report)) == json.loads(path.read_text())
+    assert report["chosen_intended_phase"]["side_rotor_sign_s"] == 1
+    for case in report["cases"]:
+        if case["side_rotor_sign_s"] == 1:
+            assert case["phase_evidence_class"].startswith("chosen intended")
+        else:
+            assert "sensitivity only" in case["phase_evidence_class"]
+
+
+def test_conditional_holding_requires_nonempty_explained_assumptions():
+    _, membership, expanded = revised_wrist_inputs()
+    classes = loads.wrist_motion_classes(membership, "bevel_sign_positive")
+    expanded["wrist_conditional_gravity_closure"]["assumptions"] = [""]
+    posed = loads.articulate_wrist_snapshot(expanded, (0, 0, 0, 0, 0, 0), classes)
+    with pytest.raises(ValueError, match="assumptions/evidence"):
+        loads.analyze(posed)
