@@ -2,7 +2,7 @@
 
 **Project:** ARM-01 BenchSort
 **Current phase:** Phase 1 — Engineering foundation
-**Last updated:** 2026-11-11 17:10:20 UTC
+**Last updated:** 2026-11-11 17:40:22 UTC
 **Overall status:** In Progress
 
 ## Current Objective
@@ -21,9 +21,11 @@ Reproduce Thor's existing native CAD baseline before adapting it: open/recompute
 ## In Progress
 - Published branch `codex/arm01-engineering-bootstrap`; [PR #1](https://github.com/LiamHoweth/RAFTEL/pull/1) open, not merged. Latest implementation checkpoint `eb2171a` is pushed and CI passes; session handoff is saved with this follow-up.
 - Official portable FreeCAD 1.1.4 runtime is operational under the workspace tools directory; no system-wide installation or global security-setting changes. Whole-assembly compatibility remains open.
-- Bootstrap session implementation and verification are finished. Complete native assembly compatibility and CAD-derived model/BOM remain the next engineering tasks; no background agent work is implied.
+- Active continuation: five agents investigate addon trust, failed features, incremental audit tooling, CAD/ROS geometry, and traceable load analysis. Root coordinates full native runs, integration, validation and publication.
 
 ## Completed and Verified
+- Continuation milestone: native addon trust resolved via standard `-M` registration, with pinned Fasteners and version-matched Gears0.0.3. Original involute and bevel gear parts forcibly recomputed successfully; no global trust changes or source saves. See `arm-01/docs/thor-dependency-compatibility.md`.
+- Incremental native audit/outer timeout runner now preserve checkpoints, feature state, proxy/placement evidence and logs; restore, changed and forced modes are separate. Focused guard/runner tests pass.
 - Pure Thor joint/channel conversion utility and 21 tests: paired shoulder validation, differential wrist modes, seeded algebraic round trips, finite input/overflow handling; no hardware commands. See `arm-01/docs/thor-joint-map.md`.
 - Thor-specific motor/controller/driver listing study with reproducible subtotal; compatibility, missing components and total cost remain unverified. See `arm-01/hardware/thor-cost-study.md`.
 - Five specialist agents contributed CAD research, mechanics/mobile analysis, hardware/safety, research/ADR and foundation documentation.
@@ -34,7 +36,7 @@ Reproduce Thor's existing native CAD baseline before adapting it: open/recompute
 - Reproducible full downstream static-torque and floor outer-bound analysis implemented (analytical estimates only).
 
 ## Blockers and Open Decisions
-- Whole Thor assembly compatibility: native attempt timed out after180seconds with `module not permitted: FastenersCmd` and thickness-feature failures. Inventory exact addon/proxy and kernel/version requirements before editing geometry; do not disable global document security.
+- Remaining native compatibility: Art1Body contains legacy thickness/sketch rebuild failures. Cached-valid solids are not rebuild proof. Addon restoration is now resolved with pinned Fasteners and historical Gears; full assembly/snapshot validation is in progress. Preserve original history and do not disable global security.
 - Thor is the first CAD study baseline; Liam explicitly permits eight total actuators. Measured geometry/masses, Thor-specific BOM, sustainable actuator output, parallel-gripper fit, license provenance, and physical equipment inventory remain open.
 
 ## Hardware and Purchasing Status
@@ -59,6 +61,8 @@ No hardware approved, purchased, received, or tested in this session.
 - [ ] Phase 7 — Reliability/mobile readiness
 
 ## Recent Engineering Log
+- 2026-11-11: Verified original gear parts with version-matched addon, implemented checkpointed cached/changed/forced audit and bounded outer runner, and identified Art1Body legacy rebuild failures separately from valid cached geometry. Publishing this tested tooling/dependency checkpoint while geometry/load work continues.
+- 2026-11-11: Resumed on Liam’s instruction with five agents; clean starting tree, preserved source baseline and55GiB free. Investigating native addon registration, exact thickness features and safer restore/recompute modes before extracting geometry/load results.
 - 2026-11-11: All four Linux Python CI jobs passed for eb2171a (94 tests). Saved final native diagnostics, preserved source checkouts and active tools, removed superseded installer and scratch helpers; free-space reserve remains above50GiB.
 - 2026-11-11: Verified official FreeCAD1.1.4 download checksum/signature; portable console works. Whole-assembly native attempt timed out with actionable diagnostics; original BaseTop imported/forced-recomputed with one valid solid. No source saved. Added native-audit guard tests (94 total) and retained reports.
 - 2026-11-11: Added verified-source Thor motor coupling algebra and 21 tests (91 total); researched actual linked motor prices and incomplete total. CI at5ac3b6d passed all four Python versions. Continuing native CAD runtime/import study.
