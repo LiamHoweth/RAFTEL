@@ -6,9 +6,9 @@ A short reading room for staying current without losing focus on the build.
 
 ## Current focus
 
-Start with the full-range arm on a clamped stand, picking up objects and sorting them into boxes. Keep the later mobile home-assistant goal in view without letting it expand the first milestone.
+ARM-01 BenchSort now uses Thor as the existing-CAD analysis baseline: six arm axes, eight actuators allowed, a stationary clamped workstation and three sorting boxes. The immediate reading priorities are wrist/transmission load paths, fabrication on Liam's Kobra 3 Max, and material/print assumptions. PLA, PETG and ABS are available; physical qualification remains open.
 
-This focus comes from the project owner's stated plan. As the repository fills out, its design documents, code, tests, hardware choices, and `nextSteps.md` should make each briefing more specific. The reading room complements that roadmap; it does not replace or edit it.
+Use [nextSteps.md](../nextSteps.md), the [geometry study](../arm-01/docs/thor-geometry.md) and the [load study](../arm-01/docs/thor-load-analysis.md) to select reading. The reading room complements the engineering roadmap and does not claim simulated or analytical results are physical performance.
 
 ## What each briefing covers
 
@@ -33,7 +33,7 @@ Aim for a five-minute read. Fewer strong items are better than a padded news fee
 
 ## Archive
 
-- [2026-11-11: Make the sorting loop measurable](2026-11-11.md)
+- [2026-11-11: Turn Thor’s load model into a print plan](2026-11-11.md)
 
 ## Source watchlist
 

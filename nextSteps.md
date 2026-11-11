@@ -2,7 +2,7 @@
 
 **Project:** ARM-01 BenchSort
 **Current phase:** Phase 1 — CAD-derived engineering foundation and design gates
-**Last updated:** 2026-11-11 18:20:59 UTC
+**Last updated:** 2026-11-11 18:29:51 UTC
 **Overall status:** In Progress
 
 ## Current Objective
@@ -10,7 +10,7 @@ Resume from the merged, reviewed Thor compatibility, geometry and conditional lo
 
 ## Next 3 Actions for Liam
 1. Measure bench dimensions, desk thickness/material, rear clamp clearance and camera mounting clearance. These determine the removable mount and reachable workstation layout.
-2. Provide printer build volume, intended PLA/PETG/ABS brands and print profiles. All three material families are confirmed available; actual densities, sliced part masses, dimensional fit and printed strength remain unverified.
+2. Printer identified: **Anycubic Kobra 3 Max**, nominal **420 × 420 × 500 mm** build volume. Provide actual nozzle/slicer profile and PLA/PETG/ABS brands; see [fabrication record](arm-01/hardware/fabrication.md). All three material families are confirmed available; actual densities, sliced part masses, dimensional fit and printed strength remain unverified.
 3. Review [load assumptions](arm-01/docs/thor-load-analysis.md), [material comparison](arm-01/hardware/cad/thor-material-comparison.json) and [incomplete Thor cost study](arm-01/hardware/thor-cost-study.md) before any purchase or fabrication decision. No orders or powered tests are approved by these calculations.
 
 ## Next 3 Actions for Codex
@@ -41,7 +41,7 @@ Resume from the merged, reviewed Thor compatibility, geometry and conditional lo
 - Native CAD, analytical poses and logical sorting are not physical robot performance or a demonstrated90% sorting rate.
 
 ## Hardware and Purchasing Status
-No hardware was purchased, assembled, energized or physically tested. Liam confirmed PLA, PETG and ABS print availability. The candidate BOM and supplier prices remain research; the complete delivered Thor build cost and structural material selection are open. Existing computer, printer, tool and camera reuse still need exact inventory/profile details.
+No hardware was purchased, assembled, energized or physically tested. Liam confirmed PLA, PETG and ABS print availability. The candidate BOM and supplier prices remain research; the complete delivered Thor build cost and structural material selection are open. Printer ownership/model is confirmed by Liam as Kobra 3 Max; published nominal volume is recorded. Actual printer/nozzle/material profiles and remaining computer/tool/camera inventory still need detail.
 
 ## Validation Results
 - 222 tests pass locally on macOS/Python3.14.4; Ruff lint/format and Python compilation pass. Final material additions preserve the original PLA study unchanged.
@@ -65,6 +65,7 @@ No hardware was purchased, assembled, energized or physically tested. Liam confi
 - [ ] Phase 7 — Reliability benchmarks, detachable mount and mobile readiness
 
 ## Recent Engineering Log
+- 2026-11-11: Liam identified a Kobra 3 Max. Recorded published build volume and remaining profile/filament questions; refreshed today’s daily reading around Thor load paths, material assumptions and this printer. No printer operation or configuration change.
 - 2026-11-11: Final implementation CI passed all four Python versions; independently verified the complete ledger/moments and reproduced reports. Merged PR #1 into main as024fe244. Original source/native working copies and useful runtime retained; temporary wheel builds removed, free-space reserve remains above50GiB.
 - 2026-11-11: Liam confirmed PLA/PETG/ABS and authorized merging after a good verification checkpoint. Added reference-density comparisons and explicit override provenance; no structural material approval inferred.
 - 2026-11-11: Extracted native axis lines and516 installed solids; corrected the90° frame mismatch and duplicate/helper geometry, then independently reviewed the mass ledger and gravity moments. Working-tree suite reaches222 tests.
