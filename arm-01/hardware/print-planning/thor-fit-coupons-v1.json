@@ -1,0 +1,397 @@
+{
+  "schema_version": 1,
+  "evidence_class": "source_linked_coupon_dimension_study_not_print_or_fabrication_release",
+  "input_canonical_sha256": {
+    "hardware/cad/thor-fabrication-interfaces.json": "6eb6b42ace8b0093c9718ec034565a37e06aff15fb819d098ef557e1d9c4c691",
+    "hardware/print-planning/local-profile-audit.json": "441618d75437b7e845fd5f6bac59de1f950ef3c90781882b230922880fb64b8d"
+  },
+  "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+  "design_kind": "independent_stepped_annular_test_piece_not_extracted_Thor_geometry",
+  "mesh_units": "mm",
+  "mesh_frame": "coupon_local; lower annulus at z=0; concentric bore along +Z",
+  "local_pose_is_only_an_orientation_candidate": true,
+  "installed_asset_quantities_are_unchanged": true,
+  "existing_native_and_upstream_STL_drafts_are_separate": true,
+  "saved_profile_context": {
+    "evidence_class": "saved_software_selection_only_not_physical_machine_confirmation",
+    "profile_used_for_slicing": false,
+    "nozzle_material_support_or_process_settings_selected_here": false
+  },
+  "coupon_measurement_template": {
+    "evidence_state": "unknown",
+    "specimen_id": null,
+    "coupon_filename": null,
+    "coupon_mesh_sha256": null,
+    "actual_profile_and_filament_evidence": null,
+    "instrument_id": null,
+    "instrument_resolution_m": null,
+    "measured_lower_bore_xy_m": null,
+    "measured_relief_xy_m": null,
+    "cleaned_coupon_mass_kg": null,
+    "fit_target_part_or_drawing": null,
+    "required_fit_interval_m": null,
+    "requirement_source": null,
+    "acceptance": null,
+    "coupon_mass_is_not_installed_arm_mass": true
+  },
+  "coupons": [
+    {
+      "filename": "DRAFT_dimension_study_bolt_coupon_01.stl",
+      "evidence_class": "independent_parametric_dimension_study_not_nominal_Thor_part_export",
+      "source_dimensions": {
+        "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+        "source_file": "freecad-src/BaseBot.fcstd",
+        "source_sha256": "c637feec821a886c80c8622cf316de02c05f06d90ff49af9df9b0a0cdff00e5a",
+        "source_object": "BaseBot::Body002",
+        "source_bore_faces": [
+          6,
+          9,
+          11,
+          13
+        ],
+        "source_relief_faces": [
+          63,
+          64,
+          69,
+          70
+        ],
+        "nominal_bore_diameter_mm": 6.0,
+        "nominal_relief_diameter_mm": 14.0,
+        "source_lower_bore_depth_mm": 5,
+        "original_relief_top_is_nonplanar": true,
+        "coupon_is_independent_of_original_outer_shape": true
+      },
+      "study_parameters": {
+        "bore_diameter_offset_mm": -0.1,
+        "offset_is_diametral_not_radial": true,
+        "source_nominal_dimension_reference": false,
+        "lower_bore_diameter_mm": 5.9,
+        "upper_relief_diameter_mm": 14.0,
+        "lower_bore_depth_mm": 5,
+        "outer_diameter_mm": 22.0,
+        "upper_recess_depth_mm": 5.0,
+        "total_height_mm": 10.0,
+        "outer_shape_and_upper_depth_are_coupon_assumptions": true,
+        "segments": 96,
+        "pre_STL_vertex_rounding_grid_mm": 1e-06
+      },
+      "mesh_sha256": "94595edd28add8edf67171b60cd2b0748952176db07f434f9cc768c5343719fd",
+      "mesh_bytes": 57684,
+      "mesh": {
+        "encoding": "binary",
+        "triangle_count": 1152,
+        "exact_vertex_count": 576,
+        "connected_components_by_vertex": 1,
+        "bounds_interpreted_mm": {
+          "min": [
+            -11.0,
+            -11.0,
+            0.0
+          ],
+          "max": [
+            11.0,
+            11.0,
+            10.0
+          ]
+        },
+        "envelope_xyz_interpreted_mm": [
+          22.0,
+          22.0,
+          10.0
+        ],
+        "surface_area_interpreted_mm2": 1708.6420625943213,
+        "algebraic_signed_volume_interpreted_mm3": 2892.8719600153627,
+        "absolute_signed_volume_interpreted_mm3": 2892.8719600153627,
+        "topology": {
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "nonmanifold_vertices": 0,
+          "inconsistent_winding_edges": 0,
+          "duplicate_facets": 0,
+          "zero_area_facets": 0,
+          "closed_consistently_oriented_two_manifold": true,
+          "exact_vertex_matching_no_weld": true
+        },
+        "stored_normal_warnings": {
+          "zero_normals": 0,
+          "opposed_to_winding": 0
+        },
+        "nonzero_binary_attribute_words": 0,
+        "self_intersections": "not_checked",
+        "units": "STL_unitless_coordinates_explicitly_interpreted_as_mm_not_encoded_units",
+        "solid_fidelity": "not_established_by_topology_bounds_or_volume"
+      },
+      "digital_dimensional_checks": {
+        "expected_faceted_polygon_volume_mm3": 2892.8719702301496,
+        "mesh_volume_difference_mm3": -1.0214786925644148e-05,
+        "lower_bore_ring": {
+          "ring_vertex_count": 96,
+          "minimum_across_flats_diameter_mm": 5.896840303443962,
+          "minimum_vertex_diameter_mm": 5.8999991523642645,
+          "maximum_vertex_diameter_mm": 5.900001197871784
+        },
+        "upper_relief_ring": {
+          "ring_vertex_count": 96,
+          "minimum_across_flats_diameter_mm": 13.992503784849497,
+          "minimum_vertex_diameter_mm": 13.999998917463236,
+          "maximum_vertex_diameter_mm": 14.000000534211484
+        },
+        "facets_are_inscribed_not_exact_circles": true,
+        "faceting_is_not_a_print_fit_allowance": true
+      },
+      "qualification": {
+        "native_source_solid_equivalence": false,
+        "general_self_intersection_scan_performed": false,
+        "actual_printer_nozzle_filament_or_shrinkage_verified": false,
+        "fit_or_retention_acceptance": false,
+        "sliced_or_Gcode_generated": false,
+        "Anycubic_GUI_import_observed": false,
+        "manufacturing_release": false
+      }
+    },
+    {
+      "filename": "DRAFT_dimension_study_bolt_coupon_02.stl",
+      "evidence_class": "independent_parametric_dimension_study_not_nominal_Thor_part_export",
+      "source_dimensions": {
+        "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+        "source_file": "freecad-src/BaseBot.fcstd",
+        "source_sha256": "c637feec821a886c80c8622cf316de02c05f06d90ff49af9df9b0a0cdff00e5a",
+        "source_object": "BaseBot::Body002",
+        "source_bore_faces": [
+          6,
+          9,
+          11,
+          13
+        ],
+        "source_relief_faces": [
+          63,
+          64,
+          69,
+          70
+        ],
+        "nominal_bore_diameter_mm": 6.0,
+        "nominal_relief_diameter_mm": 14.0,
+        "source_lower_bore_depth_mm": 5,
+        "original_relief_top_is_nonplanar": true,
+        "coupon_is_independent_of_original_outer_shape": true
+      },
+      "study_parameters": {
+        "bore_diameter_offset_mm": 0.0,
+        "offset_is_diametral_not_radial": true,
+        "source_nominal_dimension_reference": true,
+        "lower_bore_diameter_mm": 6.0,
+        "upper_relief_diameter_mm": 14.0,
+        "lower_bore_depth_mm": 5,
+        "outer_diameter_mm": 22.0,
+        "upper_recess_depth_mm": 5.0,
+        "total_height_mm": 10.0,
+        "outer_shape_and_upper_depth_are_coupon_assumptions": true,
+        "segments": 96,
+        "pre_STL_vertex_rounding_grid_mm": 1e-06
+      },
+      "mesh_sha256": "0060891e2050310a5cfcb927060cf9fb84ef2ff7d72a6b56a043ec009705e72b",
+      "mesh_bytes": 57684,
+      "mesh": {
+        "encoding": "binary",
+        "triangle_count": 1152,
+        "exact_vertex_count": 576,
+        "connected_components_by_vertex": 1,
+        "bounds_interpreted_mm": {
+          "min": [
+            -11.0,
+            -11.0,
+            0.0
+          ],
+          "max": [
+            11.0,
+            11.0,
+            10.0
+          ]
+        },
+        "envelope_xyz_interpreted_mm": [
+          22.0,
+          22.0,
+          10.0
+        ],
+        "surface_area_interpreted_mm2": 1708.3446654823122,
+        "algebraic_signed_volume_interpreted_mm3": 2888.2021807548695,
+        "absolute_signed_volume_interpreted_mm3": 2888.2021807548695,
+        "topology": {
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "nonmanifold_vertices": 0,
+          "inconsistent_winding_edges": 0,
+          "duplicate_facets": 0,
+          "zero_area_facets": 0,
+          "closed_consistently_oriented_two_manifold": true,
+          "exact_vertex_matching_no_weld": true
+        },
+        "stored_normal_warnings": {
+          "zero_normals": 0,
+          "opposed_to_winding": 0
+        },
+        "nonzero_binary_attribute_words": 0,
+        "self_intersections": "not_checked",
+        "units": "STL_unitless_coordinates_explicitly_interpreted_as_mm_not_encoded_units",
+        "solid_fidelity": "not_established_by_topology_bounds_or_volume"
+      },
+      "digital_dimensional_checks": {
+        "expected_faceted_polygon_volume_mm3": 2888.2021868031175,
+        "mesh_volume_difference_mm3": -6.048247996659484e-06,
+        "lower_bore_ring": {
+          "ring_vertex_count": 96,
+          "minimum_across_flats_diameter_mm": 5.996786376066266,
+          "minimum_vertex_diameter_mm": 5.9999986467685975,
+          "maximum_vertex_diameter_mm": 6.000000846911608
+        },
+        "upper_relief_ring": {
+          "ring_vertex_count": 96,
+          "minimum_across_flats_diameter_mm": 13.992503784849497,
+          "minimum_vertex_diameter_mm": 13.999998917463236,
+          "maximum_vertex_diameter_mm": 14.000000534211484
+        },
+        "facets_are_inscribed_not_exact_circles": true,
+        "faceting_is_not_a_print_fit_allowance": true
+      },
+      "qualification": {
+        "native_source_solid_equivalence": false,
+        "general_self_intersection_scan_performed": false,
+        "actual_printer_nozzle_filament_or_shrinkage_verified": false,
+        "fit_or_retention_acceptance": false,
+        "sliced_or_Gcode_generated": false,
+        "Anycubic_GUI_import_observed": false,
+        "manufacturing_release": false
+      }
+    },
+    {
+      "filename": "DRAFT_dimension_study_bolt_coupon_03.stl",
+      "evidence_class": "independent_parametric_dimension_study_not_nominal_Thor_part_export",
+      "source_dimensions": {
+        "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+        "source_file": "freecad-src/BaseBot.fcstd",
+        "source_sha256": "c637feec821a886c80c8622cf316de02c05f06d90ff49af9df9b0a0cdff00e5a",
+        "source_object": "BaseBot::Body002",
+        "source_bore_faces": [
+          6,
+          9,
+          11,
+          13
+        ],
+        "source_relief_faces": [
+          63,
+          64,
+          69,
+          70
+        ],
+        "nominal_bore_diameter_mm": 6.0,
+        "nominal_relief_diameter_mm": 14.0,
+        "source_lower_bore_depth_mm": 5,
+        "original_relief_top_is_nonplanar": true,
+        "coupon_is_independent_of_original_outer_shape": true
+      },
+      "study_parameters": {
+        "bore_diameter_offset_mm": 0.1,
+        "offset_is_diametral_not_radial": true,
+        "source_nominal_dimension_reference": false,
+        "lower_bore_diameter_mm": 6.1,
+        "upper_relief_diameter_mm": 14.0,
+        "lower_bore_depth_mm": 5,
+        "outer_diameter_mm": 22.0,
+        "upper_recess_depth_mm": 5.0,
+        "total_height_mm": 10.0,
+        "outer_shape_and_upper_depth_are_coupon_assumptions": true,
+        "segments": 96,
+        "pre_STL_vertex_rounding_grid_mm": 1e-06
+      },
+      "mesh_sha256": "31126d86bd2827d0fd6141f54efd1cca199cc2ac90404ad768be6bb08b76946c",
+      "mesh_bytes": 57684,
+      "mesh": {
+        "encoding": "binary",
+        "triangle_count": 1152,
+        "exact_vertex_count": 576,
+        "connected_components_by_vertex": 1,
+        "bounds_interpreted_mm": {
+          "min": [
+            -11.0,
+            -11.0,
+            0.0
+          ],
+          "max": [
+            11.0,
+            11.0,
+            10.0
+          ]
+        },
+        "envelope_xyz_interpreted_mm": [
+          22.0,
+          22.0,
+          10.0
+        ],
+        "surface_area_interpreted_mm2": 1708.0158741349605,
+        "algebraic_signed_volume_interpreted_mm3": 2883.453906919241,
+        "absolute_signed_volume_interpreted_mm3": 2883.453906919241,
+        "topology": {
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "nonmanifold_vertices": 0,
+          "inconsistent_winding_edges": 0,
+          "duplicate_facets": 0,
+          "zero_area_facets": 0,
+          "closed_consistently_oriented_two_manifold": true,
+          "exact_vertex_matching_no_weld": true
+        },
+        "stored_normal_warnings": {
+          "zero_normals": 0,
+          "opposed_to_winding": 0
+        },
+        "nonzero_binary_attribute_words": 0,
+        "self_intersections": "not_checked",
+        "units": "STL_unitless_coordinates_explicitly_interpreted_as_mm_not_encoded_units",
+        "solid_fidelity": "not_established_by_topology_bounds_or_volume"
+      },
+      "digital_dimensional_checks": {
+        "expected_faceted_polygon_volume_mm3": 2883.453919621009,
+        "mesh_volume_difference_mm3": -1.2701767900580307e-05,
+        "lower_bore_ring": {
+          "ring_vertex_count": 96,
+          "minimum_across_flats_diameter_mm": 6.096733068339405,
+          "minimum_vertex_diameter_mm": 6.099999063288694,
+          "maximum_vertex_diameter_mm": 6.100001050426596
+        },
+        "upper_relief_ring": {
+          "ring_vertex_count": 96,
+          "minimum_across_flats_diameter_mm": 13.992503784849497,
+          "minimum_vertex_diameter_mm": 13.999998917463236,
+          "maximum_vertex_diameter_mm": 14.000000534211484
+        },
+        "facets_are_inscribed_not_exact_circles": true,
+        "faceting_is_not_a_print_fit_allowance": true
+      },
+      "qualification": {
+        "native_source_solid_equivalence": false,
+        "general_self_intersection_scan_performed": false,
+        "actual_printer_nozzle_filament_or_shrinkage_verified": false,
+        "fit_or_retention_acceptance": false,
+        "sliced_or_Gcode_generated": false,
+        "Anycubic_GUI_import_observed": false,
+        "manufacturing_release": false
+      }
+    }
+  ],
+  "blocked_coupons": [
+    {
+      "kind": "bearing_seat",
+      "reason": "No selected bearing-seat face/fit capture in the bound interface data; exact bearing variant/drawing and required fit are not inferred from axis lines",
+      "nominal_dimension_or_allowance_mm": null
+    }
+  ],
+  "attribution": {
+    "dimension_source": "AngelLM and Thor contributors; BaseBot cached native face capture",
+    "repository": "https://github.com/AngelLM/Thor",
+    "revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/LICENSE",
+    "modifications": "Independent coupon outer wall and upper depth; explicit bore diameter study variants and faceted mesh generation"
+  },
+  "manufacturing_release": false
+}
