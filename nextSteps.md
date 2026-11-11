@@ -2,7 +2,7 @@
 
 **Project:** ARM-01 BenchSort
 **Current phase:** Phase 1 — CAD-derived engineering foundation and design gates
-**Last updated:** 2026-11-11 19:42 UTC
+**Last updated:** 2026-11-11 20:21 UTC
 **Overall status:** In Progress
 
 ## Current Objective
@@ -22,7 +22,22 @@ Continue all three design gates: wrist handedness/moving masses/jaw articulation
 - Six specialists own exclusive new files in CAD diagnostics (A1/A2→A7 fallback), wrist/jaw reconciliation (W1–W4), spatial kinematics (K1–K3), scenario/load tools (M1–M3), controller replay (C2–C4/C8), and fabrication preparation (F1/F2/F4/F6). A seventh specialist performs independent evidence/math review. Root owns Git, CI, shared integration, evaluation and this handoff.
 - Native FreeCAD and the prior Mac source/runtime copies are unavailable on this Windows host. CAD work uses pinned source archives and historical captures; native rebuild/contact/mesh acceptance remains open. Free space exceeds **670 GiB**, above the 50 GiB reserve. No native installation or whole-assembly process started.
 - First Windows/Python **3.14.6** baseline: **321 passed / 4 failed**. One failure was Git CRLF conversion invalidating a pinned JSON byte hash; exact unchanged Git blob bytes were restored and an LF checkout policy added. Three reproduction failures were platform math roundoff (~1e-15), not changed model inputs. Reproduction checks now retain exact types/structure/provenance and use 1e-12 relative/absolute tolerance only for finite floating values; meaningful-change negative fixtures added. Historical reports and model equations remain unchanged. **330 tests now pass**, with focused lint/format and whitespace checks passing; original installation/compilation/sorter/generic-analysis checks passed. Independent review found no blocking issue; mixed-case native CAD filenames are explicitly binary in the LF policy.
-- Publication status: initial portability/evidence checkpoint ready for push and exact-head CI. Existing Linux CI now includes Windows, Python 3.11–3.14 on both platforms. Further lane outputs remain in progress, not accepted evidence.
+- **Published checkpoint:** [PR #8](https://github.com/LiamHoweth/RAFTEL/pull/8) merged as `905f0c257e41445dc079714565f669f7a414b6bb`; exact head `64068483b3bd9af9441c7fa3f2ee6746fe471075` passed all eight Linux/Windows Python 3.11–3.14 jobs in [run 43090175397](https://github.com/LiamHoweth/RAFTEL/actions/runs/43090175397). The working feature branch includes the merge and preserves ongoing new files.
+- **Combined candidate ready for publication:** **1,029 tests pass** on Windows/Python 3.14.6 (85.76 s); Ruff lint/format (116 Python files), compilation, installed evaluation CLI, source/math/report CLIs and whitespace checks pass. The earlier candidate wheel imported 39 modules in a fresh environment and both installed CLIs passed success/failure/invalid-input checks (0/1/2), with no dependency/network install. Review strengthened same-byte wheel staging, archive-path guards and per-module origin checks. Final exact-head CI remains required.
+- Independent review found CRLF in 15 newly generated text artifacts, including the raw-hash-bound jaw ledger. Root normalized only new text files; owners fixed deterministic LF writes and regenerated dependent bindings/reports. **241 text files now pass** the LF guard, and independent raw-hash/provenance checks match. Both fabrication CLIs also reject existing outputs, aliased destinations and protected-input collisions; race failures preserve existing evidence. Original CAD and historical report bytes remain unchanged.
+- All initial lanes have independent review acceptance for their declared offline/source/conditional scope. Additional checks include 84 seven-coordinate potential comparisons (maximum 1.4491e-9 N·m), independent jaw/mating quaternion transforms, sampled IK successes and honest local failures, 300 trajectory segments, 80 separate identification regressions, 200 full-wrench mount cases and fresh sensitivity extremum witnesses. These are mathematical/source checks, not native rebuilds or hardware qualification.
+
+| Lane | Implemented candidate and evidence | Still open |
+| --- | --- | --- |
+| A1/A2/A3/A7 | Pinned Art1 ZIP/XML/reference fingerprints; historical cut-loss analysis; guarded copied-document native probe and semantic circle/cylinder matching | Native branch unexecuted; actual earliest drift/root cause and repaired feature history unknown |
+| W2/W4 | 66-leaf jaw ownership, 18 moving COMs, distinct saved/ideal normalization, multi-pose repair predicates | Native loop closure, contact, retention and physical aperture |
+| K1–K3/T1 | Revisioned frames/provisional constraints, nominal spatial Jacobian, bounded local pose IK, explicit-study quintic paths | Native nonzero poses, calibrated extrinsics/limits, collision and physical path acceptance |
+| M1/M2/M3/M5 | Hash-bound scenarios, 12 saved/ideal jaw load cases, inertia algebra, 1,620-case sensitivity grid with witnesses | Native inertia extraction, measured mass/density/COM and complete dynamic/capacity claims |
+| C2–C6/C8 | Exact source conversion/readback fixtures, bounded synthetic replay, uncommissioned calibration records, synthetic identification and conditional coupled demands | Real firmware identity, source-vs-hardware calibration, measured feedback and moving capacity |
+| F1/F2/F4/F6 | Source-linked base/socket drawings, 65 printed instances/46 source assets/47 geometry variants, blank measurement imports | Native final-solid exports, actual machine/material/profile/fit evidence and fabrication release |
+| R1/R2/E1/E2 | Independent mass/potential/frame checks; strict outcome replay, installed evaluation CLI and layout-aware summaries; wheel/offline checks | Final integrated regression/CI/publication and further review fixes |
+
+- **Additional user instruction (active):** start print planning in the installed **Anycubic Slicer Next**. Root opened the existing app through the computer-use skill; two window captures timed out, including recovery, so GUI edits are paused pending an awake/unlocked visible desktop. Local profile/source-mesh audits and draft plate preparation continue independently. No printer start, cloud upload, hardware motion or fabrication release is authorized. Pinned upstream STLs must remain distinguishable from verified native final-solid exports; saved source-only extras and mirrored geometry must not inflate installed quantities.
 
 ### Seven-hour desktop run: objective and operating rules
 

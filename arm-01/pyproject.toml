@@ -14,6 +14,7 @@ dev = ["pytest==8.4.2", "ruff==0.14.4"]
 
 [project.scripts]
 raftel-sort = "raftel_arm01.cli:main"
+raftel-evaluate = "raftel_arm01.evaluation.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
