@@ -2,11 +2,11 @@
 
 **Project:** ARM-01 BenchSort
 **Current phase:** Phase 1 — CAD-derived engineering foundation and design gates
-**Last updated:** 2026-11-11 18:18:37 UTC
-**Overall status:** Testing
+**Last updated:** 2026-11-11 18:20:59 UTC
+**Overall status:** In Progress
 
 ## Current Objective
-Publish and merge the reviewed Thor compatibility, geometry and conditional load study, then close the remaining wrist, transmission and physical-design gates. The analysis baseline is usable: it preserves upstream geometry with one explicit static Art1 compatibility snapshot. It does not establish a safe physical arm, an actuator payload rating, or repaired original Art1 feature history.
+Resume from the merged, reviewed Thor compatibility, geometry and conditional load baseline and close the remaining wrist, transmission and physical-design gates. The analysis baseline is usable: it preserves upstream geometry with one explicit static Art1 compatibility snapshot. It does not establish a safe physical arm, an actuator payload rating, or repaired original Art1 feature history.
 
 ## Next 3 Actions for Liam
 1. Measure bench dimensions, desk thickness/material, rear clamp clearance and camera mounting clearance. These determine the removable mount and reachable workstation layout.
@@ -19,7 +19,7 @@ Publish and merge the reviewed Thor compatibility, geometry and conditional load
 3. **Prepare fabrication interfaces and source-editability gate.** Produce the mount/gripper interface proposal, sliced mass/fit plan and bounded Art1 history migration plan. Why: the snapshot supports analysis but loses original Art1 procedural edits, and native jaw motion has not proven the parallel-gripper requirement. Dependencies: Liam's measurements/profiles for fabrication; original source and geometry are available for continued software/CAD investigation. Done: dimensioned proposals and acceptance tests with no unsupported release/purchase claims.
 
 ## In Progress
-- Work is published on `codex/arm01-engineering-bootstrap` through [PR #1](https://github.com/LiamHoweth/RAFTEL/pull/1). Liam authorized merging at a verified checkpoint; final report/material checks and CI precede that merge.
+- Engineering implementation is merged into `main` through [PR #1](https://github.com/LiamHoweth/RAFTEL/pull/1), merge commit `024fe244d36ecabff296f69554fc43dc1821d957`. Implementation head `ac17570` passed all four CI jobs before the authorized merge; no implementation changes remain unmerged. This handoff records the verified publication state.
 - Five specialist agents completed dependency, native-feature, geometry, load and audit work; an independent review checked the final mass ledger and moments. No ongoing background work is implied by this handoff.
 
 ## Completed and Verified
@@ -49,7 +49,7 @@ No hardware was purchased, assembled, energized or physically tested. Liam confi
 - Saved load snapshot, full load study and material comparison reproduce exactly. JSON parses and local documentation targets resolve.
 - Native FreeCAD1.1.4: compatible assembly changed-recompute complete;53docs/3,001 Up-to-date objects. Selected topology run validates all516 retained mounted source shapes. Source checkout remains clean.
 - Earlier failed attempts and cached-state results remain historical evidence. A valid cached shape, zero process exit or restored assembly alone is not feature-rebuild proof.
-- GitHub Actions passed earlier published checkpoints on Linux/Python3.11–3.14. The final integrated geometry/material commit is being checked before merging; native FreeCAD was exercised locally, not in CI.
+- GitHub Actions passed the final integrated implementation `ac17570` on Linux/Python3.11–3.14:222 tests, installation, Ruff/format, compilation, sorting and load/material CLI checks. [Passing run](https://github.com/LiamHoweth/RAFTEL/actions/runs/43076558249). Native FreeCAD was exercised locally, not in CI.
 
 ## Roadmap
 - [ ] Phase 1 — Engineering foundation: core software/research verified; remaining design gates explicit
@@ -65,6 +65,7 @@ No hardware was purchased, assembled, energized or physically tested. Liam confi
 - [ ] Phase 7 — Reliability benchmarks, detachable mount and mobile readiness
 
 ## Recent Engineering Log
+- 2026-11-11: Final implementation CI passed all four Python versions; independently verified the complete ledger/moments and reproduced reports. Merged PR #1 into main as024fe244. Original source/native working copies and useful runtime retained; temporary wheel builds removed, free-space reserve remains above50GiB.
 - 2026-11-11: Liam confirmed PLA/PETG/ABS and authorized merging after a good verification checkpoint. Added reference-density comparisons and explicit override provenance; no structural material approval inferred.
 - 2026-11-11: Extracted native axis lines and516 installed solids; corrected the90° frame mismatch and duplicate/helper geometry, then independently reviewed the mass ledger and gravity moments. Working-tree suite reaches222 tests.
 - 2026-11-11: Published dependency checkpoint6c575ac and compatible-assembly checkpoint0869466. Whole assembly changed recomputation completed; original Art1 history remains separate from exact static geometry/datum snapshot.
