@@ -1,0 +1,449 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-11-11",
+  "validation_class": "pinned_source_static_audit_not_runtime_firmware_or_physical_validation",
+  "conclusion": "No elbow shoulder-carrier compensation is present in the pinned ROS/Asgard write/read paths or official GRBL v1.0 linear command-to-step/readback pipeline. The official Fly configuration has independent mappings and no mixing directive in inspected startup/macros; its RRF binary/core was not audited.",
+  "source_revisions": {
+    "ros": "e11a56b5aa0d89f0b68a3ea7bd084eab4a050952",
+    "asgard": "30bf2f8850670f728a0f4c3e2e5d22db4f57d8c6",
+    "grbl": "1f6437a77e3abcb652d3f8ce718faf7e041ae6ff",
+    "fly": "257ca3649422256bca653e269b22c3d32bb5fa1f"
+  },
+  "official_release_routes": {
+    "downloads_page": "http://thor.angel-lm.com/downloads/",
+    "grbl_tag": "v1.0",
+    "fly_configuration_tag": "v1.0.0",
+    "asgard_tag": "v1.0"
+  },
+  "sources": [
+    {
+      "source_id": "ros",
+      "repository": "https://github.com/AngelLM/Thor-ROS",
+      "revision": "e11a56b5aa0d89f0b68a3ea7bd084eab4a050952",
+      "path": "ws_thor/src/thor_controller/src/thor_interface.cpp",
+      "sha256": "c2bd16032e43db1e30fc48a2c00a7ef2b0c4943c7018234ca56aaed11102f690",
+      "line_count": 352,
+      "url": "https://github.com/AngelLM/Thor-ROS/blob/e11a56b5aa0d89f0b68a3ea7bd084eab4a050952/ws_thor/src/thor_controller/src/thor_interface.cpp"
+    },
+    {
+      "source_id": "ros",
+      "repository": "https://github.com/AngelLM/Thor-ROS",
+      "revision": "e11a56b5aa0d89f0b68a3ea7bd084eab4a050952",
+      "path": "ws_thor/src/thor_urdf/urdf/thor.urdf.xacro",
+      "sha256": "19b83e26f86aae15fda5c21418f768d0e3ed1b0d1daa6d149abd9b45ceccd8b9",
+      "line_count": 430,
+      "url": "https://github.com/AngelLM/Thor-ROS/blob/e11a56b5aa0d89f0b68a3ea7bd084eab4a050952/ws_thor/src/thor_urdf/urdf/thor.urdf.xacro"
+    },
+    {
+      "source_id": "asgard",
+      "repository": "https://github.com/AngelLM/Asgard",
+      "revision": "30bf2f8850670f728a0f4c3e2e5d22db4f57d8c6",
+      "path": "asgard.py",
+      "sha256": "5c0ac0276e587426bb05a01576344d0a05352c11b5c1775310aaabacbe7b2640",
+      "line_count": 596,
+      "url": "https://github.com/AngelLM/Asgard/blob/30bf2f8850670f728a0f4c3e2e5d22db4f57d8c6/asgard.py"
+    },
+    {
+      "source_id": "grbl",
+      "repository": "https://github.com/AngelLM/grbl",
+      "revision": "1f6437a77e3abcb652d3f8ce718faf7e041ae6ff",
+      "path": "grbl/config.h",
+      "sha256": "a5b19542474d8e8de295c9bec22b5933917d54b1086525cdf6615e3ef25dc17a",
+      "line_count": 415,
+      "url": "https://github.com/AngelLM/grbl/blob/1f6437a77e3abcb652d3f8ce718faf7e041ae6ff/grbl/config.h"
+    },
+    {
+      "source_id": "grbl",
+      "repository": "https://github.com/AngelLM/grbl",
+      "revision": "1f6437a77e3abcb652d3f8ce718faf7e041ae6ff",
+      "path": "grbl/nuts_bolts.h",
+      "sha256": "ab55ecb79a6094aad35727a4b140a8ba76a43f0963e01661a115c2d54a57a623",
+      "line_count": 81,
+      "url": "https://github.com/AngelLM/grbl/blob/1f6437a77e3abcb652d3f8ce718faf7e041ae6ff/grbl/nuts_bolts.h"
+    },
+    {
+      "source_id": "grbl",
+      "repository": "https://github.com/AngelLM/grbl",
+      "revision": "1f6437a77e3abcb652d3f8ce718faf7e041ae6ff",
+      "path": "grbl/gcode.c",
+      "sha256": "fd6be78b5b6c2258f7aefee5913a1968989ed19f91383b08a16cc3a10cf07321",
+      "line_count": 1122,
+      "url": "https://github.com/AngelLM/grbl/blob/1f6437a77e3abcb652d3f8ce718faf7e041ae6ff/grbl/gcode.c"
+    },
+    {
+      "source_id": "grbl",
+      "repository": "https://github.com/AngelLM/grbl",
+      "revision": "1f6437a77e3abcb652d3f8ce718faf7e041ae6ff",
+      "path": "grbl/gcode.h",
+      "sha256": "ab0ca9b81ceb1c67373998d5d26febc99e62c975dad7aa50e8928ebb04e1da52",
+      "line_count": 215,
+      "url": "https://github.com/AngelLM/grbl/blob/1f6437a77e3abcb652d3f8ce718faf7e041ae6ff/grbl/gcode.h"
+    },
+    {
+      "source_id": "grbl",
+      "repository": "https://github.com/AngelLM/grbl",
+      "revision": "1f6437a77e3abcb652d3f8ce718faf7e041ae6ff",
+      "path": "grbl/motion_control.c",
+      "sha256": "ea83c5dab98a5043a89dfac3ec631564115e4d66e06f42a606ee83b68a4cbd01",
+      "line_count": 371,
+      "url": "https://github.com/AngelLM/grbl/blob/1f6437a77e3abcb652d3f8ce718faf7e041ae6ff/grbl/motion_control.c"
+    },
+    {
+      "source_id": "grbl",
+      "repository": "https://github.com/AngelLM/grbl",
+      "revision": "1f6437a77e3abcb652d3f8ce718faf7e041ae6ff",
+      "path": "grbl/planner.c",
+      "sha256": "595ac7dc4b9e4ebd494818ec523b70b5df2025fe532bbd9722851d80aa40f290",
+      "line_count": 457,
+      "url": "https://github.com/AngelLM/grbl/blob/1f6437a77e3abcb652d3f8ce718faf7e041ae6ff/grbl/planner.c"
+    },
+    {
+      "source_id": "grbl",
+      "repository": "https://github.com/AngelLM/grbl",
+      "revision": "1f6437a77e3abcb652d3f8ce718faf7e041ae6ff",
+      "path": "grbl/stepper.c",
+      "sha256": "6552c7d798d9713255acf2eac4fd1722b7b95dc5bf728efb40fc0658d0cc6bee",
+      "line_count": 908,
+      "url": "https://github.com/AngelLM/grbl/blob/1f6437a77e3abcb652d3f8ce718faf7e041ae6ff/grbl/stepper.c"
+    },
+    {
+      "source_id": "grbl",
+      "repository": "https://github.com/AngelLM/grbl",
+      "revision": "1f6437a77e3abcb652d3f8ce718faf7e041ae6ff",
+      "path": "grbl/system.c",
+      "sha256": "1097cf083260ecc7a207863fb1c4f0ef2a7b6b50555a489f2b0c1fd554be175c",
+      "line_count": 288,
+      "url": "https://github.com/AngelLM/grbl/blob/1f6437a77e3abcb652d3f8ce718faf7e041ae6ff/grbl/system.c"
+    },
+    {
+      "source_id": "grbl",
+      "repository": "https://github.com/AngelLM/grbl",
+      "revision": "1f6437a77e3abcb652d3f8ce718faf7e041ae6ff",
+      "path": "grbl/report.c",
+      "sha256": "cc765ac84d012a2c6a01a3d39bc6bae41928bec4ca411e9d311adab389e468d7",
+      "line_count": 514,
+      "url": "https://github.com/AngelLM/grbl/blob/1f6437a77e3abcb652d3f8ce718faf7e041ae6ff/grbl/report.c"
+    },
+    {
+      "source_id": "grbl",
+      "repository": "https://github.com/AngelLM/grbl",
+      "revision": "1f6437a77e3abcb652d3f8ce718faf7e041ae6ff",
+      "path": "grbl/defaults/defaults_thor.h",
+      "sha256": "8ad4d21602aee8b99006ae107eae4098ef28ab1a901255e4973496d07ea5cec4",
+      "line_count": 78,
+      "url": "https://github.com/AngelLM/grbl/blob/1f6437a77e3abcb652d3f8ce718faf7e041ae6ff/grbl/defaults/defaults_thor.h"
+    },
+    {
+      "source_id": "fly",
+      "repository": "https://github.com/AngelLM/Thor-Fly-Super8Pro-config",
+      "revision": "257ca3649422256bca653e269b22c3d32bb5fa1f",
+      "path": "sys/bed.g",
+      "sha256": "48b8128b6a20a34364c99588c497b4b22153e4f63bc962ee1ac4980752bd5603",
+      "line_count": 8,
+      "url": "https://github.com/AngelLM/Thor-Fly-Super8Pro-config/blob/257ca3649422256bca653e269b22c3d32bb5fa1f/sys/bed.g"
+    },
+    {
+      "source_id": "fly",
+      "repository": "https://github.com/AngelLM/Thor-Fly-Super8Pro-config",
+      "revision": "257ca3649422256bca653e269b22c3d32bb5fa1f",
+      "path": "sys/config.g",
+      "sha256": "9a2f609a8cd555641ad9ff6f20d16c1ea70367dd6accdfb6954bea570d8f404a",
+      "line_count": 89,
+      "url": "https://github.com/AngelLM/Thor-Fly-Super8Pro-config/blob/257ca3649422256bca653e269b22c3d32bb5fa1f/sys/config.g"
+    },
+    {
+      "source_id": "fly",
+      "repository": "https://github.com/AngelLM/Thor-Fly-Super8Pro-config",
+      "revision": "257ca3649422256bca653e269b22c3d32bb5fa1f",
+      "path": "sys/homeall.g",
+      "sha256": "a319add1da18db39db0f0fd228abf6fb29cfc2526b6d1c5be0f91e5173ce8f47",
+      "line_count": 45,
+      "url": "https://github.com/AngelLM/Thor-Fly-Super8Pro-config/blob/257ca3649422256bca653e269b22c3d32bb5fa1f/sys/homeall.g"
+    },
+    {
+      "source_id": "fly",
+      "repository": "https://github.com/AngelLM/Thor-Fly-Super8Pro-config",
+      "revision": "257ca3649422256bca653e269b22c3d32bb5fa1f",
+      "path": "sys/homeu.g",
+      "sha256": "670a38292b0e649df04120ca09323f9e2d1cf1ce3cdb492e0829573b1cb47c15",
+      "line_count": 10,
+      "url": "https://github.com/AngelLM/Thor-Fly-Super8Pro-config/blob/257ca3649422256bca653e269b22c3d32bb5fa1f/sys/homeu.g"
+    },
+    {
+      "source_id": "fly",
+      "repository": "https://github.com/AngelLM/Thor-Fly-Super8Pro-config",
+      "revision": "257ca3649422256bca653e269b22c3d32bb5fa1f",
+      "path": "sys/homev.g",
+      "sha256": "22af5c016d385f9f53467986187f5b8f59a350fafbd3d512467cbefb60da6b13",
+      "line_count": 15,
+      "url": "https://github.com/AngelLM/Thor-Fly-Super8Pro-config/blob/257ca3649422256bca653e269b22c3d32bb5fa1f/sys/homev.g"
+    },
+    {
+      "source_id": "fly",
+      "repository": "https://github.com/AngelLM/Thor-Fly-Super8Pro-config",
+      "revision": "257ca3649422256bca653e269b22c3d32bb5fa1f",
+      "path": "sys/homex.g",
+      "sha256": "f750033a27473b2c22dc5373055e28cc0f0a7c8f12fdb732b0cd7f97fe4082f6",
+      "line_count": 10,
+      "url": "https://github.com/AngelLM/Thor-Fly-Super8Pro-config/blob/257ca3649422256bca653e269b22c3d32bb5fa1f/sys/homex.g"
+    },
+    {
+      "source_id": "fly",
+      "repository": "https://github.com/AngelLM/Thor-Fly-Super8Pro-config",
+      "revision": "257ca3649422256bca653e269b22c3d32bb5fa1f",
+      "path": "sys/homey.g",
+      "sha256": "fca37576b2f24fae09bd6d41e6cf0fc271a44cc2f0c1a90ca37b61875c41e6b5",
+      "line_count": 10,
+      "url": "https://github.com/AngelLM/Thor-Fly-Super8Pro-config/blob/257ca3649422256bca653e269b22c3d32bb5fa1f/sys/homey.g"
+    },
+    {
+      "source_id": "fly",
+      "repository": "https://github.com/AngelLM/Thor-Fly-Super8Pro-config",
+      "revision": "257ca3649422256bca653e269b22c3d32bb5fa1f",
+      "path": "sys/homez.g",
+      "sha256": "d6c5c5a3f833c304cf3e71a2e50074cfbea31635baa9f67773a443c84a3bf925",
+      "line_count": 10,
+      "url": "https://github.com/AngelLM/Thor-Fly-Super8Pro-config/blob/257ca3649422256bca653e269b22c3d32bb5fa1f/sys/homez.g"
+    },
+    {
+      "source_id": "fly",
+      "repository": "https://github.com/AngelLM/Thor-Fly-Super8Pro-config",
+      "revision": "257ca3649422256bca653e269b22c3d32bb5fa1f",
+      "path": "sys/pause.g",
+      "sha256": "feae3afb17d1a42c35f02808811eec866fec94f7736f5d26ad870865be57a98f",
+      "line_count": 12,
+      "url": "https://github.com/AngelLM/Thor-Fly-Super8Pro-config/blob/257ca3649422256bca653e269b22c3d32bb5fa1f/sys/pause.g"
+    },
+    {
+      "source_id": "fly",
+      "repository": "https://github.com/AngelLM/Thor-Fly-Super8Pro-config",
+      "revision": "257ca3649422256bca653e269b22c3d32bb5fa1f",
+      "path": "sys/resume.g",
+      "sha256": "231cc35ddec173c2d4d2a7cb822eead09393ee6dd9a5e552fe92824f893c30c5",
+      "line_count": 9,
+      "url": "https://github.com/AngelLM/Thor-Fly-Super8Pro-config/blob/257ca3649422256bca653e269b22c3d32bb5fa1f/sys/resume.g"
+    },
+    {
+      "source_id": "fly",
+      "repository": "https://github.com/AngelLM/Thor-Fly-Super8Pro-config",
+      "revision": "257ca3649422256bca653e269b22c3d32bb5fa1f",
+      "path": "sys/sleep.g",
+      "sha256": "26e4449610a0c1cc54fd8eb36ca3509b6d1065a2977bf247e27bdd23a1bef5ef",
+      "line_count": 5,
+      "url": "https://github.com/AngelLM/Thor-Fly-Super8Pro-config/blob/257ca3649422256bca653e269b22c3d32bb5fa1f/sys/sleep.g"
+    },
+    {
+      "source_id": "fly",
+      "repository": "https://github.com/AngelLM/Thor-Fly-Super8Pro-config",
+      "revision": "257ca3649422256bca653e269b22c3d32bb5fa1f",
+      "path": "sys/stop.g",
+      "sha256": "885a8da06e627f3836ffec972bc7188ce1163c94a32c8fe93278d740074d5d37",
+      "line_count": 5,
+      "url": "https://github.com/AngelLM/Thor-Fly-Super8Pro-config/blob/257ca3649422256bca653e269b22c3d32bb5fa1f/sys/stop.g"
+    },
+    {
+      "source_id": "fly",
+      "repository": "https://github.com/AngelLM/Thor-Fly-Super8Pro-config",
+      "revision": "257ca3649422256bca653e269b22c3d32bb5fa1f",
+      "path": "sys/tfree0.g",
+      "sha256": "724fdf4e96fb9f69b75ea1a4469dc0e5f08a6438e55aa392b13efa965a3e1a7c",
+      "line_count": 5,
+      "url": "https://github.com/AngelLM/Thor-Fly-Super8Pro-config/blob/257ca3649422256bca653e269b22c3d32bb5fa1f/sys/tfree0.g"
+    },
+    {
+      "source_id": "fly",
+      "repository": "https://github.com/AngelLM/Thor-Fly-Super8Pro-config",
+      "revision": "257ca3649422256bca653e269b22c3d32bb5fa1f",
+      "path": "sys/tpost0.g",
+      "sha256": "ca7438eba967d1c2c27855ff8e9c62e54201299e170c0edf44eb7b7dfa4fbf69",
+      "line_count": 7,
+      "url": "https://github.com/AngelLM/Thor-Fly-Super8Pro-config/blob/257ca3649422256bca653e269b22c3d32bb5fa1f/sys/tpost0.g"
+    },
+    {
+      "source_id": "fly",
+      "repository": "https://github.com/AngelLM/Thor-Fly-Super8Pro-config",
+      "revision": "257ca3649422256bca653e269b22c3d32bb5fa1f",
+      "path": "sys/tpre0.g",
+      "sha256": "14534fe5a817cfe83db34e487d19886fe4f23df5d88d323a7d803de269b3451a",
+      "line_count": 5,
+      "url": "https://github.com/AngelLM/Thor-Fly-Super8Pro-config/blob/257ca3649422256bca653e269b22c3d32bb5fa1f/sys/tpre0.g"
+    },
+    {
+      "source_id": "fly",
+      "repository": "https://github.com/AngelLM/Thor-Fly-Super8Pro-config",
+      "revision": "257ca3649422256bca653e269b22c3d32bb5fa1f",
+      "path": "sys/trigger3.g",
+      "sha256": "39bfed9c13de0612860510455f8d9d2ce461913304b980cc58a68dfa7948db45",
+      "line_count": 6,
+      "url": "https://github.com/AngelLM/Thor-Fly-Super8Pro-config/blob/257ca3649422256bca653e269b22c3d32bb5fa1f/sys/trigger3.g"
+    }
+  ],
+  "findings": [
+    {
+      "id": "ros_relative_joint_definition",
+      "source_id": "ros",
+      "path": "ws_thor/src/thor_urdf/urdf/thor.urdf.xacro",
+      "lines": [
+        314,
+        330
+      ],
+      "interpretation": "joint_3 rotates link_3 relative to parent link_2; it is not an independently declared world-frame forearm angle."
+    },
+    {
+      "id": "ros_write_uncoupled",
+      "source_id": "ros",
+      "path": "ws_thor/src/thor_controller/src/thor_interface.cpp",
+      "lines": [
+        269,
+        309
+      ],
+      "interpretation": "art2 and art3 are independently truncated degree transforms; GRBL B/C share art2 and D receives art3; Fly Y receives art2 and Z receives art3. No q2 term enters art3."
+    },
+    {
+      "id": "ros_read_uncoupled",
+      "source_id": "ros",
+      "path": "ws_thor/src/thor_controller/src/thor_interface.cpp",
+      "lines": [
+        155,
+        203
+      ],
+      "interpretation": "Both read paths independently negate shoulder and elbow degree coordinates; neither subtracts a carrier term. The values are channel-derived states, not independent joint encoders."
+    },
+    {
+      "id": "asgard_manual_channels",
+      "source_id": "asgard",
+      "path": "asgard.py",
+      "lines": [
+        197,
+        250
+      ],
+      "interpretation": "FKMoveArt2 sends B/C without D; FKMoveArt3 sends D without B/C. This is a manual channel interface, not proof of physical relative joint coordinates."
+    },
+    {
+      "id": "grbl_configuration",
+      "source_id": "grbl",
+      "path": "grbl/config.h",
+      "lines": [
+        33,
+        154
+      ],
+      "interpretation": "DEFAULTS_THOR and ATmega2560 CPU map selected. COREXY remains commented/disabled at line154."
+    },
+    {
+      "id": "grbl_address_index",
+      "source_id": "grbl",
+      "path": "grbl/gcode.c",
+      "lines": [
+        367,
+        373
+      ],
+      "interpretation": "B,C,D map to distinct axis indices; D maps to D_AXIS, index3."
+    },
+    {
+      "id": "grbl_modal_targets",
+      "source_id": "grbl",
+      "path": "grbl/gcode.c",
+      "lines": [
+        617,
+        635
+      ],
+      "interpretation": "Each axis target independently applies its own coordinate/work offset and absolute or incremental mode. An omitted D word retains its existing target."
+    },
+    {
+      "id": "grbl_line_passthrough",
+      "source_id": "grbl",
+      "path": "grbl/motion_control.c",
+      "lines": [
+        33,
+        75
+      ],
+      "interpretation": "Linear-motion target reaches planner unchanged; no shoulder/elbow transform is inserted."
+    },
+    {
+      "id": "grbl_planner_scaling",
+      "source_id": "grbl",
+      "path": "grbl/planner.c",
+      "lines": [
+        284,
+        310
+      ],
+      "interpretation": "With COREXY disabled, each axis target is rounded after multiplication by its own steps_per_mm setting; there is no cross-axis B/C-to-D term."
+    },
+    {
+      "id": "grbl_stepper_independent",
+      "source_id": "grbl",
+      "path": "grbl/stepper.c",
+      "lines": [
+        373,
+        405
+      ],
+      "interpretation": "B,C,D each have their own step accumulator and own signed system position update."
+    },
+    {
+      "id": "grbl_machine_readback",
+      "source_id": "grbl",
+      "path": "grbl/system.c",
+      "lines": [
+        260,
+        285
+      ],
+      "interpretation": "With COREXY disabled, each channel position is its own step count divided by its own steps_per_mm."
+    },
+    {
+      "id": "grbl_status_report",
+      "source_id": "grbl",
+      "path": "grbl/report.c",
+      "lines": [
+        431,
+        470
+      ],
+      "interpretation": "MPos reports converted per-channel step counts; WPos subtracts per-axis offsets. Neither is physical joint-angle feedback."
+    },
+    {
+      "id": "grbl_scale_defaults",
+      "source_id": "grbl",
+      "path": "grbl/defaults/defaults_thor.h",
+      "lines": [
+        31,
+        37
+      ],
+      "interpretation": "B/C default scales270 and D265 are scalar channel settings, not a coupling matrix or independent calibration evidence."
+    },
+    {
+      "id": "fly_startup_mapping",
+      "source_id": "fly",
+      "path": "sys/config.g",
+      "lines": [
+        8,
+        29
+      ],
+      "interpretation": "Startup absolute mode; Y maps drives1:2, Z maps drive3; separate Y/Z scales. No shoulder-to-elbow mixing directive found in inspected startup or shipped macros."
+    },
+    {
+      "id": "fly_homing_offsets",
+      "source_id": "fly",
+      "path": "sys/homeall.g",
+      "lines": [
+        15,
+        29
+      ],
+      "interpretation": "Y and Z homing are sequential and receive fixed offsets; these offsets do not add a pose-dependent shoulder-to-elbow term."
+    }
+  ],
+  "mechanical_reconciliation": {
+    "conditional_model": "phi=c*q2+s*K*q3",
+    "candidate_carrier_coupling": 1,
+    "pitch_ratio_K_physically_calibrated": false,
+    "source_channel_D_is_physical_phi": false,
+    "finding": "A diagonal channel calibration cannot reproduce a nonzero shoulder cross derivative for relative elbow coordinates. An explicit forward and inverse coordinate transform is required if the CAD carrier model is confirmed.",
+    "controller_or_firmware_modified": false
+  },
+  "limits": [
+    "No firmware was built, flashed, executed or connected to hardware.",
+    "No installed EEPROM, runtime board state, wiring direction, actual motor angle, endstop zero or controller version was observed.",
+    "No physical pitch radius, source-channel-to-shaft scale or route sign is calibrated.",
+    "Source model CAD, ROS and firmware releases have not been demonstrated to be mutually matched on one built arm.",
+    "RRF configuration inspected; RRF binary/core code path and user-installed macros/settings not audited.",
+    "Absolute/incremental modes and constant offsets do not prove or supply the missing cross-axis derivative."
+  ]
+}

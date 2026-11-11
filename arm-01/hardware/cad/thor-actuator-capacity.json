@@ -1,0 +1,199 @@
+{
+  "schema_version": 1,
+  "validation_class": "manufacturer_reference_and_conditional_demand_not_actuator_qualification",
+  "access_date": "2026-11-11",
+  "models": [
+    {
+      "model": "17HS15-0404S",
+      "installed_count": 1,
+      "drive_roles": [
+        "q1"
+      ],
+      "listing_url": "https://www.omc-stepperonline.com/nema-17-bipolar-1-8deg-40ncm-56-6oz-in-0-4a-12v-42x42x39mm-4-wires-17hs15-0404s",
+      "rated_current_per_phase_a": 0.4,
+      "phase_resistance_ohm": 30,
+      "phase_inductance_mh": 58,
+      "holding_torque_nm": 0.4,
+      "holding_reference": "motor_shaft",
+      "datasheet": {
+        "url": "https://files.omc-stepperonline.com/17HS15-0404S_Full_Datasheet.pdf",
+        "drawing_number": "A0616",
+        "revision": "0",
+        "printed_date_string": "8.1.2025",
+        "read_method": "web-index text extraction; graph/image unavailable",
+        "sha256": null,
+        "sha256_unavailable_reason": "Direct public download returned HTTP403; no bytes retained"
+      },
+      "ambient_temperature_range_c": [
+        -10,
+        50
+      ],
+      "insulation_class": "B130C",
+      "maximum_temperature_rise_c": 80,
+      "available_running_torque_curve": null,
+      "running_capacity_qualified": false,
+      "continuous_duty_qualified": false,
+      "shaft_load_specification": {
+        "axial_dynamic_max_n": 10,
+        "radial_dynamic_max_n": 21,
+        "radial_load_position_from_face_mm": 20,
+        "basis": "A0616 drawing comment; not installation validation"
+      }
+    },
+    {
+      "model": "17HS13-0404S-PG5",
+      "installed_count": 3,
+      "drive_roles": [
+        "q2_branch_B",
+        "q2_branch_C",
+        "remote_q3"
+      ],
+      "listing_url": "https://www.omc-stepperonline.com/nema-17-stepper-motor-bipolar-l-33mm-w-gear-ratio-5-1-planetary-gearbox-17hs13-0404s-pg5",
+      "rated_current_per_phase_a": 0.4,
+      "phase_resistance_ohm": 27,
+      "phase_inductance_mh": 28.5,
+      "holding_torque_nm": 0.25,
+      "holding_reference": "bare_motor_without_gearbox",
+      "datasheet": {
+        "url": "https://files.omc-stepperonline.com/17HS13-0404S-PG5_Full_Datasheet.pdf",
+        "drawing_number": null,
+        "revision": null,
+        "printed_date_string": "1.9.2023",
+        "read_method": "web-index text extraction; graph/image unavailable",
+        "sha256": null,
+        "sha256_unavailable_reason": "Direct public download returned HTTP403; no bytes retained"
+      },
+      "ambient_temperature_range_c": [
+        -10,
+        50
+      ],
+      "insulation_class": "B130C",
+      "maximum_temperature_rise_c": 80,
+      "available_running_torque_curve": null,
+      "running_capacity_qualified": false,
+      "continuous_duty_qualified": false,
+      "gearbox": {
+        "nominal_listing_ratio": 5.18,
+        "drawing_ratio_text_fragments": [
+          "5",
+          "2",
+          "11"
+        ],
+        "mixed_fraction_interpretation_candidate": "5+2/11",
+        "exact_fraction_visually_verified": false,
+        "listing_efficiency": 0.9,
+        "no_load_backlash_max_deg": 3,
+        "current_listing_max_permissible_output_torque_nm": 3,
+        "current_drawing_max_permissible_output_torque_nm": 3,
+        "momentary_output_torque_nm": 5,
+        "shaft_max_axial_n": 50,
+        "shaft_max_radial_n": 100,
+        "shaft_load_position_condition": null,
+        "maximum_speed_rpm": null,
+        "permissible_duty_cycle": null,
+        "thermal_basis": "drawing specifies standstill, two phases energized"
+      }
+    },
+    {
+      "model": "17HS13-0404S1",
+      "installed_count": 3,
+      "drive_roles": [
+        "q4",
+        "wrist_motor_Y",
+        "wrist_motor_Z"
+      ],
+      "listing_url": "https://www.omc-stepperonline.com/nema-17-bipolar-1-8deg-26ncm-36-8oz-in-0-4a-12v-42x42x34mm-4-wires-17hs13-0404s1",
+      "rated_current_per_phase_a": 0.4,
+      "phase_resistance_ohm": 30,
+      "phase_inductance_mh": 37,
+      "holding_torque_nm": 0.26,
+      "holding_reference": "motor_shaft",
+      "datasheet": {
+        "url": "https://files.omc-stepperonline.com/17HS13-0404S1_Full_Datasheet.pdf",
+        "drawing_number": "A0581",
+        "revision": "0",
+        "printed_date_string": "2.27.2026",
+        "read_method": "web-index text extraction; graph/image unavailable",
+        "sha256": null,
+        "sha256_unavailable_reason": "Direct public download returned HTTP403; no bytes retained"
+      },
+      "ambient_temperature_range_c": [
+        -10,
+        50
+      ],
+      "insulation_class": "B130C",
+      "maximum_temperature_rise_c": 80,
+      "available_running_torque_curve": null,
+      "running_capacity_qualified": false,
+      "continuous_duty_qualified": false,
+      "drawing_missing_fields": [
+        "rotor_inertia",
+        "weight"
+      ]
+    }
+  ],
+  "torque_curve_conflict": {
+    "source_url": "https://www.omc-stepperonline.com/download/17HS13-0404S-PG5_Torque_Curve.pdf",
+    "read_method": "web-index text only; screenshot failed; directdownload403",
+    "legacy_curve_max_permissible_nm": 2,
+    "current_listing_and_drawing_max_permissible_nm": 3,
+    "microstep_text": 200,
+    "curve_points_extracted": false,
+    "test_voltage_v": null,
+    "test_current_a": null,
+    "test_driver": null,
+    "resolution": "Obtain exact applicable manufacturer revision; no selected capacity value"
+  },
+  "conditional_demand": {
+    "source_report": "hardware/cad/thor-elbow-loads.json",
+    "source_file_sha256": "331e08d8f7b65e807cd1760f79eb9281b548545d682dc4ef70f7eea81e9d8705",
+    "assumptions": {
+      "driver_radius_m": 0.006366197723675814,
+      "drum_radius_m": 0.037,
+      "elbow_gearbox_ratio": 5.18,
+      "shoulder_branch_ratio": 31.08,
+      "carrier_coupling": 1.0,
+      "belt_sign": 1
+    },
+    "load_case": {
+      "fraction": 0.5,
+      "pose": "shoulder_horizontal",
+      "payload_kg": 0.2
+    },
+    "elbow_rotor_magnitude_nm": 0.07780288063814232,
+    "elbow_gearbox_output_magnitude_nm": 0.40301892170557724,
+    "each_shoulder_rotor_magnitude_nm_under_equal_share": 0.08727435601616598,
+    "each_shoulder_gearbox_output_magnitude_nm_under_equal_share": 0.4520811641637398,
+    "one_branch_supplies_residual_rotor_magnitude_nm_scenario": 0.17454871203233197,
+    "belt_tension_difference_magnitude_n": 63.306064184396064,
+    "available_running_capacity_nm": null,
+    "running_or_thermal_margin": null,
+    "safe_payload_kg": null
+  },
+  "driver_candidate": {
+    "selected_or_verified": false,
+    "model": "Pololu A4988 carrier1182",
+    "source": "https://www.pololu.com/product/1182",
+    "motor_supply_range_v": [
+      8,
+      35
+    ],
+    "current_limit_relation": "Imax=Vref/(8*Rcs)",
+    "full_step_phase_current_fraction_of_limit_approximately": 0.7,
+    "sense_resistance_ohm_since2017_supplier_statement": 0.068,
+    "configured_current_or_supply": null,
+    "note": "Verify actual board revision, current waveform and torque-test conditions; no drive settings prescribed"
+  },
+  "remaining_capacity_inputs": [
+    "exact purchased motor and gearbox revision",
+    "reconciled permissible torque and shaftload conditions",
+    "full exactvariant pullout curve with supply/current/driver/microstep/temperature",
+    "declared speed acceleration duty and coupled port velocities",
+    "motor gearbox and printedpart thermal limits with actual cooling",
+    "friction inertia acceleration cable loads and circulating shoulder preload",
+    "belt clamp wrap tension radialloads and material capacity",
+    "full wrist modeled holding loads and frozenjaw assumption closure"
+  ],
+  "hardware_motion_enabled": false,
+  "purchase_selected": false
+}
