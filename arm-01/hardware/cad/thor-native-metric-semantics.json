@@ -1,0 +1,499 @@
+{
+  "schema_version": 1,
+  "evidence_class": "primary_source_metric_definition_audit_not_native_equivalence",
+  "accessed_utc": "2026-11-11",
+  "freecad_revision": "4fd3bf320d9566a27e60069fc8387448aaa3a094",
+  "opencascade_reported_native_version": "7.8.1",
+  "opencascade_tag": "V7_8_1",
+  "opencascade_tag_resolved_commit": "bd2a789f15235755ce4d1a3b07379a2e062fdc2e",
+  "opencascade_tag_api": "https://api.github.com/repos/Open-Cascade-SAS/OCCT/git/ref/tags/V7_8_1",
+  "runtime_source_boundary": "Reported runtime version matches selected upstream source identifiers; distributor/compiler patches and every linked-library byte are not independently source-reconstructed",
+  "sources": [
+    {
+      "local_source": ".work\\cad\\metric-semantics\\sources\\FreeCAD-FCBRepAlgoAPI_BooleanOperation.cpp",
+      "repository": "https://github.com/FreeCAD/FreeCAD",
+      "revision": "4fd3bf320d9566a27e60069fc8387448aaa3a094",
+      "path": "src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.cpp",
+      "bytes": 7102,
+      "sha256": "b3b8c733857722eb2013ff9b5db73acd094741b3865975a8c7b3e8b818a5da95",
+      "exact_commit_url": "https://github.com/FreeCAD/FreeCAD/blob/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.cpp",
+      "raw_url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.cpp",
+      "bytes_verified_against_exact_commit": true,
+      "license_boundary": "Preserved per-file FreeCAD LGPL notices; no RAFTEL-wide license selection"
+    },
+    {
+      "local_source": ".work\\cad\\metric-semantics\\sources\\FreeCAD-FCBRepAlgoAPI_BooleanOperation.h",
+      "repository": "https://github.com/FreeCAD/FreeCAD",
+      "revision": "4fd3bf320d9566a27e60069fc8387448aaa3a094",
+      "path": "src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.h",
+      "bytes": 3523,
+      "sha256": "dd80d3f5a41aab1655076c5ba8ddefe5324b9bd981db3927fc7079a037f82f30",
+      "exact_commit_url": "https://github.com/FreeCAD/FreeCAD/blob/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.h",
+      "raw_url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.h",
+      "bytes_verified_against_exact_commit": true,
+      "license_boundary": "Preserved per-file FreeCAD LGPL notices; no RAFTEL-wide license selection"
+    },
+    {
+      "local_source": ".work\\cad\\metric-semantics\\sources\\FreeCAD-FCBRepAlgoAPI_Cut.cpp",
+      "repository": "https://github.com/FreeCAD/FreeCAD",
+      "revision": "4fd3bf320d9566a27e60069fc8387448aaa3a094",
+      "path": "src/Mod/Part/App/FCBRepAlgoAPI_Cut.cpp",
+      "bytes": 2074,
+      "sha256": "370269b2e4ba67e1e90036f4ea8334c7a3f37354ee4ab1f8e817564d67976a67",
+      "exact_commit_url": "https://github.com/FreeCAD/FreeCAD/blob/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Mod/Part/App/FCBRepAlgoAPI_Cut.cpp",
+      "raw_url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Mod/Part/App/FCBRepAlgoAPI_Cut.cpp",
+      "bytes_verified_against_exact_commit": true,
+      "license_boundary": "Preserved per-file FreeCAD LGPL notices; no RAFTEL-wide license selection"
+    },
+    {
+      "local_source": ".work\\cad\\metric-semantics\\sources\\FreeCAD-FCBRepAlgoAPI_Cut.h",
+      "repository": "https://github.com/FreeCAD/FreeCAD",
+      "revision": "4fd3bf320d9566a27e60069fc8387448aaa3a094",
+      "path": "src/Mod/Part/App/FCBRepAlgoAPI_Cut.h",
+      "bytes": 2324,
+      "sha256": "6fafa69740156dacb62db543c325caae08ae420e81711019fdfff0d054ce2f33",
+      "exact_commit_url": "https://github.com/FreeCAD/FreeCAD/blob/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Mod/Part/App/FCBRepAlgoAPI_Cut.h",
+      "raw_url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Mod/Part/App/FCBRepAlgoAPI_Cut.h",
+      "bytes_verified_against_exact_commit": true,
+      "license_boundary": "Preserved per-file FreeCAD LGPL notices; no RAFTEL-wide license selection"
+    },
+    {
+      "local_source": ".work\\cad\\metric-semantics\\sources\\FreeCAD-TopoShape.cpp",
+      "repository": "https://github.com/FreeCAD/FreeCAD",
+      "revision": "4fd3bf320d9566a27e60069fc8387448aaa3a094",
+      "path": "src/Mod/Part/App/TopoShape.cpp",
+      "bytes": 156898,
+      "sha256": "e89d7afab77fb43cb46be22ad07c32cad4bfbe84e126bbde6f2401f5fcda9701",
+      "exact_commit_url": "https://github.com/FreeCAD/FreeCAD/blob/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Mod/Part/App/TopoShape.cpp",
+      "raw_url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Mod/Part/App/TopoShape.cpp",
+      "bytes_verified_against_exact_commit": true,
+      "license_boundary": "Preserved per-file FreeCAD LGPL notices; no RAFTEL-wide license selection"
+    },
+    {
+      "local_source": ".work\\cad\\metric-semantics\\sources\\FreeCAD-TopoShapeExpansion.cpp",
+      "repository": "https://github.com/FreeCAD/FreeCAD",
+      "revision": "4fd3bf320d9566a27e60069fc8387448aaa3a094",
+      "path": "src/Mod/Part/App/TopoShapeExpansion.cpp",
+      "bytes": 209622,
+      "sha256": "edbb6d1f034e5cd3f1228756bae7c55b341c67d90fad180bfdeb769c6e93eeda",
+      "exact_commit_url": "https://github.com/FreeCAD/FreeCAD/blob/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Mod/Part/App/TopoShapeExpansion.cpp",
+      "raw_url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Mod/Part/App/TopoShapeExpansion.cpp",
+      "bytes_verified_against_exact_commit": true,
+      "license_boundary": "Preserved per-file FreeCAD LGPL notices; no RAFTEL-wide license selection"
+    },
+    {
+      "local_source": ".work\\cad\\metric-semantics\\sources\\FreeCAD-TopoShapePyImp.cpp",
+      "repository": "https://github.com/FreeCAD/FreeCAD",
+      "revision": "4fd3bf320d9566a27e60069fc8387448aaa3a094",
+      "path": "src/Mod/Part/App/TopoShapePyImp.cpp",
+      "bytes": 91331,
+      "sha256": "071c16bf50c931e8f3a6abf14f779c016cd5537a89d59f9dcf78254609cfa497",
+      "exact_commit_url": "https://github.com/FreeCAD/FreeCAD/blob/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Mod/Part/App/TopoShapePyImp.cpp",
+      "raw_url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Mod/Part/App/TopoShapePyImp.cpp",
+      "bytes_verified_against_exact_commit": true,
+      "license_boundary": "Preserved per-file FreeCAD LGPL notices; no RAFTEL-wide license selection"
+    },
+    {
+      "local_source": ".work\\cad\\metric-semantics\\sources\\FreeCAD-TopoShapeSolidPyImp.cpp",
+      "repository": "https://github.com/FreeCAD/FreeCAD",
+      "revision": "4fd3bf320d9566a27e60069fc8387448aaa3a094",
+      "path": "src/Mod/Part/App/TopoShapeSolidPyImp.cpp",
+      "bytes": 11065,
+      "sha256": "01d1a6a249d8ad29af54503ac0022e740c8c579b0919488170c5823fec288503",
+      "exact_commit_url": "https://github.com/FreeCAD/FreeCAD/blob/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Mod/Part/App/TopoShapeSolidPyImp.cpp",
+      "raw_url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Mod/Part/App/TopoShapeSolidPyImp.cpp",
+      "bytes_verified_against_exact_commit": true,
+      "license_boundary": "Preserved per-file FreeCAD LGPL notices; no RAFTEL-wide license selection"
+    },
+    {
+      "local_source": ".work\\cad\\metric-semantics\\sources\\OCCT-BndLib_AddSurface.cxx",
+      "repository": "https://github.com/Open-Cascade-SAS/OCCT",
+      "revision": "bd2a789f15235755ce4d1a3b07379a2e062fdc2e",
+      "path": "src/BndLib/BndLib_AddSurface.cxx",
+      "bytes": 27972,
+      "sha256": "61d198417bb6c31d58f8a8e9c265446759218a2193645f062cc3f56d9a6668c1",
+      "exact_commit_url": "https://github.com/Open-Cascade-SAS/OCCT/blob/bd2a789f15235755ce4d1a3b07379a2e062fdc2e/src/BndLib/BndLib_AddSurface.cxx",
+      "raw_url": "https://raw.githubusercontent.com/Open-Cascade-SAS/OCCT/bd2a789f15235755ce4d1a3b07379a2e062fdc2e/src/BndLib/BndLib_AddSurface.cxx",
+      "bytes_verified_against_exact_commit": true,
+      "license_boundary": "Preserved OCCT LGPL2.1 special-exception/commercial-option notice; not flattened into FreeCAD/Thor license"
+    },
+    {
+      "local_source": ".work\\cad\\metric-semantics\\sources\\OCCT-BRepAlgoAPI_BooleanOperation.cxx",
+      "repository": "https://github.com/Open-Cascade-SAS/OCCT",
+      "revision": "bd2a789f15235755ce4d1a3b07379a2e062fdc2e",
+      "path": "src/BRepAlgoAPI/BRepAlgoAPI_BooleanOperation.cxx",
+      "bytes": 9582,
+      "sha256": "5bce16974bb385e38da38bc509a1e3e833a8c8ca14f2a9cfdcaa0fc81173187b",
+      "exact_commit_url": "https://github.com/Open-Cascade-SAS/OCCT/blob/bd2a789f15235755ce4d1a3b07379a2e062fdc2e/src/BRepAlgoAPI/BRepAlgoAPI_BooleanOperation.cxx",
+      "raw_url": "https://raw.githubusercontent.com/Open-Cascade-SAS/OCCT/bd2a789f15235755ce4d1a3b07379a2e062fdc2e/src/BRepAlgoAPI/BRepAlgoAPI_BooleanOperation.cxx",
+      "bytes_verified_against_exact_commit": true,
+      "license_boundary": "Preserved OCCT LGPL2.1 special-exception/commercial-option notice; not flattened into FreeCAD/Thor license"
+    },
+    {
+      "local_source": ".work\\cad\\metric-semantics\\sources\\OCCT-BRepBndLib.cxx",
+      "repository": "https://github.com/Open-Cascade-SAS/OCCT",
+      "revision": "bd2a789f15235755ce4d1a3b07379a2e062fdc2e",
+      "path": "src/BRepBndLib/BRepBndLib.cxx",
+      "bytes": 24593,
+      "sha256": "d15252d4d45c646072ae71705e8d75719ce11e11588d57e6094964453b1c0958",
+      "exact_commit_url": "https://github.com/Open-Cascade-SAS/OCCT/blob/bd2a789f15235755ce4d1a3b07379a2e062fdc2e/src/BRepBndLib/BRepBndLib.cxx",
+      "raw_url": "https://raw.githubusercontent.com/Open-Cascade-SAS/OCCT/bd2a789f15235755ce4d1a3b07379a2e062fdc2e/src/BRepBndLib/BRepBndLib.cxx",
+      "bytes_verified_against_exact_commit": true,
+      "license_boundary": "Preserved OCCT LGPL2.1 special-exception/commercial-option notice; not flattened into FreeCAD/Thor license"
+    },
+    {
+      "local_source": ".work\\cad\\metric-semantics\\sources\\OCCT-BRepBndLib.hxx",
+      "repository": "https://github.com/Open-Cascade-SAS/OCCT",
+      "revision": "bd2a789f15235755ce4d1a3b07379a2e062fdc2e",
+      "path": "src/BRepBndLib/BRepBndLib.hxx",
+      "bytes": 5033,
+      "sha256": "c4ea18a3b18ed8f9bbe309a1b6a62229aa64299dd9701df26e591dfea141eea6",
+      "exact_commit_url": "https://github.com/Open-Cascade-SAS/OCCT/blob/bd2a789f15235755ce4d1a3b07379a2e062fdc2e/src/BRepBndLib/BRepBndLib.hxx",
+      "raw_url": "https://raw.githubusercontent.com/Open-Cascade-SAS/OCCT/bd2a789f15235755ce4d1a3b07379a2e062fdc2e/src/BRepBndLib/BRepBndLib.hxx",
+      "bytes_verified_against_exact_commit": true,
+      "license_boundary": "Preserved OCCT LGPL2.1 special-exception/commercial-option notice; not flattened into FreeCAD/Thor license"
+    },
+    {
+      "local_source": ".work\\cad\\metric-semantics\\sources\\OCCT-BRepExtrema_DistShapeShape.hxx",
+      "repository": "https://github.com/Open-Cascade-SAS/OCCT",
+      "revision": "bd2a789f15235755ce4d1a3b07379a2e062fdc2e",
+      "path": "src/BRepExtrema/BRepExtrema_DistShapeShape.hxx",
+      "bytes": 10110,
+      "sha256": "121d1be9bb4d36c54d84dca51f0e1cff859f01d7d4133d60d68a201348ab82f6",
+      "exact_commit_url": "https://github.com/Open-Cascade-SAS/OCCT/blob/bd2a789f15235755ce4d1a3b07379a2e062fdc2e/src/BRepExtrema/BRepExtrema_DistShapeShape.hxx",
+      "raw_url": "https://raw.githubusercontent.com/Open-Cascade-SAS/OCCT/bd2a789f15235755ce4d1a3b07379a2e062fdc2e/src/BRepExtrema/BRepExtrema_DistShapeShape.hxx",
+      "bytes_verified_against_exact_commit": true,
+      "license_boundary": "Preserved OCCT LGPL2.1 special-exception/commercial-option notice; not flattened into FreeCAD/Thor license"
+    },
+    {
+      "local_source": ".work\\cad\\metric-semantics\\sources\\OCCT-BRepGProp.cxx",
+      "repository": "https://github.com/Open-Cascade-SAS/OCCT",
+      "revision": "bd2a789f15235755ce4d1a3b07379a2e062fdc2e",
+      "path": "src/BRepGProp/BRepGProp.cxx",
+      "bytes": 19359,
+      "sha256": "b9b31d0be248fc59c902a0fae833fc69ec258f2323628640f89aa875a5f00f59",
+      "exact_commit_url": "https://github.com/Open-Cascade-SAS/OCCT/blob/bd2a789f15235755ce4d1a3b07379a2e062fdc2e/src/BRepGProp/BRepGProp.cxx",
+      "raw_url": "https://raw.githubusercontent.com/Open-Cascade-SAS/OCCT/bd2a789f15235755ce4d1a3b07379a2e062fdc2e/src/BRepGProp/BRepGProp.cxx",
+      "bytes_verified_against_exact_commit": true,
+      "license_boundary": "Preserved OCCT LGPL2.1 special-exception/commercial-option notice; not flattened into FreeCAD/Thor license"
+    },
+    {
+      "local_source": ".work\\cad\\metric-semantics\\sources\\OCCT-BRepGProp.hxx",
+      "repository": "https://github.com/Open-Cascade-SAS/OCCT",
+      "revision": "bd2a789f15235755ce4d1a3b07379a2e062fdc2e",
+      "path": "src/BRepGProp/BRepGProp.hxx",
+      "bytes": 13383,
+      "sha256": "a1d5c195f2234cbdc748ebbdd4af499d59e4b96ea235cde9ba74878e5d7d3056",
+      "exact_commit_url": "https://github.com/Open-Cascade-SAS/OCCT/blob/bd2a789f15235755ce4d1a3b07379a2e062fdc2e/src/BRepGProp/BRepGProp.hxx",
+      "raw_url": "https://raw.githubusercontent.com/Open-Cascade-SAS/OCCT/bd2a789f15235755ce4d1a3b07379a2e062fdc2e/src/BRepGProp/BRepGProp.hxx",
+      "bytes_verified_against_exact_commit": true,
+      "license_boundary": "Preserved OCCT LGPL2.1 special-exception/commercial-option notice; not flattened into FreeCAD/Thor license"
+    },
+    {
+      "local_source": ".work\\cad\\metric-semantics\\sources\\OCCT-BRepGProp_Vinert.cxx",
+      "repository": "https://github.com/Open-Cascade-SAS/OCCT",
+      "revision": "bd2a789f15235755ce4d1a3b07379a2e062fdc2e",
+      "path": "src/BRepGProp/BRepGProp_Vinert.cxx",
+      "bytes": 15305,
+      "sha256": "ea7539275d2e824614beb77413c191b98da8ec33b9ef026b974579cd56655c65",
+      "exact_commit_url": "https://github.com/Open-Cascade-SAS/OCCT/blob/bd2a789f15235755ce4d1a3b07379a2e062fdc2e/src/BRepGProp/BRepGProp_Vinert.cxx",
+      "raw_url": "https://raw.githubusercontent.com/Open-Cascade-SAS/OCCT/bd2a789f15235755ce4d1a3b07379a2e062fdc2e/src/BRepGProp/BRepGProp_Vinert.cxx",
+      "bytes_verified_against_exact_commit": true,
+      "license_boundary": "Preserved OCCT LGPL2.1 special-exception/commercial-option notice; not flattened into FreeCAD/Thor license"
+    },
+    {
+      "local_source": ".work\\cad\\metric-semantics\\sources\\OCCT-GProp_GProps.cxx",
+      "repository": "https://github.com/Open-Cascade-SAS/OCCT",
+      "revision": "bd2a789f15235755ce4d1a3b07379a2e062fdc2e",
+      "path": "src/GProp/GProp_GProps.cxx",
+      "bytes": 5344,
+      "sha256": "4f1b2ab2e0a9b213bec129d3c50dc9c8ee78711dc334270230f8642d93f7d20e",
+      "exact_commit_url": "https://github.com/Open-Cascade-SAS/OCCT/blob/bd2a789f15235755ce4d1a3b07379a2e062fdc2e/src/GProp/GProp_GProps.cxx",
+      "raw_url": "https://raw.githubusercontent.com/Open-Cascade-SAS/OCCT/bd2a789f15235755ce4d1a3b07379a2e062fdc2e/src/GProp/GProp_GProps.cxx",
+      "bytes_verified_against_exact_commit": true,
+      "license_boundary": "Preserved OCCT LGPL2.1 special-exception/commercial-option notice; not flattened into FreeCAD/Thor license"
+    },
+    {
+      "local_source": ".work\\cad\\metric-semantics\\sources\\OCCT-GProp_GProps.hxx",
+      "repository": "https://github.com/Open-Cascade-SAS/OCCT",
+      "revision": "bd2a789f15235755ce4d1a3b07379a2e062fdc2e",
+      "path": "src/GProp/GProp_GProps.hxx",
+      "bytes": 11086,
+      "sha256": "e8d0b318e8aa41b1c1c384006ccd308f8e133aca94b5d6db1ddd2597b3e8fcf6",
+      "exact_commit_url": "https://github.com/Open-Cascade-SAS/OCCT/blob/bd2a789f15235755ce4d1a3b07379a2e062fdc2e/src/GProp/GProp_GProps.hxx",
+      "raw_url": "https://raw.githubusercontent.com/Open-Cascade-SAS/OCCT/bd2a789f15235755ce4d1a3b07379a2e062fdc2e/src/GProp/GProp_GProps.hxx",
+      "bytes_verified_against_exact_commit": true,
+      "license_boundary": "Preserved OCCT LGPL2.1 special-exception/commercial-option notice; not flattened into FreeCAD/Thor license"
+    },
+    {
+      "local_source": ".work\\cad\\metric-semantics\\sources\\OCCT-ShapeAnalysis_ShapeTolerance.hxx",
+      "repository": "https://github.com/Open-Cascade-SAS/OCCT",
+      "revision": "bd2a789f15235755ce4d1a3b07379a2e062fdc2e",
+      "path": "src/ShapeAnalysis/ShapeAnalysis_ShapeTolerance.hxx",
+      "bytes": 3505,
+      "sha256": "3db5e11391e89c0570bf506fca5be6c288542d956c2d931fec2ba9bb0b419e66",
+      "exact_commit_url": "https://github.com/Open-Cascade-SAS/OCCT/blob/bd2a789f15235755ce4d1a3b07379a2e062fdc2e/src/ShapeAnalysis/ShapeAnalysis_ShapeTolerance.hxx",
+      "raw_url": "https://raw.githubusercontent.com/Open-Cascade-SAS/OCCT/bd2a789f15235755ce4d1a3b07379a2e062fdc2e/src/ShapeAnalysis/ShapeAnalysis_ShapeTolerance.hxx",
+      "bytes_verified_against_exact_commit": true,
+      "license_boundary": "Preserved OCCT LGPL2.1 special-exception/commercial-option notice; not flattened into FreeCAD/Thor license"
+    },
+    {
+      "local_source": ".work\\cad\\metric-semantics\\sources\\FreeCAD-MeshKernel.h",
+      "repository": "https://github.com/FreeCAD/FreeCAD",
+      "revision": "4fd3bf320d9566a27e60069fc8387448aaa3a094",
+      "path": "src/Mod/Mesh/App/Core/MeshKernel.h",
+      "bytes": 27062,
+      "sha256": "468987324ab02ba920e88c79be6f1a3b0bd0b9a075d80fbfa2660d76ba44ad21",
+      "exact_commit_url": "https://github.com/FreeCAD/FreeCAD/blob/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Mod/Mesh/App/Core/MeshKernel.h",
+      "raw_url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Mod/Mesh/App/Core/MeshKernel.h",
+      "bytes_verified_against_exact_commit": true,
+      "license_boundary": "Preserved per-file FreeCAD notices; no repository-wide license choice"
+    },
+    {
+      "local_source": ".work\\cad\\metric-semantics\\sources\\FreeCAD-Elements.h",
+      "repository": "https://github.com/FreeCAD/FreeCAD",
+      "revision": "4fd3bf320d9566a27e60069fc8387448aaa3a094",
+      "path": "src/Mod/Mesh/App/Core/Elements.h",
+      "bytes": 44104,
+      "sha256": "cec5db4b853edcaf4eeb495640822ee1d121d6a12159ac1da898ed335f4e2309",
+      "exact_commit_url": "https://github.com/FreeCAD/FreeCAD/blob/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Mod/Mesh/App/Core/Elements.h",
+      "raw_url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Mod/Mesh/App/Core/Elements.h",
+      "bytes_verified_against_exact_commit": true,
+      "license_boundary": "Preserved per-file FreeCAD notices; no repository-wide license choice"
+    }
+  ],
+  "unavailable_source_requests": [
+    {
+      "path": "src/Mod/Part/App/FCBRepAlgoAPI_Operation.h",
+      "http_status": 404,
+      "replacement": "FCBRepAlgoAPI_BooleanOperation.h/.cpp inspected instead"
+    },
+    {
+      "path": "src/Mod/Mesh/App/Core/MeshDefinitions.h",
+      "http_status": 404,
+      "replacement": "MeshKernel.h and Elements.h inspected instead"
+    }
+  ],
+  "conclusions": {
+    "default_volume_error_estimate_exposed": false,
+    "default_boundbox_can_be_conservative": true,
+    "precise_unmeshed_bound_api": "Shape.optimalBoundingBox(False, False)",
+    "solid_inertia_reference": "centroid; axes parallel to storage XYZ; unit-density mm^5",
+    "whole_shape_distToShape_is_minimum_not_maximum": true,
+    "zero_volume_boolean_result_proves_exact_equivalence": false,
+    "actual_Art1_discrepancy_fully_explained": false,
+    "migration_accepted": false,
+    "candidate_accepted": false,
+    "manufacturing_released": false,
+    "default_volume_uses_nonadaptive_surface_gauss_when_geometry_available": true,
+    "volume_triangulation_fallback_possible_when_geometry_absent": true
+  },
+  "planned_native_experiment": {
+    "status": "executed_as_run02_diagnostic_only",
+    "source_original_sha256": "8afa16c8ff3adebd87e48b67dfb20d3224402bd517010dc112950a28f219690a",
+    "unaccepted_candidate_sha256": "6b8e6ad3e6d7b6c0165d3cf2758b7a6e4ce4a30e92c53b86a7256f5b6904a1dd",
+    "meshing_linear_deflection_mm": [
+      0.5,
+      0.1,
+      0.02
+    ],
+    "maximum_samples_per_direction_per_level": 96,
+    "true_Hausdorff_distance_proven": false,
+    "no_CAD_document_open_recompute_or_save": true,
+    "mesh_levels": [
+      {
+        "linear_deflection_mm": 0.5,
+        "angular_deflection_rad": 0.4
+      },
+      {
+        "linear_deflection_mm": 0.1,
+        "angular_deflection_rad": 0.2
+      },
+      {
+        "linear_deflection_mm": 0.02,
+        "angular_deflection_rad": 0.1
+      }
+    ],
+    "prepared_run": ".work/cad/metric-semantics/native-run-02/launch-contract.json"
+  },
+  "actual_native_experiment": {
+    "capture_path": "arm-01/hardware/cad/thor-native-metric-semantics-capture-v1.json",
+    "capture_sha256": "ea5fbdd2deafad5610dc29d8a05bdffbd0e3547246745f40eded12385bf0907f",
+    "runner_path": "arm-01/hardware/cad/thor-native-metric-semantics-runner-v1.json",
+    "runner_sha256": "6711acbcbd2d30b944789d6f109aaa916554e76e62dab31669cef739932cbfa8",
+    "launch_contract_sha256": "777a9f3106d682d6b5a747ad4c6eca93727ecd7d697955c5699a88033a98c948",
+    "started_utc": "2026-11-11T21:38:22Z",
+    "finished_utc": "2026-11-11T21:39:48Z",
+    "elapsed_seconds": 86.65496040000289,
+    "evidence_class": "native_cached_metric_semantics_diagnostic_only",
+    "audit_status": "complete_diagnostic_not_equivalence",
+    "source_and_candidate_originals_unchanged": true,
+    "input_copies_unchanged": true,
+    "retained_inputs_unchanged": true,
+    "open_documents_before": 0,
+    "open_documents_after": 0,
+    "document_opened_or_recomputed": false,
+    "native_document_saved": false,
+    "full_runtime_bundle_independently_verified_by_worker": false,
+    "selections": {
+      "source": {
+        "volume_mm3": 298648.10044680384,
+        "default_unmeshed_bounds_mm": {
+          "XMin": -81.17941502192954,
+          "XMax": 81.17941502192954,
+          "YMin": -81.17941502192954,
+          "YMax": 81.17941502192954,
+          "ZMin": -6.0000000023e-07,
+          "ZMax": 161.5614141209609
+        },
+        "optimal_unmeshed_bounds_mm": [
+          -75.0000001,
+          75.0000001,
+          -75.0000001,
+          75.0000001,
+          -7.0000000023e-07,
+          161.48912923093604
+        ],
+        "stored_subshape_tolerance_mm": {
+          "minimum": 1e-07,
+          "average": 0.0002148424875475768,
+          "maximum": 0.001000100001
+        },
+        "face_surface_type_counts": {
+          "Cylinder": 104,
+          "Toroid": 3,
+          "Plane": 170,
+          "SurfaceOfRevolution": 1,
+          "Cone": 1,
+          "OffsetSurface": 1
+        }
+      },
+      "candidate": {
+        "volume_mm3": 298644.44396778283,
+        "default_unmeshed_bounds_mm": {
+          "XMin": -81.17941502192954,
+          "XMax": 81.17941502192954,
+          "YMin": -81.17941502192954,
+          "YMax": 81.17941502192954,
+          "ZMin": 0.0,
+          "ZMax": 161.50486690949165
+        },
+        "optimal_unmeshed_bounds_mm": [
+          -75.0000001,
+          75.0000001,
+          -75.0000001,
+          75.0000001,
+          -1e-07,
+          161.48912925021145
+        ],
+        "stored_subshape_tolerance_mm": {
+          "minimum": 1e-07,
+          "average": 3.485224030173392e-05,
+          "maximum": 0.000577877166125
+        },
+        "face_surface_type_counts": {
+          "Cylinder": 104,
+          "Toroid": 3,
+          "Plane": 170,
+          "SurfaceOfRevolution": 1,
+          "Cone": 1,
+          "OffsetSurface": 1
+        }
+      }
+    },
+    "directed_boolean_results": {
+      "source_minus_candidate": {
+        "is_null": false,
+        "solid_count": 0,
+        "face_count": 0,
+        "edge_count": 0,
+        "volume_mm3": 0.0
+      },
+      "candidate_minus_source": {
+        "is_null": false,
+        "solid_count": 0,
+        "face_count": 0,
+        "edge_count": 0,
+        "volume_mm3": 0.0
+      }
+    },
+    "mesh_levels": [
+      {
+        "linear_deflection_mm": 0.5,
+        "angular_deflection_rad": 0.4,
+        "selections": {
+          "source": {
+            "triangle_count": 12032,
+            "oriented_triangle_integral_mm3": 297231.7819401227,
+            "maximum_sampled_boundary_distance_mm": 6.0945175659143966e-06,
+            "sample_count": 95,
+            "default_ZMax_before_meshing": 161.5614141209609,
+            "default_ZMax_after_meshing": 161.29644401830421
+          },
+          "candidate": {
+            "triangle_count": 12136,
+            "oriented_triangle_integral_mm3": 297260.7253780119,
+            "maximum_sampled_boundary_distance_mm": 7.6256715146882925e-06,
+            "sample_count": 95,
+            "default_ZMax_before_meshing": 161.50486690949165,
+            "default_ZMax_after_meshing": 161.29644270072407
+          }
+        }
+      },
+      {
+        "linear_deflection_mm": 0.1,
+        "angular_deflection_rad": 0.2,
+        "selections": {
+          "source": {
+            "triangle_count": 32378,
+            "oriented_triangle_integral_mm3": 298348.1947603667,
+            "maximum_sampled_boundary_distance_mm": 6.769108263541584e-06,
+            "sample_count": 95,
+            "default_ZMax_before_meshing": 161.5614141209609,
+            "default_ZMax_after_meshing": 161.48853073298923
+          },
+          "candidate": {
+            "triangle_count": 32388,
+            "oriented_triangle_integral_mm3": 298346.5871719176,
+            "maximum_sampled_boundary_distance_mm": 7.188014107115488e-06,
+            "sample_count": 95,
+            "default_ZMax_before_meshing": 161.50486690949165,
+            "default_ZMax_after_meshing": 161.48853348040168
+          }
+        }
+      },
+      {
+        "linear_deflection_mm": 0.02,
+        "angular_deflection_rad": 0.1,
+        "selections": {
+          "source": {
+            "triangle_count": 102816,
+            "oriented_triangle_integral_mm3": 298594.5333863882,
+            "maximum_sampled_boundary_distance_mm": 6.70588058272014e-06,
+            "sample_count": 95,
+            "default_ZMax_before_meshing": 161.5614141209609,
+            "default_ZMax_after_meshing": 161.48729703761984
+          },
+          "candidate": {
+            "triangle_count": 102652,
+            "oriented_triangle_integral_mm3": 298594.5369628106,
+            "maximum_sampled_boundary_distance_mm": 6.616868995548842e-06,
+            "sample_count": 95,
+            "default_ZMax_before_meshing": 161.50486690949165,
+            "default_ZMax_after_meshing": 161.48227638967953
+          }
+        }
+      }
+    ],
+    "qualification": {
+      "continuous_surface_distance_proven": false,
+      "exact_geometry_equivalence": false,
+      "volume_quadrature_error_quantified": false,
+      "all_53_reference_meanings_verified": false,
+      "failed_radius_roundtrip_resolved": false,
+      "migration_accepted": false,
+      "candidate_accepted": false,
+      "manufacturing_released": false
+    }
+  }
+}

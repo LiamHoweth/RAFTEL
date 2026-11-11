@@ -1,0 +1,4988 @@
+{
+  "schema_version": 1,
+  "evidence_class": "native_single_document_drift_probe_attempt",
+  "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+  "source_sha256_before": "8afa16c8ff3adebd87e48b67dfb20d3224402bd517010dc112950a28f219690a",
+  "copied_source_sha256_before": "8afa16c8ff3adebd87e48b67dfb20d3224402bd517010dc112950a28f219690a",
+  "capture_script_sha256": "1a6b4b9f27d6f7d2d68248d9d7143cb87ec3c0b9ce28e0bc1fa14d1ee3d9f061",
+  "diagnostic_helper_sha256": "78aa05ea0b50ca91291fbe68cb1113f72dfdd4065ad320b91a5c575c8b8bc374",
+  "migration_evidence_sha256": "0f1f2246ae8216bcd6569081884c69bb754ca054571db0429b362ff3df19c8f6",
+  "runner_declared_native_executable_sha256": "1692e54224b48989974e8b91d3ac7a38d1d502d3db4dee1d4cf79ba91356e42d",
+  "full_runtime_and_addon_bundle_verified": false,
+  "experiment": "intersection_pocket_length",
+  "changed_properties": {
+    "Thickness.Intersection": true,
+    "Pocket.Type": "Length"
+  },
+  "audit_status": "complete_probe_not_migration_acceptance",
+  "native_document_saved": false,
+  "migration_accepted": false,
+  "source_saved_brep_measurements": {
+    "Sketch": {
+      "saved_brep_member": "PartShape1.brp",
+      "saved_brep_sha256": "dad31f610af08f01fd8786e6741a4fe61db2c6e8266a38d34469753c65055a2c",
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 0,
+        "face_count": 0,
+        "edge_count": 1,
+        "volume_mm3": null,
+        "raw_native_volume_mm3": 0.0,
+        "area_mm2": 0.0,
+        "length_mm": 471.23889803846896,
+        "bounds_mm": [
+          -75.0,
+          75.0,
+          -75.0,
+          75.0,
+          0.0,
+          0.0
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": null,
+        "centroid_measurement": "unmeasured_no_available_volumetric_centroid",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    },
+    "Pad": {
+      "saved_brep_member": "PartShape3.brp",
+      "saved_brep_sha256": "fb85864c806b1ff94c025a7921f633b52fa505b2842791ba72fc48fb22e17f43",
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 1,
+        "face_count": 3,
+        "edge_count": 3,
+        "volume_mm3": 530143.7602932777,
+        "raw_native_volume_mm3": 530143.7602932777,
+        "area_mm2": 49480.08429403925,
+        "length_mm": 1944.9555921538758,
+        "bounds_mm": [
+          -75.0,
+          75.0,
+          -75.0,
+          75.0,
+          0.0,
+          30.0
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": [
+          2.3715934618099825e-14,
+          -4.0859891601872666e-16,
+          15.000000000000002
+        ],
+        "centroid_measurement": "volume_weighted_native_solid_centroids",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    },
+    "Sketch001": {
+      "saved_brep_member": "PartShape4.brp",
+      "saved_brep_sha256": "228eed1d19b510c0df89967fbe5dce25ae78ac288dad03fc8cef2d9223fd22b0",
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 0,
+        "face_count": 0,
+        "edge_count": 4,
+        "volume_mm3": null,
+        "raw_native_volume_mm3": 0.0,
+        "area_mm2": 0.0,
+        "length_mm": 339.9114857516267,
+        "bounds_mm": [
+          -65.0000000000853,
+          65.0000000000853,
+          -35.0,
+          35.00000000000945,
+          30.0,
+          30.0
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": null,
+        "centroid_measurement": "unmeasured_no_available_volumetric_centroid",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          30.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    },
+    "Pad001": {
+      "saved_brep_member": "PartShape6.brp",
+      "saved_brep_sha256": "e90af60e8e0177cdf2ea487634a7d05a447aa4ae7c6924b34b453cf6754eb5ff",
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 1,
+        "face_count": 8,
+        "edge_count": 15,
+        "volume_mm3": 1592539.2923803136,
+        "raw_native_volume_mm3": 1592539.2923803136,
+        "area_mm2": 94348.40041325404,
+        "length_mm": 4360.601535160383,
+        "bounds_mm": [
+          -75.0,
+          75.0,
+          -75.0,
+          75.0,
+          0.0,
+          162.0
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": [
+          4.1564909768635986e-13,
+          4.1629982702278036e-14,
+          69.03573934457069
+        ],
+        "centroid_measurement": "volume_weighted_native_solid_centroids",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    },
+    "DatumPlane": {
+      "saved_brep_member": "PartShape7.brp",
+      "saved_brep_sha256": "3b070e74eaa591510936795326c63aff0c487defda5931467fa7031e5fb8fd3f",
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 0,
+        "face_count": 1,
+        "edge_count": 0,
+        "volume_mm3": null,
+        "raw_native_volume_mm3": 2.5466666666666664e+102,
+        "area_mm2": 8e+100,
+        "length_mm": 0.0,
+        "bounds_mm": [
+          -1e+100,
+          1e+100,
+          -1e+100,
+          1e+100,
+          95.5,
+          95.5
+        ],
+        "unbounded_construction_geometry": true,
+        "center_of_mass_mm": null,
+        "centroid_measurement": "unmeasured_no_available_volumetric_centroid",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          95.5,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    },
+    "Sketch002": {
+      "saved_brep_member": "PartShape8.brp",
+      "saved_brep_sha256": "beedaf4ec39e8966262bc90927a2a7e5ca247aa60dd3c1122f10680956d07c2a",
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 0,
+        "face_count": 0,
+        "edge_count": 6,
+        "volume_mm3": null,
+        "raw_native_volume_mm3": 0.0,
+        "area_mm2": 0.0,
+        "length_mm": 456.5132620651305,
+        "bounds_mm": [
+          -120.0,
+          -19.999999999999986,
+          -51.0,
+          51.0,
+          95.5,
+          95.5
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": null,
+        "centroid_measurement": "unmeasured_no_available_volumetric_centroid",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          95.5,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    },
+    "Groove": {
+      "saved_brep_member": "PartShape10.brp",
+      "saved_brep_sha256": "218f2002706e612197e974fee8d742021a1fc1fcd176c5651fa40e46c27d3f77",
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 1,
+        "face_count": 8,
+        "edge_count": 17,
+        "volume_mm3": 1461442.4342475634,
+        "raw_native_volume_mm3": 1461442.4342475634,
+        "area_mm2": 86215.38296338978,
+        "length_mm": 4226.11364555569,
+        "bounds_mm": [
+          -75.0,
+          75.0,
+          -75.0,
+          75.0,
+          0.0,
+          161.4999999849089
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": [
+          -4.945900405409047e-07,
+          -7.652049487895073e-07,
+          61.821620279778095
+        ],
+        "centroid_measurement": "volume_weighted_native_solid_centroids",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    },
+    "Thickness": {
+      "saved_brep_member": "PartShape12.brp",
+      "saved_brep_sha256": "bd25c0119158c1aad7d148ebc8abbdc78c306dcab257af66c71a7a19369db5a3",
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 1,
+        "face_count": 19,
+        "edge_count": 40,
+        "volume_mm3": 320854.8748546029,
+        "raw_native_volume_mm3": 320854.8748546029,
+        "area_mm2": 130699.77587728374,
+        "length_mm": 8915.808733224032,
+        "bounds_mm": [
+          -75.0,
+          75.0,
+          -75.0,
+          75.0,
+          0.0,
+          161.4999999995797
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": [
+          -1.563718302745203e-06,
+          -1.1085620210821407e-05,
+          68.63976178078941
+        ],
+        "centroid_measurement": "volume_weighted_native_solid_centroids",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    },
+    "Sketch003": {
+      "saved_brep_member": "PartShape13.brp",
+      "saved_brep_sha256": "6cff366995f72f49e0db5871d9ef353c82491cb423ab5cfd004da648cd3558eb",
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 0,
+        "face_count": 0,
+        "edge_count": 3,
+        "volume_mm3": null,
+        "raw_native_volume_mm3": 0.0,
+        "area_mm2": 0.0,
+        "length_mm": 61.786934528948855,
+        "bounds_mm": [
+          -43.301270189221945,
+          -19.999999999999986,
+          -67.0820393249937,
+          -54.99999999999999,
+          0.0,
+          0.0
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": null,
+        "centroid_measurement": "unmeasured_no_available_volumetric_centroid",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    },
+    "Pad002": {
+      "saved_brep_member": "PartShape15.brp",
+      "saved_brep_sha256": "0a05e6993ddcb2a4026b51f035a97e94fd139486046a08e9759a4f330f9ab0ce",
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 1,
+        "face_count": 21,
+        "edge_count": 48,
+        "volume_mm3": 324917.6082100854,
+        "raw_native_volume_mm3": 324917.6082100854,
+        "area_mm2": 130924.26798977083,
+        "length_mm": 9051.727471221957,
+        "bounds_mm": [
+          -75.0,
+          75.0,
+          -75.0,
+          75.0,
+          0.0,
+          161.4999999995797
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": [
+          -0.3541089850312766,
+          -0.7422079781539399,
+          67.93772098570432
+        ],
+        "centroid_measurement": "volume_weighted_native_solid_centroids",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    },
+    "Sketch004": {
+      "saved_brep_member": "PartShape16.brp",
+      "saved_brep_sha256": "b5d20282e2a70a011b657c2cfa264c950692cfba006c6762759b848d9c7a4e9b",
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 0,
+        "face_count": 0,
+        "edge_count": 1,
+        "volume_mm3": null,
+        "raw_native_volume_mm3": 0.0,
+        "area_mm2": 0.0,
+        "length_mm": 10.681415022205297,
+        "bounds_mm": [
+          -33.2,
+          -29.800000000000004,
+          -54.99999999999999,
+          -54.99999999999999,
+          6.3,
+          9.7
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": null,
+        "centroid_measurement": "unmeasured_no_available_volumetric_centroid",
+        "shape_placement_matrix": [
+          -1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.220446049250313e-16,
+          1.0,
+          -54.99999999999999,
+          0.0,
+          1.0,
+          -2.220446049250313e-16,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    },
+    "Pocket": {
+      "saved_brep_member": "PartShape18.brp",
+      "saved_brep_sha256": "7c92fd27f84e9153aa19bab39782b1e6e74675828594d8e24b7dd4599c2ad87a",
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 1,
+        "face_count": 22,
+        "edge_count": 51,
+        "volume_mm3": 324798.22504141054,
+        "raw_native_volume_mm3": 324798.22504141054,
+        "area_mm2": 131044.5633113697,
+        "length_mm": 9120.059366279436,
+        "bounds_mm": [
+          -75.0,
+          75.0,
+          -75.0,
+          75.0,
+          0.0,
+          161.4999999995797
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": [
+          -0.3427265962058385,
+          -0.720049230283446,
+          67.95970676529733
+        ],
+        "centroid_measurement": "volume_weighted_native_solid_centroids",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    },
+    "DatumPlane001": {
+      "saved_brep_member": "PartShape19.brp",
+      "saved_brep_sha256": "6f2640e2c339ac3467bf4ac55d1244dc9c270ff3be28911c672b8eff2bb6291b",
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 0,
+        "face_count": 1,
+        "edge_count": 0,
+        "volume_mm3": null,
+        "raw_native_volume_mm3": -2e+102,
+        "area_mm2": 8e+100,
+        "length_mm": 0.0,
+        "bounds_mm": [
+          -1e+100,
+          1e+100,
+          -75.0,
+          -75.0,
+          -1e+100,
+          1e+100
+        ],
+        "unbounded_construction_geometry": true,
+        "center_of_mass_mm": null,
+        "centroid_measurement": "unmeasured_no_available_volumetric_centroid",
+        "shape_placement_matrix": [
+          -1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.220446049250313e-16,
+          1.0,
+          -75.0,
+          0.0,
+          1.0,
+          -2.220446049250313e-16,
+          4e-15,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    },
+    "Sketch005": {
+      "saved_brep_member": "PartShape20.brp",
+      "saved_brep_sha256": "27ccf08431954a0d232bde6742d5b35c2027ca5e92d070e3430c0e2e53aa8b17",
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 0,
+        "face_count": 0,
+        "edge_count": 1,
+        "volume_mm3": null,
+        "raw_native_volume_mm3": 0.0,
+        "area_mm2": 0.0,
+        "length_mm": 18.535396656179778,
+        "bounds_mm": [
+          -34.45,
+          -28.550000000000004,
+          -75.0,
+          -75.0,
+          5.050000000000003,
+          10.950000000000003
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": null,
+        "centroid_measurement": "unmeasured_no_available_volumetric_centroid",
+        "shape_placement_matrix": [
+          -1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.220446049250313e-16,
+          1.0,
+          -75.0,
+          0.0,
+          1.0,
+          -2.220446049250313e-16,
+          4e-15,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    },
+    "Pocket001": {
+      "saved_brep_member": "PartShape22.brp",
+      "saved_brep_sha256": "94e7e798695f1b8e980562351f204ec4e18e2d2f9697f30a8877d8cbef162872",
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 1,
+        "face_count": 24,
+        "edge_count": 54,
+        "volume_mm3": 324700.0106273241,
+        "raw_native_volume_mm3": 324700.0106273241,
+        "area_mm2": 131081.65415036367,
+        "length_mm": 9193.75472880378,
+        "bounds_mm": [
+          -75.0,
+          75.0,
+          -75.0,
+          75.0,
+          0.0,
+          161.4999999995797
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": [
+          -0.33379180168417555,
+          -0.7020161369884227,
+          67.97761481154839
+        ],
+        "centroid_measurement": "volume_weighted_native_solid_centroids",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    },
+    "Body": {
+      "saved_brep_member": "PartShape.brp",
+      "saved_brep_sha256": "d0ed3dcd293f814b6db11e0e29a22e89a6aa4fe6c8d9f8e5c08e508baec2b9db",
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 1,
+        "face_count": 280,
+        "edge_count": 824,
+        "volume_mm3": 298648.10044680384,
+        "raw_native_volume_mm3": 298648.10044680384,
+        "area_mm2": 129397.75256407335,
+        "length_mm": 22610.468273496455,
+        "bounds_mm": [
+          -81.17941502192954,
+          81.17941502192954,
+          -81.17941502192954,
+          81.17941502192954,
+          -6.0000000023e-07,
+          161.5614141209609
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": [
+          0.000691337281180332,
+          1.8578894916978796,
+          67.83237825168747
+        ],
+        "centroid_measurement": "volume_weighted_native_solid_centroids",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    }
+  },
+  "restored_document_measurements": {
+    "Sketch": {
+      "states": [
+        "Touched"
+      ],
+      "placement_matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 0,
+        "face_count": 0,
+        "edge_count": 1,
+        "volume_mm3": null,
+        "raw_native_volume_mm3": 0.0,
+        "area_mm2": 0.0,
+        "length_mm": 471.23889803846896,
+        "bounds_mm": [
+          -75.0,
+          75.0,
+          -75.0,
+          75.0,
+          0.0,
+          0.0
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": null,
+        "centroid_measurement": "unmeasured_no_available_volumetric_centroid",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "sketch_geometry": [
+        "Circle (Radius : 75, Position : (0, 0, 0), Direction : (0, 0, 1))"
+      ],
+      "fully_constrained": true,
+      "expressions": [],
+      "constraints_repr": [
+        "<Constraint 'Coincident'>",
+        "<Constraint 'Radius'>"
+      ],
+      "external_geometry_repr": "[]",
+      "sketch_circle_frames": [
+        {
+          "center_in_sketch_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "center_in_document_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis_in_document": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "radius_mm": 75.0
+        }
+      ],
+      "attachment_parameters": {
+        "map_mode": "FlatFace",
+        "map_reversed": false,
+        "offset_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selected_operation_property_repr": {}
+    },
+    "Pad": {
+      "states": [
+        "Touched"
+      ],
+      "placement_matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 1,
+        "face_count": 3,
+        "edge_count": 3,
+        "volume_mm3": 530143.7602932777,
+        "raw_native_volume_mm3": 530143.7602932777,
+        "area_mm2": 49480.08429403925,
+        "length_mm": 1944.9555921538758,
+        "bounds_mm": [
+          -75.0,
+          75.0,
+          -75.0,
+          75.0,
+          0.0,
+          30.0
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": [
+          2.3715934618099825e-14,
+          -4.0859891601872666e-16,
+          15.000000000000002
+        ],
+        "centroid_measurement": "volume_weighted_native_solid_centroids",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selected_operation_property_repr": {
+        "Type": "Length",
+        "Length": "30.0 mm",
+        "Length2": "100.0 mm",
+        "Reversed": "False",
+        "SideType": "One side",
+        "Profile": "(<Sketcher::SketchObject>, [])",
+        "BaseFeature": "None"
+      }
+    },
+    "Sketch001": {
+      "states": [
+        "Touched"
+      ],
+      "placement_matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        30.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 0,
+        "face_count": 0,
+        "edge_count": 4,
+        "volume_mm3": null,
+        "raw_native_volume_mm3": 0.0,
+        "area_mm2": 0.0,
+        "length_mm": 339.9114857516267,
+        "bounds_mm": [
+          -65.0000000000853,
+          65.0000000000853,
+          -35.0,
+          35.00000000000945,
+          30.0,
+          30.0
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": null,
+        "centroid_measurement": "unmeasured_no_available_volumetric_centroid",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          30.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "sketch_geometry": [
+        "ArcOfCircle (Radius : 35, Position : (-30, 0, 0), Direction : (0, 0, 1), Parameter : (1.5708, 4.71239))",
+        "ArcOfCircle (Radius : 35, Position : (30, 0, 0), Direction : (0, 0, 1), Parameter : (4.71239, 7.85398))",
+        "<Line segment (-30,-35,0) (30,-35,0) >",
+        "<Line segment (-30,35,0) (30,35,0) >"
+      ],
+      "fully_constrained": true,
+      "expressions": [],
+      "constraints_repr": [
+        "<Constraint 'Tangent'>",
+        "<Constraint 'Tangent'>",
+        "<Constraint 'Tangent'>",
+        "<Constraint 'Tangent'>",
+        "<Constraint 'Horizontal' (2)>",
+        "<Constraint 'PointOnObject' (0,-1)>",
+        "<Constraint 'Symmetric'>",
+        "<Constraint 'Radius'>",
+        "<Constraint 'DistanceX'>"
+      ],
+      "external_geometry_repr": "[]",
+      "sketch_circle_frames": [],
+      "attachment_parameters": {
+        "map_mode": "FlatFace",
+        "map_reversed": false,
+        "offset_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selected_operation_property_repr": {}
+    },
+    "Pad001": {
+      "states": [
+        "Touched"
+      ],
+      "placement_matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 1,
+        "face_count": 8,
+        "edge_count": 15,
+        "volume_mm3": 1592539.2923803136,
+        "raw_native_volume_mm3": 1592539.2923803136,
+        "area_mm2": 94348.40041325404,
+        "length_mm": 4360.601535160383,
+        "bounds_mm": [
+          -75.0,
+          75.0,
+          -75.0,
+          75.0,
+          0.0,
+          162.0
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": [
+          4.1564909768635986e-13,
+          4.1629982702278036e-14,
+          69.03573934457069
+        ],
+        "centroid_measurement": "volume_weighted_native_solid_centroids",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selected_operation_property_repr": {
+        "Type": "Length",
+        "Length": "132.0 mm",
+        "Length2": "100.0 mm",
+        "Reversed": "False",
+        "SideType": "One side",
+        "Profile": "(<Sketcher::SketchObject>, [])",
+        "BaseFeature": "<PartDesign::Pad>"
+      }
+    },
+    "DatumPlane": {
+      "states": [
+        "Touched"
+      ],
+      "placement_matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.2246467991473532e-16,
+        0.0,
+        0.0,
+        -1.2246467991473532e-16,
+        1.0,
+        95.5,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 0,
+        "face_count": 1,
+        "edge_count": 0,
+        "volume_mm3": null,
+        "raw_native_volume_mm3": 0.0,
+        "area_mm2": 8e+100,
+        "length_mm": 0.0,
+        "bounds_mm": [
+          -1e+100,
+          1e+100,
+          -1e+100,
+          1e+100,
+          95.5,
+          95.5
+        ],
+        "unbounded_construction_geometry": true,
+        "center_of_mass_mm": null,
+        "centroid_measurement": "unmeasured_no_available_volumetric_centroid",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          95.5,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "attachment_parameters": {
+        "map_mode": "FlatFace",
+        "map_reversed": false,
+        "offset_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0,
+          -1.2246467991473532e-16,
+          0.0,
+          0.0,
+          1.2246467991473532e-16,
+          -1.0,
+          -95.5,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selected_operation_property_repr": {
+        "Length": "179.74123906014736 mm"
+      }
+    },
+    "Sketch002": {
+      "states": [
+        "Touched"
+      ],
+      "placement_matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        95.5,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 0,
+        "face_count": 0,
+        "edge_count": 6,
+        "volume_mm3": null,
+        "raw_native_volume_mm3": 0.0,
+        "area_mm2": 0.0,
+        "length_mm": 456.5132620651305,
+        "bounds_mm": [
+          -120.0,
+          -19.999999999999986,
+          -51.0,
+          51.0,
+          95.5,
+          95.5
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": null,
+        "centroid_measurement": "unmeasured_no_available_volumetric_centroid",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          95.5,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "sketch_geometry": [
+        "ArcOfCircle (Radius : 46, Position : (-20, 2e-15, 0), Direction : (0, 0, 1), Parameter : (1.5708, 4.71239))",
+        "<Line segment (-20,46,0) (-20,51,0) >",
+        "<Line segment (-20,51,0) (-120,51,0) >",
+        "<Line segment (-120,51,0) (-120,-51,0) >",
+        "<Line segment (-120,-51,0) (-20,-51,0) >",
+        "<Line segment (-20,-51,0) (-20,-46,0) >"
+      ],
+      "fully_constrained": true,
+      "expressions": [],
+      "constraints_repr": [
+        "<Constraint 'Symmetric'>",
+        "<Constraint 'Coincident'>",
+        "<Constraint 'Coincident'>",
+        "<Constraint 'Vertical' (1)>",
+        "<Constraint 'Coincident'>",
+        "<Constraint 'Vertical' (3)>",
+        "<Constraint 'Coincident'>",
+        "<Constraint 'Horizontal' (4)>",
+        "<Constraint 'Coincident'>",
+        "<Constraint 'Coincident'>",
+        "<Constraint 'Vertical' (5)>",
+        "<Constraint 'Horizontal' (2)>",
+        "<Constraint 'Radius'>",
+        "<Constraint 'Equal' (5,1)>",
+        "<Constraint 'DistanceY'>",
+        "<Constraint 'DistanceX'>",
+        "<Constraint 'PointOnObject' (0,1)>",
+        "<Constraint 'DistanceX'>"
+      ],
+      "external_geometry_repr": "[]",
+      "sketch_circle_frames": [],
+      "attachment_parameters": {
+        "map_mode": "FlatFace",
+        "map_reversed": false,
+        "offset_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selected_operation_property_repr": {}
+    },
+    "Groove": {
+      "states": [
+        "Touched"
+      ],
+      "placement_matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 1,
+        "face_count": 8,
+        "edge_count": 17,
+        "volume_mm3": 1461442.4342475634,
+        "raw_native_volume_mm3": 1461442.4342475634,
+        "area_mm2": 86215.38296338978,
+        "length_mm": 4226.11364555569,
+        "bounds_mm": [
+          -75.0,
+          75.0,
+          -75.0,
+          75.0,
+          0.0,
+          161.4999999849089
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": [
+          -4.945900405409047e-07,
+          -7.652049487895073e-07,
+          61.821620279778095
+        ],
+        "centroid_measurement": "volume_weighted_native_solid_centroids",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selected_operation_property_repr": {
+        "Type": "Angle",
+        "Reversed": "False",
+        "Profile": "(<Sketcher::SketchObject>, [])",
+        "BaseFeature": "<PartDesign::Pad>"
+      }
+    },
+    "Thickness": {
+      "states": [
+        "Touched"
+      ],
+      "placement_matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 1,
+        "face_count": 19,
+        "edge_count": 40,
+        "volume_mm3": 320854.8748546029,
+        "raw_native_volume_mm3": 320854.8748546029,
+        "area_mm2": 130699.77587728374,
+        "length_mm": 8915.808733224032,
+        "bounds_mm": [
+          -75.0,
+          75.0,
+          -75.0,
+          75.0,
+          0.0,
+          161.4999999995797
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": [
+          -1.563718302745203e-06,
+          -1.1085620210821407e-05,
+          68.63976178078941
+        ],
+        "centroid_measurement": "volume_weighted_native_solid_centroids",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selected_operation_property_repr": {
+        "Reversed": "True",
+        "BaseFeature": "<PartDesign::Groove>"
+      }
+    },
+    "Sketch003": {
+      "states": [
+        "Touched"
+      ],
+      "placement_matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 0,
+        "face_count": 0,
+        "edge_count": 3,
+        "volume_mm3": null,
+        "raw_native_volume_mm3": 0.0,
+        "area_mm2": 0.0,
+        "length_mm": 61.786934528948855,
+        "bounds_mm": [
+          -43.301270189221945,
+          -19.999999999999986,
+          -67.0820393249937,
+          -54.99999999999999,
+          0.0,
+          0.0
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": null,
+        "centroid_measurement": "unmeasured_no_available_volumetric_centroid",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "sketch_geometry": [
+        "<Line segment (-43.3013,55,0) (-20,55,0) >",
+        "<Line segment (-20,55,0) (-20,67.082,0) >",
+        "ArcOfCircle (Radius : 70, Position : (0, 0, 0), Direction : (0, 0, 1), Parameter : (1.86055, 2.23774))"
+      ],
+      "fully_constrained": true,
+      "expressions": [],
+      "constraints_repr": [
+        "<Constraint 'Coincident'>",
+        "<Constraint 'Vertical' (1)>",
+        "<Constraint 'Horizontal' (0)>",
+        "<Constraint 'Coincident'>",
+        "<Constraint 'Coincident'>",
+        "<Constraint 'Coincident'>",
+        "<Constraint 'Equal' (2,-3)>",
+        "<Constraint 'DistanceY'>",
+        "<Constraint 'DistanceX'>"
+      ],
+      "external_geometry_repr": "[(<PartDesign::Thickness>, ('Edge18',))]",
+      "sketch_circle_frames": [],
+      "attachment_parameters": {
+        "map_mode": "FlatFace",
+        "map_reversed": false,
+        "offset_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selected_operation_property_repr": {}
+    },
+    "Pad002": {
+      "states": [
+        "Touched"
+      ],
+      "placement_matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 1,
+        "face_count": 21,
+        "edge_count": 48,
+        "volume_mm3": 324917.6082100854,
+        "raw_native_volume_mm3": 324917.6082100854,
+        "area_mm2": 130924.26798977083,
+        "length_mm": 9051.727471221957,
+        "bounds_mm": [
+          -75.0,
+          75.0,
+          -75.0,
+          75.0,
+          0.0,
+          161.4999999995797
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": [
+          -0.3541089850312766,
+          -0.7422079781539399,
+          67.93772098570432
+        ],
+        "centroid_measurement": "volume_weighted_native_solid_centroids",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selected_operation_property_repr": {
+        "Type": "UpToFirst",
+        "Length": "10.0 mm",
+        "Length2": "100.0 mm",
+        "Reversed": "True",
+        "SideType": "One side",
+        "Profile": "(<Sketcher::SketchObject>, [])",
+        "BaseFeature": "<PartDesign::Thickness>"
+      }
+    },
+    "Sketch004": {
+      "states": [
+        "Touched"
+      ],
+      "placement_matrix": [
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        -54.99999999999999,
+        0.0,
+        1.0,
+        -2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 0,
+        "face_count": 0,
+        "edge_count": 1,
+        "volume_mm3": null,
+        "raw_native_volume_mm3": 0.0,
+        "area_mm2": 0.0,
+        "length_mm": 10.681415022205297,
+        "bounds_mm": [
+          -33.2,
+          -29.800000000000004,
+          -54.99999999999999,
+          -54.99999999999999,
+          6.3,
+          9.7
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": null,
+        "centroid_measurement": "unmeasured_no_available_volumetric_centroid",
+        "shape_placement_matrix": [
+          -1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.220446049250313e-16,
+          1.0,
+          -54.99999999999999,
+          0.0,
+          1.0,
+          -2.220446049250313e-16,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "sketch_geometry": [
+        "Circle (Radius : 1.7, Position : (31.5, 8, 0), Direction : (0, 0, 1))"
+      ],
+      "fully_constrained": true,
+      "expressions": [
+        [
+          "Constraints[0]",
+          "Spreadsheet.M3BoltBodyRadius"
+        ]
+      ],
+      "constraints_repr": [
+        "<Constraint 'Radius'>",
+        "<Constraint 'DistanceX'>",
+        "<Constraint 'DistanceY'>"
+      ],
+      "external_geometry_repr": "[(<PartDesign::Pad>, ('Edge22',))]",
+      "sketch_circle_frames": [
+        {
+          "center_in_sketch_mm": [
+            31.500000000000004,
+            8.0,
+            0.0
+          ],
+          "center_in_document_mm": [
+            -31.500000000000004,
+            -54.99999999999999,
+            8.0
+          ],
+          "axis_in_document": [
+            0.0,
+            1.0,
+            -2.220446049250313e-16
+          ],
+          "radius_mm": 1.7
+        }
+      ],
+      "attachment_parameters": {
+        "map_mode": "FlatFace",
+        "map_reversed": false,
+        "offset_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selected_operation_property_repr": {}
+    },
+    "Pocket": {
+      "states": [
+        "Touched"
+      ],
+      "placement_matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 1,
+        "face_count": 22,
+        "edge_count": 51,
+        "volume_mm3": 324798.22504141054,
+        "raw_native_volume_mm3": 324798.22504141054,
+        "area_mm2": 131044.5633113697,
+        "length_mm": 9120.059366279436,
+        "bounds_mm": [
+          -75.0,
+          75.0,
+          -75.0,
+          75.0,
+          0.0,
+          161.4999999995797
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": [
+          -0.3427265962058385,
+          -0.720049230283446,
+          67.95970676529733
+        ],
+        "centroid_measurement": "volume_weighted_native_solid_centroids",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selected_operation_property_repr": {
+        "Type": "UpToFirst",
+        "Length": "5.0 mm",
+        "Length2": "100.0 mm",
+        "Reversed": "False",
+        "SideType": "One side",
+        "Profile": "(<Sketcher::SketchObject>, [])",
+        "BaseFeature": "<PartDesign::Pad>"
+      }
+    },
+    "DatumPlane001": {
+      "states": [
+        "Touched"
+      ],
+      "placement_matrix": [
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        -75.0,
+        0.0,
+        1.0,
+        -2.220446049250313e-16,
+        4.440892098500626e-15,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 0,
+        "face_count": 1,
+        "edge_count": 0,
+        "volume_mm3": null,
+        "raw_native_volume_mm3": 0.0,
+        "area_mm2": 8e+100,
+        "length_mm": 0.0,
+        "bounds_mm": [
+          -1e+100,
+          1e+100,
+          -75.0,
+          -75.0,
+          -1e+100,
+          1e+100
+        ],
+        "unbounded_construction_geometry": true,
+        "center_of_mass_mm": null,
+        "centroid_measurement": "unmeasured_no_available_volumetric_centroid",
+        "shape_placement_matrix": [
+          -1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.220446049250313e-16,
+          1.0,
+          -75.0,
+          0.0,
+          1.0,
+          -2.220446049250313e-16,
+          4.440892098500626e-15,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "attachment_parameters": {
+        "map_mode": "FlatFace",
+        "map_reversed": false,
+        "offset_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          -20.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selected_operation_property_repr": {
+        "Length": "183.19118797970694 mm"
+      }
+    },
+    "Sketch005": {
+      "states": [
+        "Touched"
+      ],
+      "placement_matrix": [
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        -75.0,
+        0.0,
+        1.0,
+        -2.220446049250313e-16,
+        4.440892098500626e-15,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 0,
+        "face_count": 0,
+        "edge_count": 1,
+        "volume_mm3": null,
+        "raw_native_volume_mm3": 0.0,
+        "area_mm2": 0.0,
+        "length_mm": 18.535396656179778,
+        "bounds_mm": [
+          -34.45,
+          -28.550000000000004,
+          -75.0,
+          -75.0,
+          5.050000000000003,
+          10.950000000000003
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": null,
+        "centroid_measurement": "unmeasured_no_available_volumetric_centroid",
+        "shape_placement_matrix": [
+          -1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.220446049250313e-16,
+          1.0,
+          -75.0,
+          0.0,
+          1.0,
+          -2.220446049250313e-16,
+          4.440892098500626e-15,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "sketch_geometry": [
+        "Circle (Radius : 2.95, Position : (31.5, 8, 0), Direction : (0, 0, 1))"
+      ],
+      "fully_constrained": true,
+      "expressions": [
+        [
+          "Constraints[1]",
+          "Spreadsheet.M3BoltHeadRadius"
+        ]
+      ],
+      "constraints_repr": [
+        "<Constraint 'Coincident'>",
+        "<Constraint 'Radius'>"
+      ],
+      "external_geometry_repr": "[(<PartDesign::Pocket>, ('Edge13',))]",
+      "sketch_circle_frames": [
+        {
+          "center_in_sketch_mm": [
+            31.500000000000004,
+            8.0,
+            0.0
+          ],
+          "center_in_document_mm": [
+            -31.500000000000004,
+            -75.0,
+            8.000000000000004
+          ],
+          "axis_in_document": [
+            0.0,
+            1.0,
+            -2.220446049250313e-16
+          ],
+          "radius_mm": 2.95
+        }
+      ],
+      "attachment_parameters": {
+        "map_mode": "FlatFace",
+        "map_reversed": false,
+        "offset_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selected_operation_property_repr": {}
+    },
+    "Pocket001": {
+      "states": [
+        "Touched"
+      ],
+      "placement_matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 1,
+        "face_count": 24,
+        "edge_count": 54,
+        "volume_mm3": 324700.0106273241,
+        "raw_native_volume_mm3": 324700.0106273241,
+        "area_mm2": 131081.65415036367,
+        "length_mm": 9193.75472880378,
+        "bounds_mm": [
+          -75.0,
+          75.0,
+          -75.0,
+          75.0,
+          0.0,
+          161.4999999995797
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": [
+          -0.33379180168417555,
+          -0.7020161369884227,
+          67.97761481154839
+        ],
+        "centroid_measurement": "volume_weighted_native_solid_centroids",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selected_operation_property_repr": {
+        "Type": "Length",
+        "Length": "12.0 mm",
+        "Length2": "100.0 mm",
+        "Reversed": "True",
+        "SideType": "One side",
+        "Profile": "(<Sketcher::SketchObject>, [])",
+        "BaseFeature": "<PartDesign::Pocket>"
+      }
+    },
+    "Body": {
+      "states": [
+        "Touched"
+      ],
+      "placement_matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 1,
+        "face_count": 280,
+        "edge_count": 824,
+        "volume_mm3": 298648.10044680384,
+        "raw_native_volume_mm3": 298648.10044680384,
+        "area_mm2": 129397.75256407335,
+        "length_mm": 22610.468273496455,
+        "bounds_mm": [
+          -81.17941502192954,
+          81.17941502192954,
+          -81.17941502192954,
+          81.17941502192954,
+          -6.0000000023e-07,
+          161.5614141209609
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": [
+          0.000691337281180332,
+          1.8578894916978796,
+          67.83237825168747
+        ],
+        "centroid_measurement": "volume_weighted_native_solid_centroids",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selected_operation_property_repr": {
+        "BaseFeature": "None"
+      }
+    }
+  },
+  "force_rebuild_attempt_measurements": {
+    "Sketch": {
+      "states": [
+        "Up-to-date"
+      ],
+      "placement_matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 0,
+        "face_count": 0,
+        "edge_count": 1,
+        "volume_mm3": null,
+        "raw_native_volume_mm3": 0.0,
+        "area_mm2": 0.0,
+        "length_mm": 471.23889803846896,
+        "bounds_mm": [
+          -75.0,
+          75.0,
+          -75.0,
+          75.0,
+          0.0,
+          0.0
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": null,
+        "centroid_measurement": "unmeasured_no_available_volumetric_centroid",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "sketch_geometry": [
+        "Circle (Radius : 75, Position : (0, 0, 0), Direction : (0, 0, 1))"
+      ],
+      "fully_constrained": true,
+      "expressions": [],
+      "constraints_repr": [
+        "<Constraint 'Coincident'>",
+        "<Constraint 'Radius'>"
+      ],
+      "external_geometry_repr": "[]",
+      "sketch_circle_frames": [
+        {
+          "center_in_sketch_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "center_in_document_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis_in_document": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "radius_mm": 75.0
+        }
+      ],
+      "attachment_parameters": {
+        "map_mode": "FlatFace",
+        "map_reversed": false,
+        "offset_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selected_operation_property_repr": {}
+    },
+    "Pad": {
+      "states": [
+        "Up-to-date"
+      ],
+      "placement_matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 1,
+        "face_count": 3,
+        "edge_count": 3,
+        "volume_mm3": 530143.7602932777,
+        "raw_native_volume_mm3": 530143.7602932777,
+        "area_mm2": 49480.08429403925,
+        "length_mm": 1944.9555921538758,
+        "bounds_mm": [
+          -75.0,
+          75.0,
+          -75.0,
+          75.0,
+          0.0,
+          30.0
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": [
+          2.3715934618099825e-14,
+          -4.0859891601872666e-16,
+          15.000000000000002
+        ],
+        "centroid_measurement": "volume_weighted_native_solid_centroids",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selected_operation_property_repr": {
+        "Type": "Length",
+        "Length": "30.0 mm",
+        "Length2": "100.0 mm",
+        "Reversed": "False",
+        "SideType": "One side",
+        "Profile": "(<Sketcher::SketchObject>, [])",
+        "BaseFeature": "None"
+      }
+    },
+    "Sketch001": {
+      "states": [
+        "Up-to-date"
+      ],
+      "placement_matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        30.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 0,
+        "face_count": 0,
+        "edge_count": 4,
+        "volume_mm3": null,
+        "raw_native_volume_mm3": 0.0,
+        "area_mm2": 0.0,
+        "length_mm": 339.9114857516267,
+        "bounds_mm": [
+          -65.0000000000853,
+          65.0000000000853,
+          -35.0,
+          35.00000000000945,
+          30.0,
+          30.0
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": null,
+        "centroid_measurement": "unmeasured_no_available_volumetric_centroid",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          30.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "sketch_geometry": [
+        "ArcOfCircle (Radius : 35, Position : (-30, 0, 0), Direction : (0, 0, 1), Parameter : (1.5708, 4.71239))",
+        "ArcOfCircle (Radius : 35, Position : (30, 0, 0), Direction : (0, 0, 1), Parameter : (4.71239, 7.85398))",
+        "<Line segment (-30,-35,0) (30,-35,0) >",
+        "<Line segment (-30,35,0) (30,35,0) >"
+      ],
+      "fully_constrained": true,
+      "expressions": [],
+      "constraints_repr": [
+        "<Constraint 'Tangent'>",
+        "<Constraint 'Tangent'>",
+        "<Constraint 'Tangent'>",
+        "<Constraint 'Tangent'>",
+        "<Constraint 'Horizontal' (2)>",
+        "<Constraint 'PointOnObject' (0,-1)>",
+        "<Constraint 'Symmetric'>",
+        "<Constraint 'Radius'>",
+        "<Constraint 'DistanceX'>"
+      ],
+      "external_geometry_repr": "[]",
+      "sketch_circle_frames": [],
+      "attachment_parameters": {
+        "map_mode": "FlatFace",
+        "map_reversed": false,
+        "offset_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selected_operation_property_repr": {}
+    },
+    "Pad001": {
+      "states": [
+        "Up-to-date"
+      ],
+      "placement_matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 1,
+        "face_count": 8,
+        "edge_count": 15,
+        "volume_mm3": 1592539.2923803136,
+        "raw_native_volume_mm3": 1592539.2923803136,
+        "area_mm2": 94348.40041325404,
+        "length_mm": 4360.601535160383,
+        "bounds_mm": [
+          -75.0,
+          75.0,
+          -75.0,
+          75.0,
+          0.0,
+          162.0
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": [
+          4.1564909768635986e-13,
+          4.1567392213546435e-14,
+          69.03573934457069
+        ],
+        "centroid_measurement": "volume_weighted_native_solid_centroids",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selected_operation_property_repr": {
+        "Type": "Length",
+        "Length": "132.0 mm",
+        "Length2": "100.0 mm",
+        "Reversed": "False",
+        "SideType": "One side",
+        "Profile": "(<Sketcher::SketchObject>, [])",
+        "BaseFeature": "<PartDesign::Pad>"
+      }
+    },
+    "DatumPlane": {
+      "states": [
+        "Up-to-date"
+      ],
+      "placement_matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.2246467991473532e-16,
+        0.0,
+        0.0,
+        -1.2246467991473532e-16,
+        1.0,
+        95.5,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 0,
+        "face_count": 1,
+        "edge_count": 0,
+        "volume_mm3": null,
+        "raw_native_volume_mm3": 0.0,
+        "area_mm2": 8e+100,
+        "length_mm": 0.0,
+        "bounds_mm": [
+          -1e+100,
+          1e+100,
+          -1e+100,
+          1e+100,
+          95.5,
+          95.5
+        ],
+        "unbounded_construction_geometry": true,
+        "center_of_mass_mm": null,
+        "centroid_measurement": "unmeasured_no_available_volumetric_centroid",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          95.5,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "attachment_parameters": {
+        "map_mode": "FlatFace",
+        "map_reversed": false,
+        "offset_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0,
+          -1.2246467991473532e-16,
+          0.0,
+          0.0,
+          1.2246467991473532e-16,
+          -1.0,
+          -95.5,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selected_operation_property_repr": {
+        "Length": "179.74123906014736 mm"
+      }
+    },
+    "Sketch002": {
+      "states": [
+        "Up-to-date"
+      ],
+      "placement_matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        95.5,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 0,
+        "face_count": 0,
+        "edge_count": 6,
+        "volume_mm3": null,
+        "raw_native_volume_mm3": 0.0,
+        "area_mm2": 0.0,
+        "length_mm": 456.51326206513045,
+        "bounds_mm": [
+          -120.0,
+          -19.999999999999996,
+          -51.0,
+          51.0,
+          95.5,
+          95.5
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": null,
+        "centroid_measurement": "unmeasured_no_available_volumetric_centroid",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          95.5,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "sketch_geometry": [
+        "ArcOfCircle (Radius : 46, Position : (-20, 2e-15, 0), Direction : (0, 0, 1), Parameter : (1.5708, 4.71239))",
+        "<Line segment (-20,46,0) (-20,51,0) >",
+        "<Line segment (-20,51,0) (-120,51,0) >",
+        "<Line segment (-120,51,0) (-120,-51,0) >",
+        "<Line segment (-120,-51,0) (-20,-51,0) >",
+        "<Line segment (-20,-51,0) (-20,-46,0) >"
+      ],
+      "fully_constrained": false,
+      "expressions": [],
+      "constraints_repr": [
+        "<Constraint 'Symmetric'>",
+        "<Constraint 'Coincident'>",
+        "<Constraint 'Coincident'>",
+        "<Constraint 'Vertical' (1)>",
+        "<Constraint 'Coincident'>",
+        "<Constraint 'Vertical' (3)>",
+        "<Constraint 'Coincident'>",
+        "<Constraint 'Horizontal' (4)>",
+        "<Constraint 'Coincident'>",
+        "<Constraint 'Coincident'>",
+        "<Constraint 'Vertical' (5)>",
+        "<Constraint 'Horizontal' (2)>",
+        "<Constraint 'Radius'>",
+        "<Constraint 'Equal' (5,1)>",
+        "<Constraint 'DistanceY'>",
+        "<Constraint 'DistanceX'>",
+        "<Constraint 'PointOnObject' (0,1)>",
+        "<Constraint 'DistanceX'>"
+      ],
+      "external_geometry_repr": "[]",
+      "sketch_circle_frames": [],
+      "attachment_parameters": {
+        "map_mode": "FlatFace",
+        "map_reversed": false,
+        "offset_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selected_operation_property_repr": {}
+    },
+    "Groove": {
+      "states": [
+        "Up-to-date"
+      ],
+      "placement_matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 1,
+        "face_count": 8,
+        "edge_count": 17,
+        "volume_mm3": 1461439.5700111487,
+        "raw_native_volume_mm3": 1461439.5700111487,
+        "area_mm2": 86215.14618542489,
+        "length_mm": 4226.113645554797,
+        "bounds_mm": [
+          -75.0,
+          75.0,
+          -75.0,
+          75.0,
+          0.0,
+          161.49999998863402
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": [
+          -4.141691239746723e-06,
+          -3.6453304575313366e-07,
+          61.82150309696577
+        ],
+        "centroid_measurement": "volume_weighted_native_solid_centroids",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selected_operation_property_repr": {
+        "Type": "Angle",
+        "Reversed": "False",
+        "Profile": "(<Sketcher::SketchObject>, [])",
+        "BaseFeature": "<PartDesign::Pad>"
+      }
+    },
+    "Thickness": {
+      "states": [
+        "Up-to-date"
+      ],
+      "placement_matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 1,
+        "face_count": 19,
+        "edge_count": 40,
+        "volume_mm3": 320852.0343301966,
+        "raw_native_volume_mm3": 320852.0343301966,
+        "area_mm2": 130699.53777404243,
+        "length_mm": 8915.808733223128,
+        "bounds_mm": [
+          -75.0,
+          75.0,
+          -75.0,
+          75.0,
+          0.0,
+          161.4999999995751
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": [
+          -1.2581700599851407e-05,
+          -1.2506168367194739e-05,
+          68.6393202172918
+        ],
+        "centroid_measurement": "volume_weighted_native_solid_centroids",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selected_operation_property_repr": {
+        "Reversed": "True",
+        "BaseFeature": "<PartDesign::Groove>"
+      }
+    },
+    "Sketch003": {
+      "states": [
+        "Up-to-date"
+      ],
+      "placement_matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 0,
+        "face_count": 0,
+        "edge_count": 3,
+        "volume_mm3": null,
+        "raw_native_volume_mm3": 0.0,
+        "area_mm2": 0.0,
+        "length_mm": 61.78693452894884,
+        "bounds_mm": [
+          -43.301270189221945,
+          -20.000000000000004,
+          -67.0820393249937,
+          -54.99999999999999,
+          0.0,
+          0.0
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": null,
+        "centroid_measurement": "unmeasured_no_available_volumetric_centroid",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "sketch_geometry": [
+        "<Line segment (-43.3013,55,0) (-20,55,0) >",
+        "<Line segment (-20,55,0) (-20,67.082,0) >",
+        "ArcOfCircle (Radius : 70, Position : (0, 0, 0), Direction : (0, 0, 1), Parameter : (1.86055, 2.23774))"
+      ],
+      "fully_constrained": true,
+      "expressions": [],
+      "constraints_repr": [
+        "<Constraint 'Coincident'>",
+        "<Constraint 'Vertical' (1)>",
+        "<Constraint 'Horizontal' (0)>",
+        "<Constraint 'Coincident'>",
+        "<Constraint 'Coincident'>",
+        "<Constraint 'Coincident'>",
+        "<Constraint 'Equal' (2,-3)>",
+        "<Constraint 'DistanceY'>",
+        "<Constraint 'DistanceX'>"
+      ],
+      "external_geometry_repr": "[(<PartDesign::Thickness>, ('Edge18',))]",
+      "sketch_circle_frames": [],
+      "attachment_parameters": {
+        "map_mode": "FlatFace",
+        "map_reversed": false,
+        "offset_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selected_operation_property_repr": {}
+    },
+    "Pad002": {
+      "states": [
+        "Up-to-date"
+      ],
+      "placement_matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 1,
+        "face_count": 21,
+        "edge_count": 48,
+        "volume_mm3": 324914.75866158,
+        "raw_native_volume_mm3": 324914.75866158,
+        "area_mm2": 130924.0298865295,
+        "length_mm": 9051.727471221053,
+        "bounds_mm": [
+          -75.0,
+          75.0,
+          -75.0,
+          75.0,
+          0.0,
+          161.4999999995751
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": [
+          -0.35410437133076933,
+          -0.7422626418948588,
+          67.93729532158275
+        ],
+        "centroid_measurement": "volume_weighted_native_solid_centroids",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selected_operation_property_repr": {
+        "Type": "UpToFirst",
+        "Length": "10.0 mm",
+        "Length2": "100.0 mm",
+        "Reversed": "True",
+        "SideType": "One side",
+        "Profile": "(<Sketcher::SketchObject>, [])",
+        "BaseFeature": "<PartDesign::Thickness>"
+      }
+    },
+    "Sketch004": {
+      "states": [
+        "Up-to-date"
+      ],
+      "placement_matrix": [
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        -54.99999999999999,
+        0.0,
+        1.0,
+        -2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 0,
+        "face_count": 0,
+        "edge_count": 1,
+        "volume_mm3": null,
+        "raw_native_volume_mm3": 0.0,
+        "area_mm2": 0.0,
+        "length_mm": 10.681415022205297,
+        "bounds_mm": [
+          -33.2,
+          -29.800000000000004,
+          -54.99999999999999,
+          -54.99999999999999,
+          6.3,
+          9.7
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": null,
+        "centroid_measurement": "unmeasured_no_available_volumetric_centroid",
+        "shape_placement_matrix": [
+          -1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.220446049250313e-16,
+          1.0,
+          -54.99999999999999,
+          0.0,
+          1.0,
+          -2.220446049250313e-16,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "sketch_geometry": [
+        "Circle (Radius : 1.7, Position : (31.5, 8, 0), Direction : (0, 0, 1))"
+      ],
+      "fully_constrained": true,
+      "expressions": [
+        [
+          "Constraints[0]",
+          "Spreadsheet.M3BoltBodyRadius"
+        ]
+      ],
+      "constraints_repr": [
+        "<Constraint 'Radius'>",
+        "<Constraint 'DistanceX'>",
+        "<Constraint 'DistanceY'>"
+      ],
+      "external_geometry_repr": "[(<PartDesign::Pad>, ('Edge22',))]",
+      "sketch_circle_frames": [
+        {
+          "center_in_sketch_mm": [
+            31.500000000000004,
+            8.0,
+            0.0
+          ],
+          "center_in_document_mm": [
+            -31.500000000000004,
+            -54.99999999999999,
+            8.0
+          ],
+          "axis_in_document": [
+            0.0,
+            1.0,
+            -2.220446049250313e-16
+          ],
+          "radius_mm": 1.7
+        }
+      ],
+      "attachment_parameters": {
+        "map_mode": "FlatFace",
+        "map_reversed": false,
+        "offset_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selected_operation_property_repr": {}
+    },
+    "Pocket": {
+      "states": [
+        "Up-to-date"
+      ],
+      "placement_matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 1,
+        "face_count": 23,
+        "edge_count": 51,
+        "volume_mm3": 324869.2609044504,
+        "raw_native_volume_mm3": 324869.2609044504,
+        "area_mm2": 130977.43696164052,
+        "length_mm": 9104.453131309878,
+        "bounds_mm": [
+          -75.0,
+          75.0,
+          -75.0,
+          75.0,
+          0.0,
+          161.4999999995751
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": [
+          -0.3497471264854845,
+          -0.7343325739958941,
+          67.945669493161
+        ],
+        "centroid_measurement": "volume_weighted_native_solid_centroids",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selected_operation_property_repr": {
+        "Type": "Length",
+        "Length": "5.0 mm",
+        "Length2": "100.0 mm",
+        "Reversed": "False",
+        "SideType": "One side",
+        "Profile": "(<Sketcher::SketchObject>, [])",
+        "BaseFeature": "<PartDesign::Pad>"
+      }
+    },
+    "DatumPlane001": {
+      "states": [
+        "Up-to-date"
+      ],
+      "placement_matrix": [
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        -75.0,
+        0.0,
+        1.0,
+        -2.220446049250313e-16,
+        4.440892098500626e-15,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 0,
+        "face_count": 1,
+        "edge_count": 0,
+        "volume_mm3": null,
+        "raw_native_volume_mm3": 0.0,
+        "area_mm2": 8e+100,
+        "length_mm": 0.0,
+        "bounds_mm": [
+          -1e+100,
+          1e+100,
+          -75.0,
+          -75.0,
+          -1e+100,
+          1e+100
+        ],
+        "unbounded_construction_geometry": true,
+        "center_of_mass_mm": null,
+        "centroid_measurement": "unmeasured_no_available_volumetric_centroid",
+        "shape_placement_matrix": [
+          -1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.220446049250313e-16,
+          1.0,
+          -75.0,
+          0.0,
+          1.0,
+          -2.220446049250313e-16,
+          4.440892098500626e-15,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "attachment_parameters": {
+        "map_mode": "FlatFace",
+        "map_reversed": false,
+        "offset_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          -20.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selected_operation_property_repr": {
+        "Length": "183.19118797970694 mm"
+      }
+    },
+    "Sketch005": {
+      "states": [
+        "Up-to-date"
+      ],
+      "placement_matrix": [
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        -75.0,
+        0.0,
+        1.0,
+        -2.220446049250313e-16,
+        4.440892098500626e-15,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 0,
+        "face_count": 0,
+        "edge_count": 1,
+        "volume_mm3": null,
+        "raw_native_volume_mm3": 0.0,
+        "area_mm2": 0.0,
+        "length_mm": 18.535396656179778,
+        "bounds_mm": [
+          -34.45,
+          -28.550000000000004,
+          -75.0,
+          -75.0,
+          5.050000000000003,
+          10.950000000000003
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": null,
+        "centroid_measurement": "unmeasured_no_available_volumetric_centroid",
+        "shape_placement_matrix": [
+          -1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.220446049250313e-16,
+          1.0,
+          -75.0,
+          0.0,
+          1.0,
+          -2.220446049250313e-16,
+          4.440892098500626e-15,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "sketch_geometry": [
+        "Circle (Radius : 2.95, Position : (31.5, 8, 0), Direction : (0, 0, 1))"
+      ],
+      "fully_constrained": true,
+      "expressions": [
+        [
+          "Constraints[1]",
+          "Spreadsheet.M3BoltHeadRadius"
+        ]
+      ],
+      "constraints_repr": [
+        "<Constraint 'Coincident'>",
+        "<Constraint 'Radius'>"
+      ],
+      "external_geometry_repr": "[(<PartDesign::Pocket>, ('Edge18',))]",
+      "sketch_circle_frames": [
+        {
+          "center_in_sketch_mm": [
+            31.500000000000004,
+            8.0,
+            0.0
+          ],
+          "center_in_document_mm": [
+            -31.500000000000004,
+            -75.0,
+            8.000000000000004
+          ],
+          "axis_in_document": [
+            0.0,
+            1.0,
+            -2.220446049250313e-16
+          ],
+          "radius_mm": 2.95
+        }
+      ],
+      "attachment_parameters": {
+        "map_mode": "FlatFace",
+        "map_reversed": false,
+        "offset_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selected_operation_property_repr": {}
+    },
+    "Pocket001": {
+      "states": [
+        "Up-to-date"
+      ],
+      "placement_matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 1,
+        "face_count": 25,
+        "edge_count": 54,
+        "volume_mm3": 324724.4002640454,
+        "raw_native_volume_mm3": 324724.4002640454,
+        "area_mm2": 131067.53039953439,
+        "length_mm": 9187.754728804512,
+        "bounds_mm": [
+          -75.0,
+          75.0,
+          -75.0,
+          75.0,
+          0.0,
+          161.4999999995751
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": [
+          -0.3363923606342928,
+          -0.7071936065461746,
+          67.9721674610511
+        ],
+        "centroid_measurement": "volume_weighted_native_solid_centroids",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selected_operation_property_repr": {
+        "Type": "Length",
+        "Length": "12.0 mm",
+        "Length2": "100.0 mm",
+        "Reversed": "True",
+        "SideType": "One side",
+        "Profile": "(<Sketcher::SketchObject>, [])",
+        "BaseFeature": "<PartDesign::Pocket>"
+      }
+    },
+    "Body": {
+      "states": [
+        "Touched"
+      ],
+      "placement_matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": {
+        "is_null": false,
+        "valid": true,
+        "solid_count": 1,
+        "face_count": 280,
+        "edge_count": 824,
+        "volume_mm3": 298648.10044680384,
+        "raw_native_volume_mm3": 298648.10044680384,
+        "area_mm2": 129397.75256407335,
+        "length_mm": 22610.468273496455,
+        "bounds_mm": [
+          -81.17941502192954,
+          81.17941502192954,
+          -81.17941502192954,
+          81.17941502192954,
+          -6.0000000023e-07,
+          161.5614141209609
+        ],
+        "unbounded_construction_geometry": false,
+        "center_of_mass_mm": [
+          0.000691337281180332,
+          1.8578894916978796,
+          67.83237825168747
+        ],
+        "centroid_measurement": "volume_weighted_native_solid_centroids",
+        "shape_placement_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "selected_operation_property_repr": {
+        "BaseFeature": "None"
+      }
+    }
+  },
+  "semantic_supports": {
+    "source_saved_brep": {
+      "circle": {
+        "descriptor": {
+          "kind": "circle",
+          "semantic_name": "first_bolt_body_hole",
+          "source_sketch": "Sketch004",
+          "source_sha256": "8afa16c8ff3adebd87e48b67dfb20d3224402bd517010dc112950a28f219690a",
+          "center_mm": [
+            -31.500000000000007,
+            -54.99999999999999,
+            8.0
+          ],
+          "axis": [
+            0.0,
+            1.0,
+            -2.220446049250313e-16
+          ],
+          "radius_mm": 1.7,
+          "full_circle": true,
+          "coordinate_frame": "native_Art1_Body_identity_mm"
+        },
+        "match": {
+          "status": "unique",
+          "selected_subelement": "Edge13",
+          "matching_subelements": [
+            "Edge13"
+          ],
+          "candidate_diagnostics": [
+            {
+              "subelement": "Edge1",
+              "position_or_axis_line_error_mm": 63.88466169590318,
+              "radius_error_mm": 73.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge3",
+              "position_or_axis_line_error_mm": 67.09135562797938,
+              "radius_error_mm": 73.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge5",
+              "position_or_axis_line_error_mm": 63.88466169590318,
+              "radius_error_mm": 68.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge8",
+              "position_or_axis_line_error_mm": 63.88466169590318,
+              "radius_error_mm": 68.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge9",
+              "position_or_axis_line_error_mm": 59.25580140374226,
+              "radius_error_mm": 33.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge11",
+              "position_or_axis_line_error_mm": 85.38881659802114,
+              "radius_error_mm": 33.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge13",
+              "position_or_axis_line_error_mm": 3.552713678800501e-15,
+              "radius_error_mm": 0.0,
+              "unoriented_axis_error": 2.220446049250313e-16,
+              "axis_dot": 1.0,
+              "matches": true
+            },
+            {
+              "subelement": "Edge16",
+              "position_or_axis_line_error_mm": 65.62202374203343,
+              "radius_error_mm": 68.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": 2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge17",
+              "position_or_axis_line_error_mm": 65.62202374203343,
+              "radius_error_mm": 68.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": 2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge32",
+              "position_or_axis_line_error_mm": 57.58689086936143,
+              "radius_error_mm": 33.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge35",
+              "position_or_axis_line_error_mm": 84.23924263673368,
+              "radius_error_mm": 33.300000000000004,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge36",
+              "position_or_axis_line_error_mm": 59.25580140374226,
+              "radius_error_mm": 28.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge37",
+              "position_or_axis_line_error_mm": 29.76995129320409,
+              "radius_error_mm": 3.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -1.8e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge38",
+              "position_or_axis_line_error_mm": 92.66202026720549,
+              "radius_error_mm": 3.3,
+              "unoriented_axis_error": 1.414213562371372,
+              "axis_dot": 2.43656e-12,
+              "matches": false
+            },
+            {
+              "subelement": "Edge40",
+              "position_or_axis_line_error_mm": 111.20364202668904,
+              "radius_error_mm": 3.3,
+              "unoriented_axis_error": 1.4142135623713719,
+              "axis_dot": -2.43686e-12,
+              "matches": false
+            },
+            {
+              "subelement": "Edge42",
+              "position_or_axis_line_error_mm": 68.30995535066972,
+              "radius_error_mm": 3.3,
+              "unoriented_axis_error": 1.4142135623730951,
+              "axis_dot": 0.0,
+              "matches": false
+            },
+            {
+              "subelement": "Edge43",
+              "position_or_axis_line_error_mm": 85.38881659802114,
+              "radius_error_mm": 28.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Face1",
+              "position_or_axis_line_error_mm": 63.88466169590318,
+              "radius_error_mm": 73.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": 2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Face4",
+              "position_or_axis_line_error_mm": 3.552713678800501e-15,
+              "radius_error_mm": 0.0,
+              "unoriented_axis_error": 2.0446049250313078e-18,
+              "axis_dot": 1.0,
+              "matches": false
+            },
+            {
+              "subelement": "Face5",
+              "position_or_axis_line_error_mm": 63.88466169590318,
+              "radius_error_mm": 68.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": 2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Face8",
+              "position_or_axis_line_error_mm": 59.25580140374226,
+              "radius_error_mm": 33.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": 2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Face10",
+              "position_or_axis_line_error_mm": 85.38881659802114,
+              "radius_error_mm": 33.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": 2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Face15",
+              "position_or_axis_line_error_mm": 92.66202026720549,
+              "radius_error_mm": 3.3,
+              "unoriented_axis_error": 1.4142135623729835,
+              "axis_dot": 1.5774e-13,
+              "matches": false
+            },
+            {
+              "subelement": "Face16",
+              "position_or_axis_line_error_mm": 29.76995129320409,
+              "radius_error_mm": 3.3,
+              "unoriented_axis_error": 1.4142135623730951,
+              "axis_dot": 0.0,
+              "matches": false
+            },
+            {
+              "subelement": "Face18",
+              "position_or_axis_line_error_mm": 59.25580140374226,
+              "radius_error_mm": 28.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": 2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Face21",
+              "position_or_axis_line_error_mm": 85.38881659802114,
+              "radius_error_mm": 28.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": 2.220446049250313e-16,
+              "matches": false
+            }
+          ],
+          "support_remapped": false,
+          "interpretation": "Geometric diagnostic only; confirm mechanical meaning before any remap."
+        }
+      },
+      "cylinder": {
+        "descriptor": {
+          "kind": "cylinder",
+          "semantic_name": "first_bolt_body_hole",
+          "source_sketch": "Sketch004",
+          "source_sha256": "8afa16c8ff3adebd87e48b67dfb20d3224402bd517010dc112950a28f219690a",
+          "center_mm": [
+            -31.500000000000007,
+            -54.99999999999999,
+            8.0
+          ],
+          "axis": [
+            0.0,
+            1.0,
+            -2.220446049250313e-16
+          ],
+          "radius_mm": 1.7,
+          "full_circle": false,
+          "coordinate_frame": "native_Art1_Body_identity_mm"
+        },
+        "match": {
+          "status": "unique",
+          "selected_subelement": "Face4",
+          "matching_subelements": [
+            "Face4"
+          ],
+          "candidate_diagnostics": [
+            {
+              "subelement": "Edge1",
+              "position_or_axis_line_error_mm": 32.5,
+              "radius_error_mm": 73.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge3",
+              "position_or_axis_line_error_mm": 38.42199890687627,
+              "radius_error_mm": 73.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge5",
+              "position_or_axis_line_error_mm": 32.5,
+              "radius_error_mm": 68.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge8",
+              "position_or_axis_line_error_mm": 32.5,
+              "radius_error_mm": 68.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge9",
+              "position_or_axis_line_error_mm": 22.051077071194154,
+              "radius_error_mm": 33.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge11",
+              "position_or_axis_line_error_mm": 65.31653695665817,
+              "radius_error_mm": 33.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge13",
+              "position_or_axis_line_error_mm": 3.552713678800501e-15,
+              "radius_error_mm": 0.0,
+              "unoriented_axis_error": 2.220446049250313e-16,
+              "axis_dot": 1.0,
+              "matches": false
+            },
+            {
+              "subelement": "Edge16",
+              "position_or_axis_line_error_mm": 35.794552658190895,
+              "radius_error_mm": 68.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": 2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge17",
+              "position_or_axis_line_error_mm": 35.794552658190895,
+              "radius_error_mm": 68.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": 2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge32",
+              "position_or_axis_line_error_mm": 17.066048165868526,
+              "radius_error_mm": 33.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge35",
+              "position_or_axis_line_error_mm": 63.8063476466918,
+              "radius_error_mm": 33.300000000000004,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge36",
+              "position_or_axis_line_error_mm": 22.051077071194154,
+              "radius_error_mm": 28.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge37",
+              "position_or_axis_line_error_mm": 22.05107707119415,
+              "radius_error_mm": 3.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -1.8e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge38",
+              "position_or_axis_line_error_mm": 22.051077071199966,
+              "radius_error_mm": 3.3,
+              "unoriented_axis_error": 1.414213562371372,
+              "axis_dot": 2.43656e-12,
+              "matches": false
+            },
+            {
+              "subelement": "Edge40",
+              "position_or_axis_line_error_mm": 65.31653695657786,
+              "radius_error_mm": 3.3,
+              "unoriented_axis_error": 1.4142135623713719,
+              "axis_dot": -2.43686e-12,
+              "matches": false
+            },
+            {
+              "subelement": "Edge42",
+              "position_or_axis_line_error_mm": 65.31653695665815,
+              "radius_error_mm": 3.3,
+              "unoriented_axis_error": 1.4142135623730951,
+              "axis_dot": 0.0,
+              "matches": false
+            },
+            {
+              "subelement": "Edge43",
+              "position_or_axis_line_error_mm": 65.31653695665817,
+              "radius_error_mm": 28.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Face1",
+              "position_or_axis_line_error_mm": 32.5,
+              "radius_error_mm": 73.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": 2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Face4",
+              "position_or_axis_line_error_mm": 3.552713678800501e-15,
+              "radius_error_mm": 0.0,
+              "unoriented_axis_error": 2.0446049250313078e-18,
+              "axis_dot": 1.0,
+              "matches": true
+            },
+            {
+              "subelement": "Face5",
+              "position_or_axis_line_error_mm": 32.5,
+              "radius_error_mm": 68.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": 2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Face8",
+              "position_or_axis_line_error_mm": 22.051077071194154,
+              "radius_error_mm": 33.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": 2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Face10",
+              "position_or_axis_line_error_mm": 65.31653695665817,
+              "radius_error_mm": 33.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": 2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Face15",
+              "position_or_axis_line_error_mm": 22.051077071199966,
+              "radius_error_mm": 3.3,
+              "unoriented_axis_error": 1.4142135623729835,
+              "axis_dot": 1.5774e-13,
+              "matches": false
+            },
+            {
+              "subelement": "Face16",
+              "position_or_axis_line_error_mm": 22.05107707119415,
+              "radius_error_mm": 3.3,
+              "unoriented_axis_error": 1.4142135623730951,
+              "axis_dot": 0.0,
+              "matches": false
+            },
+            {
+              "subelement": "Face18",
+              "position_or_axis_line_error_mm": 22.051077071194154,
+              "radius_error_mm": 28.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": 2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Face21",
+              "position_or_axis_line_error_mm": 65.31653695665817,
+              "radius_error_mm": 28.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": 2.220446049250313e-16,
+              "matches": false
+            }
+          ],
+          "support_remapped": false,
+          "interpretation": "Geometric diagnostic only; confirm mechanical meaning before any remap."
+        }
+      }
+    },
+    "force_rebuild_attempt": {
+      "circle": {
+        "descriptor": {
+          "kind": "circle",
+          "semantic_name": "first_bolt_body_hole",
+          "source_sketch": "Sketch004",
+          "source_sha256": "8afa16c8ff3adebd87e48b67dfb20d3224402bd517010dc112950a28f219690a",
+          "center_mm": [
+            -31.500000000000007,
+            -54.99999999999999,
+            8.0
+          ],
+          "axis": [
+            0.0,
+            1.0,
+            -2.220446049250313e-16
+          ],
+          "radius_mm": 1.7,
+          "full_circle": true,
+          "coordinate_frame": "native_Art1_Body_identity_mm"
+        },
+        "match": {
+          "status": "unique",
+          "selected_subelement": "Edge18",
+          "matching_subelements": [
+            "Edge18"
+          ],
+          "candidate_diagnostics": [
+            {
+              "subelement": "Edge2",
+              "position_or_axis_line_error_mm": 63.88466169590318,
+              "radius_error_mm": 73.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge3",
+              "position_or_axis_line_error_mm": 67.09135562797938,
+              "radius_error_mm": 73.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge4",
+              "position_or_axis_line_error_mm": 63.88466169590318,
+              "radius_error_mm": 68.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge7",
+              "position_or_axis_line_error_mm": 63.88466169590318,
+              "radius_error_mm": 68.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge8",
+              "position_or_axis_line_error_mm": 59.25580140374226,
+              "radius_error_mm": 33.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge10",
+              "position_or_axis_line_error_mm": 85.38881659802114,
+              "radius_error_mm": 33.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge13",
+              "position_or_axis_line_error_mm": 65.62202374203343,
+              "radius_error_mm": 68.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": 2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge14",
+              "position_or_axis_line_error_mm": 65.62202374203343,
+              "radius_error_mm": 68.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": 2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge18",
+              "position_or_axis_line_error_mm": 3.552713678800501e-15,
+              "radius_error_mm": 0.0,
+              "unoriented_axis_error": 0.0,
+              "axis_dot": 1.0,
+              "matches": true
+            },
+            {
+              "subelement": "Edge30",
+              "position_or_axis_line_error_mm": 57.58689086936143,
+              "radius_error_mm": 33.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge33",
+              "position_or_axis_line_error_mm": 84.23924263673368,
+              "radius_error_mm": 33.300000000000004,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge35",
+              "position_or_axis_line_error_mm": 5.0,
+              "radius_error_mm": 0.0,
+              "unoriented_axis_error": 0.0,
+              "axis_dot": 1.0,
+              "matches": false
+            },
+            {
+              "subelement": "Edge36",
+              "position_or_axis_line_error_mm": 59.25580140374226,
+              "radius_error_mm": 28.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge37",
+              "position_or_axis_line_error_mm": 29.76995129320409,
+              "radius_error_mm": 3.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -1.8369701987210297e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge38",
+              "position_or_axis_line_error_mm": 92.66202026720549,
+              "radius_error_mm": 3.3,
+              "unoriented_axis_error": 1.4142135623713719,
+              "axis_dot": 2.436778726787251e-12,
+              "matches": false
+            },
+            {
+              "subelement": "Edge40",
+              "position_or_axis_line_error_mm": 111.20364202668904,
+              "radius_error_mm": 3.3,
+              "unoriented_axis_error": 1.4142135623713719,
+              "axis_dot": -2.4368554219573566e-12,
+              "matches": false
+            },
+            {
+              "subelement": "Edge42",
+              "position_or_axis_line_error_mm": 68.30995535066972,
+              "radius_error_mm": 3.3,
+              "unoriented_axis_error": 1.4142135623730951,
+              "axis_dot": 0.0,
+              "matches": false
+            },
+            {
+              "subelement": "Edge43",
+              "position_or_axis_line_error_mm": 85.38881659802114,
+              "radius_error_mm": 28.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Face1",
+              "position_or_axis_line_error_mm": 63.88466169590318,
+              "radius_error_mm": 73.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": 2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Face4",
+              "position_or_axis_line_error_mm": 63.88466169590318,
+              "radius_error_mm": 68.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": 2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Face7",
+              "position_or_axis_line_error_mm": 59.25580140374226,
+              "radius_error_mm": 33.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": 2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Face9",
+              "position_or_axis_line_error_mm": 85.38881659802114,
+              "radius_error_mm": 33.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": 2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Face12",
+              "position_or_axis_line_error_mm": 3.552713678800501e-15,
+              "radius_error_mm": 0.0,
+              "unoriented_axis_error": 0.0,
+              "axis_dot": 1.0,
+              "matches": false
+            },
+            {
+              "subelement": "Face15",
+              "position_or_axis_line_error_mm": 92.66202026720549,
+              "radius_error_mm": 3.3,
+              "unoriented_axis_error": 1.4142135623729835,
+              "axis_dot": 1.5774048733874224e-13,
+              "matches": false
+            },
+            {
+              "subelement": "Face16",
+              "position_or_axis_line_error_mm": 29.76995129320409,
+              "radius_error_mm": 3.3,
+              "unoriented_axis_error": 1.4142135623730951,
+              "axis_dot": 0.0,
+              "matches": false
+            },
+            {
+              "subelement": "Face19",
+              "position_or_axis_line_error_mm": 59.25580140374226,
+              "radius_error_mm": 28.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": 2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Face22",
+              "position_or_axis_line_error_mm": 85.38881659802114,
+              "radius_error_mm": 28.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": 2.220446049250313e-16,
+              "matches": false
+            }
+          ],
+          "support_remapped": false,
+          "interpretation": "Geometric diagnostic only; confirm mechanical meaning before any remap."
+        }
+      },
+      "cylinder": {
+        "descriptor": {
+          "kind": "cylinder",
+          "semantic_name": "first_bolt_body_hole",
+          "source_sketch": "Sketch004",
+          "source_sha256": "8afa16c8ff3adebd87e48b67dfb20d3224402bd517010dc112950a28f219690a",
+          "center_mm": [
+            -31.500000000000007,
+            -54.99999999999999,
+            8.0
+          ],
+          "axis": [
+            0.0,
+            1.0,
+            -2.220446049250313e-16
+          ],
+          "radius_mm": 1.7,
+          "full_circle": false,
+          "coordinate_frame": "native_Art1_Body_identity_mm"
+        },
+        "match": {
+          "status": "unique",
+          "selected_subelement": "Face12",
+          "matching_subelements": [
+            "Face12"
+          ],
+          "candidate_diagnostics": [
+            {
+              "subelement": "Edge2",
+              "position_or_axis_line_error_mm": 32.5,
+              "radius_error_mm": 73.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge3",
+              "position_or_axis_line_error_mm": 38.42199890687627,
+              "radius_error_mm": 73.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge4",
+              "position_or_axis_line_error_mm": 32.5,
+              "radius_error_mm": 68.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge7",
+              "position_or_axis_line_error_mm": 32.5,
+              "radius_error_mm": 68.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge8",
+              "position_or_axis_line_error_mm": 22.051077071194154,
+              "radius_error_mm": 33.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge10",
+              "position_or_axis_line_error_mm": 65.31653695665817,
+              "radius_error_mm": 33.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge13",
+              "position_or_axis_line_error_mm": 35.794552658190895,
+              "radius_error_mm": 68.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": 2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge14",
+              "position_or_axis_line_error_mm": 35.794552658190895,
+              "radius_error_mm": 68.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": 2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge18",
+              "position_or_axis_line_error_mm": 3.552713678800501e-15,
+              "radius_error_mm": 0.0,
+              "unoriented_axis_error": 0.0,
+              "axis_dot": 1.0,
+              "matches": false
+            },
+            {
+              "subelement": "Edge30",
+              "position_or_axis_line_error_mm": 17.066048165868526,
+              "radius_error_mm": 33.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge33",
+              "position_or_axis_line_error_mm": 63.8063476466918,
+              "radius_error_mm": 33.300000000000004,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge35",
+              "position_or_axis_line_error_mm": 3.614624287906422e-15,
+              "radius_error_mm": 0.0,
+              "unoriented_axis_error": 0.0,
+              "axis_dot": 1.0,
+              "matches": false
+            },
+            {
+              "subelement": "Edge36",
+              "position_or_axis_line_error_mm": 22.051077071194154,
+              "radius_error_mm": 28.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge37",
+              "position_or_axis_line_error_mm": 22.05107707119415,
+              "radius_error_mm": 3.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -1.8369701987210297e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Edge38",
+              "position_or_axis_line_error_mm": 22.051077071199966,
+              "radius_error_mm": 3.3,
+              "unoriented_axis_error": 1.4142135623713719,
+              "axis_dot": 2.436778726787251e-12,
+              "matches": false
+            },
+            {
+              "subelement": "Edge40",
+              "position_or_axis_line_error_mm": 65.31653695657786,
+              "radius_error_mm": 3.3,
+              "unoriented_axis_error": 1.4142135623713719,
+              "axis_dot": -2.4368554219573566e-12,
+              "matches": false
+            },
+            {
+              "subelement": "Edge42",
+              "position_or_axis_line_error_mm": 65.31653695665815,
+              "radius_error_mm": 3.3,
+              "unoriented_axis_error": 1.4142135623730951,
+              "axis_dot": 0.0,
+              "matches": false
+            },
+            {
+              "subelement": "Edge43",
+              "position_or_axis_line_error_mm": 65.31653695665817,
+              "radius_error_mm": 28.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": -2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Face1",
+              "position_or_axis_line_error_mm": 32.5,
+              "radius_error_mm": 73.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": 2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Face4",
+              "position_or_axis_line_error_mm": 32.5,
+              "radius_error_mm": 68.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": 2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Face7",
+              "position_or_axis_line_error_mm": 22.051077071194154,
+              "radius_error_mm": 33.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": 2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Face9",
+              "position_or_axis_line_error_mm": 65.31653695665817,
+              "radius_error_mm": 33.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": 2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Face12",
+              "position_or_axis_line_error_mm": 3.552713678800501e-15,
+              "radius_error_mm": 0.0,
+              "unoriented_axis_error": 0.0,
+              "axis_dot": 1.0,
+              "matches": true
+            },
+            {
+              "subelement": "Face15",
+              "position_or_axis_line_error_mm": 22.051077071199966,
+              "radius_error_mm": 3.3,
+              "unoriented_axis_error": 1.4142135623729835,
+              "axis_dot": 1.5774048733874224e-13,
+              "matches": false
+            },
+            {
+              "subelement": "Face16",
+              "position_or_axis_line_error_mm": 22.05107707119415,
+              "radius_error_mm": 3.3,
+              "unoriented_axis_error": 1.4142135623730951,
+              "axis_dot": 0.0,
+              "matches": false
+            },
+            {
+              "subelement": "Face19",
+              "position_or_axis_line_error_mm": 22.051077071194154,
+              "radius_error_mm": 28.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": 2.220446049250313e-16,
+              "matches": false
+            },
+            {
+              "subelement": "Face22",
+              "position_or_axis_line_error_mm": 65.31653695665817,
+              "radius_error_mm": 28.3,
+              "unoriented_axis_error": 1.414213562373095,
+              "axis_dot": 2.220446049250313e-16,
+              "matches": false
+            }
+          ],
+          "support_remapped": false,
+          "interpretation": "Geometric diagnostic only; confirm mechanical meaning before any remap."
+        }
+      }
+    }
+  },
+  "errors": [],
+  "runtime_parameter_paths": {
+    "UserParameter": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\native-art1-pocket-length-01\\user.cfg",
+    "SystemParameter": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\native-art1-pocket-length-01\\system.cfg"
+  },
+  "runtime_data_paths": {
+    "UserHomePath": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\native-art1-pocket-length-01\\user-home",
+    "UserAppData": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\native-art1-pocket-length-01\\user-data\\",
+    "AppTempPath": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\native-art1-pocket-length-01\\user-temp\\"
+  },
+  "freecad_version": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "python_version": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:00:26) [MSC v.1944 64 bit (AMD64)]",
+  "opencascade_version": "7.8.1",
+  "external_addon_paths_requested": false,
+  "force_recompute_return": 80,
+  "feature_drift_summary": {
+    "features": [
+      {
+        "name": "Sketch",
+        "own_state_clean": true,
+        "upstream_dependency_state_checked": false,
+        "states": [
+          "Up-to-date"
+        ],
+        "changed_metrics": {},
+        "unmeasured_metric_fields": [
+          "volume_mm3",
+          "center_of_mass_mm"
+        ],
+        "interpretation": "own state Up-to-date; upstream dependencies remain unverified"
+      },
+      {
+        "name": "Pad",
+        "own_state_clean": true,
+        "upstream_dependency_state_checked": false,
+        "states": [
+          "Up-to-date"
+        ],
+        "changed_metrics": {},
+        "unmeasured_metric_fields": [],
+        "interpretation": "own state Up-to-date; upstream dependencies remain unverified"
+      },
+      {
+        "name": "Sketch001",
+        "own_state_clean": true,
+        "upstream_dependency_state_checked": false,
+        "states": [
+          "Up-to-date"
+        ],
+        "changed_metrics": {},
+        "unmeasured_metric_fields": [
+          "volume_mm3",
+          "center_of_mass_mm"
+        ],
+        "interpretation": "own state Up-to-date; upstream dependencies remain unverified"
+      },
+      {
+        "name": "Pad001",
+        "own_state_clean": true,
+        "upstream_dependency_state_checked": false,
+        "states": [
+          "Up-to-date"
+        ],
+        "changed_metrics": {},
+        "unmeasured_metric_fields": [],
+        "interpretation": "own state Up-to-date; upstream dependencies remain unverified"
+      },
+      {
+        "name": "DatumPlane",
+        "own_state_clean": true,
+        "upstream_dependency_state_checked": false,
+        "states": [
+          "Up-to-date"
+        ],
+        "changed_metrics": {},
+        "unmeasured_metric_fields": [
+          "unbounded_construction_geometry_metrics"
+        ],
+        "interpretation": "own state Up-to-date; upstream dependencies remain unverified"
+      },
+      {
+        "name": "Sketch002",
+        "own_state_clean": true,
+        "upstream_dependency_state_checked": false,
+        "states": [
+          "Up-to-date"
+        ],
+        "changed_metrics": {},
+        "unmeasured_metric_fields": [
+          "volume_mm3",
+          "center_of_mass_mm"
+        ],
+        "interpretation": "own state Up-to-date; upstream dependencies remain unverified"
+      },
+      {
+        "name": "Groove",
+        "own_state_clean": true,
+        "upstream_dependency_state_checked": false,
+        "states": [
+          "Up-to-date"
+        ],
+        "changed_metrics": {
+          "volume_mm3": 2.8642364146653563,
+          "area_mm2": 0.23677796489209868,
+          "bounds_mm": 3.7251197682053316e-09,
+          "center_of_mass_mm": 0.00011718281232475647
+        },
+        "unmeasured_metric_fields": [],
+        "interpretation": "own state Up-to-date; upstream dependencies remain unverified"
+      },
+      {
+        "name": "Thickness",
+        "own_state_clean": true,
+        "upstream_dependency_state_checked": false,
+        "states": [
+          "Up-to-date"
+        ],
+        "changed_metrics": {
+          "volume_mm3": 2.8405244062887505,
+          "area_mm2": 0.2381032413104549,
+          "center_of_mass_mm": 0.0004415634976169258
+        },
+        "unmeasured_metric_fields": [],
+        "interpretation": "own state Up-to-date; upstream dependencies remain unverified"
+      },
+      {
+        "name": "Sketch003",
+        "own_state_clean": true,
+        "upstream_dependency_state_checked": false,
+        "states": [
+          "Up-to-date"
+        ],
+        "changed_metrics": {},
+        "unmeasured_metric_fields": [
+          "volume_mm3",
+          "center_of_mass_mm"
+        ],
+        "interpretation": "own state Up-to-date; upstream dependencies remain unverified"
+      },
+      {
+        "name": "Pad002",
+        "own_state_clean": true,
+        "upstream_dependency_state_checked": false,
+        "states": [
+          "Up-to-date"
+        ],
+        "changed_metrics": {
+          "volume_mm3": 2.8495485054445453,
+          "area_mm2": 0.23810324132500682,
+          "center_of_mass_mm": 0.00042566412156475053
+        },
+        "unmeasured_metric_fields": [],
+        "interpretation": "own state Up-to-date; upstream dependencies remain unverified"
+      },
+      {
+        "name": "Sketch004",
+        "own_state_clean": true,
+        "upstream_dependency_state_checked": false,
+        "states": [
+          "Up-to-date"
+        ],
+        "changed_metrics": {},
+        "unmeasured_metric_fields": [
+          "volume_mm3",
+          "center_of_mass_mm"
+        ],
+        "interpretation": "own state Up-to-date; upstream dependencies remain unverified"
+      },
+      {
+        "name": "Pocket",
+        "own_state_clean": true,
+        "upstream_dependency_state_checked": false,
+        "states": [
+          "Up-to-date"
+        ],
+        "changed_metrics": {
+          "volume_mm3": 71.03586303984048,
+          "area_mm2": 67.12634972918022,
+          "length_mm": 15.6062349695585,
+          "center_of_mass_mm": 0.014283343712448104,
+          "face_count": {
+            "saved": 22,
+            "attempted": 23
+          }
+        },
+        "unmeasured_metric_fields": [],
+        "interpretation": "own state Up-to-date; upstream dependencies remain unverified"
+      },
+      {
+        "name": "DatumPlane001",
+        "own_state_clean": true,
+        "upstream_dependency_state_checked": false,
+        "states": [
+          "Up-to-date"
+        ],
+        "changed_metrics": {},
+        "unmeasured_metric_fields": [
+          "unbounded_construction_geometry_metrics"
+        ],
+        "interpretation": "own state Up-to-date; upstream dependencies remain unverified"
+      },
+      {
+        "name": "Sketch005",
+        "own_state_clean": true,
+        "upstream_dependency_state_checked": false,
+        "states": [
+          "Up-to-date"
+        ],
+        "changed_metrics": {},
+        "unmeasured_metric_fields": [
+          "volume_mm3",
+          "center_of_mass_mm"
+        ],
+        "interpretation": "own state Up-to-date; upstream dependencies remain unverified"
+      },
+      {
+        "name": "Pocket001",
+        "own_state_clean": true,
+        "upstream_dependency_state_checked": false,
+        "states": [
+          "Up-to-date"
+        ],
+        "changed_metrics": {
+          "volume_mm3": 24.38963672128739,
+          "area_mm2": 14.12375082928338,
+          "length_mm": 5.999999999268766,
+          "center_of_mass_mm": 0.005447350497291836,
+          "face_count": {
+            "saved": 24,
+            "attempted": 25
+          }
+        },
+        "unmeasured_metric_fields": [],
+        "interpretation": "own state Up-to-date; upstream dependencies remain unverified"
+      },
+      {
+        "name": "Body",
+        "own_state_clean": false,
+        "upstream_dependency_state_checked": false,
+        "states": [
+          "Touched"
+        ],
+        "changed_metrics": {},
+        "unmeasured_metric_fields": [],
+        "interpretation": "cached or failed dependency shape possible"
+      }
+    ],
+    "first_changed_captured_feature": "Groove",
+    "first_own_state_unclean_feature": "Body",
+    "first_true_semantic_drift": null,
+    "full_shape_equivalence_verified": false,
+    "full_dependency_closure_checked": false,
+    "interpretation": "Metric drift localizes the next inspection; unchanged metrics are not full shape equivalence."
+  },
+  "pad002_face9": {
+    "source_saved_brep": {
+      "surface_type": "Plane",
+      "bounds_mm": [
+        -43.301270189221945,
+        -20.000000000000004,
+        -54.99999999999999,
+        -54.99999999999999,
+        0.0,
+        25.0
+      ],
+      "point_mm": [
+        -31.65063509461098,
+        -54.99999999999999,
+        12.5
+      ],
+      "normal": [
+        -0.0,
+        1.0,
+        0.0
+      ],
+      "bolt_center_to_plane_distance_mm": 0.0
+    },
+    "force_rebuild_attempt": {
+      "surface_type": "Plane",
+      "bounds_mm": [
+        -43.301270189221945,
+        -20.000000000000004,
+        -54.99999999999999,
+        -54.99999999999999,
+        0.0,
+        25.0
+      ],
+      "point_mm": [
+        -31.65063509461098,
+        -54.99999999999999,
+        12.5
+      ],
+      "normal": [
+        -0.0,
+        1.0,
+        0.0
+      ],
+      "bolt_center_to_plane_distance_mm": 0.0
+    }
+  },
+  "material_removal_mm3": {
+    "source_saved_brep": {
+      "Pocket": 119.38316867488902,
+      "Pocket001": 98.21441408642568
+    },
+    "force_rebuild_attempt": {
+      "Pocket": 45.497757129604,
+      "Pocket001": 144.86064040497877
+    }
+  },
+  "forced_cut_selected_object_states_clean": true,
+  "full_dependency_closure_checked": false,
+  "source_sha256_after": "8afa16c8ff3adebd87e48b67dfb20d3224402bd517010dc112950a28f219690a",
+  "copied_source_sha256_after": "8afa16c8ff3adebd87e48b67dfb20d3224402bd517010dc112950a28f219690a",
+  "source_and_copy_bytes_unchanged": true
+}

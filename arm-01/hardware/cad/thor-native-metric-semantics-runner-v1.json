@@ -1,0 +1,22 @@
+{
+  "launch_contract_sha256": "777a9f3106d682d6b5a747ad4c6eca93727ecd7d697955c5699a88033a98c948",
+  "process_launched": true,
+  "started_utc": "2026-11-11T21:38:22Z",
+  "outcome": "process_completed",
+  "returncode": 0,
+  "elapsed_seconds": 86.65496040000289,
+  "finished_utc": "2026-11-11T21:39:48Z",
+  "original_sha256_after": {
+    "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\Art1Body.fcstd": "8afa16c8ff3adebd87e48b67dfb20d3224402bd517010dc112950a28f219690a",
+    "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\candidates\\Art1Body-UNACCEPTED-through-all-v1.FCStd": "6b8e6ad3e6d7b6c0165d3cf2758b7a6e4ce4a30e92c53b86a7256f5b6904a1dd"
+  },
+  "retained_sha256_after": {
+    "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\metric-semantics\\native-run-02\\capture-tool\\probe_thor_metric_semantics_freecad.py": "0b67a66cf7a6e08735454140174178dff395b07af5151784c108edefafa0b21d",
+    "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\metric-semantics\\native-run-02\\capture-tool\\probe_thor_solid_properties_freecad.py": "3175d54684cca3b7eb4fad4490845f926b9c125060afa6d9ad2a64d7fe1d5d34",
+    "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\metric-semantics\\native-run-02\\request.json": "8720b4b937ef7a8bf5a4b1151aeef1db4ddedfa56e2b87824455eb59d73b755f"
+  },
+  "originals_unchanged": true,
+  "retained_unchanged": true,
+  "report_sha256": "ea5fbdd2deafad5610dc29d8a05bdffbd0e3547246745f40eded12385bf0907f",
+  "audit_status": "complete_diagnostic_not_equivalence"
+}

@@ -1,10 +1,13 @@
 # Art1 desktop source diagnostics and comparison tooling
 
-The editable Art1 history remains unresolved. This Windows run performed ZIP/XML
-source inspection and reanalysis of earlier native measurements. No FreeCAD
-executable was found in PATH, and no native recompute, save/reopen, contact check
-or repaired CAD candidate was performed. The accepted static snapshot and all
-historical evidence remain unchanged.
+The editable Art1 history remains unresolved. The initial Windows pass performed
+ZIP/XML inspection and historical reanalysis without a preinstalled CAD runtime.
+A later bounded capability lane acquired the official portable FreeCAD 1.1.4 and
+ran selected copied-Art1 experiments. The new
+[native evidence ledger](../hardware/cad/thor-art1-desktop-native-evidence-v1.json)
+records those actual runs separately from source-only inspection. No original CAD
+was saved or changed, no exact migration was accepted, and the accepted static
+snapshot and historical evidence remain unchanged.
 
 ## Source fingerprint and saved bolt frames
 
@@ -46,7 +49,8 @@ offset constraints referencing `Pad002.Edge22` and support `Pad002.Face9`.
 Sketch005 derives radius from `Spreadsheet.M3BoltHeadRadius` and uses the old
 `Pocket.Edge13`. Pocket stores `Type=2` and `Length=5`; a reconstruction that
 assumes a simple 5 mm dimensional cut from Length alone would discard the saved
-operation mode. This report does not assign a new meaning to that enum.
+operation mode. The later native runtime identifies that saved enum as
+`UpToFirst`; the source fingerprint itself preserves its serialized value.
 
 ## What the earlier capture establishes
 
@@ -55,8 +59,9 @@ is generated solely from
 [the existing migration evidence](../hardware/cad/thor-art1-migration-evidence.json).
 It binds that input's SHA-256 and computes:
 
-- Saved `Pad002` minus saved `Pocket`: **119.3831686751 mm³** removed.
-- Rebuilt `Pad002` minus rebuilt `Pocket`: **0 mm³** removed.
+- Saved `Pad002.Volume` minus saved `Pocket.Volume`: **119.3831686751 mm³**
+  algebraic volume difference, not a Boolean removed-solid measurement.
+- Rebuilt `Pad002.Volume` minus rebuilt `Pocket.Volume`: **0 mm³** algebraic difference.
 - The earliest feature *captured by that probe* with volume drift is `Groove`,
   with -2.8642369062 mm³. Earlier Sketch/Pad stages were not captured in that
   probe, so the earliest true drift remains unknown.
@@ -146,21 +151,26 @@ reference replacement or source save is justified by this desktop audit.
 
 ## Prepared native probe and semantic support candidates
 
-`tools/probe_thor_art1_freecad.py` now prepares that next selected-document
-experiment. **Its FreeCAD branch has not been executed on this host.** Ordinary
-Python tests cover its launch/preservation/timeout/completion guards and pure
-geometric matcher. Mocked subprocess records test the runner contract; they are
-not native evidence.
+`tools/probe_thor_art1_freecad.py` runs selected-document experiments. Its native
+branch has now been exercised using the portable runtime recorded below.
+Ordinary Python tests independently cover launch/preservation/timeout/completion
+guards and the pure geometric matcher; mocked subprocess records remain host
+tests and are not native evidence.
 
 The runner requires a supplied FreeCAD executable, the exact pinned source and a
 new run directory. It checks the 50 GiB disk reserve plus 128 MiB scratch budget,
 creates an exact-byte source copy, launches with dedicated `-u user.cfg` and
 `-s system.cfg` paths, and sets an explicit native opt-in environment flag. The
 native branch independently verifies both hashes, the runtime's actual parameter
-paths and an empty document session before loading the copied document. It never
-calls a document-save API, and it checks original/copy bytes again after the run.
+paths and an empty document session before loading the copied document. The
+default probe never calls a document-save API and checks original/copy bytes
+again after the run; the separate guarded candidate entry point is described below.
 The configurable timeout is bounded by 600 seconds; logs, the source copy,
 checkpoint and runner metadata remain available after a timeout/failure.
+Every new run also retains and invokes an exact snapshot of its probe, helper
+and migration-evidence inputs. Their hashes are checked again after execution.
+The early exploratory runs without those snapshots remain local preliminary
+diagnostics; they are not substituted for the six pinned captures in the ledger.
 The runner records the supplied executable's SHA-256. An independently known
 binary pin can be enforced with `--expected-executable-sha256`. That identifies
 the executable only; shared libraries, addons and the entire portable bundle
@@ -173,15 +183,19 @@ first two bolt pockets, the planned capture distinguishes:
    restoring feature history, with each BRep hash and shape placement recorded.
 2. Objects immediately after restoring the copied document, including states,
    object placement, shape metrics, sketch geometry and expressions.
-3. A forced-rebuild attempt, with the same metrics/states and actual base-minus-cut
-   volumes. A changed captured metric is an inspection lead; a Touched/Invalid
+3. A forced-rebuild attempt, with the same metrics/states and base-minus-cut
+   algebraic volume differences. Boolean removed-solid measurements are recorded
+   separately in expanded captures. A changed metric is an inspection lead; a Touched/Invalid
    dependency leaves cached geometry possible. No unchanged metric set is called
    full shape equivalence, and saved/restored coordinate placements must be
    reconciled before diagnosing a solver/kernel cause.
 
-Two separate experiments are allowed: `unchanged` and `intersection`. The latter
-changes only `Thickness.Intersection=True` in memory. Each uses a fresh directory
-and copied document; neither accepts a repair. The report identifies the first
+The base experiments are `unchanged` and `intersection`; the latter changes only
+`Thickness.Intersection=True`. Three controls compare against the Intersection
+baseline: freezing Sketch004 at its exact saved placement with mapping deactivated,
+changing only Pocket.Type to Length (keeping 5 mm), and changing only Pocket.Type
+to ThroughAll. Every experiment uses a fresh directory and copied document, and
+none accepts a repair. The report identifies the first
 changed captured feature and first captured object whose own state is unclean,
 keeping true semantic first-drift unknown. An own-object Up-to-date state does
 not prove clean upstream dependencies: dependency closure is explicitly unchecked,
@@ -228,3 +242,129 @@ Zero exit without matching source/script identity and complete capture coverage
 does not set `native_probe_completed`. This probe is an A1/A2/A7 diagnostic input,
 not the complete `compare` capture contract: it does not save/reopen/restore a
 candidate, measure full final-body surface differences, or prove A3–A8 acceptance.
+
+## Actual portable native experiments
+
+The official [FreeCAD 1.1.4 release](https://github.com/FreeCAD/FreeCAD/releases/tag/1.1.4)
+provided `FreeCAD_1.1.4-Windows-x86_64-py311.7z` (418,088,341 bytes). Its raw SHA-256
+`4828741fc91ee37fafcdb97a1abacb18b04ba451ac4372d9ff7a7349b36f4d6d` matched both
+the official sidecar and GitHub asset digest. The archive was extracted only under
+ignored `.work/cad/runtime`; the existing Unity-bundled 7z executable was reused
+read-only after the Windows tar reader reported an unsupported LZMA codec. No
+installer or global configuration change was used.
+
+The actual console reports FreeCAD 1.1.4R20260928, Git
+`4fd3bf320d9566a27e60069fc8387448aaa3a094`, Python 3.11.14 and OpenCascade 7.8.1.
+`freecadcmd.exe` SHA-256 is
+`1692e54224b48989974e8b91d3ac7a38d1d502d3db4dee1d4cf79ba91356e42d`; Windows
+Authenticode verified its FreeCAD project association AISBL signature. The raw
+portable archive identifies the acquired bundle, while the executable hash does
+not independently authenticate every loaded OS library or addon.
+
+All actual user/system parameter, user-home/data/temp paths were inside each new
+run directory. The documented [portable environment variables](https://github.com/FreeCAD/FreeCAD-documentation/blob/main/wiki/Start_up_and_Configuration.md)
+were set only in child-process environments, with existing run-local directories.
+No global FreeCAD user directory was created. No external addons, GUI automation,
+network/cloud action from CAD, whole-assembly run or source save was requested.
+Approximately 673 GiB remained free after the native series.
+
+The first native probe exposed an API distinction that host-only guard tests
+could not establish: a generic imported non-solid `Part.Shape` does not provide
+the Solid-only COM property. The probe now derives volumetric COM from actual
+Solid subshapes, leaves non-solid COM/volume unmeasured, and excludes unbounded
+construction-plane pseudo-volumes from first-drift ranking. Its failed first run
+and early runs before retained script snapshots remain local historical evidence.
+
+The six preserved captures and raw report hashes are listed in
+[the new ledger](../hardware/cad/thor-art1-desktop-native-evidence-v1.json).
+Every pinned run retained exact probe/helper/evidence snapshots, unchanged source
+and input-copy hashes, and its actual configuration paths. No old report was
+overwritten. These are single-document native recompute diagnostics, not physical
+tests or accepted source migrations.
+
+| Experiment | Algebraic `Pad002.Volume − Pocket.Volume`, mm³ | Interpretation |
+| --- | ---: | --- |
+| Saved source | 119.383168675 | Cached intended reference; distinct from Boolean removed-solid measurement |
+| Unchanged forced attempt | 119.383168675 | Thickness Invalid; downstream Pocket is cached/Touched, so no rebuilt-cut proof |
+| Intersection only, UpToFirst | 0 | Pocket reports Up-to-date yet removes no volume and has no intended hole circle/cylinder |
+| Intersection + frozen exact bolt frame | 0 | Deactivating attachment mapping and preserving the exact frame does not recover the cut |
+| Intersection + Type Length, unchanged 5 mm | 45.497757130 | Actual partial cut; not the saved intent or an exact repair |
+| Intersection + Type ThroughAll | 119.386256152 | Intended 1.7 mm circle/cylinder reappear; remaining differences still reject exact migration |
+
+Saved and rebuilt `Pad002.Face9` are the same measured plane: source Y = −55 mm,
+normal +Y, matching bounds and zero distance to the intended bolt center.
+Sketch004's center `(-31.5,-55,8)` mm, axis, radius, three constraints and
+spreadsheet expression remain unchanged in the freeze experiment. The Type-only
+controls therefore localize the empty-cut behavior to this UpToFirst operation
+under the rebuilt chain. They do not establish a fully diagnosed kernel defect
+or authorize a different machining/cutting extent.
+
+The first significant bounded captured metric drift is `Groove`:
+approximately −2.864236 mm³, with area/COM changes. Earlier captured sketches/pads
+remain within the stated numeric thresholds; that does not establish all-surface
+equivalence or rule out smaller solver changes. The cause of the Groove drift
+remains unresolved.
+
+The [expanded ThroughAll audit](../hardware/cad/thor-art1-desktop-native-through-all-audit-v1.json)
+records 90 runtime objects, all own states Up-to-date: all 89 original names/types
+remain, with one automatically added `App::Origin` named `Origin001`. All 25
+AssemblyArt1 target names/types remain. This is not validation of all 53 subshape
+reference meanings or a complete dependency/engineering audit.
+
+The full final Body is a valid single solid, but its volume is
+298,644.443967768 mm³ versus saved 298,648.100446804 mm³ (about −3.656479 mm³).
+Its maximum source Z bound changes by −0.056547211 mm. Fourteen of 24 datum matrix
+comparisons exceed the unchanged `1e-12` threshold; the largest error is about
+`1.05516e-11`. No numerical threshold was relaxed.
+
+Both directed Body Boolean difference volumes nevertheless return zero. The
+Boolean removed-bolt solids likewise report zero both-direction differences,
+while their measured volumes/bounds/COMs differ. Their actual Boolean volumes are
+118.555755904 and 118.555756131 mm³, distinct from the algebraic 119.383/119.386 mm³
+differences in the table. These conflicting kernel metrics remain explicit gates;
+neither zero Boolean output nor Up-to-date state overrides the other failures.
+Maximum surface distance has not been measured.
+
+No diagnostic candidate is adopted into the accepted source, assembly, mass/load
+ledger or fabrication workflow. Semantic reference migration, surface comparisons
+and downstream revalidation remain open.
+
+## Once-saved unaccepted candidate and partial A6
+
+The separate [candidate worker](../tools/prepare_thor_art1_candidate.py) reuses the
+same copied-document isolation and retains its exact worker/helper/contract bytes.
+It requires a fresh, visibly `UNACCEPTED` filename under ignored
+`.work/cad/candidates`, saves that new path exactly once, closes/reopens it, and
+tests `Spreadsheet.B2` (`M3BoltBodyRadius`) at 1.69, 1.71 and restored 1.70 mm.
+It never saves the original or input-copy path and never overwrites a candidate.
+The default probe's no-save completion checker intentionally rejects this evidence
+class; separate procedural completion establishes recorded coverage only.
+
+The [actual candidate capture](../hardware/cad/thor-art1-desktop-candidate-study-v1.json)
+and [runner metadata](../hardware/cad/thor-art1-desktop-candidate-runner-v1.json)
+retain all five phases, actual aliases/values/radii, five affected sketches'
+constraints/expressions, all 90 own-state lists, Body metrics and filenames.
+Source/input-copy raw hashes stayed pinned before and after. The one saved binary
+has SHA-256 `6b8e6ad3e6d7b6c0165d3cf2758b7a6e4ce4a30e92c53b86a7256f5b6904a1dd`
+and is preserved locally as
+`.work/cad/candidates/Art1Body-UNACCEPTED-through-all-v1.FCStd`; its hash stayed
+unchanged through reopen and all subsequent unsaved perturbations. Source-saved
+is false; new-candidate-saved is true. The failed first opt-in dispatch attempt
+and its fresh logs are preserved separately, before any CAD save.
+
+| Phase | Actual B2 / Sketch004 radius, mm | Body volume, mm³ |
+| --- | ---: | ---: |
+| Before new candidate save | 1.70 | 298644.443967783 |
+| Reopened, forced nominal | 1.70 | 298644.443967783 |
+| Radius minus 0.01 mm | 1.69 | 298655.643521503 |
+| Radius plus 0.01 mm | 1.71 | 298633.153372289 |
+| Restored nominal radius | 1.70 | 298644.426247260 |
+
+All five affected expression sets and constraint structures were preserved;
+independent review found no uncontrolled constraint-value changes. All measured
+own states report Up-to-date. The first reopen changes volume by approximately
+`1.746e-10 mm³`, but the radius roundtrip leaves **0.01772052329 mm³** Body-volume
+error. The unchanged `1e-6 mm³` roundtrip gate therefore fails. This is useful
+partial A6 diagnostic evidence, not reversible parametric equivalence, an accepted
+repair, complete reference migration or a fabrication release. No tolerance was
+relaxed and no candidate binary is added to the accepted source tree.

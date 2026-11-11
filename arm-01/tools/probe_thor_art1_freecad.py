@@ -3,7 +3,9 @@
 The default Python entry point only launches a separately supplied native
 executable. The native branch requires an explicit environment opt-in, pinned
 source/copy hashes, isolated user/system parameter paths and no open documents.
-It never saves a CAD document or remaps a support. Native execution is optional.
+The default probe never saves a CAD document or remaps a support. A separate
+explicit candidate entry point can supply its guarded once-save callback.
+Native execution is optional.
 """
 
 from __future__ import annotations
@@ -16,6 +18,7 @@ import os
 import runpy
 import shutil
 import subprocess
+import sys
 import zipfile
 from pathlib import Path
 
@@ -41,6 +44,20 @@ FEATURES = (
     "Body",
 )
 BOUNDS = ("XMin", "XMax", "YMin", "YMax", "ZMin", "ZMax")
+EXPERIMENTS = {
+    "unchanged": {},
+    "intersection": {"Thickness.Intersection": True},
+    "intersection_freeze_bolt_frame": {
+        "Thickness.Intersection": True,
+        "Sketch004.MapMode": "Deactivated",
+        "Sketch004.Placement": "exact_pinned_saved_placement",
+    },
+    "intersection_pocket_length": {"Thickness.Intersection": True, "Pocket.Type": "Length"},
+    "intersection_pocket_through_all": {
+        "Thickness.Intersection": True,
+        "Pocket.Type": "ThroughAll",
+    },
+}
 
 
 def _sha(path: Path) -> str:
@@ -214,8 +231,13 @@ def feature_drift_summary(saved: dict, rebuilt: dict) -> dict:
         states = rebuilt[name].get("states")
         clean = states == ["Up-to-date"]
         changes = {}
+        unmeasured = []
         if after is None or before.get("is_null") or after.get("is_null"):
             changes["null_or_missing_shape"] = True
+        elif before.get("unbounded_construction_geometry") or after.get(
+            "unbounded_construction_geometry"
+        ):
+            unmeasured.append("unbounded_construction_geometry_metrics")
         else:
             for field, tolerance in (
                 ("volume_mm3", 1e-6),
@@ -225,6 +247,9 @@ def feature_drift_summary(saved: dict, rebuilt: dict) -> dict:
                 ("center_of_mass_mm", 1e-9),
             ):
                 first, second = before[field], after[field]
+                if first is None or second is None:
+                    unmeasured.append(field)
+                    continue
                 if isinstance(first, list):
                     if len(first) != len(second):
                         raise ValueError("metric vector dimensions differ")
@@ -246,6 +271,7 @@ def feature_drift_summary(saved: dict, rebuilt: dict) -> dict:
                 "upstream_dependency_state_checked": False,
                 "states": states,
                 "changed_metrics": changes,
+                "unmeasured_metric_fields": unmeasured,
                 "interpretation": "own state Up-to-date; upstream dependencies remain unverified"
                 if clean
                 else "cached or failed dependency shape possible",
@@ -269,6 +295,49 @@ def feature_drift_summary(saved: dict, rebuilt: dict) -> dict:
     }
 
 
+def native_shape_metrics(shape) -> dict:
+    """Measure generic imported BReps without assuming a Solid-only COM property.
+
+    For solids, centroid is volume-weighted from native Solid subshapes. Non-solid
+    sketch/datum geometry has no volumetric COM and remains explicitly unknown.
+    """
+    if shape.isNull():
+        return {"is_null": True, "valid": False}
+    solids = list(shape.Solids)
+    volume = math.fsum(solid.Volume for solid in solids)
+    centroid = None
+    if volume > 0:
+        centers = [getattr(solid, "CenterOfMass", None) for solid in solids]
+        if all(center is not None for center in centers):
+            centroid = [
+                math.fsum(
+                    solid.Volume * list(center)[i]
+                    for solid, center in zip(solids, centers, strict=True)
+                )
+                / volume
+                for i in range(3)
+            ]
+    bounds = [getattr(shape.BoundBox, key) for key in BOUNDS]
+    return {
+        "is_null": False,
+        "valid": bool(shape.isValid()),
+        "solid_count": len(solids),
+        "face_count": len(shape.Faces),
+        "edge_count": len(shape.Edges),
+        "volume_mm3": volume if solids else None,
+        "raw_native_volume_mm3": shape.Volume,
+        "area_mm2": shape.Area,
+        "length_mm": shape.Length,
+        "bounds_mm": bounds,
+        "unbounded_construction_geometry": any(abs(value) >= 1e50 for value in bounds),
+        "center_of_mass_mm": centroid,
+        "centroid_measurement": "volume_weighted_native_solid_centroids"
+        if centroid is not None
+        else "unmeasured_no_available_volumetric_centroid",
+        "shape_placement_matrix": list(shape.Placement.toMatrix().A),
+    }
+
+
 def _checkpoint(report_path: Path, report: dict, *, first: bool = False) -> None:
     data = json.dumps(report, indent=2, allow_nan=False) + "\n"
     if first:
@@ -281,9 +350,11 @@ def _checkpoint(report_path: Path, report: dict, *, first: bool = False) -> None
         temporary.replace(report_path)
 
 
-def native_capture() -> None:
+def native_capture(*, after_capture=None) -> None:
     """Capture saved BReps and a forced-rebuild attempt; never save CAD files."""
-    if os.environ.get(PROBE_FLAG) != "1":
+    if os.environ.get(PROBE_FLAG) != "1" and not (
+        after_capture is not None and os.environ.get("RAFTEL_PREPARE_THOR_ART1_CANDIDATE") == "1"
+    ):
         raise ValueError("native Art1 probe requires explicit environment opt-in")
     source = Path(os.environ["RAFTEL_THOR_ART1_SOURCE"])
     copied = Path(os.environ["RAFTEL_THOR_ART1_COPY"])
@@ -291,9 +362,24 @@ def native_capture() -> None:
     user_cfg = Path(os.environ["RAFTEL_THOR_ART1_USER_CFG"])
     system_cfg = Path(os.environ["RAFTEL_THOR_ART1_SYSTEM_CFG"])
     experiment = os.environ["RAFTEL_THOR_ART1_EXPERIMENT"]
-    if experiment not in {"unchanged", "intersection"}:
-        raise ValueError("experiment must be unchanged or intersection")
+    if experiment not in EXPERIMENTS:
+        raise ValueError("unsupported diagnostic experiment")
     validate_probe_paths(source, copied, report_path, user_cfg, system_cfg)
+    isolated_data = {
+        key: Path(os.environ[variable]).resolve()
+        for key, variable in (
+            ("UserHomePath", "FREECAD_USER_HOME"),
+            ("UserAppData", "FREECAD_USER_DATA"),
+            ("AppTempPath", "FREECAD_USER_TEMP"),
+        )
+    }
+    if any(
+        not path.is_dir() or not path.is_relative_to(copied.parent.resolve())
+        for path in isolated_data.values()
+    ):
+        raise ValueError(
+            "native user home/data/temp directories must exist inside the isolated run"
+        )
     evidence_path = (
         Path(__file__).parents[1] / "hardware" / "cad" / "thor-art1-migration-evidence.json"
     )
@@ -305,14 +391,14 @@ def native_capture() -> None:
         "source_sha256_before": SOURCE_SHA256,
         "copied_source_sha256_before": SOURCE_SHA256,
         "capture_script_sha256": _sha(Path(__file__)),
+        "diagnostic_helper_sha256": _sha(Path(__file__).with_name("thor_art1_diagnostics.py")),
+        "migration_evidence_sha256": _sha(evidence_path),
         "runner_declared_native_executable_sha256": os.environ.get(
             "RAFTEL_THOR_ART1_EXECUTABLE_SHA256"
         ),
         "full_runtime_and_addon_bundle_verified": False,
         "experiment": experiment,
-        "changed_properties": {"Thickness.Intersection": True}
-        if experiment == "intersection"
-        else {},
+        "changed_properties": EXPERIMENTS[experiment],
         "audit_status": "starting",
         "native_document_saved": False,
         "migration_accepted": False,
@@ -344,23 +430,6 @@ def native_capture() -> None:
     previous = set(App.listDocuments())
     document = None
 
-    def shape_info(shape) -> dict:
-        if shape.isNull():
-            return {"is_null": True, "valid": False}
-        return {
-            "is_null": False,
-            "valid": bool(shape.isValid()),
-            "solid_count": len(shape.Solids),
-            "face_count": len(shape.Faces),
-            "edge_count": len(shape.Edges),
-            "volume_mm3": shape.Volume,
-            "area_mm2": shape.Area,
-            "length_mm": shape.Length,
-            "bounds_mm": [getattr(shape.BoundBox, key) for key in BOUNDS],
-            "center_of_mass_mm": list(shape.CenterOfMass),
-            "shape_placement_matrix": list(shape.Placement.toMatrix().A),
-        }
-
     def geometry_candidates(shape) -> list[dict]:
         candidates = []
         for index, edge in enumerate(shape.Edges, 1):
@@ -386,6 +455,8 @@ def native_capture() -> None:
                         "center_mm": list(surface.Center),
                         "axis": list(surface.Axis),
                         "radius_mm": surface.Radius,
+                        "bounds_mm": [getattr(face.BoundBox, key) for key in BOUNDS],
+                        "surface_area_mm2": face.Area,
                     }
                 )
         return candidates
@@ -393,12 +464,65 @@ def native_capture() -> None:
     def object_info(obj) -> dict:
         item = {"states": list(obj.State), "placement_matrix": list(obj.Placement.toMatrix().A)}
         if hasattr(obj, "Shape"):
-            item["shape"] = shape_info(obj.Shape)
+            item["shape"] = native_shape_metrics(obj.Shape)
         if hasattr(obj, "Geometry"):
             item["sketch_geometry"] = [str(value) for value in obj.Geometry]
             item["fully_constrained"] = bool(obj.FullyConstrained)
             item["expressions"] = [list(value) for value in obj.ExpressionEngine]
+            item["constraints_repr"] = [str(value) for value in obj.Constraints]
+            item["external_geometry_repr"] = str(obj.ExternalGeometry)
+            circles = []
+            for geometry in obj.Geometry:
+                if type(geometry).__name__ != "Circle":
+                    continue
+                circles.append(
+                    {
+                        "center_in_sketch_mm": list(geometry.Center),
+                        "center_in_document_mm": list(obj.Placement.multVec(geometry.Center)),
+                        "axis_in_document": list(obj.Placement.Rotation.multVec(geometry.Axis)),
+                        "radius_mm": geometry.Radius,
+                    }
+                )
+            item["sketch_circle_frames"] = circles
+        if hasattr(obj, "MapMode"):
+            item["attachment_parameters"] = {
+                "map_mode": str(obj.MapMode),
+                "map_reversed": bool(obj.MapReversed),
+                "offset_matrix": list(obj.AttachmentOffset.toMatrix().A),
+            }
+        item["selected_operation_property_repr"] = {
+            key: str(getattr(obj, key))
+            for key in (
+                "Type",
+                "Length",
+                "Length2",
+                "Reversed",
+                "SideType",
+                "Profile",
+                "BaseFeature",
+                "Support",
+            )
+            if hasattr(obj, key)
+        }
         return item
+
+    def face9_info(shape) -> dict:
+        face = shape.Faces[8]
+        result = {
+            "surface_type": type(face.Surface).__name__,
+            "bounds_mm": [getattr(face.BoundBox, key) for key in BOUNDS],
+        }
+        if result["surface_type"] == "Plane":
+            result["point_mm"] = list(face.CenterOfMass)
+            result["normal"] = list(face.normalAt(0, 0))
+            center = bolt_support_descriptor(contract)["center_mm"]
+            result["bolt_center_to_plane_distance_mm"] = abs(
+                math.fsum(
+                    (a - b) * n
+                    for a, b, n in zip(center, result["point_mm"], result["normal"], strict=True)
+                )
+            )
+        return result
 
     try:
         if previous:
@@ -410,7 +534,14 @@ def native_capture() -> None:
             or Path(actual_configs["SystemParameter"]).resolve() != system_cfg.resolve()
         ):
             raise ValueError("runtime did not select the dedicated user/system preference paths")
+        actual_data = {key: App.ConfigGet(key) for key in isolated_data}
+        report["runtime_data_paths"] = actual_data
+        if any(Path(actual_data[key]).resolve() != path for key, path in isolated_data.items()):
+            raise ValueError("runtime did not select the dedicated user home/data/temp directories")
         report["freecad_version"] = list(App.Version())
+        report["python_version"] = sys.version
+        report["opencascade_version"] = getattr(Part, "OCC_VERSION", None)
+        report["external_addon_paths_requested"] = False
         # Load exact saved BRep members independently of restoring feature history.
         saved_shapes = {}
         brep_directory = copied.parent / "saved-breps"
@@ -437,7 +568,7 @@ def native_capture() -> None:
                 report["source_saved_brep_measurements"][name] = {
                     "saved_brep_member": member,
                     "saved_brep_sha256": hashlib.sha256(data).hexdigest(),
-                    "shape": shape_info(shape),
+                    "shape": native_shape_metrics(shape),
                 }
         _checkpoint(report_path, report)
         document = App.openDocument(str(copied.resolve()), True)
@@ -449,8 +580,17 @@ def native_capture() -> None:
                 raise ValueError(f"pinned document is missing feature {name}")
             report["restored_document_measurements"][name] = object_info(obj)
         _checkpoint(report_path, report)
-        if experiment == "intersection":
+        if experiment.startswith("intersection"):
             document.getObject("Thickness").Intersection = True
+        if experiment == "intersection_freeze_bolt_frame":
+            sketch = document.getObject("Sketch004")
+            saved = next(item for item in contract["members"] if item["name"] == "Sketch004")[
+                "placement_mm_xyzw"
+            ]
+            sketch.MapMode = "Deactivated"
+            sketch.Placement = App.Placement(App.Vector(*saved[:3]), App.Rotation(*saved[3:]))
+        if "Pocket.Type" in EXPERIMENTS[experiment]:
+            document.getObject("Pocket").Type = EXPERIMENTS[experiment]["Pocket.Type"]
         try:
             report["force_recompute_return"] = document.recompute(None, True)
         except Exception as error:
@@ -461,6 +601,35 @@ def native_capture() -> None:
             report["force_rebuild_attempt_measurements"][name] = object_info(
                 document.getObject(name)
             )
+        report["all_document_object_states"] = {
+            obj.Name: {"type": obj.TypeId, "states": list(obj.State)} for obj in document.Objects
+        }
+        source_types = {
+            obj.attrib["name"]: obj.attrib["type"] for obj in xml.findall("./Objects/Object")
+        }
+        report["source_document_object_count"] = len(source_types)
+        report["object_name_type_contract_matches_source"] = {
+            name: item["type"] for name, item in report["all_document_object_states"].items()
+        } == source_types
+        report["all_document_objects_report_up_to_date"] = all(
+            item["states"] == ["Up-to-date"]
+            for item in report["all_document_object_states"].values()
+        )
+        report["datum_matrix_comparisons"] = {}
+        for member in contract["members"]:
+            if member["type"] not in DIAGNOSTICS["DATUM_TYPES"]:
+                continue
+            saved_matrix = DIAGNOSTICS["_matrix_from_placement"](member["placement_mm_xyzw"])
+            actual_matrix = list(
+                document.getObject(member["name"]).getGlobalPlacement().toMatrix().A
+            )
+            report["datum_matrix_comparisons"][member["name"]] = {
+                "saved_matrix": saved_matrix,
+                "attempted_matrix": actual_matrix,
+                "maximum_absolute_element_error": max(
+                    abs(a - b) for a, b in zip(saved_matrix, actual_matrix, strict=True)
+                ),
+            }
         report["feature_drift_summary"] = feature_drift_summary(
             report["source_saved_brep_measurements"],
             report["force_rebuild_attempt_measurements"],
@@ -470,6 +639,7 @@ def native_capture() -> None:
             ("force_rebuild_attempt", lambda name: document.getObject(name).Shape),
         ):
             probe_shapes = {name: get_shape(name) for name in ("Pad002", "Pocket", "Pocket001")}
+            report.setdefault("pad002_face9", {})[stage] = face9_info(probe_shapes["Pad002"])
             report.setdefault("material_removal_mm3", {})[stage] = {
                 "Pocket": probe_shapes["Pad002"].Volume - probe_shapes["Pocket"].Volume,
                 "Pocket001": probe_shapes["Pocket"].Volume - probe_shapes["Pocket001"].Volume,
@@ -484,11 +654,46 @@ def native_capture() -> None:
                 }
                 for kind in ("circle", "cylinder")
             }
+
+        def compare_native_shapes(saved_shape, attempted_shape) -> dict:
+            comparison = {
+                "saved": native_shape_metrics(saved_shape),
+                "attempted": native_shape_metrics(attempted_shape),
+                "source_minus_attempted_mm3": None,
+                "attempted_minus_source_mm3": None,
+                "maximum_surface_distance_mm": None,
+                "equivalence_accepted": False,
+            }
+            try:
+                comparison["source_minus_attempted_mm3"] = saved_shape.cut(attempted_shape).Volume
+                comparison["attempted_minus_source_mm3"] = attempted_shape.cut(saved_shape).Volume
+            except Exception as error:
+                comparison["boolean_error"] = {"type": type(error).__name__, "message": str(error)}
+            return comparison
+
+        report["body_geometry_comparison"] = compare_native_shapes(
+            saved_shapes["Body"], document.getObject("Body").Shape
+        )
+        try:
+            saved_removed = saved_shapes["Pad002"].cut(saved_shapes["Pocket"])
+            attempted_removed = document.getObject("Pad002").Shape.cut(
+                document.getObject("Pocket").Shape
+            )
+            report["removed_bolt_solid_comparison"] = compare_native_shapes(
+                saved_removed, attempted_removed
+            )
+        except Exception as error:
+            report["removed_bolt_solid_comparison"] = {
+                "error": {"type": type(error).__name__, "message": str(error)},
+                "equivalence_accepted": False,
+            }
         report["forced_cut_selected_object_states_clean"] = all(
             report["force_rebuild_attempt_measurements"][name]["states"] == ["Up-to-date"]
             for name in ("Sketch003", "Pad002", "Sketch004", "Pocket", "Sketch005", "Pocket001")
         )
         report["full_dependency_closure_checked"] = False
+        if after_capture is not None:
+            after_capture(App, document, contract, report, report_path)
         report["audit_status"] = "complete_probe_not_migration_acceptance"
     except Exception as error:
         report["audit_status"] = "failed_probe"
@@ -552,6 +757,7 @@ def run_probe(
     experiment: str = "unchanged",
     timeout_s: float = 180,
     expected_executable_sha256: str | None = None,
+    candidate_output: Path | None = None,
 ) -> dict:
     """Create a fresh source copy, preferences and bounded native subprocess."""
     if not freecad.is_file() or not source.is_file():
@@ -567,8 +773,19 @@ def run_probe(
         raise ValueError("run directory must be new; previous evidence is never overwritten")
     if source.resolve().is_relative_to(run_directory.resolve()):
         raise ValueError("source cannot be inside the new run directory")
-    if experiment not in {"unchanged", "intersection"}:
+    if experiment not in EXPERIMENTS:
         raise ValueError("unsupported experiment")
+    if candidate_output is not None:
+        allowed = Path(__file__).parents[2] / ".work" / "cad" / "candidates"
+        if (
+            not candidate_output.resolve().is_relative_to(allowed.resolve())
+            or candidate_output.exists()
+        ):
+            raise ValueError(
+                "candidate output must be a new file under this checkout's .work/cad/candidates"
+            )
+        if experiment != "intersection_pocket_through_all":
+            raise ValueError("candidate study requires the explicit ThroughAll diagnostic")
     if not 0 < _finite(timeout_s, "timeout") <= 600:
         raise ValueError("timeout must be positive and at most 600 seconds")
     existing_parent = run_directory.resolve().parent
@@ -584,6 +801,38 @@ def run_probe(
     with copied.open("xb") as stream:
         stream.write(source.read_bytes())
     user_cfg, system_cfg = run_directory / "user.cfg", run_directory / "system.cfg"
+    isolated_data = {
+        "FREECAD_USER_HOME": run_directory / "user-home",
+        "FREECAD_USER_DATA": run_directory / "user-data",
+        "FREECAD_USER_TEMP": run_directory / "user-temp",
+    }
+    for directory in isolated_data.values():
+        directory.mkdir(exist_ok=False)
+    snapshot_root = run_directory / "capture-tool"
+    snapshot_tools = snapshot_root / "tools"
+    snapshot_evidence = snapshot_root / "hardware" / "cad"
+    snapshot_tools.mkdir(parents=True, exist_ok=False)
+    snapshot_evidence.mkdir(parents=True, exist_ok=False)
+    snapshot_pairs = [
+        (Path(__file__), snapshot_tools / Path(__file__).name),
+        (
+            Path(__file__).with_name("thor_art1_diagnostics.py"),
+            snapshot_tools / "thor_art1_diagnostics.py",
+        ),
+        (
+            Path(__file__).parents[1] / "hardware" / "cad" / "thor-art1-migration-evidence.json",
+            snapshot_evidence / "thor-art1-migration-evidence.json",
+        ),
+    ]
+    entry_name = Path(__file__).name
+    if candidate_output is not None:
+        entry_name = "prepare_thor_art1_candidate.py"
+        snapshot_pairs.append((Path(__file__).with_name(entry_name), snapshot_tools / entry_name))
+    for original, snapshot in snapshot_pairs:
+        with snapshot.open("xb") as stream:
+            stream.write(original.read_bytes())
+    snapshot_hashes = {str(snapshot.resolve()): _sha(snapshot) for _, snapshot in snapshot_pairs}
+    capture_script = snapshot_tools / entry_name
     validate_probe_paths(source, copied, report, user_cfg, system_cfg)
     command = [
         str(freecad.resolve()),
@@ -591,7 +840,7 @@ def run_probe(
         str(user_cfg.resolve()),
         "-s",
         str(system_cfg.resolve()),
-        str(Path(__file__).resolve()),
+        str(capture_script.resolve()),
     ]
     env = os.environ.copy()
     env.update(
@@ -607,6 +856,11 @@ def run_probe(
             "PYTHONNOUSERSITE": "1",
         }
     )
+    env.update({key: str(path.resolve()) for key, path in isolated_data.items()})
+    if candidate_output is not None:
+        env.pop(PROBE_FLAG, None)
+        env["RAFTEL_PREPARE_THOR_ART1_CANDIDATE"] = "1"
+        env["RAFTEL_THOR_ART1_CANDIDATE_OUTPUT"] = str(candidate_output.resolve())
     metadata = {
         "schema_version": 1,
         "evidence_class": "native_probe_process_metadata_only",
@@ -615,6 +869,10 @@ def run_probe(
         "command": command,
         "source_sha256_before": SOURCE_SHA256,
         "free_bytes_before": free_before,
+        "isolated_user_directories": {
+            key: str(path.resolve()) for key, path in isolated_data.items()
+        },
+        "capture_snapshot_sha256_before": snapshot_hashes,
         "native_executable_sha256": executable_sha256,
         "expected_native_executable_sha256": expected_executable_sha256,
         "executable_matches_caller_pin": None if expected_executable_sha256 is None else True,
@@ -647,6 +905,12 @@ def run_probe(
             stream.write(text)
     metadata["source_sha256_after"] = _sha(source)
     metadata["copy_sha256_after"] = _sha(copied)
+    metadata["capture_snapshot_sha256_after"] = {
+        str(snapshot.resolve()): _sha(snapshot) for _, snapshot in snapshot_pairs
+    }
+    metadata["capture_snapshot_bytes_unchanged"] = (
+        metadata["capture_snapshot_sha256_after"] == snapshot_hashes
+    )
     metadata["source_and_copy_bytes_unchanged"] = (
         metadata["source_sha256_after"] == metadata["copy_sha256_after"] == SOURCE_SHA256
     )
@@ -656,8 +920,9 @@ def run_probe(
             metadata["native_audit_status"] = native.get("audit_status")
             metadata["native_probe_completed"] = (
                 metadata.get("process_returncode") == 0
-                and native_report_is_complete(native, _sha(Path(__file__)))
+                and native_report_is_complete(native, _sha(capture_script))
                 and metadata["source_and_copy_bytes_unchanged"]
+                and metadata["capture_snapshot_bytes_unchanged"]
             )
         except (OSError, ValueError) as error:
             metadata["report_error"] = str(error)
@@ -673,7 +938,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--freecad", type=Path)
     parser.add_argument("--source", type=Path)
     parser.add_argument("--run-directory", type=Path)
-    parser.add_argument("--experiment", choices=("unchanged", "intersection"), default="unchanged")
+    parser.add_argument("--experiment", choices=tuple(EXPERIMENTS), default="unchanged")
     parser.add_argument("--timeout", type=float, default=180)
     parser.add_argument(
         "--expected-executable-sha256", help="Optional independently obtained binary pin"
