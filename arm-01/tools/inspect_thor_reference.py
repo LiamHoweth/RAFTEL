@@ -5,9 +5,9 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
-from pathlib import Path
 import xml.etree.ElementTree as ET
 import zipfile
+from pathlib import Path
 
 
 def inspect_reference(source: Path) -> dict:
@@ -69,14 +69,20 @@ def inspect_reference(source: Path) -> dict:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("source", type=Path, help="Upstream freecad-src directory (read only)")
-    parser.add_argument("--strict", action="store_true", help="Exit 1 for parse or reference issues")
+    parser.add_argument(
+        "--strict", action="store_true", help="Exit 1 for parse or reference issues"
+    )
     args = parser.parse_args()
     try:
         result = inspect_reference(args.source)
     except ValueError as error:
         parser.error(str(error))
     print(json.dumps(result, indent=2))
-    issues = result["errors"] or result["missing_reference_files"] or result["reference_filename_case_mismatches"]
+    issues = (
+        result["errors"]
+        or result["missing_reference_files"]
+        or result["reference_filename_case_mismatches"]
+    )
     return int(bool(args.strict and issues))
 
 

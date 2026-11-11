@@ -1,8 +1,8 @@
 """Source-container checks need no CAD application or network."""
 
-from pathlib import Path
 import runpy
 import zipfile
+from pathlib import Path
 
 import pytest
 

@@ -6,13 +6,13 @@ No robot CAD binary has been copied into this repository. All references pin imm
 
 ## Current shortlist
 
-- **Thor:** strongest free native-editable six-axis candidate, using FreeCAD source plus neutral STEP/STL. Its seven arm motors and gripper total eight actuators, so Liam must explicitly relax the proposed seven-actuator target before adoption. Confirm actual workspace, build cost, mass, gripper jaw motion and assembly-version compatibility.
+- **Thor:** strongest free native-editable six-axis candidate, using FreeCAD source plus neutral STEP/STL. Its seven arm motors and gripper total eight actuators. **Liam allowed eight actuators and selected Thor for the first baseline study on 2026-11-11.** Confirm actual workspace, build cost, mass, gripper jaw motion and assembly-version compatibility.
 - **SO-101:** strongest inexpensive reuse reference with complete STEP geometry, but stock has only five arm axes. Its existing elbow-roll modification is a separate, unvalidated candidate with meshes and code, not released editable CAD. Do not represent it as a proven complete ARM-01 mechanism.
 - **PAROL6:** established six-axis alternative with poor initial budget/mass fit. Purchased full robot STEP files have separate restrictions and contain individual parts, not an assembled robot. Public mounting-plate STEP files do not substitute for full mechanical source.
 
 The baseline is **not frozen**. Do not issue prints, alter link lengths, or buy components from these references without the outstanding engineering decisions in `nextSteps.md`.
 
-## How to adopt Thor in FreeCAD after selection
+## Thor baseline acquired; CAD import remains pending
 
 1. Acquire the exact revision in the manifest into a local reference checkout. Preserve the entire `freecad-src/` directory and the upstream license. `Assembly.FCStd` depends on `AssemblyBase.FCStd` and `AssemblyArt1` … `AssemblyArt56.FCStd`, which in turn depend on component files; downloading only the master assembly will leave missing references.
 2. Keep that checkout unchanged. Start RAFTEL adaptations in a separate working folder/feature branch, with a provenance manifest recording source commit and modified parts. Keep binary working files outside Git until a deliberate CAD storage policy is selected.
@@ -32,3 +32,20 @@ For SO-101, import the pinned STEP assembly and components into the chosen CAD a
 - Obtain physical fit/thermal/load evidence and secure mounting with an independent emergency stop before enabling motion. A downloaded CAD model is not a safety approval.
 
 Future adopted assets should retain exact upstream provenance and license notices. Keep unchanged reference assets separate from RAFTEL derivative files and document each change. Do not rebrand the original robot as a RAFTEL design.
+
+## Reproduce acquisition and inspect without FreeCAD
+
+The current clean local reference is `/Users/howeth/Documents/Codex/2026-11-11/se/work/Thor-reference`, detached at the manifest revision. It contains all 57 native source files (122,885,970 bytes) and the upstream license; keep it unchanged. To acquire the same source in a **new, unused local directory**, choose a destination outside this repository and run:
+
+```sh
+git clone --filter=blob:none --no-checkout https://github.com/AngelLM/Thor.git /your/new/Thor-reference
+git -C /your/new/Thor-reference sparse-checkout init --cone
+git -C /your/new/Thor-reference sparse-checkout set freecad-src
+git -C /your/new/Thor-reference checkout --detach 286b081fe6f056d87c379b884781ef77ff6a0159
+git -C /your/new/Thor-reference status --short
+python tools/inspect_thor_reference.py /your/new/Thor-reference/freecad-src
+```
+
+Run the Python command from `arm-01/`. No extra dependencies or CAD application are required for source inspection. Add `--strict` to exit 1 for malformed containers, missing references or case mismatches. The current baseline intentionally reports **33 extension-case mismatches**, not a passing strict reference check. All 57 native ZIP/XML documents parsed and no reference lacked a case-insensitive matching file. Case-sensitive matching is performed against the directory inventory, even when the host filesystem is case-insensitive.
+
+[thor-baseline-inspection.json](thor-baseline-inspection.json) records the actual scan, per-file SHA-256 hashes, dependencies and saved placements. [CAD reuse study](../../docs/cad-reuse.md#acquired-thor-baseline--source-inspection-result) explains interpretation and first adaptation surfaces. FreeCAD was not installed or available on PATH during this study; no import/recompute was performed. Resolve the 33 reference spelling differences in a separate working copy before testing on Linux; retain the original checkout unchanged.

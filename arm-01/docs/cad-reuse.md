@@ -1,6 +1,6 @@
 # Reusing an existing mechanical design
 
-Research checked 2026-11-11. **Decision direction: reuse existing CAD and reproduce a baseline before changing load-bearing geometry.** This document is an adoption plan, not a released mechanical design. No CAD has been imported into a CAD application, recomputed, fabricated, or physically validated in this session. Source-tree and selected file-content inspection were performed; no upstream CAD assets are vendored here.
+Research checked 2026-11-11. **Decision direction: reuse existing CAD and reproduce a baseline before changing load-bearing geometry.** This document is an adoption plan, not a released mechanical design. Liam authorized eight actuators and selected **Thor as the first baseline to study** on 2026-11-11. A pinned Thor source checkout has been acquired outside this repository and all 57 native CAD containers inspected. No CAD has been imported into a CAD application, recomputed, fabricated, or physically validated. No upstream CAD assets are vendored here.
 
 ## What “proven” means for ARM-01
 
@@ -15,7 +15,7 @@ The six-independent-arm-axis requirement excludes the gripper. The seven-total-a
 | Stock SO-101 | Component STEP, STEP assembly, STL and simulation descriptions. Upstream assembly guide, vendor kits and physical demonstration ecosystem. Apache-2.0. | Five arm joints plus gripper: fails six arm axes. The upstream URDF models a revolute moving jaw, so the stock tool does not implement parallel translation. No native feature-history CAD was identified. | Best inexpensive reference for fixtures, servo packaging and reproducible baseline experiments; cannot be labeled the final six-axis design. |
 | SO-101 elbow-roll modification | Released STL assemblies/parts and LeRobot plugin; author links a physical demonstration. Apache-2.0. | Adds sixth arm joint and seventh actuator, but no STEP/native CAD or unit tests found in inspected tree. Geometry, stiffness, thermal loads and integration remain unverified by RAFTEL. | Research candidate only. Do not extend links or issue prints as a validated ARM-01 design. |
 | PAROL6 | Six arm axes; public STL, build material and robot descriptions; manufacturer physical demonstration and kits. Current hardware license CERN-OHL-S-2.0; firmware GPL-3.0. | Upstream claims 408 mm reach and 5.5 kg arm mass. Full individual STEP parts are sold separately, without an assembly; seller prohibits sharing without permission. Only two mounting-plate STEP files found in inspected tree. Cost and mass are poor matches for the initial budget/mobile goal. | Strong six-axis reference if budget is increased; retain the original drivetrain instead of shrinking it blindly. |
-| Thor | Six arm DoF, native FreeCAD, STEP, STL, gripper source, assembly documentation and upstream physical videos. CC-BY-SA-4.0. | Primary BOM has **seven arm stepper motors plus one MG995 gripper = eight actuators**. Upstream 625 mm stretched height is not horizontal reach. More print volume and assembly work than SO-101. | Strongest free editable six-axis CAD candidate if Liam explicitly permits eight actuators and confirms size/build effort. |
+| Thor | Six arm DoF, native FreeCAD, STEP, STL, gripper source, assembly documentation and upstream physical videos. CC-BY-SA-4.0. | Primary BOM has **seven arm stepper motors plus one MG995 gripper = eight actuators**. Upstream 625 mm stretched height is not horizontal reach. More print volume and assembly work than SO-101. | Selected first baseline for study after Liam allowed eight actuators; size, build effort and performance remain open. |
 | Annin AR4 | Existing six-axis platform with official hardware documentation and physical examples. | Current custom license limits commercial use and redistribution. Not suitable for an assumed freely redistributable company derivative. | Study architecture only; do not vendor or derive production CAD without the necessary rights. |
 
 Sources and exact inspected revisions appear below. The stock SO-101, its elbow-roll modification, Thor and PAROL6 are distinct baselines; do not combine their specifications into a fictitious single design.
@@ -26,13 +26,11 @@ Use existing editable CAD as the starting point, while keeping RAFTEL's software
 
 There is no inspected candidate that simultaneously establishes all of: six arm axes, seven total actuators, approximately $500 complete workstation cost, editable CAD, a parallel gripper, and demonstrated 100–200 g continuous-duty operation at 350–450 mm. Preserve those gaps instead of claiming a match.
 
-The practical decision is:
+Liam's current decision is to **allow eight actuators and study Thor first**. Preserve its existing six-axis drivetrain and develop RAFTEL's mount, perception, sorting logic and evaluation around it. The study must re-cost the complete build, extract actual horizontal workspace/moving mass, verify gripper geometry and establish CAD compatibility before design release. Its published cost is an upstream claim, not a current delivered quotation.
 
-1. **If seven actuators is flexible:** investigate Thor first as the free, native-editable six-axis baseline. Re-cost its complete build, extract its actual horizontal workspace and moving mass, validate the gripper geometry, and review the source license before adoption. Eight actuators must be an explicit requirement amendment. Its published cost is an upstream claim, not a current delivered quotation.
-2. **If seven actuators and the budget remain firm:** keep the SO-101 six-axis modification as a candidate, but treat the extra joint as new engineering. Reuse the stock STEP geometry; obtain the modification's editable source or reconstruct only the changed interfaces from measured geometry under its license. This path does not meet the request for an already validated complete six-axis mechanism yet.
-3. **If six-axis maturity outweighs cost:** evaluate a PAROL6 baseline with the original drivetrain and licensed editable CAD. Do not buy files or parts until Liam chooses this tradeoff.
+SO-101 remains a lower-cost fallback only if its sixth-axis engineering work is acceptable. PAROL6 remains a more expensive comparison. No new custom arm or link extension is recommended for the initial baseline.
 
-These choices are documented for review; no purchase or mechanical release is authorized by this recommendation.
+The baseline study is authorized; no purchase, fabrication release or powered operation is authorized by this decision.
 
 ## Exact CAD starting points
 
@@ -93,3 +91,24 @@ Before distributing borrowed or modified assets, preserve notices and review the
 | [Annin AR4 license](https://github.com/Annin-Robotics/ar4-hmi/blob/214558c2beb474695d6c083856c354d3f6d4790f/LICENSE.txt) | `214558c2beb474695d6c083856c354d3f6d4790f`; accessed 2026-11-11 | Custom noncommercial terms and restrictions prevent assuming unrestricted company derivative rights. |
 
 Arctos was screened through its [official GitHub organization](https://github.com/Arctos-Robotics). The full CAD storefront could not be retrieved (HTTP 406); no primary CAD license was verified, so it is not ranked as an adoptable design. Do not substitute a third-party summary for its actual commercial CAD terms.
+
+## Acquired Thor baseline — source inspection result
+
+The clean sparse checkout at `work/Thor-reference` beside the RAFTEL checkout is detached at `286b081fe6f056d87c379b884781ef77ff6a0159`. It retains the complete `freecad-src/` directory plus upstream root files, including LICENSE. Native source totals **57 files / 122,885,970 bytes**. All 57 ZIP containers and their `Document.xml` records parsed successfully. The checkout occupied approximately 246 MiB including Git objects when inspected; retain it as the baseline reference.
+
+The complete machine-readable evidence, SHA-256 file inventory and saved assembly placements are in [thor-baseline-inspection.json](../hardware/cad/thor-baseline-inspection.json). A reproducible read-only inspector is [inspect_thor_reference.py](../tools/inspect_thor_reference.py). It does not import or execute CAD code.
+
+**New compatibility issue:** 33 unique external-reference filenames use `.FCStd` while actual component files use `.fcstd`. Every reference has a case-insensitive match; no entirely absent native target was found. A case-insensitive Mac volume conceals this discrepancy, but a Linux case-sensitive checkout can expose broken links. Preserve the original source; test and repair link spelling only in a documented derivative working copy.
+
+No FreeCAD app was found in `/Applications` or `~/Applications`, and neither `FreeCADCmd` nor `freecadcmd` was available on PATH. Consequently import, feature recompute, solid validity, mass properties and kinematics remain untested. Do not install software or report an application-level CAD check implicitly.
+
+### Initial geometry inventory and adaptation surfaces
+
+| Source | Observed source information | First adaptation / unresolved validation |
+|---|---|---|
+| `Assembly.FCStd` | Six linked subassemblies: Base, Art1, Art2, Art3, Art4, Art56. Saved placements included Art1 Z=79, Art2 Y=-68/Z=202, Art3 Z=443.5 and Art56 Z=556 in native FreeCAD length units. | These are stored component placements in one layout, **not verified joint centers, link lengths or reach**. Recompute and establish coordinate frames before deriving a robot description. |
+| `BaseBot.fcstd`, `BaseTop.fcstd`, `AssemblyBase.FCStd` | Native base feature history and attachment coordinate systems are present. | First mechanical adaptation: external removable metal mounting adapter. Measure actual existing mounting surfaces and fastener pattern after CAD import; do not invent a plate pattern from feature lengths. |
+| `BaseBoxBody.FCStd`, `BaseBoxCover.FCStd` | Separate native enclosure body and cover. | Controller tray, accessible connector/strain-relief arrangement and independent emergency-stop placement; preserve structural bearing support. |
+| `Art56Interface.fcstd`, `GripperTop.FCStd`, `GripperBot.FCStd` | Separate wrist/tool and gripper source, including active/passive arm and finger components. | Determine tool flange, jaw trajectories/parallelism and tool mass; prefer a reversible adapter or replaceable fingertips over changing wrist gears. |
+
+Specific native feature values were read, for example `GripperTop.Pad.Length=15` and `GripperBot.Pad.Length=19.8`. These are feature parameters rather than approved finished-part thicknesses, bearing fits or mounting dimensions. No manufacturing dimension is released from this XML inspection.
