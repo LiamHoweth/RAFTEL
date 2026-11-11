@@ -21,7 +21,15 @@ CONTRACT = json.loads(
 @pytest.fixture
 def probe(monkeypatch):
     monkeypatch.delenv("RAFTEL_RUN_THOR_ART1_PROBE", raising=False)
-    return runpy.run_path(str(PATH))
+    loaded = runpy.run_path(str(PATH))
+    # Synthetic subprocess guards must not depend on CI runner disk capacity.
+    # The explicit low-reserve test overrides this value to exercise rejection.
+    monkeypatch.setattr(
+        loaded["run_probe"].__globals__["shutil"],
+        "disk_usage",
+        lambda path: SimpleNamespace(free=64 * 1024**3),
+    )
+    return loaded
 
 
 def descriptor(probe, kind="circle"):
