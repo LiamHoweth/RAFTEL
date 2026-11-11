@@ -29,7 +29,7 @@ For an ideal20-tooth, 2 mm-pitch driving pulley and a constant effective elbow d
 r_elbow = 5.18 * (2*pi*R_p) / (20*2 mm)
 ```
 
-Using37 mm merely as an **illustrative** pitch radius gives about 30.106:1. It is not an extracted exact ratio: belt thickness, pitch line, wrap/clamp behavior, tension and possible shoulder/elbow coupling remain unresolved. Trace the actual belt centerline and fixing method in the assembly before using this for load allocation or motion calibration. The40 mm flange is not a substitute pitch radius. Do not reuse the shoulder's60/10 ratio for the elbow simply because both motors are PG5 units.
+Using37 mm merely as an **illustrative** pitch radius gives about 30.106:1. It is not an extracted exact ratio: belt thickness, pitch line, wrap/clamp behavior, tension and possible shoulder/elbow coupling remain unresolved. The [elbow mechanism study](thor-elbow-mechanism.md) now derives the conditional moving-carrier relation `phi=q2+s*(R_p/r_m)*q3` from source mounting and routing evidence. The [elbow load model](thor-elbow-loads.md) includes its shoulder reaction; physical signs, pitch radius and controller compensation remain open. Trace the actual belt centerline and fixing method before motion calibration. The40 mm flange is not a substitute pitch radius. Do not reuse the shoulder's60/10 ratio for the elbow simply because both motors are PG5 units.
 
 ## Keep differential coordinates separate from physical rotor coordinates
 
@@ -51,6 +51,8 @@ Its address values are nominal drive coordinates, not a measured motor-shaft ang
 ```
 
 The torque map is the transpose of the angle Jacobian, from virtual work. This is a **conditional mechanical hypothesis**, not a calibrated hardware mapping or a completed transmission proof. Confirm joint axes, signs, carrier references, belt routing, actual motor shaft coordinates and losses before adopting it. Never apply the nominal controller-coordinate torque map directly to a physical motor torque limit without that distinction.
+
+The [wrist membership study](thor-wrist-mechanism.md) expresses both side shafts about common native +Y and enforces the pure-fold consistency case. Its conditional signs must be reconciled with the opposed controller coordinates above before interpreting this hypothesis as physical rotor motion. The [COM trajectory evaluator](thor-wrist-model.md) supports those explicit alternatives without choosing a calibrated motor convention.
 
 The live [official firmware guide](http://thor.angel-lm.com/documentation/firmware/) publishes example step scales 44.5/270/270/265/20/250/250 and says they assume original hardware. Those figures are not independent proof of this pinned CAD's reduction or calibration; they must be reconciled with actual motor steps, microstepping, firmware revision and the reconstructed transmission.
 

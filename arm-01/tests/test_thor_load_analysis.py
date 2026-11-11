@@ -412,3 +412,98 @@ def test_material_comparison_explicitly_does_not_validate_structural_performance
     assert len(comparison["cases"]) == 3
     assert not comparison["actual_user_filament_brand_or_density_verified"]
     assert not comparison["printed_material_stiffness_creep_or_strength_validated"]
+
+
+def wrist_inputs():
+    import json
+
+    root = Path(__file__).parents[1]
+    inventory = json.loads((root / "hardware/cad/thor-mounted-geometry.json").read_text())
+    memberships = json.loads((root / "hardware/cad/thor-wrist-membership.json").read_text())
+    baseline = loads.build_thor_snapshot(inventory)
+    expanded = loads.expand_mass_assignments(baseline, memberships)
+    classes = loads.wrist_motion_classes(memberships, "bevel_sign_positive")
+    return baseline, expanded, classes, memberships
+
+
+def test_wrist_mass_expansion_conserves_full_ledger_and_manufacturer_mass():
+    baseline, expanded, _, _ = wrist_inputs()
+    assert len(expanded["bodies"]) == 515
+    assert len({b["instance_path"] for b in expanded["bodies"]}) == 515
+    assert sum(b["mass_kg"] for b in expanded["bodies"]) == pytest.approx(
+        sum(b["mass_kg"] for b in baseline["bodies"]), abs=1e-14
+    )
+    assert sum(
+        b["mass_kg"]
+        for b in expanded["bodies"]
+        if b["mass_assignment"]["category"].startswith("manufacturer_motor_mass_")
+    ) == pytest.approx(2.120)
+
+
+def test_wrist_expansion_rejects_duplicate_and_cross_class_asset_memberships():
+    baseline, _, _, memberships = wrist_inputs()
+    invalid = copy.deepcopy(memberships)
+    invalid["memberships"].append(invalid["memberships"][0])
+    with pytest.raises(ValueError, match="duplicate"):
+        loads.expand_mass_assignments(baseline, invalid)
+    consolidated = next(
+        a
+        for b in baseline["bodies"]
+        for a in b["mass_assignments"]
+        if a.get("geometry_leaf_count", 1) > 1
+    )
+    invalid = copy.deepcopy(memberships)
+    member = next(
+        row
+        for row in invalid["memberships"]
+        if row["instance_id"].startswith(consolidated["instance_path"] + "/")
+    )
+    member["motion_class"] = "roll_tool"
+    with pytest.raises(ValueError, match="multiple wrist motion classes"):
+        loads.expand_mass_assignments(baseline, invalid)
+
+
+def test_wrist_paths_preserve_zero_wrist_proximal_baseline_and_unknown_totals():
+    baseline, expanded, classes, _ = wrist_inputs()
+    angles = (0.2, 0.6, -0.3, 0.4, 0, 0)
+    original = loads.analyze(loads.articulate_snapshot(baseline, angles))
+    traced = loads.analyze(loads.articulate_wrist_snapshot(expanded, angles, classes))
+    for a, b in zip(original["scenarios"], traced["scenarios"], strict=True):
+        for old, new in zip(a["joints"][:4], b["joints"][:4], strict=True):
+            assert new["arm_gravity_torque_nm"] == pytest.approx(old["arm_gravity_torque_nm"])
+        for row in b["joints"][4:]:
+            assert row["arm_gravity_torque_nm"] is None
+            assert row["required_ideal_holding_torque_nm"] is None
+            assert math.isfinite(row["conditional_modeled_wrist_gravity_contribution_nm"])
+
+
+@pytest.mark.parametrize("scenario", ["bevel_sign_positive", "bevel_sign_negative"])
+def test_wrist_and_proximal_moments_match_full_COM_potential_gradient(scenario):
+    _, expanded, _, memberships = wrist_inputs()
+    classes = loads.wrist_motion_classes(memberships, scenario)
+    angles = (0.2, 0.6, -0.3, 0.4, -0.5, 0.7)
+    result = loads.analyze(loads.articulate_wrist_snapshot(expanded, angles, classes), (0,))
+    epsilon = 1e-6
+
+    def potential(coordinates):
+        posed = loads.articulate_wrist_snapshot(expanded, tuple(coordinates), classes)
+        return math.fsum(b["mass_kg"] * loads.GRAVITY_M_S2 * b["com_m"][2] for b in posed["bodies"])
+
+    for index, row in enumerate(result["scenarios"][0]["joints"]):
+        plus, minus = list(angles), list(angles)
+        plus[index] += epsilon
+        minus[index] -= epsilon
+        gradient = (potential(plus) - potential(minus)) / (2 * epsilon)
+        external = (
+            row["arm_gravity_torque_nm"]
+            if index < 4
+            else row["conditional_modeled_wrist_gravity_contribution_nm"]
+        )
+        assert external == pytest.approx(-gradient, abs=1e-8)
+
+
+def test_carried_roll_payload_point_follows_fold_and_not_fixed_world_roll():
+    _, expanded, classes, _ = wrist_inputs()
+    pose = loads.articulate_wrist_snapshot(expanded, (0, 0, 0, 0, math.pi / 2, 0.7), classes)
+    # Original axis-centred payload is invariant under its roll, then folds about +ROS X.
+    assert pose["payload_position_m"] == pytest.approx([0, -(0.7025242557054092 - 0.556), 0.556])

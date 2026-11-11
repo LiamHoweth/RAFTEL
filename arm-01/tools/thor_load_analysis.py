@@ -300,11 +300,26 @@ def analyze(data: dict, payloads_kg: tuple[float, ...] = (0, 0.1, 0.2)) -> dict:
     scenarios = []
     for payload_kg in payloads_kg:
         rows = []
-        for joint, raw_joint in zip(joints, data["joints"], strict=True):
+        for index, (joint, raw_joint) in enumerate(zip(joints, data["joints"], strict=True)):
             membership_resolved = raw_joint.get("body_membership_resolved", True)
             if type(membership_resolved) is not bool:
                 raise ValueError("body_membership_resolved must be boolean")
             arm_torque = gravity_torque_nm(joint, bodies) if membership_resolved else None
+            modeled_wrist_contribution = None
+            if index >= 4 and "wrist_com_jacobians" in data:
+                jacobians = data["wrist_com_jacobians"]
+                if set(jacobians) != {body.identifier for body in bodies}:
+                    raise ValueError("wrist Jacobians must cover each modeled body exactly once")
+                modeled_wrist_contribution = finite_number(
+                    math.fsum(
+                        -body.mass_kg
+                        * GRAVITY_M_S2
+                        * vector(jacobians[body.identifier][index - 4])[2]
+                        for body in bodies
+                    )
+                )
+                if membership_resolved:
+                    arm_torque = modeled_wrist_contribution
             payload_joint = Joint(joint.name, joint.origin_m, joint.axis_unit, ("__payload__",))
             payload_torque = gravity_torque_nm(
                 payload_joint, (Body("__payload__", payload_kg, payload_position),)
@@ -321,6 +336,10 @@ def analyze(data: dict, payloads_kg: tuple[float, ...] = (0, 0.1, 0.2)) -> dict:
                     "body_membership_resolved": membership_resolved,
                 }
             )
+            if modeled_wrist_contribution is not None:
+                rows[-1]["conditional_modeled_wrist_gravity_contribution_nm"] = (
+                    modeled_wrist_contribution
+                )
         scenarios.append(
             {
                 "payload_kg": payload_kg,
@@ -660,6 +679,122 @@ def build_thor_snapshot(
     return snapshot
 
 
+def expand_mass_assignments(snapshot: dict, memberships: dict) -> dict:
+    """Expose each mass record without splitting or duplicating purchased assets.
+
+    An asset represented by multiple geometry leaves may be consolidated only
+    if every leaf has the same wrist motion class. Membership is evidence input,
+    never inferred from a part name here.
+    """
+    validate_snapshot(snapshot)
+    rows = memberships["memberships"]
+    by_path = {row["instance_id"]: row["motion_class"] for row in rows}
+    if len(by_path) != len(rows):
+        raise ValueError("duplicate wrist membership instance")
+    result = copy.deepcopy(snapshot)
+    result["bodies"] = []
+    used = set()
+    expanded = {}
+    for group in snapshot["bodies"]:
+        expanded[group["id"]] = []
+        for assignment in group["mass_assignments"]:
+            path = assignment["instance_path"]
+            leaves = {key for key in by_path if key == path or key.startswith(path + "/")}
+            if not leaves or leaves & used:
+                raise ValueError("missing or multiply assigned wrist membership leaves")
+            if len(leaves) != assignment.get("geometry_leaf_count", 1):
+                raise ValueError("mass record geometry leaf count disagrees with membership")
+            classes = {by_path[key] for key in leaves}
+            if len(classes) != 1:
+                raise ValueError("consolidated mass asset spans multiple wrist motion classes")
+            used.update(leaves)
+            identifier = path
+            expanded[group["id"]].append(identifier)
+            result["bodies"].append(
+                {
+                    "id": identifier,
+                    "instance_path": path,
+                    "mass_kg": assignment["mass_kg"],
+                    "com_m": assignment["com_m"],
+                    "mass_kind": "assumption",
+                    "com_kind": group["com_kind"],
+                    "evidence": group["evidence"],
+                    "mass_assignment": copy.deepcopy(assignment),
+                    "wrist_motion_class": classes.pop(),
+                }
+            )
+    if used != set(by_path):
+        raise ValueError("wrist membership contains leaves absent from mass ledger")
+    for joint in result["joints"]:
+        joint["downstream_body_ids"] = [
+            identifier for group in joint["downstream_body_ids"] for identifier in expanded[group]
+        ]
+    validate_snapshot(result)
+    return result
+
+
+def articulate_wrist_snapshot(
+    snapshot: dict, angles_rad: tuple[float, ...], motion_classes: dict
+) -> dict:
+    """Evaluate explicit wrist COM trajectories then carry them through q1–q4.
+
+    Class steps use the snapshot's declared zero frame. Unresolved membership
+    flags stay unresolved: this can report a conditional COM contribution while
+    withholding full joint holding torque for omitted internal moving masses.
+    """
+    from raftel_arm01.kinematics.thor_wrist import MotionStep, point_state
+
+    validate_snapshot(snapshot)
+    if len(angles_rad) != 6:
+        raise ValueError("exactly six joint angles required")
+    angles = tuple(finite_number(angle) for angle in angles_rad)
+    local = copy.deepcopy(snapshot)
+    derivatives = {}
+
+    def evaluate(point: Vector, name: str):
+        raw = motion_classes[name]
+        if not isinstance(raw.get("evidence"), str) or not raw["evidence"].strip():
+            raise ValueError("every wrist motion class requires evidence, including fixed classes")
+        steps = tuple(MotionStep(**step) for step in raw["steps"])
+        return point_state(point, angles[4], angles[5], steps)
+
+    for body in local["bodies"]:
+        state = evaluate(vector(body["com_m"]), body["wrist_motion_class"])
+        body["com_m"] = list(state.position_m)
+        derivatives[body["id"]] = [state.dq5_m_rad, state.dq6_m_rad]
+    payload = evaluate(vector(local["payload_position_m"]), "roll_tool")
+    local["payload_position_m"] = list(payload.position_m)
+    proximal = articulate_snapshot(local, (*angles[:4], 0.0, 0.0))
+    # q1–q4 rotate the wrist velocities as vectors, without an origin offset.
+    origins = [vector(joint["origin_m"]) for joint in snapshot["joints"]]
+    axes = [vector(joint["axis_unit"]) for joint in snapshot["joints"]]
+    for index, angle in enumerate(angles[:4]):
+        origin, axis = origins[index], axes[index]
+        carried = set(snapshot["joints"][index]["downstream_body_ids"])
+        for identifier in carried:
+            derivatives[identifier] = [
+                _rotate_vector(value, axis, angle) for value in derivatives[identifier]
+            ]
+        for later in range(index + 1, 6):
+            relative = vector(tuple(origins[later][i] - origin[i] for i in range(3)))
+            rotated = _rotate_vector(relative, axis, angle)
+            origins[later] = vector(tuple(origin[i] + rotated[i] for i in range(3)))
+            axes[later] = _rotate_vector(axes[later], axis, angle)
+    # Roll's carried axis changes with fold; an origin anywhere on the line is equivalent.
+    fold_origin, fold_axis = origins[4], axes[4]
+    relative = vector(tuple(origins[5][i] - fold_origin[i] for i in range(3)))
+    rotated = _rotate_vector(relative, fold_axis, angles[4])
+    proximal["joints"][5]["origin_m"] = [fold_origin[i] + rotated[i] for i in range(3)]
+    proximal["joints"][5]["axis_unit"] = list(_rotate_vector(axes[5], fold_axis, angles[4]))
+    proximal["wrist_com_jacobians"] = derivatives
+    proximal["pose"] = {
+        "joint_angles_rad_from_declared_zero": list(angles),
+        "method": "evidence-declared wrist COM paths with analytical Jacobians; q1–q4 rigid carry",
+        "physical_zero_or_limits_validated": False,
+    }
+    return proximal
+
+
 def conditional_wrist_bounds(snapshot: dict) -> dict:
     """Upper triangle bounds on *modeled* Art56 contributions at q5=q6=0.
 
@@ -785,6 +920,78 @@ def material_comparison_report(inventory: dict) -> dict:
     }
 
 
+def wrist_motion_classes(memberships: dict, scenario_name: str) -> dict:
+    """Convert an explicitly named native-frame conditional scenario to ROS."""
+    if memberships["coordinate_frame"] != "native_CAD_world_m":
+        raise ValueError("wrist membership requires native_CAD_world_m frame")
+    classes = copy.deepcopy(memberships["motion_classes"])
+    scenario = memberships["motion_scenarios"][scenario_name]
+    for name, changes in scenario["motion_class_overrides"].items():
+        classes[name].update(copy.deepcopy(changes))
+    for declaration in classes.values():
+        for step in declaration["steps"]:
+            for field in ("origin_m", "axis_unit"):
+                x, y, z = vector(step[field])
+                step[field] = [y, -x, z]
+    return classes
+
+
+def wrist_load_study(inventory: dict, memberships: dict) -> dict:
+    """Traceable reference-material COM-motion study, retaining unresolved totals."""
+    poses = {
+        "upright": (0.0,) * 6,
+        "shoulder_horizontal": (0, math.pi / 2, 0, 0, 0, 0),
+        "shoulder_horizontal_fold45_roll30": (0, math.pi / 2, 0, 0, math.pi / 4, math.pi / 6),
+        "mixed_pose_fold_minus30_roll60": (0.2, 0.6, -0.3, 0.4, -math.pi / 6, math.pi / 3),
+    }
+    cases = []
+    for family in MATERIAL_REFERENCES:
+        zero = expand_mass_assignments(build_thor_snapshot(inventory, material=family), memberships)
+        for scenario_name, scenario in memberships["motion_scenarios"].items():
+            classes = wrist_motion_classes(memberships, scenario_name)
+            results = {}
+            for pose_name, angles in poses.items():
+                posed = articulate_wrist_snapshot(zero, angles, classes)
+                analysis = analyze(posed)
+                results[pose_name] = {
+                    "joint_angles_rad": list(angles),
+                    "modeled_center_of_mass_m": analysis["modeled_center_of_mass_m"],
+                    "payload_cases": analysis["scenarios"],
+                }
+            cases.append(
+                {
+                    "material_reference": material_reference(family),
+                    "printed_effective_whole_part_solid_fraction": 0.5,
+                    "scenario_name": scenario_name,
+                    "side_rotor_sign_s": scenario["side_rotor_sign_s"],
+                    "physical_handedness_verified": False,
+                    "modeled_mass_kg": math.fsum(body["mass_kg"] for body in zero["bodies"]),
+                    "modeled_mass_record_count": len(zero["bodies"]),
+                    "mass_assignment_summary": zero["mass_assignment_summary"],
+                    "poses": results,
+                }
+            )
+    return {
+        "schema_version": 1,
+        "validation_class": "conditional_CAD_COM_motion_not_full_wrist_load_or_actuator_validation",
+        "coordinate_frame": zero["coordinate_frame"],
+        "membership_canonical_sha256": hashlib.sha256(
+            json.dumps(memberships, sort_keys=True, separators=(",", ":")).encode()
+        ).hexdigest(),
+        "membership_geometry_source_sha256": memberships["source_geometry_sha256"],
+        "membership_counts": memberships["counts"],
+        "sources": [*zero["sources"], "hardware/cad/thor-wrist-membership.json"],
+        "unresolved": memberships["unresolved"],
+        "full_wrist_arm_and_holding_torques_remain_null": True,
+        "contribution_scope": (
+            "Declared composite COM paths only. Upstream motor internals and traveling belts "
+            "are not decomposed; bearing COM paths do not model race inertia; jaws frozen."
+        ),
+        "pose_feasibility_or_collision_limits_validated": False,
+        "cases": cases,
+    }
+
+
 def nominal_payload_increment_report() -> dict:
     """Supplemental source-model payload increments with all arm mass excluded."""
     from raftel_arm01.kinematics import thor_model
@@ -848,6 +1055,9 @@ def main() -> int:
     parser.add_argument("--material-density-kg-m3", type=float)
     parser.add_argument("--material-density-source")
     parser.add_argument("--compare-materials", action="store_true")
+    parser.add_argument(
+        "--wrist-membership", type=Path, help="Explicit conditional wrist motion ledger"
+    )
     parser.add_argument("--output", type=Path, help="New JSON report path; no overwriting")
     args = parser.parse_args()
     try:
@@ -865,18 +1075,31 @@ def main() -> int:
             raise ValueError("material options require --cad-inventory")
         if args.compare_materials and material_override:
             raise ValueError("reference comparison cannot combine material overrides")
+        if args.wrist_membership and (
+            not args.cad_inventory or args.compare_materials or material_override
+        ):
+            raise ValueError(
+                "--wrist-membership requires unmodified --cad-inventory reference cases"
+            )
         if args.cad_inventory:
             inventory = json.loads(args.cad_inventory.read_text())
-            report = (
-                material_comparison_report(inventory)
-                if args.compare_materials
-                else cad_load_study(
-                    inventory,
-                    args.material,
-                    args.material_density_kg_m3,
-                    args.material_density_source,
+            if args.wrist_membership:
+                membership = json.loads(args.wrist_membership.read_text())
+                digest = hashlib.sha256(args.cad_inventory.read_bytes()).hexdigest()
+                if digest != membership["source_geometry_sha256"]:
+                    raise ValueError("wrist membership geometry digest does not match inventory")
+                report = wrist_load_study(inventory, membership)
+            else:
+                report = (
+                    material_comparison_report(inventory)
+                    if args.compare_materials
+                    else cad_load_study(
+                        inventory,
+                        args.material,
+                        args.material_density_kg_m3,
+                        args.material_density_source,
+                    )
                 )
-            )
         elif args.nominal_payload_increments:
             report = nominal_payload_increment_report()
         else:

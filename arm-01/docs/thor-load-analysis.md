@@ -65,6 +65,24 @@ python tools/thor_load_analysis.py --cad-inventory hardware/cad/thor-mounted-geo
 
 Lower modeled mass does not establish a better structural material. Stiffness, creep under sustained load, layer orientation, bearing/shaft fits, thermal exposure and shrinkage/warping need material-specific coupons, fit checks and loaded tests. Material availability does not approve the mount, motor selection, fabrication or operation.
 
+## Conditional wrist COM trajectories
+
+The original snapshot, load study and material comparison remain unchanged baselines. A [separate wrist report](../hardware/cad/thor-wrist-load-study.json) now evaluates the traced [516-leaf membership ledger](../hardware/cad/thor-wrist-membership.json), its [mechanism evidence](thor-wrist-mechanism.md) and the [COM Jacobian model](thor-wrist-model.md). The ledger distinguishes 47 tool/roll leaves, seven fold-carrier leaves, ten side-rotor leaves, two bearing COM approximations and 450 upstream leaves. The same 515 mass records and seven motor masses are conserved; a purchased asset spanning multiple motion classes is rejected rather than arbitrarily divided.
+
+The tool chain folds then rolls about the carried roll axis. Side rotors spin about their own common fold-axis line with declared angles `q5 ± 2*q6`; they do not follow a simple downstream rigid-body set. The report evaluates both unresolved bevel-handedness alternatives at four poses, including nonzero fold/roll, for all three reference materials at 50% whole-part fraction. Each final COM is carried through q1–q4 before evaluating proximal moments. Wrist contributions use `external generalized gravity torque = sum(m_i*g · dCOM_i/dq)`; holding has the opposite sign.
+
+These outputs are **conditional modeled COM contributions**, not complete wrist holding demands. Art4 motor internals and traveling belts remain undecomposed, bearing race motion/inertia is not represented, jaws are frozen, and physical signs/limits are uncalibrated. Full q5/q6 arm and holding torques therefore remain **null**, including in the new report. The new contribution field must not be substituted for those null totals.
+
+For an illustrative PLA pose with q2=90°, q5=45°, q6=30° and other coordinates zero, the two sign alternatives yield modeled q5 gravity contributions about +0.08316/+0.08306 N·m and q6 contributions about −0.007392/−0.007235 N·m. These are arm COM contributions only; payload moments remain separate. The same model with 200 g payload gives shoulder/elbow holding magnitudes about 5.696/2.210 N·m. These pose-specific conditional values do not qualify the arm or a motor. Material density sources are carried into every case; actual filament properties remain unknown.
+
+```sh
+python tools/thor_load_analysis.py --cad-inventory hardware/cad/thor-mounted-geometry.json --wrist-membership hardware/cad/thor-wrist-membership.json --output /path/to/new-wrist-load-study.json
+```
+
+The CLI checks the inventory file SHA-256 against the membership's source digest. The report records canonical membership and inventory hashes. Tests conserve mass and manufacturer motor totals, reject duplicate/mixed-class assignments, preserve the zero-wrist proximal baseline and compare all six generalized COM moments against finite differences of potential energy for both handedness branches.
+
+The [separate elbow transmission analysis](thor-elbow-loads.md) consumes the unchanged baseline q2/q3 loads and explicitly maps the remote motor's carrier coupling into shoulder reaction and shaft effort. Its [mechanism evidence](thor-elbow-mechanism.md) keeps the smooth-drum pitch radius, routing sign and load-sharing assumptions visible. A source controller channel effort is not automatically a physical motor torque.
+
 ## Installed mass belongs to the carrying link
 
 All three geared-motor installed links occur in `AssemblyArt1::Model`, upstream of the shoulder pitch coordinate. Thor remotely transmits elbow motion; do not place an elbow motor at the elbow simply because it drives that joint. `AssemblyArt3` contains one installed 34 mm stepper, and `AssemblyArt4` contains two. Motor roles and carried mass are different concepts.
