@@ -1,0 +1,4887 @@
+{
+  "schema_version": 1,
+  "evidence_class": "pinned_zip_xml_source_inspection_only",
+  "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+  "source_sha256": "8afa16c8ff3adebd87e48b67dfb20d3224402bd517010dc112950a28f219690a",
+  "document_xml_sha256": "9d1d8104837d8c282c93cf28ff3b8827d7d1e2f3a1a02129cec851d3c979a996",
+  "source_program_version": "0.19R24276 (Git)",
+  "source_unchanged": true,
+  "body_tip": "Pocket018",
+  "ordered_body_members": [
+    "Sketch",
+    "Pad",
+    "Sketch001",
+    "Pad001",
+    "DatumPlane",
+    "Sketch002",
+    "Groove",
+    "Thickness",
+    "Sketch003",
+    "Pad002",
+    "Sketch004",
+    "Pocket",
+    "DatumPlane001",
+    "Sketch005",
+    "Pocket001",
+    "MultiTransform",
+    "Mirrored",
+    "Mirrored001",
+    "DatumPlane002",
+    "Sketch006",
+    "Revolution",
+    "Sketch007",
+    "Pocket002",
+    "Sketch008",
+    "Pocket003",
+    "Sketch009",
+    "Pocket004",
+    "Sketch010",
+    "Pocket005",
+    "Sketch011",
+    "Pocket006",
+    "Sketch012",
+    "Pocket007",
+    "Sketch013",
+    "Pocket008",
+    "Sketch014",
+    "Pocket009",
+    "Sketch015",
+    "Pocket010",
+    "Sketch016",
+    "Pocket011",
+    "Sketch017",
+    "Pocket012",
+    "Fillet",
+    "Sketch018",
+    "Pocket013",
+    "Sketch019",
+    "Pocket014",
+    "LCS_Motor2A",
+    "LCS_Motor2V",
+    "LCS_Motor3",
+    "LCS_BearingFix",
+    "LCS_Optodisk",
+    "HoleAxis_1",
+    "HoleAxis_2",
+    "HoleAxis_3",
+    "HoleAxis_4",
+    "LCS_Bot",
+    "Sketch020",
+    "Pocket015",
+    "LCS_Bearing",
+    "LCS_Art2BodyCover1",
+    "HoleAxis_5",
+    "HoleAxis_6",
+    "HoleAxis_7",
+    "HoleAxis_8",
+    "HoleAxis_9",
+    "HoleAxis_10",
+    "HoleAxis_11",
+    "HoleAxis_12",
+    "Sketch021",
+    "Pocket016",
+    "HoleAxis_13",
+    "HoleAxis_14",
+    "HoleAxis_15",
+    "HoleAxis_16",
+    "Sketch022",
+    "Pocket017",
+    "Sketch023",
+    "Pocket018"
+  ],
+  "assembly_target_types": {
+    "Body": "PartDesign::Body",
+    "HoleAxis_1": "PartDesign::Line",
+    "HoleAxis_10": "PartDesign::Line",
+    "HoleAxis_11": "PartDesign::Line",
+    "HoleAxis_12": "PartDesign::Line",
+    "HoleAxis_13": "PartDesign::Line",
+    "HoleAxis_14": "PartDesign::Line",
+    "HoleAxis_15": "PartDesign::Line",
+    "HoleAxis_16": "PartDesign::Line",
+    "HoleAxis_2": "PartDesign::Line",
+    "HoleAxis_3": "PartDesign::Line",
+    "HoleAxis_4": "PartDesign::Line",
+    "HoleAxis_5": "PartDesign::Line",
+    "HoleAxis_6": "PartDesign::Line",
+    "HoleAxis_7": "PartDesign::Line",
+    "HoleAxis_8": "PartDesign::Line",
+    "HoleAxis_9": "PartDesign::Line",
+    "LCS_Art2BodyCover1": "PartDesign::CoordinateSystem",
+    "LCS_Bearing": "PartDesign::CoordinateSystem",
+    "LCS_BearingFix": "PartDesign::CoordinateSystem",
+    "LCS_Bot": "PartDesign::CoordinateSystem",
+    "LCS_Motor2A": "PartDesign::CoordinateSystem",
+    "LCS_Motor2V": "PartDesign::CoordinateSystem",
+    "LCS_Motor3": "PartDesign::CoordinateSystem",
+    "LCS_Optodisk": "PartDesign::CoordinateSystem"
+  },
+  "saved_circle_frames": [
+    {
+      "sketch": "Sketch004",
+      "radius_mm": 1.7,
+      "center_in_sketch_mm": [
+        31.500000000000004,
+        8.0,
+        0.0
+      ],
+      "center_in_native_mm": [
+        -31.500000000000007,
+        -54.99999999999999,
+        8.0
+      ],
+      "normal_in_native": [
+        0.0,
+        1.0,
+        -2.220446049250313e-16
+      ],
+      "interpretation": "saved sketch geometry transformed by saved placement; not a rebuilt cut"
+    },
+    {
+      "sketch": "Sketch005",
+      "radius_mm": 2.95,
+      "center_in_sketch_mm": [
+        31.500000000000004,
+        8.0,
+        0.0
+      ],
+      "center_in_native_mm": [
+        -31.500000000000007,
+        -75.0,
+        8.000000000000004
+      ],
+      "normal_in_native": [
+        0.0,
+        1.0,
+        -2.220446049250313e-16
+      ],
+      "interpretation": "saved sketch geometry transformed by saved placement; not a rebuilt cut"
+    }
+  ],
+  "spreadsheet_cells": [
+    {
+      "address": "A2",
+      "content": "M3BoltBodyRadius"
+    },
+    {
+      "address": "B2",
+      "content": "1.7",
+      "alias": "M3BoltBodyRadius"
+    },
+    {
+      "address": "A3",
+      "content": "M3BoltHeadRadius"
+    },
+    {
+      "address": "B3",
+      "content": "2.95",
+      "alias": "M3BoltHeadRadius"
+    },
+    {
+      "address": "A4",
+      "content": "M3NutCircumradius"
+    },
+    {
+      "address": "B4",
+      "content": "3.35",
+      "alias": "M3NutCircumradius"
+    },
+    {
+      "address": "A5",
+      "content": "M3NutThickness"
+    },
+    {
+      "address": "B5",
+      "content": "3",
+      "alias": "M3NutThickness"
+    },
+    {
+      "address": "A6",
+      "content": "Bearing655ZZBodyRadius"
+    },
+    {
+      "address": "B6",
+      "content": "8.199999999999999",
+      "alias": "Bearing655ZZBodyRadius"
+    }
+  ],
+  "members": [
+    {
+      "name": "Sketch",
+      "type": "Sketcher::SketchObject",
+      "saved_brep": {
+        "member": "PartShape1.brp",
+        "bytes": 7715,
+        "sha256": "dad31f610af08f01fd8786e6741a4fe61db2c6e8266a38d34469753c65055a2c"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "Constraints": "8775482aeee1081624b5a90309f10cfdd58bce48166aa6f72402f3df31a66287",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "ExternalGeometry": "51b3b6516754c6ca80ccf421fcd80bdd704329cb86daf69ef8425a2546011bdb",
+        "Geometry": "116dddeeb4f7e76d5b0594ff57a7ec915a88bc2fb70584c41a6dbe1172c61839",
+        "MapMode": "54cb2e2f7019150d8dfc18cd0d9b5050e3ef6530f1e2c41bb069dcc5be3ea092",
+        "Placement": "3618722614e1cb1d962cf6e8dacb80004b0d8a5a2da0dde54a6e81365102d54c",
+        "Support": "b30c35ae9ad53f2ec6a558a40e031a1e89cdfee26b7aa86cb568e9c1f1752f50"
+      },
+      "saved_properties": {
+        "AttachmentOffset": {
+          "tag": "Property",
+          "attributes": {
+            "name": "AttachmentOffset",
+            "type": "App::PropertyPlacement"
+          },
+          "children": [
+            {
+              "tag": "PropertyPlacement",
+              "attributes": {
+                "A": "0.0000000000000000",
+                "Ox": "0.0000000000000000",
+                "Oy": "0.0000000000000000",
+                "Oz": "1.0000000000000000",
+                "Px": "0.0000000000000000",
+                "Py": "0.0000000000000000",
+                "Pz": "0.0000000000000000",
+                "Q0": "0.0000000000000000",
+                "Q1": "0.0000000000000000",
+                "Q2": "0.0000000000000000",
+                "Q3": "1.0000000000000000"
+              }
+            }
+          ]
+        },
+        "ExpressionEngine": {
+          "tag": "Property",
+          "attributes": {
+            "name": "ExpressionEngine",
+            "status": "67108864",
+            "type": "App::PropertyExpressionEngine"
+          },
+          "children": [
+            {
+              "tag": "ExpressionEngine",
+              "attributes": {
+                "count": "0"
+              }
+            }
+          ]
+        },
+        "ExternalGeometry": {
+          "tag": "Property",
+          "attributes": {
+            "name": "ExternalGeometry",
+            "type": "App::PropertyLinkSubList"
+          },
+          "children": [
+            {
+              "tag": "LinkSubList",
+              "attributes": {
+                "count": "0"
+              }
+            }
+          ]
+        },
+        "MapMode": {
+          "tag": "Property",
+          "attributes": {
+            "name": "MapMode",
+            "type": "App::PropertyEnumeration"
+          },
+          "children": [
+            {
+              "tag": "Integer",
+              "attributes": {
+                "value": "5"
+              }
+            }
+          ]
+        },
+        "Support": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Support",
+            "type": "App::PropertyLinkSubList"
+          },
+          "children": [
+            {
+              "tag": "LinkSubList",
+              "attributes": {
+                "count": "1"
+              },
+              "children": [
+                {
+                  "tag": "Link",
+                  "attributes": {
+                    "obj": "XY_Plane",
+                    "sub": ""
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "placement_mm_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "constraints": [
+        {
+          "Name": "",
+          "Type": "1",
+          "Value": "0.0000000000000000",
+          "First": "0",
+          "FirstPos": "3",
+          "Second": "-1",
+          "SecondPos": "1",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "10.0000000000000000",
+          "LabelPosition": "0.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        },
+        {
+          "Name": "",
+          "Type": "11",
+          "Value": "75.0000000000000000",
+          "First": "0",
+          "FirstPos": "0",
+          "Second": "-2000",
+          "SecondPos": "0",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "6.6666665077209473",
+          "LabelPosition": "10.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        }
+      ],
+      "geometry": [
+        {
+          "tag": "Geometry",
+          "attributes": {
+            "type": "Part::GeomCircle"
+          },
+          "children": [
+            {
+              "tag": "GeoExtensions",
+              "attributes": {
+                "count": "1"
+              },
+              "children": [
+                {
+                  "tag": "GeoExtension",
+                  "attributes": {
+                    "geometryModeFlags": "00000000000000000000000000000000",
+                    "internalGeometryType": "0",
+                    "type": "Sketcher::SketchGeometryExtension"
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "Circle",
+              "attributes": {
+                "AngleXU": "-0.0000000000000000",
+                "CenterX": "0.0000000000000000",
+                "CenterY": "0.0000000000000000",
+                "CenterZ": "0.0000000000000000",
+                "NormalX": "0.0000000000000000",
+                "NormalY": "0.0000000000000000",
+                "NormalZ": "1.0000000000000000",
+                "Radius": "75.0000000000000000"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pad",
+      "type": "PartDesign::Pad",
+      "saved_brep": {
+        "member": "PartShape3.brp",
+        "bytes": 8405,
+        "sha256": "fb85864c806b1ff94c025a7921f633b52fa505b2842791ba72fc48fb22e17f43"
+      },
+      "property_fingerprints": {
+        "BaseFeature": "e7faa41ed4a82b8cff32a084f96f249d6c11204c26e8c2af9b840209f7489ed4",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "a300ba19c64cddf0b68384a1daf428ba3fa87e02b24380904f30b7ece006cc37",
+        "Length2": "b0d77845d52ecd7c9dac2901cb1af63c837cd47bba53e9babc33e6e39a8d3949",
+        "Midplane": "ab7e6548565705d180f93afd7e7088ec79bb6aa16c15dc1deec3614ee359d380",
+        "Placement": "6c0f6633eef40e7b9a52a465276a78eb066aa9a3b1cb0171a4bd80fb02126a2f",
+        "Profile": "fc3d90c3fd680075b8968bfcec2e338db228d8b5784d69cadbce0308e6eec614",
+        "Reversed": "0fcdaba67aa6bfbce7a668700bdab3426ab9b9fd8aeee40ffbb740d9118a3686",
+        "Type": "13ddb85b03bdaab539af105f1be5e1285813e3c221e913bd4c59dfd5ddf8e222"
+      },
+      "saved_properties": {
+        "BaseFeature": {
+          "tag": "Property",
+          "attributes": {
+            "name": "BaseFeature",
+            "status": "8",
+            "type": "App::PropertyLink"
+          },
+          "children": [
+            {
+              "tag": "Link",
+              "attributes": {
+                "value": ""
+              }
+            }
+          ]
+        },
+        "ExpressionEngine": {
+          "tag": "Property",
+          "attributes": {
+            "name": "ExpressionEngine",
+            "status": "67108864",
+            "type": "App::PropertyExpressionEngine"
+          },
+          "children": [
+            {
+              "tag": "ExpressionEngine",
+              "attributes": {
+                "count": "0"
+              }
+            }
+          ]
+        },
+        "Length": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Length",
+            "type": "App::PropertyLength"
+          },
+          "children": [
+            {
+              "tag": "Float",
+              "attributes": {
+                "value": "30.0000000000000000"
+              }
+            }
+          ]
+        },
+        "Length2": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Length2",
+            "type": "App::PropertyLength"
+          },
+          "children": [
+            {
+              "tag": "Float",
+              "attributes": {
+                "value": "100.0000000000000000"
+              }
+            }
+          ]
+        },
+        "Midplane": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Midplane",
+            "type": "App::PropertyBool"
+          },
+          "children": [
+            {
+              "tag": "Bool",
+              "attributes": {
+                "value": "false"
+              }
+            }
+          ]
+        },
+        "Profile": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Profile",
+            "type": "App::PropertyLinkSub"
+          },
+          "children": [
+            {
+              "tag": "LinkSub",
+              "attributes": {
+                "count": "0",
+                "value": "Sketch"
+              }
+            }
+          ]
+        },
+        "Reversed": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Reversed",
+            "type": "App::PropertyBool"
+          },
+          "children": [
+            {
+              "tag": "Bool",
+              "attributes": {
+                "value": "false"
+              }
+            }
+          ]
+        },
+        "Type": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Type",
+            "type": "App::PropertyEnumeration"
+          },
+          "children": [
+            {
+              "tag": "Integer",
+              "attributes": {
+                "value": "0"
+              }
+            }
+          ]
+        }
+      },
+      "placement_mm_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "constraints": [],
+      "geometry": []
+    },
+    {
+      "name": "Sketch001",
+      "type": "Sketcher::SketchObject",
+      "saved_brep": {
+        "member": "PartShape4.brp",
+        "bytes": 14914,
+        "sha256": "228eed1d19b510c0df89967fbe5dce25ae78ac288dad03fc8cef2d9223fd22b0"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "Constraints": "de2faeb2147f303fd0414408f9b470db47ca9a4cd8bf46cfb75c79e48761747f",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "ExternalGeometry": "51b3b6516754c6ca80ccf421fcd80bdd704329cb86daf69ef8425a2546011bdb",
+        "Geometry": "6c885df7dff0e50f63746dc6d1ca446704874d00460a2a6e85135162010454ac",
+        "MapMode": "54cb2e2f7019150d8dfc18cd0d9b5050e3ef6530f1e2c41bb069dcc5be3ea092",
+        "Placement": "047963bb09eb8f54f5a92ae5542e522ec3f88b63a4e81a41974d690b0b979b9a",
+        "Support": "2a356b27af38b7e650bd629d6bc786d111038b64e16a0e329470f1725197bdef"
+      },
+      "saved_properties": {
+        "AttachmentOffset": {
+          "tag": "Property",
+          "attributes": {
+            "name": "AttachmentOffset",
+            "type": "App::PropertyPlacement"
+          },
+          "children": [
+            {
+              "tag": "PropertyPlacement",
+              "attributes": {
+                "A": "0.0000000000000000",
+                "Ox": "0.0000000000000000",
+                "Oy": "0.0000000000000000",
+                "Oz": "1.0000000000000000",
+                "Px": "0.0000000000000000",
+                "Py": "0.0000000000000000",
+                "Pz": "0.0000000000000000",
+                "Q0": "0.0000000000000000",
+                "Q1": "0.0000000000000000",
+                "Q2": "0.0000000000000000",
+                "Q3": "1.0000000000000000"
+              }
+            }
+          ]
+        },
+        "ExpressionEngine": {
+          "tag": "Property",
+          "attributes": {
+            "name": "ExpressionEngine",
+            "status": "67108864",
+            "type": "App::PropertyExpressionEngine"
+          },
+          "children": [
+            {
+              "tag": "ExpressionEngine",
+              "attributes": {
+                "count": "0"
+              }
+            }
+          ]
+        },
+        "ExternalGeometry": {
+          "tag": "Property",
+          "attributes": {
+            "name": "ExternalGeometry",
+            "type": "App::PropertyLinkSubList"
+          },
+          "children": [
+            {
+              "tag": "LinkSubList",
+              "attributes": {
+                "count": "0"
+              }
+            }
+          ]
+        },
+        "MapMode": {
+          "tag": "Property",
+          "attributes": {
+            "name": "MapMode",
+            "type": "App::PropertyEnumeration"
+          },
+          "children": [
+            {
+              "tag": "Integer",
+              "attributes": {
+                "value": "5"
+              }
+            }
+          ]
+        },
+        "Support": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Support",
+            "type": "App::PropertyLinkSubList"
+          },
+          "children": [
+            {
+              "tag": "LinkSubList",
+              "attributes": {
+                "count": "1"
+              },
+              "children": [
+                {
+                  "tag": "Link",
+                  "attributes": {
+                    "obj": "Pad",
+                    "sub": "Face3"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "placement_mm_xyzw": [
+        0.0,
+        0.0,
+        30.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "constraints": [
+        {
+          "Name": "",
+          "Type": "5",
+          "Value": "1.5707963267948966",
+          "First": "0",
+          "FirstPos": "1",
+          "Second": "3",
+          "SecondPos": "1",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "10.0000000000000000",
+          "LabelPosition": "0.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        },
+        {
+          "Name": "",
+          "Type": "5",
+          "Value": "-1.5707963267948966",
+          "First": "0",
+          "FirstPos": "2",
+          "Second": "2",
+          "SecondPos": "1",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "10.0000000000000000",
+          "LabelPosition": "0.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        },
+        {
+          "Name": "",
+          "Type": "5",
+          "Value": "-1.5707963267948966",
+          "First": "2",
+          "FirstPos": "2",
+          "Second": "1",
+          "SecondPos": "1",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "10.0000000000000000",
+          "LabelPosition": "0.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        },
+        {
+          "Name": "",
+          "Type": "5",
+          "Value": "1.5707963267948966",
+          "First": "3",
+          "FirstPos": "2",
+          "Second": "1",
+          "SecondPos": "2",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "10.0000000000000000",
+          "LabelPosition": "0.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        },
+        {
+          "Name": "",
+          "Type": "2",
+          "Value": "0.0000000000000000",
+          "First": "2",
+          "FirstPos": "0",
+          "Second": "-2000",
+          "SecondPos": "0",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "10.0000000000000000",
+          "LabelPosition": "0.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        },
+        {
+          "Name": "",
+          "Type": "13",
+          "Value": "0.0000000000000000",
+          "First": "0",
+          "FirstPos": "3",
+          "Second": "-1",
+          "SecondPos": "0",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "10.0000000000000000",
+          "LabelPosition": "0.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        },
+        {
+          "Name": "",
+          "Type": "14",
+          "Value": "0.0000000000000000",
+          "First": "1",
+          "FirstPos": "3",
+          "Second": "0",
+          "SecondPos": "3",
+          "Third": "-2",
+          "ThirdPos": "0",
+          "LabelDistance": "10.0000000000000000",
+          "LabelPosition": "0.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        },
+        {
+          "Name": "",
+          "Type": "11",
+          "Value": "35.0000000000000000",
+          "First": "0",
+          "FirstPos": "0",
+          "Second": "-2000",
+          "SecondPos": "0",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "12.1474580764770508",
+          "LabelPosition": "10.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        },
+        {
+          "Name": "",
+          "Type": "7",
+          "Value": "60.0000000000000000",
+          "First": "3",
+          "FirstPos": "1",
+          "Second": "3",
+          "SecondPos": "2",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "12.1474580764770508",
+          "LabelPosition": "0.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        }
+      ],
+      "geometry": [
+        {
+          "tag": "Geometry",
+          "attributes": {
+            "type": "Part::GeomArcOfCircle"
+          },
+          "children": [
+            {
+              "tag": "GeoExtensions",
+              "attributes": {
+                "count": "1"
+              },
+              "children": [
+                {
+                  "tag": "GeoExtension",
+                  "attributes": {
+                    "geometryModeFlags": "00000000000000000000000000000000",
+                    "internalGeometryType": "0",
+                    "type": "Sketcher::SketchGeometryExtension"
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "ArcOfCircle",
+              "attributes": {
+                "AngleXU": "-0.0000000000000000",
+                "CenterX": "-30.0000000000852864",
+                "CenterY": "0.0000000000000000",
+                "CenterZ": "0.0000000000000000",
+                "EndAngle": "4.7123889803846897",
+                "NormalX": "0.0000000000000000",
+                "NormalY": "0.0000000000000000",
+                "NormalZ": "1.0000000000000000",
+                "Radius": "35.0000000000000000",
+                "StartAngle": "1.5707963267924598"
+              }
+            }
+          ]
+        },
+        {
+          "tag": "Geometry",
+          "attributes": {
+            "type": "Part::GeomArcOfCircle"
+          },
+          "children": [
+            {
+              "tag": "GeoExtensions",
+              "attributes": {
+                "count": "1"
+              },
+              "children": [
+                {
+                  "tag": "GeoExtension",
+                  "attributes": {
+                    "geometryModeFlags": "00000000000000000000000000000000",
+                    "internalGeometryType": "0",
+                    "type": "Sketcher::SketchGeometryExtension"
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "ArcOfCircle",
+              "attributes": {
+                "AngleXU": "-0.0000000000000000",
+                "CenterX": "30.0000000000852864",
+                "CenterY": "0.0000000000000000",
+                "CenterZ": "0.0000000000000000",
+                "EndAngle": "7.8539816339769200",
+                "NormalX": "0.0000000000000000",
+                "NormalY": "0.0000000000000000",
+                "NormalZ": "1.0000000000000000",
+                "Radius": "35.0000000000000000",
+                "StartAngle": "4.7123889803846897"
+              }
+            }
+          ]
+        },
+        {
+          "tag": "Geometry",
+          "attributes": {
+            "type": "Part::GeomLineSegment"
+          },
+          "children": [
+            {
+              "tag": "GeoExtensions",
+              "attributes": {
+                "count": "1"
+              },
+              "children": [
+                {
+                  "tag": "GeoExtension",
+                  "attributes": {
+                    "geometryModeFlags": "00000000000000000000000000000000",
+                    "internalGeometryType": "0",
+                    "type": "Sketcher::SketchGeometryExtension"
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "LineSegment",
+              "attributes": {
+                "EndX": "30.0000000000852864",
+                "EndY": "-35.0000000000000000",
+                "EndZ": "0.0000000000000000",
+                "StartX": "-30.0000000000852936",
+                "StartY": "-35.0000000000000000",
+                "StartZ": "0.0000000000000000"
+              }
+            }
+          ]
+        },
+        {
+          "tag": "Geometry",
+          "attributes": {
+            "type": "Part::GeomLineSegment"
+          },
+          "children": [
+            {
+              "tag": "GeoExtensions",
+              "attributes": {
+                "count": "1"
+              },
+              "children": [
+                {
+                  "tag": "GeoExtension",
+                  "attributes": {
+                    "geometryModeFlags": "00000000000000000000000000000000",
+                    "internalGeometryType": "0",
+                    "type": "Sketcher::SketchGeometryExtension"
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "LineSegment",
+              "attributes": {
+                "EndX": "30.0000000000000000",
+                "EndY": "35.0000000000094502",
+                "EndZ": "0.0000000000000000",
+                "StartX": "-30.0000000000000000",
+                "StartY": "35.0000000000000000",
+                "StartZ": "0.0000000000000000"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pad001",
+      "type": "PartDesign::Pad",
+      "saved_brep": {
+        "member": "PartShape6.brp",
+        "bytes": 25044,
+        "sha256": "e90af60e8e0177cdf2ea487634a7d05a447aa4ae7c6924b34b453cf6754eb5ff"
+      },
+      "property_fingerprints": {
+        "BaseFeature": "117aa95a4090c9815f0f8b05a818e6056ac25f54c5d397fa78bfe5b48f2fecfa",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "f28a1f6dccda4fd1db42ec48913d452b3d009ca6cc60a290e7d615126c34a634",
+        "Length2": "b0d77845d52ecd7c9dac2901cb1af63c837cd47bba53e9babc33e6e39a8d3949",
+        "Midplane": "ab7e6548565705d180f93afd7e7088ec79bb6aa16c15dc1deec3614ee359d380",
+        "Placement": "6c0f6633eef40e7b9a52a465276a78eb066aa9a3b1cb0171a4bd80fb02126a2f",
+        "Profile": "260a8daaeb63ddf7879ed7c038e77ac5ddcc5c03b1dd772a37d4941a7b523f25",
+        "Reversed": "0fcdaba67aa6bfbce7a668700bdab3426ab9b9fd8aeee40ffbb740d9118a3686",
+        "Type": "13ddb85b03bdaab539af105f1be5e1285813e3c221e913bd4c59dfd5ddf8e222"
+      },
+      "saved_properties": {
+        "BaseFeature": {
+          "tag": "Property",
+          "attributes": {
+            "name": "BaseFeature",
+            "status": "8",
+            "type": "App::PropertyLink"
+          },
+          "children": [
+            {
+              "tag": "Link",
+              "attributes": {
+                "value": "Pad"
+              }
+            }
+          ]
+        },
+        "ExpressionEngine": {
+          "tag": "Property",
+          "attributes": {
+            "name": "ExpressionEngine",
+            "status": "67108864",
+            "type": "App::PropertyExpressionEngine"
+          },
+          "children": [
+            {
+              "tag": "ExpressionEngine",
+              "attributes": {
+                "count": "0"
+              }
+            }
+          ]
+        },
+        "Length": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Length",
+            "type": "App::PropertyLength"
+          },
+          "children": [
+            {
+              "tag": "Float",
+              "attributes": {
+                "value": "132.0000000000000000"
+              }
+            }
+          ]
+        },
+        "Length2": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Length2",
+            "type": "App::PropertyLength"
+          },
+          "children": [
+            {
+              "tag": "Float",
+              "attributes": {
+                "value": "100.0000000000000000"
+              }
+            }
+          ]
+        },
+        "Midplane": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Midplane",
+            "type": "App::PropertyBool"
+          },
+          "children": [
+            {
+              "tag": "Bool",
+              "attributes": {
+                "value": "false"
+              }
+            }
+          ]
+        },
+        "Profile": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Profile",
+            "type": "App::PropertyLinkSub"
+          },
+          "children": [
+            {
+              "tag": "LinkSub",
+              "attributes": {
+                "count": "0",
+                "value": "Sketch001"
+              }
+            }
+          ]
+        },
+        "Reversed": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Reversed",
+            "type": "App::PropertyBool"
+          },
+          "children": [
+            {
+              "tag": "Bool",
+              "attributes": {
+                "value": "false"
+              }
+            }
+          ]
+        },
+        "Type": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Type",
+            "type": "App::PropertyEnumeration"
+          },
+          "children": [
+            {
+              "tag": "Integer",
+              "attributes": {
+                "value": "0"
+              }
+            }
+          ]
+        }
+      },
+      "placement_mm_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "constraints": [],
+      "geometry": []
+    },
+    {
+      "name": "DatumPlane",
+      "type": "PartDesign::Plane",
+      "saved_brep": {
+        "member": "PartShape7.brp",
+        "bytes": 665,
+        "sha256": "3b070e74eaa591510936795326c63aff0c487defda5931467fa7031e5fb8fd3f"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "515913a370fbdc75af3576a52e9241059cf87cc43cc81f1fb99cf9bc5e0bae0c",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "56408aaefd8f52543b2f6d1fbfadbacc8bc9c4ab5fab7b2f6da71c52f3bb782b",
+        "MapMode": "54cb2e2f7019150d8dfc18cd0d9b5050e3ef6530f1e2c41bb069dcc5be3ea092",
+        "Placement": "e1798c24eeb8fa0425133f77abc9bedf537d30529ef7a782e3415ee99d9b7f72",
+        "Support": "9bd6c2ee4b47fccb86d5cdd0142ceaa11f94425863174b40d2a4d709d8fe94a7"
+      }
+    },
+    {
+      "name": "Sketch002",
+      "type": "Sketcher::SketchObject",
+      "saved_brep": {
+        "member": "PartShape8.brp",
+        "bytes": 37748,
+        "sha256": "beedaf4ec39e8966262bc90927a2a7e5ca247aa60dd3c1122f10680956d07c2a"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "Constraints": "a5294be5935f07b58ecf1c2e19d625af73a5ee55d0cf7fa26c48ad2b445cfa45",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "ExternalGeometry": "51b3b6516754c6ca80ccf421fcd80bdd704329cb86daf69ef8425a2546011bdb",
+        "Geometry": "09f8b6edbbe2bd6ebe8fa64d5b933eba4ecf5a42a54846a3fe27a66f840859e2",
+        "MapMode": "54cb2e2f7019150d8dfc18cd0d9b5050e3ef6530f1e2c41bb069dcc5be3ea092",
+        "Placement": "0d596ebbfed73ebe3343c6a82f9ba124cab3d286c238aed53d82931ca6130dd7",
+        "Support": "3f30864d21079d9fb395dd7547e3d835d99def3b66f88a7b3bcaa5d408b3aa0c"
+      },
+      "saved_properties": {
+        "AttachmentOffset": {
+          "tag": "Property",
+          "attributes": {
+            "name": "AttachmentOffset",
+            "type": "App::PropertyPlacement"
+          },
+          "children": [
+            {
+              "tag": "PropertyPlacement",
+              "attributes": {
+                "A": "0.0000000000000000",
+                "Ox": "0.0000000000000000",
+                "Oy": "0.0000000000000000",
+                "Oz": "1.0000000000000000",
+                "Px": "0.0000000000000000",
+                "Py": "0.0000000000000000",
+                "Pz": "0.0000000000000000",
+                "Q0": "0.0000000000000000",
+                "Q1": "0.0000000000000000",
+                "Q2": "0.0000000000000000",
+                "Q3": "1.0000000000000000"
+              }
+            }
+          ]
+        },
+        "ExpressionEngine": {
+          "tag": "Property",
+          "attributes": {
+            "name": "ExpressionEngine",
+            "status": "67108864",
+            "type": "App::PropertyExpressionEngine"
+          },
+          "children": [
+            {
+              "tag": "ExpressionEngine",
+              "attributes": {
+                "count": "0"
+              }
+            }
+          ]
+        },
+        "ExternalGeometry": {
+          "tag": "Property",
+          "attributes": {
+            "name": "ExternalGeometry",
+            "type": "App::PropertyLinkSubList"
+          },
+          "children": [
+            {
+              "tag": "LinkSubList",
+              "attributes": {
+                "count": "0"
+              }
+            }
+          ]
+        },
+        "MapMode": {
+          "tag": "Property",
+          "attributes": {
+            "name": "MapMode",
+            "type": "App::PropertyEnumeration"
+          },
+          "children": [
+            {
+              "tag": "Integer",
+              "attributes": {
+                "value": "5"
+              }
+            }
+          ]
+        },
+        "Support": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Support",
+            "type": "App::PropertyLinkSubList"
+          },
+          "children": [
+            {
+              "tag": "LinkSubList",
+              "attributes": {
+                "count": "1"
+              },
+              "children": [
+                {
+                  "tag": "Link",
+                  "attributes": {
+                    "obj": "DatumPlane",
+                    "sub": ""
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "placement_mm_xyzw": [
+        0.0,
+        0.0,
+        95.5,
+        -1e-16,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "constraints": [
+        {
+          "Name": "",
+          "Type": "14",
+          "Value": "0.0000000000000000",
+          "First": "0",
+          "FirstPos": "2",
+          "Second": "0",
+          "SecondPos": "1",
+          "Third": "-1",
+          "ThirdPos": "0",
+          "LabelDistance": "10.0000000000000000",
+          "LabelPosition": "0.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        },
+        {
+          "Name": "",
+          "Type": "1",
+          "Value": "0.0000000000000000",
+          "First": "1",
+          "FirstPos": "1",
+          "Second": "0",
+          "SecondPos": "1",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "10.0000000000000000",
+          "LabelPosition": "0.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        },
+        {
+          "Name": "",
+          "Type": "1",
+          "Value": "0.0000000000000000",
+          "First": "1",
+          "FirstPos": "2",
+          "Second": "2",
+          "SecondPos": "1",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "10.0000000000000000",
+          "LabelPosition": "0.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        },
+        {
+          "Name": "",
+          "Type": "3",
+          "Value": "0.0000000000000000",
+          "First": "1",
+          "FirstPos": "0",
+          "Second": "-2000",
+          "SecondPos": "0",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "10.0000000000000000",
+          "LabelPosition": "0.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        },
+        {
+          "Name": "",
+          "Type": "1",
+          "Value": "0.0000000000000000",
+          "First": "2",
+          "FirstPos": "2",
+          "Second": "3",
+          "SecondPos": "1",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "10.0000000000000000",
+          "LabelPosition": "0.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        },
+        {
+          "Name": "",
+          "Type": "3",
+          "Value": "0.0000000000000000",
+          "First": "3",
+          "FirstPos": "0",
+          "Second": "-2000",
+          "SecondPos": "0",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "10.0000000000000000",
+          "LabelPosition": "0.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        },
+        {
+          "Name": "",
+          "Type": "1",
+          "Value": "0.0000000000000000",
+          "First": "3",
+          "FirstPos": "2",
+          "Second": "4",
+          "SecondPos": "1",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "10.0000000000000000",
+          "LabelPosition": "0.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        },
+        {
+          "Name": "",
+          "Type": "2",
+          "Value": "0.0000000000000000",
+          "First": "4",
+          "FirstPos": "0",
+          "Second": "-2000",
+          "SecondPos": "0",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "10.0000000000000000",
+          "LabelPosition": "0.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        },
+        {
+          "Name": "",
+          "Type": "1",
+          "Value": "0.0000000000000000",
+          "First": "4",
+          "FirstPos": "2",
+          "Second": "5",
+          "SecondPos": "1",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "10.0000000000000000",
+          "LabelPosition": "0.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        },
+        {
+          "Name": "",
+          "Type": "1",
+          "Value": "0.0000000000000000",
+          "First": "5",
+          "FirstPos": "2",
+          "Second": "0",
+          "SecondPos": "2",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "10.0000000000000000",
+          "LabelPosition": "0.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        },
+        {
+          "Name": "",
+          "Type": "3",
+          "Value": "0.0000000000000000",
+          "First": "5",
+          "FirstPos": "0",
+          "Second": "-2000",
+          "SecondPos": "0",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "10.0000000000000000",
+          "LabelPosition": "0.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        },
+        {
+          "Name": "",
+          "Type": "2",
+          "Value": "0.0000000000000000",
+          "First": "2",
+          "FirstPos": "0",
+          "Second": "-2000",
+          "SecondPos": "0",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "10.0000000000000000",
+          "LabelPosition": "0.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        },
+        {
+          "Name": "",
+          "Type": "11",
+          "Value": "46.0000000000000000",
+          "First": "0",
+          "FirstPos": "0",
+          "Second": "-2000",
+          "SecondPos": "0",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "12.9535970687866211",
+          "LabelPosition": "10.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        },
+        {
+          "Name": "",
+          "Type": "12",
+          "Value": "0.0000000000000000",
+          "First": "5",
+          "FirstPos": "0",
+          "Second": "1",
+          "SecondPos": "0",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "10.0000000000000000",
+          "LabelPosition": "0.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        },
+        {
+          "Name": "",
+          "Type": "8",
+          "Value": "5.0000000000000000",
+          "First": "5",
+          "FirstPos": "1",
+          "Second": "5",
+          "SecondPos": "2",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "12.9535970687866211",
+          "LabelPosition": "0.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        },
+        {
+          "Name": "",
+          "Type": "7",
+          "Value": "100.0000000000000000",
+          "First": "4",
+          "FirstPos": "1",
+          "Second": "4",
+          "SecondPos": "2",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "12.9535970687866211",
+          "LabelPosition": "0.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        },
+        {
+          "Name": "",
+          "Type": "13",
+          "Value": "0.0000000000000000",
+          "First": "0",
+          "FirstPos": "3",
+          "Second": "1",
+          "SecondPos": "0",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "10.0000000000000000",
+          "LabelPosition": "0.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        },
+        {
+          "Name": "",
+          "Type": "7",
+          "Value": "20.0000000000000000",
+          "First": "0",
+          "FirstPos": "3",
+          "Second": "-1",
+          "SecondPos": "1",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "12.9535970687866211",
+          "LabelPosition": "0.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        }
+      ],
+      "geometry": [
+        {
+          "tag": "Geometry",
+          "attributes": {
+            "type": "Part::GeomArcOfCircle"
+          },
+          "children": [
+            {
+              "tag": "GeoExtensions",
+              "attributes": {
+                "count": "1"
+              },
+              "children": [
+                {
+                  "tag": "GeoExtension",
+                  "attributes": {
+                    "geometryModeFlags": "00000000000000000000000000000000",
+                    "internalGeometryType": "0",
+                    "type": "Sketcher::SketchGeometryExtension"
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "ArcOfCircle",
+              "attributes": {
+                "AngleXU": "-0.0000000000000000",
+                "CenterX": "-20.0000000000000000",
+                "CenterY": "0.0000000000000020",
+                "CenterZ": "0.0000000000000000",
+                "EndAngle": "4.7123889803846897",
+                "NormalX": "0.0000000000000000",
+                "NormalY": "0.0000000000000000",
+                "NormalZ": "1.0000000000000000",
+                "Radius": "46.0000000000000000",
+                "StartAngle": "1.5707963267948966"
+              }
+            }
+          ]
+        },
+        {
+          "tag": "Geometry",
+          "attributes": {
+            "type": "Part::GeomLineSegment"
+          },
+          "children": [
+            {
+              "tag": "GeoExtensions",
+              "attributes": {
+                "count": "1"
+              },
+              "children": [
+                {
+                  "tag": "GeoExtension",
+                  "attributes": {
+                    "geometryModeFlags": "00000000000000000000000000000000",
+                    "internalGeometryType": "0",
+                    "type": "Sketcher::SketchGeometryExtension"
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "LineSegment",
+              "attributes": {
+                "EndX": "-19.9999999999999964",
+                "EndY": "51.0000000000000000",
+                "EndZ": "0.0000000000000000",
+                "StartX": "-19.9999999999999964",
+                "StartY": "46.0000000000000000",
+                "StartZ": "0.0000000000000000"
+              }
+            }
+          ]
+        },
+        {
+          "tag": "Geometry",
+          "attributes": {
+            "type": "Part::GeomLineSegment"
+          },
+          "children": [
+            {
+              "tag": "GeoExtensions",
+              "attributes": {
+                "count": "1"
+              },
+              "children": [
+                {
+                  "tag": "GeoExtension",
+                  "attributes": {
+                    "geometryModeFlags": "00000000000000000000000000000000",
+                    "internalGeometryType": "0",
+                    "type": "Sketcher::SketchGeometryExtension"
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "LineSegment",
+              "attributes": {
+                "EndX": "-120.0000000000000000",
+                "EndY": "51.0000000000000000",
+                "EndZ": "0.0000000000000000",
+                "StartX": "-19.9999999999999964",
+                "StartY": "51.0000000000000000",
+                "StartZ": "0.0000000000000000"
+              }
+            }
+          ]
+        },
+        {
+          "tag": "Geometry",
+          "attributes": {
+            "type": "Part::GeomLineSegment"
+          },
+          "children": [
+            {
+              "tag": "GeoExtensions",
+              "attributes": {
+                "count": "1"
+              },
+              "children": [
+                {
+                  "tag": "GeoExtension",
+                  "attributes": {
+                    "geometryModeFlags": "00000000000000000000000000000000",
+                    "internalGeometryType": "0",
+                    "type": "Sketcher::SketchGeometryExtension"
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "LineSegment",
+              "attributes": {
+                "EndX": "-120.0000000000000000",
+                "EndY": "-51.0000000000000000",
+                "EndZ": "0.0000000000000000",
+                "StartX": "-120.0000000000000000",
+                "StartY": "51.0000000000000000",
+                "StartZ": "0.0000000000000000"
+              }
+            }
+          ]
+        },
+        {
+          "tag": "Geometry",
+          "attributes": {
+            "type": "Part::GeomLineSegment"
+          },
+          "children": [
+            {
+              "tag": "GeoExtensions",
+              "attributes": {
+                "count": "1"
+              },
+              "children": [
+                {
+                  "tag": "GeoExtension",
+                  "attributes": {
+                    "geometryModeFlags": "00000000000000000000000000000000",
+                    "internalGeometryType": "0",
+                    "type": "Sketcher::SketchGeometryExtension"
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "LineSegment",
+              "attributes": {
+                "EndX": "-19.9999999999999858",
+                "EndY": "-51.0000000000000000",
+                "EndZ": "0.0000000000000000",
+                "StartX": "-120.0000000000000000",
+                "StartY": "-51.0000000000000000",
+                "StartZ": "0.0000000000000000"
+              }
+            }
+          ]
+        },
+        {
+          "tag": "Geometry",
+          "attributes": {
+            "type": "Part::GeomLineSegment"
+          },
+          "children": [
+            {
+              "tag": "GeoExtensions",
+              "attributes": {
+                "count": "1"
+              },
+              "children": [
+                {
+                  "tag": "GeoExtension",
+                  "attributes": {
+                    "geometryModeFlags": "00000000000000000000000000000000",
+                    "internalGeometryType": "0",
+                    "type": "Sketcher::SketchGeometryExtension"
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "LineSegment",
+              "attributes": {
+                "EndX": "-19.9999999999999858",
+                "EndY": "-46.0000000000000000",
+                "EndZ": "0.0000000000000000",
+                "StartX": "-19.9999999999999858",
+                "StartY": "-51.0000000000000000",
+                "StartZ": "0.0000000000000000"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Groove",
+      "type": "PartDesign::Groove",
+      "saved_brep": {
+        "member": "PartShape10.brp",
+        "bytes": 61719,
+        "sha256": "218f2002706e612197e974fee8d742021a1fc1fcd176c5651fa40e46c27d3f77"
+      },
+      "property_fingerprints": {
+        "Angle": "915c77ee161f6c758be000ac3ff850ade4279aad47ba125ee13e3960d4a17d17",
+        "BaseFeature": "4e6b17494ed30f64978193b01f67e28d9c5c311db2a51e844236d9b62ef9bf62",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Midplane": "ab7e6548565705d180f93afd7e7088ec79bb6aa16c15dc1deec3614ee359d380",
+        "Placement": "6c0f6633eef40e7b9a52a465276a78eb066aa9a3b1cb0171a4bd80fb02126a2f",
+        "Profile": "bea5abdacf4eae4692e4938a1a6e3aea8523e7a796de9c372675870cb9bc48e2",
+        "ReferenceAxis": "146e70350406285db0084664d75fb0516c734b3a09811f382661cc98d27b31f5",
+        "Reversed": "0fcdaba67aa6bfbce7a668700bdab3426ab9b9fd8aeee40ffbb740d9118a3686"
+      },
+      "saved_properties": {
+        "Angle": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Angle",
+            "type": "App::PropertyAngle"
+          },
+          "children": [
+            {
+              "tag": "Float",
+              "attributes": {
+                "value": "180.0000000000000000"
+              }
+            }
+          ]
+        },
+        "BaseFeature": {
+          "tag": "Property",
+          "attributes": {
+            "name": "BaseFeature",
+            "status": "8",
+            "type": "App::PropertyLink"
+          },
+          "children": [
+            {
+              "tag": "Link",
+              "attributes": {
+                "value": "Pad001"
+              }
+            }
+          ]
+        },
+        "ExpressionEngine": {
+          "tag": "Property",
+          "attributes": {
+            "name": "ExpressionEngine",
+            "status": "67108864",
+            "type": "App::PropertyExpressionEngine"
+          },
+          "children": [
+            {
+              "tag": "ExpressionEngine",
+              "attributes": {
+                "count": "0"
+              }
+            }
+          ]
+        },
+        "Midplane": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Midplane",
+            "type": "App::PropertyBool"
+          },
+          "children": [
+            {
+              "tag": "Bool",
+              "attributes": {
+                "value": "false"
+              }
+            }
+          ]
+        },
+        "Profile": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Profile",
+            "type": "App::PropertyLinkSub"
+          },
+          "children": [
+            {
+              "tag": "LinkSub",
+              "attributes": {
+                "count": "0",
+                "value": "Sketch002"
+              }
+            }
+          ]
+        },
+        "ReferenceAxis": {
+          "tag": "Property",
+          "attributes": {
+            "name": "ReferenceAxis",
+            "type": "App::PropertyLinkSub"
+          },
+          "children": [
+            {
+              "tag": "LinkSub",
+              "attributes": {
+                "count": "1",
+                "value": "Sketch002"
+              },
+              "children": [
+                {
+                  "tag": "Sub",
+                  "attributes": {
+                    "value": "V_Axis"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "Reversed": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Reversed",
+            "type": "App::PropertyBool"
+          },
+          "children": [
+            {
+              "tag": "Bool",
+              "attributes": {
+                "value": "false"
+              }
+            }
+          ]
+        }
+      },
+      "placement_mm_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "constraints": [],
+      "geometry": []
+    },
+    {
+      "name": "Thickness",
+      "type": "PartDesign::Thickness",
+      "saved_brep": {
+        "member": "PartShape12.brp",
+        "bytes": 112208,
+        "sha256": "bd25c0119158c1aad7d148ebc8abbdc78c306dcab257af66c71a7a19369db5a3"
+      },
+      "property_fingerprints": {
+        "BaseFeature": "d9768fe59f75e98e808a6c060c5291a09a49613014e3ae7d1a17c45d7ee400ba",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Intersection": "d735857f4337c9591d48fc88449758c19a5cba9c7da5cd8cf1e43c639beff015",
+        "Join": "cc4238e312bf28935aad3e65ee69999c71aca9126e8500772b99b54c6e846d6d",
+        "Placement": "6c0f6633eef40e7b9a52a465276a78eb066aa9a3b1cb0171a4bd80fb02126a2f",
+        "Reversed": "02d9a398bf11fdc368a1c1c5c349e7c2078bfad61ac7eeb6b0b7e0ea189f7758",
+        "Value": "cbb505931aa3e28886b57abc9fcd9f2cc498c889a58210e8b77aa782919795e3"
+      },
+      "saved_properties": {
+        "BaseFeature": {
+          "tag": "Property",
+          "attributes": {
+            "name": "BaseFeature",
+            "status": "8",
+            "type": "App::PropertyLink"
+          },
+          "children": [
+            {
+              "tag": "Link",
+              "attributes": {
+                "value": "Groove"
+              }
+            }
+          ]
+        },
+        "ExpressionEngine": {
+          "tag": "Property",
+          "attributes": {
+            "name": "ExpressionEngine",
+            "status": "67108864",
+            "type": "App::PropertyExpressionEngine"
+          },
+          "children": [
+            {
+              "tag": "ExpressionEngine",
+              "attributes": {
+                "count": "0"
+              }
+            }
+          ]
+        },
+        "Intersection": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Intersection",
+            "type": "App::PropertyBool"
+          },
+          "children": [
+            {
+              "tag": "Bool",
+              "attributes": {
+                "value": "false"
+              }
+            }
+          ]
+        },
+        "Join": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Join",
+            "type": "App::PropertyEnumeration"
+          },
+          "children": [
+            {
+              "tag": "Integer",
+              "attributes": {
+                "value": "0"
+              }
+            }
+          ]
+        },
+        "Reversed": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Reversed",
+            "type": "App::PropertyBool"
+          },
+          "children": [
+            {
+              "tag": "Bool",
+              "attributes": {
+                "value": "true"
+              }
+            }
+          ]
+        },
+        "Value": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Value",
+            "type": "App::PropertyLength"
+          },
+          "children": [
+            {
+              "tag": "Float",
+              "attributes": {
+                "value": "5.0000000000000000"
+              }
+            }
+          ]
+        }
+      },
+      "placement_mm_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "constraints": [],
+      "geometry": []
+    },
+    {
+      "name": "Sketch003",
+      "type": "Sketcher::SketchObject",
+      "saved_brep": {
+        "member": "PartShape13.brp",
+        "bytes": 7297,
+        "sha256": "6cff366995f72f49e0db5871d9ef353c82491cb423ab5cfd004da648cd3558eb"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "Constraints": "7a3609d3a6fec3e6376d24b5b1e5aa27f48c2968e958381ce35cb9968d5ec9a7",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "ExternalGeometry": "27d19b476e9046cac292e3085255b0164b39e2333a168388c366466435a23782",
+        "Geometry": "cec810a2ed53d673ac04870a6b6cc9e71dd9d21a7b554d7065e45e9210208ba2",
+        "MapMode": "54cb2e2f7019150d8dfc18cd0d9b5050e3ef6530f1e2c41bb069dcc5be3ea092",
+        "Placement": "b3e6bb3d2e240e6a6908f0a32ce9db2c4b1cf428e06c8bfc44656fae2594ef0f",
+        "Support": "b326d3e6221b729dcab232d282d5e86b241d7c2522ac6a8cc8cde717f3ba1aa7"
+      },
+      "saved_properties": {
+        "AttachmentOffset": {
+          "tag": "Property",
+          "attributes": {
+            "name": "AttachmentOffset",
+            "type": "App::PropertyPlacement"
+          },
+          "children": [
+            {
+              "tag": "PropertyPlacement",
+              "attributes": {
+                "A": "0.0000000000000000",
+                "Ox": "0.0000000000000000",
+                "Oy": "0.0000000000000000",
+                "Oz": "1.0000000000000000",
+                "Px": "0.0000000000000000",
+                "Py": "0.0000000000000000",
+                "Pz": "0.0000000000000000",
+                "Q0": "0.0000000000000000",
+                "Q1": "0.0000000000000000",
+                "Q2": "0.0000000000000000",
+                "Q3": "1.0000000000000000"
+              }
+            }
+          ]
+        },
+        "ExpressionEngine": {
+          "tag": "Property",
+          "attributes": {
+            "name": "ExpressionEngine",
+            "status": "67108864",
+            "type": "App::PropertyExpressionEngine"
+          },
+          "children": [
+            {
+              "tag": "ExpressionEngine",
+              "attributes": {
+                "count": "0"
+              }
+            }
+          ]
+        },
+        "ExternalGeometry": {
+          "tag": "Property",
+          "attributes": {
+            "name": "ExternalGeometry",
+            "type": "App::PropertyLinkSubList"
+          },
+          "children": [
+            {
+              "tag": "LinkSubList",
+              "attributes": {
+                "count": "1"
+              },
+              "children": [
+                {
+                  "tag": "Link",
+                  "attributes": {
+                    "obj": "Thickness",
+                    "sub": "Edge18"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "MapMode": {
+          "tag": "Property",
+          "attributes": {
+            "name": "MapMode",
+            "type": "App::PropertyEnumeration"
+          },
+          "children": [
+            {
+              "tag": "Integer",
+              "attributes": {
+                "value": "5"
+              }
+            }
+          ]
+        },
+        "Support": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Support",
+            "type": "App::PropertyLinkSubList"
+          },
+          "children": [
+            {
+              "tag": "LinkSubList",
+              "attributes": {
+                "count": "1"
+              },
+              "children": [
+                {
+                  "tag": "Link",
+                  "attributes": {
+                    "obj": "Thickness",
+                    "sub": "Face8"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "placement_mm_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "constraints": [
+        {
+          "Name": "",
+          "Type": "1",
+          "Value": "0.0000000000000000",
+          "First": "1",
+          "FirstPos": "1",
+          "Second": "0",
+          "SecondPos": "2",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "10.0000000000000000",
+          "LabelPosition": "0.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        },
+        {
+          "Name": "",
+          "Type": "3",
+          "Value": "0.0000000000000000",
+          "First": "1",
+          "FirstPos": "0",
+          "Second": "-2000",
+          "SecondPos": "0",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "10.0000000000000000",
+          "LabelPosition": "0.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        },
+        {
+          "Name": "",
+          "Type": "2",
+          "Value": "0.0000000000000000",
+          "First": "0",
+          "FirstPos": "0",
+          "Second": "-2000",
+          "SecondPos": "0",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "10.0000000000000000",
+          "LabelPosition": "0.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        },
+        {
+          "Name": "",
+          "Type": "1",
+          "Value": "0.0000000000000000",
+          "First": "2",
+          "FirstPos": "3",
+          "Second": "-1",
+          "SecondPos": "1",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "10.0000000000000000",
+          "LabelPosition": "0.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        },
+        {
+          "Name": "",
+          "Type": "1",
+          "Value": "0.0000000000000000",
+          "First": "2",
+          "FirstPos": "1",
+          "Second": "1",
+          "SecondPos": "2",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "10.0000000000000000",
+          "LabelPosition": "0.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        },
+        {
+          "Name": "",
+          "Type": "1",
+          "Value": "0.0000000000000000",
+          "First": "2",
+          "FirstPos": "2",
+          "Second": "0",
+          "SecondPos": "1",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "10.0000000000000000",
+          "LabelPosition": "0.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        },
+        {
+          "Name": "",
+          "Type": "12",
+          "Value": "0.0000000000000000",
+          "First": "2",
+          "FirstPos": "0",
+          "Second": "-3",
+          "SecondPos": "0",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "10.0000000000000000",
+          "LabelPosition": "0.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        },
+        {
+          "Name": "",
+          "Type": "8",
+          "Value": "55.0000000000000000",
+          "First": "2",
+          "FirstPos": "3",
+          "Second": "0",
+          "SecondPos": "2",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "5.4670567512512207",
+          "LabelPosition": "0.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        },
+        {
+          "Name": "",
+          "Type": "7",
+          "Value": "20.0000000000000000",
+          "First": "0",
+          "FirstPos": "2",
+          "Second": "2",
+          "SecondPos": "3",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "5.4670567512512207",
+          "LabelPosition": "0.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        }
+      ],
+      "geometry": [
+        {
+          "tag": "Geometry",
+          "attributes": {
+            "type": "Part::GeomLineSegment"
+          },
+          "children": [
+            {
+              "tag": "GeoExtensions",
+              "attributes": {
+                "count": "1"
+              },
+              "children": [
+                {
+                  "tag": "GeoExtension",
+                  "attributes": {
+                    "geometryModeFlags": "00000000000000000000000000000000",
+                    "internalGeometryType": "0",
+                    "type": "Sketcher::SketchGeometryExtension"
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "LineSegment",
+              "attributes": {
+                "EndX": "-20.0000000000000036",
+                "EndY": "54.9999999999999929",
+                "EndZ": "0.0000000000000000",
+                "StartX": "-43.3012701892219454",
+                "StartY": "54.9999999999999929",
+                "StartZ": "0.0000000000000000"
+              }
+            }
+          ]
+        },
+        {
+          "tag": "Geometry",
+          "attributes": {
+            "type": "Part::GeomLineSegment"
+          },
+          "children": [
+            {
+              "tag": "GeoExtensions",
+              "attributes": {
+                "count": "1"
+              },
+              "children": [
+                {
+                  "tag": "GeoExtension",
+                  "attributes": {
+                    "geometryModeFlags": "00000000000000000000000000000000",
+                    "internalGeometryType": "0",
+                    "type": "Sketcher::SketchGeometryExtension"
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "LineSegment",
+              "attributes": {
+                "EndX": "-20.0000000000000036",
+                "EndY": "67.0820393249937013",
+                "EndZ": "0.0000000000000000",
+                "StartX": "-20.0000000000000036",
+                "StartY": "54.9999999999999929",
+                "StartZ": "0.0000000000000000"
+              }
+            }
+          ]
+        },
+        {
+          "tag": "Geometry",
+          "attributes": {
+            "type": "Part::GeomArcOfCircle"
+          },
+          "children": [
+            {
+              "tag": "GeoExtensions",
+              "attributes": {
+                "count": "1"
+              },
+              "children": [
+                {
+                  "tag": "GeoExtension",
+                  "attributes": {
+                    "geometryModeFlags": "00000000000000000000000000000000",
+                    "internalGeometryType": "0",
+                    "type": "Sketcher::SketchGeometryExtension"
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "ArcOfCircle",
+              "attributes": {
+                "AngleXU": "-0.0000000000000000",
+                "CenterX": "0.0000000000000000",
+                "CenterY": "0.0000000000000000",
+                "CenterZ": "0.0000000000000000",
+                "EndAngle": "2.2377426712985611",
+                "NormalX": "0.0000000000000000",
+                "NormalY": "0.0000000000000000",
+                "NormalZ": "1.0000000000000000",
+                "Radius": "70.0000000000000000",
+                "StartAngle": "1.8605480282309441"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pad002",
+      "type": "PartDesign::Pad",
+      "saved_brep": {
+        "member": "PartShape15.brp",
+        "bytes": 121177,
+        "sha256": "0a05e6993ddcb2a4026b51f035a97e94fd139486046a08e9759a4f330f9ab0ce"
+      },
+      "property_fingerprints": {
+        "BaseFeature": "b4d28fb1c73c68a3bda24b2f27a73abac519b67be29ac19907aa08dfd1d6d249",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "0bd7f69dd26df593800e14ca28affc518b2c1fb745cc05a08ae28dec3a345e50",
+        "Length2": "b0d77845d52ecd7c9dac2901cb1af63c837cd47bba53e9babc33e6e39a8d3949",
+        "Midplane": "ab7e6548565705d180f93afd7e7088ec79bb6aa16c15dc1deec3614ee359d380",
+        "Placement": "6c0f6633eef40e7b9a52a465276a78eb066aa9a3b1cb0171a4bd80fb02126a2f",
+        "Profile": "4e5bb372b75458735ed7702fc2671ed4be946357755364783f1f5fc304307c51",
+        "Reversed": "02d9a398bf11fdc368a1c1c5c349e7c2078bfad61ac7eeb6b0b7e0ea189f7758",
+        "Type": "b7df524d785336634d6b565af4a01b2d8073effe672d3ccf4bec7146fd0eba16"
+      },
+      "saved_properties": {
+        "BaseFeature": {
+          "tag": "Property",
+          "attributes": {
+            "name": "BaseFeature",
+            "status": "8",
+            "type": "App::PropertyLink"
+          },
+          "children": [
+            {
+              "tag": "Link",
+              "attributes": {
+                "value": "Thickness"
+              }
+            }
+          ]
+        },
+        "ExpressionEngine": {
+          "tag": "Property",
+          "attributes": {
+            "name": "ExpressionEngine",
+            "status": "67108864",
+            "type": "App::PropertyExpressionEngine"
+          },
+          "children": [
+            {
+              "tag": "ExpressionEngine",
+              "attributes": {
+                "count": "0"
+              }
+            }
+          ]
+        },
+        "Length": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Length",
+            "type": "App::PropertyLength"
+          },
+          "children": [
+            {
+              "tag": "Float",
+              "attributes": {
+                "value": "10.0000000000000000"
+              }
+            }
+          ]
+        },
+        "Length2": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Length2",
+            "type": "App::PropertyLength"
+          },
+          "children": [
+            {
+              "tag": "Float",
+              "attributes": {
+                "value": "100.0000000000000000"
+              }
+            }
+          ]
+        },
+        "Midplane": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Midplane",
+            "type": "App::PropertyBool"
+          },
+          "children": [
+            {
+              "tag": "Bool",
+              "attributes": {
+                "value": "false"
+              }
+            }
+          ]
+        },
+        "Profile": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Profile",
+            "type": "App::PropertyLinkSub"
+          },
+          "children": [
+            {
+              "tag": "LinkSub",
+              "attributes": {
+                "count": "0",
+                "value": "Sketch003"
+              }
+            }
+          ]
+        },
+        "Reversed": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Reversed",
+            "type": "App::PropertyBool"
+          },
+          "children": [
+            {
+              "tag": "Bool",
+              "attributes": {
+                "value": "true"
+              }
+            }
+          ]
+        },
+        "Type": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Type",
+            "type": "App::PropertyEnumeration"
+          },
+          "children": [
+            {
+              "tag": "Integer",
+              "attributes": {
+                "value": "2"
+              }
+            }
+          ]
+        }
+      },
+      "placement_mm_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "constraints": [],
+      "geometry": []
+    },
+    {
+      "name": "Sketch004",
+      "type": "Sketcher::SketchObject",
+      "saved_brep": {
+        "member": "PartShape16.brp",
+        "bytes": 852,
+        "sha256": "b5d20282e2a70a011b657c2cfa264c950692cfba006c6762759b848d9c7a4e9b"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "Constraints": "04a51b67ff1f8f80897de4f79fa24d51d149b8e579338bd88329e74bb13965f4",
+        "ExpressionEngine": "bd1b0984a0f147e183d44d45d76484b5077574067091fea3625354fd561ebe07",
+        "ExternalGeometry": "8f29a848b7d23cb05bd38ee9b84459539fa432832449b282da6a9cfaa3389641",
+        "Geometry": "8b3204677c5493ecf47fa4afc3d29fe7761eb4dac51e6351176fcde7d6a6a03f",
+        "MapMode": "54cb2e2f7019150d8dfc18cd0d9b5050e3ef6530f1e2c41bb069dcc5be3ea092",
+        "Placement": "fe33435654199edd0195ea477f47d64a5830f577fcd615756f5d2e19a45161e4",
+        "Support": "87b956c54e9b54ea07991af83251acf5d54d2df86e8fe42d846553907aedc37d"
+      },
+      "saved_properties": {
+        "AttachmentOffset": {
+          "tag": "Property",
+          "attributes": {
+            "name": "AttachmentOffset",
+            "type": "App::PropertyPlacement"
+          },
+          "children": [
+            {
+              "tag": "PropertyPlacement",
+              "attributes": {
+                "A": "0.0000000000000000",
+                "Ox": "0.0000000000000000",
+                "Oy": "0.0000000000000000",
+                "Oz": "1.0000000000000000",
+                "Px": "0.0000000000000000",
+                "Py": "0.0000000000000000",
+                "Pz": "0.0000000000000000",
+                "Q0": "0.0000000000000000",
+                "Q1": "0.0000000000000000",
+                "Q2": "0.0000000000000000",
+                "Q3": "1.0000000000000000"
+              }
+            }
+          ]
+        },
+        "ExpressionEngine": {
+          "tag": "Property",
+          "attributes": {
+            "name": "ExpressionEngine",
+            "status": "67108864",
+            "type": "App::PropertyExpressionEngine"
+          },
+          "children": [
+            {
+              "tag": "ExpressionEngine",
+              "attributes": {
+                "count": "1"
+              },
+              "children": [
+                {
+                  "tag": "Expression",
+                  "attributes": {
+                    "expression": "Spreadsheet.M3BoltBodyRadius",
+                    "path": "Constraints[0]"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "ExternalGeometry": {
+          "tag": "Property",
+          "attributes": {
+            "name": "ExternalGeometry",
+            "type": "App::PropertyLinkSubList"
+          },
+          "children": [
+            {
+              "tag": "LinkSubList",
+              "attributes": {
+                "count": "1"
+              },
+              "children": [
+                {
+                  "tag": "Link",
+                  "attributes": {
+                    "obj": "Pad002",
+                    "sub": "Edge22"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "MapMode": {
+          "tag": "Property",
+          "attributes": {
+            "name": "MapMode",
+            "type": "App::PropertyEnumeration"
+          },
+          "children": [
+            {
+              "tag": "Integer",
+              "attributes": {
+                "value": "5"
+              }
+            }
+          ]
+        },
+        "Support": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Support",
+            "type": "App::PropertyLinkSubList"
+          },
+          "children": [
+            {
+              "tag": "LinkSubList",
+              "attributes": {
+                "count": "1"
+              },
+              "children": [
+                {
+                  "tag": "Link",
+                  "attributes": {
+                    "obj": "Pad002",
+                    "sub": "Face9"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "placement_mm_xyzw": [
+        0.0,
+        -54.99999999999999,
+        0.0,
+        0.0,
+        0.7071067811865476,
+        0.7071067811865475,
+        0.0
+      ],
+      "constraints": [
+        {
+          "Name": "",
+          "Type": "11",
+          "Value": "1.7000000000000000",
+          "First": "0",
+          "FirstPos": "0",
+          "Second": "-2000",
+          "SecondPos": "0",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "7.1090850830078125",
+          "LabelPosition": "10.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        },
+        {
+          "Name": "",
+          "Type": "7",
+          "Value": "11.5000000000000000",
+          "First": "-3",
+          "FirstPos": "1",
+          "Second": "0",
+          "SecondPos": "3",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "7.1090850830078125",
+          "LabelPosition": "0.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        },
+        {
+          "Name": "",
+          "Type": "8",
+          "Value": "8.0000000000000000",
+          "First": "-3",
+          "FirstPos": "1",
+          "Second": "0",
+          "SecondPos": "3",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "7.1090850830078125",
+          "LabelPosition": "0.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        }
+      ],
+      "geometry": [
+        {
+          "tag": "Geometry",
+          "attributes": {
+            "type": "Part::GeomCircle"
+          },
+          "children": [
+            {
+              "tag": "GeoExtensions",
+              "attributes": {
+                "count": "1"
+              },
+              "children": [
+                {
+                  "tag": "GeoExtension",
+                  "attributes": {
+                    "geometryModeFlags": "00000000000000000000000000000000",
+                    "internalGeometryType": "0",
+                    "type": "Sketcher::SketchGeometryExtension"
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "Circle",
+              "attributes": {
+                "AngleXU": "-0.0000000000000000",
+                "CenterX": "31.5000000000000036",
+                "CenterY": "8.0000000000000000",
+                "CenterZ": "0.0000000000000000",
+                "NormalX": "0.0000000000000000",
+                "NormalY": "0.0000000000000000",
+                "NormalZ": "1.0000000000000000",
+                "Radius": "1.7000000000000000"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pocket",
+      "type": "PartDesign::Pocket",
+      "saved_brep": {
+        "member": "PartShape18.brp",
+        "bytes": 132413,
+        "sha256": "7c92fd27f84e9153aa19bab39782b1e6e74675828594d8e24b7dd4599c2ad87a"
+      },
+      "property_fingerprints": {
+        "BaseFeature": "3048389c0f07349630f43ba2c561853ff4e74c39b647ed52f463c524ce6e3234",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "c339f6795c4a62bb18baaf9de8303fd03a850033b365bcc2288b8965155a8b31",
+        "Length2": "b0d77845d52ecd7c9dac2901cb1af63c837cd47bba53e9babc33e6e39a8d3949",
+        "Midplane": "ab7e6548565705d180f93afd7e7088ec79bb6aa16c15dc1deec3614ee359d380",
+        "Placement": "6c0f6633eef40e7b9a52a465276a78eb066aa9a3b1cb0171a4bd80fb02126a2f",
+        "Profile": "a2c2debc3e2e6d8a27eca9632c05ca08257c20ab221af193c67172bcf4478118",
+        "Reversed": "0fcdaba67aa6bfbce7a668700bdab3426ab9b9fd8aeee40ffbb740d9118a3686",
+        "Type": "b7df524d785336634d6b565af4a01b2d8073effe672d3ccf4bec7146fd0eba16"
+      },
+      "saved_properties": {
+        "BaseFeature": {
+          "tag": "Property",
+          "attributes": {
+            "name": "BaseFeature",
+            "status": "8",
+            "type": "App::PropertyLink"
+          },
+          "children": [
+            {
+              "tag": "Link",
+              "attributes": {
+                "value": "Pad002"
+              }
+            }
+          ]
+        },
+        "ExpressionEngine": {
+          "tag": "Property",
+          "attributes": {
+            "name": "ExpressionEngine",
+            "status": "67108864",
+            "type": "App::PropertyExpressionEngine"
+          },
+          "children": [
+            {
+              "tag": "ExpressionEngine",
+              "attributes": {
+                "count": "0"
+              }
+            }
+          ]
+        },
+        "Length": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Length",
+            "type": "App::PropertyLength"
+          },
+          "children": [
+            {
+              "tag": "Float",
+              "attributes": {
+                "value": "5.0000000000000000"
+              }
+            }
+          ]
+        },
+        "Length2": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Length2",
+            "type": "App::PropertyLength"
+          },
+          "children": [
+            {
+              "tag": "Float",
+              "attributes": {
+                "value": "100.0000000000000000"
+              }
+            }
+          ]
+        },
+        "Midplane": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Midplane",
+            "type": "App::PropertyBool"
+          },
+          "children": [
+            {
+              "tag": "Bool",
+              "attributes": {
+                "value": "false"
+              }
+            }
+          ]
+        },
+        "Profile": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Profile",
+            "type": "App::PropertyLinkSub"
+          },
+          "children": [
+            {
+              "tag": "LinkSub",
+              "attributes": {
+                "count": "0",
+                "value": "Sketch004"
+              }
+            }
+          ]
+        },
+        "Reversed": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Reversed",
+            "type": "App::PropertyBool"
+          },
+          "children": [
+            {
+              "tag": "Bool",
+              "attributes": {
+                "value": "false"
+              }
+            }
+          ]
+        },
+        "Type": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Type",
+            "type": "App::PropertyEnumeration"
+          },
+          "children": [
+            {
+              "tag": "Integer",
+              "attributes": {
+                "value": "2"
+              }
+            }
+          ]
+        }
+      },
+      "placement_mm_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "constraints": [],
+      "geometry": []
+    },
+    {
+      "name": "DatumPlane001",
+      "type": "PartDesign::Plane",
+      "saved_brep": {
+        "member": "PartShape19.brp",
+        "bytes": 667,
+        "sha256": "6f2640e2c339ac3467bf4ac55d1244dc9c270ff3be28911c672b8eff2bb6291b"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "67625b9926ef1a0936beebe381914d9a645ed4f4b0c456b3018f22dfb49d7aad",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "195b7dbeb3e25487f2500b7c03480e322e2a4fe58dccc9ddf50d0f85dfd06e8b",
+        "MapMode": "54cb2e2f7019150d8dfc18cd0d9b5050e3ef6530f1e2c41bb069dcc5be3ea092",
+        "Placement": "f79f3060fd8147348c0c271c3e79268dc25f638f5b77f72d0f59922ca66d15e7",
+        "Support": "8413056548a332d5442ea37ca15c2a4f2a044f2177781dd91ae71900aea3536e"
+      },
+      "saved_properties": {
+        "AttachmentOffset": {
+          "tag": "Property",
+          "attributes": {
+            "name": "AttachmentOffset",
+            "type": "App::PropertyPlacement"
+          },
+          "children": [
+            {
+              "tag": "PropertyPlacement",
+              "attributes": {
+                "A": "0.0000000000000000",
+                "Ox": "0.0000000000000000",
+                "Oy": "0.0000000000000000",
+                "Oz": "1.0000000000000000",
+                "Px": "0.0000000000000000",
+                "Py": "0.0000000000000000",
+                "Pz": "-20.0000000000000000",
+                "Q0": "0.0000000000000000",
+                "Q1": "0.0000000000000000",
+                "Q2": "0.0000000000000000",
+                "Q3": "1.0000000000000000"
+              }
+            }
+          ]
+        },
+        "ExpressionEngine": {
+          "tag": "Property",
+          "attributes": {
+            "name": "ExpressionEngine",
+            "status": "67108864",
+            "type": "App::PropertyExpressionEngine"
+          },
+          "children": [
+            {
+              "tag": "ExpressionEngine",
+              "attributes": {
+                "count": "0"
+              }
+            }
+          ]
+        },
+        "Length": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Length",
+            "status": "134217733",
+            "type": "App::PropertyLength"
+          },
+          "children": [
+            {
+              "tag": "Float",
+              "attributes": {
+                "value": "183.1911879797069389"
+              }
+            }
+          ]
+        },
+        "MapMode": {
+          "tag": "Property",
+          "attributes": {
+            "name": "MapMode",
+            "type": "App::PropertyEnumeration"
+          },
+          "children": [
+            {
+              "tag": "Integer",
+              "attributes": {
+                "value": "5"
+              }
+            }
+          ]
+        },
+        "Support": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Support",
+            "type": "App::PropertyLinkSubList"
+          },
+          "children": [
+            {
+              "tag": "LinkSubList",
+              "attributes": {
+                "count": "1"
+              },
+              "children": [
+                {
+                  "tag": "Link",
+                  "attributes": {
+                    "obj": "Pocket",
+                    "sub": "Face7"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "placement_mm_xyzw": [
+        0.0,
+        -75.0,
+        4.4e-15,
+        0.0,
+        0.7071067811865476,
+        0.7071067811865475,
+        0.0
+      ],
+      "constraints": [],
+      "geometry": []
+    },
+    {
+      "name": "Sketch005",
+      "type": "Sketcher::SketchObject",
+      "saved_brep": {
+        "member": "PartShape20.brp",
+        "bytes": 852,
+        "sha256": "27ccf08431954a0d232bde6742d5b35c2027ca5e92d070e3430c0e2e53aa8b17"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "Constraints": "511af3b374ae9b37cd09b0af2fc21b3dbb2fca32029e96760d198d4b119f6f79",
+        "ExpressionEngine": "6f22364113a44845e2f7051df02f528bd802bd9d6b15edbf079008065a5f8968",
+        "ExternalGeometry": "96e1df0a7d5c41e97ad392969223304548ee8751011af26ecee3c5601c24bf09",
+        "Geometry": "d6f8d293ccd7e9f636ad23f5289ec892a34bff8587a7e23c7effa287190d0ac9",
+        "MapMode": "54cb2e2f7019150d8dfc18cd0d9b5050e3ef6530f1e2c41bb069dcc5be3ea092",
+        "Placement": "f79f3060fd8147348c0c271c3e79268dc25f638f5b77f72d0f59922ca66d15e7",
+        "Support": "d52fa042e222fecb54cddb4748cd31757471812e04cd46c44203ad0f3543d111"
+      },
+      "saved_properties": {
+        "AttachmentOffset": {
+          "tag": "Property",
+          "attributes": {
+            "name": "AttachmentOffset",
+            "type": "App::PropertyPlacement"
+          },
+          "children": [
+            {
+              "tag": "PropertyPlacement",
+              "attributes": {
+                "A": "0.0000000000000000",
+                "Ox": "0.0000000000000000",
+                "Oy": "0.0000000000000000",
+                "Oz": "1.0000000000000000",
+                "Px": "0.0000000000000000",
+                "Py": "0.0000000000000000",
+                "Pz": "0.0000000000000000",
+                "Q0": "0.0000000000000000",
+                "Q1": "0.0000000000000000",
+                "Q2": "0.0000000000000000",
+                "Q3": "1.0000000000000000"
+              }
+            }
+          ]
+        },
+        "ExpressionEngine": {
+          "tag": "Property",
+          "attributes": {
+            "name": "ExpressionEngine",
+            "status": "67108864",
+            "type": "App::PropertyExpressionEngine"
+          },
+          "children": [
+            {
+              "tag": "ExpressionEngine",
+              "attributes": {
+                "count": "1"
+              },
+              "children": [
+                {
+                  "tag": "Expression",
+                  "attributes": {
+                    "expression": "Spreadsheet.M3BoltHeadRadius",
+                    "path": "Constraints[1]"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "ExternalGeometry": {
+          "tag": "Property",
+          "attributes": {
+            "name": "ExternalGeometry",
+            "type": "App::PropertyLinkSubList"
+          },
+          "children": [
+            {
+              "tag": "LinkSubList",
+              "attributes": {
+                "count": "1"
+              },
+              "children": [
+                {
+                  "tag": "Link",
+                  "attributes": {
+                    "obj": "Pocket",
+                    "sub": "Edge13"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "MapMode": {
+          "tag": "Property",
+          "attributes": {
+            "name": "MapMode",
+            "type": "App::PropertyEnumeration"
+          },
+          "children": [
+            {
+              "tag": "Integer",
+              "attributes": {
+                "value": "5"
+              }
+            }
+          ]
+        },
+        "Support": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Support",
+            "type": "App::PropertyLinkSubList"
+          },
+          "children": [
+            {
+              "tag": "LinkSubList",
+              "attributes": {
+                "count": "1"
+              },
+              "children": [
+                {
+                  "tag": "Link",
+                  "attributes": {
+                    "obj": "DatumPlane001",
+                    "sub": ""
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "placement_mm_xyzw": [
+        0.0,
+        -75.0,
+        4.4e-15,
+        0.0,
+        0.7071067811865476,
+        0.7071067811865475,
+        0.0
+      ],
+      "constraints": [
+        {
+          "Name": "",
+          "Type": "1",
+          "Value": "0.0000000000000000",
+          "First": "0",
+          "FirstPos": "3",
+          "Second": "-3",
+          "SecondPos": "3",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "10.0000000000000000",
+          "LabelPosition": "0.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        },
+        {
+          "Name": "",
+          "Type": "11",
+          "Value": "2.9500000000000002",
+          "First": "0",
+          "FirstPos": "0",
+          "Second": "-2000",
+          "SecondPos": "0",
+          "Third": "-2000",
+          "ThirdPos": "0",
+          "LabelDistance": "0.9308423399925232",
+          "LabelPosition": "10.0000000000000000",
+          "IsDriving": "1",
+          "IsInVirtualSpace": "0",
+          "IsActive": "1"
+        }
+      ],
+      "geometry": [
+        {
+          "tag": "Geometry",
+          "attributes": {
+            "type": "Part::GeomCircle"
+          },
+          "children": [
+            {
+              "tag": "GeoExtensions",
+              "attributes": {
+                "count": "1"
+              },
+              "children": [
+                {
+                  "tag": "GeoExtension",
+                  "attributes": {
+                    "geometryModeFlags": "00000000000000000000000000000000",
+                    "internalGeometryType": "0",
+                    "type": "Sketcher::SketchGeometryExtension"
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "Circle",
+              "attributes": {
+                "AngleXU": "-0.0000000000000000",
+                "CenterX": "31.5000000000000036",
+                "CenterY": "8.0000000000000000",
+                "CenterZ": "0.0000000000000000",
+                "NormalX": "0.0000000000000000",
+                "NormalY": "0.0000000000000000",
+                "NormalZ": "1.0000000000000000",
+                "Radius": "2.9500000000000002"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pocket001",
+      "type": "PartDesign::Pocket",
+      "saved_brep": {
+        "member": "PartShape22.brp",
+        "bytes": 136616,
+        "sha256": "94e7e798695f1b8e980562351f204ec4e18e2d2f9697f30a8877d8cbef162872"
+      },
+      "property_fingerprints": {
+        "BaseFeature": "28b9f62f188e91ac66bbd9e3dd055e4e28a0596d51a275dfccd63b4019fc9c5e",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "ec6502bd4cc5305655d1f90132245d0d574f2f2b33a17172df6d538428da9f91",
+        "Length2": "b0d77845d52ecd7c9dac2901cb1af63c837cd47bba53e9babc33e6e39a8d3949",
+        "Midplane": "ab7e6548565705d180f93afd7e7088ec79bb6aa16c15dc1deec3614ee359d380",
+        "Placement": "6c0f6633eef40e7b9a52a465276a78eb066aa9a3b1cb0171a4bd80fb02126a2f",
+        "Profile": "1589839c87eebe0ae056eabded2c212ade9233051f317eafc135d4bc4438e3d4",
+        "Reversed": "02d9a398bf11fdc368a1c1c5c349e7c2078bfad61ac7eeb6b0b7e0ea189f7758",
+        "Type": "13ddb85b03bdaab539af105f1be5e1285813e3c221e913bd4c59dfd5ddf8e222"
+      },
+      "saved_properties": {
+        "BaseFeature": {
+          "tag": "Property",
+          "attributes": {
+            "name": "BaseFeature",
+            "status": "8",
+            "type": "App::PropertyLink"
+          },
+          "children": [
+            {
+              "tag": "Link",
+              "attributes": {
+                "value": "Pocket"
+              }
+            }
+          ]
+        },
+        "ExpressionEngine": {
+          "tag": "Property",
+          "attributes": {
+            "name": "ExpressionEngine",
+            "status": "67108864",
+            "type": "App::PropertyExpressionEngine"
+          },
+          "children": [
+            {
+              "tag": "ExpressionEngine",
+              "attributes": {
+                "count": "0"
+              }
+            }
+          ]
+        },
+        "Length": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Length",
+            "type": "App::PropertyLength"
+          },
+          "children": [
+            {
+              "tag": "Float",
+              "attributes": {
+                "value": "12.0000000000000000"
+              }
+            }
+          ]
+        },
+        "Length2": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Length2",
+            "type": "App::PropertyLength"
+          },
+          "children": [
+            {
+              "tag": "Float",
+              "attributes": {
+                "value": "100.0000000000000000"
+              }
+            }
+          ]
+        },
+        "Midplane": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Midplane",
+            "type": "App::PropertyBool"
+          },
+          "children": [
+            {
+              "tag": "Bool",
+              "attributes": {
+                "value": "false"
+              }
+            }
+          ]
+        },
+        "Profile": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Profile",
+            "type": "App::PropertyLinkSub"
+          },
+          "children": [
+            {
+              "tag": "LinkSub",
+              "attributes": {
+                "count": "0",
+                "value": "Sketch005"
+              }
+            }
+          ]
+        },
+        "Reversed": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Reversed",
+            "type": "App::PropertyBool"
+          },
+          "children": [
+            {
+              "tag": "Bool",
+              "attributes": {
+                "value": "true"
+              }
+            }
+          ]
+        },
+        "Type": {
+          "tag": "Property",
+          "attributes": {
+            "name": "Type",
+            "type": "App::PropertyEnumeration"
+          },
+          "children": [
+            {
+              "tag": "Integer",
+              "attributes": {
+                "value": "0"
+              }
+            }
+          ]
+        }
+      },
+      "placement_mm_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "constraints": [],
+      "geometry": []
+    },
+    {
+      "name": "MultiTransform",
+      "type": "PartDesign::MultiTransform",
+      "saved_brep": {
+        "member": "PartShape23.brp",
+        "bytes": 196344,
+        "sha256": "092b9c0addf44d74c47c9395339cac4d700503bc9b24c00ae209d4cdb9c8805a"
+      },
+      "property_fingerprints": {
+        "BaseFeature": "740f6b52c28833b4d626e8144f7a29690bbac03ea08e71e3ddaf60462c330097",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Placement": "6c0f6633eef40e7b9a52a465276a78eb066aa9a3b1cb0171a4bd80fb02126a2f"
+      }
+    },
+    {
+      "name": "Mirrored",
+      "type": "PartDesign::Mirrored",
+      "saved_brep": {
+        "member": "PartShape24.brp",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "property_fingerprints": {
+        "BaseFeature": "e7faa41ed4a82b8cff32a084f96f249d6c11204c26e8c2af9b840209f7489ed4",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Placement": "6c0f6633eef40e7b9a52a465276a78eb066aa9a3b1cb0171a4bd80fb02126a2f"
+      }
+    },
+    {
+      "name": "Mirrored001",
+      "type": "PartDesign::Mirrored",
+      "saved_brep": {
+        "member": "PartShape25.brp",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "property_fingerprints": {
+        "BaseFeature": "e7faa41ed4a82b8cff32a084f96f249d6c11204c26e8c2af9b840209f7489ed4",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Placement": "6c0f6633eef40e7b9a52a465276a78eb066aa9a3b1cb0171a4bd80fb02126a2f"
+      }
+    },
+    {
+      "name": "DatumPlane002",
+      "type": "PartDesign::Plane",
+      "saved_brep": {
+        "member": "PartShape26.brp",
+        "bytes": 668,
+        "sha256": "df0f257692c98a8c92246bdf2c8a4a868d8075d24683594ed59b8530c48d8553"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "34585aedce954bdb9f4971b182d48aa76d0a67938d91b8ec9b2360eb85363b92",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "0b06a5907ba9bde691460d2ecc472dd8b1639f5fee1d8ce68164d595dbf4c1fe",
+        "MapMode": "24576d4bbc5665567d62ad33fec0c24594041f6f7ee1eded51fb1ce4987cbb26",
+        "Placement": "cd25d9fae49ae2700daf7c0941d1612eb18baab77d42627b07f1ceea184bd086",
+        "Support": "7df220793fee8b3386b39cd87060b4b29f6c30f9a86a6da8fcb47fe00bd4eb1e"
+      }
+    },
+    {
+      "name": "Sketch006",
+      "type": "Sketcher::SketchObject",
+      "saved_brep": {
+        "member": "PartShape27.brp",
+        "bytes": 3335,
+        "sha256": "2dde67a4840589dada1f576dce4bea87349d6960bf10a89781ee2d174d86f4ae"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "Constraints": "41cb003409b4c9f7fe895cfbc22a71d8e45988da0730663c96549c738539bb12",
+        "ExpressionEngine": "2adaeaed700f0201cc838d50e406090a76500d735eabbd75d6aa6536650c2118",
+        "ExternalGeometry": "71a6acfa82e550c7c0425eae21564d207c7397ee62c80c4332db953ef6e39666",
+        "Geometry": "82770b5a78f3e25c2329b8a91e3daabe72fdf971606f693bc67b0027fdfb0596",
+        "MapMode": "54cb2e2f7019150d8dfc18cd0d9b5050e3ef6530f1e2c41bb069dcc5be3ea092",
+        "Placement": "469547fd3a10ee63524a97235f9853a73c8bdbbdee4c93a1ca940ffb4b885354",
+        "Support": "9a4ab8cd3777dd76276807b949a7153df80bbed1dc6fcf7d32daec6d6bbd0af6"
+      }
+    },
+    {
+      "name": "Revolution",
+      "type": "PartDesign::Revolution",
+      "saved_brep": {
+        "member": "PartShape29.brp",
+        "bytes": 203480,
+        "sha256": "8ae6a899e1096444654c06291a91ed4fa3fbfededf926121be63077d03adb308"
+      },
+      "property_fingerprints": {
+        "Angle": "5a04d850d888527c5cee3b847f06c3a5f0f9e96d5637c9247c9957550e9681d2",
+        "BaseFeature": "dd80f592016f28c970f3c85f2374ad22664c92eb675a29542cd949438cd72fea",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Midplane": "ab7e6548565705d180f93afd7e7088ec79bb6aa16c15dc1deec3614ee359d380",
+        "Placement": "6c0f6633eef40e7b9a52a465276a78eb066aa9a3b1cb0171a4bd80fb02126a2f",
+        "Profile": "e2f25d04505f372bf8a79ccc09cda9f03971c54cd88c98b0226f9490f8e9cf20",
+        "ReferenceAxis": "560602499639738ba8580b185f4b8e16cd79ee154fc077f1c314f7b62a15e881",
+        "Reversed": "0fcdaba67aa6bfbce7a668700bdab3426ab9b9fd8aeee40ffbb740d9118a3686"
+      }
+    },
+    {
+      "name": "Sketch007",
+      "type": "Sketcher::SketchObject",
+      "saved_brep": {
+        "member": "PartShape30.brp",
+        "bytes": 4921,
+        "sha256": "bfc976e751b31b549f386904d8969c4dff2485a5a006fbd88cc077e1a5b0f1b2"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "Constraints": "8cc938accc7ffae425578939ccd34f54b48552607100101b0485763e91602596",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "ExternalGeometry": "73ad78a6b7ad43b1381b480248749c5db48b00ad4e573b0b1228c36eed7d4752",
+        "Geometry": "1cd81f790829ce1a769497e2541658229223cd51f1806bc3ebb1ea0e8472a0ea",
+        "MapMode": "54cb2e2f7019150d8dfc18cd0d9b5050e3ef6530f1e2c41bb069dcc5be3ea092",
+        "Placement": "693021d86670b5a06e3cb345e520ade90fba7ad7175ff53134a73381b6dbfec5",
+        "Support": "cc3f5c64fbdba2c84a33cdcc42b7d89b64b30652fb17478ade363a0813aeb3e3"
+      }
+    },
+    {
+      "name": "Pocket002",
+      "type": "PartDesign::Pocket",
+      "saved_brep": {
+        "member": "PartShape32.brp",
+        "bytes": 222712,
+        "sha256": "79cf04cb643f2c8e3f4a155bea475837f30b5fb2e43616dc11e0c2dbdf5ae467"
+      },
+      "property_fingerprints": {
+        "BaseFeature": "07f5e4b4c607ad18fcd68217e31a815debb37d87840693a654f0a511c7a1a52d",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "983669213c038d1d8def4d9087046077c5e542f3eefbd43a546dd68919b783d4",
+        "Length2": "b0d77845d52ecd7c9dac2901cb1af63c837cd47bba53e9babc33e6e39a8d3949",
+        "Midplane": "ab7e6548565705d180f93afd7e7088ec79bb6aa16c15dc1deec3614ee359d380",
+        "Placement": "6c0f6633eef40e7b9a52a465276a78eb066aa9a3b1cb0171a4bd80fb02126a2f",
+        "Profile": "17d6e74c3e66b7dce3c23921d88f3ef73cbe58bdd733fc3be5f5bf2177bd0dc3",
+        "Reversed": "0fcdaba67aa6bfbce7a668700bdab3426ab9b9fd8aeee40ffbb740d9118a3686",
+        "Type": "13ddb85b03bdaab539af105f1be5e1285813e3c221e913bd4c59dfd5ddf8e222"
+      }
+    },
+    {
+      "name": "Sketch008",
+      "type": "Sketcher::SketchObject",
+      "saved_brep": {
+        "member": "PartShape33.brp",
+        "bytes": 5550,
+        "sha256": "7cd3d55452e42dae516d5d4f520c06303c52952ddf52aa6226430e4dde8717c0"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "Constraints": "7ae4f2aff8a3ae875cc020f5b88eca70908e564475b99d622d2c810fa9bf12b3",
+        "ExpressionEngine": "4f0d112cb7ec743ec564f67ed21ab67f81ad783eff3b0ac868ac851d5cd25ea0",
+        "ExternalGeometry": "26db5fcfbf5db419310928afe9366073a5754fe8990c8af74b403c6664a29145",
+        "Geometry": "3cd34883333d9067408c5cc828fd1041bb19888df6ae6f4c1d8c85e7084bd509",
+        "MapMode": "54cb2e2f7019150d8dfc18cd0d9b5050e3ef6530f1e2c41bb069dcc5be3ea092",
+        "Placement": "5e3d6e76e7fa5c27b2dba20cee06d54c3dbed4a1d616d2ce8b7c5b13ec017a59",
+        "Support": "e48fe7089266dba884a93c103f6c917e9c8739946943628d11e887a90220c4e1"
+      }
+    },
+    {
+      "name": "Pocket003",
+      "type": "PartDesign::Pocket",
+      "saved_brep": {
+        "member": "PartShape35.brp",
+        "bytes": 230286,
+        "sha256": "e728bed018c14bf13a2d521eedd3ebac428cb90381b62284216d4b595c1b0649"
+      },
+      "property_fingerprints": {
+        "BaseFeature": "5d05b3c7c23afe52520cb9d4fdffb04966cd1aaa07f949af4b9aa936ece8ad77",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "0bd7f69dd26df593800e14ca28affc518b2c1fb745cc05a08ae28dec3a345e50",
+        "Length2": "b0d77845d52ecd7c9dac2901cb1af63c837cd47bba53e9babc33e6e39a8d3949",
+        "Midplane": "ab7e6548565705d180f93afd7e7088ec79bb6aa16c15dc1deec3614ee359d380",
+        "Placement": "6c0f6633eef40e7b9a52a465276a78eb066aa9a3b1cb0171a4bd80fb02126a2f",
+        "Profile": "831706a86f37e74ee279591b44b3bfa51f2c88e00cf9511bc5fb5f288a1007fa",
+        "Reversed": "0fcdaba67aa6bfbce7a668700bdab3426ab9b9fd8aeee40ffbb740d9118a3686",
+        "Type": "13ddb85b03bdaab539af105f1be5e1285813e3c221e913bd4c59dfd5ddf8e222"
+      }
+    },
+    {
+      "name": "Sketch009",
+      "type": "Sketcher::SketchObject",
+      "saved_brep": {
+        "member": "PartShape36.brp",
+        "bytes": 15043,
+        "sha256": "2ab8d10e9b11e1b5dcd5262aaaffa0dd0cd729d49dd773819844700b016f640e"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "Constraints": "5374ba217aae346dda7c2f578af309db13022ff0b59dd2455b20a60bedd76224",
+        "ExpressionEngine": "82b1770a3cbec56e6e7645ce7b361b611028a152eeb2786de67a4e2f05b99d43",
+        "ExternalGeometry": "42b8709e3cb2bcce54f44378b8629e270bcd61e17064d91bc2a6f3a5566b4c63",
+        "Geometry": "d56031194fb8b3c00eae596fddd14aa66bee9bcb528872a07c10fbb324e91904",
+        "MapMode": "54cb2e2f7019150d8dfc18cd0d9b5050e3ef6530f1e2c41bb069dcc5be3ea092",
+        "Placement": "ef9f0a6085c2257b1db601d0a2a66fa438ad42ea950251bd70a5e700b3e3e37a",
+        "Support": "641d768b2571a7b71611e79cbf9c6eee2b80da3012073eb2edc49501ce486650"
+      }
+    },
+    {
+      "name": "Pocket004",
+      "type": "PartDesign::Pocket",
+      "saved_brep": {
+        "member": "PartShape38.brp",
+        "bytes": 256682,
+        "sha256": "f20f009219cbf04e1cbf011d396b4905e0d96993c2c96454e994a36ec43b30e4"
+      },
+      "property_fingerprints": {
+        "BaseFeature": "f994ef3b6262cf0e38e8ad5e707ede6e2df6bd4ce41ddae0123840377e062d28",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "c339f6795c4a62bb18baaf9de8303fd03a850033b365bcc2288b8965155a8b31",
+        "Length2": "b0d77845d52ecd7c9dac2901cb1af63c837cd47bba53e9babc33e6e39a8d3949",
+        "Midplane": "ab7e6548565705d180f93afd7e7088ec79bb6aa16c15dc1deec3614ee359d380",
+        "Placement": "6c0f6633eef40e7b9a52a465276a78eb066aa9a3b1cb0171a4bd80fb02126a2f",
+        "Profile": "a73991d8d052f3f4d8b3cfecd876c4a85cd516abbdb38100d93306b29c7b272c",
+        "Reversed": "0fcdaba67aa6bfbce7a668700bdab3426ab9b9fd8aeee40ffbb740d9118a3686",
+        "Type": "b7df524d785336634d6b565af4a01b2d8073effe672d3ccf4bec7146fd0eba16"
+      }
+    },
+    {
+      "name": "Sketch010",
+      "type": "Sketcher::SketchObject",
+      "saved_brep": {
+        "member": "PartShape39.brp",
+        "bytes": 48988,
+        "sha256": "9d64644c0562f564aa9c84a467121e45ae2ed5f3286140405b66c246aa9f39d6"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "Constraints": "3ecd448a27fca80a465d87cdd872088c155aece68ffc3f19defd56b87effa185",
+        "ExpressionEngine": "c1238ddd196fa0d87351df700ebb2c25ca25bd1acec82aeea6a13f967fa3b0e9",
+        "ExternalGeometry": "51b3b6516754c6ca80ccf421fcd80bdd704329cb86daf69ef8425a2546011bdb",
+        "Geometry": "cd4d7dbe77a0f3e4550a08877701cc7ec160d3717fa55a06486363024d1be8f1",
+        "MapMode": "54cb2e2f7019150d8dfc18cd0d9b5050e3ef6530f1e2c41bb069dcc5be3ea092",
+        "Placement": "ef9f0a6085c2257b1db601d0a2a66fa438ad42ea950251bd70a5e700b3e3e37a",
+        "Support": "a390e19ec05ec3a75bf6c858aaecaf5a76331eafa3cee945456795de2a15c968"
+      }
+    },
+    {
+      "name": "Pocket005",
+      "type": "PartDesign::Pocket",
+      "saved_brep": {
+        "member": "PartShape41.brp",
+        "bytes": 402509,
+        "sha256": "d8956334f2bddb0908bdaef3619f56ba38f754194f7c6d86a2f139f3791150e6"
+      },
+      "property_fingerprints": {
+        "BaseFeature": "ae0a514c7c6e3f05e7333142208d3b12540d641404fbe57f9baeccffd6c3071b",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "0bd7f69dd26df593800e14ca28affc518b2c1fb745cc05a08ae28dec3a345e50",
+        "Length2": "b0d77845d52ecd7c9dac2901cb1af63c837cd47bba53e9babc33e6e39a8d3949",
+        "Midplane": "ab7e6548565705d180f93afd7e7088ec79bb6aa16c15dc1deec3614ee359d380",
+        "Placement": "6c0f6633eef40e7b9a52a465276a78eb066aa9a3b1cb0171a4bd80fb02126a2f",
+        "Profile": "28b9bd82730cce11ae839f7d810e74b392b589709a067f434516a18c0ed2ca1d",
+        "Reversed": "0fcdaba67aa6bfbce7a668700bdab3426ab9b9fd8aeee40ffbb740d9118a3686",
+        "Type": "13ddb85b03bdaab539af105f1be5e1285813e3c221e913bd4c59dfd5ddf8e222"
+      }
+    },
+    {
+      "name": "Sketch011",
+      "type": "Sketcher::SketchObject",
+      "saved_brep": {
+        "member": "PartShape42.brp",
+        "bytes": 45539,
+        "sha256": "c2b84b277afb8ca0e80698684ff2fe5bd11d9e3c4f876f1d4dd46ed0a48665fb"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "Constraints": "d8247bc08072539a0a8598acefd1fd207663b8829bd74d4a7de061afd6085359",
+        "ExpressionEngine": "409674abeed25e5a04bd9b1cd1d9587b1ec3233d27df1f0fb518d1164d5c9902",
+        "ExternalGeometry": "e346c98aebd50e5006d7be58d7271e2e3f92ad0f3e7cd0ad03629fb539a7e20c",
+        "Geometry": "2505ef962e4be53e579ea549d1e472ea24af5ba682f0f6c81536e17d10b4b764",
+        "MapMode": "54cb2e2f7019150d8dfc18cd0d9b5050e3ef6530f1e2c41bb069dcc5be3ea092",
+        "Placement": "ef9f0a6085c2257b1db601d0a2a66fa438ad42ea950251bd70a5e700b3e3e37a",
+        "Support": "be0738519c21944dc9555faef35eae2b139d2b279505eb20f4160322fa0863ca"
+      }
+    },
+    {
+      "name": "Pocket006",
+      "type": "PartDesign::Pocket",
+      "saved_brep": {
+        "member": "PartShape44.brp",
+        "bytes": 471346,
+        "sha256": "fe9a87e1950f0f9a67300ddd9154ab3110e250f96ddd66f46847f949b64b0452"
+      },
+      "property_fingerprints": {
+        "BaseFeature": "73bcaa2d338506e095c0bf3568ddbd22be5259ba5a9c03b134ae99bba66f2cc9",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "0f98080373cd398ee0f487b9061d33c6c7b6e22b336bce0b52b940ff0c6c680e",
+        "Length2": "b0d77845d52ecd7c9dac2901cb1af63c837cd47bba53e9babc33e6e39a8d3949",
+        "Midplane": "ab7e6548565705d180f93afd7e7088ec79bb6aa16c15dc1deec3614ee359d380",
+        "Placement": "6c0f6633eef40e7b9a52a465276a78eb066aa9a3b1cb0171a4bd80fb02126a2f",
+        "Profile": "1d4bb18b2f842e8d5af46176b84b27be530e108a6abc42de81d436f9bb873eac",
+        "Reversed": "0fcdaba67aa6bfbce7a668700bdab3426ab9b9fd8aeee40ffbb740d9118a3686",
+        "Type": "13ddb85b03bdaab539af105f1be5e1285813e3c221e913bd4c59dfd5ddf8e222"
+      }
+    },
+    {
+      "name": "Sketch012",
+      "type": "Sketcher::SketchObject",
+      "saved_brep": {
+        "member": "PartShape45.brp",
+        "bytes": 46721,
+        "sha256": "a073134927bbea02767f986190dc4c9e961ba7589059e54dccfcfc70a05276db"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "Constraints": "ad6fbf62b03c8d859f3fb7f198d5bdab39afb294500e6c69d03e880a7d9c562e",
+        "ExpressionEngine": "0f9703d27ce3de83aa6b944a112208a78c6671bdbc908765c10b871825c222e3",
+        "ExternalGeometry": "51b3b6516754c6ca80ccf421fcd80bdd704329cb86daf69ef8425a2546011bdb",
+        "Geometry": "077da5b79395f1821c415d0e937716fc915a5004a89f7a0ad3ec56a9a0e259b0",
+        "MapMode": "54cb2e2f7019150d8dfc18cd0d9b5050e3ef6530f1e2c41bb069dcc5be3ea092",
+        "Placement": "e68aa76a1c5232a8f887a9d34de26c6be6a7c5907e2299c285ec4b184b6d8a49",
+        "Support": "22d851c13ed1dd031a0114f23301449d3baefb795e00ce789d3a659539dcce5a"
+      }
+    },
+    {
+      "name": "Pocket007",
+      "type": "PartDesign::Pocket",
+      "saved_brep": {
+        "member": "PartShape47.brp",
+        "bytes": 644522,
+        "sha256": "2358e6b40db06ce1873eeba3bfd005ddc1fad7ea706c1b2ca1b5a8559c0e1d79"
+      },
+      "property_fingerprints": {
+        "BaseFeature": "cfa1e0791b7c9ac89470064cab935998b9bbcfa00b3f59ffa25383e1a1337162",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "0bd7f69dd26df593800e14ca28affc518b2c1fb745cc05a08ae28dec3a345e50",
+        "Length2": "b0d77845d52ecd7c9dac2901cb1af63c837cd47bba53e9babc33e6e39a8d3949",
+        "Midplane": "ab7e6548565705d180f93afd7e7088ec79bb6aa16c15dc1deec3614ee359d380",
+        "Placement": "6c0f6633eef40e7b9a52a465276a78eb066aa9a3b1cb0171a4bd80fb02126a2f",
+        "Profile": "80f77b327e22168f1c11a9d86cb3a5427abad48c1c995e2d26d6a85823c2886c",
+        "Reversed": "0fcdaba67aa6bfbce7a668700bdab3426ab9b9fd8aeee40ffbb740d9118a3686",
+        "Type": "13ddb85b03bdaab539af105f1be5e1285813e3c221e913bd4c59dfd5ddf8e222"
+      }
+    },
+    {
+      "name": "Sketch013",
+      "type": "Sketcher::SketchObject",
+      "saved_brep": {
+        "member": "PartShape48.brp",
+        "bytes": 10457,
+        "sha256": "b6718f01340f6dda5eff7668b2008032dc2c7a1cc7b11520ad7ca15a764f68e0"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "Constraints": "f3b76e8fc744405d4e8f9de1b9e71ad688b6241b9052001878a62cbf5a38d7e7",
+        "ExpressionEngine": "409674abeed25e5a04bd9b1cd1d9587b1ec3233d27df1f0fb518d1164d5c9902",
+        "ExternalGeometry": "647590d63179cd7acea15cf3303f8299c5832d69637450b119d0f01802c4df8f",
+        "Geometry": "0b2e260b26f80286424a1c92e9aa109662a0f8f840ec2d47e34a61b595fd5a42",
+        "MapMode": "54cb2e2f7019150d8dfc18cd0d9b5050e3ef6530f1e2c41bb069dcc5be3ea092",
+        "Placement": "e68aa76a1c5232a8f887a9d34de26c6be6a7c5907e2299c285ec4b184b6d8a49",
+        "Support": "b42086fd4247f85eeb2f8cc93d9a65cc5c3be206f10be63b37b02a765972abee"
+      }
+    },
+    {
+      "name": "Pocket008",
+      "type": "PartDesign::Pocket",
+      "saved_brep": {
+        "member": "PartShape50.brp",
+        "bytes": 669015,
+        "sha256": "0dab981ecfd7accf8a0cbb4d16b727ab1b847c9a293d4263dd3530ea61cd2ee4"
+      },
+      "property_fingerprints": {
+        "BaseFeature": "79e39e94371ccf2132723eb2ab8c117f2265b749eedc30db1b2c4dde7dc7430e",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "2317031daaded0ef15011d8b37b92a2a194f1a9aef5646526fd6823be41f109f",
+        "Length2": "b0d77845d52ecd7c9dac2901cb1af63c837cd47bba53e9babc33e6e39a8d3949",
+        "Midplane": "ab7e6548565705d180f93afd7e7088ec79bb6aa16c15dc1deec3614ee359d380",
+        "Placement": "6c0f6633eef40e7b9a52a465276a78eb066aa9a3b1cb0171a4bd80fb02126a2f",
+        "Profile": "e70c8c0db07fa6f2b19417f71db343a75ffddde699768e4726bdc43bd9f08b6f",
+        "Reversed": "0fcdaba67aa6bfbce7a668700bdab3426ab9b9fd8aeee40ffbb740d9118a3686",
+        "Type": "13ddb85b03bdaab539af105f1be5e1285813e3c221e913bd4c59dfd5ddf8e222"
+      }
+    },
+    {
+      "name": "Sketch014",
+      "type": "Sketcher::SketchObject",
+      "saved_brep": {
+        "member": "PartShape51.brp",
+        "bytes": 49839,
+        "sha256": "1adaac54ca85ba884ca7ff7c089a8ab9eda36abb462f42552111464cd2eac07f"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "Constraints": "d871512f34bda6238e22da0f7035da4787ee01375425cd5f7da973f6fca63899",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "ExternalGeometry": "51b3b6516754c6ca80ccf421fcd80bdd704329cb86daf69ef8425a2546011bdb",
+        "Geometry": "4b191ff87ed74ff32fdc4ddb03e2e0a5108fbb2aa7002b8b0be9393afa8f116c",
+        "MapMode": "54cb2e2f7019150d8dfc18cd0d9b5050e3ef6530f1e2c41bb069dcc5be3ea092",
+        "Placement": "1e3d5e77f0f1415719615f81f34aaf5a680bdd9222733d19ca939c9f5994de18",
+        "Support": "9fd5c8193313419ce88a901eb40120764f452933ea87e270ae1fb10611bcf286"
+      }
+    },
+    {
+      "name": "Pocket009",
+      "type": "PartDesign::Pocket",
+      "saved_brep": {
+        "member": "PartShape53.brp",
+        "bytes": 770171,
+        "sha256": "717521138b0274ccbfbb1987fc3bd4205f2607ee9f49be83fc9e09b9a7e0e853"
+      },
+      "property_fingerprints": {
+        "BaseFeature": "82185ff204ff277dc06f004bc8386cf0c6c81d231a4005baa66c4dd371535845",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "36b55dd959e1d3e0a7128dda0661f6daa7a1b8def549e1edd9c127e30f70b2e1",
+        "Length2": "b0d77845d52ecd7c9dac2901cb1af63c837cd47bba53e9babc33e6e39a8d3949",
+        "Midplane": "ab7e6548565705d180f93afd7e7088ec79bb6aa16c15dc1deec3614ee359d380",
+        "Placement": "6c0f6633eef40e7b9a52a465276a78eb066aa9a3b1cb0171a4bd80fb02126a2f",
+        "Profile": "216414a52a36099ba2f0c82564361ae07154a36f79dc6c18d7b2ebddab9db835",
+        "Reversed": "02d9a398bf11fdc368a1c1c5c349e7c2078bfad61ac7eeb6b0b7e0ea189f7758",
+        "Type": "13ddb85b03bdaab539af105f1be5e1285813e3c221e913bd4c59dfd5ddf8e222"
+      }
+    },
+    {
+      "name": "Sketch015",
+      "type": "Sketcher::SketchObject",
+      "saved_brep": {
+        "member": "PartShape54.brp",
+        "bytes": 13286,
+        "sha256": "8828b51cfebea01160d2f77897ef9046eeb49e793e686f442d385f0ff471f310"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "Constraints": "a0136f93e00e71ae78aba0958cec8dbb9d6f2c61c296b81183389533062e1dc4",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "ExternalGeometry": "b6691510965a53742c6ddaf2f1e375735cdf110425ffe030bbd45e4450891083",
+        "Geometry": "e0f56a560e845bd9c369c763d21bcbbbd9f69b72150724bd6d44cc724ce5a16b",
+        "MapMode": "54cb2e2f7019150d8dfc18cd0d9b5050e3ef6530f1e2c41bb069dcc5be3ea092",
+        "Placement": "d68a8e223c7235ec01a035b7b951bff3f6af30127b896000da14457c463069d6",
+        "Support": "b0aa634392db7a2ac9d3cfd18e73047de3034f49ae65ea90d7bcccb5ef2750f6"
+      }
+    },
+    {
+      "name": "Pocket010",
+      "type": "PartDesign::Pocket",
+      "saved_brep": {
+        "member": "PartShape56.brp",
+        "bytes": 789178,
+        "sha256": "e06718a804a8e2791c347f96eec9a2b155c373b39ea4561fe7e135e74677ff8f"
+      },
+      "property_fingerprints": {
+        "BaseFeature": "4ab0dad1c75579e4c25a505acc2638cbc568e573cd4d34e974ef363a386609c1",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "8a66fbc59682115989f61c6ac5a0d06b751411555fd9081ab645d876aff5b135",
+        "Length2": "b0d77845d52ecd7c9dac2901cb1af63c837cd47bba53e9babc33e6e39a8d3949",
+        "Midplane": "ab7e6548565705d180f93afd7e7088ec79bb6aa16c15dc1deec3614ee359d380",
+        "Placement": "6c0f6633eef40e7b9a52a465276a78eb066aa9a3b1cb0171a4bd80fb02126a2f",
+        "Profile": "8f5171118a6fe497ed5141ccab922cb023c78d4bf2ce76518d8ac0219a2d8323",
+        "Reversed": "0fcdaba67aa6bfbce7a668700bdab3426ab9b9fd8aeee40ffbb740d9118a3686",
+        "Type": "13ddb85b03bdaab539af105f1be5e1285813e3c221e913bd4c59dfd5ddf8e222"
+      }
+    },
+    {
+      "name": "Sketch016",
+      "type": "Sketcher::SketchObject",
+      "saved_brep": {
+        "member": "PartShape57.brp",
+        "bytes": 18043,
+        "sha256": "a13e78eb940f358a7bd7566b64a5cd97a72570f817d228c56f923fa071796a03"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "Constraints": "287c168e7e35cd82e017aeba3c2084c533aa7ff5fe470aeec9ee41c2fb645408",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "ExternalGeometry": "2ef39e4979a807b19e22c9245af425a6382cc2e8763c7bf02acda1256abf33d3",
+        "Geometry": "ffe489b9efee9faf2da21ff0ab550e7c2ef1a4250812b394766bb115bdd38b3e",
+        "MapMode": "54cb2e2f7019150d8dfc18cd0d9b5050e3ef6530f1e2c41bb069dcc5be3ea092",
+        "Placement": "d68a8e223c7235ec01a035b7b951bff3f6af30127b896000da14457c463069d6",
+        "Support": "a27db43a59ad5a399d66a8f95ce6e1bae08c97aeef567bc793c33e76832fa612"
+      }
+    },
+    {
+      "name": "Pocket011",
+      "type": "PartDesign::Pocket",
+      "saved_brep": {
+        "member": "PartShape59.brp",
+        "bytes": 826459,
+        "sha256": "2d31b70475afd3588240c1e6c65608ed505901eb2f100d26a0d1386a23c73912"
+      },
+      "property_fingerprints": {
+        "BaseFeature": "e04b9d84db8973e246230b964fbe8e09db374803100b5f3f0cb38f9b674cf64f",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "fd8895c3e817b82000117518f057a30879f80ada25241060f01311018b3dd807",
+        "Length2": "b0d77845d52ecd7c9dac2901cb1af63c837cd47bba53e9babc33e6e39a8d3949",
+        "Midplane": "ab7e6548565705d180f93afd7e7088ec79bb6aa16c15dc1deec3614ee359d380",
+        "Placement": "6c0f6633eef40e7b9a52a465276a78eb066aa9a3b1cb0171a4bd80fb02126a2f",
+        "Profile": "5902b6ed74bcc91d892c6e870a102423dcbb908a3fddcb918d426a389d755168",
+        "Reversed": "0fcdaba67aa6bfbce7a668700bdab3426ab9b9fd8aeee40ffbb740d9118a3686",
+        "Type": "13ddb85b03bdaab539af105f1be5e1285813e3c221e913bd4c59dfd5ddf8e222"
+      }
+    },
+    {
+      "name": "Sketch017",
+      "type": "Sketcher::SketchObject",
+      "saved_brep": {
+        "member": "PartShape60.brp",
+        "bytes": 41199,
+        "sha256": "4a3efb05cf61bdb2ecbb43473b907b2388dc15bb5e0165718568c6c5256ef768"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "Constraints": "06c88cf1750c63530216bd2d36e6400385ccc0323a5b9752c95aa00e718d1b31",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "ExternalGeometry": "51b3b6516754c6ca80ccf421fcd80bdd704329cb86daf69ef8425a2546011bdb",
+        "Geometry": "f2e1df54c632a0090a387d134915482258f56f61c7a11455f955a6fa2da0e2d2",
+        "MapMode": "54cb2e2f7019150d8dfc18cd0d9b5050e3ef6530f1e2c41bb069dcc5be3ea092",
+        "Placement": "fec58f1dd9fb600217e12fb2ff8af30f94f13dfe34c9de67214e987f12963d54",
+        "Support": "7df220793fee8b3386b39cd87060b4b29f6c30f9a86a6da8fcb47fe00bd4eb1e"
+      }
+    },
+    {
+      "name": "Pocket012",
+      "type": "PartDesign::Pocket",
+      "saved_brep": {
+        "member": "PartShape62.brp",
+        "bytes": 845953,
+        "sha256": "d097efb8a4582284d4e64819ec042a2b67dc02652cb92b60ad039f31f995f5a1"
+      },
+      "property_fingerprints": {
+        "BaseFeature": "28b23d3562b71e41022d764b75f52fdaa2cf71892a23c9552bc11edf3b104900",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "c339f6795c4a62bb18baaf9de8303fd03a850033b365bcc2288b8965155a8b31",
+        "Length2": "b0d77845d52ecd7c9dac2901cb1af63c837cd47bba53e9babc33e6e39a8d3949",
+        "Midplane": "33d187d4aef7b6812f65975e05f41934db18a24faa611b86ed83b8f7a1c75c2b",
+        "Placement": "6c0f6633eef40e7b9a52a465276a78eb066aa9a3b1cb0171a4bd80fb02126a2f",
+        "Profile": "3f08fa6fee1c671b4942c7490130c361ab137a724260a3ebcbfdcf42ee1e4dd0",
+        "Reversed": "0fcdaba67aa6bfbce7a668700bdab3426ab9b9fd8aeee40ffbb740d9118a3686",
+        "Type": "16d85aa1f2fb28718d427d2804e80679107b3dfa31f311477813d7785e71229b"
+      }
+    },
+    {
+      "name": "Fillet",
+      "type": "PartDesign::Fillet",
+      "saved_brep": {
+        "member": "PartShape64.brp",
+        "bytes": 849092,
+        "sha256": "36a44a583d2b6fa8473c4004db3978d5c6ebb4c2048b9b12c7669137bac12e20"
+      },
+      "property_fingerprints": {
+        "BaseFeature": "cbf43c1b5f63310ca2ede7378f881f3ddd83113881331448b3787e4b9c983a71",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Placement": "6c0f6633eef40e7b9a52a465276a78eb066aa9a3b1cb0171a4bd80fb02126a2f"
+      }
+    },
+    {
+      "name": "Sketch018",
+      "type": "Sketcher::SketchObject",
+      "saved_brep": {
+        "member": "PartShape65.brp",
+        "bytes": 91679,
+        "sha256": "f30fa856be557b5a2f4fb4012c040ccc425ab844d75e37f2a78b48dab72f1e5b"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "Constraints": "218aa4ebb34cffdbcd935547260e11324438bf0da9ef2bef17769b547c82dcd5",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "ExternalGeometry": "51b3b6516754c6ca80ccf421fcd80bdd704329cb86daf69ef8425a2546011bdb",
+        "Geometry": "2d14650d4b0fa2929594eae43d44421e8d67682516d7de5f857c6ed6f7dd5d01",
+        "MapMode": "54cb2e2f7019150d8dfc18cd0d9b5050e3ef6530f1e2c41bb069dcc5be3ea092",
+        "Placement": "fec58f1dd9fb600217e12fb2ff8af30f94f13dfe34c9de67214e987f12963d54",
+        "Support": "7df220793fee8b3386b39cd87060b4b29f6c30f9a86a6da8fcb47fe00bd4eb1e"
+      }
+    },
+    {
+      "name": "Pocket013",
+      "type": "PartDesign::Pocket",
+      "saved_brep": {
+        "member": "PartShape67.brp",
+        "bytes": 974078,
+        "sha256": "053dcf517985e6ffb386f26a51bc9db83c996d6a29108a99e3a04bed0addb97d"
+      },
+      "property_fingerprints": {
+        "BaseFeature": "31275eb84f33dfe7eb3311c84aaa82971c11933b17b9ef75a36397caf1926b31",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "c339f6795c4a62bb18baaf9de8303fd03a850033b365bcc2288b8965155a8b31",
+        "Length2": "b0d77845d52ecd7c9dac2901cb1af63c837cd47bba53e9babc33e6e39a8d3949",
+        "Midplane": "33d187d4aef7b6812f65975e05f41934db18a24faa611b86ed83b8f7a1c75c2b",
+        "Placement": "6c0f6633eef40e7b9a52a465276a78eb066aa9a3b1cb0171a4bd80fb02126a2f",
+        "Profile": "600de7717ca7db7464279d455e473a849a074e13248d7d82bcd962b40058cb93",
+        "Reversed": "0fcdaba67aa6bfbce7a668700bdab3426ab9b9fd8aeee40ffbb740d9118a3686",
+        "Type": "16d85aa1f2fb28718d427d2804e80679107b3dfa31f311477813d7785e71229b"
+      }
+    },
+    {
+      "name": "Sketch019",
+      "type": "Sketcher::SketchObject",
+      "saved_brep": {
+        "member": "PartShape68.brp",
+        "bytes": 99547,
+        "sha256": "87e4e33909a75303c76fc24a390dbe991f20fe1789088bed2bf5b0f40ccd9341"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "Constraints": "4735318281af96e00f7346874b31e74ea75a6236148f9c1dd2e4fc78a720bb90",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "ExternalGeometry": "51b3b6516754c6ca80ccf421fcd80bdd704329cb86daf69ef8425a2546011bdb",
+        "Geometry": "e4282166710153592ea3968b767474704953e7589bc818a830d622f570075c19",
+        "MapMode": "54cb2e2f7019150d8dfc18cd0d9b5050e3ef6530f1e2c41bb069dcc5be3ea092",
+        "Placement": "3618722614e1cb1d962cf6e8dacb80004b0d8a5a2da0dde54a6e81365102d54c",
+        "Support": "b30c35ae9ad53f2ec6a558a40e031a1e89cdfee26b7aa86cb568e9c1f1752f50"
+      }
+    },
+    {
+      "name": "Pocket014",
+      "type": "PartDesign::Pocket",
+      "saved_brep": {
+        "member": "PartShape70.brp",
+        "bytes": 1057172,
+        "sha256": "790c1843054918eb5ffb1b63b7c50650e515ccdcbfa68091cac9f3448648a5a6"
+      },
+      "property_fingerprints": {
+        "BaseFeature": "4fdcf924f18100c6aedcb405797bdf01233fdb9ad594568d8fa348d2720afa31",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "c339f6795c4a62bb18baaf9de8303fd03a850033b365bcc2288b8965155a8b31",
+        "Length2": "b0d77845d52ecd7c9dac2901cb1af63c837cd47bba53e9babc33e6e39a8d3949",
+        "Midplane": "ab7e6548565705d180f93afd7e7088ec79bb6aa16c15dc1deec3614ee359d380",
+        "Placement": "6c0f6633eef40e7b9a52a465276a78eb066aa9a3b1cb0171a4bd80fb02126a2f",
+        "Profile": "a418989599522403a33d7b60a29b78242146767dc95d5c5db2d32525f48325dc",
+        "Reversed": "02d9a398bf11fdc368a1c1c5c349e7c2078bfad61ac7eeb6b0b7e0ea189f7758",
+        "Type": "16d85aa1f2fb28718d427d2804e80679107b3dfa31f311477813d7785e71229b"
+      }
+    },
+    {
+      "name": "LCS_Motor2A",
+      "type": "PartDesign::CoordinateSystem",
+      "saved_brep": {
+        "member": "PartShape71.brp",
+        "bytes": 672,
+        "sha256": "b8009d0ea75b590e9dfaddd099d44e4b8dcab37121c91fd76d92ddd843e02c00"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "MapMode": "16b9bf359588ee94bf06dce2ea337a491a61e96da59b3201dce4116d14748f32",
+        "Placement": "ae07160d876ea15ac9fab7fb28fa2ff52d41d53485344a233f083b4e9121530c",
+        "Support": "db8e10131db3a78073730b9f80b0c3bde8b3e59fcd5258d1ec9fc6a49ddf640c"
+      },
+      "placement_mm_xyzw": [
+        21.500000000000007,
+        -31.20000000000002,
+        54.70000000000001,
+        0.5,
+        -0.5,
+        0.5000000000000001,
+        0.5
+      ]
+    },
+    {
+      "name": "LCS_Motor2V",
+      "type": "PartDesign::CoordinateSystem",
+      "saved_brep": {
+        "member": "PartShape72.brp",
+        "bytes": 673,
+        "sha256": "79e837976c6c05b076180c861657a06937df272fe8948d469512864f46044f46"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "MapMode": "16b9bf359588ee94bf06dce2ea337a491a61e96da59b3201dce4116d14748f32",
+        "Placement": "59b501d15ca24ae1737e6581208e07b425e1f31ffb9aca5ec6fa7562380e0ee3",
+        "Support": "d5a53e9e75c8c0d374a7128e15f974c9e4a1f38bee72a7cca73234ba52d1f9ee"
+      },
+      "placement_mm_xyzw": [
+        -21.500000000000004,
+        -31.20000000000002,
+        54.7,
+        0.5,
+        -0.5,
+        0.5000000000000001,
+        0.5
+      ]
+    },
+    {
+      "name": "LCS_Motor3",
+      "type": "PartDesign::CoordinateSystem",
+      "saved_brep": {
+        "member": "PartShape73.brp",
+        "bytes": 671,
+        "sha256": "cc71e9e33a3d9814313a6a1d25d0b728eb4f38cc8033735572e2c778e73527c5"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "MapMode": "16b9bf359588ee94bf06dce2ea337a491a61e96da59b3201dce4116d14748f32",
+        "Placement": "44c8fa7b750caf105e9f314c7abb3ca0240f430d2f10ffffa8234bd7fab33e76",
+        "Support": "fafc8d168125f82a730c6ac8b108a6235e05a21749653d109c5a5913f2a7e060"
+      },
+      "placement_mm_xyzw": [
+        0.0,
+        -31.200000000000042,
+        98.0,
+        0.5,
+        -0.5,
+        0.5000000000000001,
+        0.5
+      ]
+    },
+    {
+      "name": "LCS_BearingFix",
+      "type": "PartDesign::CoordinateSystem",
+      "saved_brep": {
+        "member": "PartShape74.brp",
+        "bytes": 669,
+        "sha256": "c1a314aace0920313f2be019b3e36a4694bee198f30070e790277ddfac36321b"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "MapMode": "3bdd9556f1d4b168ca11e5c99f46e726e5450de22ab27368116abba8bfd349c3",
+        "Placement": "9ed14e417a9a7191c39116c376239c4eac91bb1ec9bc419027ef312260575229",
+        "Support": "3b0f23c011e9dbe34af153685df9d551e0d2319d05db41ce2b05167ae7932987"
+      },
+      "placement_mm_xyzw": [
+        -8e-15,
+        37.00000000000468,
+        97.99999999999996,
+        -0.7071067811865475,
+        -0.0,
+        -0.0,
+        0.7071067811865476
+      ]
+    },
+    {
+      "name": "LCS_Optodisk",
+      "type": "PartDesign::CoordinateSystem",
+      "saved_brep": {
+        "member": "PartShape75.brp",
+        "bytes": 669,
+        "sha256": "671175a395e022a458da0bc2d4d21a45b756574a4102bf3e15f20e8be423925d"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "MapMode": "3bdd9556f1d4b168ca11e5c99f46e726e5450de22ab27368116abba8bfd349c3",
+        "Placement": "42c7b195b826334a5b204457dd26b7c491ee09c2e25e03dee6856898b548a13b",
+        "Support": "7c91f32ca12735f9829589d569623fece528dec1169e295bab00a8852db31d06"
+      },
+      "placement_mm_xyzw": [
+        -5.5239e-12,
+        35.000000000004725,
+        94.49999999999997,
+        -0.4999999999998426,
+        -0.4999999999999217,
+        -0.5000000000000789,
+        0.5000000000001568
+      ]
+    },
+    {
+      "name": "HoleAxis_1",
+      "type": "PartDesign::Line",
+      "saved_brep": {
+        "member": "PartShape76.brp",
+        "bytes": 793,
+        "sha256": "553ec66eeb07e3338035b91349c3d9ff337368eacd864f609a8f43a5569ad45a"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "018d8c3df04e8da52064476d6d2d32b826d1fad77414abfd88ca964a7805440f",
+        "MapMode": "234a4895da9b1b105587607213324790727383ae903e53908bcb86d30c74a01b",
+        "Placement": "50da2b3c070d2a54a130a3e3079dee60bf0dcfbeb2e0caa545dade2937abe761",
+        "Support": "d0b80fb1edb004c684324b73b00a3a91e368ccb91b3d059abb32ce348eed7853"
+      },
+      "placement_mm_xyzw": [
+        -31.500000000000004,
+        -63.0,
+        8.000000000000002,
+        0.0,
+        0.7071067811865477,
+        0.7071067811865475,
+        0.0
+      ]
+    },
+    {
+      "name": "HoleAxis_2",
+      "type": "PartDesign::Line",
+      "saved_brep": {
+        "member": "PartShape77.brp",
+        "bytes": 795,
+        "sha256": "a2597d6d2ca1ef7da788060804780b64f3d35eb9670fef652d57f13ff0551b53"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "736e5e482c79efb3c9115110e5cebb75bb14ee1d83ded71c3b343caedff760af",
+        "MapMode": "234a4895da9b1b105587607213324790727383ae903e53908bcb86d30c74a01b",
+        "Placement": "87a7845cbce8a467c2f8fd8fcf81860341eecd67fa6ae10ab8d30653e3d5a63b",
+        "Support": "b348ef588774f51fcad7ffb1906eae35ed2f5a4a3422f81e11fd82a72c107963"
+      },
+      "placement_mm_xyzw": [
+        31.500000000000004,
+        -63.0,
+        8.000000000000002,
+        -0.7071067811865477,
+        0.0,
+        0.0,
+        0.7071067811865475
+      ]
+    },
+    {
+      "name": "HoleAxis_3",
+      "type": "PartDesign::Line",
+      "saved_brep": {
+        "member": "PartShape78.brp",
+        "bytes": 792,
+        "sha256": "5bc2dc06c1424ea8fecb892b54db36a3e4084428fca73ea9b93384c862a3209d"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "018d8c3df04e8da52064476d6d2d32b826d1fad77414abfd88ca964a7805440f",
+        "MapMode": "234a4895da9b1b105587607213324790727383ae903e53908bcb86d30c74a01b",
+        "Placement": "c4e6e5e3d0662aaf5620c61fec98656989e545aaee6f7d210823332826dca3e7",
+        "Support": "6917d459484b7275840619ec18b1a2c821e0e18983cefbd0958392d39a87b691"
+      },
+      "placement_mm_xyzw": [
+        31.500000000000004,
+        63.0,
+        8.00000000000003,
+        0.7071067811865478,
+        0.0,
+        0.0,
+        0.7071067811865474
+      ]
+    },
+    {
+      "name": "HoleAxis_4",
+      "type": "PartDesign::Line",
+      "saved_brep": {
+        "member": "PartShape79.brp",
+        "bytes": 794,
+        "sha256": "c8d2073fe478197acb33b868a9551e0611c189542db3fd2b3052a54e1b20f721"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "736e5e482c79efb3c9115110e5cebb75bb14ee1d83ded71c3b343caedff760af",
+        "MapMode": "234a4895da9b1b105587607213324790727383ae903e53908bcb86d30c74a01b",
+        "Placement": "26a3cebd355b9b559671465c109101da305a27f7ba17a8d725ec82f3498f2f9c",
+        "Support": "3918159d62f4161b97570920ac2067e143517c471b039eebab0c93baf565d13b"
+      },
+      "placement_mm_xyzw": [
+        -31.500000000000004,
+        63.0,
+        8.00000000000003,
+        0.0,
+        -0.7071067811865478,
+        0.7071067811865474,
+        0.0
+      ]
+    },
+    {
+      "name": "LCS_Bot",
+      "type": "PartDesign::CoordinateSystem",
+      "saved_brep": {
+        "member": "PartShape80.brp",
+        "bytes": 667,
+        "sha256": "2cc5b33847309f650d31f6ac04518bef59de13f70ae9989fda69d87273f94dd7"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "MapMode": "3bdd9556f1d4b168ca11e5c99f46e726e5450de22ab27368116abba8bfd349c3",
+        "Placement": "5cb6c11f450eae5cebb1cf08594d5e18febcc3f586e4fb3ebd94a9829fc153b7",
+        "Support": "41fa744d3a410c066b1428ac1beb1047ccf93074cc34acc59e6330d9589701d5"
+      },
+      "placement_mm_xyzw": [
+        0.0,
+        -2.7e-15,
+        8.00000000000001,
+        1e-16,
+        2e-16,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "Sketch020",
+      "type": "Sketcher::SketchObject",
+      "saved_brep": {
+        "member": "PartShape81.brp",
+        "bytes": 854,
+        "sha256": "397042efe788600f39c04f917132c66e4a47bb77370b19806098e09bf7cae6c4"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "Constraints": "74e9d318f34fdce7dc74826118d3df45370e8bb32d1b74637fe695103cf636e5",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "ExternalGeometry": "ee678a0aec8bdc741dc6b40900b4275005a1bd22c295261c3663b40f9f883e94",
+        "Geometry": "0eed8444512b61139148e4cfedfbac294b1c96a2d61665b151c958aef75149c7",
+        "MapMode": "54cb2e2f7019150d8dfc18cd0d9b5050e3ef6530f1e2c41bb069dcc5be3ea092",
+        "Placement": "ef9f0a6085c2257b1db601d0a2a66fa438ad42ea950251bd70a5e700b3e3e37a",
+        "Support": "0ee6340906a16ef0f11b9d507a6237c8832288e29260ac4797dd33393d860736"
+      }
+    },
+    {
+      "name": "Pocket015",
+      "type": "PartDesign::Pocket",
+      "saved_brep": {
+        "member": "PartShape83.brp",
+        "bytes": 1050909,
+        "sha256": "1a63a5d3c9fe4b4ebe1aadc389c9f338238811e1381aa5feceaa38efdc46b72e"
+      },
+      "property_fingerprints": {
+        "BaseFeature": "2b6993b9ca11157648cc8406feadc963d6c784402369d92a2ad9ad11f7316ae9",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "0f98080373cd398ee0f487b9061d33c6c7b6e22b336bce0b52b940ff0c6c680e",
+        "Length2": "b0d77845d52ecd7c9dac2901cb1af63c837cd47bba53e9babc33e6e39a8d3949",
+        "Midplane": "ab7e6548565705d180f93afd7e7088ec79bb6aa16c15dc1deec3614ee359d380",
+        "Placement": "6c0f6633eef40e7b9a52a465276a78eb066aa9a3b1cb0171a4bd80fb02126a2f",
+        "Profile": "09876ad904da11ca49e04c22aa89eab8922f28be2be780e8fc6038eb4113aa75",
+        "Reversed": "0fcdaba67aa6bfbce7a668700bdab3426ab9b9fd8aeee40ffbb740d9118a3686",
+        "Type": "13ddb85b03bdaab539af105f1be5e1285813e3c221e913bd4c59dfd5ddf8e222"
+      }
+    },
+    {
+      "name": "LCS_Bearing",
+      "type": "PartDesign::CoordinateSystem",
+      "saved_brep": {
+        "member": "PartShape84.brp",
+        "bytes": 669,
+        "sha256": "67160cb60c03dc582ca898fe124d7ea22771b6c932119107fdc763d56b60bd87"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "MapMode": "16b9bf359588ee94bf06dce2ea337a491a61e96da59b3201dce4116d14748f32",
+        "Placement": "9377abb0d312817531173726028ed9e89c304e9dde5df673edcfd6ba25763c67",
+        "Support": "f445c929a7e9d16c4fba6102f1981cd30a758bfa39d68f35f9efc3a68bda49c8"
+      },
+      "placement_mm_xyzw": [
+        4.546e-13,
+        32.000000000004746,
+        97.99999999999996,
+        -0.7071067811865476,
+        -7.63e-14,
+        3.51e-14,
+        0.7071067811865475
+      ]
+    },
+    {
+      "name": "LCS_Art2BodyCover1",
+      "type": "PartDesign::CoordinateSystem",
+      "saved_brep": {
+        "member": "PartShape85.brp",
+        "bytes": 669,
+        "sha256": "570cb0f7e7055810247df2a371f16e2c5502bc9393e4facc1860641b61f2f6d3"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "MapMode": "3bdd9556f1d4b168ca11e5c99f46e726e5450de22ab27368116abba8bfd349c3",
+        "Placement": "8c54bcd56bc140c1faeecd4fbe6a07eecb6f199781fbe63fa779573fa196f9d2",
+        "Support": "97321e0cc01e2d2f334dd86732797161fa5c3e7fb575b256402ad9d2c7ff2ab6"
+      },
+      "placement_mm_xyzw": [
+        6.7e-15,
+        -35.0,
+        98.0,
+        0.0,
+        0.7071067811865476,
+        0.7071067811865475,
+        0.0
+      ]
+    },
+    {
+      "name": "HoleAxis_5",
+      "type": "PartDesign::Line",
+      "saved_brep": {
+        "member": "PartShape86.brp",
+        "bytes": 796,
+        "sha256": "a9bbb9e79f77823a008a97b31ad435d599b62d83e3c70f8217e63568de2fb29a"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "2efeed64946e170bfbe0b09a624a01e40575d2e70e0b0181583307971b228a22",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "0feb8f043f206de4d6eabda47dce452c7d8e559fb9987dbfb6ba9215afbe53fb",
+        "MapMode": "234a4895da9b1b105587607213324790727383ae903e53908bcb86d30c74a01b",
+        "Placement": "591614ae5b3bc15424a29e731899aef1de294a9edfeb3b3b4a1443aea908bbf4",
+        "Support": "dca77ebae0e9302789891a61b044f0bccd8ccc298c89cc0e0700a94290073e16"
+      },
+      "placement_mm_xyzw": [
+        37.000000000001705,
+        32.000000000010566,
+        70.2,
+        -1.646e-12,
+        0.7071067811865477,
+        0.7071067811865475,
+        1.5346e-12
+      ]
+    },
+    {
+      "name": "HoleAxis_6",
+      "type": "PartDesign::Line",
+      "saved_brep": {
+        "member": "PartShape87.brp",
+        "bytes": 795,
+        "sha256": "059a619ac48906c710bf2208c8242d004aff6a47994e4278df959283f471c98f"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "2efeed64946e170bfbe0b09a624a01e40575d2e70e0b0181583307971b228a22",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "ac416f27da5a2f722d2d6c37b788938a217cfd8b333b082f4914aa34b78d772b",
+        "MapMode": "234a4895da9b1b105587607213324790727383ae903e53908bcb86d30c74a01b",
+        "Placement": "074c89b67afb0de285e4f610630096c1310717bbf2f9abf0fd38bb6aa73a0ee8",
+        "Support": "34b6c5c0ef393caec44dffdedeaaa05ebd156e9a0281d932464af14561c0a054"
+      },
+      "placement_mm_xyzw": [
+        6.000000000038358,
+        32.000000000005684,
+        70.2,
+        -1.02847e-11,
+        0.7071067811865477,
+        0.7071067811865475,
+        1.01733e-11
+      ]
+    },
+    {
+      "name": "HoleAxis_7",
+      "type": "PartDesign::Line",
+      "saved_brep": {
+        "member": "PartShape88.brp",
+        "bytes": 795,
+        "sha256": "8c911572a20ddbc62a2b1efd76f388e124a027c3c016cdc8fd7920185222af0d"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "2efeed64946e170bfbe0b09a624a01e40575d2e70e0b0181583307971b228a22",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "be881c031d9380cec0266e6b316d67f773d174babe13422a7d12ab421ddb516d",
+        "MapMode": "234a4895da9b1b105587607213324790727383ae903e53908bcb86d30c74a01b",
+        "Placement": "e5eccdd0ad090fc91a3be2409a34bfa91ef49290ea96533420fa93af47310522",
+        "Support": "9ac7613e3fd726389c0fd9c5b3540104c833108515905008465ae65ad165c60c"
+      },
+      "placement_mm_xyzw": [
+        -6.00000000000504,
+        32.0000000000038,
+        70.2,
+        -5.57e-14,
+        0.7071067811865477,
+        0.7071067811865475,
+        -5.57e-14
+      ]
+    },
+    {
+      "name": "HoleAxis_8",
+      "type": "PartDesign::Line",
+      "saved_brep": {
+        "member": "PartShape89.brp",
+        "bytes": 796,
+        "sha256": "fb1a5d41f3c0b4c3a79caf259e8dfc415ae5bcfa04662156c472adf4bbe7f299"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "2efeed64946e170bfbe0b09a624a01e40575d2e70e0b0181583307971b228a22",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "21598e1afd490495a8f6891d8cba32b32cf46ef1fcc3a7abcd028e3054a8d1b3",
+        "MapMode": "234a4895da9b1b105587607213324790727383ae903e53908bcb86d30c74a01b",
+        "Placement": "3f922b5785f9442f77906bb66e00e11e3c349dbc00504c0644483409e85cfad1",
+        "Support": "1bad348eca79449cc4184ab11d1391d634175efa9baa4947256197d689153a97"
+      },
+      "placement_mm_xyzw": [
+        -37.000000000005045,
+        31.999999999998927,
+        70.2,
+        -5.57e-14,
+        0.7071067811865477,
+        0.7071067811865475,
+        -5.57e-14
+      ]
+    },
+    {
+      "name": "HoleAxis_9",
+      "type": "PartDesign::Line",
+      "saved_brep": {
+        "member": "PartShape90.brp",
+        "bytes": 796,
+        "sha256": "38d7f4cf2f684a6bd839584980b9b11bc9b15456d9846019cf183cb3d13d8da3"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "2efeed64946e170bfbe0b09a624a01e40575d2e70e0b0181583307971b228a22",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "21598e1afd490495a8f6891d8cba32b32cf46ef1fcc3a7abcd028e3054a8d1b3",
+        "MapMode": "234a4895da9b1b105587607213324790727383ae903e53908bcb86d30c74a01b",
+        "Placement": "93e2bfd63f158d16c487afff7941ed1d7b54947f2ba95e3be49e896f92221610",
+        "Support": "074849ee8cefeabb7e31795cd90fa4340b9904367f93c2408d0fda948027e5d8"
+      },
+      "placement_mm_xyzw": [
+        -37.000000000005045,
+        31.999999999998916,
+        39.2,
+        -5.57e-14,
+        0.7071067811865477,
+        0.7071067811865475,
+        -5.57e-14
+      ]
+    },
+    {
+      "name": "HoleAxis_10",
+      "type": "PartDesign::Line",
+      "saved_brep": {
+        "member": "PartShape91.brp",
+        "bytes": 795,
+        "sha256": "7eeeb112bf4c3493d31dccea62f198c93503905d116e48011d7adedc231c42f2"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "2efeed64946e170bfbe0b09a624a01e40575d2e70e0b0181583307971b228a22",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "be881c031d9380cec0266e6b316d67f773d174babe13422a7d12ab421ddb516d",
+        "MapMode": "234a4895da9b1b105587607213324790727383ae903e53908bcb86d30c74a01b",
+        "Placement": "de86a108266fb0c5ca6a721e99b63836de2d7b71b9bd6f7a59e0032de5a41a66",
+        "Support": "18f884e1262948e5797d3be342341bb6a8c278d845d7e5a36dbd10e26d9f117b"
+      },
+      "placement_mm_xyzw": [
+        -6.00000000000504,
+        32.00000000000379,
+        39.2,
+        -5.57e-14,
+        0.7071067811865477,
+        0.7071067811865475,
+        -5.57e-14
+      ]
+    },
+    {
+      "name": "HoleAxis_11",
+      "type": "PartDesign::Line",
+      "saved_brep": {
+        "member": "PartShape92.brp",
+        "bytes": 793,
+        "sha256": "91481f1a0885fae56deae14b4a327c5a1e3fefcee720b5696f1ec8b525175b23"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "2efeed64946e170bfbe0b09a624a01e40575d2e70e0b0181583307971b228a22",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "be881c031d9380cec0266e6b316d67f773d174babe13422a7d12ab421ddb516d",
+        "MapMode": "234a4895da9b1b105587607213324790727383ae903e53908bcb86d30c74a01b",
+        "Placement": "05e3e063673c7790cd32af263aa6826ee0668b90954c05dece656b220b3b0aa4",
+        "Support": "af4dec2f5e99b45eb86e117efdad93eb0489b08caf2413d175d83473883e906f"
+      },
+      "placement_mm_xyzw": [
+        5.999999999994879,
+        32.000000000005684,
+        39.2,
+        -3.66e-14,
+        0.7071067811865477,
+        0.7071067811865475,
+        -7.48e-14
+      ]
+    },
+    {
+      "name": "HoleAxis_12",
+      "type": "PartDesign::Line",
+      "saved_brep": {
+        "member": "PartShape93.brp",
+        "bytes": 795,
+        "sha256": "8fc8464826d6ecf343e51b2d20474eab47fa21e447b85c5c48ac20ad14de029f"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "2efeed64946e170bfbe0b09a624a01e40575d2e70e0b0181583307971b228a22",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "21598e1afd490495a8f6891d8cba32b32cf46ef1fcc3a7abcd028e3054a8d1b3",
+        "MapMode": "234a4895da9b1b105587607213324790727383ae903e53908bcb86d30c74a01b",
+        "Placement": "850d87642d044e65075a9a99f7e10a1b72687e5211d27ea70269958448a98b51",
+        "Support": "a79c8467b40562fd0a4e1253833027d085eff09e19758a166a42fe20a75cf284"
+      },
+      "placement_mm_xyzw": [
+        36.999999999994955,
+        32.000000000010566,
+        39.2,
+        -5.57e-14,
+        0.7071067811865477,
+        0.7071067811865475,
+        -5.57e-14
+      ]
+    },
+    {
+      "name": "Sketch021",
+      "type": "Sketcher::SketchObject",
+      "saved_brep": {
+        "member": "PartShape94.brp",
+        "bytes": 38561,
+        "sha256": "02a2e665fdcd2847cb19381e9fe3200074f2aa162764e9560b2295c975f40e8c"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "Constraints": "92ec77e2ef3a87bae58d5b45d6bdfe7f4d897312f2a1f841bd6be328c23e0042",
+        "ExpressionEngine": "76e84ad97bd1647adfac22a0c838f75d97a2ce7956b201b23acf25af43d028cb",
+        "ExternalGeometry": "eb479cb9441e4cf9c1279eacc54327bee64e1e55ee7221253abcf75f89ed7e8c",
+        "Geometry": "4454d982cb357b756b576e3e76c8319348ba27e3f35aeb243a8d488e8ba6521e",
+        "MapMode": "54cb2e2f7019150d8dfc18cd0d9b5050e3ef6530f1e2c41bb069dcc5be3ea092",
+        "Placement": "4e2db764110cea5fe0d524ff220205e944d40f0681d76ac2159e21aefc013d10",
+        "Support": "eb8635941850229b59f1238bb450ea4ef836f2018cc7d4c85576b7cc3bed0ce9"
+      }
+    },
+    {
+      "name": "Pocket016",
+      "type": "PartDesign::Pocket",
+      "saved_brep": {
+        "member": "PartShape96.brp",
+        "bytes": 1097448,
+        "sha256": "d0ae6d981d80307d4740c56ad7f56ac1d98bb38c242ede9605bffb1e1b794fba"
+      },
+      "property_fingerprints": {
+        "BaseFeature": "d728d57d97b66d86a7f524e501bc4debc1c9cb67b1dcc03cbe459abcb41cff28",
+        "ExpressionEngine": "7cd0cce1ae83ed7a99e7ca8919307cac343475f7d5ab8976ba639d3f86745a9e",
+        "Length": "0f98080373cd398ee0f487b9061d33c6c7b6e22b336bce0b52b940ff0c6c680e",
+        "Length2": "b0d77845d52ecd7c9dac2901cb1af63c837cd47bba53e9babc33e6e39a8d3949",
+        "Midplane": "ab7e6548565705d180f93afd7e7088ec79bb6aa16c15dc1deec3614ee359d380",
+        "Placement": "6c0f6633eef40e7b9a52a465276a78eb066aa9a3b1cb0171a4bd80fb02126a2f",
+        "Profile": "41b831fd3104a3e50912e5a40a7ad71786c306ab8728cecee9d94b8e14af6a51",
+        "Reversed": "0fcdaba67aa6bfbce7a668700bdab3426ab9b9fd8aeee40ffbb740d9118a3686",
+        "Type": "13ddb85b03bdaab539af105f1be5e1285813e3c221e913bd4c59dfd5ddf8e222"
+      }
+    },
+    {
+      "name": "HoleAxis_13",
+      "type": "PartDesign::Line",
+      "saved_brep": {
+        "member": "PartShape97.brp",
+        "bytes": 796,
+        "sha256": "e11d7725365b853770bfa125308435519d259f912e144994c9e2a02a9773be75"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "5d16e128369a70f6c98f50771dab554720dd57296691469cfde0778861acba9e",
+        "MapMode": "234a4895da9b1b105587607213324790727383ae903e53908bcb86d30c74a01b",
+        "Placement": "58933da21e14124138224675a797253e7fa46c90888aa36577adb72b69b429d5",
+        "Support": "566f0bcefb3b29759dd9e976174c0a613e20567e6fae5bd0cd4ecfb505188c9a"
+      },
+      "placement_mm_xyzw": [
+        -25.000000000005198,
+        33.00000000000081,
+        94.49999999999997,
+        -5.57e-14,
+        0.7071067811865477,
+        0.7071067811865475,
+        -5.57e-14
+      ]
+    },
+    {
+      "name": "HoleAxis_14",
+      "type": "PartDesign::Line",
+      "saved_brep": {
+        "member": "PartShape98.brp",
+        "bytes": 791,
+        "sha256": "24c1524ccfd09bf0f96ad79c25d7424c9588a7b967997fee07db8bd568db50b4"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "a05cd278772c078de32186ce45bf85e4afcd93c951f03c611a0f260a3afc512b",
+        "MapMode": "234a4895da9b1b105587607213324790727383ae903e53908bcb86d30c74a01b",
+        "Placement": "7dd81c94a978d3be9738cebce2f73c215b161148e396f8b22068417358ac3a3b",
+        "Support": "11cf9dc2b720b2dc652d0fe0a55db02877b3cadc62ef19e4044c74a158ae16e7"
+      },
+      "placement_mm_xyzw": [
+        0.0,
+        33.000000000004746,
+        86.99999999999997,
+        0.0,
+        0.7071067811865477,
+        0.7071067811865475,
+        0.0
+      ]
+    },
+    {
+      "name": "HoleAxis_15",
+      "type": "PartDesign::Line",
+      "saved_brep": {
+        "member": "PartShape99.brp",
+        "bytes": 792,
+        "sha256": "c9e57fb473b39e664fee797418f696a13ad5f18229f3205890813dcce6dc94e6"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "a05cd278772c078de32186ce45bf85e4afcd93c951f03c611a0f260a3afc512b",
+        "MapMode": "234a4895da9b1b105587607213324790727383ae903e53908bcb86d30c74a01b",
+        "Placement": "510d2068c2f4362ebc56137c8d51d86c291534ac5a3cb5bd9dd71292ae90a3a3",
+        "Support": "86bd351831ce030b3fd598f70fae82a72f91bc08eaba7efcd5bfd55130128bbd"
+      },
+      "placement_mm_xyzw": [
+        0.0,
+        33.000000000004746,
+        108.99999999999997,
+        0.0,
+        0.7071067811865477,
+        0.7071067811865475,
+        0.0
+      ]
+    },
+    {
+      "name": "HoleAxis_16",
+      "type": "PartDesign::Line",
+      "saved_brep": {
+        "member": "PartShape100.brp",
+        "bytes": 795,
+        "sha256": "466784e45e992002d2504c6267baee31896c91bf8077579dd5735414f4199563"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "5d16e128369a70f6c98f50771dab554720dd57296691469cfde0778861acba9e",
+        "MapMode": "234a4895da9b1b105587607213324790727383ae903e53908bcb86d30c74a01b",
+        "Placement": "005672f6da9853005f4d28712fe453f036bc473ba23fd2f9c8d49f10e77e2459",
+        "Support": "2d58b52eda3df5cf85659d5ec60a0cb1d29b6588d6b89b0665217fbe7317de4f"
+      },
+      "placement_mm_xyzw": [
+        24.999999999994802,
+        33.00000000000868,
+        94.49999999999997,
+        -5.57e-14,
+        0.7071067811865477,
+        0.7071067811865475,
+        -5.57e-14
+      ]
+    },
+    {
+      "name": "Sketch022",
+      "type": "Sketcher::SketchObject",
+      "saved_brep": {
+        "member": "PartShape101.brp",
+        "bytes": 5440,
+        "sha256": "cfc6d765ee6e7d2fdf33a92bf25322d58b2ae97346eeeb1d69d3c3f8ea74246b"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "Constraints": "49496ee0483ab1aa66f92bd3cd8d72bce22c6e1af5fb859de789e386d44952e9",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "ExternalGeometry": "33890929ad8c82f7111bbbff60448629f55a839d96c814e16116103cef8657f2",
+        "Geometry": "55074bc565199a7f980187611af0381cde01a87a52a84c0c64049ff8ab81217d",
+        "MapMode": "54cb2e2f7019150d8dfc18cd0d9b5050e3ef6530f1e2c41bb069dcc5be3ea092",
+        "Placement": "d68a8e223c7235ec01a035b7b951bff3f6af30127b896000da14457c463069d6",
+        "Support": "c54efb45f5bfb3878f29558f3c9e6bcd172714c448c27cc8d3b2536723fbfe15"
+      }
+    },
+    {
+      "name": "Pocket017",
+      "type": "PartDesign::Pocket",
+      "saved_brep": {
+        "member": "PartShape103.brp",
+        "bytes": 1098291,
+        "sha256": "07e890a06833a234ddd2992424c48ff88adabae5b40a931a923bd18d06bb0dc2"
+      },
+      "property_fingerprints": {
+        "BaseFeature": "df1154f091f2f7a594ae89e375810bd0006bd6831c575f21480cced24b27e38b",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "9b3d33f9961e696de9f6a869e2a8e8ecec8a7d4f1cca9db87f1b4bc570500228",
+        "Length2": "b0d77845d52ecd7c9dac2901cb1af63c837cd47bba53e9babc33e6e39a8d3949",
+        "Midplane": "ab7e6548565705d180f93afd7e7088ec79bb6aa16c15dc1deec3614ee359d380",
+        "Placement": "6c0f6633eef40e7b9a52a465276a78eb066aa9a3b1cb0171a4bd80fb02126a2f",
+        "Profile": "7ddb4ad5842dbb7b421a06f6613dc91e21fbc0f3c8a1738cea1d832de706d233",
+        "Reversed": "0fcdaba67aa6bfbce7a668700bdab3426ab9b9fd8aeee40ffbb740d9118a3686",
+        "Type": "13ddb85b03bdaab539af105f1be5e1285813e3c221e913bd4c59dfd5ddf8e222"
+      }
+    },
+    {
+      "name": "Sketch023",
+      "type": "Sketcher::SketchObject",
+      "saved_brep": {
+        "member": "PartShape104.brp",
+        "bytes": 19422,
+        "sha256": "c9fff8104c45b424cd5de95a886e37951039ad615f52e6f62e03c40301ef3dbe"
+      },
+      "property_fingerprints": {
+        "AttachmentOffset": "d65c8e24717dd06ffdbd961c9aa126a3f8ceca3c2b60a83936c53279e0b6be5b",
+        "Constraints": "7b7f79d4e77897f69b8897e9c8b9deee82ee4fad9ffe3c992cab5f87a00b5c65",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "ExternalGeometry": "51b3b6516754c6ca80ccf421fcd80bdd704329cb86daf69ef8425a2546011bdb",
+        "Geometry": "b2daba7fed9fc9928e30726cb475a81f5ab2cd38d5f98aa02694a9e96eda0d5c",
+        "MapMode": "54cb2e2f7019150d8dfc18cd0d9b5050e3ef6530f1e2c41bb069dcc5be3ea092",
+        "Placement": "3d78ca1398f2c6ed316c4c68999e0979e471e628d43d49fda15b6067e2270b1d",
+        "Support": "3dc321713ee406b2f6a921493cec69a07124382ce8e8bec8c23b7a514afb1929"
+      }
+    },
+    {
+      "name": "Pocket018",
+      "type": "PartDesign::Pocket",
+      "saved_brep": {
+        "member": "PartShape106.brp",
+        "bytes": 1119942,
+        "sha256": "bdc9b49ac5240668392f117e8e311d09d70b065a18d7808c28da663e5ed053ad"
+      },
+      "property_fingerprints": {
+        "BaseFeature": "51f7c1a703f914afa47234f855b85d9ccbb09fc6cfe0b1a3b7857b36429443ef",
+        "ExpressionEngine": "6a6855cfb9c7a7ba26038c821bd8d6997dd7c224bbb2af2912710ff4cd1b6dae",
+        "Length": "4c279ff166bebe2623fc519925239782aaefc7ea367d55d869d0603cc4b40440",
+        "Length2": "b0d77845d52ecd7c9dac2901cb1af63c837cd47bba53e9babc33e6e39a8d3949",
+        "Midplane": "ab7e6548565705d180f93afd7e7088ec79bb6aa16c15dc1deec3614ee359d380",
+        "Placement": "6c0f6633eef40e7b9a52a465276a78eb066aa9a3b1cb0171a4bd80fb02126a2f",
+        "Profile": "3f6cad7abb088b35d8ca9f48b2e79f89460625246cfa5a756e718bad912aface",
+        "Reversed": "0fcdaba67aa6bfbce7a668700bdab3426ab9b9fd8aeee40ffbb740d9118a3686",
+        "Type": "13ddb85b03bdaab539af105f1be5e1285813e3c221e913bd4c59dfd5ddf8e222"
+      }
+    }
+  ],
+  "native_recompute_performed": false,
+  "earliest_true_rebuild_drift": null,
+  "migration_accepted": false
+}
