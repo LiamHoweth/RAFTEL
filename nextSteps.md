@@ -2,7 +2,7 @@
 
 **Project:** ARM-01 BenchSort
 **Current phase:** Phase 1 — CAD-derived engineering foundation and design gates
-**Last updated:** 2026-11-11 19:22:40 UTC
+**Last updated:** 2026-11-11 19:42 UTC
 **Overall status:** In Progress
 
 ## Current Objective
@@ -14,6 +14,15 @@ Continue all three design gates: wrist handedness/moving masses/jaw articulation
 3. Review [load assumptions](arm-01/docs/thor-load-analysis.md), [material comparison](arm-01/hardware/cad/thor-material-comparison.json) and [incomplete Thor cost study](arm-01/hardware/thor-cost-study.md) before any purchase or fabrication decision. No orders or powered tests are approved by these calculations.
 
 ## Next Steps for Codex
+
+### Active desktop run — 2026-11-11
+
+- Started at **19:36 UTC** (13:36 America/Chicago); target integration freeze **01:36 UTC November 12**, final handoff approximately **02:36 UTC**. Actual elapsed time will be recorded at completion.
+- No existing RAFTEL checkout was found on this Windows host after checking the current workspace, project/worktree locations and user-directory checkout names/origins. Created `C:\Users\howet\Desktop\claudex\RAFTEL` from current `main` **6608d37**, fetched `origin/main`, and started `codex/arm01-desktop-seven-hour`. No pre-existing local changes were replaced.
+- Six specialists own exclusive new files in CAD diagnostics (A1/A2→A7 fallback), wrist/jaw reconciliation (W1–W4), spatial kinematics (K1–K3), scenario/load tools (M1–M3), controller replay (C2–C4/C8), and fabrication preparation (F1/F2/F4/F6). A seventh specialist performs independent evidence/math review. Root owns Git, CI, shared integration, evaluation and this handoff.
+- Native FreeCAD and the prior Mac source/runtime copies are unavailable on this Windows host. CAD work uses pinned source archives and historical captures; native rebuild/contact/mesh acceptance remains open. Free space exceeds **670 GiB**, above the 50 GiB reserve. No native installation or whole-assembly process started.
+- First Windows/Python **3.14.6** baseline: **321 passed / 4 failed**. One failure was Git CRLF conversion invalidating a pinned JSON byte hash; exact unchanged Git blob bytes were restored and an LF checkout policy added. Three reproduction failures were platform math roundoff (~1e-15), not changed model inputs. Reproduction checks now retain exact types/structure/provenance and use 1e-12 relative/absolute tolerance only for finite floating values; meaningful-change negative fixtures added. Historical reports and model equations remain unchanged. **330 tests now pass**, with focused lint/format and whitespace checks passing; original installation/compilation/sorter/generic-analysis checks passed. Independent review found no blocking issue; mixed-case native CAD filenames are explicitly binary in the LF policy.
+- Publication status: initial portability/evidence checkpoint ready for push and exact-head CI. Existing Linux CI now includes Windows, Python 3.11–3.14 on both platforms. Further lane outputs remain in progress, not accepted evidence.
 
 ### Seven-hour desktop run: objective and operating rules
 

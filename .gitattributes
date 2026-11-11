@@ -1,0 +1,8 @@
+# Evidence files bind exact Git blob bytes; keep them stable on Windows too.
+* text=auto eol=lf
+*.[fF][cC][sS][tT][dD] -text
+*.[fF][cC][sS][tT][dD][0-9] -text
+*.brep -text
+*.stl -text
+*.png -text
+*.pdf -text

@@ -18,6 +18,39 @@ sys.modules[_SPEC.name] = loads
 _SPEC.loader.exec_module(loads)
 
 
+def assert_report_matches(actual, expected, path="root"):
+    """Keep provenance/structure exact; allow only cross-platform libm roundoff."""
+    assert type(actual) is type(expected), path
+    if isinstance(expected, dict):
+        assert actual.keys() == expected.keys(), path
+        for key in expected:
+            assert_report_matches(actual[key], expected[key], f"{path}.{key}")
+    elif isinstance(expected, list):
+        assert len(actual) == len(expected), path
+        for index, (value, reference) in enumerate(zip(actual, expected, strict=True)):
+            assert_report_matches(value, reference, f"{path}[{index}]")
+    elif isinstance(expected, float):
+        assert math.isfinite(actual) and math.isfinite(expected), path
+        assert actual == pytest.approx(expected, rel=1e-12, abs=1e-12), path
+    else:
+        assert actual == expected, path
+
+
+@pytest.mark.parametrize(
+    "actual,expected",
+    [
+        ({"sha256": "changed"}, {"sha256": "pinned"}),
+        ({"count": 518.0}, {"count": 518}),
+        ({"value": 1.000001}, {"value": 1.0}),
+        ({"value": float("nan")}, {"value": float("nan")}),
+        ({"value": [1.0]}, {"value": [1.0, 2.0]}),
+    ],
+)
+def test_report_reproduction_rejects_provenance_structure_or_meaningful_changes(actual, expected):
+    with pytest.raises(AssertionError):
+        assert_report_matches(actual, expected)
+
+
 def snapshot():
     return {
         "schema_version": 1,
@@ -404,7 +437,7 @@ def test_original_PLA_default_report_remains_reproducible():
     root = Path(__file__).parents[1]
     inventory = json.loads((root / "hardware/cad/thor-mounted-geometry.json").read_text())
     baseline = json.loads((root / "hardware/cad/thor-load-study.json").read_text())
-    assert json.loads(json.dumps(loads.cad_load_study(inventory))) == baseline
+    assert_report_matches(json.loads(json.dumps(loads.cad_load_study(inventory))), baseline)
 
 
 def test_material_comparison_explicitly_does_not_validate_structural_performance():
@@ -560,11 +593,13 @@ def test_original_wrist_and_material_reports_remain_reproducible():
     root = Path(__file__).parents[1] / "hardware/cad"
     inventory = json.loads((root / "thor-mounted-geometry.json").read_text())
     membership = json.loads((root / "thor-wrist-membership.json").read_text())
-    assert json.loads(json.dumps(loads.wrist_load_study(inventory, membership))) == json.loads(
-        (root / "thor-wrist-load-study.json").read_text()
+    assert_report_matches(
+        json.loads(json.dumps(loads.wrist_load_study(inventory, membership))),
+        json.loads((root / "thor-wrist-load-study.json").read_text()),
     )
-    assert loads.material_comparison_report(inventory) == json.loads(
-        (root / "thor-material-comparison.json").read_text()
+    assert_report_matches(
+        loads.material_comparison_report(inventory),
+        json.loads((root / "thor-material-comparison.json").read_text()),
     )
 
 
@@ -675,7 +710,7 @@ def test_revised_report_reproduces_and_distinguishes_intended_phase_from_sensiti
     inventory, membership, _ = revised_wrist_inputs()
     report = loads.wrist_load_study(inventory, membership)
     path = Path(__file__).parents[1] / "hardware/cad/thor-wrist-load-study-v2.json"
-    assert json.loads(json.dumps(report)) == json.loads(path.read_text())
+    assert_report_matches(json.loads(json.dumps(report)), json.loads(path.read_text()))
     assert report["chosen_intended_phase"]["side_rotor_sign_s"] == 1
     for case in report["cases"]:
         if case["side_rotor_sign_s"] == 1:
