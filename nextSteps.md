@@ -2,11 +2,11 @@
 
 **Project:** ARM-01 BenchSort
 **Current phase:** Phase 1 — CAD-derived engineering foundation and design gates
-**Last updated:** 2026-11-11 18:45:06 UTC
+**Last updated:** 2026-11-11 19:00:02 UTC
 **Overall status:** In Progress
 
 ## Current Objective
-Resolve the wrist moving-body model and elbow transmission/load relationship using the merged Thor geometry and conditional mass baseline. Preserve uncertainty where belt pitch, motion signs or physical properties cannot be established from sources. The analysis baseline is usable: it preserves upstream geometry with one explicit static Art1 compatibility snapshot. It does not establish a safe physical arm, an actuator payload rating, or repaired original Art1 feature history.
+Continue all three design gates: wrist handedness/moving masses/jaw articulation, elbow pitch/routing/controller compensation and actuator capacity, and dimensioned fabrication interfaces/source editability. Preserve source CAD and previous reports; produce revised evidence where the expanded audit finds omissions. The analysis baseline does not establish physical performance, safe payload, printable-part release or repaired original Art1 history.
 
 ## Next 3 Actions for Liam
 1. Measure bench dimensions, desk thickness/material, rear clamp clearance and camera mounting clearance. These determine the removable mount and reachable workstation layout.
@@ -19,7 +19,9 @@ Resolve the wrist moving-body model and elbow transmission/load relationship usi
 3. **Prepare fabrication interfaces and source-editability gate.** Produce the mount/gripper interface proposal, sliced mass/fit plan and bounded Art1 history migration plan. Why: the snapshot supports analysis but loses original Art1 procedural edits, and native jaw motion has not proven the parallel-gripper requirement. Dependencies: Liam's measurements/profiles for fabrication; original source and geometry are available for continued software/CAD investigation. Done: dimensioned proposals and acceptance tests with no unsupported release/purchase claims.
 
 ## In Progress
-- Six-agent wrist/elbow checkpoint is merged into `main` through [PR #4](https://github.com/LiamHoweth/RAFTEL/pull/4), merge commit `40995155f535e5a326273caf4dc5cf3ad135fcb4`. Implementation head `6f6f7278bbec096ce42d940b67cf053ffc825509` passed all four Python CI jobs before merge. All six specialist lanes are complete; no ongoing background work is implied. Resume the next actions above.
+- Active expanded continuation on `codex/thor-articulation-drive-closure`. Twelve agents cover wrist contact/sign review, controller audit, transmission math, moving mass, gripper, actuator capacity, fabrication, Art1 migration, elbow belt closure, geometry completeness and independent review. Root integrates revised reports, validation, pushes and the authorized merge.
+- **Coverage correction under investigation:** two installed Art4 wrist belts are absent from the earlier516-leaf inventory; four input-pulley/screw leaves also need own-shaft motion assignments. Exact conservation of the earlier inventory did not prove whole-assembly completeness. Preserve the original baseline as historical and generate a reviewed revised inventory/report; do not use its mass as a complete physical-arm mass.
+- Six-agent wrist/elbow checkpoint is merged into `main` through [PR #4](https://github.com/LiamHoweth/RAFTEL/pull/4), merge commit `40995155f535e5a326273caf4dc5cf3ad135fcb4`. Implementation head `6f6f7278bbec096ce42d940b67cf053ffc825509` passed all four Python CI jobs before merge. Those six prior lanes are complete; the new expanded continuation above is active.
 - Engineering implementation is merged into `main` through [PR #1](https://github.com/LiamHoweth/RAFTEL/pull/1), merge commit `024fe244d36ecabff296f69554fc43dc1821d957`. Implementation head `ac17570` passed all four CI jobs before that merge; PR #4 adds the current wrist/elbow continuation.
 - Earlier geometry/native-compatibility work remains merged. This continuation adds separate evidence/reports; original source CAD, baseline load snapshot, full baseline study and material report are unchanged.
 
@@ -70,6 +72,7 @@ No hardware was purchased, assembled, energized or physically tested. Liam confi
 - [ ] Phase 7 — Reliability benchmarks, detachable mount and mobile readiness
 
 ## Recent Engineering Log
+- 2026-11-11: Expanded the authorized continuation to all wrist/elbow/fabrication/editability actions with twelve agent lanes. New moving-mass audit found two omitted installed wrist belts and four phase-dependent input pulley/screw COMs; geometry extractor completeness and revised reports are now part of the checkpoint. Earlier reports remain preserved.
 - 2026-11-11: Verified exact-head CI and merged PR #4 into main as4099515. Updated this handoff with actual merge/run evidence and next evidence gates. Source checkout remains clean; existing native runtime/evidence retained, approximately53GiB free.
 - 2026-11-11: Six current lanes completed and froze the wrist/elbow checkpoint. All270 local tests and lint/format/compile/CLI checks pass; reports reproduce exactly. Added CI smoke checks and durable model contracts. Matching-head CI passed all four jobs; PR #4 is merged as4099515.
 - 2026-11-11: Exact wrist ledger passes independent516-leaf/515-record conservation review. Wrist chain math passes an independent300-case transform/Jacobian check; elbow virtual-work/inverse math passes1,000 random cases. Native belt evidence establishes a conditional shoulder-carrier term, with schematic idler mismatches and physical pitch radius/signs retained as open gates. Integration and final suite/CI are in progress.
