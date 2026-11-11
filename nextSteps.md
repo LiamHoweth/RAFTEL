@@ -2,7 +2,7 @@
 
 **Project:** ARM-01 BenchSort
 **Current phase:** Phase 1 — CAD-derived engineering foundation and design gates
-**Last updated:** 2026-11-11 18:43:58 UTC
+**Last updated:** 2026-11-11 18:45:06 UTC
 **Overall status:** In Progress
 
 ## Current Objective
@@ -19,8 +19,8 @@ Resolve the wrist moving-body model and elbow transmission/load relationship usi
 3. **Prepare fabrication interfaces and source-editability gate.** Produce the mount/gripper interface proposal, sliced mass/fit plan and bounded Art1 history migration plan. Why: the snapshot supports analysis but loses original Art1 procedural edits, and native jaw motion has not proven the parallel-gripper requirement. Dependencies: Liam's measurements/profiles for fabrication; original source and geometry are available for continued software/CAD investigation. Done: dimensioned proposals and acceptance tests with no unsupported release/purchase claims.
 
 ## In Progress
-- Six-agent wrist/elbow checkpoint on `codex/thor-wrist-elbow-loads` is complete and locally verified. Push, PR and CI verification precede the authorized merge; publication is pending at this checkpoint.
-- Engineering implementation is merged into `main` through [PR #1](https://github.com/LiamHoweth/RAFTEL/pull/1), merge commit `024fe244d36ecabff296f69554fc43dc1821d957`. Implementation head `ac17570` passed all four CI jobs before the authorized merge; no implementation changes remain unmerged. This handoff records the verified publication state.
+- Six-agent wrist/elbow checkpoint is merged into `main` through [PR #4](https://github.com/LiamHoweth/RAFTEL/pull/4), merge commit `40995155f535e5a326273caf4dc5cf3ad135fcb4`. Implementation head `6f6f7278bbec096ce42d940b67cf053ffc825509` passed all four Python CI jobs before merge. All six specialist lanes are complete; no ongoing background work is implied. Resume the next actions above.
+- Engineering implementation is merged into `main` through [PR #1](https://github.com/LiamHoweth/RAFTEL/pull/1), merge commit `024fe244d36ecabff296f69554fc43dc1821d957`. Implementation head `ac17570` passed all four CI jobs before that merge; PR #4 adds the current wrist/elbow continuation.
 - Earlier geometry/native-compatibility work remains merged. This continuation adds separate evidence/reports; original source CAD, baseline load snapshot, full baseline study and material report are unchanged.
 
 ## Completed and Verified
@@ -47,6 +47,7 @@ Resolve the wrist moving-body model and elbow transmission/load relationship usi
 No hardware was purchased, assembled, energized or physically tested. Liam confirmed PLA, PETG and ABS print availability. The candidate BOM and supplier prices remain research; the complete delivered Thor build cost and structural material selection are open. Printer ownership/model is confirmed by Liam as Kobra 3 Max; published nominal volume is recorded. Actual printer/nozzle/material profiles and remaining computer/tool/camera inventory still need detail.
 
 ## Validation Results
+- Current wrist/elbow implementation passed GitHub Actions on Linux/Python3.11–3.14, including270 tests and new wrist/elbow CLI smoke checks: [run43080568624](https://github.com/LiamHoweth/RAFTEL/actions/runs/43080568624). Exact checked head is `6f6f7278bbec096ce42d940b67cf053ffc825509`. Native evidence remains local source inspection, not CI or hardware testing.
 - 270 tests pass locally on macOS/Python3.14.4; Ruff lint/format, Python compilation and whitespace checks pass. Installed mock CLI sorts10 synthetic objects. Generic engineering and new wrist/elbow CLI smoke checks pass; both new reports reproduce exactly. Original PLA study reproduction test remains passing.
 - Mock installed CLI sorts10 synthetic objects; failures/skips remain explicit. Separate installed-wheel checks validate packaged defaults and Python modules.
 - Saved load snapshot, full load study and material comparison reproduce exactly. JSON parses and local documentation targets resolve.
@@ -69,7 +70,8 @@ No hardware was purchased, assembled, energized or physically tested. Liam confi
 - [ ] Phase 7 — Reliability benchmarks, detachable mount and mobile readiness
 
 ## Recent Engineering Log
-- 2026-11-11: Six current lanes completed and froze the wrist/elbow checkpoint. All270 local tests and lint/format/compile/CLI checks pass; reports reproduce exactly. Added CI smoke checks and durable model contracts. Ready to push and merge after matching-head CI succeeds.
+- 2026-11-11: Verified exact-head CI and merged PR #4 into main as4099515. Updated this handoff with actual merge/run evidence and next evidence gates. Source checkout remains clean; existing native runtime/evidence retained, approximately53GiB free.
+- 2026-11-11: Six current lanes completed and froze the wrist/elbow checkpoint. All270 local tests and lint/format/compile/CLI checks pass; reports reproduce exactly. Added CI smoke checks and durable model contracts. Matching-head CI passed all four jobs; PR #4 is merged as4099515.
 - 2026-11-11: Exact wrist ledger passes independent516-leaf/515-record conservation review. Wrist chain math passes an independent300-case transform/Jacobian check; elbow virtual-work/inverse math passes1,000 random cases. Native belt evidence establishes a conditional shoulder-carrier term, with schematic idler mismatches and physical pitch radius/signs retained as open gates. Integration and final suite/CI are in progress.
 - 2026-11-11: Resumed wrist/elbow continuation with six agents after clean-main audit. Existing native runtime/source copies are available;53GiB free. No hardware motion or source-CAD changes authorized by analysis.
 - 2026-11-11: Liam identified a Kobra 3 Max. Recorded published build volume and remaining profile/filament questions; refreshed today’s daily reading around Thor load paths, material assumptions and this printer. No printer operation or configuration change.
