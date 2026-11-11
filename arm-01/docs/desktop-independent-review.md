@@ -343,3 +343,36 @@ byte-identical and only Art1 has the recorded static wrapper. This audit uses
 `recompute=changed` and `shape_scope=none`: it establishes restore/state/software
 compatibility evidence, not force-all recomputation, whole-shape validity,
 contact, kinematics or physical performance.
+
+## Cached metric semantics follow-up
+
+The [metric-definition audit](thor-native-metric-semantics.md) received separate
+source and numerical review. All 21 primary-source files were independently
+fetched from their exact FreeCAD/OCCT commit URLs; all 700,377 bytes agree with
+the local receipt. The source explains the API's integration, bounding and
+distance definitions, without reconstructing every distributor patch or proving
+the cause of the observed Art1 discrepancies. All 149 combined CAD/metric tests
+pass in the reviewer-run suite.
+
+The actual cached-geometry experiment preserves original/candidate/input-copy
+and retained code/helper/request hashes, five isolated paths and zero open
+documents. Independent box formulas confirm its translated-boundary and interior
+point controls. All six directed sample sets contain 95 vertices; their reported
+maxima reproduce from the recorded rows, whose coordinates are float32
+representable. These are sampled mesh-point observations, not continuous surface
+separation or a Hausdorff bound.
+
+Optimal unmeshed Z maxima differ by 1.927540438e-8 mm. Meshing changes default
+bounds while leaving volume, COM and geometric inertia unchanged. Some observed
+post-mesh bounds lie inside the tighter unmeshed extrema, so they cannot be
+treated as guaranteed conservative geometry envelopes. Both Boolean differences
+are non-null empty compounds with no solids, faces or edges. Across the three
+mesh settings, candidate-minus-source triangle-volume integrals are approximately
+`28.943437889`, `-1.607588449` and `0.0035764224` mm³; they change sign and do not
+quantify integration error. The native volume discrepancy persists.
+
+These observations narrow the interpretation of old metrics. They do not prove
+that numerical integration explains the entire difference, that all surfaces
+coincide, or that the candidate is acceptable. The existing datum, reference,
+volume and failed radius-roundtrip gates remain intact. No original/historical
+report was rewritten and no CAD, physical or fabrication acceptance was granted.
