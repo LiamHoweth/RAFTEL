@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "evidence_class": "offline_reanalysis_of_historical_native_capture",
+  "input_evidence_sha256": "0f1f2246ae8216bcd6569081884c69bb754ca054571db0429b362ff3df19c8f6",
+  "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+  "source_sha256": "8afa16c8ff3adebd87e48b67dfb20d3224402bd517010dc112950a28f219690a",
+  "native_recompute_performed": false,
+  "feature_measurements": [
+    {
+      "name": "Groove",
+      "saved_volume_mm3": 1461442.4342475636,
+      "rebuilt_volume_mm3": 1461439.5700106574,
+      "volume_delta_mm3": -2.864236906170845,
+      "exact_volume_check_passed": false
+    },
+    {
+      "name": "Thickness",
+      "saved_volume_mm3": 320854.8748546027,
+      "rebuilt_volume_mm3": 320852.0343296336,
+      "volume_delta_mm3": -2.840524969098624,
+      "exact_volume_check_passed": false
+    },
+    {
+      "name": "Pad002",
+      "saved_volume_mm3": 324917.60821008566,
+      "rebuilt_volume_mm3": 324914.7586609686,
+      "volume_delta_mm3": -2.8495491170324385,
+      "exact_volume_check_passed": false
+    },
+    {
+      "name": "Pocket",
+      "saved_volume_mm3": 324798.22504141054,
+      "rebuilt_volume_mm3": 324914.7586609686,
+      "volume_delta_mm3": 116.53361955808941,
+      "exact_volume_check_passed": false
+    }
+  ],
+  "earliest_captured_drift": "Groove",
+  "uncaptured_early_features": [
+    "Sketch",
+    "Pad",
+    "Sketch001",
+    "Pad001",
+    "Sketch002"
+  ],
+  "earliest_true_rebuild_drift": null,
+  "saved_pocket_removed_mm3": 119.38316867512185,
+  "rebuilt_pocket_removed_mm3": 0.0,
+  "disappearing_cut_detected": true,
+  "solver_failure": "Sketch005",
+  "root_cause_isolated": false,
+  "migration_accepted": false,
+  "required_next_capture": "Saved and rebuilt early sketch/feature dimensions, placements, bounds, volumes and semantic support geometry; one variable per experiment."
+}

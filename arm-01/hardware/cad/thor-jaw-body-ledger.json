@@ -1,0 +1,1329 @@
+{
+  "schema_version": 1,
+  "validation_class": "source_XML_ownership_and_conditional_ideal_COM_overlay",
+  "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+  "coordinate_frame": "Thor native assembly-world XYZ, metres; zero arm pose",
+  "source_metadata_sha256": {
+    "Assembly.FCStd": "5ee729246229e7494466010ab68e2c2367ba4ec1361b7701df21c0f8b00c2c1b",
+    "AssemblyArt56.FCStd": "a04836216dcae82eb033c15daba6e41dedb85b03f86ff21e56b77cdff835a473",
+    "GripperBot.FCStd": "a65e68644312adee7381e3a640b2b827f9c2c3362bbe4a842ccee9fea969d176",
+    "GripperArm.FCStd": "f1511f4b319a5727cf07771abe4c75002d5527e0a10291d47c1fe8024a44c6fc",
+    "GripperActiveArm.FCStd": "3ba5ba6f74c5d2f45eeca56f28534dc750e7f0ae735b6a0b3e16beeef21adc67",
+    "GripperPassiveArm.FCStd": "d14ac1debf67735fd623e052d468a9773066c32356390799b4ea07addcba68d4",
+    "GripperFinger.FCStd": "ab4daca4dd2f447029f4c76150b7f617fbdda74ae467cf6962938efe148d57a6"
+  },
+  "input_canonical_sha256": {
+    "inventory": "e52e699ff7c0d9e1dc3eedf9416e7e1da84ae6e13a5152cb5be6cd4f14b29c31",
+    "membership": "e8371d5f26cb525b733ddc05b3d9b424235120a83b0d7393f1d43636948147bf",
+    "gripper_capture": "61d36eec527d3caa827ea159727c1b682c95af7a73efe491015d6734d4d58ed0"
+  },
+  "native_from_gripper_bot": [
+    [
+      0.002721132959687307,
+      3.026678536127532e-16,
+      -0.9999962977108546,
+      0.017149936505741113
+    ],
+    [
+      -0.9999962977108547,
+      -1.4098767536831538e-16,
+      -0.002721132959687308,
+      4.6667430258606316e-05
+    ],
+    [
+      -1.1071978497935919e-16,
+      1.0,
+      -3.016954098258239e-19,
+      0.6125
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "transform_direction": "native_point = native_from_gripper_bot * bot_point",
+  "transform_sources": [
+    "Assembly::AssemblyArt56.Placement",
+    "AssemblyArt56::GripperBot_GripperBot.Placement"
+  ],
+  "geometry_leaf_count": 66,
+  "mass_record_count": 66,
+  "motion_counts": {
+    "finger_translation": 10,
+    "jaw_fixed": 48,
+    "link_rotation": 8
+  },
+  "jaw_coordinate": {
+    "name": "ideal symmetric closing q from outward-horizontal links",
+    "unit": "rad",
+    "study_interval": "0 <= q < pi/2, not physical travel",
+    "saved_pose_has_solved_q": false,
+    "servo_conversion": null
+  },
+  "ideal_zero_normalizations": {
+    "active_driven": {
+      "saved_pivot_bot_m": [
+        -0.01451499999999999,
+        0.032499999999999994,
+        0.017000000000000008
+      ],
+      "ideal_pivot_bot_m": [
+        -0.0145,
+        0.0325,
+        0.017000000000000008
+      ],
+      "saved_closing_phase_rad": 0.004880591299400457
+    },
+    "passive_driven": {
+      "saved_pivot_bot_m": [
+        0.014499999999999999,
+        0.03250000000000001,
+        0.014499999999999997
+      ],
+      "ideal_pivot_bot_m": [
+        0.0145,
+        0.0325,
+        0.014499999999999997
+      ],
+      "saved_closing_phase_rad": 0.004363323129985167
+    },
+    "left_auxiliary": {
+      "saved_pivot_bot_m": [
+        -0.005999999999999999,
+        0.051000000000000004,
+        0.014499999999999997
+      ],
+      "ideal_pivot_bot_m": [
+        -0.006,
+        0.051,
+        0.014499999999999997
+      ],
+      "saved_closing_phase_rad": 5.947623346206194e-16
+    },
+    "right_auxiliary": {
+      "saved_pivot_bot_m": [
+        0.0060000000000000045,
+        0.051000000000000004,
+        0.014499999999999997
+      ],
+      "ideal_pivot_bot_m": [
+        0.006,
+        0.051,
+        0.014499999999999997
+      ],
+      "saved_closing_phase_rad": 0.0
+    }
+  },
+  "saved_loop_axis_residuals": {
+    "left_driven": {
+      "projected_xy_delta_mm": [
+        -0.014583147827373466,
+        0.1708200173167853
+      ],
+      "projected_axis_misalignment_mm": 0.17144137924276584
+    },
+    "left_auxiliary": {
+      "projected_xy_delta_mm": [
+        1.4210854715202004e-14,
+        2.842170943040401e-14
+      ],
+      "projected_axis_misalignment_mm": 3.1776437161565096e-14
+    },
+    "right_driven": {
+      "projected_xy_delta_mm": [
+        -0.0003331747743047231,
+        0.15271582496610847
+      ],
+      "projected_axis_misalignment_mm": 0.1527161884035524
+    },
+    "right_auxiliary": {
+      "projected_xy_delta_mm": [
+        7.105427357601002e-15,
+        0.0
+      ],
+      "projected_axis_misalignment_mm": 7.105427357601002e-15
+    }
+  },
+  "assumptions": [
+    "Ideal symmetric 35mm uncrossed parallelogram; saved loops remain unsolved.",
+    "Finger fasteners translate with fingers; pin fasteners attached to base stay fixed.",
+    "Horn and active-arm screws rotate together; actual retention requires inspection.",
+    "Servo whole-asset COM remains fixed under balanced-internal-COM approximation.",
+    "No rotor mass is added to the existing 55g servo or 2.120kg arm motor total.",
+    "Saved native GripperBot orientation is preserved exactly, not rounded to axes."
+  ],
+  "physical_motion_qualified": false,
+  "native_recompute_performed": false,
+  "source_saved": false,
+  "remaining_gates": [
+    "Native multi-pose driven/auxiliary loop and gear-contact reconciliation.",
+    "Collision, travel stops, servo zero/range and jaw/TCP physical calibration.",
+    "Actual mass/COM, pin retention, servo imbalance, grasp force and thermal duty."
+  ],
+  "records": [
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Art56MotorCoverRing_Art56MotorCoverRing",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Art56MotorCoverRing_Art56MotorCoverRing"
+      ],
+      "source_object": "AssemblyArt56::Art56MotorCoverRing_Art56MotorCoverRing",
+      "source_attachment": "Parent Assembly#LCS_Origin",
+      "saved_com_native_m": [
+        7.555936773766825e-10,
+        0.0001256355434744051,
+        0.5527083316992307
+      ],
+      "wrist_motion_class": "fold_carrier",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::CommonBearingFixThrough_CommonBearingFixThrough",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::CommonBearingFixThrough_CommonBearingFixThrough"
+      ],
+      "source_object": "AssemblyArt56::CommonBearingFixThrough_CommonBearingFixThrough",
+      "source_attachment": "Art56MotorCoverRing_Art56MotorCoverRing#LCS_BearingFix",
+      "saved_com_native_m": [
+        -1.0038539285263168e-17,
+        -0.004918115832594763,
+        0.556
+      ],
+      "wrist_motion_class": "fold_carrier",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Art56GearPlate_Art56GearPlate",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Art56GearPlate_Art56GearPlate"
+      ],
+      "source_object": "AssemblyArt56::Art56GearPlate_Art56GearPlate",
+      "source_attachment": "Art56MotorCoverRing_Art56MotorCoverRing#LCS_BigGear",
+      "saved_com_native_m": [
+        -8.28736653169323e-11,
+        -1.8630590664841883e-11,
+        0.5859924984767506
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Art56SmallGear_Art56SmallGear",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Art56SmallGear_Art56SmallGear"
+      ],
+      "source_object": "AssemblyArt56::Art56SmallGear_Art56SmallGear",
+      "source_attachment": "Art56MotorCoverRing_Art56MotorCoverRing#LCS_SmallGear2",
+      "saved_com_native_m": [
+        1.6397499739985697e-05,
+        -0.034369400446915166,
+        0.556199521037488
+      ],
+      "wrist_motion_class": "side_rotor_negative_y",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Art56SmallGear_Art56SmallGear001",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Art56SmallGear_Art56SmallGear001"
+      ],
+      "source_object": "AssemblyArt56::Art56SmallGear_Art56SmallGear001",
+      "source_attachment": "Art56MotorCoverRing_Art56MotorCoverRing#LCS_SmallGear1",
+      "saved_com_native_m": [
+        6.085970063069591e-05,
+        0.034369400446915145,
+        0.5558092813086318
+      ],
+      "wrist_motion_class": "side_rotor_positive_y",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Bearing_625ZZ001/AssemblyArt56::Compound001",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Bearing_625ZZ001/AssemblyArt56::Compound001"
+      ],
+      "source_object": "AssemblyArt56::Compound001",
+      "source_attachment": null,
+      "saved_com_native_m": [
+        -2.8856681527199074e-17,
+        -2.428357747937098e-17,
+        0.58
+      ],
+      "wrist_motion_class": "bearing_roll_axis_com",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Bearing_625ZZ002/AssemblyArt56::Compound001",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Bearing_625ZZ002/AssemblyArt56::Compound001"
+      ],
+      "source_object": "AssemblyArt56::Compound001",
+      "source_attachment": null,
+      "saved_com_native_m": [
+        -3.680603392239495e-17,
+        -0.0005000000000000142,
+        0.556
+      ],
+      "wrist_motion_class": "bearing_fold_axis_com",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::GripperBot_GripperBot",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::GripperBot_GripperBot"
+      ],
+      "source_object": "AssemblyArt56::GripperBot_GripperBot",
+      "source_attachment": "Art56GearPlate_Art56GearPlate#LCS_Gripper",
+      "saved_com_native_m": [
+        0.009190149653513493,
+        -0.0018838837490467231,
+        0.6398933923896416
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed_GripperTop",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed_GripperTop"
+      ],
+      "source_object": "AssemblyArt56::Unnamed_GripperTop",
+      "source_attachment": "GripperBot_GripperBot#LCS_GripperTop",
+      "saved_com_native_m": [
+        -0.007622386949759331,
+        -9.263638140713947e-05,
+        0.6358308524964422
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Servomotor001",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Servomotor001/AssemblyArt56::Compound002"
+      ],
+      "source_object": "AssemblyArt56::Compound002",
+      "source_attachment": "GripperBot_GripperBot#LCS_Servomotor",
+      "saved_com_native_m": [
+        0.027679951462904896,
+        0.004453923133524,
+        0.645
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::ServomotorWheelHorn001/AssemblyArt56::Clone041003009009001",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::ServomotorWheelHorn001/AssemblyArt56::Clone041003009009001"
+      ],
+      "source_object": "AssemblyArt56::Clone041003009009001",
+      "source_attachment": null,
+      "saved_com_native_m": [
+        0.0016495505346813325,
+        0.014519542401872787,
+        0.645
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "link_rotation",
+      "evidence": "Pinned link/horn/fastener attachment; normalize saved phase about source +Z, then apply side*q. Active pivot is explicitly symmetrized.",
+      "side": -1,
+      "saved_pivot_bot_m": [
+        -0.01451499999999999,
+        0.032499999999999994,
+        0.017000000000000008
+      ],
+      "ideal_pivot_bot_m": [
+        -0.0145,
+        0.0325,
+        0.017000000000000008
+      ],
+      "saved_closing_phase_rad": 0.004880591299400457
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::GripperActiveArm_GripperActiveArm",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::GripperActiveArm_GripperActiveArm"
+      ],
+      "source_object": "AssemblyArt56::GripperActiveArm_GripperActiveArm",
+      "source_attachment": "ServomotorWheelHorn001#LCS_ActiveArm",
+      "saved_com_native_m": [
+        -0.00039207183320565326,
+        0.019505819082214493,
+        0.645024363262996
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "link_rotation",
+      "evidence": "Pinned link/horn/fastener attachment; normalize saved phase about source +Z, then apply side*q. Active pivot is explicitly symmetrized.",
+      "side": -1,
+      "saved_pivot_bot_m": [
+        -0.01451499999999999,
+        0.032499999999999994,
+        0.017000000000000008
+      ],
+      "ideal_pivot_bot_m": [
+        -0.0145,
+        0.0325,
+        0.017000000000000008
+      ],
+      "saved_closing_phase_rad": 0.004880591299400457
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed3_GripperPassiveArm",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed3_GripperPassiveArm"
+      ],
+      "source_object": "AssemblyArt56::Unnamed3_GripperPassiveArm",
+      "source_attachment": "GripperBot_GripperBot#LCS_PassiveArm",
+      "saved_com_native_m": [
+        0.0002409504375276684,
+        -0.018138944004330183,
+        0.6450157837011803
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "link_rotation",
+      "evidence": "Pinned link/horn/fastener attachment; normalize saved phase about source +Z, then apply side*q. Active pivot is explicitly symmetrized.",
+      "side": 1,
+      "saved_pivot_bot_m": [
+        0.014499999999999999,
+        0.03250000000000001,
+        0.014499999999999997
+      ],
+      "ideal_pivot_bot_m": [
+        0.0145,
+        0.0325,
+        0.014499999999999997
+      ],
+      "saved_closing_phase_rad": 0.004363323129985167
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed2_GripperArm",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed2_GripperArm"
+      ],
+      "source_object": "AssemblyArt56::Unnamed2_GripperArm",
+      "source_attachment": "GripperBot_GripperBot#LCS_Arm1",
+      "saved_com_native_m": [
+        0.0002139460692350835,
+        -0.023499504827399532,
+        0.6635000000003507
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "link_rotation",
+      "evidence": "Pinned link/horn/fastener attachment; normalize saved phase about source +Z, then apply side*q. Active pivot is explicitly symmetrized.",
+      "side": 1,
+      "saved_pivot_bot_m": [
+        0.0060000000000000045,
+        0.051000000000000004,
+        0.014499999999999997
+      ],
+      "ideal_pivot_bot_m": [
+        0.006,
+        0.051,
+        0.014499999999999997
+      ],
+      "saved_closing_phase_rad": 0.0
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed2_GripperArm001",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed2_GripperArm001"
+      ],
+      "source_object": "AssemblyArt56::Unnamed2_GripperArm001",
+      "source_attachment": "GripperBot_GripperBot#LCS_Arm2",
+      "saved_com_native_m": [
+        8.6052820123602e-05,
+        0.023500321167287484,
+        0.6634999999996493
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "link_rotation",
+      "evidence": "Pinned link/horn/fastener attachment; normalize saved phase about source +Z, then apply side*q. Active pivot is explicitly symmetrized.",
+      "side": -1,
+      "saved_pivot_bot_m": [
+        -0.005999999999999999,
+        0.051000000000000004,
+        0.014499999999999997
+      ],
+      "ideal_pivot_bot_m": [
+        -0.006,
+        0.051,
+        0.014499999999999997
+      ],
+      "saved_closing_phase_rad": 5.947623346206194e-16
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed1_GripperFinger",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed1_GripperFinger"
+      ],
+      "source_object": "AssemblyArt56::Unnamed1_GripperFinger",
+      "source_attachment": "Unnamed2_GripperArm001#LCS_GripperArm_1",
+      "saved_com_native_m": [
+        -0.0001496004977267916,
+        0.04381730687865155,
+        0.673167737396456
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "finger_translation",
+      "evidence": "Pinned finger/fastener attachment; constant orientation and ideal parallelogram translation. Fastener retention is conditional.",
+      "side": -1
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::GripperFinger_sym001/AssemblyArt56::Unnamed1_GripperFinger_mirrored",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::GripperFinger_sym001/AssemblyArt56::Unnamed1_GripperFinger_mirrored"
+      ],
+      "source_object": "AssemblyArt56::Unnamed1_GripperFinger_mirrored",
+      "source_attachment": null,
+      "saved_com_native_m": [
+        8.88662707627379e-05,
+        -0.043817472145170254,
+        0.673167737396456
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "finger_translation",
+      "evidence": "Pinned finger/fastener attachment; constant orientation and ideal parallelogram translation. Fastener retention is conditional.",
+      "side": 1
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut"
+      ],
+      "source_object": "AssemblyArt56::Nut",
+      "source_attachment": "Art56GearPlate_Art56GearPlate#HoleAxis_2",
+      "saved_com_native_m": [
+        0.005649999999999934,
+        -0.009786087062764208,
+        0.615500000000009
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut021",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut021"
+      ],
+      "source_object": "AssemblyArt56::Nut021",
+      "source_attachment": "Unnamed1_GripperFinger#HoleAxis_3",
+      "saved_com_native_m": [
+        0.0065191094727467406,
+        0.04951792269332178,
+        0.6450000000000012
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "finger_translation",
+      "evidence": "Pinned finger/fastener attachment; constant orientation and ideal parallelogram translation. Fastener retention is conditional.",
+      "side": -1
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw020",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw020"
+      ],
+      "source_object": "AssemblyArt56::Screw020",
+      "source_attachment": "GripperBot_GripperBot#HoleAxis_1",
+      "saved_com_native_m": [
+        0.008558641549349053,
+        -0.014731281860616658,
+        0.6155
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut020",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut020"
+      ],
+      "source_object": "AssemblyArt56::Nut020",
+      "source_attachment": "GripperFinger_sym001#LCS_GripperFinger_sym001",
+      "saved_com_native_m": [
+        0.00469037968784839,
+        -0.040987388600400694,
+        0.6635
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "finger_translation",
+      "evidence": "Pinned finger/fastener attachment; constant orientation and ideal parallelogram translation. Fastener retention is conditional.",
+      "side": 1
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw018",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw018"
+      ],
+      "source_object": "AssemblyArt56::Screw018",
+      "source_attachment": "Unnamed_GripperTop#HoleAxis_4",
+      "saved_com_native_m": [
+        -0.0017290009100337708,
+        -0.01450475854217834,
+        0.645
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw017",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw017"
+      ],
+      "source_object": "AssemblyArt56::Screw017",
+      "source_attachment": "Servomotor001#HoleAxis_4",
+      "saved_com_native_m": [
+        0.01712465906460733,
+        -0.020628091197934642,
+        0.6400000000000026
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw011",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw011"
+      ],
+      "source_object": "AssemblyArt56::Screw011",
+      "source_attachment": "Unnamed_GripperTop#HoleAxis_6",
+      "saved_com_native_m": [
+        0.001872848722365085,
+        0.006005118503072212,
+        0.6635
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw027",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw027"
+      ],
+      "source_object": "AssemblyArt56::Screw027",
+      "source_attachment": "GripperActiveArm_GripperActiveArm#HoleAxis_2",
+      "saved_com_native_m": [
+        0.0003333130102172432,
+        0.014515960731335863,
+        0.6449999999996553
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "link_rotation",
+      "evidence": "Pinned link/horn/fastener attachment; normalize saved phase about source +Z, then apply side*q. Active pivot is explicitly symmetrized.",
+      "side": -1,
+      "saved_pivot_bot_m": [
+        -0.01451499999999999,
+        0.032499999999999994,
+        0.017000000000000008
+      ],
+      "ideal_pivot_bot_m": [
+        -0.0145,
+        0.0325,
+        0.017000000000000008
+      ],
+      "saved_closing_phase_rad": 0.004880591299400457
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw024",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw024"
+      ],
+      "source_object": "AssemblyArt56::Screw024",
+      "source_attachment": "GripperFinger_sym001#HoleAxis_6",
+      "saved_com_native_m": [
+        -0.0017587607936586178,
+        -0.04950496910366907,
+        0.645
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "finger_translation",
+      "evidence": "Pinned finger/fastener attachment; constant orientation and ideal parallelogram translation. Fastener retention is conditional.",
+      "side": 1
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut016",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut016"
+      ],
+      "source_object": "AssemblyArt56::Nut016",
+      "source_attachment": "GripperBot_GripperBot#HoleAxis_7",
+      "saved_com_native_m": [
+        0.009520738671902854,
+        0.02914101508427356,
+        0.65
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw010",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw010"
+      ],
+      "source_object": "AssemblyArt56::Screw010",
+      "source_attachment": "Unnamed_GripperTop#HoleAxis_5",
+      "saved_com_native_m": [
+        0.0019055023178813299,
+        -0.005994837069458046,
+        0.6635
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut017",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut017"
+      ],
+      "source_object": "AssemblyArt56::Nut017",
+      "source_attachment": "GripperBot_GripperBot#HoleAxis_11",
+      "saved_com_native_m": [
+        0.009656251093295268,
+        -0.020658800541726995,
+        0.64
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut018",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut018"
+      ],
+      "source_object": "AssemblyArt56::Nut018",
+      "source_attachment": "GripperBot_GripperBot#HoleAxis_10",
+      "saved_com_native_m": [
+        0.00965625109329527,
+        -0.020658800541726995,
+        0.65
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut011",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut011"
+      ],
+      "source_object": "AssemblyArt56::Nut011",
+      "source_attachment": "GripperBot_GripperBot#HoleAxis_9",
+      "saved_com_native_m": [
+        0.013062454969285365,
+        0.006035567022166809,
+        0.6635
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw012",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw012"
+      ],
+      "source_object": "AssemblyArt56::Screw012",
+      "source_attachment": "Unnamed_GripperTop#HoleAxis_2",
+      "saved_com_native_m": [
+        -0.004053658473988501,
+        -0.021011108332878982,
+        0.6225
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut006",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut006"
+      ],
+      "source_object": "AssemblyArt56::Nut006",
+      "source_attachment": "GripperBot_GripperBot#HoleAxis_5",
+      "saved_com_native_m": [
+        0.007418259298007082,
+        -0.014479867538777145,
+        0.6450000000000012
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut015",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut015"
+      ],
+      "source_object": "AssemblyArt56::Nut015",
+      "source_attachment": "GripperBot_GripperBot#HoleAxis_6",
+      "saved_com_native_m": [
+        0.009520738671902852,
+        0.029141015084273567,
+        0.64
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw013",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw013"
+      ],
+      "source_object": "AssemblyArt56::Screw013",
+      "source_attachment": "Unnamed_GripperTop#HoleAxis_3",
+      "saved_com_native_m": [
+        -0.004167946058295358,
+        0.020988736170976918,
+        0.6225
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw014",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw014"
+      ],
+      "source_object": "AssemblyArt56::Screw014",
+      "source_attachment": "Servomotor001#HoleAxis_1",
+      "saved_com_native_m": [
+        0.016989203170393003,
+        0.029150951106936215,
+        0.6499999999999974
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut012",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut012"
+      ],
+      "source_object": "AssemblyArt56::Nut012",
+      "source_attachment": "GripperBot_GripperBot#HoleAxis_8",
+      "saved_com_native_m": [
+        0.013095108564801608,
+        -0.005964388550363446,
+        0.6635
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw025",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw025"
+      ],
+      "source_object": "AssemblyArt56::Screw025",
+      "source_attachment": "GripperFinger_sym001#HoleAxis_5",
+      "saved_com_native_m": [
+        -0.0017818904238159486,
+        -0.04100500057312681,
+        0.6635
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "finger_translation",
+      "evidence": "Pinned finger/fastener attachment; constant orientation and ideal parallelogram translation. Fastener retention is conditional.",
+      "side": 1
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut013",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut013"
+      ],
+      "source_object": "AssemblyArt56::Nut013",
+      "source_attachment": "GripperBot_GripperBot#HoleAxis_3",
+      "saved_com_native_m": [
+        0.006592831587623715,
+        0.021018017786109833,
+        0.622500000000009
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut014",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut014"
+      ],
+      "source_object": "AssemblyArt56::Nut014",
+      "source_attachment": "GripperBot_GripperBot#HoleAxis_4",
+      "saved_com_native_m": [
+        0.006707119171930569,
+        -0.020981826717746056,
+        0.622500000000009
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw016",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw016"
+      ],
+      "source_object": "AssemblyArt56::Screw016",
+      "source_attachment": "Servomotor001#HoleAxis_3",
+      "saved_com_native_m": [
+        0.01712465906460733,
+        -0.020628091197934652,
+        0.6499999999999974
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw015",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw015"
+      ],
+      "source_object": "AssemblyArt56::Screw015",
+      "source_attachment": "Servomotor001#HoleAxis_2",
+      "saved_com_native_m": [
+        0.016989203170393003,
+        0.029150951106936218,
+        0.6400000000000026
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw019",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw019"
+      ],
+      "source_object": "AssemblyArt56::Screw019",
+      "source_attachment": "Unnamed_GripperTop#HoleAxis_1",
+      "saved_com_native_m": [
+        -0.014768409208190348,
+        -4.018695384687244e-05,
+        0.6155
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut001",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut001"
+      ],
+      "source_object": "AssemblyArt56::Nut001",
+      "source_attachment": "Art56MotorCoverRing_Art56MotorCoverRing#HoleAxis_2",
+      "saved_com_native_m": [
+        -0.011000000000000032,
+        0.001199999999999987,
+        0.556000000000009
+      ],
+      "wrist_motion_class": "fold_carrier",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut002",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut002"
+      ],
+      "source_object": "AssemblyArt56::Nut002",
+      "source_attachment": "Art56MotorCoverRing_Art56MotorCoverRing#HoleAxis_1",
+      "saved_com_native_m": [
+        0.01099999999999997,
+        0.0011999999999999808,
+        0.556000000000009
+      ],
+      "wrist_motion_class": "fold_carrier",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut003",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut003"
+      ],
+      "source_object": "AssemblyArt56::Nut003",
+      "source_attachment": "Art56GearPlate_Art56GearPlate#HoleAxis_1",
+      "saved_com_native_m": [
+        0.005649999999999997,
+        0.009786087062764116,
+        0.615500000000009
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw002",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw002"
+      ],
+      "source_object": "AssemblyArt56::Screw002",
+      "source_attachment": "CommonBearingFixThrough_CommonBearingFixThrough#HoleAxis_1",
+      "saved_com_native_m": [
+        0.010999999999991301,
+        -0.002823282350489188,
+        0.556
+      ],
+      "wrist_motion_class": "fold_carrier",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut004",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut004"
+      ],
+      "source_object": "AssemblyArt56::Nut004",
+      "source_attachment": "Art56GearPlate_Art56GearPlate#HoleAxis_3",
+      "saved_com_native_m": [
+        -0.011300000000000029,
+        5.546396782456127e-18,
+        0.615500000000009
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw001",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw001"
+      ],
+      "source_object": "AssemblyArt56::Screw001",
+      "source_attachment": "Art56SmallGear_Art56SmallGear#HoleAxis_1",
+      "saved_com_native_m": [
+        -0.0006358888084253867,
+        -0.031,
+        0.5469072966289813
+      ],
+      "wrist_motion_class": "side_rotor_negative_y",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw"
+      ],
+      "source_object": "AssemblyArt56::Screw",
+      "source_attachment": "Art56GearPlate_Art56GearPlate#LCS_Bearing",
+      "saved_com_native_m": [
+        1.0319024411681101e-14,
+        5.952073175293839e-15,
+        0.5789751016792385
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw003",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw003"
+      ],
+      "source_object": "AssemblyArt56::Screw003",
+      "source_attachment": "CommonBearingFixThrough_CommonBearingFixThrough#HoleAxis_2",
+      "saved_com_native_m": [
+        -0.011000000000008699,
+        -0.0028232823504891896,
+        0.556
+      ],
+      "wrist_motion_class": "fold_carrier",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw004",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw004"
+      ],
+      "source_object": "AssemblyArt56::Screw004",
+      "source_attachment": "Art56SmallGear_Art56SmallGear001#HoleAxis_1",
+      "saved_com_native_m": [
+        -0.0026650042296083253,
+        0.030999999999999982,
+        0.5647166141147917
+      ],
+      "wrist_motion_class": "side_rotor_positive_y",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut005",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut005"
+      ],
+      "source_object": "AssemblyArt56::Nut005",
+      "source_attachment": "Art56MotorCoverRing_Art56MotorCoverRing#HoleAxis_3",
+      "saved_com_native_m": [
+        -3.8585872701010286e-15,
+        -2.6427575805267327e-17,
+        0.5675830207740193
+      ],
+      "wrist_motion_class": "fold_carrier",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw021",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw021"
+      ],
+      "source_object": "AssemblyArt56::Screw021",
+      "source_attachment": "GripperBot_GripperBot#HoleAxis_2",
+      "saved_com_native_m": [
+        0.008478343546920383,
+        0.014777641933934155,
+        0.6155
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw028",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw028"
+      ],
+      "source_object": "AssemblyArt56::Screw028",
+      "source_attachment": "GripperActiveArm_GripperActiveArm#HoleAxis_1",
+      "saved_com_native_m": [
+        -0.0004935243691790408,
+        0.014479546658616728,
+        0.6519999166291587
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "link_rotation",
+      "evidence": "Pinned link/horn/fastener attachment; normalize saved phase about source +Z, then apply side*q. Active pivot is explicitly symmetrized.",
+      "side": -1,
+      "saved_pivot_bot_m": [
+        -0.01451499999999999,
+        0.032499999999999994,
+        0.017000000000000008
+      ],
+      "ideal_pivot_bot_m": [
+        -0.0145,
+        0.0325,
+        0.017000000000000008
+      ],
+      "saved_closing_phase_rad": 0.004880591299400457
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw022",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw022"
+      ],
+      "source_object": "AssemblyArt56::Screw022",
+      "source_attachment": "Unnamed1_GripperFinger#HoleAxis_1",
+      "saved_com_native_m": [
+        -0.0020281529566676003,
+        0.049494664369696406,
+        0.645
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "finger_translation",
+      "evidence": "Pinned finger/fastener attachment; constant orientation and ideal parallelogram translation. Fastener retention is conditional.",
+      "side": -1
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw023",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw023"
+      ],
+      "source_object": "AssemblyArt56::Screw023",
+      "source_attachment": "Unnamed1_GripperFinger#HoleAxis_2",
+      "saved_com_native_m": [
+        -0.0020050233265102514,
+        0.04099469583915414,
+        0.6635
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "finger_translation",
+      "evidence": "Pinned finger/fastener attachment; constant orientation and ideal parallelogram translation. Fastener retention is conditional.",
+      "side": -1
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut022",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut022"
+      ],
+      "source_object": "AssemblyArt56::Nut022",
+      "source_attachment": "Unnamed1_GripperFinger#HoleAxis_4",
+      "saved_com_native_m": [
+        0.006542239102904087,
+        0.0410179541627795,
+        0.6635000000000012
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "finger_translation",
+      "evidence": "Pinned finger/fastener attachment; constant orientation and ideal parallelogram translation. Fastener retention is conditional.",
+      "side": -1
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut019",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut019"
+      ],
+      "source_object": "AssemblyArt56::Nut019",
+      "source_attachment": "GripperFinger_sym001#HoleAxis_7",
+      "saved_com_native_m": [
+        0.006788501635755745,
+        -0.04948171078005281,
+        0.6449999999999988
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "finger_translation",
+      "evidence": "Pinned finger/fastener attachment; constant orientation and ideal parallelogram translation. Fastener retention is conditional.",
+      "side": 1
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Group003/AssemblyArt56::Screw026",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Group003/AssemblyArt56::Screw026"
+      ],
+      "source_object": "AssemblyArt56::Screw026",
+      "source_attachment": "GripperActiveArm_GripperActiveArm#HoleAxis_3",
+      "saved_com_native_m": [
+        -0.0004937102987707616,
+        0.014547874412573405,
+        0.6380000833700277
+      ],
+      "wrist_motion_class": "roll_tool",
+      "jaw_motion_class": "link_rotation",
+      "evidence": "Pinned link/horn/fastener attachment; normalize saved phase about source +Z, then apply side*q. Active pivot is explicitly symmetrized.",
+      "side": -1,
+      "saved_pivot_bot_m": [
+        -0.01451499999999999,
+        0.032499999999999994,
+        0.017000000000000008
+      ],
+      "ideal_pivot_bot_m": [
+        -0.0145,
+        0.0325,
+        0.017000000000000008
+      ],
+      "saved_closing_phase_rad": 0.004880591299400457
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Collar5mm/AssemblyArt56::Part__Feature",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Collar5mm/AssemblyArt56::Part__Feature"
+      ],
+      "source_object": "AssemblyArt56::Part__Feature",
+      "source_attachment": null,
+      "saved_com_native_m": [
+        -0.0008470590419462383,
+        -0.04038570709643129,
+        0.5596728222355056
+      ],
+      "wrist_motion_class": "side_rotor_negative_y",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Collar5mm/AssemblyArt56::Part__Feature001",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Collar5mm/AssemblyArt56::Part__Feature001"
+      ],
+      "source_object": "AssemblyArt56::Part__Feature001",
+      "source_attachment": null,
+      "saved_com_native_m": [
+        5.408215225415512e-05,
+        -0.04040001108519337,
+        0.5557653554718497
+      ],
+      "wrist_motion_class": "side_rotor_negative_y",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Collar5mm001/AssemblyArt56::Part__Feature",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Collar5mm001/AssemblyArt56::Part__Feature"
+      ],
+      "source_object": "AssemblyArt56::Part__Feature",
+      "source_attachment": null,
+      "saved_com_native_m": [
+        8.562607165103884e-07,
+        0.04038570709643127,
+        0.5522307651358686
+      ],
+      "wrist_motion_class": "side_rotor_positive_y",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Collar5mm001/AssemblyArt56::Part__Feature001",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Collar5mm001/AssemblyArt56::Part__Feature001"
+      ],
+      "source_object": "AssemblyArt56::Part__Feature001",
+      "source_attachment": null,
+      "saved_com_native_m": [
+        -8.750380780022264e-08,
+        0.04040001108519335,
+        0.5562407964412661
+      ],
+      "wrist_motion_class": "side_rotor_positive_y",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::GT2x40PulleyM4/AssemblyArt56::Part__Feature002",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::GT2x40PulleyM4/AssemblyArt56::Part__Feature002"
+      ],
+      "source_object": "AssemblyArt56::Part__Feature002",
+      "source_attachment": null,
+      "saved_com_native_m": [
+        8.46606010592395e-05,
+        -0.02494027035505482,
+        0.5560734551147677
+      ],
+      "wrist_motion_class": "side_rotor_negative_y",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    },
+    {
+      "mass_record_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::GT2x40PulleyM005/AssemblyArt56::Part__Feature002",
+      "leaf_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::GT2x40PulleyM005/AssemblyArt56::Part__Feature002"
+      ],
+      "source_object": "AssemblyArt56::Part__Feature002",
+      "source_attachment": null,
+      "saved_com_native_m": [
+        9.901456085280178e-05,
+        0.024940270355054805,
+        0.5559474720265347
+      ],
+      "wrist_motion_class": "side_rotor_positive_y",
+      "jaw_motion_class": "jaw_fixed",
+      "evidence": "No additional jaw COM motion; retain saved pose and v2 wrist membership."
+    }
+  ]
+}

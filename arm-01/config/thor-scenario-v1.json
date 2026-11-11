@@ -1,0 +1,370 @@
+{
+  "schema_version": 1,
+  "scenario_id": "thor-v2-pla-050-source-phase-saved-vs-ideal-jaw",
+  "evidence_class": "conditional_analytical_model",
+  "coordinate_frame": "thor_ros_nominal_base_link_m",
+  "units": {
+    "position": "m",
+    "mass": "kg",
+    "angle": "rad",
+    "gravity": "m/s^2",
+    "torque": "N*m"
+  },
+  "source_revisions": {
+    "thor_cad": "286b081fe6f056d87c379b884781ef77ff6a0159",
+    "thor_ros": "e11a56b5aa0d89f0b68a3ea7bd084eab4a050952"
+  },
+  "inputs": {
+    "inventory": {
+      "path": "hardware/cad/thor-mounted-geometry-v2.json",
+      "sha256": "64dbcf86439afffd11f63181259cba048008a3bedf103997603a24d23b49fa3e",
+      "evidence_class": "saved_native_cad_capture"
+    },
+    "membership": {
+      "path": "hardware/cad/thor-wrist-membership-v2.json",
+      "sha256": "07b3aaaf2a6a6257eef1b7fefbddecf34378016873c9d867ce0bfb77d990e6dd",
+      "evidence_class": "conditional_model"
+    },
+    "moving_mass": {
+      "path": "hardware/cad/thor-moving-mass-evidence.json",
+      "sha256": "59d22c96d71aab419b8a4455729d85633079e7c15adc3acef3a6f5e7a1c32e8b",
+      "evidence_class": "source_audit"
+    },
+    "jaw_bodies": {
+      "path": "hardware/cad/thor-jaw-body-ledger.json",
+      "sha256": "5cfa15266584ae0b8a23e9584d14850f0577faed53aea5c34d302718ddab222f",
+      "evidence_class": "conditional_model"
+    }
+  },
+  "material": {
+    "family": "PLA",
+    "density_kg_m3": 1240,
+    "density_evidence": "Pinned reference Prusament PLA TDS density 1240kg/m3; same source scenario as thor-load-analysis.md, not actual filament measurement.",
+    "effective_whole_part_solid_fraction": 0.5
+  },
+  "belt_mass_overrides": {
+    "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Belt_GT2_208mm/AssemblyArt4::Pad046": {
+      "mass_kg": 0.0024167873342812065,
+      "evidence": "Unmeasured uniform-belt density scenario 1200kg/m3 times saved source Pad046 volume; see thor-moving-mass-evidence.json. Nominal 208mm label differs from smooth-strip path about223.78mm; not measured belt mass or fit."
+    },
+    "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Belt_GT2_208mm001/AssemblyArt4::Pad046": {
+      "mass_kg": 0.0024167873342812065,
+      "evidence": "Unmeasured uniform-belt density scenario 1200kg/m3 times saved source Pad046 volume; see thor-moving-mass-evidence.json. Nominal 208mm label differs from smooth-strip path about223.78mm; not measured belt mass or fit."
+    }
+  },
+  "wrist_motion_scenario": "bevel_sign_positive",
+  "gravity_m_s2": [
+    0,
+    0,
+    -9.80665
+  ],
+  "cases": [
+    {
+      "name": "upright_saved",
+      "joint_angles_rad": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "jaw": {
+        "configuration": "saved_frozen",
+        "closing_angle_rad": null,
+        "evidence": "Original saved-CAD jaw geometry retained; driven loops have nonzero residuals, no solved common q."
+      },
+      "payload": {
+        "mass_kg": 0.2,
+        "point_zero_m": [
+          0,
+          0,
+          0.7025242557054092
+        ],
+        "com_evidence": "Axis-centered CAD distal-finger-plane study point; not calibrated TCP or measured object COM. Fixed relative to roll_tool; no grip/contact model."
+      }
+    },
+    {
+      "name": "shoulder_horizontal_saved",
+      "joint_angles_rad": [
+        0,
+        1.5707963267948966,
+        0,
+        0,
+        0,
+        0
+      ],
+      "jaw": {
+        "configuration": "saved_frozen",
+        "closing_angle_rad": null,
+        "evidence": "Original saved-CAD jaw geometry retained; driven loops have nonzero residuals, no solved common q."
+      },
+      "payload": {
+        "mass_kg": 0.2,
+        "point_zero_m": [
+          0,
+          0,
+          0.7025242557054092
+        ],
+        "com_evidence": "Axis-centered CAD distal-finger-plane study point; not calibrated TCP or measured object COM. Fixed relative to roll_tool; no grip/contact model."
+      }
+    },
+    {
+      "name": "shoulder_horizontal_fold45_roll30_saved",
+      "joint_angles_rad": [
+        0,
+        1.5707963267948966,
+        0,
+        0,
+        0.7853981633974483,
+        0.5235987755982988
+      ],
+      "jaw": {
+        "configuration": "saved_frozen",
+        "closing_angle_rad": null,
+        "evidence": "Original saved-CAD jaw geometry retained; driven loops have nonzero residuals, no solved common q."
+      },
+      "payload": {
+        "mass_kg": 0.2,
+        "point_zero_m": [
+          0,
+          0,
+          0.7025242557054092
+        ],
+        "com_evidence": "Axis-centered CAD distal-finger-plane study point; not calibrated TCP or measured object COM. Fixed relative to roll_tool; no grip/contact model."
+      }
+    },
+    {
+      "name": "mixed_pose_saved",
+      "joint_angles_rad": [
+        0.2,
+        0.6,
+        -0.3,
+        0.4,
+        -0.5235987755982988,
+        1.0471975511965976
+      ],
+      "jaw": {
+        "configuration": "saved_frozen",
+        "closing_angle_rad": null,
+        "evidence": "Original saved-CAD jaw geometry retained; driven loops have nonzero residuals, no solved common q."
+      },
+      "payload": {
+        "mass_kg": 0.2,
+        "point_zero_m": [
+          0,
+          0,
+          0.7025242557054092
+        ],
+        "com_evidence": "Axis-centered CAD distal-finger-plane study point; not calibrated TCP or measured object COM. Fixed relative to roll_tool; no grip/contact model."
+      }
+    },
+    {
+      "name": "upright_ideal_zero",
+      "joint_angles_rad": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "jaw": {
+        "configuration": "ideal_body_overlay",
+        "closing_angle_rad": 0,
+        "evidence": "Explicit ideal symmetric linkage overlay from bound jaw body ledger, including driven-phase/active-pivot normalization; not solved saved CAD, servo command, usable stroke or gripping force."
+      },
+      "payload": {
+        "mass_kg": 0.2,
+        "point_zero_m": [
+          0,
+          0,
+          0.7025242557054092
+        ],
+        "com_evidence": "Axis-centered CAD distal-finger-plane study point; not calibrated TCP or measured object COM. Fixed relative to roll_tool; no grip/contact model."
+      }
+    },
+    {
+      "name": "shoulder_horizontal_ideal_zero",
+      "joint_angles_rad": [
+        0,
+        1.5707963267948966,
+        0,
+        0,
+        0,
+        0
+      ],
+      "jaw": {
+        "configuration": "ideal_body_overlay",
+        "closing_angle_rad": 0,
+        "evidence": "Explicit ideal symmetric linkage overlay from bound jaw body ledger, including driven-phase/active-pivot normalization; not solved saved CAD, servo command, usable stroke or gripping force."
+      },
+      "payload": {
+        "mass_kg": 0.2,
+        "point_zero_m": [
+          0,
+          0,
+          0.7025242557054092
+        ],
+        "com_evidence": "Axis-centered CAD distal-finger-plane study point; not calibrated TCP or measured object COM. Fixed relative to roll_tool; no grip/contact model."
+      }
+    },
+    {
+      "name": "shoulder_horizontal_fold45_roll30_ideal_zero",
+      "joint_angles_rad": [
+        0,
+        1.5707963267948966,
+        0,
+        0,
+        0.7853981633974483,
+        0.5235987755982988
+      ],
+      "jaw": {
+        "configuration": "ideal_body_overlay",
+        "closing_angle_rad": 0,
+        "evidence": "Explicit ideal symmetric linkage overlay from bound jaw body ledger, including driven-phase/active-pivot normalization; not solved saved CAD, servo command, usable stroke or gripping force."
+      },
+      "payload": {
+        "mass_kg": 0.2,
+        "point_zero_m": [
+          0,
+          0,
+          0.7025242557054092
+        ],
+        "com_evidence": "Axis-centered CAD distal-finger-plane study point; not calibrated TCP or measured object COM. Fixed relative to roll_tool; no grip/contact model."
+      }
+    },
+    {
+      "name": "mixed_pose_ideal_zero",
+      "joint_angles_rad": [
+        0.2,
+        0.6,
+        -0.3,
+        0.4,
+        -0.5235987755982988,
+        1.0471975511965976
+      ],
+      "jaw": {
+        "configuration": "ideal_body_overlay",
+        "closing_angle_rad": 0,
+        "evidence": "Explicit ideal symmetric linkage overlay from bound jaw body ledger, including driven-phase/active-pivot normalization; not solved saved CAD, servo command, usable stroke or gripping force."
+      },
+      "payload": {
+        "mass_kg": 0.2,
+        "point_zero_m": [
+          0,
+          0,
+          0.7025242557054092
+        ],
+        "com_evidence": "Axis-centered CAD distal-finger-plane study point; not calibrated TCP or measured object COM. Fixed relative to roll_tool; no grip/contact model."
+      }
+    },
+    {
+      "name": "upright_ideal_close60",
+      "joint_angles_rad": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "jaw": {
+        "configuration": "ideal_body_overlay",
+        "closing_angle_rad": 1.0471975511965976,
+        "evidence": "Explicit ideal symmetric linkage overlay from bound jaw body ledger, including driven-phase/active-pivot normalization; not solved saved CAD, servo command, usable stroke or gripping force."
+      },
+      "payload": {
+        "mass_kg": 0.2,
+        "point_zero_m": [
+          0,
+          0,
+          0.7025242557054092
+        ],
+        "com_evidence": "Axis-centered CAD distal-finger-plane study point; not calibrated TCP or measured object COM. Fixed relative to roll_tool; no grip/contact model."
+      }
+    },
+    {
+      "name": "shoulder_horizontal_ideal_close60",
+      "joint_angles_rad": [
+        0,
+        1.5707963267948966,
+        0,
+        0,
+        0,
+        0
+      ],
+      "jaw": {
+        "configuration": "ideal_body_overlay",
+        "closing_angle_rad": 1.0471975511965976,
+        "evidence": "Explicit ideal symmetric linkage overlay from bound jaw body ledger, including driven-phase/active-pivot normalization; not solved saved CAD, servo command, usable stroke or gripping force."
+      },
+      "payload": {
+        "mass_kg": 0.2,
+        "point_zero_m": [
+          0,
+          0,
+          0.7025242557054092
+        ],
+        "com_evidence": "Axis-centered CAD distal-finger-plane study point; not calibrated TCP or measured object COM. Fixed relative to roll_tool; no grip/contact model."
+      }
+    },
+    {
+      "name": "shoulder_horizontal_fold45_roll30_ideal_close60",
+      "joint_angles_rad": [
+        0,
+        1.5707963267948966,
+        0,
+        0,
+        0.7853981633974483,
+        0.5235987755982988
+      ],
+      "jaw": {
+        "configuration": "ideal_body_overlay",
+        "closing_angle_rad": 1.0471975511965976,
+        "evidence": "Explicit ideal symmetric linkage overlay from bound jaw body ledger, including driven-phase/active-pivot normalization; not solved saved CAD, servo command, usable stroke or gripping force."
+      },
+      "payload": {
+        "mass_kg": 0.2,
+        "point_zero_m": [
+          0,
+          0,
+          0.7025242557054092
+        ],
+        "com_evidence": "Axis-centered CAD distal-finger-plane study point; not calibrated TCP or measured object COM. Fixed relative to roll_tool; no grip/contact model."
+      }
+    },
+    {
+      "name": "mixed_pose_ideal_close60",
+      "joint_angles_rad": [
+        0.2,
+        0.6,
+        -0.3,
+        0.4,
+        -0.5235987755982988,
+        1.0471975511965976
+      ],
+      "jaw": {
+        "configuration": "ideal_body_overlay",
+        "closing_angle_rad": 1.0471975511965976,
+        "evidence": "Explicit ideal symmetric linkage overlay from bound jaw body ledger, including driven-phase/active-pivot normalization; not solved saved CAD, servo command, usable stroke or gripping force."
+      },
+      "payload": {
+        "mass_kg": 0.2,
+        "point_zero_m": [
+          0,
+          0,
+          0.7025242557054092
+        ],
+        "com_evidence": "Axis-centered CAD distal-finger-plane study point; not calibrated TCP or measured object COM. Fixed relative to roll_tool; no grip/contact model."
+      }
+    }
+  ],
+  "unresolved_gates": [
+    "Original Art1 history not semantically rebuilt; static snapshot remains analysis baseline.",
+    "Saved wrist gears interfere/noncoincident apices; ideal s=+1 is not physical sign calibration.",
+    "Saved jaw loops are not solved; no physical parallelism, stroke or force rating.",
+    "Internal motor balance, uniform belt path and bearing COM assumptions remain conditional.",
+    "Actual filament/printed masses, COM, inertia, stops, collisions, calibration and moving actuator capacity remain unknown."
+  ]
+}

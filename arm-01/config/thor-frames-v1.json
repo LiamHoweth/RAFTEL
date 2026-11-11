@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "revision": "thor-nominal-frames-v1",
+  "units": "m_rad",
+  "validation_class": "source_nominal_and_unknown_extrinsics_not_calibration",
+  "source": {
+    "repository": "https://github.com/AngelLM/Thor-ROS",
+    "revision": "e11a56b5aa0d89f0b68a3ea7bd084eab4a050952",
+    "path": "ws_thor/src/thor_urdf/urdf/thor.urdf.xacro",
+    "sha256": "19b83e26f86aae15fda5c21418f768d0e3ed1b0d1daa6d149abd9b45ceccd8b9"
+  },
+  "dynamic_chain": "Use thor_model.chain(q) and forward_kinematics(q); fixed records do not freeze link_6 at zero",
+  "frames": [
+    {
+      "parent": "base_link",
+      "child": "native_cad",
+      "parent_from_child": [
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "evidence_class": "source",
+      "evidence": "Thor ROS e11a56b5aa0d89f0b68a3ea7bd084eab4a050952 arm mesh visual Rz(-PI/2); thor-axis-evidence.json corroborates unsigned zero-pose lines only"
+    },
+    {
+      "parent": "link_6",
+      "child": "gripper_base",
+      "parent_from_child": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.043
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "evidence_class": "source",
+      "evidence": "Pinned thor.urdf.xacro link6_to_gripperbase origin; not an actual TCP calibration"
+    },
+    {
+      "parent": "gripper_base",
+      "child": "gripper_mid_point",
+      "parent_from_child": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.075
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "evidence_class": "source",
+      "evidence": "Pinned thor.urdf.xacro gripperbase_to_midpoint origin; nominal upstream point only"
+    },
+    {
+      "parent": "world",
+      "child": "bench",
+      "parent_from_child": null,
+      "evidence_class": "unknown",
+      "evidence": "No measured workstation transform"
+    },
+    {
+      "parent": "bench",
+      "child": "arm_base",
+      "parent_from_child": null,
+      "evidence_class": "unknown",
+      "evidence": "No measured removable mount transform; arm_base is the logical sorter frame"
+    },
+    {
+      "parent": "arm_base",
+      "child": "base_link",
+      "parent_from_child": null,
+      "evidence_class": "unknown",
+      "evidence": "No physical calibration relating logical arm_base to nominal source base_link"
+    },
+    {
+      "parent": "gripper_mid_point",
+      "child": "tcp",
+      "parent_from_child": null,
+      "evidence_class": "unknown",
+      "evidence": "No calibrated grasp/contact TCP"
+    },
+    {
+      "parent": "bench",
+      "child": "camera",
+      "parent_from_child": null,
+      "evidence_class": "unknown",
+      "evidence": "No camera extrinsic calibration"
+    }
+  ]
+}

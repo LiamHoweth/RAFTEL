@@ -1,0 +1,1487 @@
+{
+  "schema_version": 1,
+  "validation_class": "hash_bound_conditional_gravity_study_not_physical_validation",
+  "scenario_id": "thor-v2-pla-050-source-phase-saved-vs-ideal-jaw",
+  "manifest_canonical_sha256": "8db13c72f0f16e2dc6c40f4c6155d0bd94bb1a877792291c87af306f7d9c5296",
+  "bound_inputs": {
+    "inventory": {
+      "path": "hardware/cad/thor-mounted-geometry-v2.json",
+      "sha256": "64dbcf86439afffd11f63181259cba048008a3bedf103997603a24d23b49fa3e",
+      "evidence_class": "saved_native_cad_capture"
+    },
+    "membership": {
+      "path": "hardware/cad/thor-wrist-membership-v2.json",
+      "sha256": "07b3aaaf2a6a6257eef1b7fefbddecf34378016873c9d867ce0bfb77d990e6dd",
+      "evidence_class": "conditional_model"
+    },
+    "moving_mass": {
+      "path": "hardware/cad/thor-moving-mass-evidence.json",
+      "sha256": "59d22c96d71aab419b8a4455729d85633079e7c15adc3acef3a6f5e7a1c32e8b",
+      "evidence_class": "source_audit"
+    },
+    "jaw_bodies": {
+      "path": "hardware/cad/thor-jaw-body-ledger.json",
+      "sha256": "5cfa15266584ae0b8a23e9584d14850f0577faed53aea5c34d302718ddab222f",
+      "evidence_class": "conditional_model"
+    }
+  },
+  "source_revisions": {
+    "thor_cad": "286b081fe6f056d87c379b884781ef77ff6a0159",
+    "thor_ros": "e11a56b5aa0d89f0b68a3ea7bd084eab4a050952"
+  },
+  "coordinate_frame": "thor_ros_nominal_base_link_m",
+  "units": {
+    "position": "m",
+    "mass": "kg",
+    "angle": "rad",
+    "gravity": "m/s^2",
+    "torque": "N*m"
+  },
+  "gravity_m_s2": [
+    0.0,
+    0.0,
+    -9.80665
+  ],
+  "material": {
+    "family": "PLA",
+    "density_kg_m3": 1240.0,
+    "density_evidence": "Pinned reference Prusament PLA TDS density 1240kg/m3; same source scenario as thor-load-analysis.md, not actual filament measurement.",
+    "effective_whole_part_solid_fraction": 0.5
+  },
+  "belt_mass_overrides": {
+    "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Belt_GT2_208mm/AssemblyArt4::Pad046": {
+      "mass_kg": 0.0024167873342812065,
+      "evidence": "Unmeasured uniform-belt density scenario 1200kg/m3 times saved source Pad046 volume; see thor-moving-mass-evidence.json. Nominal 208mm label differs from smooth-strip path about223.78mm; not measured belt mass or fit."
+    },
+    "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Belt_GT2_208mm001/AssemblyArt4::Pad046": {
+      "mass_kg": 0.0024167873342812065,
+      "evidence": "Unmeasured uniform-belt density scenario 1200kg/m3 times saved source Pad046 volume; see thor-moving-mass-evidence.json. Nominal 208mm label differs from smooth-strip path about223.78mm; not measured belt mass or fit."
+    }
+  },
+  "wrist_motion_scenario": "bevel_sign_positive",
+  "mass_conservation": {
+    "native_leaf_count": 518,
+    "mass_record_count": 517,
+    "motor_asset_count": 7,
+    "motor_mass_kg": 2.12,
+    "modeled_mass_kg": 5.6547224855756,
+    "mass_record_identity_sha256": "d2422f05252f0820002d630be66b3d0c3a007eefad547309ec94cba750a61794"
+  },
+  "case_count": 12,
+  "cases": [
+    {
+      "name": "upright_saved",
+      "joint_angles_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "jaw": {
+        "configuration": "saved_frozen",
+        "closing_angle_rad": null,
+        "evidence": "Original saved-CAD jaw geometry retained; driven loops have nonzero residuals, no solved common q."
+      },
+      "payload": {
+        "mass_kg": 0.2,
+        "point_zero_m": [
+          0.0,
+          0.0,
+          0.7025242557054092
+        ],
+        "com_evidence": "Axis-centered CAD distal-finger-plane study point; not calibrated TCP or measured object COM. Fixed relative to roll_tool; no grip/contact model."
+      },
+      "modeled_center_of_mass_m": [
+        0.00010959106465048427,
+        0.010672595000322325,
+        0.23263207530726504
+      ],
+      "payload_position_m": [
+        0.0,
+        0.0,
+        0.7025242557054092
+      ],
+      "joints": [
+        {
+          "joint": "joint_1",
+          "arm_gravity_torque_nm": 0.0,
+          "payload_gravity_torque_nm": 0.0,
+          "required_ideal_holding_torque_nm": -0.0,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_2",
+          "arm_gravity_torque_nm": -0.035995332320321205,
+          "payload_gravity_torque_nm": 0.0,
+          "required_ideal_holding_torque_nm": 0.035995332320321205,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_3",
+          "arm_gravity_torque_nm": -0.03599719860512381,
+          "payload_gravity_torque_nm": 0.0,
+          "required_ideal_holding_torque_nm": 0.03599719860512381,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_4",
+          "arm_gravity_torque_nm": 0.0,
+          "payload_gravity_torque_nm": 0.0,
+          "required_ideal_holding_torque_nm": -0.0,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_5",
+          "arm_gravity_torque_nm": null,
+          "payload_gravity_torque_nm": 0.0,
+          "required_ideal_holding_torque_nm": null,
+          "body_membership_resolved": false,
+          "conditional_modeled_wrist_gravity_contribution_nm": 0.01684665582656756,
+          "conditional_modeled_holding_torque_nm": -0.01684665582656756
+        },
+        {
+          "joint": "joint_6",
+          "arm_gravity_torque_nm": null,
+          "payload_gravity_torque_nm": 0.0,
+          "required_ideal_holding_torque_nm": null,
+          "body_membership_resolved": false,
+          "conditional_modeled_wrist_gravity_contribution_nm": 5.1428566244065894e-05,
+          "conditional_modeled_holding_torque_nm": -5.1428566244065894e-05
+        }
+      ],
+      "gravity_wrench_about_frame_origin": {
+        "reference_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "external_force_n": [
+          0.0,
+          0.0,
+          -57.41521426316995
+        ],
+        "external_moment_nm": [
+          -0.5918368479355606,
+          0.006077250215405531,
+          0.0
+        ],
+        "ideal_support_force_n": [
+          0.0,
+          0.0,
+          57.41521426316995
+        ],
+        "ideal_support_moment_nm": [
+          0.5918368479355606,
+          -0.006077250215405531,
+          -0.0
+        ]
+      },
+      "conditional_jaw_gravity_torque_nm": null,
+      "conditional_jaw_holding_torque_nm": null,
+      "jaw_coordinate_status": "saved assembly has no solved common jaw coordinate"
+    },
+    {
+      "name": "shoulder_horizontal_saved",
+      "joint_angles_rad": [
+        0.0,
+        1.5707963267948966,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "jaw": {
+        "configuration": "saved_frozen",
+        "closing_angle_rad": null,
+        "evidence": "Original saved-CAD jaw geometry retained; driven loops have nonzero residuals, no solved common q."
+      },
+      "payload": {
+        "mass_kg": 0.2,
+        "point_zero_m": [
+          0.0,
+          0.0,
+          0.7025242557054092
+        ],
+        "com_evidence": "Axis-centered CAD distal-finger-plane study point; not calibrated TCP or measured object COM. Fixed relative to roll_tool; no grip/contact model."
+      },
+      "modeled_center_of_mass_m": [
+        0.00010959106465048431,
+        -0.07764277741468195,
+        0.14561491068414406
+      ],
+      "payload_position_m": [
+        0.0,
+        -0.5005242557054093,
+        0.20200000000000004
+      ],
+      "joints": [
+        {
+          "joint": "joint_1",
+          "arm_gravity_torque_nm": 0.0,
+          "payload_gravity_torque_nm": 0.0,
+          "required_ideal_holding_torque_nm": -0.0,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_2",
+          "arm_gravity_torque_nm": 4.861435108240078,
+          "payload_gravity_torque_nm": 0.9816932384426904,
+          "required_ideal_holding_torque_nm": -5.843128346682769,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_3",
+          "arm_gravity_torque_nm": 1.6819952033885264,
+          "payload_gravity_torque_nm": 0.6678804384426904,
+          "required_ideal_holding_torque_nm": -2.3498756418312166,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_4",
+          "arm_gravity_torque_nm": -0.0021328714600393787,
+          "payload_gravity_torque_nm": 0.0,
+          "required_ideal_holding_torque_nm": 0.0021328714600393787,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_5",
+          "arm_gravity_torque_nm": null,
+          "payload_gravity_torque_nm": 0.2873824184426903,
+          "required_ideal_holding_torque_nm": null,
+          "body_membership_resolved": false,
+          "conditional_modeled_wrist_gravity_contribution_nm": 0.13101948658842158,
+          "conditional_modeled_holding_torque_nm": -0.41840190503111185
+        },
+        {
+          "joint": "joint_6",
+          "arm_gravity_torque_nm": null,
+          "payload_gravity_torque_nm": 0.0,
+          "required_ideal_holding_torque_nm": null,
+          "body_membership_resolved": false,
+          "conditional_modeled_wrist_gravity_contribution_nm": -0.0024056638953954203,
+          "conditional_modeled_holding_torque_nm": 0.0024056638953954203
+        }
+      ],
+      "gravity_wrench_about_frame_origin": {
+        "reference_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "external_force_n": [
+          0.0,
+          0.0,
+          -57.41521426316995
+        ],
+        "external_moment_nm": [
+          5.287286831067529,
+          0.006077250215405541,
+          0.0
+        ],
+        "ideal_support_force_n": [
+          0.0,
+          0.0,
+          57.41521426316995
+        ],
+        "ideal_support_moment_nm": [
+          -5.287286831067529,
+          -0.006077250215405541,
+          -0.0
+        ]
+      },
+      "conditional_jaw_gravity_torque_nm": null,
+      "conditional_jaw_holding_torque_nm": null,
+      "jaw_coordinate_status": "saved assembly has no solved common jaw coordinate"
+    },
+    {
+      "name": "shoulder_horizontal_fold45_roll30_saved",
+      "joint_angles_rad": [
+        0.0,
+        1.5707963267948966,
+        0.0,
+        0.0,
+        0.7853981633974483,
+        0.5235987755982988
+      ],
+      "jaw": {
+        "configuration": "saved_frozen",
+        "closing_angle_rad": null,
+        "evidence": "Original saved-CAD jaw geometry retained; driven loops have nonzero residuals, no solved common q."
+      },
+      "payload": {
+        "mass_kg": 0.2,
+        "point_zero_m": [
+          0.0,
+          0.0,
+          0.7025242557054092
+        ],
+        "com_evidence": "Axis-centered CAD distal-finger-plane study point; not calibrated TCP or measured object COM. Fixed relative to roll_tool; no grip/contact model."
+      },
+      "modeled_center_of_mass_m": [
+        0.0002561037925928236,
+        -0.07677979737698766,
+        0.1440774425969778
+      ],
+      "payload_position_m": [
+        1.3877787807814455e-17,
+        -0.4576082948176065,
+        0.09839170518239354
+      ],
+      "joints": [
+        {
+          "joint": "joint_1",
+          "arm_gravity_torque_nm": 0.0,
+          "payload_gravity_torque_nm": 0.0,
+          "required_ideal_holding_torque_nm": -0.0,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_2",
+          "arm_gravity_torque_nm": 4.813579513108353,
+          "payload_gravity_torque_nm": 0.8975208768746162,
+          "required_ideal_holding_torque_nm": -5.7111003899829695,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_3",
+          "arm_gravity_torque_nm": 1.6341396082568007,
+          "payload_gravity_torque_nm": 0.5837080768746162,
+          "required_ideal_holding_torque_nm": -2.217847685131417,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_4",
+          "arm_gravity_torque_nm": -0.010257571318435167,
+          "payload_gravity_torque_nm": -2.7218921561100726e-17,
+          "required_ideal_holding_torque_nm": 0.010257571318435195,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_5",
+          "arm_gravity_torque_nm": null,
+          "payload_gravity_torque_nm": 0.2032100568746161,
+          "required_ideal_holding_torque_nm": null,
+          "body_membership_resolved": false,
+          "conditional_modeled_wrist_gravity_contribution_nm": 0.08316392533631954,
+          "conditional_modeled_holding_torque_nm": -0.28637398221093563
+        },
+        {
+          "joint": "joint_6",
+          "arm_gravity_torque_nm": null,
+          "payload_gravity_torque_nm": -1.9246684012439054e-17,
+          "required_ideal_holding_torque_nm": null,
+          "body_membership_resolved": false,
+          "conditional_modeled_wrist_gravity_contribution_nm": -0.007377296915586762,
+          "conditional_modeled_holding_torque_nm": 0.007377296915586781
+        }
+      ],
+      "gravity_wrench_about_frame_origin": {
+        "reference_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "external_force_n": [
+          0.0,
+          0.0,
+          -57.41521426316995
+        ],
+        "external_moment_nm": [
+          5.15525887436773,
+          0.014201950073801357,
+          0.0
+        ],
+        "ideal_support_force_n": [
+          0.0,
+          0.0,
+          57.41521426316995
+        ],
+        "ideal_support_moment_nm": [
+          -5.15525887436773,
+          -0.014201950073801357,
+          -0.0
+        ]
+      },
+      "conditional_jaw_gravity_torque_nm": null,
+      "conditional_jaw_holding_torque_nm": null,
+      "jaw_coordinate_status": "saved assembly has no solved common jaw coordinate"
+    },
+    {
+      "name": "mixed_pose_saved",
+      "joint_angles_rad": [
+        0.2,
+        0.6,
+        -0.3,
+        0.4,
+        -0.5235987755982988,
+        1.0471975511965976
+      ],
+      "jaw": {
+        "configuration": "saved_frozen",
+        "closing_angle_rad": null,
+        "evidence": "Original saved-CAD jaw geometry retained; driven loops have nonzero residuals, no solved common q."
+      },
+      "payload": {
+        "mass_kg": 0.2,
+        "point_zero_m": [
+          0.0,
+          0.0,
+          0.7025242557054092
+        ],
+        "com_evidence": "Axis-centered CAD distal-finger-plane study point; not calibrated TCP or measured object COM. Fixed relative to roll_tool; no grip/contact model."
+      },
+      "modeled_center_of_mass_m": [
+        0.007743123143649436,
+        -0.02847520729050871,
+        0.2216258246424971
+      ],
+      "payload_position_m": [
+        -0.003979879909195176,
+        -0.12397016188163873,
+        0.6605565606163875
+      ],
+      "joints": [
+        {
+          "joint": "joint_1",
+          "arm_gravity_torque_nm": 0.0,
+          "payload_gravity_torque_nm": 0.0,
+          "required_ideal_holding_torque_nm": -0.0,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_2",
+          "arm_gravity_torque_nm": 2.178711033132808,
+          "payload_gravity_torque_nm": 0.23674887325572144,
+          "required_ideal_holding_torque_nm": -2.4154599063885294,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_3",
+          "arm_gravity_torque_nm": 0.3834626809352361,
+          "payload_gravity_torque_nm": 0.05955683768069993,
+          "required_ideal_holding_torque_nm": -0.443019518615936,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_4",
+          "arm_gravity_torque_nm": 0.002166320024000282,
+          "payload_gravity_torque_nm": 0.016536126467333982,
+          "required_ideal_holding_torque_nm": -0.018702446491334263,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_5",
+          "arm_gravity_torque_nm": null,
+          "payload_gravity_torque_nm": -0.06953014741965947,
+          "required_ideal_holding_torque_nm": null,
+          "body_membership_resolved": false,
+          "conditional_modeled_wrist_gravity_contribution_nm": -0.025520226574593165,
+          "conditional_modeled_holding_torque_nm": 0.09505037399425265
+        },
+        {
+          "joint": "joint_6",
+          "arm_gravity_torque_nm": null,
+          "payload_gravity_torque_nm": -1.3877787807814457e-17,
+          "required_ideal_holding_torque_nm": null,
+          "body_membership_resolved": false,
+          "conditional_modeled_wrist_gravity_contribution_nm": 0.0030052187227813058,
+          "conditional_modeled_holding_torque_nm": -0.003005218722781292
+        }
+      ],
+      "gravity_wrench_about_frame_origin": {
+        "reference_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "external_force_n": [
+          0.0,
+          0.0,
+          -57.41521426316995
+        ],
+        "external_moment_nm": [
+          1.8222072470609578,
+          0.42158039678110676,
+          0.0
+        ],
+        "ideal_support_force_n": [
+          0.0,
+          0.0,
+          57.41521426316995
+        ],
+        "ideal_support_moment_nm": [
+          -1.8222072470609578,
+          -0.42158039678110676,
+          -0.0
+        ]
+      },
+      "conditional_jaw_gravity_torque_nm": null,
+      "conditional_jaw_holding_torque_nm": null,
+      "jaw_coordinate_status": "saved assembly has no solved common jaw coordinate"
+    },
+    {
+      "name": "upright_ideal_zero",
+      "joint_angles_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "jaw": {
+        "configuration": "ideal_body_overlay",
+        "closing_angle_rad": 0.0,
+        "evidence": "Explicit ideal symmetric linkage overlay from bound jaw body ledger, including driven-phase/active-pivot normalization; not solved saved CAD, servo command, usable stroke or gripping force."
+      },
+      "payload": {
+        "mass_kg": 0.2,
+        "point_zero_m": [
+          0.0,
+          0.0,
+          0.7025242557054092
+        ],
+        "com_evidence": "Axis-centered CAD distal-finger-plane study point; not calibrated TCP or measured object COM. Fixed relative to roll_tool; no grip/contact model."
+      },
+      "modeled_center_of_mass_m": [
+        0.0001095823724983121,
+        0.010672594976669737,
+        0.2326320622338035
+      ],
+      "payload_position_m": [
+        0.0,
+        0.0,
+        0.7025242557054092
+      ],
+      "joints": [
+        {
+          "joint": "joint_1",
+          "arm_gravity_torque_nm": 0.0,
+          "payload_gravity_torque_nm": 0.0,
+          "required_ideal_holding_torque_nm": -0.0,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_2",
+          "arm_gravity_torque_nm": -0.03599533100869325,
+          "payload_gravity_torque_nm": 0.0,
+          "required_ideal_holding_torque_nm": 0.03599533100869325,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_3",
+          "arm_gravity_torque_nm": -0.03599719729349586,
+          "payload_gravity_torque_nm": 0.0,
+          "required_ideal_holding_torque_nm": 0.03599719729349586,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_4",
+          "arm_gravity_torque_nm": 0.0,
+          "payload_gravity_torque_nm": 0.0,
+          "required_ideal_holding_torque_nm": -0.0,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_5",
+          "arm_gravity_torque_nm": null,
+          "payload_gravity_torque_nm": 0.0,
+          "required_ideal_holding_torque_nm": null,
+          "body_membership_resolved": false,
+          "conditional_modeled_wrist_gravity_contribution_nm": 0.01684665713819551,
+          "conditional_modeled_holding_torque_nm": -0.01684665713819551
+        },
+        {
+          "joint": "joint_6",
+          "arm_gravity_torque_nm": null,
+          "payload_gravity_torque_nm": 0.0,
+          "required_ideal_holding_torque_nm": null,
+          "body_membership_resolved": false,
+          "conditional_modeled_wrist_gravity_contribution_nm": 5.1428566244065894e-05,
+          "conditional_modeled_holding_torque_nm": -5.1428566244065894e-05
+        }
+      ],
+      "gravity_wrench_about_frame_origin": {
+        "reference_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "external_force_n": [
+          0.0,
+          0.0,
+          -57.41521426316995
+        ],
+        "external_moment_nm": [
+          -0.5918368466239325,
+          0.006076768201804978,
+          0.0
+        ],
+        "ideal_support_force_n": [
+          0.0,
+          0.0,
+          57.41521426316995
+        ],
+        "ideal_support_moment_nm": [
+          0.5918368466239325,
+          -0.006076768201804978,
+          -0.0
+        ]
+      },
+      "conditional_jaw_gravity_torque_nm": -0.008076947500749963,
+      "conditional_jaw_holding_torque_nm": 0.008076947500749963,
+      "jaw_coordinate_status": "ideal mathematical q; not servo coordinate or realized native linkage"
+    },
+    {
+      "name": "shoulder_horizontal_ideal_zero",
+      "joint_angles_rad": [
+        0.0,
+        1.5707963267948966,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "jaw": {
+        "configuration": "ideal_body_overlay",
+        "closing_angle_rad": 0.0,
+        "evidence": "Explicit ideal symmetric linkage overlay from bound jaw body ledger, including driven-phase/active-pivot normalization; not solved saved CAD, servo command, usable stroke or gripping force."
+      },
+      "payload": {
+        "mass_kg": 0.2,
+        "point_zero_m": [
+          0.0,
+          0.0,
+          0.7025242557054092
+        ],
+        "com_evidence": "Axis-centered CAD distal-finger-plane study point; not calibrated TCP or measured object COM. Fixed relative to roll_tool; no grip/contact model."
+      },
+      "modeled_center_of_mass_m": [
+        0.00010958237249831214,
+        -0.07764276434122044,
+        0.14561491066049145
+      ],
+      "payload_position_m": [
+        0.0,
+        -0.5005242557054093,
+        0.20200000000000004
+      ],
+      "joints": [
+        {
+          "joint": "joint_1",
+          "arm_gravity_torque_nm": 0.0,
+          "payload_gravity_torque_nm": 0.0,
+          "required_ideal_holding_torque_nm": -0.0,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_2",
+          "arm_gravity_torque_nm": 4.861434383265856,
+          "payload_gravity_torque_nm": 0.9816932384426904,
+          "required_ideal_holding_torque_nm": -5.843127621708547,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_3",
+          "arm_gravity_torque_nm": 1.6819944784143044,
+          "payload_gravity_torque_nm": 0.6678804384426904,
+          "required_ideal_holding_torque_nm": -2.3498749168569946,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_4",
+          "arm_gravity_torque_nm": -0.002132389446438825,
+          "payload_gravity_torque_nm": 0.0,
+          "required_ideal_holding_torque_nm": 0.002132389446438825,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_5",
+          "arm_gravity_torque_nm": null,
+          "payload_gravity_torque_nm": 0.2873824184426903,
+          "required_ideal_holding_torque_nm": null,
+          "body_membership_resolved": false,
+          "conditional_modeled_wrist_gravity_contribution_nm": 0.1310187616141997,
+          "conditional_modeled_holding_torque_nm": -0.41840118005689
+        },
+        {
+          "joint": "joint_6",
+          "arm_gravity_torque_nm": null,
+          "payload_gravity_torque_nm": 0.0,
+          "required_ideal_holding_torque_nm": null,
+          "body_membership_resolved": false,
+          "conditional_modeled_wrist_gravity_contribution_nm": -0.0024051818817948665,
+          "conditional_modeled_holding_torque_nm": 0.0024051818817948665
+        }
+      ],
+      "gravity_wrench_about_frame_origin": {
+        "reference_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "external_force_n": [
+          0.0,
+          0.0,
+          -57.41521426316995
+        ],
+        "external_moment_nm": [
+          5.287286106093308,
+          0.0060767682018049865,
+          0.0
+        ],
+        "ideal_support_force_n": [
+          0.0,
+          0.0,
+          57.41521426316995
+        ],
+        "ideal_support_moment_nm": [
+          -5.287286106093308,
+          -0.0060767682018049865,
+          -0.0
+        ]
+      },
+      "conditional_jaw_gravity_torque_nm": 5.663987387998813e-12,
+      "conditional_jaw_holding_torque_nm": -5.663987387998813e-12,
+      "jaw_coordinate_status": "ideal mathematical q; not servo coordinate or realized native linkage"
+    },
+    {
+      "name": "shoulder_horizontal_fold45_roll30_ideal_zero",
+      "joint_angles_rad": [
+        0.0,
+        1.5707963267948966,
+        0.0,
+        0.0,
+        0.7853981633974483,
+        0.5235987755982988
+      ],
+      "jaw": {
+        "configuration": "ideal_body_overlay",
+        "closing_angle_rad": 0.0,
+        "evidence": "Explicit ideal symmetric linkage overlay from bound jaw body ledger, including driven-phase/active-pivot normalization; not solved saved CAD, servo command, usable stroke or gripping force."
+      },
+      "payload": {
+        "mass_kg": 0.2,
+        "point_zero_m": [
+          0.0,
+          0.0,
+          0.7025242557054092
+        ],
+        "com_evidence": "Axis-centered CAD distal-finger-plane study point; not calibrated TCP or measured object COM. Fixed relative to roll_tool; no grip/contact model."
+      },
+      "modeled_center_of_mass_m": [
+        0.0002560962767945236,
+        -0.07677978504503032,
+        0.14407744875368703
+      ],
+      "payload_position_m": [
+        1.3877787807814455e-17,
+        -0.4576082948176065,
+        0.09839170518239354
+      ],
+      "joints": [
+        {
+          "joint": "joint_1",
+          "arm_gravity_torque_nm": 0.0,
+          "payload_gravity_torque_nm": 0.0,
+          "required_ideal_holding_torque_nm": -0.0,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_2",
+          "arm_gravity_torque_nm": 4.813578829253417,
+          "payload_gravity_torque_nm": 0.8975208768746162,
+          "required_ideal_holding_torque_nm": -5.711099706128033,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_3",
+          "arm_gravity_torque_nm": 1.6341389244018647,
+          "payload_gravity_torque_nm": 0.5837080768746162,
+          "required_ideal_holding_torque_nm": -2.217847001276481,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_4",
+          "arm_gravity_torque_nm": -0.010257154538226095,
+          "payload_gravity_torque_nm": -2.7218921561100726e-17,
+          "required_ideal_holding_torque_nm": 0.010257154538226123,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_5",
+          "arm_gravity_torque_nm": null,
+          "payload_gravity_torque_nm": 0.2032100568746161,
+          "required_ideal_holding_torque_nm": null,
+          "body_membership_resolved": false,
+          "conditional_modeled_wrist_gravity_contribution_nm": 0.08316324148138349,
+          "conditional_modeled_holding_torque_nm": -0.28637329835599956
+        },
+        {
+          "joint": "joint_6",
+          "arm_gravity_torque_nm": null,
+          "payload_gravity_torque_nm": -1.9246684012439054e-17,
+          "required_ideal_holding_torque_nm": null,
+          "body_membership_resolved": false,
+          "conditional_modeled_wrist_gravity_contribution_nm": -0.007377002207474662,
+          "conditional_modeled_holding_torque_nm": 0.007377002207474681
+        }
+      ],
+      "gravity_wrench_about_frame_origin": {
+        "reference_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "external_force_n": [
+          0.0,
+          0.0,
+          -57.41521426316995
+        ],
+        "external_moment_nm": [
+          5.155258190512794,
+          0.014201533293592283,
+          0.0
+        ],
+        "ideal_support_force_n": [
+          0.0,
+          0.0,
+          57.41521426316995
+        ],
+        "ideal_support_moment_nm": [
+          -5.155258190512794,
+          -0.014201533293592283,
+          -0.0
+        ]
+      },
+      "conditional_jaw_gravity_torque_nm": 0.005711265088448303,
+      "conditional_jaw_holding_torque_nm": -0.005711265088448303,
+      "jaw_coordinate_status": "ideal mathematical q; not servo coordinate or realized native linkage"
+    },
+    {
+      "name": "mixed_pose_ideal_zero",
+      "joint_angles_rad": [
+        0.2,
+        0.6,
+        -0.3,
+        0.4,
+        -0.5235987755982988,
+        1.0471975511965976
+      ],
+      "jaw": {
+        "configuration": "ideal_body_overlay",
+        "closing_angle_rad": 0.0,
+        "evidence": "Explicit ideal symmetric linkage overlay from bound jaw body ledger, including driven-phase/active-pivot normalization; not solved saved CAD, servo command, usable stroke or gripping force."
+      },
+      "payload": {
+        "mass_kg": 0.2,
+        "point_zero_m": [
+          0.0,
+          0.0,
+          0.7025242557054092
+        ],
+        "com_evidence": "Axis-centered CAD distal-finger-plane study point; not calibrated TCP or measured object COM. Fixed relative to roll_tool; no grip/contact model."
+      },
+      "modeled_center_of_mass_m": [
+        0.007743126386120897,
+        -0.028475217728951504,
+        0.22162581337330212
+      ],
+      "payload_position_m": [
+        -0.003979879909195176,
+        -0.12397016188163873,
+        0.6605565606163875
+      ],
+      "joints": [
+        {
+          "joint": "joint_1",
+          "arm_gravity_torque_nm": 0.0,
+          "payload_gravity_torque_nm": 0.0,
+          "required_ideal_holding_torque_nm": -0.0,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_2",
+          "arm_gravity_torque_nm": 2.178711636168764,
+          "payload_gravity_torque_nm": 0.23674887325572144,
+          "required_ideal_holding_torque_nm": -2.4154605094244856,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_3",
+          "arm_gravity_torque_nm": 0.38346328397119245,
+          "payload_gravity_torque_nm": 0.05955683768069993,
+          "required_ideal_holding_torque_nm": -0.44302012165189236,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_4",
+          "arm_gravity_torque_nm": 0.0021663019312849244,
+          "payload_gravity_torque_nm": 0.016536126467333982,
+          "required_ideal_holding_torque_nm": -0.018702428398618905,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_5",
+          "arm_gravity_torque_nm": null,
+          "payload_gravity_torque_nm": -0.06953014741965947,
+          "required_ideal_holding_torque_nm": null,
+          "body_membership_resolved": false,
+          "conditional_modeled_wrist_gravity_contribution_nm": -0.025519648365072572,
+          "conditional_modeled_holding_torque_nm": 0.09504979578473205
+        },
+        {
+          "joint": "joint_6",
+          "arm_gravity_torque_nm": null,
+          "payload_gravity_torque_nm": -1.3877787807814457e-17,
+          "required_ideal_holding_torque_nm": null,
+          "body_membership_resolved": false,
+          "conditional_modeled_wrist_gravity_contribution_nm": 0.003005112573288968,
+          "conditional_modeled_holding_torque_nm": -0.003005112573288954
+        }
+      ],
+      "gravity_wrench_about_frame_origin": {
+        "reference_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "external_force_n": [
+          0.0,
+          0.0,
+          -57.41521426316995
+        ],
+        "external_moment_nm": [
+          1.8222078259131564,
+          0.42158057658874387,
+          0.0
+        ],
+        "ideal_support_force_n": [
+          0.0,
+          0.0,
+          57.41521426316995
+        ],
+        "ideal_support_moment_nm": [
+          -1.8222078259131564,
+          -0.42158057658874387,
+          -0.0
+        ]
+      },
+      "conditional_jaw_gravity_torque_nm": -0.007781668642484506,
+      "conditional_jaw_holding_torque_nm": 0.007781668642484506,
+      "jaw_coordinate_status": "ideal mathematical q; not servo coordinate or realized native linkage"
+    },
+    {
+      "name": "upright_ideal_close60",
+      "joint_angles_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "jaw": {
+        "configuration": "ideal_body_overlay",
+        "closing_angle_rad": 1.0471975511965976,
+        "evidence": "Explicit ideal symmetric linkage overlay from bound jaw body ledger, including driven-phase/active-pivot normalization; not solved saved CAD, servo command, usable stroke or gripping force."
+      },
+      "payload": {
+        "mass_kg": 0.2,
+        "point_zero_m": [
+          0.0,
+          0.0,
+          0.7025242557054092
+        ],
+        "com_evidence": "Axis-centered CAD distal-finger-plane study point; not calibrated TCP or measured object COM. Fixed relative to roll_tool; no grip/contact model."
+      },
+      "modeled_center_of_mass_m": [
+        0.00010957806995735875,
+        0.010672594964961908,
+        0.2327582002465562
+      ],
+      "payload_position_m": [
+        0.0,
+        0.0,
+        0.7025242557054092
+      ],
+      "joints": [
+        {
+          "joint": "joint_1",
+          "arm_gravity_torque_nm": 0.0,
+          "payload_gravity_torque_nm": 0.0,
+          "required_ideal_holding_torque_nm": -0.0,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_2",
+          "arm_gravity_torque_nm": -0.035995330359448637,
+          "payload_gravity_torque_nm": 0.0,
+          "required_ideal_holding_torque_nm": 0.035995330359448637,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_3",
+          "arm_gravity_torque_nm": -0.035997196644251245,
+          "payload_gravity_torque_nm": 0.0,
+          "required_ideal_holding_torque_nm": 0.035997196644251245,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_4",
+          "arm_gravity_torque_nm": 0.0,
+          "payload_gravity_torque_nm": 0.0,
+          "required_ideal_holding_torque_nm": -0.0,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_5",
+          "arm_gravity_torque_nm": null,
+          "payload_gravity_torque_nm": 0.0,
+          "required_ideal_holding_torque_nm": null,
+          "body_membership_resolved": false,
+          "conditional_modeled_wrist_gravity_contribution_nm": 0.016846657787440128,
+          "conditional_modeled_holding_torque_nm": -0.016846657787440128
+        },
+        {
+          "joint": "joint_6",
+          "arm_gravity_torque_nm": null,
+          "payload_gravity_torque_nm": 0.0,
+          "required_ideal_holding_torque_nm": null,
+          "body_membership_resolved": false,
+          "conditional_modeled_wrist_gravity_contribution_nm": 5.1428566244065894e-05,
+          "conditional_modeled_holding_torque_nm": -5.1428566244065894e-05
+        }
+      ],
+      "gravity_wrench_about_frame_origin": {
+        "reference_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "external_force_n": [
+          0.0,
+          0.0,
+          -57.41521426316995
+        ],
+        "external_moment_nm": [
+          -0.591836845974688,
+          0.006076529609196914,
+          0.0
+        ],
+        "ideal_support_force_n": [
+          0.0,
+          0.0,
+          57.41521426316995
+        ],
+        "ideal_support_moment_nm": [
+          0.591836845974688,
+          -0.006076529609196914,
+          -0.0
+        ]
+      },
+      "conditional_jaw_gravity_torque_nm": -0.004038475551174283,
+      "conditional_jaw_holding_torque_nm": 0.004038475551174283,
+      "jaw_coordinate_status": "ideal mathematical q; not servo coordinate or realized native linkage"
+    },
+    {
+      "name": "shoulder_horizontal_ideal_close60",
+      "joint_angles_rad": [
+        0.0,
+        1.5707963267948966,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "jaw": {
+        "configuration": "ideal_body_overlay",
+        "closing_angle_rad": 1.0471975511965976,
+        "evidence": "Explicit ideal symmetric linkage overlay from bound jaw body ledger, including driven-phase/active-pivot normalization; not solved saved CAD, servo command, usable stroke or gripping force."
+      },
+      "payload": {
+        "mass_kg": 0.2,
+        "point_zero_m": [
+          0.0,
+          0.0,
+          0.7025242557054092
+        ],
+        "com_evidence": "Axis-centered CAD distal-finger-plane study point; not calibrated TCP or measured object COM. Fixed relative to roll_tool; no grip/contact model."
+      },
+      "modeled_center_of_mass_m": [
+        0.0001095780699573588,
+        -0.07776890235397314,
+        0.14561491064878362
+      ],
+      "payload_position_m": [
+        0.0,
+        -0.5005242557054093,
+        0.20200000000000004
+      ],
+      "joints": [
+        {
+          "joint": "joint_1",
+          "arm_gravity_torque_nm": 0.0,
+          "payload_gravity_torque_nm": 0.0,
+          "required_ideal_holding_torque_nm": -0.0,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_2",
+          "arm_gravity_torque_nm": 4.868429226026231,
+          "payload_gravity_torque_nm": 0.9816932384426904,
+          "required_ideal_holding_torque_nm": -5.850122464468922,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_3",
+          "arm_gravity_torque_nm": 1.6889893211746791,
+          "payload_gravity_torque_nm": 0.6678804384426904,
+          "required_ideal_holding_torque_nm": -2.3568697596173696,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_4",
+          "arm_gravity_torque_nm": -0.002132150853830761,
+          "payload_gravity_torque_nm": 0.0,
+          "required_ideal_holding_torque_nm": 0.002132150853830761,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_5",
+          "arm_gravity_torque_nm": null,
+          "payload_gravity_torque_nm": 0.2873824184426903,
+          "required_ideal_holding_torque_nm": null,
+          "body_membership_resolved": false,
+          "conditional_modeled_wrist_gravity_contribution_nm": 0.13801360437457438,
+          "conditional_modeled_holding_torque_nm": -0.4253960228172647
+        },
+        {
+          "joint": "joint_6",
+          "arm_gravity_torque_nm": null,
+          "payload_gravity_torque_nm": 0.0,
+          "required_ideal_holding_torque_nm": null,
+          "body_membership_resolved": false,
+          "conditional_modeled_wrist_gravity_contribution_nm": -0.002404943289186803,
+          "conditional_modeled_holding_torque_nm": 0.002404943289186803
+        }
+      ],
+      "gravity_wrench_about_frame_origin": {
+        "reference_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "external_force_n": [
+          0.0,
+          0.0,
+          -57.41521426316995
+        ],
+        "external_moment_nm": [
+          5.294280948853682,
+          0.006076529609196923,
+          0.0
+        ],
+        "ideal_support_force_n": [
+          0.0,
+          0.0,
+          57.41521426316995
+        ],
+        "ideal_support_moment_nm": [
+          -5.294280948853682,
+          -0.006076529609196923,
+          -0.0
+        ]
+      },
+      "conditional_jaw_gravity_torque_nm": 1.118860672536904e-09,
+      "conditional_jaw_holding_torque_nm": -1.118860672536904e-09,
+      "jaw_coordinate_status": "ideal mathematical q; not servo coordinate or realized native linkage"
+    },
+    {
+      "name": "shoulder_horizontal_fold45_roll30_ideal_close60",
+      "joint_angles_rad": [
+        0.0,
+        1.5707963267948966,
+        0.0,
+        0.0,
+        0.7853981633974483,
+        0.5235987755982988
+      ],
+      "jaw": {
+        "configuration": "ideal_body_overlay",
+        "closing_angle_rad": 1.0471975511965976,
+        "evidence": "Explicit ideal symmetric linkage overlay from bound jaw body ledger, including driven-phase/active-pivot normalization; not solved saved CAD, servo command, usable stroke or gripping force."
+      },
+      "payload": {
+        "mass_kg": 0.2,
+        "point_zero_m": [
+          0.0,
+          0.0,
+          0.7025242557054092
+        ],
+        "com_evidence": "Axis-centered CAD distal-finger-plane study point; not calibrated TCP or measured object COM. Fixed relative to roll_tool; no grip/contact model."
+      },
+      "modeled_center_of_mass_m": [
+        0.0002560925565386719,
+        -0.07686897656086564,
+        0.14398825418115668
+      ],
+      "payload_position_m": [
+        1.3877787807814455e-17,
+        -0.4576082948176065,
+        0.09839170518239354
+      ],
+      "joints": [
+        {
+          "joint": "joint_1",
+          "arm_gravity_torque_nm": 0.0,
+          "payload_gravity_torque_nm": 0.0,
+          "required_ideal_holding_torque_nm": -0.0,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_2",
+          "arm_gravity_torque_nm": 4.818524845249807,
+          "payload_gravity_torque_nm": 0.8975208768746162,
+          "required_ideal_holding_torque_nm": -5.716045722124424,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_3",
+          "arm_gravity_torque_nm": 1.6390849403982541,
+          "payload_gravity_torque_nm": 0.5837080768746162,
+          "required_ideal_holding_torque_nm": -2.2227930172728705,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_4",
+          "arm_gravity_torque_nm": -0.010256948235588665,
+          "payload_gravity_torque_nm": -2.7218921561100726e-17,
+          "required_ideal_holding_torque_nm": 0.010256948235588693,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_5",
+          "arm_gravity_torque_nm": null,
+          "payload_gravity_torque_nm": 0.2032100568746161,
+          "required_ideal_holding_torque_nm": null,
+          "body_membership_resolved": false,
+          "conditional_modeled_wrist_gravity_contribution_nm": 0.08810925747777298,
+          "conditional_modeled_holding_torque_nm": -0.2913193143523891
+        },
+        {
+          "joint": "joint_6",
+          "arm_gravity_torque_nm": null,
+          "payload_gravity_torque_nm": -1.9246684012439054e-17,
+          "required_ideal_holding_torque_nm": null,
+          "body_membership_resolved": false,
+          "conditional_modeled_wrist_gravity_contribution_nm": -0.007376856329480759,
+          "conditional_modeled_holding_torque_nm": 0.007376856329480778
+        }
+      ],
+      "gravity_wrench_about_frame_origin": {
+        "reference_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "external_force_n": [
+          0.0,
+          0.0,
+          -57.41521426316995
+        ],
+        "external_moment_nm": [
+          5.160204206509183,
+          0.014201326990954855,
+          0.0
+        ],
+        "ideal_support_force_n": [
+          0.0,
+          0.0,
+          57.41521426316995
+        ],
+        "ideal_support_moment_nm": [
+          -5.160204206509183,
+          -0.014201326990954855,
+          -0.0
+        ]
+      },
+      "conditional_jaw_gravity_torque_nm": 0.002855779504675594,
+      "conditional_jaw_holding_torque_nm": -0.002855779504675594,
+      "jaw_coordinate_status": "ideal mathematical q; not servo coordinate or realized native linkage"
+    },
+    {
+      "name": "mixed_pose_ideal_close60",
+      "joint_angles_rad": [
+        0.2,
+        0.6,
+        -0.3,
+        0.4,
+        -0.5235987755982988,
+        1.0471975511965976
+      ],
+      "jaw": {
+        "configuration": "ideal_body_overlay",
+        "closing_angle_rad": 1.0471975511965976,
+        "evidence": "Explicit ideal symmetric linkage overlay from bound jaw body ledger, including driven-phase/active-pivot normalization; not solved saved CAD, servo command, usable stroke or gripping force."
+      },
+      "payload": {
+        "mass_kg": 0.2,
+        "point_zero_m": [
+          0.0,
+          0.0,
+          0.7025242557054092
+        ],
+        "com_evidence": "Axis-centered CAD distal-finger-plane study point; not calibrated TCP or measured object COM. Fixed relative to roll_tool; no grip/contact model."
+      },
+      "modeled_center_of_mass_m": [
+        0.007714444024701595,
+        -0.028457350439872024,
+        0.22174734065585247
+      ],
+      "payload_position_m": [
+        -0.003979879909195176,
+        -0.12397016188163873,
+        0.6605565606163875
+      ],
+      "joints": [
+        {
+          "joint": "joint_1",
+          "arm_gravity_torque_nm": 0.0,
+          "payload_gravity_torque_nm": 0.0,
+          "required_ideal_holding_torque_nm": -0.0,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_2",
+          "arm_gravity_torque_nm": 2.1774245826572396,
+          "payload_gravity_torque_nm": 0.23674887325572144,
+          "required_ideal_holding_torque_nm": -2.414173455912961,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_3",
+          "arm_gravity_torque_nm": 0.382176230459668,
+          "payload_gravity_torque_nm": 0.05955683768069993,
+          "required_ideal_holding_torque_nm": -0.4417330681403679,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_4",
+          "arm_gravity_torque_nm": 0.0025688003356698383,
+          "payload_gravity_torque_nm": 0.016536126467333982,
+          "required_ideal_holding_torque_nm": -0.01910492680300382,
+          "body_membership_resolved": true
+        },
+        {
+          "joint": "joint_5",
+          "arm_gravity_torque_nm": null,
+          "payload_gravity_torque_nm": -0.06953014741965947,
+          "required_ideal_holding_torque_nm": null,
+          "body_membership_resolved": false,
+          "conditional_modeled_wrist_gravity_contribution_nm": -0.0272118018060776,
+          "conditional_modeled_holding_torque_nm": 0.09674194922573708
+        },
+        {
+          "joint": "joint_6",
+          "arm_gravity_torque_nm": null,
+          "payload_gravity_torque_nm": -1.3877787807814457e-17,
+          "required_ideal_holding_torque_nm": null,
+          "body_membership_resolved": false,
+          "conditional_modeled_wrist_gravity_contribution_nm": 0.0030050600301984986,
+          "conditional_modeled_holding_torque_nm": -0.0030050600301984847
+        }
+      ],
+      "gravity_wrench_about_frame_origin": {
+        "reference_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "external_force_n": [
+          0.0,
+          0.0,
+          -57.41521426316995
+        ],
+        "external_moment_nm": [
+          1.8212170153324463,
+          0.4199900282382035,
+          0.0
+        ],
+        "ideal_support_force_n": [
+          0.0,
+          0.0,
+          57.41521426316995
+        ],
+        "ideal_support_moment_nm": [
+          -1.8212170153324463,
+          -0.4199900282382035,
+          -0.0
+        ]
+      },
+      "conditional_jaw_gravity_torque_nm": -0.0038908986377292547,
+      "conditional_jaw_holding_torque_nm": 0.0038908986377292547,
+      "jaw_coordinate_status": "ideal mathematical q; not servo coordinate or realized native linkage"
+    }
+  ],
+  "sampled_extrema": {
+    "scope": "listed cases only; sampled maxima are not worst-case or physical capacity bounds",
+    "arm_joints": [
+      {
+        "joint": "joint_1",
+        "sampled_max_absolute_conditional_holding_nm": 0.0,
+        "signed_witness_holding_nm": -0.0,
+        "witness_case": "upright_saved"
+      },
+      {
+        "joint": "joint_2",
+        "sampled_max_absolute_conditional_holding_nm": 5.850122464468922,
+        "signed_witness_holding_nm": -5.850122464468922,
+        "witness_case": "shoulder_horizontal_ideal_close60"
+      },
+      {
+        "joint": "joint_3",
+        "sampled_max_absolute_conditional_holding_nm": 2.3568697596173696,
+        "signed_witness_holding_nm": -2.3568697596173696,
+        "witness_case": "shoulder_horizontal_ideal_close60"
+      },
+      {
+        "joint": "joint_4",
+        "sampled_max_absolute_conditional_holding_nm": 0.01910492680300382,
+        "signed_witness_holding_nm": -0.01910492680300382,
+        "witness_case": "mixed_pose_ideal_close60"
+      },
+      {
+        "joint": "joint_5",
+        "sampled_max_absolute_conditional_holding_nm": 0.4253960228172647,
+        "signed_witness_holding_nm": -0.4253960228172647,
+        "witness_case": "shoulder_horizontal_ideal_close60"
+      },
+      {
+        "joint": "joint_6",
+        "sampled_max_absolute_conditional_holding_nm": 0.007377296915586781,
+        "signed_witness_holding_nm": 0.007377296915586781,
+        "witness_case": "shoulder_horizontal_fold45_roll30_saved"
+      }
+    ],
+    "ideal_jaw": {
+      "sampled_max_absolute_conditional_holding_nm": 0.008076947500749963,
+      "signed_witness_holding_nm": 0.008076947500749963,
+      "witness_case": "upright_ideal_zero",
+      "coordinate": "ideal mathematical jaw closing q, not servo shaft"
+    }
+  },
+  "full_physical_wrist_holding_torques_remain_unknown": true,
+  "actuator_or_fabrication_qualification": false,
+  "pose_feasibility_or_collision_limits_validated": false,
+  "native_recompute_performed": false,
+  "unresolved_gates": [
+    "Original Art1 history not semantically rebuilt; static snapshot remains analysis baseline.",
+    "Saved wrist gears interfere/noncoincident apices; ideal s=+1 is not physical sign calibration.",
+    "Saved jaw loops are not solved; no physical parallelism, stroke or force rating.",
+    "Internal motor balance, uniform belt path and bearing COM assumptions remain conditional.",
+    "Actual filament/printed masses, COM, inertia, stops, collisions, calibration and moving actuator capacity remain unknown."
+  ]
+}

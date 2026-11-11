@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "evidence_class": "source_geometry_descriptors_only",
+  "source_sha256": "8afa16c8ff3adebd87e48b67dfb20d3224402bd517010dc112950a28f219690a",
+  "input_source_fingerprint_sha256": "f3d8ddbfd508c936def5b1b5bf953cc874c1a0ec866a8433fdb57ccb4f31a3b2",
+  "coordinate_frame": "native_Art1_Body_identity_mm",
+  "supports": {
+    "body_circle": {
+      "kind": "circle",
+      "semantic_name": "first_bolt_body_hole",
+      "source_sketch": "Sketch004",
+      "source_sha256": "8afa16c8ff3adebd87e48b67dfb20d3224402bd517010dc112950a28f219690a",
+      "center_mm": [
+        -31.500000000000007,
+        -54.99999999999999,
+        8.0
+      ],
+      "axis": [
+        0.0,
+        1.0,
+        -2.220446049250313e-16
+      ],
+      "radius_mm": 1.7,
+      "full_circle": true,
+      "coordinate_frame": "native_Art1_Body_identity_mm"
+    },
+    "body_cylinder": {
+      "kind": "cylinder",
+      "semantic_name": "first_bolt_body_hole",
+      "source_sketch": "Sketch004",
+      "source_sha256": "8afa16c8ff3adebd87e48b67dfb20d3224402bd517010dc112950a28f219690a",
+      "center_mm": [
+        -31.500000000000007,
+        -54.99999999999999,
+        8.0
+      ],
+      "axis": [
+        0.0,
+        1.0,
+        -2.220446049250313e-16
+      ],
+      "radius_mm": 1.7,
+      "full_circle": false,
+      "coordinate_frame": "native_Art1_Body_identity_mm"
+    },
+    "head_circle": {
+      "kind": "circle",
+      "semantic_name": "first_bolt_head_recess",
+      "source_sketch": "Sketch005",
+      "source_sha256": "8afa16c8ff3adebd87e48b67dfb20d3224402bd517010dc112950a28f219690a",
+      "center_mm": [
+        -31.500000000000007,
+        -75.0,
+        8.000000000000004
+      ],
+      "axis": [
+        0.0,
+        1.0,
+        -2.220446049250313e-16
+      ],
+      "radius_mm": 2.95,
+      "full_circle": true,
+      "coordinate_frame": "native_Art1_Body_identity_mm"
+    },
+    "head_cylinder": {
+      "kind": "cylinder",
+      "semantic_name": "first_bolt_head_recess",
+      "source_sketch": "Sketch005",
+      "source_sha256": "8afa16c8ff3adebd87e48b67dfb20d3224402bd517010dc112950a28f219690a",
+      "center_mm": [
+        -31.500000000000007,
+        -75.0,
+        8.000000000000004
+      ],
+      "axis": [
+        0.0,
+        1.0,
+        -2.220446049250313e-16
+      ],
+      "radius_mm": 2.95,
+      "full_circle": false,
+      "coordinate_frame": "native_Art1_Body_identity_mm"
+    }
+  },
+  "native_capture_executed": false,
+  "support_remapped": false,
+  "migration_accepted": false
+}

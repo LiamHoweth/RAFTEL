@@ -1,0 +1,2608 @@
+{
+  "schema_version": 1,
+  "evidence_class": "conditional_rigid_interface_study_not_mount_or_fabrication_release",
+  "input_sha256": {
+    "config/thor-frames-v1.json": "834a227228612e3662ade03b1ada0d0f7f8e86b8e1c8c08d652173a50db418a4",
+    "hardware/cad/thor-fabrication-interfaces.json": "cc12e55b492beb5e3ddd72ef22f4a6d412f414f8ea2192e942e1c6d3001acb21",
+    "hardware/cad/thor-wrist-load-study-v2.json": "f85785b6e2ea753bd031abe12c9d867a00ebbe43c03a4b319c2d52e01f67161d"
+  },
+  "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+  "frame_registration": {
+    "frame": "native_cad_source_zero_scenario",
+    "native_from_nominal": [
+      [
+        0.0,
+        -1.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "status": "conditional_source_zero_frame_scenario_not_bench_calibration",
+    "assumption": "BaseBot LCS_Bot identity is treated as coincident with native assembly zero. Source hole dimensions are preserved; no measured bench registration is supplied.",
+    "physical_bench_transform": null
+  },
+  "layouts": {
+    "source_bore_points_m": [
+      [
+        0.0,
+        0.086,
+        0.0
+      ],
+      [
+        0.07447818472546174,
+        0.043,
+        0.0
+      ],
+      [
+        0.0,
+        -0.086,
+        0.0
+      ],
+      [
+        0.07447818472546174,
+        -0.043,
+        0.0
+      ]
+    ],
+    "proposed_blank_corner_points_m": [
+      [
+        -0.075,
+        -0.135,
+        0
+      ],
+      [
+        0.175,
+        -0.135,
+        0
+      ],
+      [
+        0.175,
+        0.135,
+        0
+      ],
+      [
+        -0.075,
+        0.135,
+        0
+      ]
+    ],
+    "proposed_corner_inset_mm": 25,
+    "all_three_component_contacts_are_assumed": true,
+    "contacts_or_preload_verified": false,
+    "proposed_blank_dimensions_mm": [
+      300,
+      320
+    ],
+    "plate_thickness_m": null
+  },
+  "cases": [
+    {
+      "name": "upright_payload_0.2kg_source_bore_points_three_bilateral_components_each",
+      "joint_angles_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "payload_kg": 0.2,
+      "load_source": "preserved v2 frozen-jaw gravity study; not physical evidence",
+      "result": {
+        "schema_version": 1,
+        "evidence_class": "conditional_rigid_interface_force_allocation_not_mount_qualification",
+        "external_wrench": {
+          "force_n": [
+            0.0,
+            0.0,
+            -57.41521426316995
+          ],
+          "moment_nm": [
+            -0.006077250215405531,
+            -0.5918368479355606,
+            0.0
+          ],
+          "reference_point_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "frame": "native_cad_source_zero_scenario"
+        },
+        "allocation": {
+          "method": "minimum_weighted_force_norm",
+          "objective": "minimize norm(f_i/sqrt(relative_weight_i)) subject to full equilibrium",
+          "assumption_evidence": "Equal weights minimize force norm; not measured stiffness",
+          "weights_are_measured_stiffness": false,
+          "inequality_constrained_optimization_performed": false
+        },
+        "diagnostic": {
+          "characteristic_length_m": 0.1,
+          "relative_rank_tolerance": 1e-06,
+          "scaled_support_singular_values": [
+            2.248818295494731,
+            2.1517894957936043,
+            2.0,
+            1.3788459935207318,
+            1.359779393872403,
+            0.6922441518657321
+          ],
+          "numerical_rank": 6,
+          "condition_number": 3.2485912512712893
+        },
+        "reactions": [
+          {
+            "identifier": "bore-0-x",
+            "point_m": [
+              0.0,
+              0.086,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "force_scalar_n": 0.0,
+            "force_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "moment_about_reference_nm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "bore-0-y",
+            "point_m": [
+              0.0,
+              0.086,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "force_scalar_n": 0.0,
+            "force_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "moment_about_reference_nm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "bore-0-z",
+            "point_m": [
+              0.0,
+              0.086,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "force_scalar_n": 32.70909624272564,
+            "force_n": [
+              0.0,
+              0.0,
+              32.70909624272564
+            ],
+            "moment_about_reference_nm": [
+              2.812982276874405,
+              0.0,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "bore-1-x",
+            "point_m": [
+              0.07447818472546174,
+              0.043,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "force_scalar_n": 0.0,
+            "force_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "moment_about_reference_nm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "bore-1-y",
+            "point_m": [
+              0.07447818472546174,
+              0.043,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "force_scalar_n": 0.0,
+            "force_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "moment_about_reference_nm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "bore-1-z",
+            "point_m": [
+              0.07447818472546174,
+              0.043,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "force_scalar_n": -3.9590896910331894,
+            "force_n": [
+              -0.0,
+              -0.0,
+              -3.9590896910331894
+            ],
+            "moment_about_reference_nm": [
+              -0.17024085671442712,
+              0.2948658133534411,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "bore-2-x",
+            "point_m": [
+              0.0,
+              -0.086,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "force_scalar_n": 0.0,
+            "force_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "moment_about_reference_nm": [
+              -0.0,
+              0.0,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "bore-2-y",
+            "point_m": [
+              0.0,
+              -0.086,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "force_scalar_n": 0.0,
+            "force_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "moment_about_reference_nm": [
+              -0.0,
+              0.0,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "bore-2-z",
+            "point_m": [
+              0.0,
+              -0.086,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "force_scalar_n": 32.65256368258233,
+            "force_n": [
+              0.0,
+              0.0,
+              32.65256368258233
+            ],
+            "moment_about_reference_nm": [
+              -2.80812047670208,
+              0.0,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "bore-3-x",
+            "point_m": [
+              0.07447818472546174,
+              -0.043,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "force_scalar_n": 0.0,
+            "force_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "moment_about_reference_nm": [
+              -0.0,
+              0.0,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "bore-3-y",
+            "point_m": [
+              0.07447818472546174,
+              -0.043,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "force_scalar_n": 0.0,
+            "force_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "moment_about_reference_nm": [
+              -0.0,
+              0.0,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "bore-3-z",
+            "point_m": [
+              0.07447818472546174,
+              -0.043,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "force_scalar_n": -3.9873559711048427,
+            "force_n": [
+              -0.0,
+              -0.0,
+              -3.9873559711048427
+            ],
+            "moment_about_reference_nm": [
+              0.17145630675750823,
+              0.2969710345821193,
+              -0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          }
+        ],
+        "equilibrium": {
+          "force_residual_n": [
+            0.0,
+            0.0,
+            -7.105427357601002e-15
+          ],
+          "moment_residual_nm": [
+            4.180683577104105e-16,
+            -1.6653345369377348e-16,
+            0.0
+          ],
+          "force_residual_tolerance_n": 5.841521426316995e-08,
+          "moment_residual_tolerance_nm": 6.918680490991895e-10,
+          "all_six_components_checked": true
+        },
+        "chosen_allocation_satisfies_allowed_signs": true,
+        "sign_violations": [],
+        "constrained_feasibility": "chosen_candidate_satisfies_declared_sign_constraints",
+        "qualification": {
+          "stiffness_or_preload_verified": false,
+          "friction_slip_pullout_or_desk_crushing_checked": false,
+          "plate_bending_or_material_strength_checked": false,
+          "physical_mount_feasibility_established": false,
+          "manufacturing_release": false
+        }
+      }
+    },
+    {
+      "name": "upright_payload_0.2kg_proposed_blank_corner_points_three_bilateral_components_each",
+      "joint_angles_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "payload_kg": 0.2,
+      "load_source": "preserved v2 frozen-jaw gravity study; not physical evidence",
+      "result": {
+        "schema_version": 1,
+        "evidence_class": "conditional_rigid_interface_force_allocation_not_mount_qualification",
+        "external_wrench": {
+          "force_n": [
+            0.0,
+            0.0,
+            -57.41521426316995
+          ],
+          "moment_nm": [
+            -0.006077250215405531,
+            -0.5918368479355606,
+            0.0
+          ],
+          "reference_point_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "frame": "native_cad_source_zero_scenario"
+        },
+        "allocation": {
+          "method": "minimum_weighted_force_norm",
+          "objective": "minimize norm(f_i/sqrt(relative_weight_i)) subject to full equilibrium",
+          "assumption_evidence": "Equal weights minimize force norm; not measured stiffness",
+          "weights_are_measured_stiffness": false,
+          "inequality_constrained_optimization_performed": false
+        },
+        "diagnostic": {
+          "characteristic_length_m": 0.1,
+          "relative_rank_tolerance": 1e-06,
+          "scaled_support_singular_values": [
+            3.8609254738886887,
+            2.8639031086981688,
+            2.7,
+            2.0,
+            1.906109777813808,
+            1.7458691199482743
+          ],
+          "numerical_rank": 6,
+          "condition_number": 2.211463293424354
+        },
+        "reactions": [
+          {
+            "identifier": "corner-0-x",
+            "point_m": [
+              -0.075,
+              -0.135,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "force_scalar_n": 0.0,
+            "force_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "moment_about_reference_nm": [
+              -0.0,
+              0.0,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "corner-0-y",
+            "point_m": [
+              -0.075,
+              -0.135,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "force_scalar_n": 0.0,
+            "force_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "moment_about_reference_nm": [
+              -0.0,
+              0.0,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "corner-0-z",
+            "point_m": [
+              -0.075,
+              -0.135,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "force_scalar_n": 21.267744520915038,
+            "force_n": [
+              0.0,
+              0.0,
+              21.267744520915038
+            ],
+            "moment_about_reference_nm": [
+              -2.8711455103235304,
+              1.5950808390686277,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "corner-1-x",
+            "point_m": [
+              0.175,
+              -0.135,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "force_scalar_n": 0.0,
+            "force_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "moment_about_reference_nm": [
+              -0.0,
+              0.0,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "corner-1-y",
+            "point_m": [
+              0.175,
+              -0.135,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "force_scalar_n": 0.0,
+            "force_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "moment_about_reference_nm": [
+              -0.0,
+              0.0,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "corner-1-z",
+            "point_m": [
+              0.175,
+              -0.135,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "force_scalar_n": 7.417354276538804,
+            "force_n": [
+              0.0,
+              0.0,
+              7.417354276538804
+            ],
+            "moment_about_reference_nm": [
+              -1.0013428273327385,
+              -1.2980369983942905,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "corner-2-x",
+            "point_m": [
+              0.175,
+              0.135,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "force_scalar_n": 0.0,
+            "force_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "moment_about_reference_nm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "corner-2-y",
+            "point_m": [
+              0.175,
+              0.135,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "force_scalar_n": 0.0,
+            "force_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "moment_about_reference_nm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "corner-2-z",
+            "point_m": [
+              0.175,
+              0.135,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "force_scalar_n": 7.439862610669936,
+            "force_n": [
+              0.0,
+              0.0,
+              7.439862610669936
+            ],
+            "moment_about_reference_nm": [
+              1.0043814524404413,
+              -1.3019759568672387,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "corner-3-x",
+            "point_m": [
+              -0.075,
+              0.135,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "force_scalar_n": 0.0,
+            "force_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "moment_about_reference_nm": [
+              0.0,
+              0.0,
+              -0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "corner-3-y",
+            "point_m": [
+              -0.075,
+              0.135,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "force_scalar_n": 0.0,
+            "force_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "moment_about_reference_nm": [
+              0.0,
+              0.0,
+              -0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "corner-3-z",
+            "point_m": [
+              -0.075,
+              0.135,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "force_scalar_n": 21.29025285504617,
+            "force_n": [
+              0.0,
+              0.0,
+              21.29025285504617
+            ],
+            "moment_about_reference_nm": [
+              2.874184135431233,
+              1.5967689641284626,
+              -0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          }
+        ],
+        "equilibrium": {
+          "force_residual_n": [
+            0.0,
+            0.0,
+            -3.552713678800501e-15
+          ],
+          "moment_residual_nm": [
+            -1.3704315460216776e-16,
+            5.551115123125783e-16,
+            0.0
+          ],
+          "force_residual_tolerance_n": 5.841521426316995e-08,
+          "moment_residual_tolerance_nm": 6.918680490991895e-10,
+          "all_six_components_checked": true
+        },
+        "chosen_allocation_satisfies_allowed_signs": true,
+        "sign_violations": [],
+        "constrained_feasibility": "chosen_candidate_satisfies_declared_sign_constraints",
+        "qualification": {
+          "stiffness_or_preload_verified": false,
+          "friction_slip_pullout_or_desk_crushing_checked": false,
+          "plate_bending_or_material_strength_checked": false,
+          "physical_mount_feasibility_established": false,
+          "manufacturing_release": false
+        }
+      }
+    },
+    {
+      "name": "shoulder_horizontal_payload_0.2kg_source_bore_points_three_bilateral_components_each",
+      "joint_angles_rad": [
+        0,
+        1.5707963267948966,
+        0,
+        0,
+        0,
+        0
+      ],
+      "payload_kg": 0.2,
+      "load_source": "preserved v2 frozen-jaw gravity study; not physical evidence",
+      "result": {
+        "schema_version": 1,
+        "evidence_class": "conditional_rigid_interface_force_allocation_not_mount_qualification",
+        "external_wrench": {
+          "force_n": [
+            0.0,
+            0.0,
+            -57.41521426316995
+          ],
+          "moment_nm": [
+            -0.006077250215405541,
+            5.287286831067529,
+            0.0
+          ],
+          "reference_point_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "frame": "native_cad_source_zero_scenario"
+        },
+        "allocation": {
+          "method": "minimum_weighted_force_norm",
+          "objective": "minimize norm(f_i/sqrt(relative_weight_i)) subject to full equilibrium",
+          "assumption_evidence": "Equal weights minimize force norm; not measured stiffness",
+          "weights_are_measured_stiffness": false,
+          "inequality_constrained_optimization_performed": false
+        },
+        "diagnostic": {
+          "characteristic_length_m": 0.1,
+          "relative_rank_tolerance": 1e-06,
+          "scaled_support_singular_values": [
+            2.248818295494731,
+            2.1517894957936043,
+            2.0,
+            1.3788459935207318,
+            1.359779393872403,
+            0.6922441518657321
+          ],
+          "numerical_rank": 6,
+          "condition_number": 3.2485912512712893
+        },
+        "reactions": [
+          {
+            "identifier": "bore-0-x",
+            "point_m": [
+              0.0,
+              0.086,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "force_scalar_n": 0.0,
+            "force_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "moment_about_reference_nm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "bore-0-y",
+            "point_m": [
+              0.0,
+              0.086,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "force_scalar_n": 0.0,
+            "force_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "moment_about_reference_nm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "bore-0-z",
+            "point_m": [
+              0.0,
+              0.086,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "force_scalar_n": -6.759666997641059,
+            "force_n": [
+              -0.0,
+              -0.0,
+              -6.759666997641059
+            ],
+            "moment_about_reference_nm": [
+              -0.581331361797131,
+              0.0,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "bore-1-x",
+            "point_m": [
+              0.07447818472546174,
+              0.043,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "force_scalar_n": 0.0,
+            "force_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "moment_about_reference_nm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "bore-1-y",
+            "point_m": [
+              0.07447818472546174,
+              0.043,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "force_scalar_n": 0.0,
+            "force_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "moment_about_reference_nm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "bore-1-z",
+            "point_m": [
+              0.07447818472546174,
+              0.043,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "force_scalar_n": 35.50967354933351,
+            "force_n": [
+              0.0,
+              0.0,
+              35.50967354933351
+            ],
+            "moment_about_reference_nm": [
+              1.5269159626213409,
+              -2.644696026148104,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "bore-2-x",
+            "point_m": [
+              0.0,
+              -0.086,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "force_scalar_n": 0.0,
+            "force_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "moment_about_reference_nm": [
+              -0.0,
+              0.0,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "bore-2-y",
+            "point_m": [
+              0.0,
+              -0.086,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "force_scalar_n": 0.0,
+            "force_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "moment_about_reference_nm": [
+              -0.0,
+              0.0,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "bore-2-z",
+            "point_m": [
+              0.0,
+              -0.086,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "force_scalar_n": -6.8161995577843655,
+            "force_n": [
+              -0.0,
+              -0.0,
+              -6.8161995577843655
+            ],
+            "moment_about_reference_nm": [
+              0.5861931619694554,
+              0.0,
+              -0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "bore-3-x",
+            "point_m": [
+              0.07447818472546174,
+              -0.043,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "force_scalar_n": 0.0,
+            "force_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "moment_about_reference_nm": [
+              -0.0,
+              0.0,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "bore-3-y",
+            "point_m": [
+              0.07447818472546174,
+              -0.043,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "force_scalar_n": 0.0,
+            "force_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "moment_about_reference_nm": [
+              -0.0,
+              0.0,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "bore-3-z",
+            "point_m": [
+              0.07447818472546174,
+              -0.043,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "force_scalar_n": 35.48140726926186,
+            "force_n": [
+              0.0,
+              0.0,
+              35.48140726926186
+            ],
+            "moment_about_reference_nm": [
+              -1.5257005125782597,
+              -2.6425908049194256,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          }
+        ],
+        "equilibrium": {
+          "force_residual_n": [
+            0.0,
+            0.0,
+            -3.552713678800501e-15
+          ],
+          "moment_residual_nm": [
+            7.546047120499111e-17,
+            0.0,
+            0.0
+          ],
+          "force_residual_tolerance_n": 5.841521426316995e-08,
+          "moment_residual_tolerance_nm": 5.387290323686633e-09,
+          "all_six_components_checked": true
+        },
+        "chosen_allocation_satisfies_allowed_signs": true,
+        "sign_violations": [],
+        "constrained_feasibility": "chosen_candidate_satisfies_declared_sign_constraints",
+        "qualification": {
+          "stiffness_or_preload_verified": false,
+          "friction_slip_pullout_or_desk_crushing_checked": false,
+          "plate_bending_or_material_strength_checked": false,
+          "physical_mount_feasibility_established": false,
+          "manufacturing_release": false
+        }
+      }
+    },
+    {
+      "name": "shoulder_horizontal_payload_0.2kg_proposed_blank_corner_points_three_bilateral_components_each",
+      "joint_angles_rad": [
+        0,
+        1.5707963267948966,
+        0,
+        0,
+        0,
+        0
+      ],
+      "payload_kg": 0.2,
+      "load_source": "preserved v2 frozen-jaw gravity study; not physical evidence",
+      "result": {
+        "schema_version": 1,
+        "evidence_class": "conditional_rigid_interface_force_allocation_not_mount_qualification",
+        "external_wrench": {
+          "force_n": [
+            0.0,
+            0.0,
+            -57.41521426316995
+          ],
+          "moment_nm": [
+            -0.006077250215405541,
+            5.287286831067529,
+            0.0
+          ],
+          "reference_point_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "frame": "native_cad_source_zero_scenario"
+        },
+        "allocation": {
+          "method": "minimum_weighted_force_norm",
+          "objective": "minimize norm(f_i/sqrt(relative_weight_i)) subject to full equilibrium",
+          "assumption_evidence": "Equal weights minimize force norm; not measured stiffness",
+          "weights_are_measured_stiffness": false,
+          "inequality_constrained_optimization_performed": false
+        },
+        "diagnostic": {
+          "characteristic_length_m": 0.1,
+          "relative_rank_tolerance": 1e-06,
+          "scaled_support_singular_values": [
+            3.8609254738886887,
+            2.8639031086981688,
+            2.7,
+            2.0,
+            1.906109777813808,
+            1.7458691199482743
+          ],
+          "numerical_rank": 6,
+          "condition_number": 2.211463293424354
+        },
+        "reactions": [
+          {
+            "identifier": "corner-0-x",
+            "point_m": [
+              -0.075,
+              -0.135,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "force_scalar_n": 0.0,
+            "force_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "moment_about_reference_nm": [
+              -0.0,
+              0.0,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "corner-0-y",
+            "point_m": [
+              -0.075,
+              -0.135,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "force_scalar_n": 0.0,
+            "force_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "moment_about_reference_nm": [
+              -0.0,
+              0.0,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "corner-0-z",
+            "point_m": [
+              -0.075,
+              -0.135,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "force_scalar_n": 9.509497162908856,
+            "force_n": [
+              0.0,
+              0.0,
+              9.509497162908856
+            ],
+            "moment_about_reference_nm": [
+              -1.2837821169926957,
+              0.7132122872181642,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "corner-1-x",
+            "point_m": [
+              0.175,
+              -0.135,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "force_scalar_n": 0.0,
+            "force_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "moment_about_reference_nm": [
+              -0.0,
+              0.0,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "corner-1-y",
+            "point_m": [
+              0.175,
+              -0.135,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "force_scalar_n": 0.0,
+            "force_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "moment_about_reference_nm": [
+              -0.0,
+              0.0,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "corner-1-z",
+            "point_m": [
+              0.175,
+              -0.135,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "force_scalar_n": 19.17560163454499,
+            "force_n": [
+              0.0,
+              0.0,
+              19.17560163454499
+            ],
+            "moment_about_reference_nm": [
+              -2.588706220663574,
+              -3.355730286045373,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "corner-2-x",
+            "point_m": [
+              0.175,
+              0.135,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "force_scalar_n": 0.0,
+            "force_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "moment_about_reference_nm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "corner-2-y",
+            "point_m": [
+              0.175,
+              0.135,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "force_scalar_n": 0.0,
+            "force_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "moment_about_reference_nm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "corner-2-z",
+            "point_m": [
+              0.175,
+              0.135,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "force_scalar_n": 19.198109968676118,
+            "force_n": [
+              0.0,
+              0.0,
+              19.198109968676118
+            ],
+            "moment_about_reference_nm": [
+              2.591744845771276,
+              -3.3596692445183205,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "corner-3-x",
+            "point_m": [
+              -0.075,
+              0.135,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "force_scalar_n": 0.0,
+            "force_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "moment_about_reference_nm": [
+              0.0,
+              0.0,
+              -0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "corner-3-y",
+            "point_m": [
+              -0.075,
+              0.135,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "force_scalar_n": 0.0,
+            "force_n": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "moment_about_reference_nm": [
+              0.0,
+              0.0,
+              -0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "corner-3-z",
+            "point_m": [
+              -0.075,
+              0.135,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "force_scalar_n": 9.532005497039988,
+            "force_n": [
+              0.0,
+              0.0,
+              9.532005497039988
+            ],
+            "moment_about_reference_nm": [
+              1.2868207421003983,
+              0.714900412277999,
+              -0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          }
+        ],
+        "equilibrium": {
+          "force_residual_n": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "moment_residual_nm": [
+            -8.127179484951341e-16,
+            -8.881784197001252e-16,
+            0.0
+          ],
+          "force_residual_tolerance_n": 5.841521426316995e-08,
+          "moment_residual_tolerance_nm": 5.387290323686633e-09,
+          "all_six_components_checked": true
+        },
+        "chosen_allocation_satisfies_allowed_signs": true,
+        "sign_violations": [],
+        "constrained_feasibility": "chosen_candidate_satisfies_declared_sign_constraints",
+        "qualification": {
+          "stiffness_or_preload_verified": false,
+          "friction_slip_pullout_or_desk_crushing_checked": false,
+          "plate_bending_or_material_strength_checked": false,
+          "physical_mount_feasibility_established": false,
+          "manufacturing_release": false
+        }
+      }
+    },
+    {
+      "name": "synthetic_full_wrench_source_bore_points_three_bilateral_components_each",
+      "evidence_class": "synthetic_wrench_fixture_not_a_physical_load_case",
+      "result": {
+        "schema_version": 1,
+        "evidence_class": "conditional_rigid_interface_force_allocation_not_mount_qualification",
+        "external_wrench": {
+          "force_n": [
+            12.0,
+            -7.0,
+            -60.0
+          ],
+          "moment_nm": [
+            3.0,
+            -4.0,
+            1.2
+          ],
+          "reference_point_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "frame": "native_cad_source_zero_scenario"
+        },
+        "allocation": {
+          "method": "minimum_weighted_force_norm",
+          "objective": "minimize norm(f_i/sqrt(relative_weight_i)) subject to full equilibrium",
+          "assumption_evidence": "Equal diagnostic weights; arbitrary synthetic full wrench",
+          "weights_are_measured_stiffness": false,
+          "inequality_constrained_optimization_performed": false
+        },
+        "diagnostic": {
+          "characteristic_length_m": 0.1,
+          "relative_rank_tolerance": 1e-06,
+          "scaled_support_singular_values": [
+            2.248818295494731,
+            2.1517894957936043,
+            2.0,
+            1.3788459935207318,
+            1.359779393872403,
+            0.6922441518657321
+          ],
+          "numerical_rank": 6,
+          "condition_number": 3.2485912512712893
+        },
+        "reactions": [
+          {
+            "identifier": "bore-0-x",
+            "point_m": [
+              0.0,
+              0.086,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "force_scalar_n": 2.226023780104171,
+            "force_n": [
+              2.226023780104171,
+              0.0,
+              0.0
+            ],
+            "moment_about_reference_nm": [
+              0.0,
+              0.0,
+              -0.1914380450889587
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "bore-0-y",
+            "point_m": [
+              0.0,
+              0.086,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "force_scalar_n": 4.012934677175897,
+            "force_n": [
+              0.0,
+              4.012934677175897,
+              0.0
+            ],
+            "moment_about_reference_nm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "bore-0-z",
+            "point_m": [
+              0.0,
+              0.086,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "force_scalar_n": 42.9000125204477,
+            "force_n": [
+              0.0,
+              0.0,
+              42.9000125204477
+            ],
+            "moment_about_reference_nm": [
+              3.6894010767585024,
+              0.0,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "bore-1-x",
+            "point_m": [
+              0.07447818472546174,
+              0.043,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "force_scalar_n": -0.38698810994791444,
+            "force_n": [
+              -0.38698810994791444,
+              -0.0,
+              -0.0
+            ],
+            "moment_about_reference_nm": [
+              0.0,
+              0.0,
+              0.01664048872776032
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "bore-1-y",
+            "point_m": [
+              0.07447818472546174,
+              0.043,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "force_scalar_n": -0.5129346771758971,
+            "force_n": [
+              -0.0,
+              -0.5129346771758971,
+              -0.0
+            ],
+            "moment_about_reference_nm": [
+              0.0,
+              0.0,
+              -0.03820244363880155
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "bore-1-z",
+            "point_m": [
+              0.07447818472546174,
+              0.043,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "force_scalar_n": -33.83024507858724,
+            "force_n": [
+              -0.0,
+              -0.0,
+              -33.83024507858724
+            ],
+            "moment_about_reference_nm": [
+              -1.4547005383792513,
+              2.519615242270663,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "bore-2-x",
+            "point_m": [
+              0.0,
+              -0.086,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "force_scalar_n": -8.226023780104171,
+            "force_n": [
+              -8.226023780104171,
+              -0.0,
+              -0.0
+            ],
+            "moment_about_reference_nm": [
+              0.0,
+              0.0,
+              -0.7074380450889587
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "bore-2-y",
+            "point_m": [
+              0.0,
+              -0.086,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "force_scalar_n": 4.012934677175897,
+            "force_n": [
+              0.0,
+              4.012934677175897,
+              0.0
+            ],
+            "moment_about_reference_nm": [
+              -0.0,
+              0.0,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "bore-2-z",
+            "point_m": [
+              0.0,
+              -0.086,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "force_scalar_n": 70.80698926463376,
+            "force_n": [
+              0.0,
+              0.0,
+              70.80698926463376
+            ],
+            "moment_about_reference_nm": [
+              -6.089401076758502,
+              0.0,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "bore-3-x",
+            "point_m": [
+              0.07447818472546174,
+              -0.043,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "force_scalar_n": -5.613011890052086,
+            "force_n": [
+              -5.613011890052086,
+              -0.0,
+              -0.0
+            ],
+            "moment_about_reference_nm": [
+              0.0,
+              0.0,
+              -0.24135951127223965
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "bore-3-y",
+            "point_m": [
+              0.07447818472546174,
+              -0.043,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "force_scalar_n": -0.5129346771758971,
+            "force_n": [
+              -0.0,
+              -0.5129346771758971,
+              -0.0
+            ],
+            "moment_about_reference_nm": [
+              0.0,
+              0.0,
+              -0.03820244363880155
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "bore-3-z",
+            "point_m": [
+              0.07447818472546174,
+              -0.043,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "force_scalar_n": -19.876756706494216,
+            "force_n": [
+              -0.0,
+              -0.0,
+              -19.876756706494216
+            ],
+            "moment_about_reference_nm": [
+              0.8547005383792512,
+              1.4803847577293368,
+              -0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          }
+        ],
+        "equilibrium": {
+          "force_residual_n": [
+            0.0,
+            0.0,
+            3.552713678800501e-15
+          ],
+          "moment_residual_nm": [
+            0.0,
+            -2.220446049250313e-16,
+            1.3877787807814457e-16
+          ],
+          "force_residual_tolerance_n": 6.258733636065128e-08,
+          "moment_residual_tolerance_nm": 5.241984052872977e-09,
+          "all_six_components_checked": true
+        },
+        "chosen_allocation_satisfies_allowed_signs": true,
+        "sign_violations": [],
+        "constrained_feasibility": "chosen_candidate_satisfies_declared_sign_constraints",
+        "qualification": {
+          "stiffness_or_preload_verified": false,
+          "friction_slip_pullout_or_desk_crushing_checked": false,
+          "plate_bending_or_material_strength_checked": false,
+          "physical_mount_feasibility_established": false,
+          "manufacturing_release": false
+        }
+      }
+    },
+    {
+      "name": "synthetic_full_wrench_proposed_blank_corner_points_three_bilateral_components_each",
+      "evidence_class": "synthetic_wrench_fixture_not_a_physical_load_case",
+      "result": {
+        "schema_version": 1,
+        "evidence_class": "conditional_rigid_interface_force_allocation_not_mount_qualification",
+        "external_wrench": {
+          "force_n": [
+            12.0,
+            -7.0,
+            -60.0
+          ],
+          "moment_nm": [
+            3.0,
+            -4.0,
+            1.2
+          ],
+          "reference_point_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "frame": "native_cad_source_zero_scenario"
+        },
+        "allocation": {
+          "method": "minimum_weighted_force_norm",
+          "objective": "minimize norm(f_i/sqrt(relative_weight_i)) subject to full equilibrium",
+          "assumption_evidence": "Equal diagnostic weights; arbitrary synthetic full wrench",
+          "weights_are_measured_stiffness": false,
+          "inequality_constrained_optimization_performed": false
+        },
+        "diagnostic": {
+          "characteristic_length_m": 0.1,
+          "relative_rank_tolerance": 1e-06,
+          "scaled_support_singular_values": [
+            3.8609254738886887,
+            2.8639031086981688,
+            2.7,
+            2.0,
+            1.906109777813808,
+            1.7458691199482743
+          ],
+          "numerical_rank": 6,
+          "condition_number": 2.211463293424354
+        },
+        "reactions": [
+          {
+            "identifier": "corner-0-x",
+            "point_m": [
+              -0.075,
+              -0.135,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "force_scalar_n": -4.545420974889217,
+            "force_n": [
+              -4.545420974889217,
+              -0.0,
+              -0.0
+            ],
+            "moment_about_reference_nm": [
+              0.0,
+              -0.0,
+              -0.6136318316100444
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "corner-0-y",
+            "point_m": [
+              -0.075,
+              -0.135,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "force_scalar_n": 3.1809453471196454,
+            "force_n": [
+              0.0,
+              3.1809453471196454,
+              0.0
+            ],
+            "moment_about_reference_nm": [
+              -0.0,
+              0.0,
+              -0.23857090103397338
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "corner-0-z",
+            "point_m": [
+              -0.075,
+              -0.135,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "force_scalar_n": 34.55555555555556,
+            "force_n": [
+              0.0,
+              0.0,
+              34.55555555555556
+            ],
+            "moment_about_reference_nm": [
+              -4.665000000000001,
+              2.591666666666667,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "corner-1-x",
+            "point_m": [
+              0.175,
+              -0.135,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "force_scalar_n": -4.545420974889217,
+            "force_n": [
+              -4.545420974889217,
+              -0.0,
+              -0.0
+            ],
+            "moment_about_reference_nm": [
+              0.0,
+              0.0,
+              -0.6136318316100444
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "corner-1-y",
+            "point_m": [
+              0.175,
+              -0.135,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "force_scalar_n": 0.31905465288035506,
+            "force_n": [
+              0.0,
+              0.31905465288035506,
+              0.0
+            ],
+            "moment_about_reference_nm": [
+              -0.0,
+              0.0,
+              0.05583456425406213
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "corner-1-z",
+            "point_m": [
+              0.175,
+              -0.135,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "force_scalar_n": 6.555555555555556,
+            "force_n": [
+              0.0,
+              0.0,
+              6.555555555555556
+            ],
+            "moment_about_reference_nm": [
+              -0.8850000000000001,
+              -1.1472222222222224,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "corner-2-x",
+            "point_m": [
+              0.175,
+              0.135,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "force_scalar_n": -1.4545790251107829,
+            "force_n": [
+              -1.4545790251107829,
+              -0.0,
+              -0.0
+            ],
+            "moment_about_reference_nm": [
+              0.0,
+              0.0,
+              0.1963681683899557
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "corner-2-y",
+            "point_m": [
+              0.175,
+              0.135,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "force_scalar_n": 0.31905465288035506,
+            "force_n": [
+              0.0,
+              0.31905465288035506,
+              0.0
+            ],
+            "moment_about_reference_nm": [
+              0.0,
+              0.0,
+              0.05583456425406213
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "corner-2-z",
+            "point_m": [
+              0.175,
+              0.135,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "force_scalar_n": -4.555555555555556,
+            "force_n": [
+              -0.0,
+              -0.0,
+              -4.555555555555556
+            ],
+            "moment_about_reference_nm": [
+              -0.6150000000000001,
+              0.7972222222222223,
+              0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "corner-3-x",
+            "point_m": [
+              -0.075,
+              0.135,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "force_scalar_n": -1.4545790251107829,
+            "force_n": [
+              -1.4545790251107829,
+              -0.0,
+              -0.0
+            ],
+            "moment_about_reference_nm": [
+              0.0,
+              -0.0,
+              0.1963681683899557
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "corner-3-y",
+            "point_m": [
+              -0.075,
+              0.135,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "force_scalar_n": 3.1809453471196454,
+            "force_n": [
+              0.0,
+              3.1809453471196454,
+              0.0
+            ],
+            "moment_about_reference_nm": [
+              0.0,
+              0.0,
+              -0.23857090103397338
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          },
+          {
+            "identifier": "corner-3-z",
+            "point_m": [
+              -0.075,
+              0.135,
+              0.0
+            ],
+            "direction_unit_in_common_frame": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "force_scalar_n": 23.444444444444446,
+            "force_n": [
+              0.0,
+              0.0,
+              23.444444444444446
+            ],
+            "moment_about_reference_nm": [
+              3.1650000000000005,
+              1.7583333333333335,
+              -0.0
+            ],
+            "relative_weight": 1.0,
+            "allowed_sign": "bilateral",
+            "provenance": "Assumed point-force component; actual contact/preload/stiffness unmeasured"
+          }
+        ],
+        "equilibrium": {
+          "force_residual_n": [
+            -4.440892098500626e-16,
+            8.881784197001252e-16,
+            3.552713678800501e-15
+          ],
+          "moment_residual_nm": [
+            -6.661338147750939e-16,
+            2.220446049250313e-16,
+            -1.3877787807814457e-17
+          ],
+          "force_residual_tolerance_n": 6.258733636065128e-08,
+          "moment_residual_tolerance_nm": 5.241984052872977e-09,
+          "all_six_components_checked": true
+        },
+        "chosen_allocation_satisfies_allowed_signs": true,
+        "sign_violations": [],
+        "constrained_feasibility": "chosen_candidate_satisfies_declared_sign_constraints",
+        "qualification": {
+          "stiffness_or_preload_verified": false,
+          "friction_slip_pullout_or_desk_crushing_checked": false,
+          "plate_bending_or_material_strength_checked": false,
+          "physical_mount_feasibility_established": false,
+          "manufacturing_release": false
+        }
+      }
+    }
+  ],
+  "rejected_incomplete_support_models": [
+    {
+      "name": "four_normal_only_corner_points",
+      "diagnostic": {
+        "characteristic_length_m": 0.1,
+        "relative_rank_tolerance": 1e-06,
+        "scaled_support_singular_values": [
+          2.8639031086981688,
+          2.7,
+          1.7458691199482743,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "numerical_rank": 3,
+        "condition_number": null,
+        "evidence_class": "incomplete_support_model_not_a_load_capacity_result",
+        "unsolved_external_wrench": {
+          "force_n": [
+            12.0,
+            -7.0,
+            -60.0
+          ],
+          "moment_nm": [
+            3.0,
+            -4.0,
+            1.2
+          ],
+          "reference_point_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "frame": "native_cad_source_zero_scenario"
+        },
+        "partial_reactions_accepted": false
+      }
+    },
+    {
+      "name": "two_fully_constrained_point_contacts",
+      "diagnostic": {
+        "characteristic_length_m": 0.1,
+        "relative_rank_tolerance": 1e-06,
+        "scaled_support_singular_values": [
+          2.730086584242576,
+          2.6662726610328673,
+          1.4700306449284355,
+          1.4142135623730951,
+          1.347823149578127,
+          0.0
+        ],
+        "numerical_rank": 5,
+        "condition_number": null,
+        "evidence_class": "incomplete_support_model_not_a_load_capacity_result",
+        "unsolved_external_wrench": {
+          "force_n": [
+            12.0,
+            -7.0,
+            -60.0
+          ],
+          "moment_nm": [
+            3.0,
+            -4.0,
+            1.2
+          ],
+          "reference_point_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "frame": "native_cad_source_zero_scenario"
+        },
+        "partial_reactions_accepted": false
+      }
+    }
+  ],
+  "remaining_gates": [
+    "Bench dimensions, plate grade/thickness and real clamp contact locations/areas",
+    "Preload, contact availability, friction, slip, pullout and desk crushing",
+    "Plate bending, fastener bearing/strength, printed-base creep and gravity restraint",
+    "Actual mass/COM, dynamic/cable forces and measured source-to-bench registration"
+  ],
+  "qualification": {
+    "physical_mount_feasibility_established": false,
+    "manufacturing_release": false
+  }
+}

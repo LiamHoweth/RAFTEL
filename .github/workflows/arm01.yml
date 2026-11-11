@@ -24,11 +24,22 @@ jobs:
       - run: ruff check .
       - run: ruff format --check .
       - run: python -m compileall -q src
+      - run: python tools/check_evidence_line_endings.py
       - run: python -m pytest
       - run: raftel-sort --seed 42 --log demo.jsonl
+      - run: raftel-evaluate benchmark --seed 42 --layouts 10 --output logical-evaluation-ci.json
       - run: python tools/engineering_analysis.py
       - run: python tools/thor_load_analysis.py --cad-inventory hardware/cad/thor-mounted-geometry.json --output thor-load-ci.json
       - run: python tools/thor_load_analysis.py --cad-inventory hardware/cad/thor-mounted-geometry.json --compare-materials --output thor-material-ci.json
       - run: python tools/thor_load_analysis.py --cad-inventory hardware/cad/thor-mounted-geometry.json --wrist-membership hardware/cad/thor-wrist-membership.json --output thor-wrist-ci.json
       - run: python tools/thor_load_analysis.py --cad-inventory hardware/cad/thor-mounted-geometry-v2.json --wrist-membership hardware/cad/thor-wrist-membership-v2.json --output thor-wrist-v2-ci.json
       - run: python tools/thor_elbow_loads.py --load-study hardware/cad/thor-load-study.json --drum-pitch-radius-mm 37 --carrier-coupling 1 --belt-sign 1 --shoulder-b-fraction 0.5 --geometry-evidence "Explicit CAD-surface-radius scenario; not calibrated pitch radius" --output thor-elbow-ci.json
+      - run: python tools/thor_art1_diagnostics.py history hardware/cad/thor-art1-migration-evidence.json --output thor-art1-ci.json
+      - run: python tools/thor_jaw_reconciliation.py --check-ledger hardware/cad/thor-jaw-body-ledger.json
+      - run: python tools/thor_kinematics.py --output thor-kinematics-ci.json
+      - run: python tools/thor_scenario_analysis.py config/thor-scenario-v1.json --output thor-scenario-ci.json
+      - run: python tools/thor_controller_replay.py --calibration config/thor-calibration-template.json --output thor-controller-ci.json
+      - run: python tools/thor_fabrication_assets.py --validate-records hardware/measurements/thor-fabrication-template.json --output thor-fabrication-ci.json
+      - run: python tools/review_desktop_evidence.py --math-checks --output desktop-evidence-ci.json
+      - run: python -m pip wheel --no-deps --wheel-dir wheel-ci .
+      - run: python tools/verify_installed_wheel.py --wheel wheel-ci/raftel_arm01-0.1.0-py3-none-any.whl --run-dir wheel-offline-ci

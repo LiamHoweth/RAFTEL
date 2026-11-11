@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "evidence_class": "host_cpp_float32_algorithm_fixture_not_avr_firmware_or_hardware",
+  "source_revision": "1f6437a77e3abcb652d3f8ce718faf7e041ae6ff",
+  "source_path": "grbl/nuts_bolts.c",
+  "source_sha256": "b0231ef219c3235af94c93cecae50e5deef9bd0c0e3824ef7fdb04bc98f6833c",
+  "reference_compiler": "g++ (GCC)16.1.0 Windows; -std=c++17 -O0; float32 constants (AVR double is float32 in selected default ABI)",
+  "reference_cxx": "#include <iostream>\n#include <iomanip>\n#include <string>\n#include <vector>\n#include <cstdint>\nfloat source_decimal(const std::string &s) {\n    uint32_t whole=0;\n    int exponent=0, count=0;\n    bool fractional=false;\n    bool negative=s.front()=='-';\n    for(char c: s) {\n        if(c=='+' || c=='-') continue;\n        if(c=='.') { fractional=true; continue; }\n        ++count;\n        if(count<=8) { whole=whole*10+(c-'0'); if(fractional)--exponent; }\n        else if(!fractional)++exponent;\n    }\n    float result=static_cast<float>(whole);\n    if(result!=0) {\n        while(exponent<=-2) {result*=.01f; exponent+=2;}\n        if(exponent<0)result*=.1f;\n        else while(exponent-->0)result*=10.f;\n    }\n    return negative?-result:result;\n}\nint main() {\n  std::vector<std::string> cases={\"123456789\",\"0.000000001\",\"-0.000000001\",\"000000001\",\"0.123456789\",\"1.23456789\",\"0.00000001\",\"-123.456789\",\"99999999\",\"100000001\",\"12.3456\",\"+0.05\"};\n  std::cout<<std::setprecision(17)<<\"[\\n\";\n  bool first=true;\n  for(auto s:cases) {if(!first)std::cout<<\",\\n\";first=false;std::cout<<\"{\\\"decimal\\\":\\\"\"<<s<<\"\\\",\\\"avr_float32\\\":\"<<source_decimal(s)<<\"}\";}\n  std::cout<<\"\\n]\\n\";\n}\n",
+  "cases": [
+    {
+      "decimal": "123456789",
+      "avr_float32": 123456784
+    },
+    {
+      "decimal": "0.000000001",
+      "avr_float32": 0
+    },
+    {
+      "decimal": "-0.000000001",
+      "avr_float32": 0
+    },
+    {
+      "decimal": "000000001",
+      "avr_float32": 0
+    },
+    {
+      "decimal": "0.123456789",
+      "avr_float32": 0.1234566941857338
+    },
+    {
+      "decimal": "1.23456789",
+      "avr_float32": 1.2345677614212036
+    },
+    {
+      "decimal": "0.00000001",
+      "avr_float32": 0
+    },
+    {
+      "decimal": "-123.456789",
+      "avr_float32": -123.45677947998047
+    },
+    {
+      "decimal": "99999999",
+      "avr_float32": 100000000
+    },
+    {
+      "decimal": "100000001",
+      "avr_float32": 100000000
+    },
+    {
+      "decimal": "12.3456",
+      "avr_float32": 12.345599174499512
+    },
+    {
+      "decimal": "+0.05",
+      "avr_float32": 0.04999999701976776
+    }
+  ]
+}
