@@ -2,7 +2,7 @@
 
 **Project:** ARM-01 BenchSort
 **Current phase:** Phase 1 — Engineering foundation
-**Last updated:** 2026-11-11 16:42 UTC
+**Last updated:** 2026-11-11 17:09 UTC
 **Overall status:** In Progress
 
 ## Current Objective
@@ -14,33 +14,34 @@ Reproduce Thor's existing native CAD baseline before adapting it: open/recompute
 3. Review [Thor cost study](arm-01/hardware/thor-cost-study.md): current partial listings total $244.50; missing-cost sensitivity suggests ~$560–1,055, not a complete quote. Review the budget gap before any purchase decision.
 
 ## Next 3 Actions for Codex
-1. **Native CAD baseline audit:** produce import/recompute diagnostics and dependency/shape inventory from a separate working copy. Why: cached ZIP/XML data cannot establish usable CAD. Dependency: functioning FreeCAD runtime and full linked source. Done: exact runtime/source versions, errors, valid/null geometry and unresolved dependencies recorded without changing upstream files.
+1. **Native CAD baseline audit:** produce import/recompute diagnostics and dependency/shape inventory from a separate working copy. Why: cached ZIP/XML data cannot establish usable CAD. Dependency: resolve trusted addon/proxy compatibility and failing thickness features with a compatible CAD environment; runtime and linked files now available. Done: exact runtime/source versions, errors, valid/null geometry and unresolved dependencies recorded without changing upstream files.
 2. **Thor-specific model:** extract six joint axes/transforms, link masses/COM assumptions, paired-drive loads and task workspace; produce a traced model and load report. Why: the existing lightweight-servo calculations do not size Thor. Dependency: usable native assembly and material/part assumptions. Done: independently checked transforms, limiting poses, torque-speed assumptions and reachable task/floor subsets; no simulated result labeled physical.
 3. **Complete Thor BOM and tooling decision:** reconcile exact motor/controller/driver fits, parallel-jaw mechanism, mount/protection, tax/shipping and licensing. Why: the partial subtotal cannot prove budget feasibility. Dependencies: CAD interfaces and Liam's equipment inventory. Done: complete priced candidate list with remaining uncertainty/status, no orders.
 
 ## In Progress
 - Published branch `codex/arm01-engineering-bootstrap`; [draft PR #1](https://github.com/LiamHoweth/RAFTEL/pull/1) open, not merged. Checkpoints `32518b3` and `5ac3b6d` are pushed.
-- Preparing a checksum-verified official portable FreeCAD 1.1.4 runtime for native import; no system-wide installation or security-setting changes.
-- Finishing the Thor coordinate-map and cost-study follow-up; native assembly remains unverified.
+- Official portable FreeCAD 1.1.4 runtime is operational under the workspace tools directory; no system-wide installation or global security-setting changes. Whole-assembly compatibility remains open.
+- Thor coordinate-map and cost-study follow-up pushed as `d89a66f`. Recording native audit evidence and the compatibility blocker; complete assembly remains unverified.
 
 ## Completed and Verified
 - Pure Thor joint/channel conversion utility and 21 tests: paired shoulder validation, differential wrist modes, seeded algebraic round trips, finite input/overflow handling; no hardware commands. See `arm-01/docs/thor-joint-map.md`.
 - Thor-specific motor/controller/driver listing study with reproducible subtotal; compatibility, missing components and total cost remain unverified. See `arm-01/hardware/thor-cost-study.md`.
 - Five specialist agents contributed CAD research, mechanics/mobile analysis, hardware/safety, research/ADR and foundation documentation.
-- Thor pinned native source acquired in a separate reference checkout; 57 FreeCAD files passed ZIP/XML parsing; all file hashes/versions/dependencies reproduced against committed inventory. Found 33 unique filename-case mismatches; Linux reference portability needs resolution. No FreeCAD installation found; application import and recompute remain blocked.
+- Thor pinned native source acquired in a separate reference checkout; 57 FreeCAD files passed ZIP/XML parsing; all file hashes/versions/dependencies reproduced against committed inventory. Found 33 unique filename-case mismatches; Linux reference portability needs resolution. Portable FreeCAD now runs. BaseTop imported and forcibly recomputed to one valid solid; whole assembly timed out after180seconds and logged FastenersCmd permission and thickness-feature errors. See `arm-01/docs/thor-native-validation.md`.
 - Repository audit: only initial README; default branch main; clean starting tree.
 - Root AGENTS.md establishes mandatory read/update policy.
 - Installed Python mock sorting CLI, seeded object poses, bin configuration, bounded retries, event logs and fault latching; initial test suite passes.
 - Reproducible full downstream static-torque and floor outer-bound analysis implemented (analytical estimates only).
 
 ## Blockers and Open Decisions
+- Whole Thor assembly compatibility: native attempt timed out after180seconds with `module not permitted: FastenersCmd` and thickness-feature failures. Inventory exact addon/proxy and kernel/version requirements before editing geometry; do not disable global document security.
 - Thor is the first CAD study baseline; Liam explicitly permits eight total actuators. Measured geometry/masses, Thor-specific BOM, sustainable actuator output, parallel-gripper fit, license provenance, and physical equipment inventory remain open.
 
 ## Hardware and Purchasing Status
 No hardware approved, purchased, received, or tested in this session.
 
 ## Validation Results
-91 tests passed locally on macOS/Python 3.14.4. Ruff lint and formatting, compile check, installed editable CLI and separate non-editable wheel smoke passed. Normal demo sorted 10 synthetic objects; unreachable scenario skipped one; injected grasp failure returned exit 1; invalid count returned exit 2. Analysis script ran. Local Markdown links resolve and JSON files parse. GitHub Actions passed on Linux/Python 3.11–3.14 at `5ac3b6d` (70 tests plus static/install/demo/analysis checks). Initial inspector import-order failure was fixed. The additional 21 drive-coordinate tests pass locally; remote rerun pending publication of that follow-up. No CAD application import/recompute, hardware, IK or physics validation.
+94 tests passed locally on macOS/Python 3.14.4. Ruff lint and formatting, compile check, installed editable CLI and separate non-editable wheel smoke passed. Normal demo sorted 10 synthetic objects; unreachable scenario skipped one; injected grasp failure returned exit 1; invalid count returned exit 2. Analysis script ran. Local Markdown links resolve and JSON files parse. GitHub Actions passed on Linux/Python 3.11–3.14 at `5ac3b6d` (70 tests plus static/install/demo/analysis checks). Initial inspector import-order failure was fixed. The additional drive-coordinate and native-audit guard tests pass locally (94 total); final remote rerun pending. Native BaseTop import/recompute passed, but whole-assembly import/recompute did not complete. No hardware, spatial FK/IK or physics validation.
 
 ## Roadmap
 - [ ] Phase 1 — Engineering foundation (CAD-derived model and complete Thor BOM still open)
@@ -58,6 +59,7 @@ No hardware approved, purchased, received, or tested in this session.
 - [ ] Phase 7 — Reliability/mobile readiness
 
 ## Recent Engineering Log
+- 2026-11-11: Verified official FreeCAD1.1.4 download checksum/signature; portable console works. Whole-assembly native attempt timed out with actionable diagnostics; original BaseTop imported/forced-recomputed with one valid solid. No source saved. Added native-audit guard tests (94 total) and retained reports.
 - 2026-11-11: Added verified-source Thor motor coupling algebra and 21 tests (91 total); researched actual linked motor prices and incomplete total. CI at5ac3b6d passed all four Python versions. Continuing native CAD runtime/import study.
 - 2026-11-11: Published requested checkpoint and opened PR #1; added read-only Thor inspector with five tests (70 total). Corrected inspector import formatting discovered by remote CI; all local static checks now pass.
 - 2026-11-11: Liam approved eight total actuators and Thor-first CAD study. Requirements, ADR, BOM and safety documentation updated; no fabrication or purchase approval inferred.

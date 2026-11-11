@@ -1,0 +1,32 @@
+{
+  "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+  "freecad_version": "1.1.4R20260928 ARM64",
+  "runtime_sha256": "071343b4abb70492b75c973f41eaf1d2528f9b9c7ea018d22a4f46ae14d27ac0",
+  "runtime_url": "https://github.com/FreeCAD/FreeCAD/releases/download/1.1.4/FreeCAD_1.1.4-macOS-arm64-py311.dmg",
+  "whole_assembly": {
+    "file": "freecad-src/Assembly.FCStd",
+    "outcome": "timed_out_after_180_seconds",
+    "complete_import_or_recompute_verified": false,
+    "diagnostics": [
+      "module not permitted: FastenersCmd",
+      "Thickness: Failed to make thick solid",
+      "BRep_API: command not done"
+    ]
+  },
+  "single_part": {
+    "file": "freecad-src/BaseTop.fcstd",
+    "outcome": "import_and_forced_recompute_completed",
+    "report": "thor-base-top-native-audit.json",
+    "body_valid": true,
+    "solid_count": 1,
+    "bounds_mm": [
+      150,
+      150,
+      27.5
+    ],
+    "volume_mm3": 222336.2316002709
+  },
+  "source_changes_saved": false,
+  "upstream_checkout_unchanged": true,
+  "physical_or_kinematic_validation": false
+}

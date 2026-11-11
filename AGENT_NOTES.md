@@ -7,3 +7,4 @@
 - CAD provenance is pinned in `arm-01/hardware/cad/references.json`. Keep upstream originals separate from modifications. Thor assembly references sibling native documents; a top-level file alone is insufficient.
 - `tools/engineering_analysis.py` is an assumed lightweight-servo sensitivity model, not a CAD-derived Thor model. Replace assumptions only with traceable geometry/mass evidence; retain the distinction in reports.
 - `kinematics/thor_drive.py` implements nominal continuous Thor-ROS joint/channel algebra only; no joint geometry, physical rotor angles, calibrated limits, serial output or hardware calls.
+- Native CAD evidence: portable FreeCAD1.1.4 can recompute BaseTop; full Thor assembly timed out with FastenersCmd permission and thickness-feature diagnostics. See `arm-01/docs/thor-native-validation.md`; do not equate one valid part with an assembly validation.

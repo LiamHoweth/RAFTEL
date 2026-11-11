@@ -1,6 +1,6 @@
 # Reusing an existing mechanical design
 
-Research checked 2026-11-11. **Decision direction: reuse existing CAD and reproduce a baseline before changing load-bearing geometry.** This document is an adoption plan, not a released mechanical design. Liam authorized eight actuators and selected **Thor as the first baseline to study** on 2026-11-11. A pinned Thor source checkout has been acquired outside this repository and all 57 native CAD containers inspected. No CAD has been imported into a CAD application, recomputed, fabricated, or physically validated. No upstream CAD assets are vendored here.
+Research checked 2026-11-11. **Decision direction: reuse existing CAD and reproduce a baseline before changing load-bearing geometry.** This document is an adoption plan, not a released mechanical design. Liam authorized eight actuators and selected **Thor as the first baseline to study** on 2026-11-11. A pinned Thor source checkout has been acquired outside this repository and all 57 native CAD containers inspected. A later FreeCAD 1.1.4 check successfully imported and recomputed the original BaseTop part; the complete assembly attempt timed out with dependency/feature diagnostics. Full assembly usability, kinematics, fabrication and physical operation remain unverified. See [native validation](thor-native-validation.md). No upstream CAD assets are vendored here.
 
 ## What “proven” means for ARM-01
 
@@ -57,7 +57,7 @@ Pinned upstream: [Thor at 286b081fe6f056d87c379b884781ef77ff6a0159](https://gith
 - `freecad-src/GripperTop.FCStd`, `GripperActiveArm.FCStd`, `GripperPassiveArm.FCStd` — gripper mechanism source.
 - `step/` — corresponding neutral parts; `stl/` — print exports; `mods/` — separately inspect before use.
 
-`Assembly.FCStd` and `BaseTop.fcstd` were streamed and ZIP/XML contents inspected. They identify FreeCAD 0.19; the top assembly references sibling assembly files through external links. Preserve the full directory layout and dependencies. **Opening only the small top assembly file is insufficient.** Neither a current FreeCAD recompute nor assembly-workbench compatibility was tested. Embedded document metadata says “All rights reserved,” while the repository explicitly applies CC-BY-SA-4.0 to all source files; record this discrepancy and resolve source provenance before publishing a derivative source package.
+`Assembly.FCStd` and `BaseTop.fcstd` were streamed and ZIP/XML contents inspected. They identify FreeCAD 0.19; the top assembly references sibling assembly files through external links. Preserve the full directory layout and dependencies. **Opening only the small top assembly file is insufficient.** A current FreeCAD assembly attempt subsequently timed out; the BaseTop part alone recomputed successfully. Full assembly/workbench compatibility remains open. Embedded document metadata says “All rights reserved,” while the repository explicitly applies CC-BY-SA-4.0 to all source files; record this discrepancy and resolve source provenance before publishing a derivative source package.
 
 ### Six-axis modification — mesh-only source currently found
 
@@ -100,7 +100,7 @@ The complete machine-readable evidence, SHA-256 file inventory and saved assembl
 
 **New compatibility issue:** 33 unique external-reference filenames use `.FCStd` while actual component files use `.fcstd`. Every reference has a case-insensitive match; no entirely absent native target was found. A case-insensitive Mac volume conceals this discrepancy, but a Linux case-sensitive checkout can expose broken links. Preserve the original source; test and repair link spelling only in a documented derivative working copy.
 
-No FreeCAD app was found in `/Applications` or `~/Applications`, and neither `FreeCADCmd` nor `freecadcmd` was available on PATH. Consequently import, feature recompute, solid validity, mass properties and kinematics remain untested. Do not install software or report an application-level CAD check implicitly.
+The initial source-container scan had no available FreeCAD installation. A subsequent checksum-verified portable FreeCAD 1.1.4 runtime performed the [native validation](thor-native-validation.md): BaseTop imported/recomputed with one valid solid; the whole assembly timed out and logged dependency/feature issues. Neither physical mass properties nor joint kinematics is established. The historical source-inspection JSON records the earlier scan, not this later native check.
 
 ### Initial geometry inventory and adaptation surfaces
 

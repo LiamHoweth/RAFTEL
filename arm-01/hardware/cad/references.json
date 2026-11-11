@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "checked_on": "2026-11-11",
-  "description": "Pinned CAD references; no CAD assets vendored, imported or physically validated.",
+  "description": "Pinned CAD references; no CAD assets vendored. Thor BaseTop native check completed; full assembly and physical validation remain open.",
   "references": [
     {
       "id": "so101-stock",
@@ -153,7 +153,9 @@
         "git_revision_verified": true,
         "inspection_report": "thor-baseline-inspection.json",
         "cad_application_import_verified": false
-      }
+      },
+      "single_part_native_recompute_verified": true,
+      "native_validation_summary": "thor-native-audit-summary.json"
     },
     {
       "id": "parol6",

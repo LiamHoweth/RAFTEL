@@ -1,0 +1,342 @@
+{
+  "validation_level": "native CAD import/recompute; not kinematics or physical validation",
+  "freecad_version": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "assembly_filename": "BaseTop.fcstd",
+  "documents": [
+    {
+      "name": "BaseTop",
+      "objects": [
+        {
+          "name": "Body",
+          "label": "BaseTop",
+          "type": "PartDesign::Body",
+          "state": [
+            "Up-to-date"
+          ],
+          "shape_null": false,
+          "shape_valid": true,
+          "volume_mm3": 222336.2316002709,
+          "solid_count": 1,
+          "bounds_mm": {
+            "xmin": -75.0,
+            "xmax": 75.0,
+            "ymin": -75.0,
+            "ymax": 75.0,
+            "zmin": -1.6653345369377348e-14,
+            "zmax": 27.500000000000018
+          }
+        },
+        {
+          "name": "Origin",
+          "label": "Origin",
+          "type": "App::Origin",
+          "state": [
+            "Up-to-date"
+          ]
+        },
+        {
+          "name": "X_Axis",
+          "label": "X_Axis",
+          "type": "App::Line",
+          "state": [
+            "Up-to-date"
+          ],
+          "shape_null": false,
+          "shape_valid": true,
+          "volume_mm3": 0.0,
+          "solid_count": 0,
+          "bounds_mm": {
+            "xmin": -1e+100,
+            "xmax": 1e+100,
+            "ymin": 0.0,
+            "ymax": 0.0,
+            "zmin": 0.0,
+            "zmax": 0.0
+          }
+        },
+        {
+          "name": "Y_Axis",
+          "label": "Y_Axis",
+          "type": "App::Line",
+          "state": [
+            "Up-to-date"
+          ],
+          "shape_null": false,
+          "shape_valid": true,
+          "volume_mm3": 0.0,
+          "solid_count": 0,
+          "bounds_mm": {
+            "xmin": 0.0,
+            "xmax": 0.0,
+            "ymin": -1e+100,
+            "ymax": 1e+100,
+            "zmin": 0.0,
+            "zmax": 0.0
+          }
+        },
+        {
+          "name": "Z_Axis",
+          "label": "Z_Axis",
+          "type": "App::Line",
+          "state": [
+            "Up-to-date"
+          ],
+          "shape_null": false,
+          "shape_valid": true,
+          "volume_mm3": 0.0,
+          "solid_count": 0,
+          "bounds_mm": {
+            "xmin": 0.0,
+            "xmax": 0.0,
+            "ymin": 0.0,
+            "ymax": 0.0,
+            "zmin": -1e+100,
+            "zmax": 1e+100
+          }
+        },
+        {
+          "name": "XY_Plane",
+          "label": "XY_Plane",
+          "type": "App::Plane",
+          "state": [
+            "Up-to-date"
+          ],
+          "shape_null": false,
+          "shape_valid": true,
+          "volume_mm3": 0.0,
+          "solid_count": 0,
+          "bounds_mm": {
+            "xmin": -1e+100,
+            "xmax": 1e+100,
+            "ymin": -1e+100,
+            "ymax": 1e+100,
+            "zmin": 0.0,
+            "zmax": 0.0
+          }
+        },
+        {
+          "name": "XZ_Plane",
+          "label": "XZ_Plane",
+          "type": "App::Plane",
+          "state": [
+            "Up-to-date"
+          ],
+          "shape_null": false,
+          "shape_valid": true,
+          "volume_mm3": -1.1972621413014757e+152,
+          "solid_count": 0,
+          "bounds_mm": {
+            "xmin": -1e+100,
+            "xmax": 1e+100,
+            "ymin": 0.0,
+            "ymax": 0.0,
+            "zmin": -1e+100,
+            "zmax": 1e+100
+          }
+        },
+        {
+          "name": "YZ_Plane",
+          "label": "YZ_Plane",
+          "type": "App::Plane",
+          "state": [
+            "Up-to-date"
+          ],
+          "shape_null": false,
+          "shape_valid": true,
+          "volume_mm3": 1.7958932119522137e+152,
+          "solid_count": 0,
+          "bounds_mm": {
+            "xmin": 0.0,
+            "xmax": 0.0,
+            "ymin": -1e+100,
+            "ymax": 1e+100,
+            "zmin": -1e+100,
+            "zmax": 1e+100
+          }
+        },
+        {
+          "name": "Sketch",
+          "label": "Sketch",
+          "type": "Sketcher::SketchObject",
+          "state": [
+            "Up-to-date"
+          ],
+          "shape_null": false,
+          "shape_valid": true,
+          "volume_mm3": 0.0,
+          "solid_count": 0,
+          "bounds_mm": {
+            "xmin": 49.0,
+            "xmax": 75.0,
+            "ymin": 0.0,
+            "ymax": 6.106226635438361e-15,
+            "zmin": 0.0,
+            "zmax": 27.5
+          }
+        },
+        {
+          "name": "Revolution",
+          "label": "Revolution",
+          "type": "PartDesign::Revolution",
+          "state": [
+            "Up-to-date"
+          ],
+          "shape_null": false,
+          "shape_valid": true,
+          "volume_mm3": 223085.26582870306,
+          "solid_count": 1,
+          "bounds_mm": {
+            "xmin": -75.0,
+            "xmax": 75.0,
+            "ymin": -75.0,
+            "ymax": 75.0,
+            "zmin": -1.6653345369377348e-14,
+            "zmax": 27.500000000000018
+          }
+        },
+        {
+          "name": "Spreadsheet",
+          "label": "Spreadsheet",
+          "type": "Spreadsheet::Sheet",
+          "state": [
+            "Up-to-date"
+          ]
+        },
+        {
+          "name": "Sketch001",
+          "label": "Sketch001",
+          "type": "Sketcher::SketchObject",
+          "state": [
+            "Up-to-date"
+          ],
+          "shape_null": false,
+          "shape_valid": true,
+          "volume_mm3": 0.0,
+          "solid_count": 0,
+          "bounds_mm": {
+            "xmin": 65.8,
+            "xmax": 69.2,
+            "ymin": -1.699999999999994,
+            "ymax": 1.700000000000006,
+            "zmin": 27.5,
+            "zmax": 27.5
+          }
+        },
+        {
+          "name": "Pocket",
+          "label": "Pocket",
+          "type": "PartDesign::Pocket",
+          "state": [
+            "Up-to-date"
+          ],
+          "shape_null": false,
+          "shape_valid": true,
+          "volume_mm3": 222835.58775255893,
+          "solid_count": 1,
+          "bounds_mm": {
+            "xmin": -75.0,
+            "xmax": 75.0,
+            "ymin": -75.0,
+            "ymax": 75.0,
+            "zmin": -1.6653345369377348e-14,
+            "zmax": 27.500000000000018
+          }
+        },
+        {
+          "name": "PolarPattern",
+          "label": "PolarPattern",
+          "type": "PartDesign::PolarPattern",
+          "state": [
+            "Up-to-date"
+          ],
+          "shape_null": false,
+          "shape_valid": true,
+          "volume_mm3": 222336.2316002709,
+          "solid_count": 1,
+          "bounds_mm": {
+            "xmin": -75.0,
+            "xmax": 75.0,
+            "ymin": -75.0,
+            "ymax": 75.0,
+            "zmin": -1.6653345369377348e-14,
+            "zmax": 27.500000000000018
+          }
+        },
+        {
+          "name": "LCS_Bot",
+          "label": "LCS_Bot",
+          "type": "PartDesign::CoordinateSystem",
+          "state": [
+            "Up-to-date"
+          ],
+          "shape_null": false,
+          "shape_valid": true,
+          "volume_mm3": 0.0,
+          "solid_count": 0,
+          "bounds_mm": {
+            "xmin": -1e+100,
+            "xmax": 1e+100,
+            "ymin": -1e+100,
+            "ymax": 1e+100,
+            "zmin": 0.0,
+            "zmax": 0.0
+          }
+        },
+        {
+          "name": "LCS_Top",
+          "label": "LCS_Top",
+          "type": "PartDesign::CoordinateSystem",
+          "state": [
+            "Up-to-date"
+          ],
+          "shape_null": false,
+          "shape_valid": true,
+          "volume_mm3": -7.333333333333335e+101,
+          "solid_count": 0,
+          "bounds_mm": {
+            "xmin": -1e+100,
+            "xmax": 1e+100,
+            "ymin": -1e+100,
+            "ymax": 1e+100,
+            "zmin": 27.5,
+            "zmax": 27.5
+          }
+        },
+        {
+          "name": "Origin001",
+          "label": "Origin",
+          "type": "App::Point",
+          "state": [
+            "Up-to-date"
+          ],
+          "shape_null": false,
+          "shape_valid": true,
+          "volume_mm3": 0.0,
+          "solid_count": 0,
+          "bounds_mm": {
+            "xmin": 0.0,
+            "xmax": 0.0,
+            "ymin": 0.0,
+            "ymax": 0.0,
+            "zmin": 0.0,
+            "zmax": 0.0
+          }
+        }
+      ],
+      "forced_recompute_return": 8,
+      "object_count": 17
+    }
+  ],
+  "errors": [],
+  "saved_source_changes": false,
+  "master_document": "BaseTop"
+}

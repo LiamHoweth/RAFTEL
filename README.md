@@ -39,6 +39,9 @@ See the [ARM-01 setup guide](arm-01/README.md) for Windows activation, configura
 | Existing mechanical references | [Research](arm-01/docs/research.md) |
 | Reusing proven CAD | [CAD reuse plan](arm-01/docs/cad-reuse.md) |
 | Mechanical selection rationale | [Mechanical ADR](docs/architecture-decisions/0001-mechanical-starting-point.md) |
+| Thor joint/motor coordinates | [Joint map](arm-01/docs/thor-joint-map.md) |
+| Thor native CAD evidence | [Native validation](arm-01/docs/thor-native-validation.md) |
+| Thor cost evidence | [Cost study](arm-01/hardware/thor-cost-study.md) |
 | Load estimates | [Mechanical analysis](arm-01/docs/mechanical-analysis.md) |
 | Parts and purchasing status | [Candidate BOM](arm-01/hardware/bom.md) |
 | Workstation and safety | [Workstation](arm-01/docs/workstation.md), [Safety](arm-01/docs/safety.md) |
