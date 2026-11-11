@@ -6,24 +6,26 @@
 **Overall status:** In Progress
 
 ## Current Objective
-Establish a research-backed engineering foundation and executable logical sorting prototype without physical hardware. Audit: main contains only README.md at 48c19d6; no existing code, agent instructions, or notes.
+Reproduce Thor's existing native CAD baseline before adapting it: open/recompute the complete assembly, extract traceable joint geometry and masses, and establish a Thor-specific load and cost model. Liam approved eight total actuators for this study; the six-arm-axis and parallel-gripper requirements remain. The logical sorting foundation is implemented and tested.
 
 ## Next 3 Actions for Liam
-1. Measure the available bench, rear clamp clearance, desk thickness/material, and camera mounting location.
-2. Review Thor source-CAD study and provide bench/printer constraints before physical design or purchasing approval.
-3. Confirm printer/tool access and available reusable hardware; nothing is approved for purchase.
+1. Measure bench width/depth, desk thickness/material, rear clamp clearance and camera mounting clearance; provide measurements before mount design.
+2. Confirm available printer build volume/materials, tools, camera, power supplies and reusable parts; no purchases are approved.
+3. Review [Thor cost study](arm-01/hardware/thor-cost-study.md): current partial listings total $244.50; missing-cost sensitivity suggests ~$560–1,055, not a complete quote. Review the budget gap before any purchase decision.
 
 ## Next 3 Actions for Codex
-1. Import the pinned Thor assembly and extract geometry/masses; dependency: FreeCAD availability and complete linked files; done when recompute errors, joint map, dimensions and material assumptions are recorded.
-2. Produce executable mock sorting software and tests; dependency: architecture; done when installed CLI, deterministic and failure tests pass.
-3. Produce torque/mobile analyses and candidate BOM; dependency: stated mass/geometry assumptions; done when calculations reproduce and no physical claims are inferred.
+1. **Native CAD baseline audit:** produce import/recompute diagnostics and dependency/shape inventory from a separate working copy. Why: cached ZIP/XML data cannot establish usable CAD. Dependency: functioning FreeCAD runtime and full linked source. Done: exact runtime/source versions, errors, valid/null geometry and unresolved dependencies recorded without changing upstream files.
+2. **Thor-specific model:** extract six joint axes/transforms, link masses/COM assumptions, paired-drive loads and task workspace; produce a traced model and load report. Why: the existing lightweight-servo calculations do not size Thor. Dependency: usable native assembly and material/part assumptions. Done: independently checked transforms, limiting poses, torque-speed assumptions and reachable task/floor subsets; no simulated result labeled physical.
+3. **Complete Thor BOM and tooling decision:** reconcile exact motor/controller/driver fits, parallel-jaw mechanism, mount/protection, tax/shipping and licensing. Why: the partial subtotal cannot prove budget feasibility. Dependencies: CAD interfaces and Liam's equipment inventory. Done: complete priced candidate list with remaining uncertainty/status, no orders.
 
 ## In Progress
-- Foundation checkpoint committed and pushed as `32518b3` to `codex/arm01-engineering-bootstrap`; [draft PR #1](https://github.com/LiamHoweth/RAFTEL/pull/1) is open, not merged. Continuing CAD audit and CI fixes on this branch.
-- Integrating five agent contributions: CAD reuse, mechanics/mobile analysis, hardware/safety, research/ADR, foundation documentation.
-- Python logical sorting implemented; final review, packaging and CI verification in progress.
+- Published branch `codex/arm01-engineering-bootstrap`; [draft PR #1](https://github.com/LiamHoweth/RAFTEL/pull/1) open, not merged. Checkpoints `32518b3` and `5ac3b6d` are pushed.
+- Preparing a checksum-verified official portable FreeCAD 1.1.4 runtime for native import; no system-wide installation or security-setting changes.
+- Finishing the Thor coordinate-map and cost-study follow-up; native assembly remains unverified.
 
 ## Completed and Verified
+- Pure Thor joint/channel conversion utility and 21 tests: paired shoulder validation, differential wrist modes, seeded algebraic round trips, finite input/overflow handling; no hardware commands. See `arm-01/docs/thor-joint-map.md`.
+- Thor-specific motor/controller/driver listing study with reproducible subtotal; compatibility, missing components and total cost remain unverified. See `arm-01/hardware/thor-cost-study.md`.
 - Five specialist agents contributed CAD research, mechanics/mobile analysis, hardware/safety, research/ADR and foundation documentation.
 - Thor pinned native source acquired in a separate reference checkout; 57 FreeCAD files passed ZIP/XML parsing; all file hashes/versions/dependencies reproduced against committed inventory. Found 33 unique filename-case mismatches; Linux reference portability needs resolution. No FreeCAD installation found; application import and recompute remain blocked.
 - Repository audit: only initial README; default branch main; clean starting tree.
@@ -38,10 +40,16 @@ Establish a research-backed engineering foundation and executable logical sortin
 No hardware approved, purchased, received, or tested in this session.
 
 ## Validation Results
-70 tests passed locally on macOS/Python 3.14.4. Ruff lint and formatting, compile check, installed editable CLI and separate non-editable wheel smoke passed. Normal demo sorted 10 synthetic objects; unreachable scenario skipped one; injected grasp failure returned exit 1; invalid count returned exit 2. Analysis script ran. Local Markdown links resolve and JSON files parse. Initial GitHub Actions run failed on import-order lint in the newly added CAD inspector; corrected locally. Awaiting rerun after publishing fixes. No CAD application import/recompute, hardware, IK or physics validation.
+91 tests passed locally on macOS/Python 3.14.4. Ruff lint and formatting, compile check, installed editable CLI and separate non-editable wheel smoke passed. Normal demo sorted 10 synthetic objects; unreachable scenario skipped one; injected grasp failure returned exit 1; invalid count returned exit 2. Analysis script ran. Local Markdown links resolve and JSON files parse. GitHub Actions passed on Linux/Python 3.11–3.14 at `5ac3b6d` (70 tests plus static/install/demo/analysis checks). Initial inspector import-order failure was fixed. The additional 21 drive-coordinate tests pass locally; remote rerun pending publication of that follow-up. No CAD application import/recompute, hardware, IK or physics validation.
 
 ## Roadmap
-- [ ] Phase 1 — Engineering foundation
+- [ ] Phase 1 — Engineering foundation (CAD-derived model and complete Thor BOM still open)
+  - [x] Persistent workflow, requirements, architecture, research and ADR
+  - [x] Executable logical sorter, tests and lightweight CI
+  - [x] Explicit preliminary load/mobile analytical examples
+  - [x] Pinned existing CAD source inventory and nominal drive-coordinate study
+  - [ ] Native CAD recompute, joint-constrained model and Thor-specific loads
+  - [ ] Complete compatible Thor BOM and budget decision
 - [ ] Phase 2 — Mechanical prototype
 - [ ] Phase 3 — Hardware control
 - [ ] Phase 4 — Manipulation
@@ -50,6 +58,7 @@ No hardware approved, purchased, received, or tested in this session.
 - [ ] Phase 7 — Reliability/mobile readiness
 
 ## Recent Engineering Log
+- 2026-11-11: Added verified-source Thor motor coupling algebra and 21 tests (91 total); researched actual linked motor prices and incomplete total. CI at5ac3b6d passed all four Python versions. Continuing native CAD runtime/import study.
 - 2026-11-11: Published requested checkpoint and opened PR #1; added read-only Thor inspector with five tests (70 total). Corrected inspector import formatting discovered by remote CI; all local static checks now pass.
 - 2026-11-11: Liam approved eight total actuators and Thor-first CAD study. Requirements, ADR, BOM and safety documentation updated; no fabrication or purchase approval inferred.
 - 2026-11-11: Implemented logical sorting package and CI; 65 local tests and wheel/CLI/static checks pass. Continuing CAD source audit after requested publication checkpoint.

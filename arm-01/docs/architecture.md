@@ -13,6 +13,7 @@ The first implementation is a lightweight Python task prototype. It accepts synt
 | Mock control | `src/raftel_arm01/control/mock.py` | Deterministic logical motion/grasp/place behavior and injected failures |
 | Synthetic observations | `src/raftel_arm01/perception/synthetic.py` | Seeded object positions/categories; no camera or image interpretation |
 | Planning | `src/raftel_arm01/planning/sorting.py` | Category/bin routing, reachable-target screening and abstract waypoints |
+| Thor drive convention | `src/raftel_arm01/kinematics/thor_drive.py` | Pure six-coordinate/seven-channel algebra; no spatial FK/IK or hardware commands |
 | Task execution | `src/raftel_arm01/tasks/sorter.py` | Sorting progression, bounded handling of failures and recorded outcomes |
 | CLI and evaluation | `src/raftel_arm01/cli.py` | Scenario setup, structured events and run summary |
 

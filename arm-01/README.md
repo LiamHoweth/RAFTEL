@@ -49,6 +49,8 @@ Tests should require no hardware or ROS. The analysis script reproduces explicit
 
 The [architecture](docs/architecture.md) keeps observations, planning, task execution, and arm control separate. The first prototype intentionally has no runtime dependency on robotics middleware. NumPy/OpenCV, a measured robot model/URDF, ROS 2 Jazzy, MoveIt 2, LeRobot, and a physics environment are possible integration milestones, each requiring its own installation and acceptance tests.
 
+The [Thor joint/motor map](docs/thor-joint-map.md) documents paired shoulder and differential wrist drives. A tested pure coordinate utility implements the pinned ROS convention; it does not establish physical calibration or spatial kinematics. The [Thor cost study](hardware/thor-cost-study.md) separates current listing subtotals from missing-cost allowances.
+
 The mechanical direction is to adapt an existing, demonstrated design where licensing and editable source allow it, starting with a Thor CAD study. Extract and validate its actual geometry, mass, gripper mechanism, drive mapping and cost before proposing changes; upstream physical demonstrations do not verify RAFTEL performance. The reach, payload and budget targets remain unchanged and unverified. Stock SO-101 has five arm axes plus its gripper and does not satisfy the six-arm-axis requirement. Read the [CAD reuse plan](docs/cad-reuse.md) and [selection ADR](../docs/architecture-decisions/0001-mechanical-starting-point.md) before selecting or printing parts.
 
 Do not energize an unverified arm or power system. See [safety](docs/safety.md), [workstation](docs/workstation.md), and the [candidate BOM](hardware/bom.md). Nothing in this repository is evidence that a household-safe robot has been built.
