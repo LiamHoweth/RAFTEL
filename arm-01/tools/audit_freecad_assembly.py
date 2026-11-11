@@ -34,6 +34,30 @@ def _source_guard(assembly: Path) -> None:
         raise ValueError("assembly must be an existing native FreeCAD document")
 
 
+def _runtime_isolation(app, root: Path | None) -> dict:
+    """Check the actual native paths before opening any requested document."""
+    if root is None:
+        return {"requested": False, "verified": False}
+    root = root.resolve()
+    values = {
+        key: app.ConfigGet(key)
+        for key in (
+            "UserParameter",
+            "SystemParameter",
+            "UserHomePath",
+            "UserAppData",
+            "AppTempPath",
+        )
+    }
+    if any(
+        not value or not Path(value).resolve().is_relative_to(root) for value in values.values()
+    ):
+        raise ValueError("native configuration/data path escaped the task isolation root")
+    if app.listDocuments():
+        raise ValueError("isolated audit requires a fresh process without open documents")
+    return {"requested": True, "verified": True, "root": str(root), "actual_paths": values}
+
+
 class ReportWriter:
     """Own a newly created report path; replace only our own checkpoints."""
 
@@ -43,7 +67,7 @@ class ReportWriter:
                 "report must be a new .json path; existing files are never overwritten"
             )
         self.output = output
-        with output.open("x") as stream:
+        with output.open("x", encoding="utf-8", newline="\n") as stream:
             stream.write('{"status":"starting"}\n')
             stream.flush()
             os.fsync(stream.fileno())
@@ -57,6 +81,8 @@ class ReportWriter:
         try:
             with tempfile.NamedTemporaryFile(
                 mode="w",
+                encoding="utf-8",
+                newline="\n",
                 prefix=f".{self.output.name}.",
                 suffix=".tmp",
                 dir=self.output.parent,
@@ -261,6 +287,7 @@ def audit(
     object_names: tuple[str, ...] = (),
     checkpoint: Callable[[dict], None] | None = None,
     checkpoint_interval_s: float = 2.0,
+    isolation_root: Path | None = None,
 ) -> dict:
     _source_guard(assembly)
     if recompute not in {"none", "changed", "force"}:
@@ -271,11 +298,14 @@ def audit(
         raise ValueError("checkpoint interval must be finite and nonnegative")
     import FreeCAD as App
 
+    isolation = _runtime_isolation(App, isolation_root)
     prior_documents = set(App.listDocuments())
     report = {
         "schema_version": 2,
         "validation_level": "native CAD inspection; not kinematics or physical validation",
         "freecad_version": list(App.Version()),
+        "runtime_isolation": isolation,
+        "open_document_count_before": len(prior_documents),
         "assembly_filename": assembly.name,
         "audit_mode": recompute,
         "shape_scope": shape_scope,
@@ -360,6 +390,25 @@ def audit(
             entry.update(object_count=len(entry["objects"]), status="complete")
             report["completed_document_count"] += 1
             emit("document_complete", name)
+        # Later child-document recomputes can touch a parent already inspected.
+        # Capture current global state instead of treating earlier rows as final.
+        final_states = {}
+        not_up_to_date = []
+        final_count = 0
+        for name, document in sorted(documents.items()):
+            for obj in document.Objects:
+                states = list(obj.State)
+                final_count += 1
+                for state in states:
+                    final_states[state] = final_states.get(state, 0) + 1
+                if states != ["Up-to-date"]:
+                    not_up_to_date.append({"object": f"{name}::{obj.Name}", "state": states})
+        report["final_loaded_object_states"] = {
+            "object_count": final_count,
+            "state_token_counts": final_states,
+            "not_up_to_date": not_up_to_date,
+            "scope": "all newly loaded documents after every requested recompute",
+        }
         report["status"] = "complete"
     except Exception as error:
         report["errors"].append(str(error))
@@ -376,6 +425,7 @@ def audit(
             except Exception as error:
                 report["errors"].append(f"close {name}: {error}")
                 report["status"] = "failed"
+        report["open_document_count_after"] = len(App.listDocuments())
         if checkpoint_error is not None:
             raise checkpoint_error
         emit("finished")
@@ -418,6 +468,11 @@ def main() -> None:
         object_names=_names("RAFTEL_FREECAD_OBJECTS"),
         checkpoint=writer,
         checkpoint_interval_s=interval,
+        isolation_root=(
+            Path(os.environ["RAFTEL_FREECAD_ISOLATION_ROOT"])
+            if os.environ.get("RAFTEL_FREECAD_ISOLATION_ROOT")
+            else None
+        ),
     )
     print("RAFTEL_CAD_REPORT_WRITTEN", output)
 
