@@ -211,3 +211,30 @@ def test_transform_overflow_and_invalid_evidence_type_reject():
         compose(yaw_pose(0, (1e308, 0, 0)), yaw_pose(0, (1e308, 0, 0)))
     with pytest.raises(ValueError):
         FrameRecord("a", "b", IDENTITY, [], "fixture")
+
+
+@pytest.mark.parametrize("scale", [1e-300, 1e-100, 1.0, 1e100, 1e300])
+def test_covariance_validity_is_invariant_under_finite_positive_scaling(scale):
+    # This block has eigenvalues 0.5 and 1.5, plus four exact zero modes.
+    valid = [[0.0] * 6 for _ in range(6)]
+    valid[0][0] = valid[1][1] = scale
+    valid[0][1] = valid[1][0] = 0.5 * scale
+    assert covariance(valid) == tuple(tuple(row) for row in valid)
+    # A negative eigenvalue of -1 remains invalid at microscopic scales.
+    valid[0][1] = valid[1][0] = 2 * scale
+    with pytest.raises(ValueError, match="positive semidefinite"):
+        covariance(valid)
+
+
+@pytest.mark.parametrize("scale", [1e-300, 1.0, 1e300])
+def test_rank_one_covariance_and_asymmetry_use_relative_scale(scale):
+    direction = (1.0, -0.5, 0.25, 0.0, 0.125, -0.75)
+    value = [[scale * x * y for y in direction] for x in direction]
+    covariance(value)
+    value[0][1] += scale * 1e-8
+    with pytest.raises(ValueError, match="symmetric"):
+        covariance(value)
+
+
+def test_exact_zero_covariance_remains_valid():
+    assert covariance(((0.0,) * 6,) * 6) == ((0.0,) * 6,) * 6
