@@ -1,0 +1,492 @@
+{
+  "schema_version": 1,
+  "validation_class": "pinned_saved_geometry_and_conditional_nominal_jaw_model",
+  "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+  "source_sha256": {
+    "GripperBot.FCStd": "a65e68644312adee7381e3a640b2b827f9c2c3362bbe4a842ccee9fea969d176",
+    "GripperArm.FCStd": "f1511f4b319a5727cf07771abe4c75002d5527e0a10291d47c1fe8024a44c6fc",
+    "GripperActiveArm.FCStd": "3ba5ba6f74c5d2f45eeca56f28534dc750e7f0ae735b6a0b3e16beeef21adc67",
+    "GripperPassiveArm.FCStd": "d14ac1debf67735fd623e052d468a9773066c32356390799b4ea07addcba68d4",
+    "GripperFinger.FCStd": "ab4daca4dd2f447029f4c76150b7f617fbdda74ae467cf6962938efe148d57a6",
+    "AssemblyArt56.FCStd": "a04836216dcae82eb033c15daba6e41dedb85b03f86ff21e56b77cdff835a473"
+  },
+  "freecad_version": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "coordinate_frame": "GripperBot source Body local XYZ, millimetres",
+  "recomputed": false,
+  "saved_source_changes": false,
+  "source_datum_positions_mm": {
+    "GripperBot.FCStd": {
+      "LCS_GripperBot": [
+        2.2e-15,
+        8.5,
+        17.149999999999995
+      ],
+      "LCS_GripperTop": [
+        6.7e-15,
+        10.0,
+        19.8
+      ],
+      "LCS_PassiveArm": [
+        14.499999999999996,
+        32.5,
+        14.499999999999996
+      ],
+      "LCS_Arm1": [
+        6.0,
+        51.0,
+        14.499999999999996
+      ],
+      "LCS_Arm2": [
+        -6.0,
+        51.0,
+        14.499999999999996
+      ],
+      "LCS_Servomotor": [
+        -4.214999999999994,
+        32.5,
+        0.0
+      ],
+      "HoleAxis_1": [
+        17.250000000000004,
+        2.999999999999997,
+        7.190707856478958
+      ],
+      "HoleAxis_2": [
+        -17.25,
+        3.0000000000000004,
+        7.190707856478956
+      ],
+      "HoleAxis_3": [
+        -21.0,
+        10.0,
+        11.7
+      ],
+      "HoleAxis_4": [
+        21.0,
+        10.0,
+        11.7
+      ],
+      "HoleAxis_5": [
+        14.499999999999996,
+        32.5,
+        11.7
+      ],
+      "HoleAxis_6": [
+        -29.115000000000002,
+        27.5,
+        9.350000000000001
+      ],
+      "HoleAxis_7": [
+        -29.115000000000002,
+        37.5,
+        9.35
+      ],
+      "HoleAxis_8": [
+        6.0,
+        51.0,
+        6.0
+      ],
+      "HoleAxis_9": [
+        -6.0,
+        51.0,
+        6.0
+      ],
+      "HoleAxis_10": [
+        20.684999999999995,
+        37.5,
+        9.35
+      ],
+      "HoleAxis_11": [
+        20.684999999999995,
+        27.5,
+        9.35
+      ]
+    },
+    "GripperArm.FCStd": {
+      "LCS_GripperArm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "LCS_GripperArm_1": [
+        0.0,
+        35.0,
+        0.0
+      ]
+    },
+    "GripperActiveArm.FCStd": {
+      "LCS_GripperActiveArm": [
+        5.9e-15,
+        -9e-16,
+        2.3
+      ],
+      "LCS_GripperActiveArm_1": [
+        35.0,
+        0.0,
+        0.0
+      ],
+      "HoleAxis_1": [
+        0.0,
+        -7.0,
+        3.5000000000000027
+      ],
+      "HoleAxis_2": [
+        0.0,
+        8e-16,
+        3.5
+      ],
+      "HoleAxis_3": [
+        0.0,
+        7.0,
+        3.4999999999999982
+      ]
+    },
+    "GripperPassiveArm.FCStd": {
+      "LCS_GripperPassiveArm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "LCS_GripperPassiveArm_1": [
+        34.73911530744627,
+        4.265427019180146,
+        0.0
+      ]
+    },
+    "GripperFinger.FCStd": {
+      "HoleAxis_1": [
+        4.0,
+        4.0,
+        12.499999999999998
+      ],
+      "HoleAxis_2": [
+        12.5,
+        22.5,
+        12.5
+      ],
+      "HoleAxis_3": [
+        4.0,
+        4.0,
+        3.0
+      ],
+      "HoleAxis_4": [
+        12.5,
+        22.5,
+        3.0
+      ],
+      "LCS_GripperFinger": [
+        12.5,
+        22.5,
+        5.074999999999999
+      ]
+    }
+  },
+  "gear_pair": {
+    "saved_properties": {
+      "GripperActiveArm.FCStd": {
+        "teeth": 26.0,
+        "module": 1.1,
+        "dw": 28.6
+      },
+      "GripperPassiveArm.FCStd": {
+        "teeth": 26.0,
+        "module": 1.1,
+        "dw": 28.6
+      }
+    },
+    "source_objects": [
+      "GripperActiveArm::involutegear",
+      "GripperPassiveArm::involutegear"
+    ],
+    "ideal_increment_relation": "opposite equal shaft increments about common +Z",
+    "gear_contact_or_phase_qualified": false
+  },
+  "saved_assembly_points_in_bot_frame_mm": {
+    "active_driven_pivot": [
+      -14.51499999999999,
+      32.49999999999999,
+      17.000000000000007
+    ],
+    "active_driven_tip": [
+      -49.5145831478274,
+      32.67082001731678,
+      14.700000000000003
+    ],
+    "passive_driven_pivot": [
+      14.499999999999998,
+      32.50000000000001,
+      14.499999999999996
+    ],
+    "passive_driven_tip": [
+      49.49966682522571,
+      32.652715824966116,
+      14.499999999999998
+    ],
+    "left_auxiliary_pivot": [
+      -5.999999999999999,
+      51.00000000000001,
+      14.499999999999996
+    ],
+    "left_auxiliary_tip": [
+      -41.00000000000001,
+      51.00000000000002,
+      14.499999999999993
+    ],
+    "right_auxiliary_pivot": [
+      6.000000000000004,
+      51.00000000000001,
+      14.499999999999996
+    ],
+    "right_auxiliary_tip": [
+      41.000000000000014,
+      51.00000000000001,
+      14.500000000000009
+    ],
+    "left_finger_driven_hole": [
+      -49.50000000000003,
+      32.49999999999999,
+      21.925
+    ],
+    "left_finger_auxiliary_hole": [
+      -41.00000000000002,
+      50.99999999999999,
+      21.924999999999997
+    ],
+    "right_finger_driven_hole": [
+      49.500000000000014,
+      32.50000000000001,
+      21.925000000000015
+    ],
+    "right_finger_auxiliary_hole": [
+      41.00000000000001,
+      51.00000000000001,
+      21.925000000000008
+    ]
+  },
+  "saved_loop_axis_residuals": {
+    "left_driven": {
+      "projected_xy_delta_mm": [
+        -0.014583147827373466,
+        0.1708200173167853
+      ],
+      "projected_axis_misalignment_mm": 0.17144137924276584
+    },
+    "left_auxiliary": {
+      "projected_xy_delta_mm": [
+        1.4210854715202004e-14,
+        2.842170943040401e-14
+      ],
+      "projected_axis_misalignment_mm": 3.1776437161565096e-14
+    },
+    "right_driven": {
+      "projected_xy_delta_mm": [
+        -0.0003331747743047231,
+        0.15271582496610847
+      ],
+      "projected_axis_misalignment_mm": 0.1527161884035524
+    },
+    "right_auxiliary": {
+      "projected_xy_delta_mm": [
+        7.105427357601002e-15,
+        0.0
+      ],
+      "projected_axis_misalignment_mm": 7.105427357601002e-15
+    }
+  },
+  "cached_shapes": {
+    "GripperBot.FCStd": {
+      "volume_mm3": 30622.375656273678,
+      "bounds_mm": {
+        "XMin": -35.947322617113855,
+        "XMax": 35.947322617113855,
+        "YMin": -1.6477050759278008e-15,
+        "YMax": 56.64784400584788,
+        "ZMin": -2.220446049250313e-16,
+        "ZMax": 19.962180000000004
+      },
+      "large_planar_faces": []
+    },
+    "GripperArm.FCStd": {
+      "volume_mm3": 839.6484003078497,
+      "bounds_mm": {
+        "XMin": -3.7290826804738146,
+        "XMax": 3.7290826804738146,
+        "YMin": -3.7290826804738146,
+        "YMax": 38.729082680466774,
+        "ZMin": -1.1102230246251565e-16,
+        "ZMax": 5.0
+      },
+      "large_planar_faces": []
+    },
+    "GripperActiveArm.FCStd": {
+      "volume_mm3": 2591.363809825242,
+      "bounds_mm": {
+        "XMin": -15.399999999999999,
+        "XMax": 38.729082680466774,
+        "YMin": -15.399999999999999,
+        "YMax": 15.399999999999999,
+        "ZMin": -5.999999999062311e-07,
+        "ZMax": 5.000000004982114
+      },
+      "large_planar_faces": []
+    },
+    "GripperPassiveArm.FCStd": {
+      "volume_mm3": 3532.8022111270066,
+      "bounds_mm": {
+        "XMin": -15.399999999999999,
+        "XMax": 38.52176379979863,
+        "YMin": -15.399999999999999,
+        "YMax": 15.399999999999999,
+        "ZMin": -6.000006644302225e-07,
+        "ZMax": 5.000000000000003
+      },
+      "large_planar_faces": []
+    },
+    "GripperFinger.FCStd": {
+      "volume_mm3": 12593.042562615727,
+      "bounds_mm": {
+        "XMin": -1.5242557054092885,
+        "XMax": 18.5,
+        "YMin": -1.78000000751573e-15,
+        "YMax": 61.524255705409296,
+        "ZMin": -4.440892098500626e-16,
+        "ZMax": 15.5
+      },
+      "large_planar_faces": [
+        {
+          "face": 1,
+          "normal": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "center_mm": [
+            18.5,
+            37.17646587266495,
+            7.75
+          ],
+          "area_mm2": 679.6581853071796
+        },
+        {
+          "face": 2,
+          "normal": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "center_mm": [
+            10.522311563894846,
+            28.910800223575077,
+            0.0
+          ],
+          "area_mm2": 822.2885019781747
+        },
+        {
+          "face": 6,
+          "normal": [
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "center_mm": [
+            8.967748331629807,
+            14.296161591958805,
+            5.075
+          ],
+          "area_mm2": 469.1314108019958
+        },
+        {
+          "face": 9,
+          "normal": [
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "center_mm": [
+            10.519383559926194,
+            28.86110110547779,
+            15.5
+          ],
+          "area_mm2": 825.2845566186414
+        },
+        {
+          "face": 10,
+          "normal": [
+            0.0,
+            -0.0,
+            -1.0
+          ],
+          "center_mm": [
+            8.967748331629808,
+            14.296161591958805,
+            10.424999999999999
+          ],
+          "area_mm2": 469.1314108019959
+        },
+        {
+          "face": 25,
+          "normal": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "center_mm": [
+            0.0,
+            23.86965164710337,
+            7.749999999999999
+          ],
+          "area_mm2": 330.1250000000001
+        }
+      ]
+    }
+  },
+  "ideal_model": {
+    "assumed_symmetric_driven_pivots_mm": [
+      [
+        -14.5,
+        32.5
+      ],
+      [
+        14.5,
+        32.5
+      ]
+    ],
+    "auxiliary_pivots_mm": [
+      [
+        -6,
+        51
+      ],
+      [
+        6,
+        51
+      ]
+    ],
+    "link_length_mm": 35,
+    "finger_pivot_delta_mm": [
+      8.5,
+      18.5
+    ],
+    "contact_face_source_x_mm": 18.5,
+    "gap_formula_mm": "70*cos(q)",
+    "q_definition": "ideal closing q from outward-horizontal links; not servo angle",
+    "study_interval_rad": "0 <= q < pi/2; not a physical travel limit",
+    "parallelism": "constant finger orientation; assumed uncrossed parallelogram branch",
+    "actual_saved_geometry_loop_solved": false,
+    "physical_parallelism_or_stroke_qualified": false
+  },
+  "remaining_gates": [
+    "Reconcile saved servo axis -14.515mm and gear/link phase with nominal parallelogram",
+    "Joint clearance, gear contact, collision/stops, deflection and servo zero/range",
+    "Verify jaw pads, gripping force and payload retention independently",
+    "Integrate jaw hardware/mass after phase and pivot ownership reconciliation"
+  ]
+}

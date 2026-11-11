@@ -14,6 +14,7 @@ import math
 import re
 import xml.etree.ElementTree as ET
 import zipfile
+from collections import Counter
 from pathlib import Path
 
 THOR_REVISION = "286b081fe6f056d87c379b884781ef77ff6a0159"
@@ -27,6 +28,23 @@ SELECTED_LCS = {
     "AssemblyArt4": ("LCS_Art3Fix", "LCS_Art56Fix"),
     "AssemblyArt56": ("LCS_Art4Fix",),
 }
+# Datum/reference/support objects can be installed alongside physical leaves.
+# PartDesign features are deliberately absent: a Pad can be a directly installed
+# terminal solid, even when it is not enclosed by a PartDesign::Body.
+NONPHYSICAL_TERMINAL_TYPES = frozenset(
+    {
+        "App::Line",
+        "App::Origin",
+        "App::Plane",
+        "App::Point",
+        "PartDesign::CoordinateSystem",
+        "PartDesign::Line",
+        "PartDesign::Plane",
+        "PartDesign::Point",
+        "Sketcher::SketchObject",
+        "Spreadsheet::Sheet",
+    }
+)
 
 
 def number(expression: str, pi: float) -> float:
@@ -285,6 +303,8 @@ def installed_leaf_instances(report: dict) -> dict:
     root_reference = f"{master}::Model"
     leaves, missing, errors = [], [], []
     excluded_construction = []
+    terminal_types = Counter()
+    nonphysical_types = Counter()
     seen = set()
     active = {
         "AssemblyBase": 0,
@@ -365,8 +385,15 @@ def installed_leaf_instances(report: dict) -> dict:
         if identity in seen:
             return
         seen.add(identity)
+        terminal_types[object_type] += 1
         # Bodies are leaves, even though Group includes sketches/features.
         # Geometry histories and OutList dependencies must not be traversed.
+        variables_object = object_type == "App::FeaturePython" and obj.get("name") == "Variables"
+        if obj.get("volume_mm3") is None and (
+            object_type in NONPHYSICAL_TERMINAL_TYPES or variables_object
+        ):
+            nonphysical_types[object_type] += 1
+            return
         if obj.get("shape_error"):
             errors.append(
                 {
@@ -377,7 +404,7 @@ def installed_leaf_instances(report: dict) -> dict:
             )
             return
         volume = obj.get("volume_mm3")
-        if volume is None and (object_type.startswith("Part::") or object_type == "App::Link"):
+        if volume is None:
             errors.append(
                 {
                     "reference": reference,
@@ -434,6 +461,8 @@ def installed_leaf_instances(report: dict) -> dict:
         "missing_object_records": sorted(set(missing)),
         "excluded_construction_sources": excluded_construction,
         "errors": errors,
+        "terminal_type_counts": dict(sorted(terminal_types.items())),
+        "nonphysical_terminal_type_counts": dict(sorted(nonphysical_types.items())),
         "body_grouping_assumption": (
             "Master Model subassembly membership; wrist internals unresolved"
         ),
@@ -474,14 +503,18 @@ def main() -> None:
         "--native-report", type=Path, help="restored native audit JSON for installed leaves"
     )
     parser.add_argument(
-        "--shape-report", type=Path, help="optional filtered native shape supplement"
+        "--shape-report",
+        type=Path,
+        action="append",
+        default=[],
+        help="filtered native shape supplement; repeat to overlay multiple captures",
     )
     args = parser.parse_args()
     result = extract(args.source, args.urdf, args.inventory)
     if args.native_report:
         native = json.loads(args.native_report.read_text())
-        if args.shape_report:
-            native = merge_native_reports(native, json.loads(args.shape_report.read_text()))
+        for shape_report in args.shape_report:
+            native = merge_native_reports(native, json.loads(shape_report.read_text()))
         result["native_installed_instances"] = installed_leaf_instances(native)
     print(json.dumps(result, indent=2, allow_nan=False))
 

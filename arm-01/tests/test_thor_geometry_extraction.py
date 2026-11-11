@@ -202,6 +202,123 @@ def test_native_partial_restore_rejected_and_missing_geometry_reported():
     assert result["errors"][0]["reason"] == "bad geometry"
 
 
+def terminal_report(*leaves):
+    return {
+        "restore_completed": True,
+        "master_document": "Assembly",
+        "documents": [
+            {
+                "name": "Assembly",
+                "objects": [
+                    {
+                        "name": "Model",
+                        "type": "App::Part",
+                        "group_members": [f"Assembly::{leaf['name']}" for leaf in leaves],
+                    },
+                    *leaves,
+                ],
+            }
+        ],
+    }
+
+
+def test_directly_installed_partdesign_pad_missing_inventory_fails_closed():
+    # A terminal Pad in an App::Part is physical even without a Body wrapper.
+    report = terminal_report(
+        {"name": "Belt", "type": "PartDesign::Pad"},
+        {"name": "LCS_Belt", "type": "PartDesign::CoordinateSystem"},
+        {"name": "HoleAxis", "type": "PartDesign::Line"},
+        {"name": "Sketch", "type": "Sketcher::SketchObject"},
+    )
+    result = TOOLS["installed_leaf_instances"](report)
+    assert result["instance_count"] == 0
+    assert result["errors"] == [
+        {
+            "reference": "Assembly::Belt",
+            "instance_path": "Assembly::Model/Assembly::Belt",
+            "reason": "physical leaf lacks native shape inventory",
+        }
+    ]
+    assert result["terminal_type_counts"]["PartDesign::Pad"] == 1
+    assert result["nonphysical_terminal_type_counts"] == {
+        "PartDesign::CoordinateSystem": 1,
+        "PartDesign::Line": 1,
+        "Sketcher::SketchObject": 1,
+    }
+
+
+def test_directly_installed_pad_is_retained_without_traversing_its_sketch():
+    result = TOOLS["installed_leaf_instances"](
+        terminal_report(
+            {
+                "name": "Belt",
+                "type": "PartDesign::Pad",
+                "out_list": ["Assembly::Sketch"],
+                "volume_mm3": 2,
+                "solid_count": 1,
+                "shape_center_of_mass_mm": [1, 2, 3],
+                "shape_valid": True,
+            }
+        )
+    )
+    assert result["instance_count"] == 1
+    assert result["mounted_bodies"][0]["zero_world_com_m"] == [0.001, 0.002, 0.003]
+    assert not result["errors"] and not result["missing_object_records"]
+
+
+def test_unknown_terminal_and_nonvariables_python_object_are_not_silently_dropped():
+    result = TOOLS["installed_leaf_instances"](
+        terminal_report(
+            {"name": "Variables", "type": "App::FeaturePython"},
+            {"name": "CustomGeometry", "type": "App::FeaturePython"},
+            {"name": "NewType", "type": "Custom::PotentialSolid"},
+        )
+    )
+    assert {row["reference"] for row in result["errors"]} == {
+        "Assembly::CustomGeometry",
+        "Assembly::NewType",
+    }
+    assert result["nonphysical_terminal_type_counts"] == {"App::FeaturePython": 1}
+
+
+def test_v2_inventory_preserves_prior_geometry_and_adds_both_native_belt_instances():
+    import hashlib
+
+    directory = Path(__file__).parents[1] / "hardware" / "cad"
+    historical_path = directory / "thor-mounted-geometry.json"
+    historical = json.loads(historical_path.read_text())
+    corrected = json.loads((directory / "thor-mounted-geometry-v2.json").read_text())
+    assert corrected["mounted_bodies"][:516] == historical["mounted_bodies"]
+    assert corrected["instance_count"] == len(corrected["mounted_bodies"]) == 518
+    assert len({row["instance_id"] for row in corrected["mounted_bodies"]}) == 518
+    assert not corrected["errors"] and not corrected["missing_object_records"]
+    added = corrected["mounted_bodies"][516:]
+    assert {row["instance_id"] for row in added} == {
+        "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Belt_GT2_208mm/AssemblyArt4::Pad046",
+        "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Belt_GT2_208mm001/AssemblyArt4::Pad046",
+    }
+    native_path = directory / "thor-wrist-belt-native-validation.json"
+    native = json.loads(native_path.read_text())
+    assert native["status"] == "complete" and native["restore_completed"]
+    assert native["audit_mode"] == "none" and not native["saved_source_changes"]
+    shape = native["documents"][0]["objects"][0]
+    assert shape["shape_valid"] and not shape["shape_null"] and shape["solid_count"] == 1
+    for belt in added:
+        assert belt["object_type"] == "PartDesign::Pad"
+        assert belt["volume_mm3"] == shape["volume_mm3"]
+        assert belt["solid_count"] == shape["solid_count"]
+        assert belt["shape_valid"] and belt["native_state"] == ["Touched"]
+    provenance = corrected["completeness_correction"]
+    assert (
+        provenance["historical_inventory_sha256"]
+        == hashlib.sha256(historical_path.read_bytes()).hexdigest()
+    )
+    assert (
+        provenance["new_shape_validation_report_sha256"]
+        == hashlib.sha256(native_path.read_bytes()).hexdigest()
+    )
+
+
 def test_source_leaf_fallback_removes_or_retains_source_placement():
     def frame(x, y, z):
         return {"matrix": [[1, 0, 0, x], [0, 1, 0, y], [0, 0, 1, z], [0, 0, 0, 1]]}

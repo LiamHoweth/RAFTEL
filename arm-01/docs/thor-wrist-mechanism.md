@@ -1,5 +1,7 @@
 # Thor wrist moving-body membership
 
+**Current analysis:** the [v2 inventory](thor-geometry-completeness.md) and [moving-mass correction](thor-moving-mass-closure.md) supersede this historical516-leaf ledger with518 leaves, adding two belts and four input-shaft motion assignments. The66 Art56 assignments below remain applicable.
+
 The pinned native assembly supports a **component-specific conditional gravity model**, not a verified articulated mechanism. The [membership ledger](../hardware/cad/thor-wrist-membership.json) accounts for all 516 mounted leaves: 450 upstream leaves retain their existing joint assignments; the 66 Art56 leaves separate into 7 fold-carrier leaves, 47 tool/roll leaves, 10 side-shaft rotor leaves and 2 bearing COM approximations. No original CAD placement or geometry is changed.
 
 ## Evidence and frame
@@ -20,7 +22,7 @@ All coordinates here are native CAD world coordinates in metres. The fold axis i
 
 The complete exact IDs are in the ledger, including `Group003/Screw026` and both collar leaves. There are no unmatched Art56 leaves. Assigning every Art56 leaf to the same roll body would wrongly move the ring, clamps and side shafts with q6.
 
-## Differential phase remains conditional
+## Ideal handedness selected; physical calibration remains open
 
 The [transmission study](thor-transmission-study.md) establishes 15/30 bevel teeth and 20/40 belt teeth. The two small bevel gears spin about the fold-axis line; their CAD attachment parent does not make them rigid parts of the carrier. Each attached pulley, collar and locking screw follows its side shaft. Their CAD COMs have small eccentricities, so preserving their saved zero phase matters even for gravity.
 
@@ -29,12 +31,12 @@ For a conventional ideal 15/30 bevel differential, expressed about a **common na
 ```text
 alpha_negative_y = q5 + s*2*q6
 alpha_positive_y = q5 - s*2*q6
-s = +1 or -1 (mesh handedness / positive roll convention unresolved)
+s = +1 is source-supported ideal arrangement; -1 retained as alternate-sign sensitivity
 ```
 
 At q6=0 both side shafts advance by q5: rigidly rotating the entire differential is a necessary consistency case. The controller convention `u=-q5+2*q6`, `v=q5+2*q6` uses opposed shaft coordinates or another sign convention; treating both u and v as native +Y rotations fails that case. The physical motor belt stage adds a magnitude factor 2 but does not establish shaft assignment, polarity or routing. Preserve the existing conditional rotor-to-joint map until these references are reconciled.
 
-A phase scenario may select `s=+1` and must label that choice as an assumption; evaluate `s=-1` as sensitivity. Neither selection verifies gear contact, backlash, manufactured geometry or firmware calibration. A mass total can be complete while a full articulated gravity result remains conditional.
+The [native handedness diagnostic](thor-wrist-handedness.md) now supports `s=+1` for the intended source arrangement; `s=-1` remains sensitivity. Existing interference and inferred pitch-apex offsets prevent exact conjugate-mesh acceptance. Neither phase verifies backlash, manufactured geometry or firmware calibration. A mass total can be complete while a full articulated gravity result remains conditional.
 
 The central bearing COM follows fold motion and is unchanged by roll because its COM is on the roll axis. The fold bearing COM lies on the fold axis and is unchanged by either wrist coordinate. This supports a whole-bearing **COM approximation for gravity**, not rigid race ownership, rotational inertia, friction or contact analysis. The central screw is assigned to the plate by its saved attachment; its essentially on-axis COM makes roll phase immaterial to this gravity approximation.
 
@@ -42,4 +44,4 @@ The central bearing COM follows fold motion and is unchanged by roll because its
 
 The upstream motor bodies retain their existing assembly mass membership. Motor-internal rotors, bearing races and belt material circulation are not extracted into new inertia bodies. A belt circulating along a fixed path has a fixed spatial COM under the uniform-belt approximation. The gripper servo and all jaw links remain at the saved jaw pose; varying jaw opening requires another linkage model.
 
-The wrist-lane request for the official [assembly instructions](http://thor.angel-lm.com/documentation/assembly/) failed to fetch (timeout/TLS handshake failure), so this wrist classification adds no website-derived mechanism evidence. A separate request succeeded in the elbow lane; the [elbow mechanism study](thor-elbow-mechanism.md) records that limited website evidence and its version differences from the pinned CAD. The native wrist mounting evidence remains reproducible without that page. The remaining closure is a selected native mesh/contact or independently checked articulation probe to determine the positive-roll side-shaft signs, followed by gripper motion, race separation if inertia is required, and physical calibration. No actuation or manufacturing qualification is claimed.
+The wrist-lane request for the official [assembly instructions](http://thor.angel-lm.com/documentation/assembly/) failed to fetch (timeout/TLS handshake failure), so this wrist classification adds no website-derived mechanism evidence. A separate request succeeded in the elbow lane; the [elbow mechanism study](thor-elbow-mechanism.md) records that limited website evidence and its version differences from the pinned CAD. The native wrist mounting evidence remains reproducible without that page. The [handedness probe](thor-wrist-handedness.md), [moving-mass closure](thor-moving-mass-closure.md) and [jaw study](thor-gripper-kinematics.md) provide the subsequent source/ideal-model evidence. Exact gear contact, saved jaw-loop closure, race separation for inertia and physical calibration remain open. No actuation or manufacturing qualification is claimed.

@@ -16,6 +16,8 @@ The first implementation is a lightweight Python task prototype. It accepts synt
 | Nominal Thor FK | `src/raftel_arm01/kinematics/thor_model.py` | Pinned source forward transforms; native zero-pose axis-line cross-check, no calibrated limits or IK |
 | CAD/load tooling | `tools/extract_thor_geometry.py`, `tools/thor_load_analysis.py` | Mounted instances, provenance-bearing mass scenarios, gravity moments and explicit unresolved wrist contributions |
 | Thor drive convention | `src/raftel_arm01/kinematics/thor_drive.py` | Pure six-coordinate/seven-channel algebra; no spatial FK/IK or hardware commands |
+| Conditional physical transmissions | `src/raftel_arm01/kinematics/thor_transmission.py` | Explicit wrist shaft signs and elbow carrier forward/inverse coordinates with virtual-work effort maps; no calibrated addresses |
+| Ideal jaw linkage | `src/raftel_arm01/kinematics/thor_gripper.py` | Conditional parallelogram geometry and derivatives; saved native loop closure and servo calibration remain unresolved |
 | Task execution | `src/raftel_arm01/tasks/sorter.py` | Sorting progression, bounded handling of failures and recorded outcomes |
 | CLI and evaluation | `src/raftel_arm01/cli.py` | Scenario setup, structured events and run summary |
 
