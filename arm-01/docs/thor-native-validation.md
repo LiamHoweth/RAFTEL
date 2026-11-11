@@ -1,4 +1,6 @@
-# Thor native CAD validation — partial result
+# Thor initial native CAD validation — historical partial result
+
+Follow-up: the [compatible assembly baseline](thor-assembly-compatibility.md) now restores and recalculates using pinned addons and a static Art1 snapshot. The initial failed attempt below is preserved as historical evidence.
 
 Checked 2026-11-11 against Thor `286b081fe6f056d87c379b884781ef77ff6a0159`, in an isolated working copy. **The complete assembly is not validated. No CAD changes were saved, and no physical operation occurred.**
 

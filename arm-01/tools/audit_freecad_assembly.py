@@ -178,7 +178,11 @@ def _is_terminal(obj) -> bool:
     # is not consumption; Bodies and Links are explicitly represented above.
     return not any(
         parent.TypeId == "PartDesign::Body"
-        or (hasattr(parent, "isDerivedFrom") and parent.isDerivedFrom("Part::Feature"))
+        or (
+            hasattr(parent, "isDerivedFrom")
+            and parent.isDerivedFrom("Part::Feature")
+            and not parent.isDerivedFrom("Part::Datum")
+        )
         for parent in getattr(obj, "InList", [])
     )
 

@@ -281,3 +281,31 @@ def test_invalid_checkpoint_interval_rejected_before_native_import(tmp_path, int
     source.touch()
     with pytest.raises(ValueError, match="checkpoint interval"):
         TOOLS["audit"](source, checkpoint_interval_s=interval)
+
+
+def test_terminal_imported_part_is_not_consumed_by_datum_references():
+    import json
+    from types import SimpleNamespace
+
+    evidence = json.loads(
+        (Path(__file__).with_name("fixtures") / "freecad_datum_inheritance_native.json").read_text()
+    )
+    for native in evidence:
+        datum = SimpleNamespace(
+            TypeId=native["type"],
+            isDerivedFrom=lambda name, row=native: row["derived"].get(name, False),
+        )
+        motor = SimpleNamespace(
+            TypeId="Part::Feature",
+            InList=[datum],
+            isDerivedFrom=lambda name: name == "Part::Feature",
+        )
+        assert datum.isDerivedFrom("Part::Feature") and datum.isDerivedFrom("Part::Datum")
+        assert TOOLS["_is_terminal"](motor)
+    true_consumer = SimpleNamespace(
+        TypeId="Part::Cut", isDerivedFrom=lambda name: name == "Part::Feature"
+    )
+    motor.InList.append(true_consumer)
+    assert not TOOLS["_is_terminal"](motor)
+    motor.InList = [SimpleNamespace(TypeId="PartDesign::Body")]
+    assert not TOOLS["_is_terminal"](motor)

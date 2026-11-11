@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "validation_class": "compatible_native_assembly_changed_recompute_not_physical_validation",
+  "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+  "modified_part": "Art1Body.fcstd static saved-solid/datum snapshot; original procedural history preserved separately",
+  "original_source_checkout_clean": true,
+  "compatibility_snapshot_geometry_and_datums_match_strictly_verified_candidate": true,
+  "snapshot_saved_body_brep_sha256": "2289c4c141051a682ebe6e6ec57873c93f7fa368a3d27a6cad0742e0c33d28d4",
+  "referenced_document_count": 53,
+  "native_object_count": 3001,
+  "recomputed_feature_count": 2129,
+  "object_states": {
+    "Up-to-date": 3001
+  },
+  "native_audit_mode": "changed",
+  "shape_topology_of_all_objects_validated": false,
+  "errors": [],
+  "raw_report_sha256": "2cc14a68fa7ae98577ad7b52f41746f2b51d49447c6dc45b1722b446312dd52e",
+  "addon_pins": {
+    "FastenersWB": "fddd07af422b7d3a69098b32333711c5eeae184c",
+    "Gears": "ffe86c85e8061546a3fbaa598993d8e1be2b0de2"
+  },
+  "source_files_saved_by_full_assembly_audit": false,
+  "source_history_fully_rebuilt": false,
+  "remaining_limits": [
+    "Art1 snapshot is static, not repaired editable procedural history",
+    "No hardware or calibrated axis/limit verification",
+    "Native assembly does not establish collision-free motion or payload qualification"
+  ]
+}

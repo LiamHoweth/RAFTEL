@@ -1,0 +1,38 @@
+[
+  {
+    "type": "PartDesign::CoordinateSystem",
+    "derived": {
+      "Part::Feature": true,
+      "Part::Datum": true,
+      "PartDesign::Feature": false,
+      "App::GeoFeature": true
+    }
+  },
+  {
+    "type": "PartDesign::Plane",
+    "derived": {
+      "Part::Feature": true,
+      "Part::Datum": true,
+      "PartDesign::Feature": false,
+      "App::GeoFeature": true
+    }
+  },
+  {
+    "type": "PartDesign::Line",
+    "derived": {
+      "Part::Feature": true,
+      "Part::Datum": true,
+      "PartDesign::Feature": false,
+      "App::GeoFeature": true
+    }
+  },
+  {
+    "type": "PartDesign::Point",
+    "derived": {
+      "Part::Feature": true,
+      "Part::Datum": true,
+      "PartDesign::Feature": false,
+      "App::GeoFeature": true
+    }
+  }
+]

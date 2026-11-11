@@ -1,0 +1,374 @@
+{
+  "schema_version": 1,
+  "thor_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+  "evidence_class": "pinned native XML and supplier listing; not physically calibrated transmission",
+  "gears": [
+    {
+      "file": "Art1Bot.fcstd",
+      "object": "involutegear",
+      "teeth": 50,
+      "module": 2.0,
+      "height": 15.0,
+      "beta": -32.0,
+      "dw": 100.0,
+      "pressure_angle": 20.0,
+      "version": "0.0.3"
+    },
+    {
+      "file": "Art1GearMotor.fcstd",
+      "object": "involutegear",
+      "teeth": 10,
+      "module": 2.0,
+      "height": 12.0,
+      "beta": -32.0,
+      "dw": 20.0,
+      "pressure_angle": 20.0,
+      "version": "0.0.3"
+    },
+    {
+      "file": "Art2BodyA.fcstd",
+      "object": "involutegear",
+      "teeth": 60,
+      "module": 2.0,
+      "height": 15.5,
+      "beta": -32.0,
+      "dw": 120.0,
+      "pressure_angle": 20.0,
+      "version": "0.0.3"
+    },
+    {
+      "file": "Art2MotorGear.fcstd",
+      "object": "involutegear",
+      "teeth": 10,
+      "module": 2.0,
+      "height": 15.0,
+      "beta": -32.0,
+      "dw": 20.0,
+      "pressure_angle": 20.0,
+      "version": "0.0.3"
+    },
+    {
+      "file": "Art4MotorGear.fcstd",
+      "object": "involutegear",
+      "teeth": 10,
+      "module": 1.8,
+      "height": 13.0,
+      "beta": -29.5,
+      "dw": 18.0,
+      "pressure_angle": 20.0,
+      "version": "0.0.3"
+    },
+    {
+      "file": "Art4TransmissionColumn.fcstd",
+      "object": "involutegear",
+      "teeth": 20,
+      "module": 1.8,
+      "height": 17.0,
+      "beta": 29.5,
+      "dw": 36.0,
+      "pressure_angle": 20.0,
+      "version": "0.0.3"
+    },
+    {
+      "file": "Art56GearPlate.fcstd",
+      "object": "bevelgear",
+      "teeth": 30,
+      "module": 2.85,
+      "height": 10.2,
+      "beta": -10.0,
+      "pressure_angle": 20.0,
+      "version": "0.0.3"
+    },
+    {
+      "file": "Art56SmallGear.fcstd",
+      "object": "bevelgear001",
+      "teeth": 15,
+      "module": 2.59,
+      "height": 12.4,
+      "beta": 10.0,
+      "pressure_angle": 20.0,
+      "version": "0.0.3"
+    },
+    {
+      "file": "GripperActiveArm.FCStd",
+      "object": "involutegear",
+      "teeth": 26,
+      "module": 1.1,
+      "height": 5.0,
+      "beta": 0.0,
+      "dw": 28.6,
+      "pressure_angle": 20.0,
+      "version": "0.0.3"
+    },
+    {
+      "file": "GripperPassiveArm.FCStd",
+      "object": "involutegear",
+      "teeth": 26,
+      "module": 1.1,
+      "height": 5.0,
+      "beta": 0.0,
+      "dw": 28.6,
+      "pressure_angle": 20.0,
+      "version": "0.0.3"
+    }
+  ],
+  "assembly_attachments": [
+    {
+      "file": "AssemblyArt1.FCStd",
+      "object": "Nema17_GearBox001",
+      "AttachedTo": "Art1Body_Art1Body#LCS_Motor2A",
+      "AttachedBy": "#LCS_Nema17_GearBox",
+      "placement_expressions": [
+        {
+          "path": "Placement",
+          "expression": "Art1Body_Art1Body.Placement * Art1Body#LCS_Motor2A.Placement * AttachmentOffset * LCS_Nema17_GearBox.Placement ^ -1"
+        }
+      ]
+    },
+    {
+      "file": "AssemblyArt1.FCStd",
+      "object": "Nema17_GearBox002",
+      "AttachedTo": "Art1Body_Art1Body#LCS_Motor2V",
+      "AttachedBy": "#LCS_Nema17_GearBox",
+      "placement_expressions": [
+        {
+          "path": "Placement",
+          "expression": "Art1Body_Art1Body.Placement * Art1Body#LCS_Motor2V.Placement * AttachmentOffset * LCS_Nema17_GearBox.Placement ^ -1"
+        }
+      ]
+    },
+    {
+      "file": "AssemblyArt1.FCStd",
+      "object": "Nema17_GearBox003",
+      "AttachedTo": "Art1Body_Art1Body#LCS_Motor3",
+      "AttachedBy": "#LCS_Nema17_GearBox",
+      "placement_expressions": [
+        {
+          "path": "Placement",
+          "expression": "Art1Body_Art1Body.Placement * Art1Body#LCS_Motor3.Placement * AttachmentOffset * LCS_Nema17_GearBox.Placement ^ -1"
+        }
+      ]
+    },
+    {
+      "file": "AssemblyArt1.FCStd",
+      "object": "Art2MotorGear_Art2MotorGear",
+      "AttachedTo": "Nema17_GearBox002#LCS_Nema17_Gear",
+      "AttachedBy": "#LCS_Art2MotorGear",
+      "placement_expressions": [
+        {
+          "path": "Placement",
+          "expression": "Nema17_GearBox002.Placement * LCS_Nema17_Gear.Placement * AttachmentOffset * Art2MotorGear#LCS_Art2MotorGear.Placement ^ -1"
+        }
+      ]
+    },
+    {
+      "file": "AssemblyArt1.FCStd",
+      "object": "Art2MotorGear_Art2MotorGear001",
+      "AttachedTo": "Nema17_GearBox001#LCS_Nema17_Gear",
+      "AttachedBy": "#LCS_Art2MotorGear",
+      "placement_expressions": [
+        {
+          "path": "Placement",
+          "expression": "Nema17_GearBox001.Placement * LCS_Nema17_Gear.Placement * AttachmentOffset * Art2MotorGear#LCS_Art2MotorGear.Placement ^ -1"
+        }
+      ]
+    },
+    {
+      "file": "AssemblyArt1.FCStd",
+      "object": "Pulley_GT2x20_Modified001",
+      "AttachedTo": "Nema17_GearBox003#LCS_Nema17_Gear",
+      "AttachedBy": "#LCS_Pulley_GT2x20",
+      "placement_expressions": [
+        {
+          "path": "Placement",
+          "expression": "Nema17_GearBox003.Placement * LCS_Nema17_Gear.Placement * AttachmentOffset * LCS_Pulley_GT2x20.Placement ^ -1"
+        }
+      ]
+    },
+    {
+      "file": "AssemblyArt3.FCStd",
+      "object": "Art3Pulley_Art3Pulley",
+      "AttachedTo": "Art3Body_Art3Body#LCS_Pulley",
+      "AttachedBy": "#LCS_Art3Pulley",
+      "placement_expressions": [
+        {
+          "path": "Placement",
+          "expression": "Art3Body_Art3Body.Placement * Art3Body#LCS_Pulley.Placement * AttachmentOffset * Art3Pulley#LCS_Art3Pulley.Placement ^ -1"
+        }
+      ]
+    },
+    {
+      "file": "AssemblyArt3.FCStd",
+      "object": "Art4MotorGear_Art4MotorGear",
+      "AttachedTo": "Stepper_Nema17x34001#LCS_Gear",
+      "AttachedBy": "#LCS_Art4MotorGear",
+      "placement_expressions": [
+        {
+          "path": "Placement",
+          "expression": "Stepper_Nema17x34001.Placement * LCS_Gear.Placement * AttachmentOffset * Art4MotorGear#LCS_Art4MotorGear.Placement ^ -1"
+        }
+      ]
+    },
+    {
+      "file": "AssemblyArt4.FCStd",
+      "object": "Pulley_GT2x20001",
+      "AttachedTo": "Stepper_Nema17x34002#LCS_Shaft",
+      "AttachedBy": "#LCS_0002",
+      "placement_expressions": [
+        {
+          "path": "Placement",
+          "expression": "Stepper_Nema17x34002.Placement * LCS_Shaft.Placement * AttachmentOffset * LCS_0002.Placement ^ -1"
+        }
+      ]
+    },
+    {
+      "file": "AssemblyArt4.FCStd",
+      "object": "Pulley_GT2x20002",
+      "AttachedTo": "Stepper_Nema17x34001#LCS_Shaft",
+      "AttachedBy": "#LCS_0002",
+      "placement_expressions": [
+        {
+          "path": "Placement",
+          "expression": "Stepper_Nema17x34001.Placement * LCS_Shaft.Placement * AttachmentOffset * LCS_0002.Placement ^ -1"
+        }
+      ]
+    },
+    {
+      "file": "AssemblyArt4.FCStd",
+      "object": "Belt_GT2_208mm",
+      "AttachedTo": "Pulley_GT2x20001#LCS_0002",
+      "AttachedBy": "#LCS_Belt_GT2_208mm",
+      "placement_expressions": [
+        {
+          "path": "Placement",
+          "expression": "Pulley_GT2x20001.Placement * LCS_0002.Placement * AttachmentOffset * LCS_Belt_GT2_208mm.Placement ^ -1"
+        }
+      ]
+    },
+    {
+      "file": "AssemblyArt4.FCStd",
+      "object": "Belt_GT2_208mm001",
+      "AttachedTo": "Pulley_GT2x20002#LCS_0002",
+      "AttachedBy": "#LCS_Belt_GT2_208mm",
+      "placement_expressions": [
+        {
+          "path": "Placement",
+          "expression": "Pulley_GT2x20002.Placement * LCS_0002.Placement * AttachmentOffset * LCS_Belt_GT2_208mm.Placement ^ -1"
+        }
+      ]
+    },
+    {
+      "file": "AssemblyArt56.FCStd",
+      "object": "Art56GearPlate_Art56GearPlate",
+      "AttachedTo": "Art56MotorCoverRing_Art56MotorCoverRing#LCS_BigGear",
+      "AttachedBy": "#LCS_Art56GearPlate",
+      "placement_expressions": [
+        {
+          "path": "Placement",
+          "expression": "Art56MotorCoverRing_Art56MotorCoverRing.Placement * Art56MotorCoverRing#LCS_BigGear.Placement * AttachmentOffset * Art56GearPlate#LCS_Art56GearPlate.Placement ^ -1"
+        }
+      ]
+    },
+    {
+      "file": "AssemblyArt56.FCStd",
+      "object": "Art56SmallGear_Art56SmallGear",
+      "AttachedTo": "Art56MotorCoverRing_Art56MotorCoverRing#LCS_SmallGear2",
+      "AttachedBy": "#LCS_Art56SmallGear",
+      "placement_expressions": [
+        {
+          "path": "Placement",
+          "expression": "Art56MotorCoverRing_Art56MotorCoverRing.Placement * Art56MotorCoverRing#LCS_SmallGear2.Placement * AttachmentOffset * Art56SmallGear#LCS_Art56SmallGear.Placement ^ -1"
+        }
+      ]
+    },
+    {
+      "file": "AssemblyArt56.FCStd",
+      "object": "Art56SmallGear_Art56SmallGear001",
+      "AttachedTo": "Art56MotorCoverRing_Art56MotorCoverRing#LCS_SmallGear1",
+      "AttachedBy": "#LCS_Art56SmallGear",
+      "placement_expressions": [
+        {
+          "path": "Placement",
+          "expression": "Art56MotorCoverRing_Art56MotorCoverRing.Placement * Art56MotorCoverRing#LCS_SmallGear1.Placement * AttachmentOffset * Art56SmallGear#LCS_Art56SmallGear.Placement ^ -1"
+        }
+      ]
+    },
+    {
+      "file": "AssemblyArt56.FCStd",
+      "object": "GripperActiveArm_GripperActiveArm",
+      "AttachedTo": "ServomotorWheelHorn001#LCS_ActiveArm",
+      "AttachedBy": "#LCS_GripperActiveArm",
+      "placement_expressions": [
+        {
+          "path": "Placement",
+          "expression": "ServomotorWheelHorn001.Placement * LCS_ActiveArm.Placement * AttachmentOffset * GripperActiveArm#LCS_GripperActiveArm.Placement ^ -1"
+        }
+      ]
+    },
+    {
+      "file": "AssemblyArt56.FCStd",
+      "object": "Unnamed3_GripperPassiveArm",
+      "AttachedTo": "GripperBot_GripperBot#LCS_PassiveArm",
+      "AttachedBy": "#LCS_GripperPassiveArm",
+      "placement_expressions": [
+        {
+          "path": "Placement",
+          "expression": "GripperBot_GripperBot.Placement * GripperBot#LCS_PassiveArm.Placement * AttachmentOffset * GripperPassiveArm#LCS_GripperPassiveArm.Placement ^ -1"
+        }
+      ]
+    },
+    {
+      "file": "AssemblyArt56.FCStd",
+      "object": "GT2x40PulleyM4",
+      "AttachedTo": "Art56SmallGear_Art56SmallGear#LCS_Pulley",
+      "AttachedBy": "#LCS_Pulley_GT2x40M4",
+      "placement_expressions": [
+        {
+          "path": "Placement",
+          "expression": "Art56SmallGear_Art56SmallGear.Placement * Art56SmallGear#LCS_Pulley.Placement * AttachmentOffset * LCS_Pulley_GT2x40M4.Placement ^ -1"
+        }
+      ]
+    },
+    {
+      "file": "AssemblyArt56.FCStd",
+      "object": "GT2x40PulleyM005",
+      "AttachedTo": "Art56SmallGear_Art56SmallGear001#LCS_Pulley",
+      "AttachedBy": "#LCS_Pulley_GT2x40M4",
+      "placement_expressions": [
+        {
+          "path": "Placement",
+          "expression": "Art56SmallGear_Art56SmallGear001.Placement * Art56SmallGear#LCS_Pulley.Placement * AttachmentOffset * LCS_Pulley_GT2x40M4.Placement ^ -1"
+        }
+      ]
+    },
+    {
+      "file": "AssemblyBase.FCStd",
+      "object": "Art1GearMotor_Art1GearMotor",
+      "AttachedTo": "Stepper_Nema17x40001#LCS_Gear2",
+      "AttachedBy": "#LCS_Art1GearMotor",
+      "placement_expressions": [
+        {
+          "path": "Placement",
+          "expression": "Stepper_Nema17x40001.Placement * LCS_Gear2.Placement * AttachmentOffset * Art1GearMotor#LCS_Art1GearMotor.Placement ^ -1"
+        }
+      ]
+    }
+  ],
+  "supplier_pg5_declared_ratio": 5.18,
+  "q1_ideal_ratio": 5.0,
+  "q2_printed_branch_ideal_ratio": 6.0,
+  "q2_nominal_rotor_ratio_using_listing": 31.08,
+  "q3_ratio": null,
+  "q3_driving_gt2_teeth": 20,
+  "q3_drum_body_radius_mm": 37.0,
+  "q3_drum_flange_radius_mm": 40.0,
+  "q3_effective_pitch_radius_verified": false,
+  "q4_ideal_ratio": 2.0,
+  "wrist_belt_stage_ratio": 2.0,
+  "wrist_bevel_teeth_ratio": 2.0,
+  "wrist_physical_mapping_verified": false,
+  "gripper_gear_pair_teeth": [
+    26,
+    26
+  ]
+}

@@ -23,6 +23,8 @@ def run_audit(
     shape_scope: str = "terminal",
     validate_shapes: bool = False,
     timeout_s: float = 180,
+    document_names: tuple[str, ...] = (),
+    object_names: tuple[str, ...] = (),
 ) -> dict:
     """Preserve checkpoint and logs on timeout; never overwrite existing runs."""
     if not freecad.is_file() or not source.is_file():
@@ -51,6 +53,8 @@ def run_audit(
         RAFTEL_FREECAD_RECOMPUTE=recompute,
         RAFTEL_FREECAD_SHAPE_SCOPE=shape_scope,
         RAFTEL_FREECAD_VALIDATE_SHAPES=str(int(validate_shapes)),
+        RAFTEL_FREECAD_DOCUMENTS=",".join(document_names),
+        RAFTEL_FREECAD_OBJECTS=",".join(object_names),
         PYTHONNOUSERSITE="1",
     )
     command = [
@@ -106,6 +110,8 @@ def main() -> int:
     parser.add_argument("--shape-scope", choices=("none", "terminal", "all"), default="terminal")
     parser.add_argument("--validate-shapes", action="store_true")
     parser.add_argument("--timeout", type=float, default=180)
+    parser.add_argument("--document", action="append", default=[])
+    parser.add_argument("--object", action="append", default=[])
     args = parser.parse_args()
     try:
         metadata = run_audit(
@@ -117,6 +123,8 @@ def main() -> int:
             shape_scope=args.shape_scope,
             validate_shapes=args.validate_shapes,
             timeout_s=args.timeout,
+            document_names=tuple(args.document),
+            object_names=tuple(args.object),
         )
     except (ValueError, OSError) as error:
         parser.error(str(error))

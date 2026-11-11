@@ -2,11 +2,11 @@
 
 **Project:** ARM-01 BenchSort
 **Current phase:** Phase 1 — Engineering foundation
-**Last updated:** 2026-11-11 17:40:22 UTC
+**Last updated:** 2026-11-11 18:04:03 UTC
 **Overall status:** In Progress
 
 ## Current Objective
-Reproduce Thor's existing native CAD baseline before adapting it: open/recompute the complete assembly, extract traceable joint geometry and masses, and establish a Thor-specific load and cost model. Liam approved eight total actuators for this study; the six-arm-axis and parallel-gripper requirements remain. The logical sorting foundation is implemented and tested.
+Complete the CAD-derived geometry and conditional mass/load study using the compatible Thor assembly. The dedicated snapshot now restores/recalculates successfully; preserve the original parametric source and clearly separate its remaining history migration from the usable analysis baseline. Liam approved eight total actuators for this study; the six-arm-axis and parallel-gripper requirements remain. The logical sorting foundation is implemented and tested.
 
 ## Next 3 Actions for Liam
 1. Measure bench width/depth, desk thickness/material, rear clamp clearance and camera mounting clearance; provide measurements before mount design.
@@ -24,6 +24,8 @@ Reproduce Thor's existing native CAD baseline before adapting it: open/recompute
 - Active continuation: five agents investigate addon trust, failed features, incremental audit tooling, CAD/ROS geometry, and traceable load analysis. Root coordinates full native runs, integration, validation and publication.
 
 ## Completed and Verified
+- Whole compatible assembly:53 referenced documents,2,129 recomputed features,all3,001 objects Up-to-date; no audit/native feature errors. Uses pinned addons and exact static Art1 geometry/datum snapshot, not a rebuilt original Art1 history. See `arm-01/docs/thor-assembly-compatibility.md`.
+- Native bearing/shaft evidence corroborates all six zero-pose joint-axis lines and the CAD-to-ROS quarter-turn frame convention; actuator signs/limits remain uncalibrated. Geometry/load report integration is ongoing.
 - Continuation milestone: native addon trust resolved via standard `-M` registration, with pinned Fasteners and version-matched Gears0.0.3. Original involute and bevel gear parts forcibly recomputed successfully; no global trust changes or source saves. See `arm-01/docs/thor-dependency-compatibility.md`.
 - Incremental native audit/outer timeout runner now preserve checkpoints, feature state, proxy/placement evidence and logs; restore, changed and forced modes are separate. Focused guard/runner tests pass.
 - Pure Thor joint/channel conversion utility and 21 tests: paired shoulder validation, differential wrist modes, seeded algebraic round trips, finite input/overflow handling; no hardware commands. See `arm-01/docs/thor-joint-map.md`.
@@ -36,7 +38,7 @@ Reproduce Thor's existing native CAD baseline before adapting it: open/recompute
 - Reproducible full downstream static-torque and floor outer-bound analysis implemented (analytical estimates only).
 
 ## Blockers and Open Decisions
-- Remaining native compatibility: Art1Body contains legacy thickness/sketch rebuild failures. Cached-valid solids are not rebuild proof. Addon restoration is now resolved with pinned Fasteners and historical Gears; full assembly/snapshot validation is in progress. Preserve original history and do not disable global security.
+- Original Art1 editable history still needs legacy thickness/sketch migration. The separate static shape/datum snapshot is validated and the complete compatibility assembly recalculates; this is not a procedural repair of the original. Mass/COM assumptions, wrist downstream membership and physical calibration remain distinct open gates.
 - Thor is the first CAD study baseline; Liam explicitly permits eight total actuators. Measured geometry/masses, Thor-specific BOM, sustainable actuator output, parallel-gripper fit, license provenance, and physical equipment inventory remain open.
 
 ## Hardware and Purchasing Status
@@ -61,6 +63,7 @@ No hardware approved, purchased, received, or tested in this session.
 - [ ] Phase 7 — Reliability/mobile readiness
 
 ## Recent Engineering Log
+- 2026-11-11: Compatible whole-assembly changed recomputation completed:53documents,3,001 Up-to-date objects. Validated static Art1 geometry/datums, originalsource preserved; added Linux case-alias helper and documented operational CAD recipe. All current working-tree tests pass; geometry/mass/load integration continues.
 - 2026-11-11: Verified original gear parts with version-matched addon, implemented checkpointed cached/changed/forced audit and bounded outer runner, and identified Art1Body legacy rebuild failures separately from valid cached geometry. Publishing this tested tooling/dependency checkpoint while geometry/load work continues.
 - 2026-11-11: Resumed on Liam’s instruction with five agents; clean starting tree, preserved source baseline and55GiB free. Investigating native addon registration, exact thickness features and safer restore/recompute modes before extracting geometry/load results.
 - 2026-11-11: All four Linux Python CI jobs passed for eb2171a (94 tests). Saved final native diagnostics, preserved source checkouts and active tools, removed superseded installer and scratch helpers; free-space reserve remains above50GiB.

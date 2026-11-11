@@ -1,0 +1,258 @@
+{
+  "schema_version": 1,
+  "freecad_version": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "native_fixture_verified": true,
+  "saved_cad_files": false,
+  "cases": [
+    {
+      "name": "Source",
+      "shape_center_mm": [
+        11.0,
+        1.0,
+        1.0
+      ],
+      "placement_mm": [
+        10.0,
+        0.0,
+        0.0
+      ],
+      "placement_quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "global_placement_mm": [
+        10.0,
+        0.0,
+        0.0
+      ],
+      "link_placement_mm": null,
+      "link_transform": null
+    },
+    {
+      "name": "LinkFalse",
+      "shape_center_mm": [
+        1.0,
+        21.0,
+        1.0
+      ],
+      "placement_mm": [
+        0.0,
+        20.0,
+        0.0
+      ],
+      "placement_quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "global_placement_mm": null,
+      "link_placement_mm": [
+        0.0,
+        20.0,
+        0.0
+      ],
+      "link_transform": false
+    },
+    {
+      "name": "LinkTrue",
+      "shape_center_mm": [
+        11.0,
+        21.0,
+        1.0
+      ],
+      "placement_mm": [
+        0.0,
+        20.0,
+        0.0
+      ],
+      "placement_quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "global_placement_mm": null,
+      "link_placement_mm": [
+        0.0,
+        20.0,
+        0.0
+      ],
+      "link_transform": true
+    },
+    {
+      "name": "Child",
+      "shape_center_mm": [
+        11.0,
+        1.0,
+        1.0
+      ],
+      "placement_mm": [
+        10.0,
+        0.0,
+        0.0
+      ],
+      "placement_quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "global_placement_mm": [
+        110.0,
+        0.0,
+        0.0
+      ],
+      "link_placement_mm": null,
+      "link_transform": null
+    },
+    {
+      "name": "GroupLinkFalse",
+      "shape_center_mm": [
+        11.0,
+        21.0,
+        1.0
+      ],
+      "placement_mm": [
+        0.0,
+        20.0,
+        0.0
+      ],
+      "placement_quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "global_placement_mm": null,
+      "link_placement_mm": [
+        0.0,
+        20.0,
+        0.0
+      ],
+      "link_transform": false
+    },
+    {
+      "name": "GroupLinkTrue",
+      "shape_center_mm": [
+        111.0,
+        21.0,
+        1.0
+      ],
+      "placement_mm": [
+        0.0,
+        20.0,
+        0.0
+      ],
+      "placement_quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "global_placement_mm": null,
+      "link_placement_mm": [
+        0.0,
+        20.0,
+        0.0
+      ],
+      "link_transform": true
+    },
+    {
+      "name": "NestedLink",
+      "shape_center_mm": [
+        1.0,
+        21.0,
+        1.0
+      ],
+      "placement_mm": [
+        0.0,
+        20.0,
+        0.0
+      ],
+      "placement_quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "global_placement_mm": null,
+      "link_placement_mm": [
+        0.0,
+        20.0,
+        0.0
+      ],
+      "link_transform": false
+    },
+    {
+      "name": "RotatedFalse",
+      "shape_center_mm": [
+        -0.9999999999999999,
+        21.0,
+        1.0
+      ],
+      "placement_mm": [
+        0.0,
+        20.0,
+        0.0
+      ],
+      "placement_quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.7071067811865475,
+        0.7071067811865476
+      ],
+      "global_placement_mm": null,
+      "link_placement_mm": [
+        0.0,
+        20.0,
+        0.0
+      ],
+      "link_transform": false
+    },
+    {
+      "name": "RotatedTrue",
+      "shape_center_mm": [
+        -0.9999999999999984,
+        29.0,
+        1.0
+      ],
+      "placement_mm": [
+        0.0,
+        20.0,
+        0.0
+      ],
+      "placement_quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.7071067811865475,
+        0.7071067811865476
+      ],
+      "global_placement_mm": null,
+      "link_placement_mm": [
+        0.0,
+        20.0,
+        0.0
+      ],
+      "link_transform": true
+    }
+  ],
+  "contract": [
+    "Raw Shape values include the object's own Placement/LinkPlacement.",
+    "Raw Shape values exclude ancestor App::Part placement.",
+    "LinkTransform false ignores the linked target's own placement.",
+    "LinkTransform true includes the linked target's own placement.",
+    "No robot axes or physical calibration are validated by this fixture."
+  ]
+}
