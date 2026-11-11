@@ -425,6 +425,13 @@ entries and 17 retained generic drafts remain separately attributable. Root,
 header, package and embedded declarations are observations, not a decision about
 license applicability, company licensing or release permission.
 
+The runtime configuration loader now explicitly decodes UTF-8 for external paths
+and packaged defaults. Independent review of the two-file change and 54 sorting
+tests confirms exact unescaped French, Scandinavian and Japanese category values,
+without changing the schema, default configuration or hardware behavior. This
+fixes Windows locale-dependent silent text corruption rather than normalizing
+or replacing the supplied identifiers.
+
 ## Limited native wrist and pose evidence
 
 The native three-pose wrist diagnostic is explicitly partial and failed closed.
@@ -458,6 +465,16 @@ five paths remain isolated and document counts are zero. Ninety-four combined
 host tests pass. The source and diagnostic gates preserve negative/invalid
 observations without reversing/healing shapes, substituting absolute volume or
 accepting geometric intersection, physical mesh or fabrication.
+
+A further one-common topology capture retains the raw 900,661-byte debug BRep
+and exact `isSame` membership/occurrence ledgers. Independent review reconciles
+all 11 faces into three solids with 3/4/4 faces and one closed shell each;
+no unowned faces or shells are observed. This does not support the proposed
+free-face mechanism for this result. `isSame` ignores orientation, so common-face
+membership does not authenticate owner-context orientations or identify the
+integration cause. Twenty-nine host tests and actual runtime/source/copy/addon/
+five-snapshot/context/BRep pins pass. The original signed result, failure
+evidence and all physical/material gates remain unchanged.
 
 The separate copied-assembly K1 capture uses four cases, including saved zero
 and three bounded proximal-joint increments, with q5/q6 fixed at zero. Review
@@ -507,6 +524,32 @@ the difference from the prior inventory sum is -4.657e-10 mm³. Per-source tenso
 frames remain distinct, density remains null and no cross-frame whole-arm tensor
 is formed. These checks establish the declared cached exports and accounting,
 not triangle topology, continuous surface fidelity or fabrication readiness.
+
+The separate reusable join/host verifier passes 64 focused tests and independent
+coherently rehashed negatives: contradictory native STL qualification, native
+paths outside the batch root, unsafe provenance pointers, false earlier-capture
+repeatability, static Art1 substitution and nominal-as-reflected substitution
+all reject. Earlier-capture observations are separately hash-bound. Canonical
+regeneration matches the frozen host report exactly.
+
+An independent counter over all 325,810 raw facets confirms two native mesh
+blockers: Art23Optodisk has four boundary edges and represents two installed
+instances; Art4TransmissionColumn has three nonmanifold edges and represents one.
+The declared host criteria therefore yield 45 candidate geometry variants/62
+instances and two blocked variants/three instances. These are topology/draft
+classifications. Original Art1 history, self-intersections, source-surface
+fidelity, actual fit and physical/process qualification remain separate gates.
+
+The separate queue constructor passes 70 focused tests after reusing the existing
+per-candidate preflight before returning or writing a plan. A coherently edited
+host report that tries to admit blocked Art23 rejects before any output creation.
+The valid queue still reproduces its original bytes: 44 variants/61 generic
+one-part 3MF projects, with Art1 and both topology-failure variants blocked.
+Independent ZIP/XML parsing checks every package's Core parts, millimetre units,
+single build item, metadata, source/license pins, quantities and placements.
+Reconstructed indices reproduce all 321,678 source facets' float32 coordinates,
+order and winding exactly. No machine-native process project, GUI import,
+slicing, G-code, cloud upload or printer command is established.
 
 ## Transmission-column mesh diagnostic
 
@@ -577,3 +620,88 @@ Up-to-date and 1,854 Touched objects. Observed default/optimal extrema differ
 by as much as 28.4118 mm. This adds a zero-pose numerical transform/bounds
 ledger without establishing a conservative solid enclosure, nonzero rigid
 ownership, collision margins or physical coverage.
+
+The subsequent saved-zero AABB comparison passes 37 focused tests and exact
+report regeneration. Independent endpoint arithmetic enumerates all 133,903
+unordered pairs: 1,647 optimal-bound candidates, 1,692 default-bound candidates,
+45 default-only, zero optimal-only and 132,211 neither. Every retained union row
+has independently verified IDs/indices and both raw three-axis gap triplets;
+grouping, deterministic ordering and separated witnesses agree. Separate SAT
+arithmetic on the 1,647 selected optimal candidates finds no classification
+disagreement, with at most 1.11e-16 m gap roundoff. All selected pairs classify
+as interior box overlaps under the explicit numerical policy. Bounds are already
+world-frame metres and receive no extra scaling or placement. These comparisons
+neither exclude intended-contact pairs nor establish a real collision or clear
+pose; saved geometry states and unknown enclosure/swept coverage remain visible.
+
+## Declared linear swept-box primitive
+
+The separate T2 preparation primitive passes 32 focused tests. Independent exact
+`Fraction` arithmetic checks 2,000 cases across all 24 proper signed permutations
+and five dyadic scales from 2^-800 to 2^800, including stationary coordinates,
+zero widths, negative displacement and numerical padding. Every overlap predicate
+and normalized interval endpoint agrees for these fixtures. The hand-computed
+midpath witness retains [5/16,11/16] despite separated endpoints.
+
+Both moving endpoints and the static obstacle must remain exactly axis-aligned;
+identity, extents and frame declarations are checked. Unsupported rotations,
+resizing, joint-path assumptions and unrepresentable widths/crossings reject.
+Seven synthetic cases, input hashes and report reproduction pass. Caller frame
+IDs and motion evidence are declarations, numerical padding is not a physical
+margin, and arithmetic is not certified interval computation. No source body,
+joint trajectory or measured obstacle is bound; full T2 and robot swept clearance
+remain open.
+
+## Optodisk tessellation diagnostic
+
+The optodisk core passes 44 focused tests and independent supplied-scope negatives
+for outside paths, unrequested isolation and wrong upstream bytes. All 14 raw
+evidence pins and actual runtime/source/BRep/snapshot/path/zero-document records
+verify. Each route begins with a fresh shape; retained point/facet arrays
+reconstruct every exported STL triangle in order.
+
+Independent binary parsing and exact rational arithmetic confirm the original
+four boundary edges form a self-crossing planar cycle at z=5 mm, crossing near
+(-27.9234264234,3.8759642307,5) mm. This is not a valid fill-area measurement or
+a full self-intersection analysis. The linear-only Part alternative exactly
+matches upstream oriented cyclic-facet and unindexed-vertex multisets, including
+multiplicities; the refined alternative differs by 12 facets each way. Both
+alternatives independently have 1,332 vertices, 4,002 edges and 2,668 facets,
+opposite winding on every paired edge and one cycle per vertex link. Different
+route/settings do not isolate the source of the original defect. No source
+solid was edited, repaired-history acceptance granted or fabrication released.
+
+## Independent-distributor integration study
+
+The [adaptive study](thor-adaptive-metric-study.md) passes 31 host tests and
+independent reconstruction of all eight actual capture/runner files. Both wheel
+digests match primary PyPI metadata; all 932 RECORD/extracted-file bytes verify.
+Before/after inventories authenticate 46 loaded TK DLLs inside the separate
+wheel root, without FreeCAD/Part imports. The distributor binaries are distinct
+from FreeCAD's kernel; version agreement alone is not source/build equivalence.
+All original/copy/runtime/interpreter/PowerShell/package/code/request pins and
+the earlier failed curations remain intact.
+
+The first capture fails before retaining its cylinder method row, which remains
+unknown. The next capture preserves all 18 fixture rows: three regular adaptive
+Gauss cylinder tensors fail the unchanged relative 1e-9 tensor gate, despite
+small returned mass estimates. A separately versioned experiment retains that
+failed gate and permits only default/GK after all 12 corresponding controls pass.
+No threshold is relaxed. Default Art1 volume, COM and tensors exactly reproduce
+the prior raw-BRep FreeCAD metrics. GK candidate-minus-source volumes vary from
+-0.0279745804 to -0.9263827693 to -1.0069504928 mm³ as requested epsilon changes.
+Returned estimates exceed requests at every setting. This does not prove equal
+geometry, a limiting value or a complete quadrature explanation.
+
+A distinct protocol reads only the self-generated wrist Common BRep. Default
+`OnlyClosed=False` reproduces the negative aggregate; `True` reports
++0.106309073143 mm³, agreeing with the Solid sum within 1.39e-17 mm³. GK reports
++0.237115898415 mm³ versus a Solid sum +0.237115865417 mm³, a 3.30e-8 difference,
+again with an estimate above its request. All 11 global/owner faces match both
+`IsSame` and orientation-aware `IsEqual`, with 3/4/4 owner counts. Retained OCCT
+source confirms the closed-only route also changes grouping/reference context.
+The observations establish method/flag dependence without establishing a
+physical penetration volume, orientation cause or accepted overlap. The final
+reusable context pin is explicitly a later guard patch; immutable executed
+snapshots remain intact. Prior failed migration gates and physical qualification
+limits remain unchanged.

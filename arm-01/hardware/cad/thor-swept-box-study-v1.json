@@ -1,0 +1,1089 @@
+{
+  "schema_version": 1,
+  "evidence_class": "synthetic_fixed_orientation_linear_AABB_sweeps_not_robot_path_validation",
+  "input_bindings": [
+    {
+      "path": "src/raftel_arm01/kinematics/thor_collision.py",
+      "raw_sha256": "e5629d68c21689dc96b042eeb0af51438182504fbf97d5f4994c3115ee3ac670"
+    },
+    {
+      "path": "src/raftel_arm01/kinematics/thor_swept_boxes.py",
+      "raw_sha256": "9eaec7d7247d8f23d052b353a2a62ab4239175a2ade918ed6ad080cb0122bab7"
+    }
+  ],
+  "assumption": "fixed_orientation_axis_aligned_box_linear_center_translation",
+  "parameter": "dimensionless u in [0,1]; centre(u)=(1-u)*start+u*end; no joint interpolation or trajectory timing inferred",
+  "numerical_policy": {
+    "padding_m": 0.0,
+    "contact": "closed intervals; singleton tangency retained",
+    "arithmetic": "floating-point analytic slabs, not certified interval arithmetic; unrepresentable width/crossing calculations reject"
+  },
+  "case_count": 7,
+  "cases": [
+    {
+      "case_id": "endpoints_separate_midpath_overlap",
+      "moving_start": {
+        "proxy_id": "synthetic_moving_box",
+        "frame_id": "synthetic_world_m",
+        "half_extents_m": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "frame_from_box": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -2.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "evidence": "Explicit synthetic study box; not Thor or workstation geometry",
+        "enclosure_status": "synthetic_exact_box"
+      },
+      "moving_end": {
+        "proxy_id": "synthetic_moving_box",
+        "frame_id": "synthetic_world_m",
+        "half_extents_m": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "frame_from_box": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            2.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "evidence": "Explicit synthetic study box; not Thor or workstation geometry",
+        "enclosure_status": "synthetic_exact_box"
+      },
+      "static_obstacle": {
+        "proxy_id": "synthetic_static_obstacle",
+        "frame_id": "synthetic_world_m",
+        "half_extents_m": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "frame_from_box": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "evidence": "Explicit synthetic study box; not Thor or workstation geometry",
+        "enclosure_status": "synthetic_exact_box"
+      },
+      "endpoint_proxy_relations": [
+        "no_proxy_overlap",
+        "no_proxy_overlap"
+      ],
+      "hand_computed_overlap_interval": [
+        0.3125,
+        0.6875
+      ],
+      "sweep_result": {
+        "moving_id": "synthetic_moving_box",
+        "obstacle_id": "synthetic_static_obstacle",
+        "frame_id": "synthetic_world_m",
+        "relation": "proxy_overlap_or_contact_during_declared_linear_sweep",
+        "overlap_parameter_interval": [
+          0.3125,
+          0.6875
+        ],
+        "axis_parameter_intervals": [
+          [
+            0.3125,
+            0.6875
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        "assumption": "fixed_orientation_axis_aligned_box_linear_center_translation",
+        "motion_evidence": "Declared constant-orientation linear centre path for this synthetic fixture only",
+        "numerical_padding_m": 0.0,
+        "physical_collision_free": null,
+        "robot_path_clearance": null
+      }
+    },
+    {
+      "case_id": "stationary_separated",
+      "moving_start": {
+        "proxy_id": "synthetic_moving_box",
+        "frame_id": "synthetic_world_m",
+        "half_extents_m": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "frame_from_box": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -2.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "evidence": "Explicit synthetic study box; not Thor or workstation geometry",
+        "enclosure_status": "synthetic_exact_box"
+      },
+      "moving_end": {
+        "proxy_id": "synthetic_moving_box",
+        "frame_id": "synthetic_world_m",
+        "half_extents_m": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "frame_from_box": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -2.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "evidence": "Explicit synthetic study box; not Thor or workstation geometry",
+        "enclosure_status": "synthetic_exact_box"
+      },
+      "static_obstacle": {
+        "proxy_id": "synthetic_static_obstacle",
+        "frame_id": "synthetic_world_m",
+        "half_extents_m": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "frame_from_box": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "evidence": "Explicit synthetic study box; not Thor or workstation geometry",
+        "enclosure_status": "synthetic_exact_box"
+      },
+      "endpoint_proxy_relations": [
+        "no_proxy_overlap",
+        "no_proxy_overlap"
+      ],
+      "hand_computed_overlap_interval": null,
+      "sweep_result": {
+        "moving_id": "synthetic_moving_box",
+        "obstacle_id": "synthetic_static_obstacle",
+        "frame_id": "synthetic_world_m",
+        "relation": "no_proxy_overlap_on_declared_linear_sweep",
+        "overlap_parameter_interval": null,
+        "axis_parameter_intervals": [
+          null,
+          [
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        "assumption": "fixed_orientation_axis_aligned_box_linear_center_translation",
+        "motion_evidence": "Declared constant-orientation linear centre path for this synthetic fixture only",
+        "numerical_padding_m": 0.0,
+        "physical_collision_free": null,
+        "robot_path_clearance": null
+      }
+    },
+    {
+      "case_id": "stationary_inside",
+      "moving_start": {
+        "proxy_id": "synthetic_moving_box",
+        "frame_id": "synthetic_world_m",
+        "half_extents_m": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "frame_from_box": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "evidence": "Explicit synthetic study box; not Thor or workstation geometry",
+        "enclosure_status": "synthetic_exact_box"
+      },
+      "moving_end": {
+        "proxy_id": "synthetic_moving_box",
+        "frame_id": "synthetic_world_m",
+        "half_extents_m": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "frame_from_box": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "evidence": "Explicit synthetic study box; not Thor or workstation geometry",
+        "enclosure_status": "synthetic_exact_box"
+      },
+      "static_obstacle": {
+        "proxy_id": "synthetic_static_obstacle",
+        "frame_id": "synthetic_world_m",
+        "half_extents_m": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "frame_from_box": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "evidence": "Explicit synthetic study box; not Thor or workstation geometry",
+        "enclosure_status": "synthetic_exact_box"
+      },
+      "endpoint_proxy_relations": [
+        "proxy_overlap_or_contact",
+        "proxy_overlap_or_contact"
+      ],
+      "hand_computed_overlap_interval": [
+        0,
+        1
+      ],
+      "sweep_result": {
+        "moving_id": "synthetic_moving_box",
+        "obstacle_id": "synthetic_static_obstacle",
+        "frame_id": "synthetic_world_m",
+        "relation": "proxy_overlap_or_contact_during_declared_linear_sweep",
+        "overlap_parameter_interval": [
+          0.0,
+          1.0
+        ],
+        "axis_parameter_intervals": [
+          [
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        "assumption": "fixed_orientation_axis_aligned_box_linear_center_translation",
+        "motion_evidence": "Declared constant-orientation linear centre path for this synthetic fixture only",
+        "numerical_padding_m": 0.0,
+        "physical_collision_free": null,
+        "robot_path_clearance": null
+      }
+    },
+    {
+      "case_id": "grazing_face_contact",
+      "moving_start": {
+        "proxy_id": "synthetic_moving_box",
+        "frame_id": "synthetic_world_m",
+        "half_extents_m": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "frame_from_box": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -2.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.75
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "evidence": "Explicit synthetic study box; not Thor or workstation geometry",
+        "enclosure_status": "synthetic_exact_box"
+      },
+      "moving_end": {
+        "proxy_id": "synthetic_moving_box",
+        "frame_id": "synthetic_world_m",
+        "half_extents_m": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "frame_from_box": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            2.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.75
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "evidence": "Explicit synthetic study box; not Thor or workstation geometry",
+        "enclosure_status": "synthetic_exact_box"
+      },
+      "static_obstacle": {
+        "proxy_id": "synthetic_static_obstacle",
+        "frame_id": "synthetic_world_m",
+        "half_extents_m": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "frame_from_box": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "evidence": "Explicit synthetic study box; not Thor or workstation geometry",
+        "enclosure_status": "synthetic_exact_box"
+      },
+      "endpoint_proxy_relations": [
+        "no_proxy_overlap",
+        "no_proxy_overlap"
+      ],
+      "hand_computed_overlap_interval": [
+        0.3125,
+        0.6875
+      ],
+      "sweep_result": {
+        "moving_id": "synthetic_moving_box",
+        "obstacle_id": "synthetic_static_obstacle",
+        "frame_id": "synthetic_world_m",
+        "relation": "proxy_overlap_or_contact_during_declared_linear_sweep",
+        "overlap_parameter_interval": [
+          0.3125,
+          0.6875
+        ],
+        "axis_parameter_intervals": [
+          [
+            0.3125,
+            0.6875
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        "assumption": "fixed_orientation_axis_aligned_box_linear_center_translation",
+        "motion_evidence": "Declared constant-orientation linear centre path for this synthetic fixture only",
+        "numerical_padding_m": 0.0,
+        "physical_collision_free": null,
+        "robot_path_clearance": null
+      }
+    },
+    {
+      "case_id": "start_inside_then_exit",
+      "moving_start": {
+        "proxy_id": "synthetic_moving_box",
+        "frame_id": "synthetic_world_m",
+        "half_extents_m": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "frame_from_box": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "evidence": "Explicit synthetic study box; not Thor or workstation geometry",
+        "enclosure_status": "synthetic_exact_box"
+      },
+      "moving_end": {
+        "proxy_id": "synthetic_moving_box",
+        "frame_id": "synthetic_world_m",
+        "half_extents_m": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "frame_from_box": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            2.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "evidence": "Explicit synthetic study box; not Thor or workstation geometry",
+        "enclosure_status": "synthetic_exact_box"
+      },
+      "static_obstacle": {
+        "proxy_id": "synthetic_static_obstacle",
+        "frame_id": "synthetic_world_m",
+        "half_extents_m": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "frame_from_box": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "evidence": "Explicit synthetic study box; not Thor or workstation geometry",
+        "enclosure_status": "synthetic_exact_box"
+      },
+      "endpoint_proxy_relations": [
+        "proxy_overlap_or_contact",
+        "no_proxy_overlap"
+      ],
+      "hand_computed_overlap_interval": [
+        0,
+        0.375
+      ],
+      "sweep_result": {
+        "moving_id": "synthetic_moving_box",
+        "obstacle_id": "synthetic_static_obstacle",
+        "frame_id": "synthetic_world_m",
+        "relation": "proxy_overlap_or_contact_during_declared_linear_sweep",
+        "overlap_parameter_interval": [
+          0.0,
+          0.375
+        ],
+        "axis_parameter_intervals": [
+          [
+            0.0,
+            0.375
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        "assumption": "fixed_orientation_axis_aligned_box_linear_center_translation",
+        "motion_evidence": "Declared constant-orientation linear centre path for this synthetic fixture only",
+        "numerical_padding_m": 0.0,
+        "physical_collision_free": null,
+        "robot_path_clearance": null
+      }
+    },
+    {
+      "case_id": "endpoint_only_contact",
+      "moving_start": {
+        "proxy_id": "synthetic_moving_box",
+        "frame_id": "synthetic_world_m",
+        "half_extents_m": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "frame_from_box": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -2.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "evidence": "Explicit synthetic study box; not Thor or workstation geometry",
+        "enclosure_status": "synthetic_exact_box"
+      },
+      "moving_end": {
+        "proxy_id": "synthetic_moving_box",
+        "frame_id": "synthetic_world_m",
+        "half_extents_m": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "frame_from_box": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.75
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "evidence": "Explicit synthetic study box; not Thor or workstation geometry",
+        "enclosure_status": "synthetic_exact_box"
+      },
+      "static_obstacle": {
+        "proxy_id": "synthetic_static_obstacle",
+        "frame_id": "synthetic_world_m",
+        "half_extents_m": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "frame_from_box": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "evidence": "Explicit synthetic study box; not Thor or workstation geometry",
+        "enclosure_status": "synthetic_exact_box"
+      },
+      "endpoint_proxy_relations": [
+        "no_proxy_overlap",
+        "proxy_overlap_or_contact"
+      ],
+      "hand_computed_overlap_interval": [
+        1,
+        1
+      ],
+      "sweep_result": {
+        "moving_id": "synthetic_moving_box",
+        "obstacle_id": "synthetic_static_obstacle",
+        "frame_id": "synthetic_world_m",
+        "relation": "proxy_overlap_or_contact_during_declared_linear_sweep",
+        "overlap_parameter_interval": [
+          1.0,
+          1.0
+        ],
+        "axis_parameter_intervals": [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        "assumption": "fixed_orientation_axis_aligned_box_linear_center_translation",
+        "motion_evidence": "Declared constant-orientation linear centre path for this synthetic fixture only",
+        "numerical_padding_m": 0.0,
+        "physical_collision_free": null,
+        "robot_path_clearance": null
+      }
+    },
+    {
+      "case_id": "zero_width_point_crossing",
+      "moving_start": {
+        "proxy_id": "synthetic_moving_box",
+        "frame_id": "synthetic_world_m",
+        "half_extents_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frame_from_box": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -1.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "evidence": "Explicit synthetic study box; not Thor or workstation geometry",
+        "enclosure_status": "synthetic_exact_box"
+      },
+      "moving_end": {
+        "proxy_id": "synthetic_moving_box",
+        "frame_id": "synthetic_world_m",
+        "half_extents_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frame_from_box": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "evidence": "Explicit synthetic study box; not Thor or workstation geometry",
+        "enclosure_status": "synthetic_exact_box"
+      },
+      "static_obstacle": {
+        "proxy_id": "synthetic_static_point",
+        "frame_id": "synthetic_world_m",
+        "half_extents_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frame_from_box": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "evidence": "Explicit synthetic study box; not Thor or workstation geometry",
+        "enclosure_status": "synthetic_exact_box"
+      },
+      "endpoint_proxy_relations": [
+        "no_proxy_overlap",
+        "no_proxy_overlap"
+      ],
+      "hand_computed_overlap_interval": [
+        0.5,
+        0.5
+      ],
+      "sweep_result": {
+        "moving_id": "synthetic_moving_box",
+        "obstacle_id": "synthetic_static_point",
+        "frame_id": "synthetic_world_m",
+        "relation": "proxy_overlap_or_contact_during_declared_linear_sweep",
+        "overlap_parameter_interval": [
+          0.5,
+          0.5
+        ],
+        "axis_parameter_intervals": [
+          [
+            0.5,
+            0.5
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        "assumption": "fixed_orientation_axis_aligned_box_linear_center_translation",
+        "motion_evidence": "Declared constant-orientation linear centre path for this synthetic fixture only",
+        "numerical_padding_m": 0.0,
+        "physical_collision_free": null,
+        "robot_path_clearance": null
+      }
+    }
+  ],
+  "robot_binding_gates": [
+    "Saved-zero mounted bounds provide one cached numerical scene, not nonzero full-body transforms or enclosures.",
+    "Joint quintics do not imply linearly translating fixed-orientation body boxes; joint rotation/curved motion is rejected by this API assumption contract.",
+    "Source/physical enclosure margins, full obstacle/held-object coverage, intended contacts and real path timing remain unverified."
+  ],
+  "actual_robot_sweep_cases": [],
+  "robot_swept_clearance": null,
+  "physical_collision_free": null,
+  "qualification": {
+    "complete_T2_gate": false,
+    "robot_dynamic_binding": false,
+    "source_enclosure_verified": false,
+    "joint_path_collision_screened": false,
+    "physical_clearance": false,
+    "hardware_motion_authorized": false,
+    "manufacturing_release": false
+  }
+}

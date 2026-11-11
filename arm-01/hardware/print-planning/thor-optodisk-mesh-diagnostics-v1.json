@@ -1,0 +1,1318 @@
+{
+  "schema_version": 1,
+  "evidence_class": "optodisk_host_and_native_tessellation_diagnostics_not_repair_or_print_release",
+  "host_diagnostic": {
+    "schema_version": 1,
+    "evidence_class": "host_optodisk_boundary_diagnostic_not_repair_or_qualification",
+    "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+    "source_binding": {
+      "source_file": "freecad-src/Art23Optodisk.fcstd",
+      "source_sha256": "c81e788792edea63c7e73a12b06dc8073668a6b899f8d46ea5c3d9d399de431c",
+      "object_name": "Body",
+      "object_type": "PartDesign::Body",
+      "brep_entry": "PartShape.brp",
+      "brep_sha256": "a4a3586db66f88995c904ed5d8622122a38cb1046a086fdf53794f40dbfac5d1",
+      "xml_placement_not_applied": {
+        "position_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    },
+    "full_audit_raw_sha256": "7f8e38dde8740f13ea3056d1d9505cb87dd178ee812176a134e07538b7e3ad6b",
+    "full_request_raw_sha256": "d77b59241e0fe9f78aee07b7d14ec4b9d1014f3e0947593a7600d675363e113d",
+    "installed_quantity": 2,
+    "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+    "native_export": {
+      "sha256": "3b0643344bee3baf88a185848769d34d6e2631df05f77250a62a6ca82d726005",
+      "bytes": 68984,
+      "mesh_audit": {
+        "encoding": "binary",
+        "triangle_count": 1378,
+        "exact_vertex_count": 688,
+        "connected_components_by_vertex": 1,
+        "bounds_interpreted_mm": {
+          "min": [
+            -29.199708938598633,
+            -3.0,
+            0.0
+          ],
+          "max": [
+            29.199708938598633,
+            29.200000762939453,
+            15.0
+          ]
+        },
+        "envelope_xyz_interpreted_mm": [
+          58.399417877197266,
+          32.20000076293945,
+          15.0
+        ],
+        "surface_area_interpreted_mm2": 3576.083761515306,
+        "algebraic_signed_volume_interpreted_mm3": 1738.1142949586258,
+        "absolute_signed_volume_interpreted_mm3": 1738.1142949586258,
+        "topology": {
+          "boundary_edges": 4,
+          "nonmanifold_edges": 0,
+          "nonmanifold_vertices": 0,
+          "inconsistent_winding_edges": 0,
+          "duplicate_facets": 0,
+          "zero_area_facets": 0,
+          "closed_consistently_oriented_two_manifold": false,
+          "exact_vertex_matching_no_weld": true
+        },
+        "stored_normal_warnings": {
+          "zero_normals": 0,
+          "opposed_to_winding": 0
+        },
+        "nonzero_binary_attribute_words": 0,
+        "self_intersections": "not_checked",
+        "units": "STL_unitless_coordinates_explicitly_interpreted_as_mm_not_encoded_units",
+        "solid_fidelity": "not_established_by_topology_bounds_or_volume"
+      },
+      "boundary_diagnostic": {
+        "topology": {
+          "indexed_point_count": 688,
+          "used_index_count": 688,
+          "exact_coordinate_count": 688,
+          "used_exact_coordinate_count": 688,
+          "triangle_count": 1378,
+          "boundary_edge_count": 4,
+          "nonmanifold_edge_count": 0,
+          "duplicate_facet_count": 0,
+          "nonmanifold_edges": [],
+          "defect_vertices_mm": [],
+          "defect_chain_total_length_mm": 0.0,
+          "source_geometry_changed": false,
+          "self_intersections_checked": false
+        },
+        "boundary_edges": [
+          {
+            "endpoints_mm": [
+              [
+                -27.978477478027344,
+                3.5277113914489746,
+                5.0
+              ],
+              [
+                -27.946332931518555,
+                3.647045373916626,
+                5.0
+              ]
+            ],
+            "length_mm": 0.12358750439201135,
+            "facet_index_zero_based": 742,
+            "incident_triangle_mm": [
+              [
+                -27.946332931518555,
+                3.647045373916626,
+                5.0
+              ],
+              [
+                -27.978477478027344,
+                3.5277113914489746,
+                5.0
+              ],
+              [
+                -27.946332931518555,
+                3.352954626083374,
+                5.0
+              ]
+            ]
+          },
+          {
+            "endpoints_mm": [
+              [
+                -27.978477478027344,
+                3.5277113914489746,
+                5.0
+              ],
+              [
+                -27.702392578125,
+                5.274223804473877,
+                5.0
+              ]
+            ],
+            "length_mm": 1.7681992197725216,
+            "facet_index_zero_based": 363,
+            "incident_triangle_mm": [
+              [
+                -27.978477478027344,
+                3.5277113914489746,
+                5.0
+              ],
+              [
+                -27.702392578125,
+                5.274223804473877,
+                5.0
+              ],
+              [
+                -27.71206283569336,
+                5.223174571990967,
+                15.0
+              ]
+            ]
+          },
+          {
+            "endpoints_mm": [
+              [
+                -27.946332931518555,
+                3.647045373916626,
+                5.0
+              ],
+              [
+                -27.917051315307617,
+                3.9396746158599854,
+                5.0
+              ]
+            ],
+            "length_mm": 0.294090608976672,
+            "facet_index_zero_based": 1187,
+            "incident_triangle_mm": [
+              [
+                -27.917051315307617,
+                3.9396746158599854,
+                5.0
+              ],
+              [
+                -27.946332931518555,
+                3.647045373916626,
+                5.0
+              ],
+              [
+                -27.946332931518555,
+                3.647045373916626,
+                2.0
+              ]
+            ]
+          },
+          {
+            "endpoints_mm": [
+              [
+                -27.917051315307617,
+                3.9396746158599854,
+                5.0
+              ],
+              [
+                -27.702392578125,
+                5.274223804473877,
+                5.0
+              ]
+            ],
+            "length_mm": 1.3517025968306906,
+            "facet_index_zero_based": 793,
+            "incident_triangle_mm": [
+              [
+                -27.702392578125,
+                5.274223804473877,
+                5.0
+              ],
+              [
+                -27.917051315307617,
+                3.9396746158599854,
+                5.0
+              ],
+              [
+                -27.85877799987793,
+                4.22793436050415,
+                5.0
+              ]
+            ]
+          }
+        ],
+        "boundary_components": [
+          {
+            "vertices_mm": [
+              [
+                -27.978477478027344,
+                3.5277113914489746,
+                5.0
+              ],
+              [
+                -27.946332931518555,
+                3.647045373916626,
+                5.0
+              ],
+              [
+                -27.917051315307617,
+                3.9396746158599854,
+                5.0
+              ],
+              [
+                -27.702392578125,
+                5.274223804473877,
+                5.0
+              ]
+            ],
+            "graph_simple_cycle": true,
+            "ordered_cycle_mm": [
+              [
+                -27.978477478027344,
+                3.5277113914489746,
+                5.0
+              ],
+              [
+                -27.946332931518555,
+                3.647045373916626,
+                5.0
+              ],
+              [
+                -27.917051315307617,
+                3.9396746158599854,
+                5.0
+              ],
+              [
+                -27.702392578125,
+                5.274223804473877,
+                5.0
+              ]
+            ],
+            "vertex_degrees": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "axis_ranges_mm": [
+              0.27608489990234375,
+              1.7465124130249023,
+              0.0
+            ],
+            "oriented_vector_area_mm2": [
+              0.0,
+              0.0,
+              -0.0002715637492656242
+            ],
+            "vector_area_magnitude_mm2": 0.0002715637492656242,
+            "area_is_not_a_validated_fill_or_surface_area": true,
+            "planar_boundary_crossings": {
+              "tested": true,
+              "constant_axis": 2,
+              "proper_crossings": [
+                {
+                  "cycle_edge_indices": [
+                    1,
+                    3
+                  ],
+                  "first_segment_parameter": 0.7822829163126301,
+                  "second_segment_parameter": 0.8006009939257779,
+                  "intersection_mm": [
+                    -27.923426423394716,
+                    3.8759642307024316,
+                    5.0
+                  ]
+                }
+              ],
+              "predicates": "exact rational arithmetic on supplied finite float coordinates",
+              "full_triangle_self_intersections_checked": false
+            }
+          }
+        ],
+        "boundary_edges_filled": false,
+        "vertex_welding_performed": false
+      }
+    },
+    "preserved_upstream_stl": {
+      "sha256": "a9056374be8f26e622a465a257b5ee80d13a48fdaa51d525ea2d4701618c9e9e",
+      "bytes": 133484,
+      "mesh_audit": {
+        "encoding": "binary",
+        "triangle_count": 2668,
+        "exact_vertex_count": 1332,
+        "connected_components_by_vertex": 1,
+        "bounds_interpreted_mm": {
+          "min": [
+            -29.19986915588379,
+            -3.0,
+            0.0
+          ],
+          "max": [
+            29.19986915588379,
+            29.19952392578125,
+            15.0
+          ]
+        },
+        "envelope_xyz_interpreted_mm": [
+          58.39973831176758,
+          32.19952392578125,
+          15.0
+        ],
+        "surface_area_interpreted_mm2": 3577.2771326010993,
+        "algebraic_signed_volume_interpreted_mm3": 1742.757808070557,
+        "absolute_signed_volume_interpreted_mm3": 1742.757808070557,
+        "topology": {
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "nonmanifold_vertices": 0,
+          "inconsistent_winding_edges": 0,
+          "duplicate_facets": 0,
+          "zero_area_facets": 0,
+          "closed_consistently_oriented_two_manifold": true,
+          "exact_vertex_matching_no_weld": true
+        },
+        "stored_normal_warnings": {
+          "zero_normals": 0,
+          "opposed_to_winding": 0
+        },
+        "nonzero_binary_attribute_words": 0,
+        "self_intersections": "not_checked",
+        "units": "STL_unitless_coordinates_explicitly_interpreted_as_mm_not_encoded_units",
+        "solid_fidelity": "not_established_by_topology_bounds_or_volume"
+      },
+      "boundary_diagnostic": {
+        "topology": {
+          "indexed_point_count": 1332,
+          "used_index_count": 1332,
+          "exact_coordinate_count": 1332,
+          "used_exact_coordinate_count": 1332,
+          "triangle_count": 2668,
+          "boundary_edge_count": 0,
+          "nonmanifold_edge_count": 0,
+          "duplicate_facet_count": 0,
+          "nonmanifold_edges": [],
+          "defect_vertices_mm": [],
+          "defect_chain_total_length_mm": 0.0,
+          "source_geometry_changed": false,
+          "self_intersections_checked": false
+        },
+        "boundary_edges": [],
+        "boundary_components": [],
+        "boundary_edges_filled": false,
+        "vertex_welding_performed": false
+      }
+    },
+    "geometry_equivalence_proven": false,
+    "source_cause_proven": false,
+    "mesh_repaired": false,
+    "fabrication_release": false
+  },
+  "native_diagnostic": {
+    "capture_raw_sha256": "8ab487ab24b624868bc4448bc3e20d2fd10afbc0a3f77f25ba4d74a72c2a7b87",
+    "runner_raw_sha256": "1eecb4d46ebf94e44750677c8e62d741dee66050daaa3c2b3efe66aff49c9872",
+    "contract_raw_sha256": "11253a5ebf5ac955eaccc521deec923121a74fe6f06011020047fc14269cc41d",
+    "executed_worker_sha256": "eccbb0d5e91ae79c21cb207e584a3681c68d3e9ef82a408f5d8462350598e3c6",
+    "runtime_isolation": {
+      "requested": true,
+      "verified": true,
+      "root": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\optodisk-mesh-diagnostics\\native-02",
+      "actual_paths": {
+        "UserParameter": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\optodisk-mesh-diagnostics\\native-02\\user.cfg",
+        "SystemParameter": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\optodisk-mesh-diagnostics\\native-02\\system.cfg",
+        "UserHomePath": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\optodisk-mesh-diagnostics\\native-02\\home",
+        "UserAppData": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\optodisk-mesh-diagnostics\\native-02\\data\\",
+        "AppTempPath": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\optodisk-mesh-diagnostics\\native-02\\temp\\"
+      }
+    },
+    "freecad_version": [
+      "1",
+      "1",
+      "4",
+      "20260928 (Git shallow)",
+      "Unknown",
+      "2026/09/28 13:46:34",
+      "(HEAD detached at 4fd3bf320)",
+      "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+    ],
+    "opencascade_version": "7.8.1",
+    "source_unchanged": true,
+    "open_document_count_before": 0,
+    "open_document_count_after": 0,
+    "routes": [
+      {
+        "route": "MeshPart_original",
+        "settings": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false
+        },
+        "native_shape_valid": true,
+        "raw_topology": {
+          "topology": {
+            "indexed_point_count": 688,
+            "used_index_count": 688,
+            "exact_coordinate_count": 688,
+            "used_exact_coordinate_count": 688,
+            "triangle_count": 1378,
+            "boundary_edge_count": 4,
+            "nonmanifold_edge_count": 0,
+            "duplicate_facet_count": 0,
+            "nonmanifold_edges": [],
+            "defect_vertices_mm": [],
+            "defect_chain_total_length_mm": 0.0,
+            "source_geometry_changed": false,
+            "self_intersections_checked": false
+          },
+          "boundary_edges": [
+            {
+              "endpoints_mm": [
+                [
+                  -27.978477478027344,
+                  3.5277113914489746,
+                  5.0
+                ],
+                [
+                  -27.946332931518555,
+                  3.647045373916626,
+                  5.0
+                ]
+              ],
+              "length_mm": 0.12358750439201135,
+              "facet_index_zero_based": 742,
+              "incident_triangle_mm": [
+                [
+                  -27.946332931518555,
+                  3.647045373916626,
+                  5.0
+                ],
+                [
+                  -27.978477478027344,
+                  3.5277113914489746,
+                  5.0
+                ],
+                [
+                  -27.946332931518555,
+                  3.352954626083374,
+                  5.0
+                ]
+              ]
+            },
+            {
+              "endpoints_mm": [
+                [
+                  -27.978477478027344,
+                  3.5277113914489746,
+                  5.0
+                ],
+                [
+                  -27.702392578125,
+                  5.274223804473877,
+                  5.0
+                ]
+              ],
+              "length_mm": 1.7681992197725216,
+              "facet_index_zero_based": 363,
+              "incident_triangle_mm": [
+                [
+                  -27.978477478027344,
+                  3.5277113914489746,
+                  5.0
+                ],
+                [
+                  -27.702392578125,
+                  5.274223804473877,
+                  5.0
+                ],
+                [
+                  -27.71206283569336,
+                  5.223174571990967,
+                  15.0
+                ]
+              ]
+            },
+            {
+              "endpoints_mm": [
+                [
+                  -27.946332931518555,
+                  3.647045373916626,
+                  5.0
+                ],
+                [
+                  -27.917051315307617,
+                  3.9396746158599854,
+                  5.0
+                ]
+              ],
+              "length_mm": 0.294090608976672,
+              "facet_index_zero_based": 1187,
+              "incident_triangle_mm": [
+                [
+                  -27.917051315307617,
+                  3.9396746158599854,
+                  5.0
+                ],
+                [
+                  -27.946332931518555,
+                  3.647045373916626,
+                  5.0
+                ],
+                [
+                  -27.946332931518555,
+                  3.647045373916626,
+                  2.0
+                ]
+              ]
+            },
+            {
+              "endpoints_mm": [
+                [
+                  -27.917051315307617,
+                  3.9396746158599854,
+                  5.0
+                ],
+                [
+                  -27.702392578125,
+                  5.274223804473877,
+                  5.0
+                ]
+              ],
+              "length_mm": 1.3517025968306906,
+              "facet_index_zero_based": 793,
+              "incident_triangle_mm": [
+                [
+                  -27.702392578125,
+                  5.274223804473877,
+                  5.0
+                ],
+                [
+                  -27.917051315307617,
+                  3.9396746158599854,
+                  5.0
+                ],
+                [
+                  -27.85877799987793,
+                  4.22793436050415,
+                  5.0
+                ]
+              ]
+            }
+          ],
+          "boundary_components": [
+            {
+              "vertices_mm": [
+                [
+                  -27.978477478027344,
+                  3.5277113914489746,
+                  5.0
+                ],
+                [
+                  -27.946332931518555,
+                  3.647045373916626,
+                  5.0
+                ],
+                [
+                  -27.917051315307617,
+                  3.9396746158599854,
+                  5.0
+                ],
+                [
+                  -27.702392578125,
+                  5.274223804473877,
+                  5.0
+                ]
+              ],
+              "graph_simple_cycle": true,
+              "ordered_cycle_mm": [
+                [
+                  -27.978477478027344,
+                  3.5277113914489746,
+                  5.0
+                ],
+                [
+                  -27.946332931518555,
+                  3.647045373916626,
+                  5.0
+                ],
+                [
+                  -27.917051315307617,
+                  3.9396746158599854,
+                  5.0
+                ],
+                [
+                  -27.702392578125,
+                  5.274223804473877,
+                  5.0
+                ]
+              ],
+              "vertex_degrees": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "axis_ranges_mm": [
+                0.27608489990234375,
+                1.7465124130249023,
+                0.0
+              ],
+              "oriented_vector_area_mm2": [
+                0.0,
+                0.0,
+                -0.0002715637492656242
+              ],
+              "vector_area_magnitude_mm2": 0.0002715637492656242,
+              "area_is_not_a_validated_fill_or_surface_area": true,
+              "planar_boundary_crossings": {
+                "tested": true,
+                "constant_axis": 2,
+                "proper_crossings": [
+                  {
+                    "cycle_edge_indices": [
+                      1,
+                      3
+                    ],
+                    "first_segment_parameter": 0.7822829163126301,
+                    "second_segment_parameter": 0.8006009939257779,
+                    "intersection_mm": [
+                      -27.923426423394716,
+                      3.8759642307024316,
+                      5.0
+                    ]
+                  }
+                ],
+                "predicates": "exact rational arithmetic on supplied finite float coordinates",
+                "full_triangle_self_intersections_checked": false
+              }
+            }
+          ],
+          "boundary_edges_filled": false,
+          "vertex_welding_performed": false
+        },
+        "binary32_topology": {
+          "topology": {
+            "indexed_point_count": 688,
+            "used_index_count": 688,
+            "exact_coordinate_count": 688,
+            "used_exact_coordinate_count": 688,
+            "triangle_count": 1378,
+            "boundary_edge_count": 4,
+            "nonmanifold_edge_count": 0,
+            "duplicate_facet_count": 0,
+            "nonmanifold_edges": [],
+            "defect_vertices_mm": [],
+            "defect_chain_total_length_mm": 0.0,
+            "source_geometry_changed": false,
+            "self_intersections_checked": false
+          },
+          "boundary_edges": [
+            {
+              "endpoints_mm": [
+                [
+                  -27.978477478027344,
+                  3.5277113914489746,
+                  5.0
+                ],
+                [
+                  -27.946332931518555,
+                  3.647045373916626,
+                  5.0
+                ]
+              ],
+              "length_mm": 0.12358750439201135,
+              "facet_index_zero_based": 742,
+              "incident_triangle_mm": [
+                [
+                  -27.946332931518555,
+                  3.647045373916626,
+                  5.0
+                ],
+                [
+                  -27.978477478027344,
+                  3.5277113914489746,
+                  5.0
+                ],
+                [
+                  -27.946332931518555,
+                  3.352954626083374,
+                  5.0
+                ]
+              ]
+            },
+            {
+              "endpoints_mm": [
+                [
+                  -27.978477478027344,
+                  3.5277113914489746,
+                  5.0
+                ],
+                [
+                  -27.702392578125,
+                  5.274223804473877,
+                  5.0
+                ]
+              ],
+              "length_mm": 1.7681992197725216,
+              "facet_index_zero_based": 363,
+              "incident_triangle_mm": [
+                [
+                  -27.978477478027344,
+                  3.5277113914489746,
+                  5.0
+                ],
+                [
+                  -27.702392578125,
+                  5.274223804473877,
+                  5.0
+                ],
+                [
+                  -27.71206283569336,
+                  5.223174571990967,
+                  15.0
+                ]
+              ]
+            },
+            {
+              "endpoints_mm": [
+                [
+                  -27.946332931518555,
+                  3.647045373916626,
+                  5.0
+                ],
+                [
+                  -27.917051315307617,
+                  3.9396746158599854,
+                  5.0
+                ]
+              ],
+              "length_mm": 0.294090608976672,
+              "facet_index_zero_based": 1187,
+              "incident_triangle_mm": [
+                [
+                  -27.917051315307617,
+                  3.9396746158599854,
+                  5.0
+                ],
+                [
+                  -27.946332931518555,
+                  3.647045373916626,
+                  5.0
+                ],
+                [
+                  -27.946332931518555,
+                  3.647045373916626,
+                  2.0
+                ]
+              ]
+            },
+            {
+              "endpoints_mm": [
+                [
+                  -27.917051315307617,
+                  3.9396746158599854,
+                  5.0
+                ],
+                [
+                  -27.702392578125,
+                  5.274223804473877,
+                  5.0
+                ]
+              ],
+              "length_mm": 1.3517025968306906,
+              "facet_index_zero_based": 793,
+              "incident_triangle_mm": [
+                [
+                  -27.702392578125,
+                  5.274223804473877,
+                  5.0
+                ],
+                [
+                  -27.917051315307617,
+                  3.9396746158599854,
+                  5.0
+                ],
+                [
+                  -27.85877799987793,
+                  4.22793436050415,
+                  5.0
+                ]
+              ]
+            }
+          ],
+          "boundary_components": [
+            {
+              "vertices_mm": [
+                [
+                  -27.978477478027344,
+                  3.5277113914489746,
+                  5.0
+                ],
+                [
+                  -27.946332931518555,
+                  3.647045373916626,
+                  5.0
+                ],
+                [
+                  -27.917051315307617,
+                  3.9396746158599854,
+                  5.0
+                ],
+                [
+                  -27.702392578125,
+                  5.274223804473877,
+                  5.0
+                ]
+              ],
+              "graph_simple_cycle": true,
+              "ordered_cycle_mm": [
+                [
+                  -27.978477478027344,
+                  3.5277113914489746,
+                  5.0
+                ],
+                [
+                  -27.946332931518555,
+                  3.647045373916626,
+                  5.0
+                ],
+                [
+                  -27.917051315307617,
+                  3.9396746158599854,
+                  5.0
+                ],
+                [
+                  -27.702392578125,
+                  5.274223804473877,
+                  5.0
+                ]
+              ],
+              "vertex_degrees": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "axis_ranges_mm": [
+                0.27608489990234375,
+                1.7465124130249023,
+                0.0
+              ],
+              "oriented_vector_area_mm2": [
+                0.0,
+                0.0,
+                -0.0002715637492656242
+              ],
+              "vector_area_magnitude_mm2": 0.0002715637492656242,
+              "area_is_not_a_validated_fill_or_surface_area": true,
+              "planar_boundary_crossings": {
+                "tested": true,
+                "constant_axis": 2,
+                "proper_crossings": [
+                  {
+                    "cycle_edge_indices": [
+                      1,
+                      3
+                    ],
+                    "first_segment_parameter": 0.7822829163126301,
+                    "second_segment_parameter": 0.8006009939257779,
+                    "intersection_mm": [
+                      -27.923426423394716,
+                      3.8759642307024316,
+                      5.0
+                    ]
+                  }
+                ],
+                "predicates": "exact rational arithmetic on supplied finite float coordinates",
+                "full_triangle_self_intersections_checked": false
+              }
+            }
+          ],
+          "boundary_edges_filled": false,
+          "vertex_welding_performed": false
+        },
+        "draft_stl": {
+          "filename": "MeshPart_original_DRAFT_NOT_QUALIFIED.stl",
+          "bytes": 68984,
+          "sha256": "3b0643344bee3baf88a185848769d34d6e2631df05f77250a62a6ca82d726005"
+        },
+        "stl_mesh_audit": {
+          "encoding": "binary",
+          "triangle_count": 1378,
+          "exact_vertex_count": 688,
+          "connected_components_by_vertex": 1,
+          "bounds_interpreted_mm": {
+            "min": [
+              -29.199708938598633,
+              -3.0,
+              0.0
+            ],
+            "max": [
+              29.199708938598633,
+              29.200000762939453,
+              15.0
+            ]
+          },
+          "envelope_xyz_interpreted_mm": [
+            58.399417877197266,
+            32.20000076293945,
+            15.0
+          ],
+          "surface_area_interpreted_mm2": 3576.083761515306,
+          "algebraic_signed_volume_interpreted_mm3": 1738.1142949586258,
+          "absolute_signed_volume_interpreted_mm3": 1738.1142949586258,
+          "topology": {
+            "boundary_edges": 4,
+            "nonmanifold_edges": 0,
+            "nonmanifold_vertices": 0,
+            "inconsistent_winding_edges": 0,
+            "duplicate_facets": 0,
+            "zero_area_facets": 0,
+            "closed_consistently_oriented_two_manifold": false,
+            "exact_vertex_matching_no_weld": true
+          },
+          "stored_normal_warnings": {
+            "zero_normals": 0,
+            "opposed_to_winding": 0
+          },
+          "nonzero_binary_attribute_words": 0,
+          "self_intersections": "not_checked",
+          "units": "STL_unitless_coordinates_explicitly_interpreted_as_mm_not_encoded_units",
+          "solid_fidelity": "not_established_by_topology_bounds_or_volume"
+        },
+        "upstream_discrete_geometry_comparison": {
+          "candidate_sha256": "3b0643344bee3baf88a185848769d34d6e2631df05f77250a62a6ca82d726005",
+          "reference_sha256": "a9056374be8f26e622a465a257b5ee80d13a48fdaa51d525ea2d4701618c9e9e",
+          "unindexed_vertex_multisets_exactly_equal": false,
+          "oriented_cyclic_triangle_multisets_exactly_equal": false,
+          "candidate_only_oriented_facets": 1346,
+          "reference_only_oriented_facets": 2636,
+          "normals_headers_triangle_order_ignored": true,
+          "multiplicity_retained": true,
+          "coordinate_tolerance_or_welding_used": false,
+          "continuous_source_solid_equivalence_proven": false,
+          "print_qualified": false
+        },
+        "export_geometry_matches_retained_arrays": true,
+        "export_bytes_reproduce_exactly_on_this_host": true,
+        "candidate_scope": "different tessellation diagnostic; not source-history repair, surface fidelity or print qualification"
+      },
+      {
+        "route": "Part_linear_only",
+        "settings": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": null,
+          "relative": false
+        },
+        "native_shape_valid": true,
+        "raw_topology": {
+          "topology": {
+            "indexed_point_count": 1332,
+            "used_index_count": 1332,
+            "exact_coordinate_count": 1332,
+            "used_exact_coordinate_count": 1332,
+            "triangle_count": 2668,
+            "boundary_edge_count": 0,
+            "nonmanifold_edge_count": 0,
+            "duplicate_facet_count": 0,
+            "nonmanifold_edges": [],
+            "defect_vertices_mm": [],
+            "defect_chain_total_length_mm": 0.0,
+            "source_geometry_changed": false,
+            "self_intersections_checked": false
+          },
+          "boundary_edges": [],
+          "boundary_components": [],
+          "boundary_edges_filled": false,
+          "vertex_welding_performed": false
+        },
+        "binary32_topology": {
+          "topology": {
+            "indexed_point_count": 1332,
+            "used_index_count": 1332,
+            "exact_coordinate_count": 1332,
+            "used_exact_coordinate_count": 1332,
+            "triangle_count": 2668,
+            "boundary_edge_count": 0,
+            "nonmanifold_edge_count": 0,
+            "duplicate_facet_count": 0,
+            "nonmanifold_edges": [],
+            "defect_vertices_mm": [],
+            "defect_chain_total_length_mm": 0.0,
+            "source_geometry_changed": false,
+            "self_intersections_checked": false
+          },
+          "boundary_edges": [],
+          "boundary_components": [],
+          "boundary_edges_filled": false,
+          "vertex_welding_performed": false
+        },
+        "draft_stl": {
+          "filename": "Part_linear_only_DRAFT_NOT_QUALIFIED.stl",
+          "bytes": 133484,
+          "sha256": "846e8691ad2f49f5fcd1ee140ef19dedad6d8eaba76fcbf0ac3ddaa76a840ff5"
+        },
+        "stl_mesh_audit": {
+          "encoding": "binary",
+          "triangle_count": 2668,
+          "exact_vertex_count": 1332,
+          "connected_components_by_vertex": 1,
+          "bounds_interpreted_mm": {
+            "min": [
+              -29.19986915588379,
+              -3.0,
+              0.0
+            ],
+            "max": [
+              29.19986915588379,
+              29.19952392578125,
+              15.0
+            ]
+          },
+          "envelope_xyz_interpreted_mm": [
+            58.39973831176758,
+            32.19952392578125,
+            15.0
+          ],
+          "surface_area_interpreted_mm2": 3577.2771326010993,
+          "algebraic_signed_volume_interpreted_mm3": 1742.757808070557,
+          "absolute_signed_volume_interpreted_mm3": 1742.757808070557,
+          "topology": {
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "nonmanifold_vertices": 0,
+            "inconsistent_winding_edges": 0,
+            "duplicate_facets": 0,
+            "zero_area_facets": 0,
+            "closed_consistently_oriented_two_manifold": true,
+            "exact_vertex_matching_no_weld": true
+          },
+          "stored_normal_warnings": {
+            "zero_normals": 0,
+            "opposed_to_winding": 0
+          },
+          "nonzero_binary_attribute_words": 0,
+          "self_intersections": "not_checked",
+          "units": "STL_unitless_coordinates_explicitly_interpreted_as_mm_not_encoded_units",
+          "solid_fidelity": "not_established_by_topology_bounds_or_volume"
+        },
+        "upstream_discrete_geometry_comparison": {
+          "candidate_sha256": "846e8691ad2f49f5fcd1ee140ef19dedad6d8eaba76fcbf0ac3ddaa76a840ff5",
+          "reference_sha256": "a9056374be8f26e622a465a257b5ee80d13a48fdaa51d525ea2d4701618c9e9e",
+          "unindexed_vertex_multisets_exactly_equal": true,
+          "oriented_cyclic_triangle_multisets_exactly_equal": true,
+          "candidate_only_oriented_facets": 0,
+          "reference_only_oriented_facets": 0,
+          "normals_headers_triangle_order_ignored": true,
+          "multiplicity_retained": true,
+          "coordinate_tolerance_or_welding_used": false,
+          "continuous_source_solid_equivalence_proven": false,
+          "print_qualified": false
+        },
+        "export_geometry_matches_retained_arrays": true,
+        "export_bytes_reproduce_exactly_on_this_host": true,
+        "candidate_scope": "different tessellation diagnostic; not source-history repair, surface fidelity or print qualification"
+      },
+      {
+        "route": "MeshPart_refined",
+        "settings": {
+          "linear_deflection_mm": 0.025,
+          "angular_deflection_rad": 0.1,
+          "relative": false
+        },
+        "native_shape_valid": true,
+        "raw_topology": {
+          "topology": {
+            "indexed_point_count": 1332,
+            "used_index_count": 1332,
+            "exact_coordinate_count": 1332,
+            "used_exact_coordinate_count": 1332,
+            "triangle_count": 2668,
+            "boundary_edge_count": 0,
+            "nonmanifold_edge_count": 0,
+            "duplicate_facet_count": 0,
+            "nonmanifold_edges": [],
+            "defect_vertices_mm": [],
+            "defect_chain_total_length_mm": 0.0,
+            "source_geometry_changed": false,
+            "self_intersections_checked": false
+          },
+          "boundary_edges": [],
+          "boundary_components": [],
+          "boundary_edges_filled": false,
+          "vertex_welding_performed": false
+        },
+        "binary32_topology": {
+          "topology": {
+            "indexed_point_count": 1332,
+            "used_index_count": 1332,
+            "exact_coordinate_count": 1332,
+            "used_exact_coordinate_count": 1332,
+            "triangle_count": 2668,
+            "boundary_edge_count": 0,
+            "nonmanifold_edge_count": 0,
+            "duplicate_facet_count": 0,
+            "nonmanifold_edges": [],
+            "defect_vertices_mm": [],
+            "defect_chain_total_length_mm": 0.0,
+            "source_geometry_changed": false,
+            "self_intersections_checked": false
+          },
+          "boundary_edges": [],
+          "boundary_components": [],
+          "boundary_edges_filled": false,
+          "vertex_welding_performed": false
+        },
+        "draft_stl": {
+          "filename": "MeshPart_refined_DRAFT_NOT_QUALIFIED.stl",
+          "bytes": 133484,
+          "sha256": "c90cf6706eeaf8650557fdb9884e1c8647dce71261cb71f3b7d0f605dc0143c4"
+        },
+        "stl_mesh_audit": {
+          "encoding": "binary",
+          "triangle_count": 2668,
+          "exact_vertex_count": 1332,
+          "connected_components_by_vertex": 1,
+          "bounds_interpreted_mm": {
+            "min": [
+              -29.19986915588379,
+              -3.0,
+              0.0
+            ],
+            "max": [
+              29.19986915588379,
+              29.19952392578125,
+              15.0
+            ]
+          },
+          "envelope_xyz_interpreted_mm": [
+            58.39973831176758,
+            32.19952392578125,
+            15.0
+          ],
+          "surface_area_interpreted_mm2": 3577.2771326010993,
+          "algebraic_signed_volume_interpreted_mm3": 1742.757808070557,
+          "absolute_signed_volume_interpreted_mm3": 1742.757808070557,
+          "topology": {
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "nonmanifold_vertices": 0,
+            "inconsistent_winding_edges": 0,
+            "duplicate_facets": 0,
+            "zero_area_facets": 0,
+            "closed_consistently_oriented_two_manifold": true,
+            "exact_vertex_matching_no_weld": true
+          },
+          "stored_normal_warnings": {
+            "zero_normals": 0,
+            "opposed_to_winding": 0
+          },
+          "nonzero_binary_attribute_words": 0,
+          "self_intersections": "not_checked",
+          "units": "STL_unitless_coordinates_explicitly_interpreted_as_mm_not_encoded_units",
+          "solid_fidelity": "not_established_by_topology_bounds_or_volume"
+        },
+        "upstream_discrete_geometry_comparison": {
+          "candidate_sha256": "c90cf6706eeaf8650557fdb9884e1c8647dce71261cb71f3b7d0f605dc0143c4",
+          "reference_sha256": "a9056374be8f26e622a465a257b5ee80d13a48fdaa51d525ea2d4701618c9e9e",
+          "unindexed_vertex_multisets_exactly_equal": false,
+          "oriented_cyclic_triangle_multisets_exactly_equal": false,
+          "candidate_only_oriented_facets": 12,
+          "reference_only_oriented_facets": 12,
+          "normals_headers_triangle_order_ignored": true,
+          "multiplicity_retained": true,
+          "coordinate_tolerance_or_welding_used": false,
+          "continuous_source_solid_equivalence_proven": false,
+          "print_qualified": false
+        },
+        "export_geometry_matches_retained_arrays": true,
+        "export_bytes_reproduce_exactly_on_this_host": true,
+        "candidate_scope": "different tessellation diagnostic; not source-history repair, surface fidelity or print qualification"
+      }
+    ],
+    "coherent_receipts_alone_authenticate_native_execution": false,
+    "source_cause_proven": false,
+    "mesh_repaired": false,
+    "fabrication_release": false
+  },
+  "upstream_attribution": {
+    "creator": "AngelLM and Thor contributors",
+    "project": "Thor",
+    "repository": "https://github.com/AngelLM/Thor",
+    "declared_repository_license": "CC-BY-SA-4.0",
+    "license_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/LICENSE",
+    "obligations": [
+      "Retain creator, source, revision and license link with derivatives/exports",
+      "Identify modifications/reflections and preserve applicable ShareAlike obligations",
+      "Embedded document metadata conflict remains an attribution review gate",
+      "No RAFTEL company-wide license is selected by this manifest"
+    ]
+  },
+  "local_raw_evidence": [
+    {
+      "path": ".work/optodisk-mesh-diagnostics/host-01/report.json",
+      "bytes": 10210,
+      "sha256": "89ca99315b2806f90e8c3a444c7d8f817f836e3036a5e37ea687455cddb57204"
+    },
+    {
+      "path": ".work/optodisk-mesh-diagnostics/host-02/report.json",
+      "bytes": 10946,
+      "sha256": "79bc9b1d86eb7a5af4c5c2c045b9e63f58913a30d1aeaa372003f243d62b1108"
+    },
+    {
+      "path": ".work/optodisk-mesh-diagnostics/native-02/probe.json",
+      "bytes": 772912,
+      "sha256": "8ab487ab24b624868bc4448bc3e20d2fd10afbc0a3f77f25ba4d74a72c2a7b87"
+    },
+    {
+      "path": ".work/optodisk-mesh-diagnostics/native-02/launch-result.json",
+      "bytes": 1188,
+      "sha256": "1eecb4d46ebf94e44750677c8e62d741dee66050daaa3c2b3efe66aff49c9872"
+    },
+    {
+      "path": ".work/optodisk-mesh-diagnostics/native-02/launch-contract.json",
+      "bytes": 7852,
+      "sha256": "11253a5ebf5ac955eaccc521deec923121a74fe6f06011020047fc14269cc41d"
+    },
+    {
+      "path": ".work/optodisk-mesh-diagnostics/native-02/scripts/diagnose_thor_optodisk_mesh.py",
+      "bytes": 16580,
+      "sha256": "eccbb0d5e91ae79c21cb207e584a3681c68d3e9ef82a408f5d8462350598e3c6"
+    },
+    {
+      "path": ".work/optodisk-mesh-diagnostics/native-02/scripts/diagnose_thor_column_mesh.py",
+      "bytes": 24178,
+      "sha256": "07edafe5a3489e82ff4e984d3bc2d128d71a36c6dff96ca3eae8c7354fafc978"
+    },
+    {
+      "path": ".work/optodisk-mesh-diagnostics/native-02/scripts/probe_thor_solid_properties_freecad.py",
+      "bytes": 32921,
+      "sha256": "e215506c00686219f8895d4ce00f4ab1a67936da60556227ec06c78dd1befee0"
+    },
+    {
+      "path": ".work/optodisk-mesh-diagnostics/native-02/scripts/audit_freecad_assembly.py",
+      "bytes": 19385,
+      "sha256": "224c6b45aa7d32aaee54d5de7b17f5446b6df865c6870fe5de5fdd9bd2c58c10"
+    },
+    {
+      "path": ".work/optodisk-mesh-diagnostics/native-02/scripts/launcher.py",
+      "bytes": 5750,
+      "sha256": "177de46f58bd6a657ae5aeaa9d82916e392c9cf762686ff9b0389724591c998b"
+    },
+    {
+      "path": ".work/optodisk-mesh-diagnostics/native-summary.json",
+      "bytes": 26208,
+      "sha256": "b083e248ec747bc08f685760e1fe3a9e1954e07866bc56faa08761584af8b30d"
+    },
+    {
+      "path": ".work/optodisk-mesh-diagnostics/native-02/draft-stl/MeshPart_original_DRAFT_NOT_QUALIFIED.stl",
+      "bytes": 68984,
+      "sha256": "3b0643344bee3baf88a185848769d34d6e2631df05f77250a62a6ca82d726005"
+    },
+    {
+      "path": ".work/optodisk-mesh-diagnostics/native-02/draft-stl/MeshPart_refined_DRAFT_NOT_QUALIFIED.stl",
+      "bytes": 133484,
+      "sha256": "c90cf6706eeaf8650557fdb9884e1c8647dce71261cb71f3b7d0f605dc0143c4"
+    },
+    {
+      "path": ".work/optodisk-mesh-diagnostics/native-02/draft-stl/Part_linear_only_DRAFT_NOT_QUALIFIED.stl",
+      "bytes": 133484,
+      "sha256": "846e8691ad2f49f5fcd1ee140ef19dedad6d8eaba76fcbf0ac3ddaa76a840ff5"
+    }
+  ],
+  "scope": {
+    "original_full_47_export_and_audit_unchanged": true,
+    "all_old_native_and_upstream_STLs_preserved": true,
+    "alternative_closed_meshes_are_separate_tessellation_candidates": true,
+    "continuous_source_equivalence_proven": false,
+    "source_history_repaired": false,
+    "full_triangle_self_intersections_checked": false,
+    "physical_fit_or_strength_qualified": false,
+    "fabrication_release": false
+  },
+  "executed_snapshot_boundary": "The retained native02 snapshot contains the executed boundary/tessellation worker. Later current-file additions are host-only discrete mesh comparison and evidence validation; the native02 raw report and script hash were not rewritten."
+}
