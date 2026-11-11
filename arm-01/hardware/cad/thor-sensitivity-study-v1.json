@@ -1,0 +1,881 @@
+{
+  "schema_version": 1,
+  "validation_class": "bounded_conditional_gravity_sensitivity_not_capacity_or_physical_validation",
+  "manifest_canonical_sha256": "8db13c72f0f16e2dc6c40f4c6155d0bd94bb1a877792291c87af306f7d9c5296",
+  "sweep_request_canonical_sha256": "3994135792ab64f25c57c35d02bf3f77dcd77d6f279e47c260af8f958e1799c9",
+  "bound_inputs": {
+    "inventory": {
+      "path": "hardware/cad/thor-mounted-geometry-v2.json",
+      "sha256": "64dbcf86439afffd11f63181259cba048008a3bedf103997603a24d23b49fa3e",
+      "evidence_class": "saved_native_cad_capture"
+    },
+    "membership": {
+      "path": "hardware/cad/thor-wrist-membership-v2.json",
+      "sha256": "07b3aaaf2a6a6257eef1b7fefbddecf34378016873c9d867ce0bfb77d990e6dd",
+      "evidence_class": "conditional_model"
+    },
+    "moving_mass": {
+      "path": "hardware/cad/thor-moving-mass-evidence.json",
+      "sha256": "59d22c96d71aab419b8a4455729d85633079e7c15adc3acef3a6f5e7a1c32e8b",
+      "evidence_class": "source_audit"
+    },
+    "jaw_bodies": {
+      "path": "hardware/cad/thor-jaw-body-ledger.json",
+      "sha256": "5cfa15266584ae0b8a23e9584d14850f0577faed53aea5c34d302718ddab222f",
+      "evidence_class": "conditional_model"
+    }
+  },
+  "source_revisions": {
+    "thor_cad": "286b081fe6f056d87c379b884781ef77ff6a0159",
+    "thor_ros": "e11a56b5aa0d89f0b68a3ea7bd084eab4a050952"
+  },
+  "wrist_motion_scenario": "bevel_sign_positive",
+  "request": {
+    "schema_version": 1,
+    "evidence_class": "conditional_analytical_sensitivity",
+    "units": {
+      "angle": "rad",
+      "mass": "kg",
+      "position": "m",
+      "torque": "N*m"
+    },
+    "materials": [
+      {
+        "name": "PLA",
+        "density_kg_m3": 1240.0,
+        "evidence": "https://prusament.com/wp-content/uploads/2022/10/PLA_Prusament_TDS_2021_10_EN.pdf"
+      },
+      {
+        "name": "PETG",
+        "density_kg_m3": 1270.0,
+        "evidence": "https://prusament.com/wp-content/uploads/2022/10/PETG_Prusament_TDS_2021_10_EN.pdf"
+      },
+      {
+        "name": "ABS",
+        "density_kg_m3": 1040.0,
+        "evidence": "https://polymaker.com.cn/wp-content/uploads/lana-downloads/PolyLite-ABS_TDS_EN_V5.5.pdf"
+      }
+    ],
+    "printed_fractions": {
+      "values": [
+        0.35,
+        0.5,
+        1.0
+      ],
+      "evidence": "Earlier thor-load-analysis.md effective whole-part fraction scenarios; not slicer infill or measured fractions."
+    },
+    "poses": [
+      {
+        "name": "upright",
+        "joint_angles_rad": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "shoulder_horizontal",
+        "joint_angles_rad": [
+          0.0,
+          1.5707963267948966,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "shoulder_horizontal_fold45_roll30",
+        "joint_angles_rad": [
+          0.0,
+          1.5707963267948966,
+          0.0,
+          0.0,
+          0.7853981633974483,
+          0.5235987755982988
+        ]
+      },
+      {
+        "name": "mixed_pose",
+        "joint_angles_rad": [
+          0.2,
+          0.6,
+          -0.3,
+          0.4,
+          -0.5235987755982988,
+          1.0471975511965976
+        ]
+      }
+    ],
+    "pose_evidence": "Explicit arm poses from bound scenario manifest; no calibrated stops, collision or physical feasibility proof.",
+    "jaws": [
+      {
+        "configuration": "saved_frozen",
+        "closing_angle_rad": null
+      },
+      {
+        "configuration": "ideal_body_overlay",
+        "closing_angle_rad": 0.0
+      },
+      {
+        "configuration": "ideal_body_overlay",
+        "closing_angle_rad": 1.0471975511965976
+      }
+    ],
+    "jaw_evidence": "Saved pose kept independent; ideal q=0/60deg examples from thor-gripper-kinematics.md with explicit body alignment proposal.",
+    "payload_masses": {
+      "values": [
+        0.0,
+        0.1,
+        0.2
+      ],
+      "evidence": "Earlier load-study payload scenarios only; no safe payload rating."
+    },
+    "payload_point_zero_m": [
+      0.0,
+      0.0,
+      0.7025242557054092
+    ],
+    "payload_offsets_zero_m": {
+      "values": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.025,
+          0.0,
+          0.0
+        ],
+        [
+          0.05,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.025,
+          0.0
+        ],
+        [
+          0.0,
+          0.05,
+          0.0
+        ]
+      ],
+      "evidence": "Earlier 25/50mm radial COM sensitivity values along explicit nominal ROS +X/+Y directions; object COM and overhang unmeasured."
+    },
+    "payload_attachment_evidence": "Fixed relative to roll_tool, independent of jaw q; no pad contact, retention or object motion model."
+  },
+  "sampling": {
+    "method": "complete declared Cartesian grid",
+    "random_seed": null,
+    "case_count": 1620,
+    "maximum_allowed_cases": 4096,
+    "sampled_extrema_are_certified_worst_cases": false
+  },
+  "mass_conservation": {
+    "native_leaves": 518,
+    "mass_records_per_scenario": 517,
+    "motor_assets": 7,
+    "whole_motor_mass_kg": 2.12,
+    "jaw_overlay_adds_removes_or_reweights_records": false,
+    "material_fraction_mass_cases": [
+      {
+        "material": {
+          "name": "PLA",
+          "density_kg_m3": 1240.0,
+          "evidence": "https://prusament.com/wp-content/uploads/2022/10/PLA_Prusament_TDS_2021_10_EN.pdf"
+        },
+        "printed_fraction": 0.35,
+        "modeled_mass_kg": 5.006452384722169
+      },
+      {
+        "material": {
+          "name": "PLA",
+          "density_kg_m3": 1240.0,
+          "evidence": "https://prusament.com/wp-content/uploads/2022/10/PLA_Prusament_TDS_2021_10_EN.pdf"
+        },
+        "printed_fraction": 0.5,
+        "modeled_mass_kg": 5.6547224855756
+      },
+      {
+        "material": {
+          "name": "PLA",
+          "density_kg_m3": 1240.0,
+          "evidence": "https://prusament.com/wp-content/uploads/2022/10/PLA_Prusament_TDS_2021_10_EN.pdf"
+        },
+        "printed_fraction": 1.0,
+        "modeled_mass_kg": 7.8156228217537
+      },
+      {
+        "material": {
+          "name": "PETG",
+          "density_kg_m3": 1270.0,
+          "evidence": "https://prusament.com/wp-content/uploads/2022/10/PETG_Prusament_TDS_2021_10_EN.pdf"
+        },
+        "printed_fraction": 0.35,
+        "modeled_mass_kg": 5.043048277512282
+      },
+      {
+        "material": {
+          "name": "PETG",
+          "density_kg_m3": 1270.0,
+          "evidence": "https://prusament.com/wp-content/uploads/2022/10/PETG_Prusament_TDS_2021_10_EN.pdf"
+        },
+        "printed_fraction": 0.5,
+        "modeled_mass_kg": 5.707002332418618
+      },
+      {
+        "material": {
+          "name": "PETG",
+          "density_kg_m3": 1270.0,
+          "evidence": "https://prusament.com/wp-content/uploads/2022/10/PETG_Prusament_TDS_2021_10_EN.pdf"
+        },
+        "printed_fraction": 1.0,
+        "modeled_mass_kg": 7.920182515439738
+      },
+      {
+        "material": {
+          "name": "ABS",
+          "density_kg_m3": 1040.0,
+          "evidence": "https://polymaker.com.cn/wp-content/uploads/lana-downloads/PolyLite-ABS_TDS_EN_V5.5.pdf"
+        },
+        "printed_fraction": 0.35,
+        "modeled_mass_kg": 4.762479766121416
+      },
+      {
+        "material": {
+          "name": "ABS",
+          "density_kg_m3": 1040.0,
+          "evidence": "https://polymaker.com.cn/wp-content/uploads/lana-downloads/PolyLite-ABS_TDS_EN_V5.5.pdf"
+        },
+        "printed_fraction": 0.5,
+        "modeled_mass_kg": 5.306190173288809
+      },
+      {
+        "material": {
+          "name": "ABS",
+          "density_kg_m3": 1040.0,
+          "evidence": "https://polymaker.com.cn/wp-content/uploads/lana-downloads/PolyLite-ABS_TDS_EN_V5.5.pdf"
+        },
+        "printed_fraction": 1.0,
+        "modeled_mass_kg": 7.1185581971801195
+      }
+    ]
+  },
+  "sampled_extrema": [
+    {
+      "coordinate": "joint_1",
+      "sampled_max_absolute_conditional_holding_nm": 0.0,
+      "sampled_min_signed_holding_nm": -0.0,
+      "sampled_max_signed_holding_nm": -0.0,
+      "witness": {
+        "material": {
+          "name": "PLA",
+          "density_kg_m3": 1240.0,
+          "evidence": "https://prusament.com/wp-content/uploads/2022/10/PLA_Prusament_TDS_2021_10_EN.pdf"
+        },
+        "printed_fraction": 0.35,
+        "pose": {
+          "name": "upright",
+          "joint_angles_rad": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "jaw": {
+          "configuration": "saved_frozen",
+          "closing_angle_rad": null
+        },
+        "payload_mass_kg": 0.0,
+        "payload_offset_zero_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coordinate": "joint_1",
+        "signed_conditional_holding_nm": -0.0
+      }
+    },
+    {
+      "coordinate": "joint_2",
+      "sampled_max_absolute_conditional_holding_nm": 7.927503986333787,
+      "sampled_min_signed_holding_nm": -7.927503986333787,
+      "sampled_max_signed_holding_nm": 0.13412707681353503,
+      "witness": {
+        "material": {
+          "name": "PETG",
+          "density_kg_m3": 1270.0,
+          "evidence": "https://prusament.com/wp-content/uploads/2022/10/PETG_Prusament_TDS_2021_10_EN.pdf"
+        },
+        "printed_fraction": 1.0,
+        "pose": {
+          "name": "shoulder_horizontal",
+          "joint_angles_rad": [
+            0.0,
+            1.5707963267948966,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "jaw": {
+          "configuration": "ideal_body_overlay",
+          "closing_angle_rad": 1.0471975511965976
+        },
+        "payload_mass_kg": 0.2,
+        "payload_offset_zero_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coordinate": "joint_2",
+        "signed_conditional_holding_nm": -7.927503986333787
+      }
+    },
+    {
+      "coordinate": "joint_3",
+      "sampled_max_absolute_conditional_holding_nm": 3.009194762439379,
+      "sampled_min_signed_holding_nm": -3.009194762439379,
+      "sampled_max_signed_holding_nm": 0.13412896112672731,
+      "witness": {
+        "material": {
+          "name": "PETG",
+          "density_kg_m3": 1270.0,
+          "evidence": "https://prusament.com/wp-content/uploads/2022/10/PETG_Prusament_TDS_2021_10_EN.pdf"
+        },
+        "printed_fraction": 1.0,
+        "pose": {
+          "name": "shoulder_horizontal",
+          "joint_angles_rad": [
+            0.0,
+            1.5707963267948966,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "jaw": {
+          "configuration": "ideal_body_overlay",
+          "closing_angle_rad": 1.0471975511965976
+        },
+        "payload_mass_kg": 0.2,
+        "payload_offset_zero_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coordinate": "joint_3",
+        "signed_conditional_holding_nm": -3.009194762439379
+      }
+    },
+    {
+      "coordinate": "joint_4",
+      "sampled_max_absolute_conditional_holding_nm": 0.10038255578566041,
+      "sampled_min_signed_holding_nm": -0.05057834824555552,
+      "sampled_max_signed_holding_nm": 0.10038255578566041,
+      "witness": {
+        "material": {
+          "name": "ABS",
+          "density_kg_m3": 1040.0,
+          "evidence": "https://polymaker.com.cn/wp-content/uploads/lana-downloads/PolyLite-ABS_TDS_EN_V5.5.pdf"
+        },
+        "printed_fraction": 0.35,
+        "pose": {
+          "name": "shoulder_horizontal",
+          "joint_angles_rad": [
+            0.0,
+            1.5707963267948966,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "jaw": {
+          "configuration": "saved_frozen",
+          "closing_angle_rad": null
+        },
+        "payload_mass_kg": 0.2,
+        "payload_offset_zero_m": [
+          0.05,
+          0.0,
+          0.0
+        ],
+        "coordinate": "joint_4",
+        "signed_conditional_holding_nm": 0.10038255578566041
+      }
+    },
+    {
+      "coordinate": "joint_5",
+      "sampled_max_absolute_conditional_holding_nm": 0.48860223236170486,
+      "sampled_min_signed_holding_nm": -0.48860223236170486,
+      "sampled_max_signed_holding_nm": 0.19308002593961182,
+      "witness": {
+        "material": {
+          "name": "PETG",
+          "density_kg_m3": 1270.0,
+          "evidence": "https://prusament.com/wp-content/uploads/2022/10/PETG_Prusament_TDS_2021_10_EN.pdf"
+        },
+        "printed_fraction": 1.0,
+        "pose": {
+          "name": "shoulder_horizontal",
+          "joint_angles_rad": [
+            0.0,
+            1.5707963267948966,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "jaw": {
+          "configuration": "ideal_body_overlay",
+          "closing_angle_rad": 1.0471975511965976
+        },
+        "payload_mass_kg": 0.2,
+        "payload_offset_zero_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coordinate": "joint_5",
+        "signed_conditional_holding_nm": -0.48860223236170486
+      }
+    },
+    {
+      "coordinate": "joint_6",
+      "sampled_max_absolute_conditional_holding_nm": 0.10067094338173331,
+      "sampled_min_signed_holding_nm": -0.02731612844445433,
+      "sampled_max_signed_holding_nm": 0.10067094338173331,
+      "witness": {
+        "material": {
+          "name": "ABS",
+          "density_kg_m3": 1040.0,
+          "evidence": "https://polymaker.com.cn/wp-content/uploads/lana-downloads/PolyLite-ABS_TDS_EN_V5.5.pdf"
+        },
+        "printed_fraction": 0.35,
+        "pose": {
+          "name": "shoulder_horizontal",
+          "joint_angles_rad": [
+            0.0,
+            1.5707963267948966,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "jaw": {
+          "configuration": "saved_frozen",
+          "closing_angle_rad": null
+        },
+        "payload_mass_kg": 0.2,
+        "payload_offset_zero_m": [
+          0.05,
+          0.0,
+          0.0
+        ],
+        "coordinate": "joint_6",
+        "signed_conditional_holding_nm": 0.10067094338173331
+      }
+    },
+    {
+      "coordinate": "ideal_jaw_q",
+      "sampled_max_absolute_conditional_holding_nm": 0.014047739067781412,
+      "sampled_min_signed_holding_nm": -0.009933253069705389,
+      "sampled_max_signed_holding_nm": 0.014047739067781412,
+      "witness": {
+        "material": {
+          "name": "PETG",
+          "density_kg_m3": 1270.0,
+          "evidence": "https://prusament.com/wp-content/uploads/2022/10/PETG_Prusament_TDS_2021_10_EN.pdf"
+        },
+        "printed_fraction": 1.0,
+        "pose": {
+          "name": "upright",
+          "joint_angles_rad": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "jaw": {
+          "configuration": "ideal_body_overlay",
+          "closing_angle_rad": 0.0
+        },
+        "payload_mass_kg": 0.0,
+        "payload_offset_zero_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coordinate": "ideal_jaw_q",
+        "signed_conditional_holding_nm": 0.014047739067781412
+      }
+    }
+  ],
+  "ranked_missing_measurements_by_modeled_sensitivity": [
+    {
+      "varied_parameter": "printed_fraction",
+      "missing_measurement": "Per-part slicer/model mass and weighed effective whole-part mass",
+      "maximum_sampled_conditional_holding_spread_nm": 2.638274532768378,
+      "low_witness": {
+        "material": {
+          "name": "PETG",
+          "density_kg_m3": 1270.0,
+          "evidence": "https://prusament.com/wp-content/uploads/2022/10/PETG_Prusament_TDS_2021_10_EN.pdf"
+        },
+        "printed_fraction": 1.0,
+        "pose": {
+          "name": "shoulder_horizontal",
+          "joint_angles_rad": [
+            0.0,
+            1.5707963267948966,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "jaw": {
+          "configuration": "ideal_body_overlay",
+          "closing_angle_rad": 1.0471975511965976
+        },
+        "payload_mass_kg": 0.0,
+        "payload_offset_zero_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coordinate": "joint_2",
+        "signed_conditional_holding_nm": -6.945810747891096
+      },
+      "high_witness": {
+        "material": {
+          "name": "PETG",
+          "density_kg_m3": 1270.0,
+          "evidence": "https://prusament.com/wp-content/uploads/2022/10/PETG_Prusament_TDS_2021_10_EN.pdf"
+        },
+        "printed_fraction": 0.35,
+        "pose": {
+          "name": "shoulder_horizontal",
+          "joint_angles_rad": [
+            0.0,
+            1.5707963267948966,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "jaw": {
+          "configuration": "ideal_body_overlay",
+          "closing_angle_rad": 1.0471975511965976
+        },
+        "payload_mass_kg": 0.0,
+        "payload_offset_zero_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coordinate": "joint_2",
+        "signed_conditional_holding_nm": -4.307536215122719
+      }
+    },
+    {
+      "varied_parameter": "payload_mass_kg",
+      "missing_measurement": "Actual object mass",
+      "maximum_sampled_conditional_holding_spread_nm": 0.9816932384426904,
+      "low_witness": {
+        "material": {
+          "name": "PLA",
+          "density_kg_m3": 1240.0,
+          "evidence": "https://prusament.com/wp-content/uploads/2022/10/PLA_Prusament_TDS_2021_10_EN.pdf"
+        },
+        "printed_fraction": 0.35,
+        "pose": {
+          "name": "shoulder_horizontal",
+          "joint_angles_rad": [
+            0.0,
+            1.5707963267948966,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "jaw": {
+          "configuration": "saved_frozen",
+          "closing_angle_rad": null
+        },
+        "payload_mass_kg": 0.2,
+        "payload_offset_zero_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coordinate": "joint_2",
+        "signed_conditional_holding_nm": -5.250157077761174
+      },
+      "high_witness": {
+        "material": {
+          "name": "PLA",
+          "density_kg_m3": 1240.0,
+          "evidence": "https://prusament.com/wp-content/uploads/2022/10/PLA_Prusament_TDS_2021_10_EN.pdf"
+        },
+        "printed_fraction": 0.35,
+        "pose": {
+          "name": "shoulder_horizontal",
+          "joint_angles_rad": [
+            0.0,
+            1.5707963267948966,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "jaw": {
+          "configuration": "saved_frozen",
+          "closing_angle_rad": null
+        },
+        "payload_mass_kg": 0.0,
+        "payload_offset_zero_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coordinate": "joint_2",
+        "signed_conditional_holding_nm": -4.268463839318484
+      }
+    },
+    {
+      "varied_parameter": "material",
+      "missing_measurement": "Actual filament product/density and measured printed masses",
+      "maximum_sampled_conditional_holding_spread_nm": 0.7350734615829522,
+      "low_witness": {
+        "material": {
+          "name": "PETG",
+          "density_kg_m3": 1270.0,
+          "evidence": "https://prusament.com/wp-content/uploads/2022/10/PETG_Prusament_TDS_2021_10_EN.pdf"
+        },
+        "printed_fraction": 1.0,
+        "pose": {
+          "name": "shoulder_horizontal",
+          "joint_angles_rad": [
+            0.0,
+            1.5707963267948966,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "jaw": {
+          "configuration": "ideal_body_overlay",
+          "closing_angle_rad": 1.0471975511965976
+        },
+        "payload_mass_kg": 0.0,
+        "payload_offset_zero_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coordinate": "joint_2",
+        "signed_conditional_holding_nm": -6.945810747891096
+      },
+      "high_witness": {
+        "material": {
+          "name": "ABS",
+          "density_kg_m3": 1040.0,
+          "evidence": "https://polymaker.com.cn/wp-content/uploads/lana-downloads/PolyLite-ABS_TDS_EN_V5.5.pdf"
+        },
+        "printed_fraction": 1.0,
+        "pose": {
+          "name": "shoulder_horizontal",
+          "joint_angles_rad": [
+            0.0,
+            1.5707963267948966,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "jaw": {
+          "configuration": "ideal_body_overlay",
+          "closing_angle_rad": 1.0471975511965976
+        },
+        "payload_mass_kg": 0.0,
+        "payload_offset_zero_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coordinate": "joint_2",
+        "signed_conditional_holding_nm": -6.210737286308144
+      }
+    },
+    {
+      "varied_parameter": "payload_offset_zero_m",
+      "missing_measurement": "Actual grasped-object COM and overhang in the tool frame",
+      "maximum_sampled_conditional_holding_spread_nm": 0.13396133026022666,
+      "low_witness": {
+        "material": {
+          "name": "PLA",
+          "density_kg_m3": 1240.0,
+          "evidence": "https://prusament.com/wp-content/uploads/2022/10/PLA_Prusament_TDS_2021_10_EN.pdf"
+        },
+        "printed_fraction": 0.35,
+        "pose": {
+          "name": "shoulder_horizontal_fold45_roll30",
+          "joint_angles_rad": [
+            0.0,
+            1.5707963267948966,
+            0.0,
+            0.0,
+            0.7853981633974483,
+            0.5235987755982988
+          ]
+        },
+        "jaw": {
+          "configuration": "saved_frozen",
+          "closing_angle_rad": null
+        },
+        "payload_mass_kg": 0.2,
+        "payload_offset_zero_m": [
+          0.0,
+          0.05,
+          0.0
+        ],
+        "coordinate": "joint_4",
+        "signed_conditional_holding_nm": -0.03877157156780531
+      },
+      "high_witness": {
+        "material": {
+          "name": "PLA",
+          "density_kg_m3": 1240.0,
+          "evidence": "https://prusament.com/wp-content/uploads/2022/10/PLA_Prusament_TDS_2021_10_EN.pdf"
+        },
+        "printed_fraction": 0.35,
+        "pose": {
+          "name": "shoulder_horizontal_fold45_roll30",
+          "joint_angles_rad": [
+            0.0,
+            1.5707963267948966,
+            0.0,
+            0.0,
+            0.7853981633974483,
+            0.5235987755982988
+          ]
+        },
+        "jaw": {
+          "configuration": "saved_frozen",
+          "closing_angle_rad": null
+        },
+        "payload_mass_kg": 0.2,
+        "payload_offset_zero_m": [
+          0.05,
+          0.0,
+          0.0
+        ],
+        "coordinate": "joint_4",
+        "signed_conditional_holding_nm": 0.09518975869242136
+      }
+    },
+    {
+      "varied_parameter": "jaw",
+      "missing_measurement": "Realizable jaw alignment, closure coordinate and moving-part COM ownership",
+      "maximum_sampled_conditional_holding_spread_nm": 0.012165701028124087,
+      "low_witness": {
+        "material": {
+          "name": "PETG",
+          "density_kg_m3": 1270.0,
+          "evidence": "https://prusament.com/wp-content/uploads/2022/10/PETG_Prusament_TDS_2021_10_EN.pdf"
+        },
+        "printed_fraction": 1.0,
+        "pose": {
+          "name": "shoulder_horizontal",
+          "joint_angles_rad": [
+            0.0,
+            1.5707963267948966,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "jaw": {
+          "configuration": "ideal_body_overlay",
+          "closing_angle_rad": 1.0471975511965976
+        },
+        "payload_mass_kg": 0.0,
+        "payload_offset_zero_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coordinate": "joint_5",
+        "signed_conditional_holding_nm": -0.20121981391901464
+      },
+      "high_witness": {
+        "material": {
+          "name": "PETG",
+          "density_kg_m3": 1270.0,
+          "evidence": "https://prusament.com/wp-content/uploads/2022/10/PETG_Prusament_TDS_2021_10_EN.pdf"
+        },
+        "printed_fraction": 1.0,
+        "pose": {
+          "name": "shoulder_horizontal",
+          "joint_angles_rad": [
+            0.0,
+            1.5707963267948966,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "jaw": {
+          "configuration": "ideal_body_overlay",
+          "closing_angle_rad": 0.0
+        },
+        "payload_mass_kg": 0.0,
+        "payload_offset_zero_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coordinate": "joint_5",
+        "signed_conditional_holding_nm": -0.18905411289089055
+      }
+    }
+  ],
+  "ranking_scope": "matched grid cases varying one declared parameter; not risk priority, confidence, tolerances or physical uncertainty bounds",
+  "full_physical_wrist_holding_torques_remain_unknown": true,
+  "ideal_jaw_effort_is_servo_shaft_torque": false,
+  "pose_limits_collision_actuator_or_fabrication_qualification": false,
+  "native_recompute_or_hardware_access": false,
+  "unresolved_gates": [
+    "Original Art1 history not semantically rebuilt; static snapshot remains analysis baseline.",
+    "Saved wrist gears interfere/noncoincident apices; ideal s=+1 is not physical sign calibration.",
+    "Saved jaw loops are not solved; no physical parallelism, stroke or force rating.",
+    "Internal motor balance, uniform belt path and bearing COM assumptions remain conditional.",
+    "Actual filament/printed masses, COM, inertia, stops, collisions, calibration and moving actuator capacity remain unknown."
+  ]
+}

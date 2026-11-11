@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "validation_class": "proposed_native_jaw_capture_predicates",
+  "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+  "original_source_sha256": {
+    "Assembly.FCStd": "5ee729246229e7494466010ab68e2c2367ba4ec1361b7701df21c0f8b00c2c1b",
+    "AssemblyArt56.FCStd": "a04836216dcae82eb033c15daba6e41dedb85b03f86ff21e56b77cdff835a473",
+    "GripperBot.FCStd": "a65e68644312adee7381e3a640b2b827f9c2c3362bbe4a842ccee9fea969d176",
+    "GripperArm.FCStd": "f1511f4b319a5727cf07771abe4c75002d5527e0a10291d47c1fe8024a44c6fc",
+    "GripperActiveArm.FCStd": "3ba5ba6f74c5d2f45eeca56f28534dc750e7f0ae735b6a0b3e16beeef21adc67",
+    "GripperPassiveArm.FCStd": "d14ac1debf67735fd623e052d468a9773066c32356390799b4ea07addcba68d4",
+    "GripperFinger.FCStd": "ab4daca4dd2f447029f4c76150b7f617fbdda74ae467cf6962938efe148d57a6"
+  },
+  "jaw_body_ledger_canonical_sha256": "61840321e08dccfc7c3316f3404eef290fec0eb4c0db5de9b466d959f491ba59",
+  "coordinate_frame": "GripperBot source Body local XYZ, metres",
+  "configuration": "ideal_derived_candidate",
+  "required_q_rad": [
+    0,
+    0.5235987755982988,
+    1.0471975511965976
+  ],
+  "numeric_targets": {
+    "position_m": 1e-06,
+    "loop_axis_distance_m": 1e-06,
+    "link_length_m": 1e-06,
+    "normal_or_axis_vector_error": 1e-08,
+    "phase_rad": 1e-07,
+    "aperture_m": 1e-06
+  },
+  "target_basis": "Numerical reproduction targets for the declared ideal model, chosen for diagnosis; these are not manufactured fit, clearance or safety tolerances.",
+  "required_capture_fields": {
+    "per_side_points": [
+      "driven_pivot_m",
+      "auxiliary_pivot_m",
+      "driven_tip_m",
+      "auxiliary_tip_m",
+      "finger_driven_hole_m",
+      "finger_auxiliary_hole_m"
+    ],
+    "per_side_axis_units": [
+      "driven_base",
+      "auxiliary_base",
+      "finger_driven",
+      "finger_auxiliary"
+    ],
+    "contact_plane": [
+      "point_m",
+      "normal_unit"
+    ]
+  },
+  "rebuild_procedure": [
+    "Use copied source files and isolated preferences; verify original hashes first/last.",
+    "Repair active pivot support and driven phase by semantic geometry, not edge index.",
+    "Retain explicit old-to-new references and every altered source dimension.",
+    "Force selected-feature rebuild, save/reopen derived copies and recapture each pose.",
+    "Record runtime/version, candidate hashes and measured axes/points/planes per pose.",
+    "Inspect whole jaw/wrist gear interference and fixed-pin stacks in a separate gate."
+  ],
+  "native_verification_complete": false,
+  "contact_qualified": false,
+  "retention_qualified": false,
+  "usable_opening_m": null,
+  "physical_calibration_qualified": false,
+  "fabrication_released": false
+}
