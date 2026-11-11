@@ -24,6 +24,17 @@ def document():
     return read_observation_document(FIXTURE)
 
 
+def test_point_covariance_replay_uses_scale_invariant_psd_check(document):
+    row = document["observations"][0]
+    row["position_covariance_m2"] = [[1e200, 5e199, 0], [5e199, 1e200, 0], [0, 0, 0]]
+    # Finite synthetic uncertainty is validated independently of its usefulness.
+    replay = _replay(document)
+    assert replay.decisions[0].position_covariance_m2[0][0] == 1e200
+    row["position_covariance_m2"] = [[1e-100, 2e-100, 0], [2e-100, 1e-100, 0], [0, 0, 0]]
+    with pytest.raises(ValueError, match="positive semidefinite"):
+        _replay(document)
+
+
 def _replay(document, **overrides):
     return replay_observations(
         document,

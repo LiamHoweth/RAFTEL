@@ -131,11 +131,18 @@ def covariance(value: Sequence[Sequence[float]]) -> Matrix:
     """Validate a symmetric positive-semidefinite 6x6 SI covariance."""
     result = matrix(value, 6, 6)
     scale = max(max(abs(component) for component in row) for row in result)
-    tolerance = 1e-12 * max(scale, 1e-30)
-    if any(abs(result[i][j] - result[j][i]) > tolerance for i in range(6) for j in range(6)):
+    if scale == 0:
+        return result
+    # Check dimensionless values: raw Schur products can overflow even for a
+    # well-conditioned covariance, while an absolute floor hides tiny defects.
+    normalized = [[component / scale for component in row] for row in result]
+    tolerance = 1e-12
+    if any(
+        abs(normalized[i][j] - normalized[j][i]) > tolerance for i in range(6) for j in range(6)
+    ):
         raise ValueError("covariance must be symmetric")
     # Pivoted Schur complement handles PSD matrices with zero variance exactly.
-    remaining = [list(row) for row in result]
+    remaining = normalized
     while remaining:
         pivot = max(range(len(remaining)), key=lambda i: remaining[i][i])
         remaining[0], remaining[pivot] = remaining[pivot], remaining[0]
