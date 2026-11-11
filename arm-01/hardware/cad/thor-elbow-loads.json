@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "validation_class": "conditional_transmission_analytical_model_not_hardware_qualification",
+  "source_load_study_sha256": "3817e6ac5c4ea55f4ac43259e73ad92b281d97d66cb65b0001e14d4801987f70",
+  "load_case": {
+    "fraction": 0.5,
+    "pose": "shoulder_horizontal",
+    "payload_kg": 0.2
+  },
+  "input_holding_joint_nm": {
+    "q2": -5.827992891670454,
+    "q3": -2.3423243748226543
+  },
+  "transmission_parameters": {
+    "driver_radius_m": 0.006366197723675814,
+    "drum_radius_m": 0.037,
+    "elbow_gearbox_ratio": 5.18,
+    "shoulder_branch_ratio": 31.08,
+    "carrier_coupling": 1.0,
+    "belt_sign": 1
+  },
+  "geometry_evidence_or_assumptions": "Conditional CAD body-radius endpoint; pitch radius unmeasured; coaxial open-belt carrier and 50/50 shoulder split assumed; see docs/thor-elbow-mechanism.md and docs/thor-elbow-loads.md",
+  "ideal_efforts": {
+    "rotor_B_nm": -0.08727435601616598,
+    "rotor_C_nm": -0.08727435601616598,
+    "rotor_E_nm": -0.07780288063814232,
+    "elbow_gearbox_output_nm": -0.40301892170557724,
+    "shoulder_branch_total_joint_nm": -5.424973969964877,
+    "remote_elbow_contribution_at_shoulder_nm": -0.40301892170557724,
+    "shoulder_B_fraction_assumed": 0.5,
+    "physical_load_sharing_verified": false,
+    "lossless": true
+  },
+  "belt_tension_requirement": {
+    "signed_tension_difference_n": -63.306064184396064,
+    "magnitude_n": 63.306064184396064,
+    "symmetric_mid_tension_minimum_for_nonnegative_spans_n": 31.653032092198032,
+    "physical_pretension_or_traction_qualified": false,
+    "span_convention": "T_plus minus T_minus, positive resultant produces positive q3 torque",
+    "meaning": "Magnitude is tight minus slack; clamp, wrap and bearing forces unresolved"
+  },
+  "constant_effective_pitch_radius_physically_verified": false,
+  "motor_capacity_or_safe_payload_qualified": false,
+  "caveats": [
+    "Radii, signs and carrier mapping are inputs; no calibrated motion instruction",
+    "Static demands exclude motion, friction, acceleration, cables and thermal effects",
+    "No physical shoulder load-sharing fraction is guaranteed",
+    "No efficiency multiplier is applied to zero-power static holding",
+    "Tension difference does not establish pretension, traction, clamp or bearing capacity"
+  ]
+}

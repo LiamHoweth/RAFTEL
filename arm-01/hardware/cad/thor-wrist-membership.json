@@ -1,0 +1,2413 @@
+{
+  "schema_version": 1,
+  "validation_class": "source-backed membership, conditional analytical motion; no articulation validation",
+  "native_source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+  "source_geometry_sha256": "721446cdf1a931afab75db4f960cea3b909ca87935d6b14b661fdfbd5a0f1b66",
+  "source_assembly_sha256": "a04836216dcae82eb033c15daba6e41dedb85b03f86ff21e56b77cdff835a473",
+  "coordinate_frame": "native_CAD_world_m",
+  "native_to_ros_rotation": "Rz(-pi/2): (x,y,z)_ROS=(y,-x,z)_CAD",
+  "axes": {
+    "fold": {
+      "origin_m": [
+        0,
+        0,
+        0.556
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ]
+    },
+    "roll_zero": {
+      "origin_m": [
+        0,
+        0,
+        0.5775
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ]
+    },
+    "side_rotors": {
+      "origin_m": [
+        0,
+        0,
+        0.556
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ]
+    }
+  },
+  "motion_classes": {
+    "upstream_nonwrist": {
+      "evidence": "Preserve existing upstream joint membership; no additional q5/q6 motion asserted.",
+      "steps": []
+    },
+    "fold_carrier": {
+      "evidence": "Rigid q5 rotation about native fold line; no q6 rotation.",
+      "steps": [
+        {
+          "origin_m": [
+            0,
+            0,
+            0.556
+          ],
+          "axis_unit": [
+            0,
+            1,
+            0
+          ],
+          "q5_coefficient": 1,
+          "q6_coefficient": 0,
+          "evidence": "Chosen +Y fold convention; native axis line verified, articulation conditional."
+        }
+      ]
+    },
+    "roll_tool": {
+      "evidence": "q5 fold followed by q6 about carried roll line; gripper frozen at source jaw pose.",
+      "steps": [
+        {
+          "origin_m": [
+            0,
+            0,
+            0.556
+          ],
+          "axis_unit": [
+            0,
+            1,
+            0
+          ],
+          "q5_coefficient": 1,
+          "q6_coefficient": 0,
+          "evidence": "Chosen +Y fold convention; native axis line verified, articulation conditional."
+        },
+        {
+          "origin_m": [
+            0,
+            0,
+            0.5775
+          ],
+          "axis_unit": [
+            0,
+            0,
+            1
+          ],
+          "q5_coefficient": 0,
+          "q6_coefficient": 1,
+          "evidence": "Roll line carried by preceding fold; positive sign chosen, uncalibrated."
+        }
+      ]
+    },
+    "side_rotor_negative_y": {
+      "evidence": "Own-axis rotation about common +Y fold line. Ideal alpha=q5+s*2*q6, s unresolved +/-1. Not rigid carrier membership.",
+      "steps": [
+        {
+          "origin_m": [
+            0,
+            0,
+            0.556
+          ],
+          "axis_unit": [
+            0,
+            1,
+            0
+          ],
+          "q5_coefficient": 1,
+          "q6_coefficient": 2,
+          "evidence": "Conditional ideal bevel model, s=+1; reverse q6 coefficient for s=-1."
+        }
+      ]
+    },
+    "side_rotor_positive_y": {
+      "evidence": "Own-axis rotation about common +Y fold line. Ideal alpha=q5-s*2*q6, s unresolved +/-1. Not rigid carrier membership.",
+      "steps": [
+        {
+          "origin_m": [
+            0,
+            0,
+            0.556
+          ],
+          "axis_unit": [
+            0,
+            1,
+            0
+          ],
+          "q5_coefficient": 1,
+          "q6_coefficient": -2,
+          "evidence": "Conditional ideal bevel model, s=+1; reverse q6 coefficient for s=-1."
+        }
+      ]
+    },
+    "bearing_roll_axis_com": {
+      "evidence": "COM follows q5; central bore is roll axis. Compound race/cage orientation is not a rigid-body model.",
+      "steps": [
+        {
+          "origin_m": [
+            0,
+            0,
+            0.556
+          ],
+          "axis_unit": [
+            0,
+            1,
+            0
+          ],
+          "q5_coefficient": 1,
+          "q6_coefficient": 0,
+          "evidence": "Chosen +Y fold convention; native axis line verified, articulation conditional."
+        }
+      ]
+    },
+    "bearing_fold_axis_com": {
+      "evidence": "COM is on q5 axis and stays fixed under wrist motion. Compound race/cage orientation is not a rigid-body model.",
+      "steps": []
+    }
+  },
+  "unresolved": [
+    "The sign s assigning bevel rotation to native positive q6 requires mesh/contact or articulation evidence.",
+    "All jaw mechanism leaves are frozen at the saved pose; no jaw-angle/servo-coordinate model.",
+    "Bearing compounds cannot be treated as rigid solids for rotational inertia or contact.",
+    "CAD attachment expressions position components but are not revolute joints or gear constraints.",
+    "Art4 motor rotors and traveling belts are not separated by this wrist-only membership refinement."
+  ],
+  "counts": {
+    "upstream_nonwrist": 450,
+    "fold_carrier": 7,
+    "roll_tool": 47,
+    "side_rotor_negative_y": 5,
+    "side_rotor_positive_y": 5,
+    "bearing_roll_axis_com": 1,
+    "bearing_fold_axis_com": 1
+  },
+  "memberships": [
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::BaseBot_BaseBot",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::BaseTop_BaseTop",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::BaseBearingFix_BaseBearingFix",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::BaseBoxBody_BaseBoxBody",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::BaseBoxCover_BaseBoxCover",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Stepper_Nema17x40001/AssemblyBase::Part__Feature031",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Art1GearMotor_Art1GearMotor",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::OpticSensor001/AssemblyBase::Fusion155",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Fan_40x40001/AssemblyBase::Part__Feature001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::OnOffButton001/AssemblyBase::Compound007",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::ResetButton001/AssemblyBase::Compound006",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Fan_50x50001/AssemblyBase::Clone002001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Fan_50x50002/AssemblyBase::Clone002001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Fan_50x50003/AssemblyBase::Clone002001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Fan_50x50004/AssemblyBase::Clone002001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::ArduinoMega001/AssemblyBase::Part__Feature",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::JackDC001/AssemblyBase::Part__Feature030",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::NutButton/AssemblyBase::Part__Feature029",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::NutButton001/AssemblyBase::Part__Feature029",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Bearing_16014zz001/AssemblyBase::Compound",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw007",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw032",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Nut012",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw019",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Nut034",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Nut014",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw004",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw020",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw028",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Nut033",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Nut009",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Nut018",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw037",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw011",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw023",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Nut007",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Nut",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Nut003",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw031",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Nut005",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Nut006",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Nut004",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Nut001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw036",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Nut002",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Nut035",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw005",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw006",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw033",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Nut036",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw030",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw034",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw013",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw009",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Nut010",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Nut011",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Nut008",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Nut029",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw012",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Nut031",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Nut037",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Nut038",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Nut013",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw010",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw044",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw041",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw039",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw040",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Nut030",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw035",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw038",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw042",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw043",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Nut017",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw016",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw017",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Nut024",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Nut019",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Nut020",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Nut021",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw024",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Nut026",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw018",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw021",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Nut025",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw029",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Nut032",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw008",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw014",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw003",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Nut015",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw002",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw015",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Nut023",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Nut016",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw027",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Nut028",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw026",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Nut027",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Screw025",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art1Bot_Art1Bot",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art1Top_Art1Top",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art1FanHolder_Art1FanHolder",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art1FanHolder_Art1FanHolder001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art1Body_Art1Body",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art23Optodisk_Art23Optodisk",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Bearing_625ZZ001/AssemblyArt1::Compound001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::CommonBearingFixThrough_CommonBearingFixThrough",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Nema17_GearBox001/AssemblyArt1::Pocket007001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Nema17_GearBox002/AssemblyArt1::Pocket007001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Nema17_GearBox003/AssemblyArt1::Pocket007001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art2MotorGear_Art2MotorGear",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art2MotorGear_Art2MotorGear001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Fan_40x40001/AssemblyArt1::Part__Feature001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Fan_40x40002/AssemblyArt1::Part__Feature001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art2BodyACover1_Art2BodyACover1",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Pulley_GT2x20_Modified001/AssemblyArt1::Cut002002_solid",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Pulley_GT2x20_Modified001/AssemblyArt1::Pocket001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::_x14_5mm/AssemblyArt1::Cylinder",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::_x32mm001/AssemblyArt1::Cylinder001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw005",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Nut",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Nut002",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw002",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Nut003",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Nut001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Nut006",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Nut008",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Nut004",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Nut005",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Nut007",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Nut009",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Nut010",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw004",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Nut011",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw003",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw014",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw015",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw018",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw012",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw027",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw007",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw009",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw010",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Nut013",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Nut016",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Nut014",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Nut015",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Nut017",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw008",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Nut018",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw011",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw013",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Nut012",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Nut019",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw016",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw017",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw026",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw019",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw020",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw021",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw022",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw028",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw029",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw030",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw023",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw031",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw024",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw032",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw025",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw033",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw035",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw038",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw039",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw040",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw034",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Nut022",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Nut021",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw037",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Nut023",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw041",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Nut024",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Nut020",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw036",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw042",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Screw006",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art2BodyA_Art2BodyA",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Unnamed_Art2BodyAWindow",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art2BodyACover2_Art2BodyACover2",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art2BodyUnion_Art2BodyUnion",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art2BodyBCover_Art2BodyBCover",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art2BodyB_Art2BodyB",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::CommonBearingFix_CommonBearingFix",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::CommonBearingFix_CommonBearingFix001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::CommonBearingFix_CommonBearingFix002",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::CommonBearingFix_CommonBearingFix003",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Unnamed_Art2SideCover",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Unnamed_Art2SideCover001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art3TensionerBody_Art3TensionerBody",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art3TensionerBody_Art3TensionerBody001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art3TensionerPulley_Art3TensionerPulley",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art3TensionerPulley_Art3TensionerPulley001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Bearing_625ZZ001/AssemblyArt2::Compound001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Bearing_625ZZ002/AssemblyArt2::Compound001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Bearing_625ZZ003/AssemblyArt2::Compound001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Bearing_625ZZ004/AssemblyArt2::Compound001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::OpticSensor001/AssemblyArt2::Fusion155",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::OpticSensor002/AssemblyArt2::Fusion155",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::_x14mm001/AssemblyArt2::Cylinder",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::_x14mm002/AssemblyArt2::Cylinder",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Bearing_MF84ZZ001/AssemblyArt2::Compound002",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Bearing_MF84ZZ002/AssemblyArt2::Compound002",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Magnet001/AssemblyArt2::Cylinder001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Magnet002/AssemblyArt2::Cylinder001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Magnet003/AssemblyArt2::Cylinder001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Magnet004/AssemblyArt2::Cylinder001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Magnet005/AssemblyArt2::Cylinder001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Magnet006/AssemblyArt2::Cylinder001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Magnet007/AssemblyArt2::Cylinder001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Magnet008/AssemblyArt2::Cylinder001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Magnet009/AssemblyArt2::Cylinder001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Magnet010/AssemblyArt2::Cylinder001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Magnet011/AssemblyArt2::Cylinder001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Magnet012/AssemblyArt2::Cylinder001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::_x128mm001/AssemblyArt2::Cylinder002",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::GT2_Belt_Art3001/AssemblyArt2::Fusion154001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Nut004",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Screw003",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Screw010",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Screw001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Screw002",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Nut006",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Nut",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Screw005",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Nut005",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Screw004",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Screw007",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Screw008",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Nut008",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Screw006",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Screw009",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Nut003",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Nut001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Nut002",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Nut007",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Nut009",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Nut010",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Screw024",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Screw014",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Nut017",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Screw022",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Nut023",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Nut025",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Screw015",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Screw020",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Nut016",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Nut012",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Nut014",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Nut018",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Screw021",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Screw023",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Screw011",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Screw016",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Screw012",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Screw017",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Screw018",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Screw019",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Nut013",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Nut011",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Screw013",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Nut015",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Nut019",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Nut021",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Nut020",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Nut022",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Nut024",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Nut026",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Nut027",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Screw025",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Screw027",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Screw026",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Screw028",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Art3Body_Art3Body",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Art23Optodisk_Art23Optodisk",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Art3Pulley_Art3Pulley",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Art4MotorFix_Art4MotorFix",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Stepper_Nema17x34001/AssemblyArt3::Chamfer_solid",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Art4MotorGear_Art4MotorGear",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Fan_40x40001/AssemblyArt3::Part__Feature001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Bearing_625ZZ001/AssemblyArt3::Compound001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Bearing_625ZZ002/AssemblyArt3::Compound001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::CommonBearingFixThrough_CommonBearingFixThrough",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::CommonBearingFixThrough_CommonBearingFixThrough001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::OpticSensor/AssemblyArt3::Cut001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Art4BearingRing_Art4BearingRing",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::BearingBalls/AssemblyArt3::Array",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Nut016",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Nut019",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Nut021",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Nut010",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Nut012",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Nut017",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Nut003",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Nut006",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Nut001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Nut011",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Nut004",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Nut007",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Nut008",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Nut009",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Nut",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Nut013",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Nut014",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Nut015",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Nut005",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Nut002",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Nut018",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Nut020",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Screw002",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Screw003",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Screw007",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Screw005",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Screw004",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Screw001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Screw006",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Screw",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Screw008",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Screw009",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Screw013",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Screw012",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Screw024",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Screw010",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Screw011",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Screw023",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Screw014",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Screw021",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Screw020",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Screw019",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Screw016",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Screw022",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Screw015",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Screw025",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Screw017",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Screw018",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4TransmissionColumn_Art4TransmissionColumn",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4BodyBot_Art4BodyBot",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4Body_Art4Body",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4BodyFan_Art4BodyFan",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4BodyFan_Art4BodyFan001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art56MotorHolderA_Art56MotorHolderA",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art56MotorHolderA_Art56MotorHolderA001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Stepper_Nema17x34001/AssemblyArt4::Chamfer_solid",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Stepper_Nema17x34002/AssemblyArt4::Chamfer_solid",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art56MotorHolderB_Art56MotorHolderB",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art56MotorHolderB_Art56MotorHolderB001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Pulley_GT2x20001/AssemblyArt4::Cut002001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Pulley_GT2x20001/AssemblyArt4::Pocket001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Pulley_GT2x20002/AssemblyArt4::Cut002001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Pulley_GT2x20002/AssemblyArt4::Pocket001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Bearing_625ZZ001/AssemblyArt4::Compound001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Bearing_625ZZ002/AssemblyArt4::Compound001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Fan_40x40001/AssemblyArt4::Part__Feature001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Fan_40x40002/AssemblyArt4::Part__Feature001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4BearingFix_Art4BearingFix",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4BearingFix_Art4BearingFix001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Shaft_5x102mm/AssemblyArt4::Cylinder1060",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4Optodisk_Art4Optodisk",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::MicroEndstop/AssemblyArt4::Compound004",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Nut001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Nut013",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Nut002",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Nut",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Nut007",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Nut004",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Nut009",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Nut016",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Nut017",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Nut015",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Nut008",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Nut006",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Nut005",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Nut012",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Nut014",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Nut018",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Nut020",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Nut010",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Nut011",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Nut022",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Nut023",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Nut019",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Nut021",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Nut024",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Nut003",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Nut027",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Nut026",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Nut028",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Nut025",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw004",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Nut031",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw001",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw002",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw003",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw006",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw005",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw008",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw021",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw009",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw010",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw007",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw011",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw014",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw012",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw016",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw013",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw017",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw018",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw015",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw023",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw022",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw024",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw025",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw045",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw031",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw047",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw029",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw032",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw033",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw043",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw035",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw040",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw044",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw034",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw030",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw037",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw026",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw027",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw028",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw038",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw036",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw046",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw039",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw041",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw048",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Screw042",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::M8Connector/AssemblyArt4::Part__Feature",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::M8Connector/AssemblyArt4::Part__Feature002",
+      "motion_class": "upstream_nonwrist"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Art56MotorCoverRing_Art56MotorCoverRing",
+      "cad_attachment": "Parent Assembly#LCS_Origin",
+      "motion_class": "fold_carrier"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::CommonBearingFixThrough_CommonBearingFixThrough",
+      "cad_attachment": "Art56MotorCoverRing_Art56MotorCoverRing#LCS_BearingFix",
+      "motion_class": "fold_carrier"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Art56GearPlate_Art56GearPlate",
+      "cad_attachment": "Art56MotorCoverRing_Art56MotorCoverRing#LCS_BigGear",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Art56SmallGear_Art56SmallGear",
+      "cad_attachment": "Art56MotorCoverRing_Art56MotorCoverRing#LCS_SmallGear2",
+      "motion_class": "side_rotor_negative_y"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Art56SmallGear_Art56SmallGear001",
+      "cad_attachment": "Art56MotorCoverRing_Art56MotorCoverRing#LCS_SmallGear1",
+      "motion_class": "side_rotor_positive_y"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Bearing_625ZZ001/AssemblyArt56::Compound001",
+      "cad_attachment": "Art56GearPlate_Art56GearPlate#LCS_Bearing",
+      "motion_class": "bearing_roll_axis_com"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Bearing_625ZZ002/AssemblyArt56::Compound001",
+      "cad_attachment": "Art56MotorCoverRing_Art56MotorCoverRing#LCS_Bearing",
+      "motion_class": "bearing_fold_axis_com"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::GripperBot_GripperBot",
+      "cad_attachment": "Art56GearPlate_Art56GearPlate#LCS_Gripper",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed_GripperTop",
+      "cad_attachment": "GripperBot_GripperBot#LCS_GripperTop",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Servomotor001/AssemblyArt56::Compound002",
+      "cad_attachment": "GripperBot_GripperBot#LCS_Servomotor",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::ServomotorWheelHorn001/AssemblyArt56::Clone041003009009001",
+      "cad_attachment": "Servomotor001#LCS_WheelHorn",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::GripperActiveArm_GripperActiveArm",
+      "cad_attachment": "ServomotorWheelHorn001#LCS_ActiveArm",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed3_GripperPassiveArm",
+      "cad_attachment": "GripperBot_GripperBot#LCS_PassiveArm",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed2_GripperArm",
+      "cad_attachment": "GripperBot_GripperBot#LCS_Arm1",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed2_GripperArm001",
+      "cad_attachment": "GripperBot_GripperBot#LCS_Arm2",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed1_GripperFinger",
+      "cad_attachment": "Unnamed2_GripperArm001#LCS_GripperArm_1",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::GripperFinger_sym001/AssemblyArt56::Unnamed1_GripperFinger_mirrored",
+      "cad_attachment": "Unnamed2_GripperArm#LCS_GripperArm_1",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut",
+      "cad_attachment": "Art56GearPlate_Art56GearPlate#HoleAxis_2",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut021",
+      "cad_attachment": "Unnamed1_GripperFinger#HoleAxis_3",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw020",
+      "cad_attachment": "GripperBot_GripperBot#HoleAxis_1",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut020",
+      "cad_attachment": "GripperFinger_sym001#LCS_GripperFinger_sym001",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw018",
+      "cad_attachment": "Unnamed_GripperTop#HoleAxis_4",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw017",
+      "cad_attachment": "Servomotor001#HoleAxis_4",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw011",
+      "cad_attachment": "Unnamed_GripperTop#HoleAxis_6",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw027",
+      "cad_attachment": "GripperActiveArm_GripperActiveArm#HoleAxis_2",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw024",
+      "cad_attachment": "GripperFinger_sym001#HoleAxis_6",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut016",
+      "cad_attachment": "GripperBot_GripperBot#HoleAxis_7",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw010",
+      "cad_attachment": "Unnamed_GripperTop#HoleAxis_5",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut017",
+      "cad_attachment": "GripperBot_GripperBot#HoleAxis_11",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut018",
+      "cad_attachment": "GripperBot_GripperBot#HoleAxis_10",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut011",
+      "cad_attachment": "GripperBot_GripperBot#HoleAxis_9",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw012",
+      "cad_attachment": "Unnamed_GripperTop#HoleAxis_2",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut006",
+      "cad_attachment": "GripperBot_GripperBot#HoleAxis_5",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut015",
+      "cad_attachment": "GripperBot_GripperBot#HoleAxis_6",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw013",
+      "cad_attachment": "Unnamed_GripperTop#HoleAxis_3",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw014",
+      "cad_attachment": "Servomotor001#HoleAxis_1",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut012",
+      "cad_attachment": "GripperBot_GripperBot#HoleAxis_8",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw025",
+      "cad_attachment": "GripperFinger_sym001#HoleAxis_5",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut013",
+      "cad_attachment": "GripperBot_GripperBot#HoleAxis_3",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut014",
+      "cad_attachment": "GripperBot_GripperBot#HoleAxis_4",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw016",
+      "cad_attachment": "Servomotor001#HoleAxis_3",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw015",
+      "cad_attachment": "Servomotor001#HoleAxis_2",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw019",
+      "cad_attachment": "Unnamed_GripperTop#HoleAxis_1",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut001",
+      "cad_attachment": "Art56MotorCoverRing_Art56MotorCoverRing#HoleAxis_2",
+      "motion_class": "fold_carrier"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut002",
+      "cad_attachment": "Art56MotorCoverRing_Art56MotorCoverRing#HoleAxis_1",
+      "motion_class": "fold_carrier"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut003",
+      "cad_attachment": "Art56GearPlate_Art56GearPlate#HoleAxis_1",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw002",
+      "cad_attachment": "CommonBearingFixThrough_CommonBearingFixThrough#HoleAxis_1",
+      "motion_class": "fold_carrier"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut004",
+      "cad_attachment": "Art56GearPlate_Art56GearPlate#HoleAxis_3",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw001",
+      "cad_attachment": "Art56SmallGear_Art56SmallGear#HoleAxis_1",
+      "motion_class": "side_rotor_negative_y"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw",
+      "cad_attachment": "Art56GearPlate_Art56GearPlate#LCS_Bearing",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw003",
+      "cad_attachment": "CommonBearingFixThrough_CommonBearingFixThrough#HoleAxis_2",
+      "motion_class": "fold_carrier"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw004",
+      "cad_attachment": "Art56SmallGear_Art56SmallGear001#HoleAxis_1",
+      "motion_class": "side_rotor_positive_y"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut005",
+      "cad_attachment": "Art56MotorCoverRing_Art56MotorCoverRing#HoleAxis_3",
+      "motion_class": "fold_carrier"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw021",
+      "cad_attachment": "GripperBot_GripperBot#HoleAxis_2",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw028",
+      "cad_attachment": "GripperActiveArm_GripperActiveArm#HoleAxis_1",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw022",
+      "cad_attachment": "Unnamed1_GripperFinger#HoleAxis_1",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Screw023",
+      "cad_attachment": "Unnamed1_GripperFinger#HoleAxis_2",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut022",
+      "cad_attachment": "Unnamed1_GripperFinger#HoleAxis_4",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Nut019",
+      "cad_attachment": "GripperFinger_sym001#HoleAxis_7",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Group003/AssemblyArt56::Screw026",
+      "cad_attachment": "GripperActiveArm_GripperActiveArm#HoleAxis_3",
+      "motion_class": "roll_tool"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Collar5mm/AssemblyArt56::Part__Feature",
+      "cad_attachment": "Art56SmallGear_Art56SmallGear#LCS_Collar",
+      "motion_class": "side_rotor_negative_y"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Collar5mm/AssemblyArt56::Part__Feature001",
+      "cad_attachment": "Art56SmallGear_Art56SmallGear#LCS_Collar",
+      "motion_class": "side_rotor_negative_y"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Collar5mm001/AssemblyArt56::Part__Feature",
+      "cad_attachment": "Art56SmallGear_Art56SmallGear001#LCS_Collar",
+      "motion_class": "side_rotor_positive_y"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Collar5mm001/AssemblyArt56::Part__Feature001",
+      "cad_attachment": "Art56SmallGear_Art56SmallGear001#LCS_Collar",
+      "motion_class": "side_rotor_positive_y"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::GT2x40PulleyM4/AssemblyArt56::Part__Feature002",
+      "cad_attachment": "Art56SmallGear_Art56SmallGear#LCS_Pulley",
+      "motion_class": "side_rotor_negative_y"
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::GT2x40PulleyM005/AssemblyArt56::Part__Feature002",
+      "cad_attachment": "Art56SmallGear_Art56SmallGear001#LCS_Pulley",
+      "motion_class": "side_rotor_positive_y"
+    }
+  ],
+  "step_application_order": "Serial revolute chain in zero-world coordinates: preceding steps carry later axis origins/directions. Fold then carried roll yields Rfold*Rroll for a zero-world point.",
+  "default_side_rotor_sign_s": 1,
+  "default_side_rotor_sign_verified": false,
+  "motion_scenarios": {
+    "bevel_sign_positive": {
+      "side_rotor_sign_s": 1,
+      "physical_handedness_verified": false,
+      "motion_class_overrides": {
+        "side_rotor_negative_y": {
+          "steps": [
+            {
+              "origin_m": [
+                0,
+                0,
+                0.556
+              ],
+              "axis_unit": [
+                0,
+                1,
+                0
+              ],
+              "q5_coefficient": 1,
+              "q6_coefficient": 2,
+              "evidence": "Conditional ideal 15/30 bevel phase, explicit s=+1; not calibrated."
+            }
+          ]
+        },
+        "side_rotor_positive_y": {
+          "steps": [
+            {
+              "origin_m": [
+                0,
+                0,
+                0.556
+              ],
+              "axis_unit": [
+                0,
+                1,
+                0
+              ],
+              "q5_coefficient": 1,
+              "q6_coefficient": -2,
+              "evidence": "Conditional ideal 15/30 bevel phase, explicit s=+1; not calibrated."
+            }
+          ]
+        }
+      }
+    },
+    "bevel_sign_negative": {
+      "side_rotor_sign_s": -1,
+      "physical_handedness_verified": false,
+      "motion_class_overrides": {
+        "side_rotor_negative_y": {
+          "steps": [
+            {
+              "origin_m": [
+                0,
+                0,
+                0.556
+              ],
+              "axis_unit": [
+                0,
+                1,
+                0
+              ],
+              "q5_coefficient": 1,
+              "q6_coefficient": -2,
+              "evidence": "Conditional ideal 15/30 bevel phase, explicit s=-1; not calibrated."
+            }
+          ]
+        },
+        "side_rotor_positive_y": {
+          "steps": [
+            {
+              "origin_m": [
+                0,
+                0,
+                0.556
+              ],
+              "axis_unit": [
+                0,
+                1,
+                0
+              ],
+              "q5_coefficient": 1,
+              "q6_coefficient": 2,
+              "evidence": "Conditional ideal 15/30 bevel phase, explicit s=-1; not calibrated."
+            }
+          ]
+        }
+      }
+    }
+  }
+}
