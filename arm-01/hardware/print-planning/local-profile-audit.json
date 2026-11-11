@@ -1,0 +1,325 @@
+{
+  "schema_version": 1,
+  "validation_class": "read_only_installed_software_and_saved_profile_metadata_not_physical_printer_or_print_qualification",
+  "captured_at_utc": "2026-11-11T20:16:43+00:00",
+  "installed_application": {
+    "path": "%PROGRAMFILES%/AnycubicSlicerNext/AnycubicSlicerNext.exe",
+    "file_version": "2.0.0.3",
+    "product_version": "2.0.0.3",
+    "version_evidence": "Windows PE FileVersionInfo read directly; no online version assumption",
+    "exe_sha256": "8b6a99c9b210de16d0895bf590042638cebc0ef9475af735dcda0ec5caf016cc",
+    "slicer_dll_sha256": "88f54971d1ee6ddf56244f618e0dc0ccb747a68e64ceeb195805c0d4741b8d34",
+    "slicer_dll_path": "%PROGRAMFILES%/AnycubicSlicerNext/AnycubicSlicer.dll"
+  },
+  "saved_selection": {
+    "source": "%APPDATA%/AnycubicSlicerNext/AnycubicSlicerNext.conf first JSON object; only allowlisted profile selectors retained",
+    "profile_fields": {
+      "machine": "Anycubic Kobra 3 Max 0.4 nozzle",
+      "process": "0.20mm Standard @Anycubic Kobra 3 Max 0.4 nozzle",
+      "filament": "Anycubic PLA @Anycubic Kobra 3 Max 0.4 nozzle",
+      "filament_01": "Anycubic PLA @Anycubic Kobra 3 Max 0.4 nozzle",
+      "filament_02": "Anycubic PLA @Anycubic Kobra 3 Max 0.4 nozzle",
+      "filament_03": "Anycubic PLA @Anycubic Kobra 3 Max 0.4 nozzle",
+      "filament_04": "Anycubic PLA @Anycubic Kobra 3 Max 0.4 nozzle",
+      "filament_05": "Anycubic PLA @Anycubic Kobra 3 Max 0.4 nozzle",
+      "curr_bed_type": "4"
+    },
+    "profile_fields_canonical_sha256": "64d4baf4c8b817f269b1caa38a6cebd161a7ec043a65be12b23db881fa403e00",
+    "is_live_gui_state": false,
+    "is_physical_hardware_confirmation": false,
+    "full_private_config_or_account_ids_copied": false,
+    "trailing_application_config_data_inspected": false
+  },
+  "profiles": {
+    "machine": {
+      "selected_name": "Anycubic Kobra 3 Max 0.4 nozzle",
+      "source_root": "%APPDATA%/AnycubicSlicerNext/system/Anycubic",
+      "bundled_source_root": "%PROGRAMFILES%/AnycubicSlicerNext/resources/profiles/Anycubic",
+      "inheritance_chain_leaf_first": [
+        {
+          "relative_path": "machine/Anycubic Kobra 3 Max 0.4 nozzle.json",
+          "sha256": "6bfe04a34c1c2d1ff6930bd11e698c2d7721bb42e64aceefda7795a7d8ff0c7e",
+          "version": "1.3.2512.26",
+          "inherits": "",
+          "bundled_profile_sha256": "6bfe04a34c1c2d1ff6930bd11e698c2d7721bb42e64aceefda7795a7d8ff0c7e",
+          "cached_and_bundled_bytes_equal": true
+        }
+      ],
+      "resolved_allowlisted_fields": {
+        "bed_exclude_area": [
+          "0x0",
+          "3x0",
+          "3x420",
+          "0x420",
+          "0x420",
+          "426x420",
+          "426x420",
+          "0x420",
+          "426x420",
+          "423x420",
+          "423x0",
+          "426x0",
+          "0x0",
+          "0x0",
+          "426x0",
+          "426x0"
+        ],
+        "default_filament_profile": [
+          "Anycubic PLA @Anycubic Kobra 3 Max 0.4 nozzle"
+        ],
+        "default_print_profile": "0.20mm Standard @Anycubic Kobra 3 Max 0.4 nozzle",
+        "inherits": "",
+        "name": "Anycubic Kobra 3 Max 0.4 nozzle",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "printable_area": [
+          "0x0",
+          "426x0",
+          "426x420",
+          "0x420"
+        ],
+        "printable_height": "501",
+        "printer_model": "Anycubic Kobra 3 Max",
+        "printer_variant": "0.4",
+        "version": "1.3.2512.26"
+      }
+    },
+    "process": {
+      "selected_name": "0.20mm Standard @Anycubic Kobra 3 Max 0.4 nozzle",
+      "source_root": "%APPDATA%/AnycubicSlicerNext/system/Anycubic",
+      "bundled_source_root": "%PROGRAMFILES%/AnycubicSlicerNext/resources/profiles/Anycubic",
+      "inheritance_chain_leaf_first": [
+        {
+          "relative_path": "process/0.20mm Standard @Anycubic Kobra 3 Max 0.4 nozzle.json",
+          "sha256": "c76628f3e1551da20c7c19563856ffabc0b46f65096439a3bc891f8d9f416cab",
+          "version": "1.3.2507.10",
+          "inherits": "fdm_process_common",
+          "bundled_profile_sha256": "c76628f3e1551da20c7c19563856ffabc0b46f65096439a3bc891f8d9f416cab",
+          "cached_and_bundled_bytes_equal": true
+        },
+        {
+          "relative_path": "process/fdm_process_common.json",
+          "sha256": "ece1dc322f12581307d1f811782fbf5619d037230d54bd1fb2b213d7212cef9e",
+          "version": null,
+          "inherits": "",
+          "bundled_profile_sha256": "ece1dc322f12581307d1f811782fbf5619d037230d54bd1fb2b213d7212cef9e",
+          "cached_and_bundled_bytes_equal": true
+        }
+      ],
+      "resolved_allowlisted_fields": {
+        "brim_type": "auto_brim",
+        "brim_width": "5",
+        "compatible_printers": [
+          "Anycubic Kobra 3 Max 0.4 nozzle"
+        ],
+        "enable_support": "0",
+        "inherits": "fdm_process_common",
+        "initial_layer_print_height": "0.2",
+        "layer_height": "0.2",
+        "name": "0.20mm Standard @Anycubic Kobra 3 Max 0.4 nozzle",
+        "sparse_infill_density": "15%",
+        "sparse_infill_pattern": "3dhoneycomb",
+        "support_type": "tree(auto)",
+        "version": "1.3.2507.10",
+        "wall_loops": "2"
+      }
+    },
+    "filament": {
+      "selected_name": "Anycubic PLA @Anycubic Kobra 3 Max 0.4 nozzle",
+      "source_root": "%APPDATA%/AnycubicSlicerNext/system/Anycubic",
+      "bundled_source_root": "%PROGRAMFILES%/AnycubicSlicerNext/resources/profiles/Anycubic",
+      "inheritance_chain_leaf_first": [
+        {
+          "relative_path": "filament/Anycubic PLA @Anycubic Kobra 3 Max 0.4 nozzle.json",
+          "sha256": "754476420da7b26c69f286f9288309c6cce7ec11c651c5193084d35b51e1f13b",
+          "version": "1.3.2505.16",
+          "inherits": "Anycubic PLA @acbase",
+          "bundled_profile_sha256": "754476420da7b26c69f286f9288309c6cce7ec11c651c5193084d35b51e1f13b",
+          "cached_and_bundled_bytes_equal": true
+        },
+        {
+          "relative_path": "filament/Anycubic PLA @acbase.json",
+          "sha256": "2d6aa94fe0cc3816ab81c7dd48b9d9ac9e73c22ccd7130db6f60998189675df7",
+          "version": "1.3.2411.18",
+          "inherits": "fdm_filament_common",
+          "bundled_profile_sha256": "2d6aa94fe0cc3816ab81c7dd48b9d9ac9e73c22ccd7130db6f60998189675df7",
+          "cached_and_bundled_bytes_equal": true
+        },
+        {
+          "relative_path": "filament/fdm_filament_common.json",
+          "sha256": "a8c45023ad81ec00542d7607cdc08d765bfeff3cfbb1a3efdc73159d34e3aba5",
+          "version": null,
+          "inherits": "",
+          "bundled_profile_sha256": "a8c45023ad81ec00542d7607cdc08d765bfeff3cfbb1a3efdc73159d34e3aba5",
+          "cached_and_bundled_bytes_equal": true
+        }
+      ],
+      "resolved_allowlisted_fields": {
+        "compatible_printers": [
+          "Anycubic Kobra 3 Max 0.4 nozzle"
+        ],
+        "filament_density": [
+          "1.24"
+        ],
+        "filament_diameter": [
+          "1.75"
+        ],
+        "filament_max_volumetric_speed": [
+          "13"
+        ],
+        "filament_type": [
+          "PLA"
+        ],
+        "filament_vendor": [
+          "Anycubic"
+        ],
+        "hot_plate_temp": [
+          "65"
+        ],
+        "hot_plate_temp_initial_layer": [
+          "65"
+        ],
+        "inherits": "Anycubic PLA @acbase",
+        "name": "Anycubic PLA @Anycubic Kobra 3 Max 0.4 nozzle",
+        "nozzle_temperature": [
+          "210"
+        ],
+        "nozzle_temperature_initial_layer": [
+          "220"
+        ],
+        "textured_plate_temp": [
+          "65"
+        ],
+        "textured_plate_temp_initial_layer": [
+          "65"
+        ],
+        "version": "1.3.2505.16"
+      }
+    }
+  },
+  "same_basename_user_profile_override_count": 0,
+  "profile_numeric_interpretation": {
+    "source_units": {
+      "length": "mm",
+      "temperature": "degC",
+      "filament_density": "g/cm^3",
+      "speed": "mm^3/s for filament_max_volumetric_speed"
+    },
+    "slicer_outline_mm": [
+      [
+        0,
+        0
+      ],
+      [
+        426,
+        0
+      ],
+      [
+        426,
+        420
+      ],
+      [
+        0,
+        420
+      ]
+    ],
+    "profile_printable_height_mm": 501,
+    "profile_nozzle_diameter_mm": 0.4,
+    "configured_layer_height_mm": 0.2,
+    "configured_initial_layer_height_mm": 0.2,
+    "configured_wall_loops": 2,
+    "configured_sparse_infill_percent": 15,
+    "configured_sparse_infill_pattern": "3dhoneycomb",
+    "configured_supports_enabled": false,
+    "configured_brim_type": "auto_brim",
+    "configured_brim_width_mm": 5,
+    "configured_filament_density_kg_m3": 1240,
+    "configured_nozzle_temperature_degC": 210,
+    "configured_initial_nozzle_temperature_degC": 220,
+    "configured_hot_or_textured_plate_temperature_degC": 65,
+    "saved_bed_type_code": "4",
+    "saved_bed_type_code_meaning_confirmed": null,
+    "candidate_exclusion_interpretation": {
+      "classification": "provisional rectangular interpretation of allowlisted profile points; verify in slicer before manufacturing",
+      "left_x_mm": [
+        0,
+        3
+      ],
+      "right_x_mm": [
+        423,
+        426
+      ],
+      "candidate_inner_rectangle_mm": [
+        [
+          3,
+          0
+        ],
+        [
+          423,
+          420
+        ]
+      ],
+      "candidate_inner_size_mm": [
+        420,
+        420
+      ],
+      "nominal_user_confirmed_printer_size_mm": [
+        420,
+        420,
+        500
+      ],
+      "conservative_draft_height_mm": 500,
+      "profile_extra_dimensions_do_not_override_nominal_hardware_claim": true
+    }
+  },
+  "cli_capability_audit": {
+    "isolated_datadir": ".work/slicer-profile-audit",
+    "commands_attempted": [
+      "AnycubicSlicerNext.exe --help --datadir <isolated scratch> with hidden redirected process",
+      "AnycubicSlicerNext.exe --help --datadir <isolated scratch> in PTY"
+    ],
+    "exit_codes": [
+      0,
+      0
+    ],
+    "observed_output": "First invocation emitted StaticPrintConfigs initialization trace only; second emitted no help text. No action-specific help or export was observed.",
+    "binary_option_tokens_observed": [
+      "export_3mf",
+      "export_stl",
+      "info",
+      "load_settings",
+      "load_filaments",
+      "outputdir",
+      "help",
+      "datadir"
+    ],
+    "binary_tokens_are_verified_cli_contract": false,
+    "export_or_import_capability_exercised": false,
+    "slice_or_gcode_generation_attempted": false,
+    "printer_or_cloud_connection_requested": false,
+    "local_mesh_only_3mf_format_fallback_requires_root_coordination": true
+  },
+  "physical_confirmation": {
+    "printer_revision": null,
+    "installed_nozzle_mm": null,
+    "loaded_filament_brand_product": null,
+    "loaded_filament_material": null,
+    "actual_bed_surface": null,
+    "calibrated_flow_or_dimensional_fit": null
+  },
+  "audit_actions": {
+    "gui_automation": false,
+    "original_profile_write_requested": false,
+    "account_credentials_or_privacy_fields_exported": false,
+    "printer_motion_or_upload_or_print_requested": false,
+    "power_or_security_policy_changes": false
+  },
+  "planning_gates": [
+    "Saved software selection is distinct from actual nozzle, filament, bed surface and live unsaved scene changes.",
+    "Profile 426x420x501 outline includes edge exclusions and does not supersede user-confirmed nominal420x420x500 printer dimensions.",
+    "Resolve actual support/brim/orientation/part fit in offline draft review; 15percent infill is not 0.15 effective whole-part mass fraction.",
+    "CLI --help exit0 without usable help/export output does not establish working computational slicing or project export.",
+    "No generated model/project is a fabrication release; no G-code, device contact or physical print was requested."
+  ]
+}
