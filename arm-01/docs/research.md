@@ -1,0 +1,49 @@
+# ARM-01 mechanical and software reference research
+
+Research date: 2026-11-11. These are source inspections, not RAFTEL physical tests. Upstream videos and assembled designs support feasibility of the original configurations; none establishes our payload, accuracy, thermal duty, mounting safety, or autonomous sorting success.
+
+## Selected study direction
+
+On 2026-11-11 Liam explicitly decided: **allow eight actuators; study Thor first**. Thor is now the selected CAD study baseline, with PAROL6 retained as a backup. Eight-actuator allowance does not approve a budget increase, fabrication, purchases, physical motion or validated payload claims. The immediate engineering gate is to import the complete pinned Thor source assembly, extract geometry/mass/workspace with documented assumptions, and produce a fresh Thor-specific BOM including a suitable parallel gripper.
+
+## Mechanical candidates
+
+| Reference | Independent arm axes / actuators | CAD and build evidence | Limits and fit |
+|---|---|---|---|
+| [SO-101 upstream](https://github.com/TheRobotStudio/SO-ARM100/tree/a758567c3978dfeefe282ede0500085a48fe8f78) | Five arm axes, five arm motors; sixth motor operates gripper | STEP and STL; illustrated assembly and physical demonstrations; Apache-2.0 | Strong inexpensive reusable baseline, but fails six-arm-axis requirement. Actual reachable workspace and masses must be extracted from chosen CAD. Stock servo-driven pivot jaw must not be assumed to provide parallel jaw translation. |
+| [SO-101 elbow-roll variant](https://github.com/rabhishek100/so101-6dof-and-extended-versions/tree/4431247328acc333ab40fc4b202ffda1646660d0) | Adds elbow-roll motor ID 7 to stock mapping: six arm axes plus gripper | Printable modified/assembled STL and LeRobot plugins; links a physical demonstration; Apache-2.0 | No bundled tests or native editable CAD found. README's RS485 wiring claim conflicts with STS3215 TTL, and its belt descriptions need checking against actual parts. No verified thermal, stiffness, torque, repeatability, or workspace data for this variant. Treat as experimental, not a validated wrist upgrade. |
+| [PAROL6 upstream](https://github.com/Source-Robotics/PAROL6-Desktop-robot-arm/tree/e2169c163244d647739cc34fc5da15c24b042a61) | Six arm axes driven by steppers; tool additional | Published build instructions, BOM, STL and robot models; working hardware demonstrations | Upstream claims 408 mm reach, 0.5–1 kg payload, 5.5 kg arm. These are not RAFTEL measurements or universal payload guarantees. Current commercial partial kit exceeds the entire ARM-01 budget before excluded motors, gearboxes and supply; mass matters for future mobility. |
+| [Thor upstream](https://github.com/AngelLM/Thor/tree/286b081fe6f056d87c379b884781ef77ff6a0159) | Six spatial arm axes, **seven arm steppers**, plus gripper servo: eight actuators total | Native FreeCAD, STEP, STL; assembly documentation and physical videos; CC-BY-SA-4.0 | Selected first CAD study baseline; Liam has accepted eight total actuators for this study. Upstream's 625 mm is stretched height, not horizontal reach. Hardware cost and 750 g including end effector are upstream claims requiring a fresh configuration-specific BOM and load analysis. |
+| [Annin AR4](https://github.com/Annin-Robotics/ar4-hmi/tree/214558c2beb474695d6c083856c354d3f6d4790f) | Six-axis stepper arm, separate tooling | Published build ecosystem and actual assemblies; ROS driver available separately | [Current design license](https://github.com/Annin-Robotics/ar4-hmi/blob/214558c2beb474695d6c083856c354d3f6d4790f/LICENSE.txt) restricts commercial use and design-file redistribution. Do not import as RAFTEL's manufacturing foundation without separate permission. Exact electrical, workspace, and full-build cost comparison deferred because license already disqualifies direct adoption. |
+
+For source paths, proven-model reuse steps, and CAD inspection gates, see [CAD reuse](cad-reuse.md). The [mechanical ADR](../../docs/architecture-decisions/0001-mechanical-starting-point.md) records the selected study direction and remaining physical gates.
+
+## Servo identity and electrical compatibility
+
+The [official LeRobot assembly guide](https://huggingface.co/docs/lerobot/so101) specifies six STS3215 1:345 motors for a follower; its leader uses mixed ratios and is not an equivalent autonomous arm BOM. The [pinned follower implementation](https://github.com/huggingface/lerobot/blob/e581c1d5701f846788662079d4ac08835c96def9/src/lerobot/robots/so_follower/so_follower.py) maps five named arm joints and one gripper. A six-motor kit is not a six-axis arm.
+
+Feetech variants sharing STS3215 branding are not electrically interchangeable. The [manufacturer STS3215 specification](https://www.feetech.cn/Data/feetechrc/upload/file/20200611/6372749961523760249976542.pdf) identifies TTL serial signaling. The [2024 manufacturer catalogue](https://www.feetech.cn/Data/feetechrc/upload/file/20240706/2024%E9%A3%9E%E7%89%B9%E5%AE%A3%E4%BC%A0%E5%86%8C.pdf) distinguishes rated and stall values. Exact suffix, supply range, connector pinout, controller current capacity and feedback support must be reconciled before purchasing. Rated torque alone does not qualify indefinite continuous operation in our enclosure/duty cycle. See [electrical design](../hardware/electronics/README.md), [BOM](../hardware/bom.md), and [load analysis](mechanical-analysis.md).
+
+## Motor and integration details for alternatives
+
+The [pinned PAROL6 BOM](https://github.com/Source-Robotics/PAROL6-Desktop-robot-arm/blob/e2169c163244d647739cc34fc5da15c24b042a61/BOM/README.md) specifies one 17HS08-1004S, three 17HS16-2004S1 and two 17HS24-2104S steppers, six TMC5160 drivers, two 20:1 and one 10:1 planetary gearboxes, and a 24 V / 5 A system supply. A stepper winding voltage is not the driver supply voltage; driver current and motor torque-speed curves must be evaluated together. The listed 16/45/65 N·cm motor torque figures do not establish sustained output torque after gear, belt and thermal losses. No motor or electrical compatibility bench test was performed.
+
+Thor's [BOM](http://thor.angel-lm.com/documentation/bom/) lists one 40 mm NEMA17, three 34 mm NEMA17 with 5:1 gearing, three 34 mm NEMA17, and an MG995 gripper servo; generic frame sizes are not exact qualified part numbers. Its [electronics guide](http://thor.angel-lm.com/documentation/electronics/) identifies seven controlled arm motors. The CAD investigation must trace coupled joints and driver channels, not equate six spatial axes with six physical motors. Exact supply, winding currents and continuous-duty limits remain unqualified for a RAFTEL build.
+
+## License and maintenance checks
+
+| Upstream | Revision inspected | Observed latest push | Reuse obligations / caveats |
+|---|---|---|---|
+| SO-ARM100 | `a758567c3978dfeefe282ede0500085a48fe8f78` | 2026-10-06 | Apache-2.0: retain license/notices, identify modifications; check asset-specific notices. |
+| SO-101 six-axis variant | `4431247328acc333ab40fc4b202ffda1646660d0` | 2025-12-25 | Apache-2.0, same notice duties; limited maintenance/testing evidence. |
+| PAROL6 | `e2169c163244d647739cc34fc5da15c24b042a61` | 2026-11-10 | Hardware now CERN-OHL-S-2.0; firmware GPL-3.0 and libraries retain their own terms. [README](https://github.com/Source-Robotics/PAROL6-Desktop-robot-arm/blob/e2169c163244d647739cc34fc5da15c24b042a61/README.md) records license transition on 2026-11-04. Preserve reciprocal source obligations when distributing derivatives. |
+| Thor | `286b081fe6f056d87c379b884781ef77ff6a0159` | 2025-05-09 | CC-BY-SA-4.0: attribution, license link, modification notices and ShareAlike for distributed adaptations; no endorsement implied. |
+| LeRobot | `e581c1d5701f846788662079d4ac08835c96def9` | 2026-11-11 | Apache-2.0; optional future integration, not installed or validated here. |
+
+Metadata was read from GitHub's repository and commit APIs; push date indicates activity, not engineering quality. Do not infer one asset's license from a related repository. PAROL6's [paid STEP product](https://source-robotics.com/products/parol6-step-files) explicitly restricts sharing and provides individual parts rather than a full assembly; that page still references the older GPL wording, so obtain written clarification of derivative/manufacturing rights before relying on purchased files. No paid files were acquired.
+
+## Software technology decisions
+
+The first milestone uses a dependency-light Python core with synthetic perception and a mock arm. NumPy/OpenCV become useful when matrix-based geometry and actual image calibration are implemented; adding them now would not establish vision capability. URDF must follow an audited mechanical model and joint limits. Select a physics simulator after mass/inertia and collision geometry exist; a logical state machine is not a physics simulation.
+
+[LeRobot](https://github.com/huggingface/lerobot) offers hardware/data/policy components for later learning integration, not a substitute for safe calibrated control or collision planning. [ROS 2 Jazzy installation source](https://github.com/ros2/ros2_documentation/blob/jazzy/source/Installation.rst) lists Ubuntu 24.04 binaries and macOS source setup. [MoveIt guidance](https://moveit.picknik.ai/main/doc/tutorials/getting_started/getting_started.html) recommends Jazzy on Ubuntu 24.04. Use that Linux target for a future separately pinned/tested adapter. Thor's [existing integration](https://github.com/AngelLM/Thor-ROS/tree/e11a56b5aa0d89f0b68a3ea7bd084eab4a050952) targets ROS 2 **Humble**, so Jazzy compatibility is unverified. No ROS, MoveIt, LeRobot, OpenCV, camera, actuator or physics integration is established by this reference research. CAD acquisition/import status is tracked separately in the CAD reuse records and `nextSteps.md`.

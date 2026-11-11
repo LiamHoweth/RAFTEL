@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-11-11",
+  "description": "Pinned CAD references; no CAD assets vendored, imported or physically validated.",
+  "references": [
+    {
+      "id": "so101-stock",
+      "repository": "https://github.com/TheRobotStudio/SO-ARM100",
+      "revision": "a758567c3978dfeefe282ede0500085a48fe8f78",
+      "license": "Apache-2.0",
+      "license_url": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/LICENSE",
+      "independent_arm_axes": 5,
+      "total_actuators_including_gripper": 6,
+      "adoption_status": "reference_only",
+      "cad_application_import_verified": false,
+      "physical_validation_by_raftel": false,
+      "assets": [
+        {
+          "path": "STEP/SO101/SO101 Assembly.step",
+          "url": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/STEP/SO101/SO101%20Assembly.step",
+          "purpose": "Neutral solid assembly; no native feature history identified"
+        },
+        {
+          "path": "STEP/SO101/Base_SO101.step",
+          "url": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/STEP/SO101/Base_SO101.step",
+          "purpose": "Base interface"
+        },
+        {
+          "path": "STEP/SO101/Upper_arm_SO101.step",
+          "url": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/STEP/SO101/Upper_arm_SO101.step",
+          "purpose": "Upper link"
+        },
+        {
+          "path": "STEP/SO101/Under_arm_SO101.step",
+          "url": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/STEP/SO101/Under_arm_SO101.step",
+          "purpose": "Lower link"
+        },
+        {
+          "path": "STEP/SO101/Follower_Specific/Moving_Jaw_SO101.step",
+          "url": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/STEP/SO101/Follower_Specific/Moving_Jaw_SO101.step",
+          "purpose": "Pivoted moving jaw"
+        },
+        {
+          "path": "Simulation/SO101/so101_new_calib.urdf",
+          "url": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/Simulation/SO101/so101_new_calib.urdf",
+          "purpose": "Upstream joint/frame reference; not physical effort ratings"
+        }
+      ],
+      "notes": [
+        "Fails six-arm-axis requirement.",
+        "URDF gripper is revolute between gripper_link and moving_jaw_so101_v1_link; not a parallel translation mechanism.",
+        "Retain Apache license and applicable notices before importing assets."
+      ]
+    },
+    {
+      "id": "so101-elbow-roll",
+      "repository": "https://github.com/rabhishek100/so101-6dof-and-extended-versions",
+      "revision": "4431247328acc333ab40fc4b202ffda1646660d0",
+      "license": "Apache-2.0",
+      "license_url": "https://github.com/rabhishek100/so101-6dof-and-extended-versions/blob/4431247328acc333ab40fc4b202ffda1646660d0/LICENSE",
+      "independent_arm_axes": 6,
+      "total_actuators_including_gripper": 7,
+      "adoption_status": "reference_only",
+      "cad_application_import_verified": false,
+      "physical_validation_by_raftel": false,
+      "assets": [
+        {
+          "path": "stl_files/so101_6dof/SO101_dof6_assembled_mod.stl",
+          "url": "https://github.com/rabhishek100/so101-6dof-and-extended-versions/blob/4431247328acc333ab40fc4b202ffda1646660d0/stl_files/so101_6dof/SO101_dof6_assembled_mod.stl",
+          "purpose": "Reference mesh assembly; not editable parametric source"
+        },
+        {
+          "path": "stl_files/so101_6dof/SO101_dof6_modified_links_mod.stl",
+          "url": "https://github.com/rabhishek100/so101-6dof-and-extended-versions/blob/4431247328acc333ab40fc4b202ffda1646660d0/stl_files/so101_6dof/SO101_dof6_modified_links_mod.stl",
+          "purpose": "Changed link meshes"
+        }
+      ],
+      "notes": [
+        "No STEP/native CAD found in inspected tree.",
+        "Author links physical demo; RAFTEL has not validated loads, dimensional fit or software.",
+        "README bus wording conflicts with STS3215 TTL; do not use it as wiring authority."
+      ]
+    },
+    {
+      "id": "thor",
+      "repository": "https://github.com/AngelLM/Thor",
+      "revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+      "license": "CC-BY-SA-4.0",
+      "license_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/LICENSE",
+      "independent_arm_axes": 6,
+      "total_actuators_including_gripper": 8,
+      "adoption_status": "first_baseline_under_study",
+      "cad_application_import_verified": false,
+      "physical_validation_by_raftel": false,
+      "assets": [
+        {
+          "path": "freecad-src/Assembly.FCStd",
+          "url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/Assembly.FCStd",
+          "purpose": "Native master assembly; preserve all sibling files/external links"
+        },
+        {
+          "path": "freecad-src/AssemblyBase.FCStd",
+          "url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/AssemblyBase.FCStd",
+          "purpose": "Base subassembly"
+        },
+        {
+          "path": "freecad-src/AssemblyArt1.FCStd",
+          "url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/AssemblyArt1.FCStd",
+          "purpose": "Joint 1 subassembly"
+        },
+        {
+          "path": "freecad-src/AssemblyArt2.FCStd",
+          "url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/AssemblyArt2.FCStd",
+          "purpose": "Joint 2 subassembly"
+        },
+        {
+          "path": "freecad-src/AssemblyArt3.FCStd",
+          "url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/AssemblyArt3.FCStd",
+          "purpose": "Joint 3 subassembly"
+        },
+        {
+          "path": "freecad-src/AssemblyArt4.FCStd",
+          "url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/AssemblyArt4.FCStd",
+          "purpose": "Joint 4 subassembly"
+        },
+        {
+          "path": "freecad-src/AssemblyArt56.FCStd",
+          "url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/AssemblyArt56.FCStd",
+          "purpose": "Differential wrist subassembly"
+        },
+        {
+          "path": "freecad-src/GripperTop.FCStd",
+          "url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/GripperTop.FCStd",
+          "purpose": "Native tool source"
+        },
+        {
+          "path": "step/Art2BodyA.step",
+          "url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/step/Art2BodyA.step",
+          "purpose": "Representative neutral solid part"
+        }
+      ],
+      "notes": [
+        "Inspected master ZIP/XML identifies FreeCAD 0.19 and sibling external links; current CAD recompute not verified.",
+        "Embedded default document license metadata differs from explicit repository CC-BY-SA; retain provenance and resolve before derivative source publication.",
+        "Gripper jaw parallelism not yet verified in CAD.",
+        "Eight actuators accepted for the Thor study; footprint, mass, cost, gripper and continuous operation remain unverified.",
+        "33 unique external reference names differ in filename extension case; see inspection report before Linux import."
+      ],
+      "requirement_decision": "Liam allowed eight actuators and requested Thor first on 2026-11-11; no mechanical release or purchase approval.",
+      "acquisition": {
+        "source_file_count": 57,
+        "source_bytes": 122885970,
+        "git_revision_verified": true,
+        "inspection_report": "thor-baseline-inspection.json",
+        "cad_application_import_verified": false
+      }
+    },
+    {
+      "id": "parol6",
+      "repository": "https://github.com/Source-Robotics/PAROL6-Desktop-robot-arm",
+      "revision": "e2169c163244d647739cc34fc5da15c24b042a61",
+      "license": "CERN-OHL-S-2.0",
+      "license_url": "https://github.com/Source-Robotics/PAROL6-Desktop-robot-arm/blob/e2169c163244d647739cc34fc5da15c24b042a61/LICENSE",
+      "independent_arm_axes": 6,
+      "total_actuators_including_gripper": null,
+      "adoption_status": "reference_only",
+      "cad_application_import_verified": false,
+      "physical_validation_by_raftel": false,
+      "assets": [
+        {
+          "path": "STL/mounting plates/big_base.STEP",
+          "url": "https://github.com/Source-Robotics/PAROL6-Desktop-robot-arm/blob/e2169c163244d647739cc34fc5da15c24b042a61/STL/mounting%20plates/big_base.STEP",
+          "purpose": "Public mounting-plate solid only; not whole robot"
+        },
+        {
+          "path": "STL/mounting plates/small_base.STEP",
+          "url": "https://github.com/Source-Robotics/PAROL6-Desktop-robot-arm/blob/e2169c163244d647739cc34fc5da15c24b042a61/STL/mounting%20plates/small_base.STEP",
+          "purpose": "Public mounting-plate solid only; not whole robot"
+        }
+      ],
+      "notes": [
+        "Gripper choice and total actuator count not frozen.",
+        "Full robot individual STEP files are sold separately, do not include complete assembly and cannot be shared without permission according to product listing.",
+        "Current hardware license changed 2026-11-04 per README; firmware GPL-3.0 separately."
+      ]
+    }
+  ]
+}
