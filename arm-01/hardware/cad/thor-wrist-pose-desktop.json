@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "validation_class": "partial_native_saved_BRep_and_ideal_rigid_pose_diagnostic",
+  "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+  "native_worker_status": "failed",
+  "native_worker_completed": false,
+  "process_outcome": "process_completed",
+  "process_returncode": 0,
+  "actual_process_elapsed_s": 266.656281100004,
+  "capture": {
+    "path": "thor-wrist-pose-desktop-capture-v1.json",
+    "sha256": "6d8ac3149cfb5573ae1925a79070521ea6a20a0acf11a24813c265c97f348fd0"
+  },
+  "runner": {
+    "path": "thor-wrist-pose-desktop-runner-v1.json",
+    "sha256": "4bdb07b13dbed2a44860d2395549745abdb3b264a0df5a440b6f3c11d7a865a2"
+  },
+  "local_run_evidence": ".work/native-wrist-pose-01",
+  "launch_contract_sha256": "26625d368f1399f43dc961b04828587fb4f449243423d953dcaf9dbb0b054844",
+  "driver_result_sha256": "b3f1eb15dea51e5f16e43438389be5bd79f9523b4d9f84e78bb6a0464d9337f3",
+  "worker_snapshots_sha256": {
+    "audit_freecad_assembly.py": "224c6b45aa7d32aaee54d5de7b17f5446b6df865c6870fe5de5fdd9bd2c58c10",
+    "driver.py": "01d870224bf300f8daf0413eeaf860e1f5712123adc63fbbb4391b0242b7b436",
+    "probe_thor_wrist_pose_desktop.py": "4b1d669aecb97ae70ee1c8e31c2b3d1ebfef4d81b2c6c73aded35423b7a8accf"
+  },
+  "native_module_origins": {
+    "FastenersCmd": {
+      "path": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\native-foundation\\FreeCAD_FastenersWB\\FastenersCmd.py",
+      "sha256": "89f3ef5d38bee30fed839168741c004e1a86cf88dc9310883a0b69e1f83d0abf",
+      "inside_pinned_root": true
+    },
+    "freecad.gears.features": {
+      "path": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\native-foundation\\freecad.gears-legacy003\\freecad\\gears\\features.py",
+      "sha256": "f4281f0b56e7f5f514b4f185ae8bd5718e34f82902680c63e0ecfbf9a3d45eb7",
+      "inside_pinned_root": true
+    },
+    "pygears.bevel_tooth": {
+      "path": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\native-foundation\\freecad.gears-legacy003\\pygears\\bevel_tooth.py",
+      "sha256": "0785043da40bac5fb8ade84c1736015eae53dad775a29e6adb754c721fa1244e",
+      "inside_pinned_root": true
+    }
+  },
+  "native_version": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "runtime_executable_sha256": "1692e54224b48989974e8b91d3ac7a38d1d502d3db4dee1d4cf79ba91356e42d",
+  "original_source_files_verified": 57,
+  "original_source_bytes_unchanged": true,
+  "compatible_copy_source_files_verified": 57,
+  "compatible_copy_source_bytes_unchanged": true,
+  "worker_snapshots_unchanged": true,
+  "pinned_addon_files_unchanged": true,
+  "runtime_isolation_verified": true,
+  "selected_saved_shape_count": 3,
+  "selected_saved_shapes_valid": true,
+  "planned_pair_rows": 10,
+  "captured_pair_rows": 7,
+  "planned_fold_checks": 4,
+  "captured_fold_checks": 3,
+  "planned_boolean_operations": 14,
+  "native_boolean_operations_executed": 11,
+  "maximum_observed_rigid_fold_volume_error_mm3": 7.68876473600244e-09,
+  "observed_rigid_fold_checks_passed": true,
+  "failure": {
+    "operation": "native Boolean common",
+    "pose_id": "negative_fold_roll",
+    "q5_deg": -20,
+    "q6_deg": -15,
+    "candidate_s": 1,
+    "side_y": 1,
+    "side_rotation_common_positive_y_deg": 10,
+    "reason": "native intersection reported a negative volume",
+    "signed_volume_mm3": null,
+    "signed_volume_value_captured": false,
+    "intermediate_topology_captured": false,
+    "inference_basis": "deterministic loop order and completed operation/row checkpoints"
+  },
+  "source_geometry_mode": "saved cached source BReps; no feature-history rebuild",
+  "source_document_saved": false,
+  "feature_history_recomputed": false,
+  "constraint_kinematics_solved": false,
+  "exact_conjugate_mesh_qualified": false,
+  "physical_calibration_qualified": false,
+  "jaw_loop_closure_evaluated": false,
+  "contact_force_or_retention_qualified": false,
+  "fabrication_released": false,
+  "unresolved": [
+    "Negative common magnitude/orientation/topology were not captured before the fail-closed guard.",
+    "Three pair rows and one fold-invariance check remain uncompleted.",
+    "Source cached gear interference and noncoincident pitch apices remain unrepaired.",
+    "No native jaw loop solve, physical mesh, load capacity, retention or manufacturing qualification."
+  ],
+  "selected_document_placements_final_check_executed": false,
+  "selected_document_placements_unchanged": null
+}

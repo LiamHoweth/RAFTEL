@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "validation_class": "native_signed_Boolean_diagnostic_measurements_not_material_acceptance",
+  "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+  "diagnostic_measurements_complete": true,
+  "native_audit_status": "complete",
+  "diagnostic_outcome": "negative_signed_volume_reproduced",
+  "capture": {
+    "path": "thor-wrist-failure-pair-capture-v1.json",
+    "sha256": "315e09ed9d5da61048d16f4aa925e20567f6d946416be8141600ad570ad73393"
+  },
+  "runner": {
+    "path": "thor-wrist-failure-pair-runner-v1.json",
+    "sha256": "26ae97a3e01b02c069da4fca7d68a8ffc64b77353b25c3cb19bcefee904baffd"
+  },
+  "local_run_evidence": ".work/native-wrist-failure-pair-01",
+  "contract_sha256": "ac46cb0beb027f367fc8938ad3e1a68abfcb127cf58e2440912e5eb377c70ab9",
+  "driver_result_sha256": "88b032a28b7c8517c474ef3d8919dc7f35e271880ce28c33c3037b437f4653b1",
+  "process_elapsed_s": 43.32434980000835,
+  "process_returncode": 0,
+  "native_version": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "native_module_origins": {
+    "FastenersCmd": {
+      "path": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\native-foundation\\FreeCAD_FastenersWB\\FastenersCmd.py",
+      "sha256": "89f3ef5d38bee30fed839168741c004e1a86cf88dc9310883a0b69e1f83d0abf",
+      "inside_pinned_root": true
+    },
+    "freecad.gears.features": {
+      "path": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\native-foundation\\freecad.gears-legacy003\\freecad\\gears\\features.py",
+      "sha256": "f4281f0b56e7f5f514b4f185ae8bd5718e34f82902680c63e0ecfbf9a3d45eb7",
+      "inside_pinned_root": true
+    },
+    "pygears.bevel_tooth": {
+      "path": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\native-foundation\\freecad.gears-legacy003\\pygears\\bevel_tooth.py",
+      "sha256": "0785043da40bac5fb8ade84c1736015eae53dad775a29e6adb754c721fa1244e",
+      "inside_pinned_root": true
+    }
+  },
+  "actual_configuration_paths": {
+    "UserParameter": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\native-wrist-failure-pair-01\\user.cfg",
+    "SystemParameter": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\native-wrist-failure-pair-01\\system.cfg",
+    "UserHomePath": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\native-wrist-failure-pair-01\\home",
+    "UserAppData": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\native-wrist-failure-pair-01\\data\\",
+    "AppTempPath": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\native-wrist-failure-pair-01\\temp\\"
+  },
+  "runtime_isolation_verified": true,
+  "open_document_count_before_helper_import": 0,
+  "open_document_count_before": 0,
+  "open_document_count_after_close": 0,
+  "pose": {
+    "q5_deg": -20.0,
+    "q6_deg": -15.0,
+    "candidate_s": 1,
+    "side_y": 1,
+    "rotor_deg": 10.0
+  },
+  "ordered_input_objects": [
+    "AssemblyArt56::Art56GearPlate_Art56GearPlate",
+    "AssemblyArt56::Art56SmallGear_Art56SmallGear001"
+  ],
+  "saved_and_posed_inputs_valid_positive": true,
+  "common_observations": {
+    "signed_volume_mm3": -0.5552516265803887,
+    "shape_type": "Compound",
+    "orientation": "Forward",
+    "null_shape": false,
+    "solid_count": 3,
+    "shell_count": 3,
+    "face_count": 11,
+    "solids": [
+      {
+        "signed_volume_mm3": 0.10539411058939224,
+        "orientation": "Forward"
+      },
+      {
+        "signed_volume_mm3": 0.0007651983078344402,
+        "orientation": "Forward"
+      },
+      {
+        "signed_volume_mm3": 0.00014976424489836237,
+        "orientation": "Forward"
+      }
+    ],
+    "validity_evaluated": true,
+    "valid": true
+  },
+  "derived_arithmetic": {
+    "sum_reported_solid_signed_volumes_mm3": 0.10630907314212505,
+    "aggregate_minus_reported_solid_sum_mm3": -0.6615606997225137,
+    "material_interpretation_accepted": false
+  },
+  "per_solid_face_counts_captured": false,
+  "per_solid_shell_counts_captured": false,
+  "standalone_face_or_shell_membership_captured": false,
+  "raw_common_BRep_exported": false,
+  "original_source_files_verified": 57,
+  "compatible_copy_source_files_verified": 57,
+  "all_source_bytes_unchanged": true,
+  "worker_snapshots_sha256": {
+    "audit_freecad_assembly.py": "224c6b45aa7d32aaee54d5de7b17f5446b6df865c6870fe5de5fdd9bd2c58c10",
+    "driver.py": "ae9495d7a3b65c8e7233e16581b07a9a073c2a8210a83838a4cdbac014772232",
+    "probe_thor_wrist_failure_pair.py": "8ab64dd31219ec50ccc72dc754141fb17c25090587aa20a1223f2ecbaf2bcdd5",
+    "probe_thor_wrist_pose_desktop.py": "c0f586c2ce845489581fc73fae6483521b3afc7ca286ab1074aff7229ae16eb3"
+  },
+  "worker_snapshots_unchanged": true,
+  "pinned_addon_files_unchanged": true,
+  "launcher_snapshot_sha256": "1f7f18a7f66b8863876c05e84b6a2144b3777f6e4f6329f112dba604e9b17405",
+  "launcher_snapshot_unchanged": true,
+  "source_saved": false,
+  "feature_history_recomputed": false,
+  "constraint_kinematics_solved": false,
+  "absolute_volume_substituted": false,
+  "shape_reversed_or_healed": false,
+  "geometric_intersection_accepted": false,
+  "exact_conjugate_mesh_qualified": false,
+  "physical_calibration_qualified": false,
+  "fabrication_released": false,
+  "unresolved": [
+    "Native aggregate Volume is negative despite positive Forward per-solid volumes and valid=True.",
+    "Compound constituent membership and per-solid face/shell counts were not captured.",
+    "No cause or material penetration volume accepted; no abs/sum substitution, shape repair or contact acceptance.",
+    "Source teeth/apices and physical calibration remain unresolved."
+  ]
+}
