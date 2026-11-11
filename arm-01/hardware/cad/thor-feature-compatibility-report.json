@@ -1,0 +1,964 @@
+{
+  "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+  "validation_class": "native CAD compatibility diagnostics and static snapshot; not physical validation",
+  "individual_part_checks": {
+    "version": [
+      "1",
+      "1",
+      "4",
+      "20260928 (Git shallow)",
+      "Unknown",
+      "2026/09/28 13:46:34",
+      "(HEAD detached at 4fd3bf320)",
+      "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+    ],
+    "parts": [
+      {
+        "file": "Art1Body.fcstd",
+        "cached": {
+          "Body": {
+            "valid": true,
+            "solids": 1,
+            "volume_mm3": 298648.10044680396,
+            "bbox_mm": [
+              162.3588300438591,
+              162.3588300438591,
+              161.5614147209609
+            ]
+          },
+          "Pad": {
+            "valid": true,
+            "solids": 1,
+            "volume_mm3": 530143.7602932777,
+            "bbox_mm": [
+              150.0,
+              150.0,
+              30.0
+            ]
+          },
+          "Groove": {
+            "valid": true,
+            "solids": 1,
+            "volume_mm3": 1461442.4342475636,
+            "bbox_mm": [
+              150.0,
+              150.0,
+              161.4999999849089
+            ]
+          },
+          "Thickness": {
+            "valid": true,
+            "solids": 1,
+            "volume_mm3": 320854.8748546027,
+            "bbox_mm": [
+              150.0,
+              150.0,
+              161.4999999995797
+            ]
+          }
+        },
+        "restored": {
+          "Body": {
+            "state": [
+              "Touched"
+            ],
+            "shape": {
+              "valid": true,
+              "solids": 1,
+              "volume_mm3": 298648.10044680396,
+              "bbox_mm": [
+                162.3588300438591,
+                162.3588300438591,
+                161.5614147209609
+              ]
+            }
+          },
+          "Pad": {
+            "state": [
+              "Touched"
+            ],
+            "shape": {
+              "valid": true,
+              "solids": 1,
+              "volume_mm3": 530143.7602932777,
+              "bbox_mm": [
+                150.0,
+                150.0,
+                30.0
+              ]
+            }
+          },
+          "Groove": {
+            "state": [
+              "Touched"
+            ],
+            "shape": {
+              "valid": true,
+              "solids": 1,
+              "volume_mm3": 1461442.4342475636,
+              "bbox_mm": [
+                150.0,
+                150.0,
+                161.4999999849089
+              ]
+            }
+          },
+          "Thickness": {
+            "state": [
+              "Touched"
+            ],
+            "shape": {
+              "valid": true,
+              "solids": 1,
+              "volume_mm3": 320854.8748546027,
+              "bbox_mm": [
+                150.0,
+                150.0,
+                161.4999999995797
+              ]
+            }
+          }
+        },
+        "recompute_return": 14,
+        "recomputed": {
+          "Body": {
+            "state": [
+              "Touched"
+            ],
+            "shape": {
+              "valid": true,
+              "solids": 1,
+              "volume_mm3": 298648.10044680396,
+              "bbox_mm": [
+                162.3588300438591,
+                162.3588300438591,
+                161.5614147209609
+              ]
+            }
+          },
+          "Pad": {
+            "state": [
+              "Up-to-date"
+            ],
+            "shape": {
+              "valid": true,
+              "solids": 1,
+              "volume_mm3": 530143.7602932777,
+              "bbox_mm": [
+                150.0,
+                150.0,
+                30.0
+              ]
+            }
+          },
+          "Groove": {
+            "state": [
+              "Up-to-date"
+            ],
+            "shape": {
+              "valid": true,
+              "solids": 1,
+              "volume_mm3": 1461439.570010672,
+              "bbox_mm": [
+                150.0,
+                150.0,
+                161.49999998863402
+              ]
+            }
+          },
+          "Thickness": {
+            "state": [
+              "Touched",
+              "Invalid"
+            ],
+            "shape": {
+              "valid": true,
+              "solids": 1,
+              "volume_mm3": 320854.8748546027,
+              "bbox_mm": [
+                150.0,
+                150.0,
+                161.4999999995797
+              ]
+            }
+          }
+        },
+        "elapsed_s": 2.105856042006053
+      },
+      {
+        "file": "Art2BodyB.fcstd",
+        "cached": {
+          "Body": {
+            "valid": true,
+            "solids": 1,
+            "volume_mm3": 257430.42758716544,
+            "bbox_mm": [
+              139.65611498627516,
+              299.65611498627516,
+              32.00000000000004
+            ]
+          },
+          "Pad": {
+            "valid": true,
+            "solids": 1,
+            "volume_mm3": 949387.2059826343,
+            "bbox_mm": [
+              130.0,
+              290.0,
+              32.0
+            ]
+          },
+          "Thickness": {
+            "valid": true,
+            "solids": 1,
+            "volume_mm3": 247889.86938431775,
+            "bbox_mm": [
+              130.0,
+              290.0,
+              32.0
+            ]
+          },
+          "Groove": {
+            "valid": true,
+            "solids": 1,
+            "volume_mm3": 251042.009942589,
+            "bbox_mm": [
+              130.0,
+              290.0,
+              32.0
+            ]
+          }
+        },
+        "restored": {
+          "Body": {
+            "state": [
+              "Touched"
+            ],
+            "shape": {
+              "valid": true,
+              "solids": 1,
+              "volume_mm3": 257430.42758716544,
+              "bbox_mm": [
+                139.65611498627516,
+                299.65611498627516,
+                32.00000000000004
+              ]
+            }
+          },
+          "Pad": {
+            "state": [
+              "Touched"
+            ],
+            "shape": {
+              "valid": true,
+              "solids": 1,
+              "volume_mm3": 949387.2059826343,
+              "bbox_mm": [
+                130.0,
+                290.0,
+                32.0
+              ]
+            }
+          },
+          "Thickness": {
+            "state": [
+              "Touched"
+            ],
+            "shape": {
+              "valid": true,
+              "solids": 1,
+              "volume_mm3": 247889.86938431775,
+              "bbox_mm": [
+                130.0,
+                290.0,
+                32.0
+              ]
+            }
+          },
+          "Groove": {
+            "state": [
+              "Touched"
+            ],
+            "shape": {
+              "valid": true,
+              "solids": 1,
+              "volume_mm3": 251042.009942589,
+              "bbox_mm": [
+                130.0,
+                290.0,
+                32.0
+              ]
+            }
+          }
+        },
+        "recompute_return": 108,
+        "recomputed": {
+          "Body": {
+            "state": [
+              "Up-to-date"
+            ],
+            "shape": {
+              "valid": true,
+              "solids": 1,
+              "volume_mm3": 257430.4275871509,
+              "bbox_mm": [
+                139.65611498627516,
+                299.65611498627516,
+                32.00000000000004
+              ]
+            }
+          },
+          "Pad": {
+            "state": [
+              "Up-to-date"
+            ],
+            "shape": {
+              "valid": true,
+              "solids": 1,
+              "volume_mm3": 949387.2059826343,
+              "bbox_mm": [
+                130.0,
+                290.0,
+                32.0
+              ]
+            }
+          },
+          "Thickness": {
+            "state": [
+              "Up-to-date"
+            ],
+            "shape": {
+              "valid": true,
+              "solids": 1,
+              "volume_mm3": 247889.86938431775,
+              "bbox_mm": [
+                130.0,
+                290.0,
+                32.0
+              ]
+            }
+          },
+          "Groove": {
+            "state": [
+              "Up-to-date"
+            ],
+            "shape": {
+              "valid": true,
+              "solids": 1,
+              "volume_mm3": 251042.00994258924,
+              "bbox_mm": [
+                130.0,
+                290.0,
+                32.0
+              ]
+            }
+          }
+        },
+        "elapsed_s": 4.115809332986828
+      },
+      {
+        "file": "BaseBoxBody.FCStd",
+        "cached": {
+          "Body": {
+            "valid": true,
+            "solids": 1,
+            "volume_mm3": 341664.49850102415,
+            "bbox_mm": [
+              195.00000000000003,
+              180.00000000000006,
+              65.50000000000001
+            ]
+          },
+          "Pad": {
+            "valid": true,
+            "solids": 1,
+            "volume_mm3": 1929981.863175485,
+            "bbox_mm": [
+              195.00000000000003,
+              180.0,
+              65.5
+            ]
+          },
+          "Thickness": {
+            "valid": true,
+            "solids": 1,
+            "volume_mm3": 373786.8602137531,
+            "bbox_mm": [
+              195.00000000000003,
+              180.0,
+              65.5
+            ]
+          }
+        },
+        "restored": {
+          "Body": {
+            "state": [
+              "Touched"
+            ],
+            "shape": {
+              "valid": true,
+              "solids": 1,
+              "volume_mm3": 341664.49850102415,
+              "bbox_mm": [
+                195.00000000000003,
+                180.00000000000006,
+                65.50000000000001
+              ]
+            }
+          },
+          "Pad": {
+            "state": [
+              "Touched"
+            ],
+            "shape": {
+              "valid": true,
+              "solids": 1,
+              "volume_mm3": 1929981.863175485,
+              "bbox_mm": [
+                195.00000000000003,
+                180.0,
+                65.5
+              ]
+            }
+          },
+          "Thickness": {
+            "state": [
+              "Touched"
+            ],
+            "shape": {
+              "valid": true,
+              "solids": 1,
+              "volume_mm3": 373786.8602137531,
+              "bbox_mm": [
+                195.00000000000003,
+                180.0,
+                65.5
+              ]
+            }
+          }
+        },
+        "recompute_return": 92,
+        "recomputed": {
+          "Body": {
+            "state": [
+              "Up-to-date"
+            ],
+            "shape": {
+              "valid": true,
+              "solids": 1,
+              "volume_mm3": 341664.49870679376,
+              "bbox_mm": [
+                195.00000000000003,
+                180.00000000000006,
+                65.50000000000001
+              ]
+            }
+          },
+          "Pad": {
+            "state": [
+              "Up-to-date"
+            ],
+            "shape": {
+              "valid": true,
+              "solids": 1,
+              "volume_mm3": 1929981.8631754848,
+              "bbox_mm": [
+                195.00000000000003,
+                180.0,
+                65.5
+              ]
+            }
+          },
+          "Thickness": {
+            "state": [
+              "Up-to-date"
+            ],
+            "shape": {
+              "valid": true,
+              "solids": 1,
+              "volume_mm3": 373786.86021375284,
+              "bbox_mm": [
+                195.00000000000003,
+                180.0,
+                65.5
+              ]
+            }
+          }
+        },
+        "elapsed_s": 6.421106875000987
+      }
+    ]
+  },
+  "art1_intersection_candidate_rejected_as_full_repair": {
+    "change": {
+      "object": "Thickness",
+      "property": "Intersection",
+      "old": false,
+      "new": true
+    },
+    "source_saved": false,
+    "recompute_return": 21,
+    "states": {
+      "Body": [
+        "Touched"
+      ],
+      "Origin": [
+        "Up-to-date"
+      ],
+      "X_Axis": [
+        "Up-to-date"
+      ],
+      "Y_Axis": [
+        "Up-to-date"
+      ],
+      "Z_Axis": [
+        "Up-to-date"
+      ],
+      "XY_Plane": [
+        "Up-to-date"
+      ],
+      "XZ_Plane": [
+        "Up-to-date"
+      ],
+      "YZ_Plane": [
+        "Up-to-date"
+      ],
+      "Sketch": [
+        "Up-to-date"
+      ],
+      "Pad": [
+        "Up-to-date"
+      ],
+      "Sketch001": [
+        "Up-to-date"
+      ],
+      "Pad001": [
+        "Up-to-date"
+      ],
+      "DatumPlane": [
+        "Up-to-date"
+      ],
+      "Sketch002": [
+        "Up-to-date"
+      ],
+      "Groove": [
+        "Up-to-date"
+      ],
+      "Thickness": [
+        "Up-to-date"
+      ],
+      "Sketch003": [
+        "Up-to-date"
+      ],
+      "Pad002": [
+        "Up-to-date"
+      ],
+      "Sketch004": [
+        "Up-to-date"
+      ],
+      "Pocket": [
+        "Up-to-date"
+      ],
+      "Spreadsheet": [
+        "Up-to-date"
+      ],
+      "DatumPlane001": [
+        "Up-to-date"
+      ],
+      "Sketch005": [
+        "Touched",
+        "Invalid"
+      ],
+      "Pocket001": [
+        "Touched"
+      ],
+      "MultiTransform": [
+        "Touched"
+      ],
+      "Mirrored": [
+        "Up-to-date"
+      ],
+      "Mirrored001": [
+        "Up-to-date"
+      ],
+      "DatumPlane002": [
+        "Up-to-date"
+      ],
+      "Sketch006": [
+        "Touched"
+      ],
+      "Revolution": [
+        "Touched"
+      ],
+      "Sketch007": [
+        "Touched"
+      ],
+      "Pocket002": [
+        "Touched"
+      ],
+      "Sketch008": [
+        "Touched"
+      ],
+      "Pocket003": [
+        "Touched"
+      ],
+      "Sketch009": [
+        "Touched"
+      ],
+      "Pocket004": [
+        "Touched"
+      ],
+      "Sketch010": [
+        "Touched"
+      ],
+      "Pocket005": [
+        "Touched"
+      ],
+      "Sketch011": [
+        "Touched"
+      ],
+      "Pocket006": [
+        "Touched"
+      ],
+      "Sketch012": [
+        "Touched"
+      ],
+      "Pocket007": [
+        "Touched"
+      ],
+      "Sketch013": [
+        "Touched"
+      ],
+      "Pocket008": [
+        "Touched"
+      ],
+      "Sketch014": [
+        "Up-to-date"
+      ],
+      "Pocket009": [
+        "Touched"
+      ],
+      "Sketch015": [
+        "Touched"
+      ],
+      "Pocket010": [
+        "Touched"
+      ],
+      "Sketch016": [
+        "Touched"
+      ],
+      "Pocket011": [
+        "Touched"
+      ],
+      "Sketch017": [
+        "Up-to-date"
+      ],
+      "Pocket012": [
+        "Touched"
+      ],
+      "Fillet": [
+        "Touched"
+      ],
+      "Sketch018": [
+        "Up-to-date"
+      ],
+      "Pocket013": [
+        "Touched"
+      ],
+      "Sketch019": [
+        "Up-to-date"
+      ],
+      "Pocket014": [
+        "Touched"
+      ],
+      "LCS_Motor2A": [
+        "Touched"
+      ],
+      "LCS_Motor2V": [
+        "Touched"
+      ],
+      "LCS_Motor3": [
+        "Touched"
+      ],
+      "LCS_BearingFix": [
+        "Touched"
+      ],
+      "LCS_Optodisk": [
+        "Touched"
+      ],
+      "HoleAxis_1": [
+        "Touched"
+      ],
+      "HoleAxis_2": [
+        "Touched"
+      ],
+      "HoleAxis_3": [
+        "Touched"
+      ],
+      "HoleAxis_4": [
+        "Touched"
+      ],
+      "LCS_Bot": [
+        "Touched"
+      ],
+      "Sketch020": [
+        "Touched"
+      ],
+      "Pocket015": [
+        "Touched"
+      ],
+      "LCS_Bearing": [
+        "Touched"
+      ],
+      "LCS_Art2BodyCover1": [
+        "Touched"
+      ],
+      "HoleAxis_5": [
+        "Touched"
+      ],
+      "HoleAxis_6": [
+        "Touched"
+      ],
+      "HoleAxis_7": [
+        "Touched"
+      ],
+      "HoleAxis_8": [
+        "Touched"
+      ],
+      "HoleAxis_9": [
+        "Touched"
+      ],
+      "HoleAxis_10": [
+        "Touched"
+      ],
+      "HoleAxis_11": [
+        "Touched"
+      ],
+      "HoleAxis_12": [
+        "Touched"
+      ],
+      "Sketch021": [
+        "Touched"
+      ],
+      "Pocket016": [
+        "Touched"
+      ],
+      "HoleAxis_13": [
+        "Touched"
+      ],
+      "HoleAxis_14": [
+        "Touched"
+      ],
+      "HoleAxis_15": [
+        "Touched"
+      ],
+      "HoleAxis_16": [
+        "Touched"
+      ],
+      "Sketch022": [
+        "Touched"
+      ],
+      "Pocket017": [
+        "Touched"
+      ],
+      "Sketch023": [
+        "Touched"
+      ],
+      "Pocket018": [
+        "Touched"
+      ],
+      "Origin001": [
+        "Up-to-date"
+      ]
+    },
+    "thickness": {
+      "valid": true,
+      "volume_mm3": 320852.0343296486,
+      "solids": 1,
+      "symmetric_difference_mm3": 0.0,
+      "bounds_mm": [
+        150.0,
+        150.0,
+        161.4999999995751
+      ]
+    },
+    "body": {
+      "valid": true,
+      "volume_mm3": 298648.10044680396,
+      "solids": 1,
+      "symmetric_difference_mm3": 0.0,
+      "bounds_mm": [
+        162.3588300438591,
+        162.3588300438591,
+        161.5614147209609
+      ]
+    }
+  },
+  "static_snapshot": {
+    "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+    "source_sha256": "8afa16c8ff3adebd87e48b67dfb20d3224402bd517010dc112950a28f219690a",
+    "source_body_brep_sha256": "d0ed3dcd293f814b6db11e0e29a22e89a6aa4fe6c8d9f8e5c08e508baec2b9db",
+    "freecad_version": [
+      "1",
+      "1",
+      "4",
+      "20260928 (Git shallow)",
+      "Unknown",
+      "2026/09/28 13:46:34",
+      "(HEAD detached at 4fd3bf320)",
+      "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+    ],
+    "validation_level": "static saved-geometry/datum compatibility snapshot; not procedural rebuild or physical validation",
+    "original_procedural_history_preserved_in_upstream": true,
+    "datum_count": 24,
+    "before": {
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 298648.10044680396,
+      "bounds_mm": [
+        -81.17941502192954,
+        81.17941502192954,
+        -81.17941502192954,
+        81.17941502192954,
+        -6.0000000023e-07,
+        161.5614141209609
+      ]
+    },
+    "prepared": {
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 298648.10044680396,
+      "bounds_mm": [
+        -81.17941502192954,
+        81.17941502192954,
+        -81.17941502192954,
+        81.17941502192954,
+        -6.0000000023e-07,
+        161.5614141209609
+      ]
+    },
+    "reopened": {
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 298648.10044680396,
+      "bounds_mm": [
+        -81.17941502192954,
+        81.17941502192954,
+        -81.17941502192954,
+        81.17941502192954,
+        -6.0000000023e-07,
+        161.5614141209609
+      ]
+    },
+    "symmetric_difference_mm3": 0.0,
+    "datum_matrix_mismatches": [],
+    "object_states": {
+      "Body": [
+        "Up-to-date"
+      ],
+      "Origin": [
+        "Up-to-date"
+      ],
+      "X_Axis": [
+        "Up-to-date"
+      ],
+      "Y_Axis": [
+        "Up-to-date"
+      ],
+      "Z_Axis": [
+        "Up-to-date"
+      ],
+      "XY_Plane": [
+        "Up-to-date"
+      ],
+      "XZ_Plane": [
+        "Up-to-date"
+      ],
+      "YZ_Plane": [
+        "Up-to-date"
+      ],
+      "Origin001": [
+        "Up-to-date"
+      ],
+      "FrozenSourceSolid": [
+        "Up-to-date"
+      ],
+      "LCS_Motor2A": [
+        "Up-to-date"
+      ],
+      "LCS_Motor2V": [
+        "Up-to-date"
+      ],
+      "LCS_Motor3": [
+        "Up-to-date"
+      ],
+      "LCS_BearingFix": [
+        "Up-to-date"
+      ],
+      "LCS_Optodisk": [
+        "Up-to-date"
+      ],
+      "HoleAxis_1": [
+        "Up-to-date"
+      ],
+      "HoleAxis_2": [
+        "Up-to-date"
+      ],
+      "HoleAxis_3": [
+        "Up-to-date"
+      ],
+      "HoleAxis_4": [
+        "Up-to-date"
+      ],
+      "LCS_Bot": [
+        "Up-to-date"
+      ],
+      "LCS_Bearing": [
+        "Up-to-date"
+      ],
+      "LCS_Art2BodyCover1": [
+        "Up-to-date"
+      ],
+      "HoleAxis_5": [
+        "Up-to-date"
+      ],
+      "HoleAxis_6": [
+        "Up-to-date"
+      ],
+      "HoleAxis_7": [
+        "Up-to-date"
+      ],
+      "HoleAxis_8": [
+        "Up-to-date"
+      ],
+      "HoleAxis_9": [
+        "Up-to-date"
+      ],
+      "HoleAxis_10": [
+        "Up-to-date"
+      ],
+      "HoleAxis_11": [
+        "Up-to-date"
+      ],
+      "HoleAxis_12": [
+        "Up-to-date"
+      ],
+      "HoleAxis_13": [
+        "Up-to-date"
+      ],
+      "HoleAxis_14": [
+        "Up-to-date"
+      ],
+      "HoleAxis_15": [
+        "Up-to-date"
+      ],
+      "HoleAxis_16": [
+        "Up-to-date"
+      ]
+    },
+    "source_unchanged": true,
+    "output_sha256": "bbc065ef2ce689f787b4df493655e7ef02d5962d2e0ab7b5f0c56aea10c5910c",
+    "body_bounds_max_abs_error_mm": 0.0,
+    "validated_static_snapshot": true
+  }
+}

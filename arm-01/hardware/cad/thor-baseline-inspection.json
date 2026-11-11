@@ -1,0 +1,738 @@
+{
+  "schema_version": 1,
+  "inspected_at_utc": "2026-11-11T16:41:44+00:00",
+  "upstream": "https://github.com/AngelLM/Thor",
+  "revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+  "source_file_count": 57,
+  "source_bytes": 122885970,
+  "source_tree_clean": true,
+  "checks": {
+    "all_native_files_zip_and_document_xml_readable": true,
+    "all_external_reference_targets_found_case_insensitive": true,
+    "case_sensitive_reference_filename_mismatch_count": 33,
+    "freecad_import": false,
+    "freecad_recompute": false,
+    "physical_test": false
+  },
+  "limitations": [
+    "No FreeCAD application found in /Applications or ~/Applications and no FreeCADCmd/freecadcmd on PATH.",
+    "XML parse does not evaluate features, expressions, links, collisions, physical dimensions, stiffness or mass.",
+    "Saved assembly translations describe one stored layout and are not independently verified joint origins, link lengths or reach.",
+    "Case-insensitive matching found all references; 33 names need reconciliation for case-sensitive systems."
+  ],
+  "assembly_dependencies": {
+    "Assembly.FCStd": [
+      "AssemblyArt1.FCStd",
+      "AssemblyArt2.FCStd",
+      "AssemblyArt3.FCStd",
+      "AssemblyArt4.FCStd",
+      "AssemblyArt56.FCStd",
+      "AssemblyBase.FCStd"
+    ],
+    "AssemblyArt1.FCStd": [
+      "Art1Body.fcstd",
+      "Art1Bot.fcstd",
+      "Art1FanHolder.FCStd",
+      "Art1Top.FCStd",
+      "Art23Optodisk.FCStd",
+      "Art2BodyACover1.FCStd",
+      "Art2MotorGear.FCStd",
+      "CommonBearingFixThrough.FCStd"
+    ],
+    "AssemblyArt2.FCStd": [
+      "Art2BodyA.FCStd",
+      "Art2BodyACover2.FCStd",
+      "Art2BodyAWindow.FCStd",
+      "Art2BodyB.FCStd",
+      "Art2BodyBCover.FCStd",
+      "Art2BodyUnion.FCStd",
+      "Art2SideCover.FCStd",
+      "Art3TensionerBody.FCStd",
+      "Art3TensionerPulley.FCStd",
+      "CommonBearingFix.FCStd"
+    ],
+    "AssemblyArt3.FCStd": [
+      "Art23Optodisk.FCStd",
+      "Art3Body.FCStd",
+      "Art3Pulley.FCStd",
+      "Art4BearingRing.FCStd",
+      "Art4MotorFix.FCStd",
+      "Art4MotorGear.FCStd",
+      "CommonBearingFixThrough.FCStd"
+    ],
+    "AssemblyArt4.FCStd": [
+      "Art4BearingFix.FCStd",
+      "Art4Body.FCStd",
+      "Art4BodyBot.FCStd",
+      "Art4BodyFan.FCStd",
+      "Art4Optodisk.FCStd",
+      "Art4TransmissionColumn.FCStd",
+      "Art56MotorHolderA.FCStd",
+      "Art56MotorHolderB.FCStd"
+    ],
+    "AssemblyArt56.FCStd": [
+      "Art56GearPlate.FCStd",
+      "Art56MotorCoverRing.FCStd",
+      "Art56SmallGear.FCStd",
+      "CommonBearingFixThrough.FCStd",
+      "GripperActiveArm.FCStd",
+      "GripperArm.FCStd",
+      "GripperBot.FCStd",
+      "GripperFinger.FCStd",
+      "GripperPassiveArm.FCStd",
+      "GripperTop.FCStd"
+    ],
+    "AssemblyBase.FCStd": [
+      "Art1GearMotor.FCStd",
+      "BaseBearingFix.FCStd",
+      "BaseBot.FCStd",
+      "BaseBoxBody.FCStd",
+      "BaseBoxCover.FCStd",
+      "BaseTop.FCStd"
+    ]
+  },
+  "reference_filename_case_mismatches": {
+    "Art1Top.FCStd": [
+      "Art1Top.fcstd"
+    ],
+    "Art23Optodisk.FCStd": [
+      "Art23Optodisk.fcstd"
+    ],
+    "Art2BodyACover1.FCStd": [
+      "Art2BodyACover1.fcstd"
+    ],
+    "Art2MotorGear.FCStd": [
+      "Art2MotorGear.fcstd"
+    ],
+    "CommonBearingFixThrough.FCStd": [
+      "CommonBearingFixThrough.fcstd"
+    ],
+    "Art2BodyA.FCStd": [
+      "Art2BodyA.fcstd"
+    ],
+    "Art2BodyACover2.FCStd": [
+      "Art2BodyACover2.fcstd"
+    ],
+    "Art2BodyAWindow.FCStd": [
+      "Art2BodyAWindow.fcstd"
+    ],
+    "Art2BodyB.FCStd": [
+      "Art2BodyB.fcstd"
+    ],
+    "Art2BodyBCover.FCStd": [
+      "Art2BodyBCover.fcstd"
+    ],
+    "Art3TensionerBody.FCStd": [
+      "Art3TensionerBody.fcstd"
+    ],
+    "Art3TensionerPulley.FCStd": [
+      "Art3TensionerPulley.fcstd"
+    ],
+    "CommonBearingFix.FCStd": [
+      "CommonBearingFix.fcstd"
+    ],
+    "Art3Body.FCStd": [
+      "Art3Body.fcstd"
+    ],
+    "Art3Pulley.FCStd": [
+      "Art3Pulley.fcstd"
+    ],
+    "Art4BearingRing.FCStd": [
+      "Art4BearingRing.fcstd"
+    ],
+    "Art4MotorFix.FCStd": [
+      "Art4MotorFix.fcstd"
+    ],
+    "Art4MotorGear.FCStd": [
+      "Art4MotorGear.fcstd"
+    ],
+    "Art4BearingFix.FCStd": [
+      "Art4BearingFix.fcstd"
+    ],
+    "Art4Body.FCStd": [
+      "Art4Body.fcstd"
+    ],
+    "Art4BodyBot.FCStd": [
+      "Art4BodyBot.fcstd"
+    ],
+    "Art4BodyFan.FCStd": [
+      "Art4BodyFan.fcstd"
+    ],
+    "Art4Optodisk.FCStd": [
+      "Art4Optodisk.fcstd"
+    ],
+    "Art4TransmissionColumn.FCStd": [
+      "Art4TransmissionColumn.fcstd"
+    ],
+    "Art56MotorHolderA.FCStd": [
+      "Art56MotorHolderA.fcstd"
+    ],
+    "Art56MotorHolderB.FCStd": [
+      "Art56MotorHolderB.fcstd"
+    ],
+    "Art56GearPlate.FCStd": [
+      "Art56GearPlate.fcstd"
+    ],
+    "Art56MotorCoverRing.FCStd": [
+      "Art56MotorCoverRing.fcstd"
+    ],
+    "Art56SmallGear.FCStd": [
+      "Art56SmallGear.fcstd"
+    ],
+    "Art1GearMotor.FCStd": [
+      "Art1GearMotor.fcstd"
+    ],
+    "BaseBearingFix.FCStd": [
+      "BaseBearingFix.fcstd"
+    ],
+    "BaseBot.FCStd": [
+      "BaseBot.fcstd"
+    ],
+    "BaseTop.FCStd": [
+      "BaseTop.fcstd"
+    ]
+  },
+  "stored_master_assembly_component_placements": {
+    "AssemblyBase": {
+      "translation_native_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quaternion_Q0_Q1_Q2_Q3": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "AssemblyArt1": {
+      "translation_native_mm": [
+        0.0,
+        0.0,
+        79.0
+      ],
+      "quaternion_Q0_Q1_Q2_Q3": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "AssemblyArt2": {
+      "translation_native_mm": [
+        -5.9e-15,
+        -68.00000000000001,
+        202.0
+      ],
+      "quaternion_Q0_Q1_Q2_Q3": [
+        0.0,
+        0.7071067811865476,
+        0.7071067811865476,
+        1e-16
+      ]
+    },
+    "AssemblyArt3": {
+      "translation_native_mm": [
+        -2.09e-14,
+        0.0,
+        443.5
+      ],
+      "quaternion_Q0_Q1_Q2_Q3": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    "AssemblyArt4": {
+      "translation_native_mm": [
+        -2.1e-14,
+        0.0,
+        444.5
+      ],
+      "quaternion_Q0_Q1_Q2_Q3": [
+        1e-16,
+        -0.0,
+        -1e-16,
+        1.0
+      ]
+    },
+    "AssemblyArt56": {
+      "translation_native_mm": [
+        -3.07e-14,
+        -1.37e-14,
+        556.0
+      ],
+      "quaternion_Q0_Q1_Q2_Q3": [
+        0.0,
+        -1e-16,
+        0.7071067811865475,
+        0.7071067811865477
+      ]
+    }
+  },
+  "files": [
+    {
+      "path": "freecad-src/Art1Body.fcstd",
+      "bytes": 3700888,
+      "sha256": "8afa16c8ff3adebd87e48b67dfb20d3224402bd517010dc112950a28f219690a",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/Art1Bot.fcstd",
+      "bytes": 3966594,
+      "sha256": "31c8fa13cd2868e68cbcd97ec43970ff120760fad46f0a0e53608a98f29666ca",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/Art1FanHolder.FCStd",
+      "bytes": 83108,
+      "sha256": "df43383d3d3a81f95af8ed3c9c589ac679e3f1eda0c60e642f292480c834e985",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/Art1GearMotor.fcstd",
+      "bytes": 652025,
+      "sha256": "7de75d92b15bdfc548002c2bb93ab8192720b7948338b708f34460d55321d3f3",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/Art1OptoFix.fcstd",
+      "bytes": 81517,
+      "sha256": "ffedf6c188e641a8d46bbd93ee81a3cef1aff8dd908b7ee3c4c3191fa400e26b",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/Art1Top.fcstd",
+      "bytes": 285642,
+      "sha256": "0dbfa7c49d0e3ca032e219b306e532fd403a145fb15cf304aa880a8dd3067bd6",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/Art23Optodisk.fcstd",
+      "bytes": 44427,
+      "sha256": "c81e788792edea63c7e73a12b06dc8073668a6b899f8d46ea5c3d9d399de431c",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/Art2BodyA.fcstd",
+      "bytes": 19227694,
+      "sha256": "ddf08ae66dfc767bbce3f3354d8ba8f471f5527e8cdbfec9570933c4fb4e276a",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/Art2BodyACover1.fcstd",
+      "bytes": 70602,
+      "sha256": "2ed0c298cbd55af72065d8a850f20b23f2dcd72de8c79ee9d6384bc4c537d514",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/Art2BodyACover2.fcstd",
+      "bytes": 46211,
+      "sha256": "83dae954cbbab7b380094033d0c689d774862878f809f5f9e2e31c9bbb9bbde3",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/Art2BodyAWindow.fcstd",
+      "bytes": 158019,
+      "sha256": "ced59ddf86e57b3f3615bb4ee44d96b75b7032a9239733845a26e8e334941e98",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/Art2BodyB.fcstd",
+      "bytes": 937103,
+      "sha256": "a63e36fd3b27321061ef875da8454e2d787a83fb8737fb1774aa458c8a8c7882",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/Art2BodyBCover.fcstd",
+      "bytes": 69475,
+      "sha256": "b8901be694766792ec0acd9e472d39552a6dfe9e0b69392e2e80ddc7499cdfdf",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/Art2BodyUnion.FCStd",
+      "bytes": 60881,
+      "sha256": "238330fcdb1a52d6ccf5e3e2951d49c0a79bd24f42eb24162581727fb769fecc",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/Art2MotorGear.fcstd",
+      "bytes": 768981,
+      "sha256": "a8761b35792888dd679bdc1bab74a353b5893365aff268ae1d35a985a2984fc8",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/Art2SideCover.FCStd",
+      "bytes": 23224,
+      "sha256": "a618cb1c6f2168340ccc5e49756b1ff8319b91a05b6c5f578275fbfaaffbf14e",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/Art3Body.fcstd",
+      "bytes": 3566550,
+      "sha256": "d6e2759daadc02ab36a7b5c6920b7f7b42066f63c2a7600fb4ff86487565e79e",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/Art3Body2.FCStd",
+      "bytes": 3933769,
+      "sha256": "b911d8799e8630bbe1a3affa771e1042ea166d0b6f81c79f2fa6a9df61b68c1a",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/Art3Pulley.fcstd",
+      "bytes": 336229,
+      "sha256": "d450cc565e722981346fc2b1aa3662474c83d574ca39a5602bacb98d8619fd9e",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/Art3TensionerBody.fcstd",
+      "bytes": 33816,
+      "sha256": "f105e77dbb72523f842e58b9bcd9a54c3ec5f5eaf771a0798851cf7f13752a55",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/Art3TensionerPulley.fcstd",
+      "bytes": 14250,
+      "sha256": "2bbf0c3c522db8b2247ed6f3dbce48cd111d4d21349f05cab5bc01d3812102da",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/Art4BearingFix.fcstd",
+      "bytes": 72975,
+      "sha256": "248a21d01617b0e784a9743d186ab698d6406a9eeba6e6a27c2c426baf8dca55",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/Art4BearingPlug.fcstd",
+      "bytes": 30934,
+      "sha256": "b85db4631074bb3a2ac49162874e6915d4727ee4d5327309dcbdeaec664ebebc",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/Art4BearingRing.fcstd",
+      "bytes": 152238,
+      "sha256": "e4a84700481629554e0e79de956562f54d46aaeeb60908f4e5aee4c5336d7214",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/Art4Body.fcstd",
+      "bytes": 3328035,
+      "sha256": "73f6b57135ea18e516d6b3280d91063d3d23c891d809a6ed52ae9594483ddb31",
+      "document_program_version": "0.21R33668 +26 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/Art4BodyBot.fcstd",
+      "bytes": 193632,
+      "sha256": "b7eb908539d3c6c6310c2f64ddb7de758d9f742f5c44ac45bd8dea69925d9413",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/Art4BodyFan.fcstd",
+      "bytes": 64413,
+      "sha256": "6520e13c078f3a9862c98443dc4e9b77f77c429b32f387e82c3f14eaabc8fa16",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/Art4MotorFix.fcstd",
+      "bytes": 62195,
+      "sha256": "976a04a9b3bbf21ea80a9e1e6ac53ef64f0ac7aa93fbcff7184f84b00688e6c4",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/Art4MotorGear.fcstd",
+      "bytes": 975455,
+      "sha256": "c988a0d9be1fc1312fabc1b6b10108cf05f23fb3298a0ece627cb5eb1d930358",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/Art4Optodisk.fcstd",
+      "bytes": 45890,
+      "sha256": "0822ae9a4a1460e74e05ff068e2662670e9db50991e28d2d0d3da6f73385cbb4",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/Art4TransmissionColumn.fcstd",
+      "bytes": 1934896,
+      "sha256": "f31295eaaf973347c73779e69ca33f095656b1e7bc4511eac5ce879aaaddbb2c",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/Art56GearPlate.fcstd",
+      "bytes": 31628891,
+      "sha256": "38ca5952d4e03e4009f94628d0c435153b980ea558a608fca9ac1c9aaf79d411",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/Art56Interface.fcstd",
+      "bytes": 169153,
+      "sha256": "dccf452b3eb1f0e00bd6db6d1286e2cbbc06b5e47b828e9008f9bbd4d4830737",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/Art56MotorCoverRing.fcstd",
+      "bytes": 366403,
+      "sha256": "8d037cf7a3e63ee8f04b39be35836d35c5d6f330497c8df5a735cd05abd071fa",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/Art56MotorHolderA.fcstd",
+      "bytes": 86157,
+      "sha256": "a1355712512d87ac25000ab60eab65d6c9ba454099ebc6761dbf93d6c003c49a",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/Art56MotorHolderB.fcstd",
+      "bytes": 73251,
+      "sha256": "d0ae1726649b8b4758b665fe2b01e8d065e57b2c5b916ef4e4b4dc7840fcfd77",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/Art56SmallGear.fcstd",
+      "bytes": 28165746,
+      "sha256": "b737ce24c58bc5ffc3763fcd6cdcfdd425747565c2850054397f066ecd5a63a0",
+      "document_program_version": "0.21R33668 +26 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/Assembly.FCStd",
+      "bytes": 8775,
+      "sha256": "5ee729246229e7494466010ab68e2c2367ba4ec1361b7701df21c0f8b00c2c1b",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": [
+        "AssemblyArt1.FCStd",
+        "AssemblyArt2.FCStd",
+        "AssemblyArt3.FCStd",
+        "AssemblyArt4.FCStd",
+        "AssemblyArt56.FCStd",
+        "AssemblyBase.FCStd"
+      ]
+    },
+    {
+      "path": "freecad-src/AssemblyArt1.FCStd",
+      "bytes": 914534,
+      "sha256": "79f823e0a2d4a3581815305e41a0bb0693db4652206923a7d03d947c8a47085b",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": [
+        "Art1Body.fcstd",
+        "Art1Bot.fcstd",
+        "Art1FanHolder.FCStd",
+        "Art1Top.FCStd",
+        "Art23Optodisk.FCStd",
+        "Art2BodyACover1.FCStd",
+        "Art2MotorGear.FCStd",
+        "CommonBearingFixThrough.FCStd"
+      ]
+    },
+    {
+      "path": "freecad-src/AssemblyArt2.FCStd",
+      "bytes": 610561,
+      "sha256": "96a41e5eaa728a89e8e7a3340ec10a8c71034ff30b76f8679d23ed435574638f",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": [
+        "Art2BodyA.FCStd",
+        "Art2BodyACover2.FCStd",
+        "Art2BodyAWindow.FCStd",
+        "Art2BodyB.FCStd",
+        "Art2BodyBCover.FCStd",
+        "Art2BodyUnion.FCStd",
+        "Art2SideCover.FCStd",
+        "Art3TensionerBody.FCStd",
+        "Art3TensionerPulley.FCStd",
+        "CommonBearingFix.FCStd"
+      ]
+    },
+    {
+      "path": "freecad-src/AssemblyArt3.FCStd",
+      "bytes": 721407,
+      "sha256": "8b5b8ba6da66f9deb1ec1f03ec1ff75f2ea10e02ca67a7e2b5e5f955aaec4398",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": [
+        "Art23Optodisk.FCStd",
+        "Art3Body.FCStd",
+        "Art3Pulley.FCStd",
+        "Art4BearingRing.FCStd",
+        "Art4MotorFix.FCStd",
+        "Art4MotorGear.FCStd",
+        "CommonBearingFixThrough.FCStd"
+      ]
+    },
+    {
+      "path": "freecad-src/AssemblyArt4.FCStd",
+      "bytes": 1167905,
+      "sha256": "9306c0461c1a979526c8f73554ddef8fa89b8880e613b42beed7ac19feb401da",
+      "document_program_version": "0.21R33668 +26 (Git)",
+      "external_file_references": [
+        "Art4BearingFix.FCStd",
+        "Art4Body.FCStd",
+        "Art4BodyBot.FCStd",
+        "Art4BodyFan.FCStd",
+        "Art4Optodisk.FCStd",
+        "Art4TransmissionColumn.FCStd",
+        "Art56MotorHolderA.FCStd",
+        "Art56MotorHolderB.FCStd"
+      ]
+    },
+    {
+      "path": "freecad-src/AssemblyArt56.FCStd",
+      "bytes": 1258035,
+      "sha256": "a04836216dcae82eb033c15daba6e41dedb85b03f86ff21e56b77cdff835a473",
+      "document_program_version": "0.21R33668 +26 (Git)",
+      "external_file_references": [
+        "Art56GearPlate.FCStd",
+        "Art56MotorCoverRing.FCStd",
+        "Art56SmallGear.FCStd",
+        "CommonBearingFixThrough.FCStd",
+        "GripperActiveArm.FCStd",
+        "GripperArm.FCStd",
+        "GripperBot.FCStd",
+        "GripperFinger.FCStd",
+        "GripperPassiveArm.FCStd",
+        "GripperTop.FCStd"
+      ]
+    },
+    {
+      "path": "freecad-src/AssemblyBase.FCStd",
+      "bytes": 2427384,
+      "sha256": "1964b144c772608a716e40f4e7bbfb61b55b5e46c9079221b079cbce570dbdc7",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": [
+        "Art1GearMotor.FCStd",
+        "BaseBearingFix.FCStd",
+        "BaseBot.FCStd",
+        "BaseBoxBody.FCStd",
+        "BaseBoxCover.FCStd",
+        "BaseTop.FCStd"
+      ]
+    },
+    {
+      "path": "freecad-src/BaseBearingFix.fcstd",
+      "bytes": 25853,
+      "sha256": "a8ddcd5f8aee6cc4ff33671e3c27e2d3029fe334f4f02baeb579eb6ecaadec82",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/BaseBot.fcstd",
+      "bytes": 3265290,
+      "sha256": "c637feec821a886c80c8622cf316de02c05f06d90ff49af9df9b0a0cdff00e5a",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/BaseBoxBody.FCStd",
+      "bytes": 1429274,
+      "sha256": "bf4c86c80ee90bc8e46bea77db6850027c15e45c86e2da1b9cfeffbce9cb6de1",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/BaseBoxCover.FCStd",
+      "bytes": 35591,
+      "sha256": "9d1ca5fa12b76b49203f26f440ab47fe9c5a74e921a6267de8d60fa8ac3d7a37",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/BaseTop.fcstd",
+      "bytes": 24072,
+      "sha256": "cad90f1414909eaa797edb9bc00a685c3f0856cfa4be5abbcd539afb96417490",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/CommonBearingFix.fcstd",
+      "bytes": 28897,
+      "sha256": "cf0d6322f0c0a947079c2a3782dcf878feb71a0e34b0de220c3722a24ec8e72b",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/CommonBearingFixThrough.fcstd",
+      "bytes": 28159,
+      "sha256": "ea66043a24b3b93c3722ad48ce4a0830f1561a6a925818b5d1dcf7d411a25517",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/GripperActiveArm.FCStd",
+      "bytes": 2546921,
+      "sha256": "3ba5ba6f74c5d2f45eeca56f28534dc750e7f0ae735b6a0b3e16beeef21adc67",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/GripperArm.FCStd",
+      "bytes": 35961,
+      "sha256": "f1511f4b319a5727cf07771abe4c75002d5527e0a10291d47c1fe8024a44c6fc",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/GripperBot.FCStd",
+      "bytes": 700820,
+      "sha256": "a65e68644312adee7381e3a640b2b827f9c2c3362bbe4a842ccee9fea969d176",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/GripperFinger.FCStd",
+      "bytes": 91555,
+      "sha256": "ab4daca4dd2f447029f4c76150b7f617fbdda74ae467cf6962938efe148d57a6",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/GripperPassiveArm.FCStd",
+      "bytes": 1731306,
+      "sha256": "d14ac1debf67735fd623e052d468a9773066c32356390799b4ea07addcba68d4",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    },
+    {
+      "path": "freecad-src/GripperTop.FCStd",
+      "bytes": 422401,
+      "sha256": "10f501e23263c8ddfc37e472fada7d9978d5f6c10cedf6deaa943dde87bdea56",
+      "document_program_version": "0.19R24276 (Git)",
+      "external_file_references": []
+    }
+  ]
+}

@@ -1,0 +1,3172 @@
+{
+  "schema_version": 1,
+  "validation_class": "CAD_derived_mass_scenarios_not_physical_or_actuator_validation",
+  "sources": [
+    "Thor CAD286b081fe6f056d87c379b884781ef77ff6a0159 installed native leaves",
+    "hardware/cad/thor-mounted-geometry.json and thor-axis-evidence.json",
+    "Thor-ROS e11a56b5aa0d89f0b68a3ea7bd084eab4a050952 nominal axis lines",
+    "StepperOnline exact linked motor manufacturer mass listings checked2026-11-11",
+    "Prusament PLA TDS density1.24g/cm3; other material/asset masses assumed"
+  ],
+  "coordinate_frame": "Thor-ROS nominal base_link from native CAD Rz(-pi/2)",
+  "payload_position_m": [
+    0.0,
+    0.0,
+    0.7025242557054092
+  ],
+  "pose_feasibility_or_collision_limits_validated": false,
+  "motor_shaft_torques_or_capacity_qualified": false,
+  "gravity_m_s2": 9.80665,
+  "cases": [
+    {
+      "printed_whole_part_fraction": 0.35,
+      "modeled_mass_kg": 5.001618810053607,
+      "group_masses_kg": {
+        "AssemblyArt1": 1.522111563767379,
+        "AssemblyArt2": 0.481598471777476,
+        "AssemblyArt3": 0.4876685800074381,
+        "AssemblyArt4": 0.782785653746216,
+        "AssemblyArt56": 0.21935548291082185,
+        "AssemblyBase": 1.508099057844276
+      },
+      "mass_assignment_summary": {
+        "printed_PLA_density_kg_m3": 1240,
+        "printed_effective_whole_part_solid_fraction": 0.35,
+        "native_positive_leaf_count": 516,
+        "assigned_mass_record_count": 515,
+        "omitted_unclassified_instances": [],
+        "all_material_and_COM_assignments_are_unmeasured": true,
+        "payload_point_source": "CAD two-finger distal plane at z702.524255705mm, axis-centered study point; not a calibrated TCP or measured object COM",
+        "input_inventory_canonical_sha256": "97196c55acf7d627bed106f7e35e3c8ff830ec1630bbce73b876a150c3a2c287",
+        "whole_asset_mass_allowances_kg": {
+          "Servomotor": 0.055,
+          "Fan_40x40": 0.012,
+          "Fan_50x50": 0.025,
+          "ArduinoMega": 0.04,
+          "OnOffButton": 0.015,
+          "ResetButton": 0.01,
+          "JackDC": 0.003,
+          "OpticSensor": 0.002,
+          "MicroEndstop": 0.003,
+          "M8Connector": 0.005
+        },
+        "density_assumptions_kg_m3": {
+          "steel": 7850,
+          "magnet": 7500,
+          "aluminium": 2700,
+          "belt": 1200,
+          "horn": 1150
+        },
+        "cad_to_nominal_rotation": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "native_input_geometry_validation_class": "restored_cached_geometry_with_explicit_grouping_assumptions"
+      },
+      "coverage": {
+        "complete": false,
+        "omitted_components": [
+          "external cables, motor wiring absent from CAD, mount/protection changes",
+          "unresolved wrist q5/q6 self-mass membership"
+        ]
+      },
+      "conditional_wrist_bounds": {
+        "scope": "modeled wrist group only; conditional on mass/COM and zero-q5 geometry",
+        "formula": "sum(m_i*g*distance_perpendicular_to_axis_i)",
+        "physical_load_bound_or_actuator_qualification": false,
+        "joint_internal_membership_resolved": false,
+        "joints": {
+          "joint_5": {
+            "modeled_self_mass_magnitude_bound_nm": 0.11820321637402638,
+            "payload200g_bound_at_study_point_nm": 0.2873824184426902,
+            "payload200g_total_radial_offset_sensitivity_nm": {
+              "0.0": 0.2873824184426902,
+              "0.025": 0.33641566844269016,
+              "0.05": 0.38544891844269014
+            }
+          },
+          "joint_6": {
+            "modeled_self_mass_magnitude_bound_nm": 0.04243156272403507,
+            "payload200g_bound_at_study_point_nm": 0.0,
+            "payload200g_total_radial_offset_sensitivity_nm": {
+              "0.0": 0.0,
+              "0.025": 0.04903325,
+              "0.05": 0.0980665
+            }
+          }
+        }
+      },
+      "poses": {
+        "upright": {
+          "joint_angles_rad": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "modeled_center_of_mass_m": [
+            0.00016084037520434596,
+            0.009838246455964542,
+            0.2321447189547273
+          ],
+          "payload_cases": [
+            {
+              "payload_kg": 0,
+              "joints": [
+                {
+                  "joint": "joint_1",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_2",
+                  "arm_gravity_torque_nm": -0.036006988713730016,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.036006988713730016,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_3",
+                  "arm_gravity_torque_nm": -0.0360088680972845,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.0360088680972845,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_4",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_5",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                },
+                {
+                  "joint": "joint_6",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                }
+              ],
+              "gravity_wrench_about_frame_origin": {
+                "reference_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "external_force_n": [
+                  0.0,
+                  0.0,
+                  -49.049125103612205
+                ],
+                "external_moment_nm": [
+                  -0.4825573812187743,
+                  0.00788907968510989,
+                  0.0
+                ],
+                "ideal_support_force_n": [
+                  0.0,
+                  0.0,
+                  49.049125103612205
+                ],
+                "ideal_support_moment_nm": [
+                  0.4825573812187743,
+                  -0.00788907968510989,
+                  -0.0
+                ]
+              }
+            },
+            {
+              "payload_kg": 0.1,
+              "joints": [
+                {
+                  "joint": "joint_1",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_2",
+                  "arm_gravity_torque_nm": -0.036006988713730016,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.036006988713730016,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_3",
+                  "arm_gravity_torque_nm": -0.0360088680972845,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.0360088680972845,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_4",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_5",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                },
+                {
+                  "joint": "joint_6",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                }
+              ],
+              "gravity_wrench_about_frame_origin": {
+                "reference_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "external_force_n": [
+                  0.0,
+                  0.0,
+                  -50.0297901036122
+                ],
+                "external_moment_nm": [
+                  -0.4825573812187743,
+                  0.00788907968510989,
+                  0.0
+                ],
+                "ideal_support_force_n": [
+                  0.0,
+                  0.0,
+                  50.0297901036122
+                ],
+                "ideal_support_moment_nm": [
+                  0.4825573812187743,
+                  -0.00788907968510989,
+                  -0.0
+                ]
+              }
+            },
+            {
+              "payload_kg": 0.2,
+              "joints": [
+                {
+                  "joint": "joint_1",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_2",
+                  "arm_gravity_torque_nm": -0.036006988713730016,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.036006988713730016,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_3",
+                  "arm_gravity_torque_nm": -0.0360088680972845,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.0360088680972845,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_4",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_5",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                },
+                {
+                  "joint": "joint_6",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                }
+              ],
+              "gravity_wrench_about_frame_origin": {
+                "reference_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "external_force_n": [
+                  0.0,
+                  0.0,
+                  -51.0104551036122
+                ],
+                "external_moment_nm": [
+                  -0.4825573812187743,
+                  0.00788907968510989,
+                  0.0
+                ],
+                "ideal_support_force_n": [
+                  0.0,
+                  0.0,
+                  51.0104551036122
+                ],
+                "ideal_support_moment_nm": [
+                  0.4825573812187743,
+                  -0.00788907968510989,
+                  -0.0
+                ]
+              }
+            }
+          ]
+        },
+        "shoulder_horizontal": {
+          "joint_angles_rad": [
+            0.0,
+            1.5707963267948966,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "modeled_center_of_mass_m": [
+            0.00016084037520434596,
+            -0.07761153708164259,
+            0.14616313647626927
+          ],
+          "payload_cases": [
+            {
+              "payload_kg": 0,
+              "joints": [
+                {
+                  "joint": "joint_1",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_2",
+                  "arm_gravity_torque_nm": 4.253328384306169,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -4.253328384306169,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_3",
+                  "arm_gravity_torque_nm": 1.489258071369095,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -1.489258071369095,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_4",
+                  "arm_gravity_torque_nm": -0.0022659663216234084,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.0022659663216234084,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_5",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                },
+                {
+                  "joint": "joint_6",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                }
+              ],
+              "gravity_wrench_about_frame_origin": {
+                "reference_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "external_force_n": [
+                  0.0,
+                  0.0,
+                  -49.049125103612205
+                ],
+                "external_moment_nm": [
+                  3.8067779918011246,
+                  0.00788907968510989,
+                  0.0
+                ],
+                "ideal_support_force_n": [
+                  0.0,
+                  0.0,
+                  49.049125103612205
+                ],
+                "ideal_support_moment_nm": [
+                  -3.8067779918011246,
+                  -0.00788907968510989,
+                  -0.0
+                ]
+              }
+            },
+            {
+              "payload_kg": 0.1,
+              "joints": [
+                {
+                  "joint": "joint_1",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_2",
+                  "arm_gravity_torque_nm": 4.253328384306169,
+                  "payload_gravity_torque_nm": 0.4908466192213452,
+                  "required_ideal_holding_torque_nm": -4.7441750035275145,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_3",
+                  "arm_gravity_torque_nm": 1.489258071369095,
+                  "payload_gravity_torque_nm": 0.3339402192213452,
+                  "required_ideal_holding_torque_nm": -1.8231982905904403,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_4",
+                  "arm_gravity_torque_nm": -0.0022659663216234084,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.0022659663216234084,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_5",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.14369120922134515,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                },
+                {
+                  "joint": "joint_6",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                }
+              ],
+              "gravity_wrench_about_frame_origin": {
+                "reference_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "external_force_n": [
+                  0.0,
+                  0.0,
+                  -50.0297901036122
+                ],
+                "external_moment_nm": [
+                  4.29762461102247,
+                  0.00788907968510989,
+                  0.0
+                ],
+                "ideal_support_force_n": [
+                  0.0,
+                  0.0,
+                  50.0297901036122
+                ],
+                "ideal_support_moment_nm": [
+                  -4.29762461102247,
+                  -0.00788907968510989,
+                  -0.0
+                ]
+              }
+            },
+            {
+              "payload_kg": 0.2,
+              "joints": [
+                {
+                  "joint": "joint_1",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_2",
+                  "arm_gravity_torque_nm": 4.253328384306169,
+                  "payload_gravity_torque_nm": 0.9816932384426904,
+                  "required_ideal_holding_torque_nm": -5.235021622748859,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_3",
+                  "arm_gravity_torque_nm": 1.489258071369095,
+                  "payload_gravity_torque_nm": 0.6678804384426904,
+                  "required_ideal_holding_torque_nm": -2.1571385098117855,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_4",
+                  "arm_gravity_torque_nm": -0.0022659663216234084,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.0022659663216234084,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_5",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.2873824184426903,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                },
+                {
+                  "joint": "joint_6",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                }
+              ],
+              "gravity_wrench_about_frame_origin": {
+                "reference_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "external_force_n": [
+                  0.0,
+                  0.0,
+                  -51.0104551036122
+                ],
+                "external_moment_nm": [
+                  4.7884712302438155,
+                  0.00788907968510989,
+                  0.0
+                ],
+                "ideal_support_force_n": [
+                  0.0,
+                  0.0,
+                  51.0104551036122
+                ],
+                "ideal_support_moment_nm": [
+                  -4.7884712302438155,
+                  -0.00788907968510989,
+                  -0.0
+                ]
+              }
+            }
+          ]
+        },
+        "elbow_horizontal": {
+          "joint_angles_rad": [
+            0.0,
+            0.0,
+            1.5707963267948966,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "modeled_center_of_mass_m": [
+            0.000160840375204346,
+            -0.021258474153106048,
+            0.2025162760375103
+          ],
+          "payload_cases": [
+            {
+              "payload_kg": 0,
+              "joints": [
+                {
+                  "joint": "joint_1",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_2",
+                  "arm_gravity_torque_nm": 1.4892599507526494,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -1.4892599507526494,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_3",
+                  "arm_gravity_torque_nm": 1.489258071369095,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -1.489258071369095,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_4",
+                  "arm_gravity_torque_nm": -0.0022659663216234084,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.0022659663216234084,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_5",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                },
+                {
+                  "joint": "joint_6",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                }
+              ],
+              "gravity_wrench_about_frame_origin": {
+                "reference_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "external_force_n": [
+                  0.0,
+                  0.0,
+                  -49.049125103612205
+                ],
+                "external_moment_nm": [
+                  1.0427095582476051,
+                  0.007889079685109893,
+                  0.0
+                ],
+                "ideal_support_force_n": [
+                  0.0,
+                  0.0,
+                  49.049125103612205
+                ],
+                "ideal_support_moment_nm": [
+                  -1.0427095582476051,
+                  -0.007889079685109893,
+                  -0.0
+                ]
+              }
+            },
+            {
+              "payload_kg": 0.1,
+              "joints": [
+                {
+                  "joint": "joint_1",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_2",
+                  "arm_gravity_torque_nm": 1.4892599507526494,
+                  "payload_gravity_torque_nm": 0.33394021922134515,
+                  "required_ideal_holding_torque_nm": -1.8232001699739946,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_3",
+                  "arm_gravity_torque_nm": 1.489258071369095,
+                  "payload_gravity_torque_nm": 0.33394021922134515,
+                  "required_ideal_holding_torque_nm": -1.8231982905904403,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_4",
+                  "arm_gravity_torque_nm": -0.0022659663216234084,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.0022659663216234084,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_5",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.1436912092213451,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                },
+                {
+                  "joint": "joint_6",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                }
+              ],
+              "gravity_wrench_about_frame_origin": {
+                "reference_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "external_force_n": [
+                  0.0,
+                  0.0,
+                  -50.0297901036122
+                ],
+                "external_moment_nm": [
+                  1.3766497774689503,
+                  0.007889079685109893,
+                  0.0
+                ],
+                "ideal_support_force_n": [
+                  0.0,
+                  0.0,
+                  50.0297901036122
+                ],
+                "ideal_support_moment_nm": [
+                  -1.3766497774689503,
+                  -0.007889079685109893,
+                  -0.0
+                ]
+              }
+            },
+            {
+              "payload_kg": 0.2,
+              "joints": [
+                {
+                  "joint": "joint_1",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_2",
+                  "arm_gravity_torque_nm": 1.4892599507526494,
+                  "payload_gravity_torque_nm": 0.6678804384426903,
+                  "required_ideal_holding_torque_nm": -2.1571403891953396,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_3",
+                  "arm_gravity_torque_nm": 1.489258071369095,
+                  "payload_gravity_torque_nm": 0.6678804384426903,
+                  "required_ideal_holding_torque_nm": -2.1571385098117855,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_4",
+                  "arm_gravity_torque_nm": -0.0022659663216234084,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.0022659663216234084,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_5",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.2873824184426902,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                },
+                {
+                  "joint": "joint_6",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                }
+              ],
+              "gravity_wrench_about_frame_origin": {
+                "reference_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "external_force_n": [
+                  0.0,
+                  0.0,
+                  -51.0104551036122
+                ],
+                "external_moment_nm": [
+                  1.7105899966902955,
+                  0.007889079685109893,
+                  0.0
+                ],
+                "ideal_support_force_n": [
+                  0.0,
+                  0.0,
+                  51.0104551036122
+                ],
+                "ideal_support_moment_nm": [
+                  -1.7105899966902955,
+                  -0.007889079685109893,
+                  -0.0
+                ]
+              }
+            }
+          ]
+        },
+        "shoulder_elbow_45deg": {
+          "joint_angles_rad": [
+            0.0,
+            0.7853981633974483,
+            0.7853981633974483,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "modeled_center_of_mass_m": [
+            0.00016084037520434593,
+            -0.06110612296165922,
+            0.18601080773002193
+          ],
+          "payload_cases": [
+            {
+              "payload_kg": 0,
+              "joints": [
+                {
+                  "joint": "joint_1",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_2",
+                  "arm_gravity_torque_nm": 3.4437522622481778,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -3.4437522622481778,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_3",
+                  "arm_gravity_torque_nm": 1.4892580713690946,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -1.4892580713690946,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_4",
+                  "arm_gravity_torque_nm": -0.002265966321623409,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.002265966321623409,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_5",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                },
+                {
+                  "joint": "joint_6",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                }
+              ],
+              "gravity_wrench_about_frame_origin": {
+                "reference_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "external_force_n": [
+                  0.0,
+                  0.0,
+                  -49.049125103612205
+                ],
+                "external_moment_nm": [
+                  2.9972018697431335,
+                  0.007889079685109887,
+                  0.0
+                ],
+                "ideal_support_force_n": [
+                  0.0,
+                  0.0,
+                  49.049125103612205
+                ],
+                "ideal_support_moment_nm": [
+                  -2.9972018697431335,
+                  -0.007889079685109887,
+                  -0.0
+                ]
+              }
+            },
+            {
+              "payload_kg": 0.1,
+              "joints": [
+                {
+                  "joint": "joint_1",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_2",
+                  "arm_gravity_torque_nm": 3.4437522622481778,
+                  "payload_gravity_torque_nm": 0.44488979867291406,
+                  "required_ideal_holding_torque_nm": -3.8886420609210917,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_3",
+                  "arm_gravity_torque_nm": 1.4892580713690946,
+                  "payload_gravity_torque_nm": 0.33394021922134515,
+                  "required_ideal_holding_torque_nm": -1.8231982905904398,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_4",
+                  "arm_gravity_torque_nm": -0.002265966321623409,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.002265966321623409,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_5",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.1436912092213451,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                },
+                {
+                  "joint": "joint_6",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                }
+              ],
+              "gravity_wrench_about_frame_origin": {
+                "reference_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "external_force_n": [
+                  0.0,
+                  0.0,
+                  -50.0297901036122
+                ],
+                "external_moment_nm": [
+                  3.4420916684160474,
+                  0.007889079685109887,
+                  0.0
+                ],
+                "ideal_support_force_n": [
+                  0.0,
+                  0.0,
+                  50.0297901036122
+                ],
+                "ideal_support_moment_nm": [
+                  -3.4420916684160474,
+                  -0.007889079685109887,
+                  -0.0
+                ]
+              }
+            },
+            {
+              "payload_kg": 0.2,
+              "joints": [
+                {
+                  "joint": "joint_1",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_2",
+                  "arm_gravity_torque_nm": 3.4437522622481778,
+                  "payload_gravity_torque_nm": 0.8897795973458281,
+                  "required_ideal_holding_torque_nm": -4.3335318595940056,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_3",
+                  "arm_gravity_torque_nm": 1.4892580713690946,
+                  "payload_gravity_torque_nm": 0.6678804384426903,
+                  "required_ideal_holding_torque_nm": -2.157138509811785,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_4",
+                  "arm_gravity_torque_nm": -0.002265966321623409,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.002265966321623409,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_5",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.2873824184426902,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                },
+                {
+                  "joint": "joint_6",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                }
+              ],
+              "gravity_wrench_about_frame_origin": {
+                "reference_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "external_force_n": [
+                  0.0,
+                  0.0,
+                  -51.0104551036122
+                ],
+                "external_moment_nm": [
+                  3.8869814670889618,
+                  0.007889079685109887,
+                  0.0
+                ],
+                "ideal_support_force_n": [
+                  0.0,
+                  0.0,
+                  51.0104551036122
+                ],
+                "ideal_support_moment_nm": [
+                  -3.8869814670889618,
+                  -0.007889079685109887,
+                  -0.0
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "printed_whole_part_fraction": 0.5,
+      "modeled_mass_kg": 5.649888910907038,
+      "group_masses_kg": {
+        "AssemblyArt1": 1.6338722668676084,
+        "AssemblyArt2": 0.635419608063754,
+        "AssemblyArt3": 0.5560662170101622,
+        "AssemblyArt4": 0.8588935722625864,
+        "AssemblyArt56": 0.25121613028932166,
+        "AssemblyBase": 1.7144211164136045
+      },
+      "mass_assignment_summary": {
+        "printed_PLA_density_kg_m3": 1240,
+        "printed_effective_whole_part_solid_fraction": 0.5,
+        "native_positive_leaf_count": 516,
+        "assigned_mass_record_count": 515,
+        "omitted_unclassified_instances": [],
+        "all_material_and_COM_assignments_are_unmeasured": true,
+        "payload_point_source": "CAD two-finger distal plane at z702.524255705mm, axis-centered study point; not a calibrated TCP or measured object COM",
+        "input_inventory_canonical_sha256": "97196c55acf7d627bed106f7e35e3c8ff830ec1630bbce73b876a150c3a2c287",
+        "whole_asset_mass_allowances_kg": {
+          "Servomotor": 0.055,
+          "Fan_40x40": 0.012,
+          "Fan_50x50": 0.025,
+          "ArduinoMega": 0.04,
+          "OnOffButton": 0.015,
+          "ResetButton": 0.01,
+          "JackDC": 0.003,
+          "OpticSensor": 0.002,
+          "MicroEndstop": 0.003,
+          "M8Connector": 0.005
+        },
+        "density_assumptions_kg_m3": {
+          "steel": 7850,
+          "magnet": 7500,
+          "aluminium": 2700,
+          "belt": 1200,
+          "horn": 1150
+        },
+        "cad_to_nominal_rotation": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "native_input_geometry_validation_class": "restored_cached_geometry_with_explicit_grouping_assumptions"
+      },
+      "coverage": {
+        "complete": false,
+        "omitted_components": [
+          "external cables, motor wiring absent from CAD, mount/protection changes",
+          "unresolved wrist q5/q6 self-mass membership"
+        ]
+      },
+      "conditional_wrist_bounds": {
+        "scope": "modeled wrist group only; conditional on mass/COM and zero-q5 geometry",
+        "formula": "sum(m_i*g*distance_perpendicular_to_axis_i)",
+        "physical_load_bound_or_actuator_qualification": false,
+        "joint_internal_membership_resolved": false,
+        "joints": {
+          "joint_5": {
+            "modeled_self_mass_magnitude_bound_nm": 0.13519222786865356,
+            "payload200g_bound_at_study_point_nm": 0.2873824184426902,
+            "payload200g_total_radial_offset_sensitivity_nm": {
+              "0.0": 0.2873824184426902,
+              "0.025": 0.33641566844269016,
+              "0.05": 0.38544891844269014
+            }
+          },
+          "joint_6": {
+            "modeled_self_mass_magnitude_bound_nm": 0.04651948119474874,
+            "payload200g_bound_at_study_point_nm": 0.0,
+            "payload200g_total_radial_offset_sensitivity_nm": {
+              "0.0": 0.0,
+              "0.025": 0.04903325,
+              "0.05": 0.0980665
+            }
+          }
+        }
+      },
+      "poses": {
+        "upright": {
+          "joint_angles_rad": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "modeled_center_of_mass_m": [
+            0.00010968482164329393,
+            0.010681080392440158,
+            0.2323851103694693
+          ],
+          "payload_cases": [
+            {
+              "payload_kg": 0,
+              "joints": [
+                {
+                  "joint": "joint_1",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_2",
+                  "arm_gravity_torque_nm": -0.03595958451162935,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.03595958451162935,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_3",
+                  "arm_gravity_torque_nm": -0.03596145079643197,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.03596145079643197,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_4",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_5",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                },
+                {
+                  "joint": "joint_6",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                }
+              ],
+              "gravity_wrench_about_frame_origin": {
+                "reference_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "external_force_n": [
+                  0.0,
+                  0.0,
+                  -55.406483088146494
+                ],
+                "external_moment_nm": [
+                  -0.5918011001268688,
+                  0.006077250215405533,
+                  0.0
+                ],
+                "ideal_support_force_n": [
+                  0.0,
+                  0.0,
+                  55.406483088146494
+                ],
+                "ideal_support_moment_nm": [
+                  0.5918011001268688,
+                  -0.006077250215405533,
+                  -0.0
+                ]
+              }
+            },
+            {
+              "payload_kg": 0.1,
+              "joints": [
+                {
+                  "joint": "joint_1",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_2",
+                  "arm_gravity_torque_nm": -0.03595958451162935,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.03595958451162935,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_3",
+                  "arm_gravity_torque_nm": -0.03596145079643197,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.03596145079643197,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_4",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_5",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                },
+                {
+                  "joint": "joint_6",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                }
+              ],
+              "gravity_wrench_about_frame_origin": {
+                "reference_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "external_force_n": [
+                  0.0,
+                  0.0,
+                  -56.387148088146496
+                ],
+                "external_moment_nm": [
+                  -0.5918011001268688,
+                  0.006077250215405533,
+                  0.0
+                ],
+                "ideal_support_force_n": [
+                  0.0,
+                  0.0,
+                  56.387148088146496
+                ],
+                "ideal_support_moment_nm": [
+                  0.5918011001268688,
+                  -0.006077250215405533,
+                  -0.0
+                ]
+              }
+            },
+            {
+              "payload_kg": 0.2,
+              "joints": [
+                {
+                  "joint": "joint_1",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_2",
+                  "arm_gravity_torque_nm": -0.03595958451162935,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.03595958451162935,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_3",
+                  "arm_gravity_torque_nm": -0.03596145079643197,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.03596145079643197,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_4",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_5",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                },
+                {
+                  "joint": "joint_6",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                }
+              ],
+              "gravity_wrench_about_frame_origin": {
+                "reference_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "external_force_n": [
+                  0.0,
+                  0.0,
+                  -57.36781308814649
+                ],
+                "external_moment_nm": [
+                  -0.5918011001268688,
+                  0.006077250215405533,
+                  0.0
+                ],
+                "ideal_support_force_n": [
+                  0.0,
+                  0.0,
+                  57.36781308814649
+                ],
+                "ideal_support_moment_nm": [
+                  0.5918011001268688,
+                  -0.006077250215405533,
+                  -0.0
+                ]
+              }
+            }
+          ]
+        },
+        "shoulder_horizontal": {
+          "joint_angles_rad": [
+            0.0,
+            1.5707963267948966,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "modeled_center_of_mass_m": [
+            0.00010968482164329397,
+            -0.07743603092054786,
+            0.1455660271032866
+          ],
+          "payload_cases": [
+            {
+              "payload_kg": 0,
+              "joints": [
+                {
+                  "joint": "joint_1",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_2",
+                  "arm_gravity_torque_nm": 4.846299653227764,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -4.846299653227764,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_3",
+                  "arm_gravity_torque_nm": 1.6744439363799641,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -1.6744439363799641,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_4",
+                  "arm_gravity_torque_nm": -0.0021328714600393787,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.0021328714600393787,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_5",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                },
+                {
+                  "joint": "joint_6",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                }
+              ],
+              "gravity_wrench_about_frame_origin": {
+                "reference_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "external_force_n": [
+                  0.0,
+                  0.0,
+                  -55.406483088146494
+                ],
+                "external_moment_nm": [
+                  4.290458137612524,
+                  0.006077250215405533,
+                  0.0
+                ],
+                "ideal_support_force_n": [
+                  0.0,
+                  0.0,
+                  55.406483088146494
+                ],
+                "ideal_support_moment_nm": [
+                  -4.290458137612524,
+                  -0.006077250215405533,
+                  -0.0
+                ]
+              }
+            },
+            {
+              "payload_kg": 0.1,
+              "joints": [
+                {
+                  "joint": "joint_1",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_2",
+                  "arm_gravity_torque_nm": 4.846299653227764,
+                  "payload_gravity_torque_nm": 0.4908466192213452,
+                  "required_ideal_holding_torque_nm": -5.337146272449109,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_3",
+                  "arm_gravity_torque_nm": 1.6744439363799641,
+                  "payload_gravity_torque_nm": 0.3339402192213452,
+                  "required_ideal_holding_torque_nm": -2.008384155601309,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_4",
+                  "arm_gravity_torque_nm": -0.0021328714600393787,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.0021328714600393787,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_5",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.14369120922134515,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                },
+                {
+                  "joint": "joint_6",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                }
+              ],
+              "gravity_wrench_about_frame_origin": {
+                "reference_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "external_force_n": [
+                  0.0,
+                  0.0,
+                  -56.387148088146496
+                ],
+                "external_moment_nm": [
+                  4.78130475683387,
+                  0.006077250215405533,
+                  0.0
+                ],
+                "ideal_support_force_n": [
+                  0.0,
+                  0.0,
+                  56.387148088146496
+                ],
+                "ideal_support_moment_nm": [
+                  -4.78130475683387,
+                  -0.006077250215405533,
+                  -0.0
+                ]
+              }
+            },
+            {
+              "payload_kg": 0.2,
+              "joints": [
+                {
+                  "joint": "joint_1",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_2",
+                  "arm_gravity_torque_nm": 4.846299653227764,
+                  "payload_gravity_torque_nm": 0.9816932384426904,
+                  "required_ideal_holding_torque_nm": -5.827992891670454,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_3",
+                  "arm_gravity_torque_nm": 1.6744439363799641,
+                  "payload_gravity_torque_nm": 0.6678804384426904,
+                  "required_ideal_holding_torque_nm": -2.3423243748226543,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_4",
+                  "arm_gravity_torque_nm": -0.0021328714600393787,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.0021328714600393787,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_5",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.2873824184426903,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                },
+                {
+                  "joint": "joint_6",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                }
+              ],
+              "gravity_wrench_about_frame_origin": {
+                "reference_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "external_force_n": [
+                  0.0,
+                  0.0,
+                  -57.36781308814649
+                ],
+                "external_moment_nm": [
+                  5.2721513760552146,
+                  0.006077250215405533,
+                  0.0
+                ],
+                "ideal_support_force_n": [
+                  0.0,
+                  0.0,
+                  57.36781308814649
+                ],
+                "ideal_support_moment_nm": [
+                  -5.2721513760552146,
+                  -0.006077250215405533,
+                  -0.0
+                ]
+              }
+            }
+          ]
+        },
+        "elbow_horizontal": {
+          "joint_angles_rad": [
+            0.0,
+            0.0,
+            1.5707963267948966,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "modeled_center_of_mass_m": [
+            0.00010968482164329401,
+            -0.02018905053529446,
+            0.20281307485555913
+          ],
+          "payload_cases": [
+            {
+              "payload_kg": 0,
+              "joints": [
+                {
+                  "joint": "joint_1",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_2",
+                  "arm_gravity_torque_nm": 1.6744458026647668,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -1.6744458026647668,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_3",
+                  "arm_gravity_torque_nm": 1.6744439363799641,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -1.6744439363799641,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_4",
+                  "arm_gravity_torque_nm": -0.0021328714600393787,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.0021328714600393787,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_5",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                },
+                {
+                  "joint": "joint_6",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                }
+              ],
+              "gravity_wrench_about_frame_origin": {
+                "reference_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "external_force_n": [
+                  0.0,
+                  0.0,
+                  -55.406483088146494
+                ],
+                "external_moment_nm": [
+                  1.1186042870495274,
+                  0.0060772502154055365,
+                  0.0
+                ],
+                "ideal_support_force_n": [
+                  0.0,
+                  0.0,
+                  55.406483088146494
+                ],
+                "ideal_support_moment_nm": [
+                  -1.1186042870495274,
+                  -0.0060772502154055365,
+                  -0.0
+                ]
+              }
+            },
+            {
+              "payload_kg": 0.1,
+              "joints": [
+                {
+                  "joint": "joint_1",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_2",
+                  "arm_gravity_torque_nm": 1.6744458026647668,
+                  "payload_gravity_torque_nm": 0.33394021922134515,
+                  "required_ideal_holding_torque_nm": -2.008386021886112,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_3",
+                  "arm_gravity_torque_nm": 1.6744439363799641,
+                  "payload_gravity_torque_nm": 0.33394021922134515,
+                  "required_ideal_holding_torque_nm": -2.008384155601309,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_4",
+                  "arm_gravity_torque_nm": -0.0021328714600393787,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.0021328714600393787,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_5",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.1436912092213451,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                },
+                {
+                  "joint": "joint_6",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                }
+              ],
+              "gravity_wrench_about_frame_origin": {
+                "reference_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "external_force_n": [
+                  0.0,
+                  0.0,
+                  -56.387148088146496
+                ],
+                "external_moment_nm": [
+                  1.4525445062708724,
+                  0.0060772502154055365,
+                  0.0
+                ],
+                "ideal_support_force_n": [
+                  0.0,
+                  0.0,
+                  56.387148088146496
+                ],
+                "ideal_support_moment_nm": [
+                  -1.4525445062708724,
+                  -0.0060772502154055365,
+                  -0.0
+                ]
+              }
+            },
+            {
+              "payload_kg": 0.2,
+              "joints": [
+                {
+                  "joint": "joint_1",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_2",
+                  "arm_gravity_torque_nm": 1.6744458026647668,
+                  "payload_gravity_torque_nm": 0.6678804384426903,
+                  "required_ideal_holding_torque_nm": -2.342326241107457,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_3",
+                  "arm_gravity_torque_nm": 1.6744439363799641,
+                  "payload_gravity_torque_nm": 0.6678804384426903,
+                  "required_ideal_holding_torque_nm": -2.3423243748226543,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_4",
+                  "arm_gravity_torque_nm": -0.0021328714600393787,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.0021328714600393787,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_5",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.2873824184426902,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                },
+                {
+                  "joint": "joint_6",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                }
+              ],
+              "gravity_wrench_about_frame_origin": {
+                "reference_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "external_force_n": [
+                  0.0,
+                  0.0,
+                  -57.36781308814649
+                ],
+                "external_moment_nm": [
+                  1.7864847254922176,
+                  0.0060772502154055365,
+                  0.0
+                ],
+                "ideal_support_force_n": [
+                  0.0,
+                  0.0,
+                  57.36781308814649
+                ],
+                "ideal_support_moment_nm": [
+                  -1.7864847254922176,
+                  -0.0060772502154055365,
+                  -0.0
+                ]
+              }
+            }
+          ]
+        },
+        "shoulder_elbow_45deg": {
+          "joint_angles_rad": [
+            0.0,
+            0.7853981633974483,
+            0.7853981633974483,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "modeled_center_of_mass_m": [
+            0.00010968482164329393,
+            -0.060668792520326906,
+            0.1860457888196621
+          ],
+          "payload_cases": [
+            {
+              "payload_kg": 0,
+              "joints": [
+                {
+                  "joint": "joint_1",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_2",
+                  "arm_gravity_torque_nm": 3.9172859423710005,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -3.9172859423710005,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_3",
+                  "arm_gravity_torque_nm": 1.6744439363799644,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -1.6744439363799644,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_4",
+                  "arm_gravity_torque_nm": -0.0021328714600393787,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.0021328714600393787,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_5",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                },
+                {
+                  "joint": "joint_6",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                }
+              ],
+              "gravity_wrench_about_frame_origin": {
+                "reference_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "external_force_n": [
+                  0.0,
+                  0.0,
+                  -55.406483088146494
+                ],
+                "external_moment_nm": [
+                  3.361444426755761,
+                  0.006077250215405533,
+                  0.0
+                ],
+                "ideal_support_force_n": [
+                  0.0,
+                  0.0,
+                  55.406483088146494
+                ],
+                "ideal_support_moment_nm": [
+                  -3.361444426755761,
+                  -0.006077250215405533,
+                  -0.0
+                ]
+              }
+            },
+            {
+              "payload_kg": 0.1,
+              "joints": [
+                {
+                  "joint": "joint_1",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_2",
+                  "arm_gravity_torque_nm": 3.9172859423710005,
+                  "payload_gravity_torque_nm": 0.44488979867291406,
+                  "required_ideal_holding_torque_nm": -4.362175741043915,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_3",
+                  "arm_gravity_torque_nm": 1.6744439363799644,
+                  "payload_gravity_torque_nm": 0.33394021922134515,
+                  "required_ideal_holding_torque_nm": -2.0083841556013096,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_4",
+                  "arm_gravity_torque_nm": -0.0021328714600393787,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.0021328714600393787,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_5",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.1436912092213451,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                },
+                {
+                  "joint": "joint_6",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                }
+              ],
+              "gravity_wrench_about_frame_origin": {
+                "reference_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "external_force_n": [
+                  0.0,
+                  0.0,
+                  -56.387148088146496
+                ],
+                "external_moment_nm": [
+                  3.806334225428675,
+                  0.006077250215405533,
+                  0.0
+                ],
+                "ideal_support_force_n": [
+                  0.0,
+                  0.0,
+                  56.387148088146496
+                ],
+                "ideal_support_moment_nm": [
+                  -3.806334225428675,
+                  -0.006077250215405533,
+                  -0.0
+                ]
+              }
+            },
+            {
+              "payload_kg": 0.2,
+              "joints": [
+                {
+                  "joint": "joint_1",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_2",
+                  "arm_gravity_torque_nm": 3.9172859423710005,
+                  "payload_gravity_torque_nm": 0.8897795973458281,
+                  "required_ideal_holding_torque_nm": -4.807065539716828,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_3",
+                  "arm_gravity_torque_nm": 1.6744439363799644,
+                  "payload_gravity_torque_nm": 0.6678804384426903,
+                  "required_ideal_holding_torque_nm": -2.3423243748226548,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_4",
+                  "arm_gravity_torque_nm": -0.0021328714600393787,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.0021328714600393787,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_5",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.2873824184426902,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                },
+                {
+                  "joint": "joint_6",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                }
+              ],
+              "gravity_wrench_about_frame_origin": {
+                "reference_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "external_force_n": [
+                  0.0,
+                  0.0,
+                  -57.36781308814649
+                ],
+                "external_moment_nm": [
+                  4.251224024101589,
+                  0.006077250215405533,
+                  0.0
+                ],
+                "ideal_support_force_n": [
+                  0.0,
+                  0.0,
+                  57.36781308814649
+                ],
+                "ideal_support_moment_nm": [
+                  -4.251224024101589,
+                  -0.006077250215405533,
+                  -0.0
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "printed_whole_part_fraction": 1.0,
+      "modeled_mass_kg": 7.810789247085138,
+      "group_masses_kg": {
+        "AssemblyArt1": 2.006407943868373,
+        "AssemblyArt2": 1.148156729018014,
+        "AssemblyArt3": 0.7840583403525757,
+        "AssemblyArt4": 1.112586633983821,
+        "AssemblyArt56": 0.3574182882176542,
+        "AssemblyBase": 2.4021613116447
+      },
+      "mass_assignment_summary": {
+        "printed_PLA_density_kg_m3": 1240,
+        "printed_effective_whole_part_solid_fraction": 1.0,
+        "native_positive_leaf_count": 516,
+        "assigned_mass_record_count": 515,
+        "omitted_unclassified_instances": [],
+        "all_material_and_COM_assignments_are_unmeasured": true,
+        "payload_point_source": "CAD two-finger distal plane at z702.524255705mm, axis-centered study point; not a calibrated TCP or measured object COM",
+        "input_inventory_canonical_sha256": "97196c55acf7d627bed106f7e35e3c8ff830ec1630bbce73b876a150c3a2c287",
+        "whole_asset_mass_allowances_kg": {
+          "Servomotor": 0.055,
+          "Fan_40x40": 0.012,
+          "Fan_50x50": 0.025,
+          "ArduinoMega": 0.04,
+          "OnOffButton": 0.015,
+          "ResetButton": 0.01,
+          "JackDC": 0.003,
+          "OpticSensor": 0.002,
+          "MicroEndstop": 0.003,
+          "M8Connector": 0.005
+        },
+        "density_assumptions_kg_m3": {
+          "steel": 7850,
+          "magnet": 7500,
+          "aluminium": 2700,
+          "belt": 1200,
+          "horn": 1150
+        },
+        "cad_to_nominal_rotation": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "native_input_geometry_validation_class": "restored_cached_geometry_with_explicit_grouping_assumptions"
+      },
+      "coverage": {
+        "complete": false,
+        "omitted_components": [
+          "external cables, motor wiring absent from CAD, mount/protection changes",
+          "unresolved wrist q5/q6 self-mass membership"
+        ]
+      },
+      "conditional_wrist_bounds": {
+        "scope": "modeled wrist group only; conditional on mass/COM and zero-q5 geometry",
+        "formula": "sum(m_i*g*distance_perpendicular_to_axis_i)",
+        "physical_load_bound_or_actuator_qualification": false,
+        "joint_internal_membership_resolved": false,
+        "joints": {
+          "joint_5": {
+            "modeled_self_mass_magnitude_bound_nm": 0.1918222661840775,
+            "payload200g_bound_at_study_point_nm": 0.2873824184426902,
+            "payload200g_total_radial_offset_sensitivity_nm": {
+              "0.0": 0.2873824184426902,
+              "0.025": 0.33641566844269016,
+              "0.05": 0.38544891844269014
+            }
+          },
+          "joint_6": {
+            "modeled_self_mass_magnitude_bound_nm": 0.060145876097127626,
+            "payload200g_bound_at_study_point_nm": 0.0,
+            "payload200g_total_radial_offset_sensitivity_nm": {
+              "0.0": 0.0,
+              "0.025": 0.04903325,
+              "0.05": 0.0980665
+            }
+          }
+        }
+      },
+      "poses": {
+        "upright": {
+          "joint_angles_rad": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "modeled_center_of_mass_m": [
+            4.93731030974271e-07,
+            0.012480102205761234,
+            0.23289822378379668
+          ],
+          "payload_cases": [
+            {
+              "payload_kg": 0,
+              "joints": [
+                {
+                  "joint": "joint_1",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_2",
+                  "arm_gravity_torque_nm": -0.03580157050462714,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.03580157050462714,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_3",
+                  "arm_gravity_torque_nm": -0.03580339312692348,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.03580339312692348,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_4",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_5",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                },
+                {
+                  "joint": "joint_6",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                }
+              ],
+              "gravity_wrench_about_frame_origin": {
+                "reference_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "external_force_n": [
+                  0.0,
+                  0.0,
+                  -76.59767636992747
+                ],
+                "external_moment_nm": [
+                  -0.9559468298205167,
+                  3.781864972436348e-05,
+                  0.0
+                ],
+                "ideal_support_force_n": [
+                  0.0,
+                  0.0,
+                  76.59767636992747
+                ],
+                "ideal_support_moment_nm": [
+                  0.9559468298205167,
+                  -3.781864972436348e-05,
+                  -0.0
+                ]
+              }
+            },
+            {
+              "payload_kg": 0.1,
+              "joints": [
+                {
+                  "joint": "joint_1",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_2",
+                  "arm_gravity_torque_nm": -0.03580157050462714,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.03580157050462714,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_3",
+                  "arm_gravity_torque_nm": -0.03580339312692348,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.03580339312692348,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_4",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_5",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                },
+                {
+                  "joint": "joint_6",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                }
+              ],
+              "gravity_wrench_about_frame_origin": {
+                "reference_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "external_force_n": [
+                  0.0,
+                  0.0,
+                  -77.57834136992746
+                ],
+                "external_moment_nm": [
+                  -0.9559468298205167,
+                  3.781864972436348e-05,
+                  0.0
+                ],
+                "ideal_support_force_n": [
+                  0.0,
+                  0.0,
+                  77.57834136992746
+                ],
+                "ideal_support_moment_nm": [
+                  0.9559468298205167,
+                  -3.781864972436348e-05,
+                  -0.0
+                ]
+              }
+            },
+            {
+              "payload_kg": 0.2,
+              "joints": [
+                {
+                  "joint": "joint_1",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_2",
+                  "arm_gravity_torque_nm": -0.03580157050462714,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.03580157050462714,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_3",
+                  "arm_gravity_torque_nm": -0.03580339312692348,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.03580339312692348,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_4",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_5",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                },
+                {
+                  "joint": "joint_6",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                }
+              ],
+              "gravity_wrench_about_frame_origin": {
+                "reference_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "external_force_n": [
+                  0.0,
+                  0.0,
+                  -78.55900636992746
+                ],
+                "external_moment_nm": [
+                  -0.9559468298205167,
+                  3.781864972436348e-05,
+                  0.0
+                ],
+                "ideal_support_force_n": [
+                  0.0,
+                  0.0,
+                  78.55900636992746
+                ],
+                "ideal_support_moment_nm": [
+                  0.9559468298205167,
+                  -3.781864972436348e-05,
+                  -0.0
+                ]
+              }
+            }
+          ]
+        },
+        "shoulder_horizontal": {
+          "joint_angles_rad": [
+            0.0,
+            1.5707963267948966,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "modeled_center_of_mass_m": [
+            4.937310309743821e-07,
+            -0.07706141452398708,
+            0.14429150226459034
+          ],
+          "payload_cases": [
+            {
+              "payload_kg": 0,
+              "joints": [
+                {
+                  "joint": "joint_1",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_2",
+                  "arm_gravity_torque_nm": 6.822870549633081,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -6.822870549633081,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_3",
+                  "arm_gravity_torque_nm": 2.291730153082866,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -2.291730153082866,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_4",
+                  "arm_gravity_torque_nm": -0.001689221921425946,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.001689221921425946,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_5",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                },
+                {
+                  "joint": "joint_6",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                }
+              ],
+              "gravity_wrench_about_frame_origin": {
+                "reference_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "external_force_n": [
+                  0.0,
+                  0.0,
+                  -76.59767636992747
+                ],
+                "external_moment_nm": [
+                  5.902725290317192,
+                  3.781864972436348e-05,
+                  0.0
+                ],
+                "ideal_support_force_n": [
+                  0.0,
+                  0.0,
+                  76.59767636992747
+                ],
+                "ideal_support_moment_nm": [
+                  -5.902725290317192,
+                  -3.781864972436348e-05,
+                  -0.0
+                ]
+              }
+            },
+            {
+              "payload_kg": 0.1,
+              "joints": [
+                {
+                  "joint": "joint_1",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_2",
+                  "arm_gravity_torque_nm": 6.822870549633081,
+                  "payload_gravity_torque_nm": 0.4908466192213452,
+                  "required_ideal_holding_torque_nm": -7.313717168854426,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_3",
+                  "arm_gravity_torque_nm": 2.291730153082866,
+                  "payload_gravity_torque_nm": 0.3339402192213452,
+                  "required_ideal_holding_torque_nm": -2.6256703723042114,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_4",
+                  "arm_gravity_torque_nm": -0.001689221921425946,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.001689221921425946,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_5",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.14369120922134515,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                },
+                {
+                  "joint": "joint_6",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                }
+              ],
+              "gravity_wrench_about_frame_origin": {
+                "reference_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "external_force_n": [
+                  0.0,
+                  0.0,
+                  -77.57834136992746
+                ],
+                "external_moment_nm": [
+                  6.393571909538537,
+                  3.781864972436348e-05,
+                  0.0
+                ],
+                "ideal_support_force_n": [
+                  0.0,
+                  0.0,
+                  77.57834136992746
+                ],
+                "ideal_support_moment_nm": [
+                  -6.393571909538537,
+                  -3.781864972436348e-05,
+                  -0.0
+                ]
+              }
+            },
+            {
+              "payload_kg": 0.2,
+              "joints": [
+                {
+                  "joint": "joint_1",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_2",
+                  "arm_gravity_torque_nm": 6.822870549633081,
+                  "payload_gravity_torque_nm": 0.9816932384426904,
+                  "required_ideal_holding_torque_nm": -7.804563788075772,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_3",
+                  "arm_gravity_torque_nm": 2.291730153082866,
+                  "payload_gravity_torque_nm": 0.6678804384426904,
+                  "required_ideal_holding_torque_nm": -2.9596105915255566,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_4",
+                  "arm_gravity_torque_nm": -0.001689221921425946,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.001689221921425946,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_5",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.2873824184426903,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                },
+                {
+                  "joint": "joint_6",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                }
+              ],
+              "gravity_wrench_about_frame_origin": {
+                "reference_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "external_force_n": [
+                  0.0,
+                  0.0,
+                  -78.55900636992746
+                ],
+                "external_moment_nm": [
+                  6.884418528759882,
+                  3.781864972436348e-05,
+                  0.0
+                ],
+                "ideal_support_force_n": [
+                  0.0,
+                  0.0,
+                  78.55900636992746
+                ],
+                "ideal_support_moment_nm": [
+                  -6.884418528759882,
+                  -3.781864972436348e-05,
+                  -0.0
+                ]
+              }
+            }
+          ]
+        },
+        "elbow_horizontal": {
+          "joint_angles_rad": [
+            0.0,
+            0.0,
+            1.5707963267948966,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "modeled_center_of_mass_m": [
+            4.937310309743821e-07,
+            -0.017906374989304023,
+            0.20344658938876656
+          ],
+          "payload_cases": [
+            {
+              "payload_kg": 0,
+              "joints": [
+                {
+                  "joint": "joint_1",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_2",
+                  "arm_gravity_torque_nm": 2.291731975705163,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -2.291731975705163,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_3",
+                  "arm_gravity_torque_nm": 2.291730153082866,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -2.291730153082866,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_4",
+                  "arm_gravity_torque_nm": -0.001689221921425946,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.001689221921425946,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_5",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                },
+                {
+                  "joint": "joint_6",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                }
+              ],
+              "gravity_wrench_about_frame_origin": {
+                "reference_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "external_force_n": [
+                  0.0,
+                  0.0,
+                  -76.59767636992747
+                ],
+                "external_moment_nm": [
+                  1.3715867163892732,
+                  3.781864972437042e-05,
+                  0.0
+                ],
+                "ideal_support_force_n": [
+                  0.0,
+                  0.0,
+                  76.59767636992747
+                ],
+                "ideal_support_moment_nm": [
+                  -1.3715867163892732,
+                  -3.781864972437042e-05,
+                  -0.0
+                ]
+              }
+            },
+            {
+              "payload_kg": 0.1,
+              "joints": [
+                {
+                  "joint": "joint_1",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_2",
+                  "arm_gravity_torque_nm": 2.291731975705163,
+                  "payload_gravity_torque_nm": 0.33394021922134515,
+                  "required_ideal_holding_torque_nm": -2.625672194926508,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_3",
+                  "arm_gravity_torque_nm": 2.291730153082866,
+                  "payload_gravity_torque_nm": 0.33394021922134515,
+                  "required_ideal_holding_torque_nm": -2.6256703723042114,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_4",
+                  "arm_gravity_torque_nm": -0.001689221921425946,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.001689221921425946,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_5",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.1436912092213451,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                },
+                {
+                  "joint": "joint_6",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                }
+              ],
+              "gravity_wrench_about_frame_origin": {
+                "reference_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "external_force_n": [
+                  0.0,
+                  0.0,
+                  -77.57834136992746
+                ],
+                "external_moment_nm": [
+                  1.7055269356106182,
+                  3.781864972437042e-05,
+                  0.0
+                ],
+                "ideal_support_force_n": [
+                  0.0,
+                  0.0,
+                  77.57834136992746
+                ],
+                "ideal_support_moment_nm": [
+                  -1.7055269356106182,
+                  -3.781864972437042e-05,
+                  -0.0
+                ]
+              }
+            },
+            {
+              "payload_kg": 0.2,
+              "joints": [
+                {
+                  "joint": "joint_1",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_2",
+                  "arm_gravity_torque_nm": 2.291731975705163,
+                  "payload_gravity_torque_nm": 0.6678804384426903,
+                  "required_ideal_holding_torque_nm": -2.9596124141478533,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_3",
+                  "arm_gravity_torque_nm": 2.291730153082866,
+                  "payload_gravity_torque_nm": 0.6678804384426903,
+                  "required_ideal_holding_torque_nm": -2.9596105915255566,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_4",
+                  "arm_gravity_torque_nm": -0.001689221921425946,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.001689221921425946,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_5",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.2873824184426902,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                },
+                {
+                  "joint": "joint_6",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                }
+              ],
+              "gravity_wrench_about_frame_origin": {
+                "reference_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "external_force_n": [
+                  0.0,
+                  0.0,
+                  -78.55900636992746
+                ],
+                "external_moment_nm": [
+                  2.0394671548319634,
+                  3.781864972437042e-05,
+                  0.0
+                ],
+                "ideal_support_force_n": [
+                  0.0,
+                  0.0,
+                  78.55900636992746
+                ],
+                "ideal_support_moment_nm": [
+                  -2.0394671548319634,
+                  -3.781864972437042e-05,
+                  -0.0
+                ]
+              }
+            }
+          ]
+        },
+        "shoulder_elbow_45deg": {
+          "joint_angles_rad": [
+            0.0,
+            0.7853981633974483,
+            0.7853981633974483,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "modeled_center_of_mass_m": [
+            4.93731030974271e-07,
+            -0.05973531444174347,
+            0.18612045565566962
+          ],
+          "payload_cases": [
+            {
+              "payload_kg": 0,
+              "joints": [
+                {
+                  "joint": "joint_1",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_2",
+                  "arm_gravity_torque_nm": 5.49573154278041,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -5.49573154278041,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_3",
+                  "arm_gravity_torque_nm": 2.291730153082866,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -2.291730153082866,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_4",
+                  "arm_gravity_torque_nm": -0.001689221921425946,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.001689221921425946,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_5",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                },
+                {
+                  "joint": "joint_6",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                }
+              ],
+              "gravity_wrench_about_frame_origin": {
+                "reference_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "external_force_n": [
+                  0.0,
+                  0.0,
+                  -76.59767636992747
+                ],
+                "external_moment_nm": [
+                  4.575586283464521,
+                  3.781864972436348e-05,
+                  0.0
+                ],
+                "ideal_support_force_n": [
+                  0.0,
+                  0.0,
+                  76.59767636992747
+                ],
+                "ideal_support_moment_nm": [
+                  -4.575586283464521,
+                  -3.781864972436348e-05,
+                  -0.0
+                ]
+              }
+            },
+            {
+              "payload_kg": 0.1,
+              "joints": [
+                {
+                  "joint": "joint_1",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_2",
+                  "arm_gravity_torque_nm": 5.49573154278041,
+                  "payload_gravity_torque_nm": 0.44488979867291406,
+                  "required_ideal_holding_torque_nm": -5.940621341453324,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_3",
+                  "arm_gravity_torque_nm": 2.291730153082866,
+                  "payload_gravity_torque_nm": 0.33394021922134515,
+                  "required_ideal_holding_torque_nm": -2.6256703723042114,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_4",
+                  "arm_gravity_torque_nm": -0.001689221921425946,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.001689221921425946,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_5",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.1436912092213451,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                },
+                {
+                  "joint": "joint_6",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                }
+              ],
+              "gravity_wrench_about_frame_origin": {
+                "reference_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "external_force_n": [
+                  0.0,
+                  0.0,
+                  -77.57834136992746
+                ],
+                "external_moment_nm": [
+                  5.020476082137435,
+                  3.781864972436348e-05,
+                  0.0
+                ],
+                "ideal_support_force_n": [
+                  0.0,
+                  0.0,
+                  77.57834136992746
+                ],
+                "ideal_support_moment_nm": [
+                  -5.020476082137435,
+                  -3.781864972436348e-05,
+                  -0.0
+                ]
+              }
+            },
+            {
+              "payload_kg": 0.2,
+              "joints": [
+                {
+                  "joint": "joint_1",
+                  "arm_gravity_torque_nm": 0.0,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": -0.0,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_2",
+                  "arm_gravity_torque_nm": 5.49573154278041,
+                  "payload_gravity_torque_nm": 0.8897795973458281,
+                  "required_ideal_holding_torque_nm": -6.385511140126238,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_3",
+                  "arm_gravity_torque_nm": 2.291730153082866,
+                  "payload_gravity_torque_nm": 0.6678804384426903,
+                  "required_ideal_holding_torque_nm": -2.9596105915255566,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_4",
+                  "arm_gravity_torque_nm": -0.001689221921425946,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": 0.001689221921425946,
+                  "body_membership_resolved": true
+                },
+                {
+                  "joint": "joint_5",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.2873824184426902,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                },
+                {
+                  "joint": "joint_6",
+                  "arm_gravity_torque_nm": null,
+                  "payload_gravity_torque_nm": 0.0,
+                  "required_ideal_holding_torque_nm": null,
+                  "body_membership_resolved": false
+                }
+              ],
+              "gravity_wrench_about_frame_origin": {
+                "reference_m": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "external_force_n": [
+                  0.0,
+                  0.0,
+                  -78.55900636992746
+                ],
+                "external_moment_nm": [
+                  5.4653658808103485,
+                  3.781864972436348e-05,
+                  0.0
+                ],
+                "ideal_support_force_n": [
+                  0.0,
+                  0.0,
+                  78.55900636992746
+                ],
+                "ideal_support_moment_nm": [
+                  -5.4653658808103485,
+                  -3.781864972436348e-05,
+                  -0.0
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

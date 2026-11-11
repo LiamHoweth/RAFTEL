@@ -1,0 +1,78 @@
+{
+  "validation_class": "reference_filament_density_comparison_not_structural_approval",
+  "user_available_material_families": [
+    "PLA",
+    "PETG",
+    "ABS"
+  ],
+  "actual_user_filament_brand_or_density_verified": false,
+  "effective_whole_part_solid_fraction": 0.5,
+  "nonprinted_materials_motors_and_horn_unchanged": true,
+  "geometry_axes_pose_and_payload_same_as_PLA_baseline": true,
+  "printed_material_stiffness_creep_or_strength_validated": false,
+  "cases": [
+    {
+      "reference": {
+        "reference_product": "Prusament PLA technical datasheet v1.1",
+        "density_kg_m3": 1240,
+        "source": "https://prusament.com/wp-content/uploads/2022/10/PLA_Prusament_TDS_2021_10_EN.pdf",
+        "family": "PLA",
+        "actual_user_brand_or_density_verified": false
+      },
+      "modeled_mass_kg": 5.649888910907038,
+      "group_masses_kg": {
+        "AssemblyArt1": 1.6338722668676084,
+        "AssemblyArt2": 0.635419608063754,
+        "AssemblyArt3": 0.5560662170101622,
+        "AssemblyArt4": 0.8588935722625864,
+        "AssemblyArt56": 0.25121613028932166,
+        "AssemblyBase": 1.7144211164136045
+      },
+      "shoulder_horizontal_200g_holding_torque_nm": -5.827992891670454,
+      "elbow_horizontal_200g_holding_torque_nm": -2.3423243748226543,
+      "input_inventory_canonical_sha256": "97196c55acf7d627bed106f7e35e3c8ff830ec1630bbce73b876a150c3a2c287"
+    },
+    {
+      "reference": {
+        "reference_product": "Prusament PETG technical datasheet v1.1 (2022-02-16)",
+        "density_kg_m3": 1270,
+        "source": "https://prusament.com/wp-content/uploads/2022/10/PETG_Prusament_TDS_2021_10_EN.pdf",
+        "family": "PETG",
+        "actual_user_brand_or_density_verified": false
+      },
+      "modeled_mass_kg": 5.702168757750056,
+      "group_masses_kg": {
+        "AssemblyArt1": 1.6428852267950462,
+        "AssemblyArt2": 0.6478245384094216,
+        "AssemblyArt3": 0.5615821554781238,
+        "AssemblyArt4": 0.8650313076268099,
+        "AssemblyArt56": 0.25378553733597486,
+        "AssemblyBase": 1.7310599921046794
+      },
+      "shoulder_horizontal_200g_holding_torque_nm": -5.875813155293163,
+      "elbow_horizontal_200g_holding_torque_nm": -2.357258718775144,
+      "input_inventory_canonical_sha256": "97196c55acf7d627bed106f7e35e3c8ff830ec1630bbce73b876a150c3a2c287"
+    },
+    {
+      "reference": {
+        "reference_product": "Polymaker PolyLite ABS TDS EN v5.5",
+        "density_kg_m3": 1040,
+        "source": "https://polymaker.com.cn/wp-content/uploads/lana-downloads/PolyLite-ABS_TDS_EN_V5.5.pdf",
+        "family": "ABS",
+        "actual_user_brand_or_density_verified": false
+      },
+      "modeled_mass_kg": 5.301356598620247,
+      "group_masses_kg": {
+        "AssemblyArt1": 1.573785867351356,
+        "AssemblyArt2": 0.5527200724259701,
+        "AssemblyArt3": 0.5192932938904181,
+        "AssemblyArt4": 0.817975336501097,
+        "AssemblyArt56": 0.23408674997830026,
+        "AssemblyBase": 1.6034952784731054
+      },
+      "shoulder_horizontal_200g_holding_torque_nm": -5.509191134185726,
+      "elbow_horizontal_200g_holding_torque_nm": -2.2427620818060583,
+      "input_inventory_canonical_sha256": "97196c55acf7d627bed106f7e35e3c8ff830ec1630bbce73b876a150c3a2c287"
+    }
+  ]
+}

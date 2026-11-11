@@ -1,0 +1,650 @@
+{
+  "schema_version": 1,
+  "validation_class": "saved_native_metadata_not_recomputed_or_calibrated",
+  "cad_revision_claim": "286b081fe6f056d87c379b884781ef77ff6a0159",
+  "selected_files_match_pinned_inventory": true,
+  "source_files": [
+    {
+      "path": "Assembly.FCStd",
+      "sha256": "5ee729246229e7494466010ab68e2c2367ba4ec1361b7701df21c0f8b00c2c1b"
+    },
+    {
+      "path": "AssemblyBase.FCStd",
+      "sha256": "1964b144c772608a716e40f4e7bbfb61b55b5e46c9079221b079cbce570dbdc7"
+    },
+    {
+      "path": "AssemblyArt1.FCStd",
+      "sha256": "79f823e0a2d4a3581815305e41a0bb0693db4652206923a7d03d947c8a47085b"
+    },
+    {
+      "path": "AssemblyArt2.FCStd",
+      "sha256": "96a41e5eaa728a89e8e7a3340ec10a8c71034ff30b76f8679d23ed435574638f"
+    },
+    {
+      "path": "AssemblyArt3.FCStd",
+      "sha256": "8b5b8ba6da66f9deb1ec1f03ec1ff75f2ea10e02ca67a7e2b5e5f955aaec4398"
+    },
+    {
+      "path": "AssemblyArt4.FCStd",
+      "sha256": "9306c0461c1a979526c8f73554ddef8fa89b8880e613b42beed7ac19feb401da"
+    },
+    {
+      "path": "AssemblyArt56.FCStd",
+      "sha256": "a04836216dcae82eb033c15daba6e41dedb85b03f86ff21e56b77cdff835a473"
+    }
+  ],
+  "installed_master_subassemblies": [
+    {
+      "name": "AssemblyBase",
+      "saved_world_placement": {
+        "position_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "linked_file": "AssemblyBase.FCStd",
+      "linked_object": "Model",
+      "selected_mating_lcs": [
+        {
+          "name": "LCS_Art1003",
+          "local_placement": {
+            "position_m": [
+              0.0,
+              0.0,
+              0.079
+            ],
+            "quaternion_xyzw": [
+              0.0,
+              0.0,
+              0.7071067811865475,
+              0.7071067811865476
+            ]
+          },
+          "saved_world_position_m": [
+            0.0,
+            0.0,
+            0.079
+          ],
+          "saved_world_basis_xyz": [
+            [
+              2.220446049250313e-16,
+              1.0,
+              0.0
+            ],
+            [
+              -1.0,
+              2.220446049250313e-16,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AssemblyArt1",
+      "saved_world_placement": {
+        "position_m": [
+          0.0,
+          0.0,
+          0.079
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "linked_file": "AssemblyArt1.FCStd",
+      "linked_object": "Model",
+      "selected_mating_lcs": [
+        {
+          "name": "LCS_Art2002",
+          "local_placement": {
+            "position_m": [
+              0.0,
+              0.0,
+              0.123
+            ],
+            "quaternion_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "saved_world_position_m": [
+            0.0,
+            0.0,
+            0.202
+          ],
+          "saved_world_basis_xyz": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AssemblyArt2",
+      "saved_world_placement": {
+        "position_m": [
+          -5.8999999999999994e-18,
+          -0.06800000000000002,
+          0.202
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.7071067811865476,
+          0.7071067811865476,
+          1e-16
+        ]
+      },
+      "linked_file": "AssemblyArt2.FCStd",
+      "linked_object": "Model",
+      "selected_mating_lcs": [
+        {
+          "name": "LCS_Art1",
+          "local_placement": {
+            "position_m": [
+              0.0,
+              0.0,
+              0.068
+            ],
+            "quaternion_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "saved_world_position_m": [
+            3.7166522241370475e-18,
+            0.0,
+            0.20199999999999999
+          ],
+          "saved_world_basis_xyz": [
+            [
+              -1.0000000000000004,
+              1.3877787807814457e-16,
+              -1.3877787807814457e-16
+            ],
+            [
+              -1.414213562373095e-16,
+              -2.220446049250313e-16,
+              1.0000000000000002
+            ],
+            [
+              1.414213562373095e-16,
+              1.0000000000000002,
+              -2.220446049250313e-16
+            ]
+          ]
+        },
+        {
+          "name": "LCS_Model_1",
+          "local_placement": {
+            "position_m": [
+              0.0,
+              0.16,
+              0.068
+            ],
+            "quaternion_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "saved_world_position_m": [
+            -1.8910764773832475e-17,
+            -4.163336342344337e-17,
+            0.362
+          ],
+          "saved_world_basis_xyz": [
+            [
+              -1.0000000000000004,
+              1.5265566588595902e-16,
+              -1.1102230246251565e-16
+            ],
+            [
+              -1.414213562373095e-16,
+              -2.220446049250313e-16,
+              1.0
+            ],
+            [
+              1.414213562373095e-16,
+              1.0000000000000002,
+              -2.220446049250313e-16
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AssemblyArt3",
+      "saved_world_placement": {
+        "position_m": [
+          -2.09e-17,
+          0.0,
+          0.4435
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "linked_file": "AssemblyArt3.FCStd",
+      "linked_object": "Model",
+      "selected_mating_lcs": [
+        {
+          "name": "LCS_Art2Fix",
+          "local_placement": {
+            "position_m": [
+              0.0,
+              0.0,
+              0.0815
+            ],
+            "quaternion_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "saved_world_position_m": [
+            -2.09e-17,
+            0.0,
+            0.362
+          ],
+          "saved_world_basis_xyz": [
+            [
+              -1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              -0.9999999999999999
+            ]
+          ]
+        },
+        {
+          "name": "LCS_Art4Fix",
+          "local_placement": {
+            "position_m": [
+              0.0,
+              0.0,
+              -0.001
+            ],
+            "quaternion_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "saved_world_position_m": [
+            -2.09e-17,
+            0.0,
+            0.4445
+          ],
+          "saved_world_basis_xyz": [
+            [
+              -1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AssemblyArt4",
+      "saved_world_placement": {
+        "position_m": [
+          -2.1e-17,
+          0.0,
+          0.4445
+        ],
+        "quaternion_xyzw": [
+          1e-16,
+          -0.0,
+          -1e-16,
+          1.0
+        ]
+      },
+      "linked_file": "AssemblyArt4.FCStd",
+      "linked_object": "Model",
+      "selected_mating_lcs": [
+        {
+          "name": "LCS_Art3Fix",
+          "local_placement": {
+            "position_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "quaternion_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "saved_world_position_m": [
+            -2.1e-17,
+            0.0,
+            0.4445
+          ],
+          "saved_world_basis_xyz": [
+            [
+              1.0,
+              -2e-16,
+              0.0
+            ],
+            [
+              2e-16,
+              1.0,
+              2.220446049250313e-16
+            ],
+            [
+              -1.8488927466117464e-32,
+              -2e-16,
+              1.0
+            ]
+          ]
+        },
+        {
+          "name": "LCS_Art56Fix",
+          "local_placement": {
+            "position_m": [
+              0.0,
+              0.0,
+              0.1115
+            ],
+            "quaternion_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "saved_world_position_m": [
+            -2.1000000000000002e-17,
+            -2.23e-17,
+            0.556
+          ],
+          "saved_world_basis_xyz": [
+            [
+              1.0,
+              -2e-16,
+              0.0
+            ],
+            [
+              2e-16,
+              1.0,
+              1.1102230246251565e-16
+            ],
+            [
+              -1.8488927466117464e-32,
+              -2e-16,
+              1.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AssemblyArt56",
+      "saved_world_placement": {
+        "position_m": [
+          -3.07e-17,
+          -1.37e-17,
+          0.556
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -1e-16,
+          0.7071067811865475,
+          0.7071067811865477
+        ]
+      },
+      "linked_file": "AssemblyArt56.FCStd",
+      "linked_object": "Model",
+      "selected_mating_lcs": [
+        {
+          "name": "LCS_Art4Fix",
+          "local_placement": {
+            "position_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "quaternion_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "saved_world_position_m": [
+            -3.07e-17,
+            -1.37e-17,
+            0.556
+          ],
+          "saved_world_basis_xyz": [
+            [
+              2.220446049250313e-16,
+              1.0000000000000002,
+              1.1102230246251565e-16
+            ],
+            [
+              -1.0000000000000002,
+              2.220446049250313e-16,
+              -1.1102230246251565e-16
+            ],
+            [
+              -1.4142135623730954e-16,
+              -1.4142135623730949e-16,
+              1.0
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "upstream_nominal_model": {
+    "revision_claim": "e11a56b5aa0d89f0b68a3ea7bd084eab4a050952",
+    "path": "ws_thor/src/thor_urdf/urdf/thor.urdf.xacro",
+    "sha256": "19b83e26f86aae15fda5c21418f768d0e3ed1b0d1daa6d149abd9b45ceccd8b9",
+    "joints": [
+      {
+        "name": "joint_1",
+        "type": "revolute",
+        "parent": "base_link",
+        "child": "link_1",
+        "origin_xyz_m": [
+          0.0,
+          0.0,
+          0.099
+        ],
+        "origin_rpy_rad": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "axis_local_unit": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "source_lower_rad": -2.967,
+        "source_upper_rad": 2.967
+      },
+      {
+        "name": "joint_2",
+        "type": "revolute",
+        "parent": "link_1",
+        "child": "link_2",
+        "origin_xyz_m": [
+          0.0,
+          0.0,
+          0.103
+        ],
+        "origin_rpy_rad": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "axis_local_unit": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "source_lower_rad": -1.570796326795,
+        "source_upper_rad": 1.570796326795
+      },
+      {
+        "name": "joint_3",
+        "type": "revolute",
+        "parent": "link_2",
+        "child": "link_3",
+        "origin_xyz_m": [
+          0.0,
+          0.0,
+          0.16
+        ],
+        "origin_rpy_rad": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "axis_local_unit": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "source_lower_rad": -1.570796326795,
+        "source_upper_rad": 1.570796326795
+      },
+      {
+        "name": "joint_4",
+        "type": "revolute",
+        "parent": "link_3",
+        "child": "link_4",
+        "origin_xyz_m": [
+          0.0,
+          0.0,
+          0.0895
+        ],
+        "origin_rpy_rad": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "axis_local_unit": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "source_lower_rad": -2.967,
+        "source_upper_rad": 2.967
+      },
+      {
+        "name": "joint_5",
+        "type": "revolute",
+        "parent": "link_4",
+        "child": "link_5",
+        "origin_xyz_m": [
+          0.0,
+          0.0,
+          0.1045
+        ],
+        "origin_rpy_rad": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "axis_local_unit": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "source_lower_rad": -1.570796326795,
+        "source_upper_rad": 1.570796326795
+      },
+      {
+        "name": "joint_6",
+        "type": "revolute",
+        "parent": "link_5",
+        "child": "link_6",
+        "origin_xyz_m": [
+          0.0,
+          0.0,
+          0.0135
+        ],
+        "origin_rpy_rad": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "axis_local_unit": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "source_lower_rad": -2.967,
+        "source_upper_rad": 2.967
+      }
+    ],
+    "source_inertials_usable_for_loads": false,
+    "reason": "all default link masses=1kg and inertias=identity; placeholder model values"
+  },
+  "cad_axis_directions_calibrated": false,
+  "joint_limits_verified": false,
+  "mass_or_load_properties_extracted": false
+}

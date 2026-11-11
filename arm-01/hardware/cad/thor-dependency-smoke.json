@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "validation_class": "native addon dependency smoke tests; not complete assembly or hardware validation",
+  "freecad_source_revision": "4fd3bf320d9566a27e60069fc8387448aaa3a094",
+  "thor_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+  "addons": {
+    "FastenersWB": {
+      "revision": "fddd07af422b7d3a69098b32333711c5eeae184c",
+      "version": "0.5.67",
+      "role": "baseline fastener restore"
+    },
+    "Gears_current": {
+      "revision": "83ec154b1925347622b61812f75d2ed51e956b9f",
+      "role": "comparison; legacy migration exception"
+    },
+    "Gears_legacy": {
+      "revision": "ffe86c85e8061546a3fbaa598993d8e1be2b0de2",
+      "version": "0.0.3",
+      "role": "version-matched baseline"
+    }
+  },
+  "fixture_restore_without_fasteners": {
+    "proxy_class": "NoneType",
+    "shape_valid": true,
+    "volume_mm3": 131.4974640173727,
+    "state": [
+      "Up-to-date"
+    ]
+  },
+  "fixture_restore_with_fasteners": {
+    "proxy_class": "FSScrewObject",
+    "shape_valid": true,
+    "volume_mm3": 131.4974640173727,
+    "state": [
+      "Up-to-date"
+    ]
+  },
+  "current_gears_original_part_diagnostic": "Art1GearMotor: onDocumentRestored RuntimeError Property 'angular_backlash' not found",
+  "legacy_gears_original_part": {
+    "document": "Art1GearMotor",
+    "proxies": [
+      {
+        "name": "involutegear",
+        "type": "Part::FeaturePython",
+        "proxy_class": "InvoluteGear",
+        "proxy_module": "freecad.gears.features",
+        "state": [
+          "Up-to-date"
+        ],
+        "shape_valid": true,
+        "volume_mm3": 3561.2450132335325
+      }
+    ],
+    "forced_recompute_return": 15
+  },
+  "security_settings_modified": false,
+  "global_packages_installed": false,
+  "upstream_native_sources_saved": false,
+  "caveat": "A cached valid shape with NoneType proxy is not a successful dependency restore.",
+  "legacy_gears_original_bevel_part": {
+    "document": "Art56GearPlate",
+    "proxies": [
+      {
+        "name": "bevelgear",
+        "type": "Part::FeaturePython",
+        "proxy_class": "BevelGear",
+        "proxy_module": "freecad.gears.features",
+        "state": [
+          "Up-to-date"
+        ],
+        "shape_valid": true,
+        "volume_mm3": 36223.09021297727
+      }
+    ],
+    "forced_recompute_return": 22
+  }
+}
