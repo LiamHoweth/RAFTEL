@@ -41,8 +41,10 @@ Read-only ZIP/XML inspection of the pinned `AssemblyArt56.FCStd` (SHA-256
 
 Those properties establish source intent, not an independently rebuilt BRep.
 The [jaw ownership reconciliation](thor-jaw-body-reconciliation.md) owns the
-moving-body interpretation. Native export still needs the actual final reflected
-solid, its declared frame, winding/normals, dimensions and manifoldness checks.
+moving-body interpretation. The later [native mesh audit](thor-native-mesh-audit.md)
+now captures the actual saved reflected solid separately, with its storage frame,
+winding and topology checks. Installed/world correspondence, continuous surface
+fidelity, fit and process qualification remain open.
 
 Art1Body is explicitly marked as **unrepaired original history**, with the exact
 accepted static snapshot separate. Do not export the failed Intersection candidate
