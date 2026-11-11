@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "revision": "arm01-uncalibrated-template-v1",
+  "evidence_class": "offline_calibration_record_not_commissioning",
+  "commissioning_status": "not_commissioned",
+  "channel_order": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "X",
+    "Y",
+    "Z"
+  ],
+  "parameters": {
+    "shoulder_branch_ratio": {
+      "state": "unknown",
+      "value": null,
+      "unit": "1",
+      "uncertainty_abs": null,
+      "evidence": []
+    },
+    "elbow_gearbox_ratio": {
+      "state": "unknown",
+      "value": null,
+      "unit": "1",
+      "uncertainty_abs": null,
+      "evidence": []
+    },
+    "elbow_belt_ratio": {
+      "state": "unknown",
+      "value": null,
+      "unit": "1",
+      "uncertainty_abs": null,
+      "evidence": []
+    },
+    "carrier_coefficient": {
+      "state": "unknown",
+      "value": null,
+      "unit": "1",
+      "uncertainty_abs": null,
+      "evidence": []
+    },
+    "elbow_belt_sign": {
+      "state": "unknown",
+      "value": null,
+      "unit": "1",
+      "uncertainty_abs": null,
+      "evidence": []
+    },
+    "wrist_handedness": {
+      "state": "unknown",
+      "value": null,
+      "unit": "1",
+      "uncertainty_abs": null,
+      "evidence": []
+    },
+    "wrist_negative_y_rotor_scale": {
+      "state": "unknown",
+      "value": null,
+      "unit": "1",
+      "uncertainty_abs": null,
+      "evidence": []
+    },
+    "wrist_positive_y_rotor_scale": {
+      "state": "unknown",
+      "value": null,
+      "unit": "1",
+      "uncertainty_abs": null,
+      "evidence": []
+    },
+    "channel_steps_per_degree": {
+      "state": "unknown",
+      "value": null,
+      "unit": "step/source_degree",
+      "uncertainty_abs": null,
+      "evidence": []
+    },
+    "channel_zero_deg": {
+      "state": "unknown",
+      "value": null,
+      "unit": "source_degree",
+      "uncertainty_abs": null,
+      "evidence": []
+    }
+  },
+  "artifacts": {
+    "installed_firmware": {
+      "state": "unknown",
+      "sha256": null,
+      "evidence": []
+    },
+    "installed_settings": {
+      "state": "unknown",
+      "sha256": null,
+      "evidence": []
+    }
+  }
+}

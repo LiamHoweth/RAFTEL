@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "events": [
+    {"action": "submit", "line": "G90", "acknowledgment_received": true},
+    {"action": "submit", "line": "G0 B10 C10 D20", "acknowledgment_received": true},
+    {"action": "status", "timestamp_s": 0},
+    {"action": "complete_next"},
+    {"action": "complete_next"},
+    {"action": "submit", "line": "G91 A1", "acknowledgment_received": false},
+    {"action": "complete_next"},
+    {"action": "status", "timestamp_s": 1},
+    {"action": "acknowledge", "sequence": 2},
+    {"action": "submit", "line": "G0 B1 C1", "acknowledgment_received": true},
+    {"action": "reset"}
+  ]
+}

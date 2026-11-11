@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "evidence_class": "unpowered_measurement_worksheet_not_executed",
+  "purpose": "Prepare external angle observations of a restrained unpowered mechanism; not an instruction to operate hardware.",
+  "coordinate_conventions": {
+    "q2": "shoulder relative to Art1, unwrapped radians",
+    "q3": "elbow relative to Art2, unwrapped radians",
+    "phi": "elbow gearbox output relative to Art1, unwrapped radians; not source D or Z",
+    "approach_direction": "explicit observed direction label +1/-1, definition to be recorded",
+    "unknown_output_scale": "If phi is only an unknown motor/channel scale, physical carrier and belt ratio cannot be separated from that scale."
+  },
+  "preconditions": {
+    "power_disconnected_verified": null,
+    "gravity_restraint_and_guarding_verified": null,
+    "qualified_owner_inspection": null,
+    "manual_backdrive_suitability_verified": null,
+    "instrument_clearance_verified": null
+  },
+  "source_revision": null,
+  "source_document_sha256": null,
+  "belt_route_and_effective_pitch_evidence": null,
+  "observation_plan": {
+    "minimum_independently_excited_axes": 2,
+    "minimum_distinct_bidirectional_poses_for_software_gate": 3,
+    "q2_range_rad": null,
+    "q3_range_rad": null,
+    "physical_acceptance_limits": null,
+    "limit_source": null,
+    "reminder": "Repeated identical poses do not establish independent excitation; no travel is authorized by this worksheet."
+  },
+  "observation_template": {
+    "record_id": null,
+    "observed_at_utc": null,
+    "q2_rad": null,
+    "q2_uncertainty_rad": null,
+    "q3_rad": null,
+    "q3_uncertainty_rad": null,
+    "phi_rad": null,
+    "phi_uncertainty_rad": null,
+    "phi_scale_independently_known": null,
+    "approach_direction": null,
+    "approach_direction_definition": null,
+    "instrument_ids_and_calibration": null,
+    "conditions_and_restraints": null,
+    "raw_record_sha256": null,
+    "angular_unwrapping_evidence": null,
+    "fit_model_invalidation_observations": null
+  },
+  "uncertainty_gate": "Synthetic OLS output-noise intervals do not cover uncertain measured predictors, quantization, hysteresis or correlated observations. Physical records need a separately reviewed estimator and acceptance process.",
+  "commissioning_status": "not_commissioned",
+  "physical_execution_performed": false
+}
