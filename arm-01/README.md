@@ -41,6 +41,7 @@ ruff format --check .
 python -m compileall -q src
 raftel-sort --seed 42
 python tools/engineering_analysis.py
+python tools/thor_load_analysis.py --cad-inventory hardware/cad/thor-mounted-geometry.json
 ```
 
 Tests should require no hardware or ROS. The analysis script reproduces explicitly assumed static loads and geometric mobile-reach checks; it is not a dynamics model or a certification of actuator or mount suitability. Current executed results belong in [nextSteps.md](../nextSteps.md), including any skipped platform checks.
@@ -48,6 +49,8 @@ Tests should require no hardware or ROS. The analysis script reproduces explicit
 ## Architecture and next integrations
 
 The [architecture](docs/architecture.md) keeps observations, planning, task execution, and arm control separate. The first prototype intentionally has no runtime dependency on robotics middleware. NumPy/OpenCV, a measured robot model/URDF, ROS 2 Jazzy, MoveIt 2, LeRobot, and a physics environment are possible integration milestones, each requiring its own installation and acceptance tests.
+
+The [compatible assembly](docs/thor-assembly-compatibility.md), [geometry/axis study](docs/thor-geometry.md), and [CAD-derived conditional loads](docs/thor-load-analysis.md) establish the current analytical baseline. A separate static Art1 snapshot preserves the published shape; the original procedural history is not repaired. Nominal source FK is available but is not connected to the mock sorter or physical hardware.
 
 The [Thor joint/motor map](docs/thor-joint-map.md) documents paired shoulder and differential wrist drives. A tested pure coordinate utility implements the pinned ROS convention; it does not establish physical calibration or spatial kinematics. The [Thor cost study](hardware/thor-cost-study.md) separates current listing subtotals from missing-cost allowances.
 

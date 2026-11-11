@@ -1,5 +1,7 @@
 # Preliminary mechanical analysis
 
+**Current Thor analysis:** see [CAD-derived loads](thor-load-analysis.md) and [geometry](thor-geometry.md). The lightweight-servo example below remains a separate preliminary sensitivity calculation.
+
 **Status: Thor-first CAD study approved; no mechanical design released.** Liam approved eight actuators: **seven arm steppers, including the dual-motor shoulder, plus one gripper actuator**, for six independently controlled arm axes. The priority is to extract and reproduce the existing Thor baseline before adapting it. See [CAD reuse](cad-reuse.md) for the source-design investigation.
 
 **The calculations below are a retained generic SO-101-like sensitivity example, not a Thor load model.** Its assumed 55 g servos, link lengths, torque results and mounting loads must not be used to size Thor motors, reductions, plates, power supplies or payload limits. No Thor CAD dimensions, moving masses, load sharing, joint limits or thermal behavior have been validated here. No fabrication or energizing is justified by these calculations.

@@ -26,3 +26,5 @@ jobs:
       - run: python -m pytest
       - run: raftel-sort --seed 42 --log demo.jsonl
       - run: python tools/engineering_analysis.py
+      - run: python tools/thor_load_analysis.py --cad-inventory hardware/cad/thor-mounted-geometry.json --output thor-load-ci.json
+      - run: python tools/thor_load_analysis.py --cad-inventory hardware/cad/thor-mounted-geometry.json --compare-materials --output thor-material-ci.json

@@ -1,5 +1,7 @@
 # Future mobile compatibility — interface study
 
+The new [Thor geometry](thor-geometry.md) and [load study](thor-load-analysis.md) supersede generic examples as the basis for future Thor-specific mounting calculations. The current analytical mass scenarios and support wrenches do not validate any mobile chassis or mount.
+
 **Status: analytical concept only; current mechanical direction is a Thor-first CAD study.** Liam approved eight actuators: seven arm steppers including the dual-motor shoulder, plus one gripper actuator, providing six independent arm axes. ARM-01 remains stationary. No mobile base, CAD interface, chassis collision model, or floor grasp has been built or validated. Preserve interfaces now without claiming desktop reach proves floor reach.
 
 The 55 g servo masses, 400 mm reach sphere and numerical mount loads below belong to a retained **generic SO-101-like sensitivity example**. They are not Thor dimensions, mass properties, actuator loads or power requirements. Thor must receive a separate CAD-derived model before any mounting or mobile suitability decision.

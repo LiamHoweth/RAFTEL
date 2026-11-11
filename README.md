@@ -8,6 +8,8 @@ RAFTEL is developing affordable, modular robots that can perform useful househol
 
 The repository begins with a runnable **logical sorting simulation**, engineering research, and preliminary calculations. This is not a physical robot demonstration. Final CAD, actuator sizing, camera perception, inverse kinematics, collision-aware trajectories, and physical validation remain engineering milestones. Design targets and research references are not verified performance specifications.
 
+The Thor compatibility assembly now restores and recalculates with pinned addons and a geometry-preserving static Art1 snapshot. The geometry study corroborates six native joint-axis lines and inventories 516 installed solids; conditional mass/load scenarios are reproducible from those inputs. The original Art1 feature history and physical qualification remain separate gates.
+
 Start with [nextSteps.md](nextSteps.md) for current evidence, blockers, and the next three actions for Liam and Codex. Future agents must follow [AGENTS.md](AGENTS.md).
 
 ## Run the software
@@ -39,6 +41,10 @@ See the [ARM-01 setup guide](arm-01/README.md) for Windows activation, configura
 | Existing mechanical references | [Research](arm-01/docs/research.md) |
 | Reusing proven CAD | [CAD reuse plan](arm-01/docs/cad-reuse.md) |
 | Mechanical selection rationale | [Mechanical ADR](docs/architecture-decisions/0001-mechanical-starting-point.md) |
+| Compatible Thor assembly | [Compatibility baseline](arm-01/docs/thor-assembly-compatibility.md) |
+| Thor geometry and frames | [Geometry study](arm-01/docs/thor-geometry.md) |
+| Thor mass and static loads | [Load study](arm-01/docs/thor-load-analysis.md) |
+| Thor transmissions | [Transmission study](arm-01/docs/thor-transmission-study.md) |
 | Thor joint/motor coordinates | [Joint map](arm-01/docs/thor-joint-map.md) |
 | Thor native CAD evidence | [Native validation](arm-01/docs/thor-native-validation.md) |
 | Thor cost evidence | [Cost study](arm-01/hardware/thor-cost-study.md) |

@@ -13,6 +13,8 @@ The first implementation is a lightweight Python task prototype. It accepts synt
 | Mock control | `src/raftel_arm01/control/mock.py` | Deterministic logical motion/grasp/place behavior and injected failures |
 | Synthetic observations | `src/raftel_arm01/perception/synthetic.py` | Seeded object positions/categories; no camera or image interpretation |
 | Planning | `src/raftel_arm01/planning/sorting.py` | Category/bin routing, reachable-target screening and abstract waypoints |
+| Nominal Thor FK | `src/raftel_arm01/kinematics/thor_model.py` | Pinned source forward transforms; native zero-pose axis-line cross-check, no calibrated limits or IK |
+| CAD/load tooling | `tools/extract_thor_geometry.py`, `tools/thor_load_analysis.py` | Mounted instances, provenance-bearing mass scenarios, gravity moments and explicit unresolved wrist contributions |
 | Thor drive convention | `src/raftel_arm01/kinematics/thor_drive.py` | Pure six-coordinate/seven-channel algebra; no spatial FK/IK or hardware commands |
 | Task execution | `src/raftel_arm01/tasks/sorter.py` | Sorting progression, bounded handling of failures and recorded outcomes |
 | CLI and evaluation | `src/raftel_arm01/cli.py` | Scenario setup, structured events and run summary |
@@ -44,11 +46,13 @@ Use metres, kilograms, radians where angular modeling is introduced, and newton-
 | --- | --- | --- |
 | Logical task simulation | Software decisions and abstract backend outcomes under a supplied scenario | Implemented scope; tests must establish behavior |
 | Analytical calculations | Equations evaluated using explicit assumed or measured inputs | Preliminary load/floor-reach estimates only |
-| Kinematic simulation | Joint-constrained forward/inverse transforms and modeled geometric feasibility | Future milestone |
+| Kinematic modeling | Forward transforms and declared rigid articulation | Nominal source FK and CAD zero-axis cross-check implemented; joint-constrained IK, limits and collision feasibility remain future |
 | Physics simulation | Inertia, contact, friction, actuator/dynamics and sensor models | Future milestone |
 | Physical operation | Calibrated hardware and independently observed real outcomes | Future milestone |
 
 A point within a spherical envelope is not necessarily reachable at a desired orientation. Safe waypoints cannot be established without full robot/link geometry and obstacle checks. The mock backend therefore must never be substituted directly for a hardware driver with the expectation that its paths are safe.
+
+The synthetic `arm_base` frame remains separate from the nominal Thor source `base_link` and native CAD frame. CAD-to-source rotation is documented in the geometry study; no camera/workstation or hardware calibration transform is implied by that cross-check.
 
 ## Integration sequence
 

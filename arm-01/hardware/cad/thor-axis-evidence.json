@@ -1,0 +1,246 @@
+{
+  "schema_version": 1,
+  "native_source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+  "validation_class": "native cached analytic geometry; unsigned zero-pose axis lines only",
+  "freecad_version": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "source_probe_sha256": "a805ca5fd7db5c833f198d303496c56a3fdcd5cd737582b391d9a6a59e9e77e9",
+  "source_base_from_native_rotation": [
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "source_base_from_native_translation_m": [
+    0,
+    0,
+    0
+  ],
+  "frame_evidence": "Pinned ROS arm mesh visual origins Rz(-PI/2); native bearing/shaft axis lines agree under this transform",
+  "joint_axes": [
+    {
+      "joint": "joint_1",
+      "native_object": "AssemblyBase::Bearing_16014zz001",
+      "native_face_index": 2,
+      "cylinder_radius_mm": 35.0,
+      "native_axis_point_m": [
+        5e-19,
+        1.7199999999999998e-17,
+        0.092
+      ],
+      "native_axis_direction": [
+        8.324255371940854e-17,
+        3.106654398326143e-16,
+        1.0
+      ],
+      "nominal_axis_point_in_native_frame_m": [
+        0,
+        0,
+        0.099
+      ],
+      "nominal_axis_direction_in_native_frame": [
+        0,
+        0,
+        1
+      ],
+      "axis_line_distance_m": 1.72072659071684e-17,
+      "unsigned_axis_collinearity_abs_dot": 1.0
+    },
+    {
+      "joint": "joint_2",
+      "native_object": "AssemblyArt2::Bearing_625ZZ002",
+      "native_face_index": 86,
+      "cylinder_radius_mm": 2.5,
+      "native_axis_point_m": [
+        -1.7302358085809236e-17,
+        0.05900000000000001,
+        0.20199999999999993
+      ],
+      "native_axis_direction": [
+        2.865956056235492e-16,
+        1.0000000000000002,
+        -6.000000000000005e-16
+      ],
+      "nominal_axis_point_in_native_frame_m": [
+        0,
+        0,
+        0.202
+      ],
+      "nominal_axis_direction_in_native_frame": [
+        0,
+        1,
+        0
+      ],
+      "axis_line_distance_m": 8.504539608423031e-17,
+      "unsigned_axis_collinearity_abs_dot": 1.0000000000000002
+    },
+    {
+      "joint": "joint_3",
+      "native_object": "AssemblyArt2::Bearing_625ZZ001",
+      "native_face_index": 86,
+      "cylinder_radius_mm": 2.5,
+      "native_axis_point_m": [
+        1.1464234501442291e-16,
+        0.059000000000000115,
+        0.36199999999999993
+      ],
+      "native_axis_direction": [
+        2.865956056235492e-16,
+        1.0000000000000002,
+        -6.000000000000005e-16
+      ],
+      "nominal_axis_point_in_native_frame_m": [
+        0,
+        0,
+        0.362
+      ],
+      "nominal_axis_direction_in_native_frame": [
+        0,
+        1,
+        0
+      ],
+      "axis_line_distance_m": 1.2737486086911168e-16,
+      "unsigned_axis_collinearity_abs_dot": 1.0000000000000002
+    },
+    {
+      "joint": "joint_4",
+      "native_object": "AssemblyArt4::Art4TransmissionColumn_Art4TransmissionColumn",
+      "native_face_index": 123,
+      "cylinder_radius_mm": 10.0,
+      "native_axis_point_m": [
+        -3.293596246642892e-17,
+        1.1935962466428922e-17,
+        0.4515
+      ],
+      "native_axis_direction": [
+        -1.5556349186104048e-16,
+        1.5556349186104044e-16,
+        1.0
+      ],
+      "nominal_axis_point_in_native_frame_m": [
+        0,
+        0,
+        0.4515
+      ],
+      "nominal_axis_direction_in_native_frame": [
+        0,
+        0,
+        1
+      ],
+      "axis_line_distance_m": 3.503205423023341e-17,
+      "unsigned_axis_collinearity_abs_dot": 1.0
+    },
+    {
+      "joint": "joint_5",
+      "native_object": "AssemblyArt4::Bearing_625ZZ001",
+      "native_face_index": 86,
+      "cylinder_radius_mm": 2.5,
+      "native_axis_point_m": [
+        1.4059999999999998e-16,
+        0.046,
+        0.556
+      ],
+      "native_axis_direction": [
+        3.000000000000003e-16,
+        1.0,
+        2.2204460492503104e-16
+      ],
+      "nominal_axis_point_in_native_frame_m": [
+        0,
+        0,
+        0.556
+      ],
+      "nominal_axis_direction_in_native_frame": [
+        0,
+        1,
+        0
+      ],
+      "axis_line_distance_m": 1.4059999999999998e-16,
+      "unsigned_axis_collinearity_abs_dot": 1.0
+    },
+    {
+      "joint": "joint_6",
+      "native_object": "AssemblyArt56::Bearing_625ZZ001",
+      "native_face_index": 86,
+      "cylinder_radius_mm": 2.5,
+      "native_axis_point_m": [
+        -3.485e-17,
+        -2.4949999999999997e-17,
+        0.5775
+      ],
+      "native_axis_direction": [
+        -1.5000000000000014e-16,
+        -1.8660254037844382e-16,
+        1.0
+      ],
+      "nominal_axis_point_in_native_frame_m": [
+        0,
+        0,
+        0.5695
+      ],
+      "nominal_axis_direction_in_native_frame": [
+        0,
+        0,
+        1
+      ],
+      "axis_line_distance_m": 4.286052962808556e-17,
+      "unsigned_axis_collinearity_abs_dot": 1.0
+    }
+  ],
+  "finger_bounds": [
+    {
+      "object": "Unnamed1_GripperFinger",
+      "world_bounds_mm": {
+        "XMin": -7.918808864301126,
+        "XMax": 7.629731746227261,
+        "YMin": 34.97871361111833,
+        "YMax": 55.039630475898846,
+        "ZMin": 641.0,
+        "ZMax": 702.5242557054092
+      }
+    },
+    {
+      "object": "Unnamed1_GripperFinger_mirrored",
+      "world_bounds_mm": {
+        "XMin": -7.679731561112892,
+        "XMax": 7.868809049415511,
+        "YMin": -55.03976653254688,
+        "YMax": -34.97884966776635,
+        "ZMin": 641.0,
+        "ZMax": 702.5242557054092
+      }
+    }
+  ],
+  "payload_point_proxy_native_m": [
+    0,
+    0,
+    0.7025242557054092
+  ],
+  "payload_point_definition": "Roll-axis intersection with most-distal finger bounding plane; explicit geometric load scenario, not calibrated contact TCP",
+  "source_urdf_midpoint_zero_z_m": 0.6875,
+  "native_distal_proxy_minus_source_midpoint_m": 0.015024255705409217,
+  "shoulder_to_distal_proxy_m": 0.5005242557054093,
+  "art1_mount_datum_to_distal_proxy_m": 0.6235242557054093,
+  "positive_command_signs_calibrated": false,
+  "joint_limits_verified": false,
+  "physical_validation": false
+}
