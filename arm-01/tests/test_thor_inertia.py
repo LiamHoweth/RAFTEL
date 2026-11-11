@@ -195,6 +195,21 @@ def test_near_rank_deficient_triangle_violation_cannot_hide_in_small_minors(epsi
         assert validate_centroidal_inertia(valid) == valid
 
 
+def test_finite_large_valid_tensor_does_not_overflow_half_trace():
+    tensor = ((1.7e308, 0, 0), (0, 1.7e308, 0), (0, 0, 1.7e308))
+    assert validate_centroidal_inertia(tensor) == tensor
+
+
+def test_subnormal_tensor_checks_preserve_sign_and_triangle_constraints():
+    tiny = math.ulp(0.0)
+    valid = ((tiny, 0, 0), (0, tiny, 0), (0, 0, tiny))
+    assert validate_centroidal_inertia(valid) == valid
+    with pytest.raises(ValueError, match="positive semidefinite"):
+        validate_centroidal_inertia(((-tiny, 0, 0), (0, -tiny, 0), (0, 0, -tiny)))
+    with pytest.raises(ValueError, match="triangle"):
+        validate_centroidal_inertia(((tiny, 0, 0), (0, tiny, 0), (0, 0, 3 * tiny)))
+
+
 @pytest.mark.parametrize(
     "bad", [((1, 0, 0), (0, 1, 0), (0, 0, -1)), ((2, 0, 0), (0, 1, 0), (0, 0, 1))]
 )

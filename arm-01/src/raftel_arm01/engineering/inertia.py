@@ -1,7 +1,8 @@
 """SI centroidal inertia algebra with explicit unknown-property propagation.
 
 These helpers do not invent inertia from a purchased mass or printed fraction.
-Native per-solid inertia extraction is a separate, presently unavailable input.
+Native geometric captures are separate inputs; they do not supply a physical
+density or nonuniform material distribution.
 """
 
 from __future__ import annotations
@@ -45,7 +46,9 @@ def _positive_semidefinite(matrix: Matrix3) -> bool:
     # Principal-minor tolerances square away large eigenvalue defects near
     # rank deficiency. A bounded symmetric Jacobi solve tests eigenvalues
     # directly, normalized so microscopic SI tensors receive the same check.
-    scaled = [[(matrix[i][j] / 2 + matrix[j][i] / 2) / scale for j in range(3)] for i in range(3)]
+    scaled = [
+        [(matrix[i][j] / scale + matrix[j][i] / scale) / 2 for j in range(3)] for i in range(3)
+    ]
     for _ in range(24):
         p, q = max(((0, 1), (0, 2), (1, 2)), key=lambda pair: abs(scaled[pair[0]][pair[1]]))
         off = scaled[p][q]
@@ -83,9 +86,10 @@ def validate_centroidal_inertia(value: Sequence[Sequence[float]]) -> Matrix3:
         raise ValueError("inertia tensor must be symmetric")
     if not _positive_semidefinite(matrix):
         raise ValueError("inertia tensor must be positive semidefinite")
-    half_trace = math.fsum(matrix[i][i] / 2 for i in range(3))
+    normalized = tuple(tuple(item / scale if scale else 0.0 for item in row) for row in matrix)
+    half_trace = math.fsum(normalized[i][i] / 2 for i in range(3))
     covariance = tuple(
-        tuple((half_trace if i == j else 0) - matrix[i][j] for j in range(3)) for i in range(3)
+        tuple((half_trace if i == j else 0) - normalized[i][j] for j in range(3)) for i in range(3)
     )
     if not _positive_semidefinite(covariance):
         raise ValueError("inertia principal moments violate triangle inequalities")

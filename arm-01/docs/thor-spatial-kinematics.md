@@ -7,9 +7,11 @@ physical travel limit or fabrication release. The mathematical model remains
 the pinned [Thor-ROS source](https://github.com/AngelLM/Thor-ROS/blob/e11a56b5aa0d89f0b68a3ea7bd084eab4a050952/ws_thor/src/thor_urdf/urdf/thor.urdf.xacro).
 Its byte SHA256 is
 `19b83e26f86aae15fda5c21418f768d0e3ed1b0d1daa6d149abd9b45ceccd8b9`.
-The separate [native zero-axis evidence](../hardware/cad/thor-axis-evidence.json)
-still corroborates unsigned zero-pose lines only. No native nonzero-pose run
-was available on this Windows host.
+The original [native zero-axis evidence](../hardware/cad/thor-axis-evidence.json)
+corroborates unsigned zero-pose lines. The later [Windows pose-frame check](thor-native-pose-frames.md)
+also verifies three nonzero proximal-four-axis study poses with q5/q6 fixed at
+zero. It checks axis lines, a fold frame and refreshed shape markers; 39 touched
+objects remain, and full six-axis geometry, calibration and clearance are unverified.
 
 ## Frames and provenance
 
