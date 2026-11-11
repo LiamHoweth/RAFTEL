@@ -190,6 +190,30 @@ def test_worker_near_rank_defect_rejected_in_rotated_and_scaled_bases(epsilon):
         assert probe._matrix([[scale, 0, 0], [0, scale, 0], [0, 0, 0]])
 
 
+def test_worker_finite_large_valid_tensor_does_not_overflow_half_trace():
+    tensor = [[1.7e308, 0, 0], [0, 1.7e308, 0], [0, 0, 1.7e308]]
+    assert probe._matrix(tensor) == tensor
+
+
+def test_worker_subnormal_tensor_checks_keep_sign_and_triangle_constraints():
+    tiny = math.ulp(0.0)
+    tensor = [[tiny, 0, 0], [0, tiny, 0], [0, 0, tiny]]
+    assert probe._matrix(tensor) == tensor
+    with pytest.raises(ValueError, match="nonnegative|PSD/triangle"):
+        probe._matrix([[-tiny, 0, 0], [0, -tiny, 0], [0, 0, -tiny]])
+    with pytest.raises(ValueError, match="PSD/triangle"):
+        probe._matrix([[tiny, 0, 0], [0, tiny, 0], [0, 0, 3 * tiny]])
+
+
+def test_selected_worker_rejects_conflicting_generic_entry_before_paths_or_native_import(
+    monkeypatch,
+):
+    monkeypatch.setenv("RAFTEL_RUN_FREECAD_AUDIT", "1")
+    monkeypatch.setenv(probe.PROBE_FLAG, "1")
+    with pytest.raises(ValueError, match="generic audit entry flag conflicts"):
+        probe.native_capture()
+
+
 def test_native_closed_solid_guard_does_not_treat_valid_open_shape_as_accepted():
     matrix = SimpleNamespace(
         **{f"A{i}{j}": 1 / 6 if i == j else 0 for i in range(1, 4) for j in range(1, 4)}
@@ -377,3 +401,28 @@ def test_retained_actual_native_capture_replays_units_fixtures_and_source_contra
         assert not row["draft_stl"]["mesh_self_intersections_checked"]
         assert not row["draft_stl"]["print_or_fit_qualification"]
     assert len(frame_ids) == 8
+
+
+def test_normalized_worker_native_replay_preserves_prior_geometry_and_matches_current_code():
+    original = json.loads(
+        (ROOT / "hardware/cad/thor-native-solid-properties-v1.json").read_text()
+    )
+    replay = json.loads(
+        (ROOT / "hardware/cad/thor-native-solid-properties-normalized-v1.json").read_text()
+    )
+    assert replay["capture_script_sha256"] == hashlib.sha256(
+        (ROOT / "tools/probe_thor_solid_properties_freecad.py").read_bytes()
+    ).hexdigest()
+    assert replay["capture_script_sha256"] != original["capture_script_sha256"]
+    for key in (
+        "request", "request_sha256", "selections", "primitive_fixtures",
+        "source_copy_sha256_before", "source_copy_sha256_after",
+    ):
+        assert replay[key] == original[key]
+    assert replay["audit_status"] == "complete_selected_cached_geometry_only"
+    assert replay["errors"] == []
+    assert replay["open_document_count_before"] == replay["open_document_count_after"] == 0
+    for key in replay["actual_runtime_paths"]:
+        assert PureWindowsPath(replay["actual_runtime_paths"][key]) == PureWindowsPath(
+            replay["expected_isolated_paths"][key]
+        )

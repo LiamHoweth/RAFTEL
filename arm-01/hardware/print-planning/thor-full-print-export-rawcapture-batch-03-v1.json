@@ -1,0 +1,5472 @@
+{
+  "schema_version": 1,
+  "evidence_class": "native_selected_cached_BRep_geometric_properties_not_history_or_physical_validation",
+  "audit_status": "complete_selected_cached_geometry_only",
+  "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+  "declared_revision_not_independently_authenticated_by_worker": true,
+  "source_authentication_boundary": "Worker checks requested archive/BRep/XML pins; launcher and independent audit must authenticate those hashes against the declared upstream revision.",
+  "request_sha256": "d6dc71dd340520f19ab442cd33ad7ed66dd87288aa228a1572ccdb95b1c67746",
+  "request": {
+    "schema_version": 1,
+    "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+    "evidence_class": "selected_saved_BRep_properties_request",
+    "selections": [
+      {
+        "selection_id": "print-17-art3pulley-body-nominal",
+        "source_file": "freecad-src/Art3Pulley.fcstd",
+        "source_sha256": "d450cc565e722981346fc2b1aa3662474c83d574ca39a5602bacb98d8619fd9e",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "f0185fed78de6bf411c13c5c7b971279990ae06a014621c32cb5642f0f1b1d12",
+        "xml_placement": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "selection_evidence": "Read-only original-archive saved Shape descriptor; no history rebuild/native geometry validity or print qualification",
+        "uniform_density": null,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-17-art3pulley-body-nominal-cached-native-draft.stl"
+        },
+        "reference_capture": {
+          "evidence_class": "full_print_registry_host_preparation_not_native_export",
+          "input_canonical_sha256": {
+            "printable_asset_manifest": "4a0deebe94a6da554fc3ce7d56d749e0a639c2d2a127eb8f59cea0a360b4128d",
+            "source_inspection": "063784958f351e6ef676cf9be3145544b6ebd73d1bdcb1b74d22e645ea563a3b",
+            "mounted_inventory": "e52e699ff7c0d9e1dc3eedf9416e7e1da84ae6e13a5152cb5be6cd4f14b29c31"
+          },
+          "canonical_variant_registry_sha256": "6a77fe8cb3063ad2329b10e80c35de8c161312d4f7ed16afa853945718a3f49b",
+          "counts": {
+            "installed_printed_leaves": 65,
+            "unique_source_assets": 46,
+            "export_geometry_variants": 47,
+            "reflected_installed_leaves": 1
+          },
+          "original_archive_count_verified": 57,
+          "original_archive_set_canonical_sha256": "8f6c072e46870388020b30a73430b7700ff49dbca7abafbc21598fbcd6a6dadb",
+          "original_archive_bytes_verified_before_after": true,
+          "asset_id": "Art3Pulley::Body",
+          "geometry_variant": "nominal",
+          "quantity_required": 1,
+          "source_asset_canonical_sha256": "58e245d15d0918723e4ae2ee974c853ea56c73222953850446e758c47b9bbfc4",
+          "installed_instances": [
+            {
+              "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Art3Pulley_Art3Pulley",
+              "linked_object": "Art3Pulley::Body",
+              "variant_id": "nominal",
+              "geometry_operation": "source_shape",
+              "preserved_installed_volume_mm3": 52315.7628201928,
+              "preserved_installed_COM_m": [
+                -1.1052461867342711e-08,
+                -0.04405240413972371,
+                0.36535561392114124
+              ],
+              "installed_coordinate_frame": "native Assembly::Model zero-pose frame, metres",
+              "source_to_installed_transform": null
+            }
+          ],
+          "installed_instance_set_canonical_sha256": "28cde157dec7be104277c3c0e7c0ee3067073dcd129f6488ee21874220f3c157",
+          "history_status": "cached_final_shape; not_rebuilt_by_this_tool",
+          "frame_policy": "Raw saved BRep coordinates as stored in the selected archive entry. Apply no XML/object/ancestor/link placement while reading. Native worker must record the actual Shape.Placement and compare it separately with XML placement. No source-to-installed transform is inferred from bounds, COM or identity own placement.",
+          "archive_bytes": 336229,
+          "archive_shape_entry_bytes": 150137,
+          "document_xml_sha256": "e72ef05905a845c822faccb118b7bdf1bef62de24b8b70766b0773a737b6dce9",
+          "raw_xml_placement_attributes": {
+            "A": "0.0000000000000000",
+            "Ox": "0.0000000000000000",
+            "Oy": "0.0000000000000000",
+            "Oz": "1.0000000000000000",
+            "Px": "0.0000000000000000",
+            "Py": "0.0000000000000000",
+            "Pz": "0.0000000000000000",
+            "Q0": "0.0000000000000000",
+            "Q1": "0.0000000000000000",
+            "Q2": "0.0000000000000000",
+            "Q3": "1.0000000000000000"
+          },
+          "saved_xml_context": {
+            "object_saved_properties": {
+              "Placement": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Placement",
+                  "status": "8388608",
+                  "type": "App::PropertyPlacement"
+                },
+                "children": [
+                  {
+                    "tag": "PropertyPlacement",
+                    "attributes": {
+                      "A": "0.0000000000000000",
+                      "Ox": "0.0000000000000000",
+                      "Oy": "0.0000000000000000",
+                      "Oz": "1.0000000000000000",
+                      "Px": "0.0000000000000000",
+                      "Py": "0.0000000000000000",
+                      "Pz": "0.0000000000000000",
+                      "Q0": "0.0000000000000000",
+                      "Q1": "0.0000000000000000",
+                      "Q2": "0.0000000000000000",
+                      "Q3": "1.0000000000000000"
+                    }
+                  }
+                ]
+              },
+              "Tip": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Tip",
+                  "type": "App::PropertyLink"
+                },
+                "children": [
+                  {
+                    "tag": "Link",
+                    "attributes": {
+                      "value": "Pocket010"
+                    }
+                  }
+                ]
+              },
+              "Group": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Group",
+                  "type": "App::PropertyLinkList"
+                },
+                "children": [
+                  {
+                    "tag": "LinkList",
+                    "attributes": {
+                      "count": "37"
+                    },
+                    "children": [
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Revolution"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch001"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "DatumPlane"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch002"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket001"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "DatumPlane001"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch003"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket002"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch004"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket003"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch005"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket004"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch006"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket005"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch007"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket006"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch008"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket007"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch009"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket008"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Mirrored"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch010"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket009"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch011"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket010"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_Art3Pulley"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_Bearing"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_BearingFix"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_Belt"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_1"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_2"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_3"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_4"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_5"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_6"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "ExpressionEngine": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "ExpressionEngine",
+                  "status": "67108864",
+                  "type": "App::PropertyExpressionEngine"
+                },
+                "children": [
+                  {
+                    "tag": "ExpressionEngine",
+                    "attributes": {
+                      "count": "0"
+                    }
+                  }
+                ]
+              }
+            },
+            "direct_containing_groups": [],
+            "saved_Source_link_context": [],
+            "context_interpretation": "saved XML only; no attachment evaluation, external-document execution or mounted transform recovery"
+          },
+          "saved_xml_context_canonical_sha256": "013c4744fbbdbacaf3304d0124c4312463a33d55170a6b66e44a20e7a0b77757",
+          "upstream_attribution": {
+            "creator": "AngelLM and Thor contributors",
+            "project": "Thor",
+            "repository": "https://github.com/AngelLM/Thor",
+            "declared_repository_license": "CC-BY-SA-4.0",
+            "license_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/LICENSE",
+            "obligations": [
+              "Retain creator, source, revision and license link with derivatives/exports",
+              "Identify modifications/reflections and preserve applicable ShareAlike obligations",
+              "Embedded document metadata conflict remains an attribution review gate",
+              "No RAFTEL company-wide license is selected by this manifest"
+            ]
+          },
+          "worker_batch_limit": 8,
+          "qualification": {
+            "native_cached_BRep_validated": false,
+            "feature_history_rebuilt": false,
+            "exact_Art1_migration_accepted": false,
+            "mesh_topology_or_fidelity_accepted": false,
+            "mounted_transform_recovered": false,
+            "physical_mass_or_inertia_known": false,
+            "manufacturing_released": false
+          }
+        },
+        "upstream_stl_reference": null
+      },
+      {
+        "selection_id": "print-18-art3tensionerbody-body-nominal",
+        "source_file": "freecad-src/Art3TensionerBody.fcstd",
+        "source_sha256": "f105e77dbb72523f842e58b9bcd9a54c3ec5f5eaf771a0798851cf7f13752a55",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "e3ddeed778265d533c28e93dcf38af4ca7dbf021c7111cf18175976ef1adefcb",
+        "xml_placement": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "selection_evidence": "Read-only original-archive saved Shape descriptor; no history rebuild/native geometry validity or print qualification",
+        "uniform_density": null,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-18-art3tensionerbody-body-nominal-cached-native-draft.stl"
+        },
+        "reference_capture": {
+          "evidence_class": "full_print_registry_host_preparation_not_native_export",
+          "input_canonical_sha256": {
+            "printable_asset_manifest": "4a0deebe94a6da554fc3ce7d56d749e0a639c2d2a127eb8f59cea0a360b4128d",
+            "source_inspection": "063784958f351e6ef676cf9be3145544b6ebd73d1bdcb1b74d22e645ea563a3b",
+            "mounted_inventory": "e52e699ff7c0d9e1dc3eedf9416e7e1da84ae6e13a5152cb5be6cd4f14b29c31"
+          },
+          "canonical_variant_registry_sha256": "6a77fe8cb3063ad2329b10e80c35de8c161312d4f7ed16afa853945718a3f49b",
+          "counts": {
+            "installed_printed_leaves": 65,
+            "unique_source_assets": 46,
+            "export_geometry_variants": 47,
+            "reflected_installed_leaves": 1
+          },
+          "original_archive_count_verified": 57,
+          "original_archive_set_canonical_sha256": "8f6c072e46870388020b30a73430b7700ff49dbca7abafbc21598fbcd6a6dadb",
+          "original_archive_bytes_verified_before_after": true,
+          "asset_id": "Art3TensionerBody::Body",
+          "geometry_variant": "nominal",
+          "quantity_required": 2,
+          "source_asset_canonical_sha256": "86a5cea8689dcc236ffcee39192e97a3a88c20e4535879cd2eb192864bce1aeb",
+          "installed_instances": [
+            {
+              "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art3TensionerBody_Art3TensionerBody",
+              "linked_object": "Art3TensionerBody::Body",
+              "variant_id": "nominal",
+              "geometry_operation": "source_shape",
+              "preserved_installed_volume_mm3": 872.4812942676833,
+              "preserved_installed_COM_m": [
+                -0.01724429550294443,
+                -0.05771127747118361,
+                0.30185
+              ],
+              "installed_coordinate_frame": "native Assembly::Model zero-pose frame, metres",
+              "source_to_installed_transform": null
+            },
+            {
+              "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art3TensionerBody_Art3TensionerBody001",
+              "linked_object": "Art3TensionerBody::Body",
+              "variant_id": "nominal",
+              "geometry_operation": "source_shape",
+              "preserved_installed_volume_mm3": 872.4812942676834,
+              "preserved_installed_COM_m": [
+                0.01724429550294438,
+                -0.05771127747118362,
+                0.30185
+              ],
+              "installed_coordinate_frame": "native Assembly::Model zero-pose frame, metres",
+              "source_to_installed_transform": null
+            }
+          ],
+          "installed_instance_set_canonical_sha256": "64d27972fd6f6b99644f7f805c0ced316997b92656f90525699b0527103a56c7",
+          "history_status": "cached_final_shape; not_rebuilt_by_this_tool",
+          "frame_policy": "Raw saved BRep coordinates as stored in the selected archive entry. Apply no XML/object/ancestor/link placement while reading. Native worker must record the actual Shape.Placement and compare it separately with XML placement. No source-to-installed transform is inferred from bounds, COM or identity own placement.",
+          "archive_bytes": 33816,
+          "archive_shape_entry_bytes": 25920,
+          "document_xml_sha256": "e0da25d4415c4131ad351d39d10341eb5a19b1ed6355a1044f8bc8b311c4533d",
+          "raw_xml_placement_attributes": {
+            "A": "0.0000000000000000",
+            "Ox": "0.0000000000000000",
+            "Oy": "0.0000000000000000",
+            "Oz": "1.0000000000000000",
+            "Px": "0.0000000000000000",
+            "Py": "0.0000000000000000",
+            "Pz": "0.0000000000000000",
+            "Q0": "0.0000000000000000",
+            "Q1": "0.0000000000000000",
+            "Q2": "0.0000000000000000",
+            "Q3": "1.0000000000000000"
+          },
+          "saved_xml_context": {
+            "object_saved_properties": {
+              "Placement": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Placement",
+                  "status": "8388608",
+                  "type": "App::PropertyPlacement"
+                },
+                "children": [
+                  {
+                    "tag": "PropertyPlacement",
+                    "attributes": {
+                      "A": "0.0000000000000000",
+                      "Ox": "0.0000000000000000",
+                      "Oy": "0.0000000000000000",
+                      "Oz": "1.0000000000000000",
+                      "Px": "0.0000000000000000",
+                      "Py": "0.0000000000000000",
+                      "Pz": "0.0000000000000000",
+                      "Q0": "0.0000000000000000",
+                      "Q1": "0.0000000000000000",
+                      "Q2": "0.0000000000000000",
+                      "Q3": "1.0000000000000000"
+                    }
+                  }
+                ]
+              },
+              "Tip": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Tip",
+                  "type": "App::PropertyLink"
+                },
+                "children": [
+                  {
+                    "tag": "Link",
+                    "attributes": {
+                      "value": "Pocket001"
+                    }
+                  }
+                ]
+              },
+              "Group": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Group",
+                  "type": "App::PropertyLinkList"
+                },
+                "children": [
+                  {
+                    "tag": "LinkList",
+                    "attributes": {
+                      "count": "10"
+                    },
+                    "children": [
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pad"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch001"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "DatumPlane"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch002"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket001"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_Art3TensionerBody"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_TopShaft"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_1"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "ExpressionEngine": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "ExpressionEngine",
+                  "status": "67108864",
+                  "type": "App::PropertyExpressionEngine"
+                },
+                "children": [
+                  {
+                    "tag": "ExpressionEngine",
+                    "attributes": {
+                      "count": "0"
+                    }
+                  }
+                ]
+              }
+            },
+            "direct_containing_groups": [],
+            "saved_Source_link_context": [],
+            "context_interpretation": "saved XML only; no attachment evaluation, external-document execution or mounted transform recovery"
+          },
+          "saved_xml_context_canonical_sha256": "efc73e1f861620dc3b4a714fe888a4050f758e33fdab4044198b3e27815a07b6",
+          "upstream_attribution": {
+            "creator": "AngelLM and Thor contributors",
+            "project": "Thor",
+            "repository": "https://github.com/AngelLM/Thor",
+            "declared_repository_license": "CC-BY-SA-4.0",
+            "license_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/LICENSE",
+            "obligations": [
+              "Retain creator, source, revision and license link with derivatives/exports",
+              "Identify modifications/reflections and preserve applicable ShareAlike obligations",
+              "Embedded document metadata conflict remains an attribution review gate",
+              "No RAFTEL company-wide license is selected by this manifest"
+            ]
+          },
+          "worker_batch_limit": 8,
+          "qualification": {
+            "native_cached_BRep_validated": false,
+            "feature_history_rebuilt": false,
+            "exact_Art1_migration_accepted": false,
+            "mesh_topology_or_fidelity_accepted": false,
+            "mounted_transform_recovered": false,
+            "physical_mass_or_inertia_known": false,
+            "manufacturing_released": false
+          }
+        },
+        "upstream_stl_reference": null
+      },
+      {
+        "selection_id": "print-19-art3tensionerpulley-body-nominal",
+        "source_file": "freecad-src/Art3TensionerPulley.fcstd",
+        "source_sha256": "2bbf0c3c522db8b2247ed6f3dbce48cd111d4d21349f05cab5bc01d3812102da",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "0cf600a184aea1bae698fb1677ccbe8b73cbb4315f15d2a1c4f6e795393919f0",
+        "xml_placement": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "selection_evidence": "Read-only original-archive saved Shape descriptor; no history rebuild/native geometry validity or print qualification",
+        "uniform_density": null,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-19-art3tensionerpulley-body-nominal-cached-native-draft.stl"
+        },
+        "reference_capture": {
+          "evidence_class": "full_print_registry_host_preparation_not_native_export",
+          "input_canonical_sha256": {
+            "printable_asset_manifest": "4a0deebe94a6da554fc3ce7d56d749e0a639c2d2a127eb8f59cea0a360b4128d",
+            "source_inspection": "063784958f351e6ef676cf9be3145544b6ebd73d1bdcb1b74d22e645ea563a3b",
+            "mounted_inventory": "e52e699ff7c0d9e1dc3eedf9416e7e1da84ae6e13a5152cb5be6cd4f14b29c31"
+          },
+          "canonical_variant_registry_sha256": "6a77fe8cb3063ad2329b10e80c35de8c161312d4f7ed16afa853945718a3f49b",
+          "counts": {
+            "installed_printed_leaves": 65,
+            "unique_source_assets": 46,
+            "export_geometry_variants": 47,
+            "reflected_installed_leaves": 1
+          },
+          "original_archive_count_verified": 57,
+          "original_archive_set_canonical_sha256": "8f6c072e46870388020b30a73430b7700ff49dbca7abafbc21598fbcd6a6dadb",
+          "original_archive_bytes_verified_before_after": true,
+          "asset_id": "Art3TensionerPulley::Body",
+          "geometry_variant": "nominal",
+          "quantity_required": 2,
+          "source_asset_canonical_sha256": "463daec1588ee54bc8c3296b7ad186652b5c8f735cee49bd7c904be1c658ba4e",
+          "installed_instances": [
+            {
+              "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art3TensionerPulley_Art3TensionerPulley",
+              "linked_object": "Art3TensionerPulley::Body",
+              "variant_id": "nominal",
+              "geometry_operation": "source_shape",
+              "preserved_installed_volume_mm3": 1161.2661624545656,
+              "preserved_installed_COM_m": [
+                -0.014500000000000008,
+                -0.04838772936012502,
+                0.30185
+              ],
+              "installed_coordinate_frame": "native Assembly::Model zero-pose frame, metres",
+              "source_to_installed_transform": null
+            },
+            {
+              "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art3TensionerPulley_Art3TensionerPulley001",
+              "linked_object": "Art3TensionerPulley::Body",
+              "variant_id": "nominal",
+              "geometry_operation": "source_shape",
+              "preserved_installed_volume_mm3": 1161.2661624545653,
+              "preserved_installed_COM_m": [
+                0.01449999999999996,
+                -0.048387729360125024,
+                0.30184999999999995
+              ],
+              "installed_coordinate_frame": "native Assembly::Model zero-pose frame, metres",
+              "source_to_installed_transform": null
+            }
+          ],
+          "installed_instance_set_canonical_sha256": "076d54becae57a04faeea2e515573ae26e4c9502dc81a6d60090600a867a7b29",
+          "history_status": "cached_final_shape; not_rebuilt_by_this_tool",
+          "frame_policy": "Raw saved BRep coordinates as stored in the selected archive entry. Apply no XML/object/ancestor/link placement while reading. Native worker must record the actual Shape.Placement and compare it separately with XML placement. No source-to-installed transform is inferred from bounds, COM or identity own placement.",
+          "archive_bytes": 14250,
+          "archive_shape_entry_bytes": 12848,
+          "document_xml_sha256": "c743d1c011663132158dc7c028420367d64a9060c1302ecd21e42833149ab515",
+          "raw_xml_placement_attributes": {
+            "A": "0.0000000000000000",
+            "Ox": "0.0000000000000000",
+            "Oy": "0.0000000000000000",
+            "Oz": "1.0000000000000000",
+            "Px": "0.0000000000000000",
+            "Py": "0.0000000000000000",
+            "Pz": "0.0000000000000000",
+            "Q0": "0.0000000000000000",
+            "Q1": "0.0000000000000000",
+            "Q2": "0.0000000000000000",
+            "Q3": "1.0000000000000000"
+          },
+          "saved_xml_context": {
+            "object_saved_properties": {
+              "Placement": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Placement",
+                  "status": "8388608",
+                  "type": "App::PropertyPlacement"
+                },
+                "children": [
+                  {
+                    "tag": "PropertyPlacement",
+                    "attributes": {
+                      "A": "0.0000000000000000",
+                      "Ox": "0.0000000000000000",
+                      "Oy": "0.0000000000000000",
+                      "Oz": "1.0000000000000000",
+                      "Px": "0.0000000000000000",
+                      "Py": "0.0000000000000000",
+                      "Pz": "0.0000000000000000",
+                      "Q0": "0.0000000000000000",
+                      "Q1": "0.0000000000000000",
+                      "Q2": "0.0000000000000000",
+                      "Q3": "1.0000000000000000"
+                    }
+                  }
+                ]
+              },
+              "Tip": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Tip",
+                  "type": "App::PropertyLink"
+                },
+                "children": [
+                  {
+                    "tag": "Link",
+                    "attributes": {
+                      "value": "Revolution"
+                    }
+                  }
+                ]
+              },
+              "Group": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Group",
+                  "type": "App::PropertyLinkList"
+                },
+                "children": [
+                  {
+                    "tag": "LinkList",
+                    "attributes": {
+                      "count": "4"
+                    },
+                    "children": [
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Revolution"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_Art3TensionerPulley"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_Bearing"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "ExpressionEngine": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "ExpressionEngine",
+                  "status": "67108864",
+                  "type": "App::PropertyExpressionEngine"
+                },
+                "children": [
+                  {
+                    "tag": "ExpressionEngine",
+                    "attributes": {
+                      "count": "0"
+                    }
+                  }
+                ]
+              }
+            },
+            "direct_containing_groups": [],
+            "saved_Source_link_context": [],
+            "context_interpretation": "saved XML only; no attachment evaluation, external-document execution or mounted transform recovery"
+          },
+          "saved_xml_context_canonical_sha256": "0139fb2a1e4a6e5280317ac738737a4a7abec59975a1515af3c382bf1c993812",
+          "upstream_attribution": {
+            "creator": "AngelLM and Thor contributors",
+            "project": "Thor",
+            "repository": "https://github.com/AngelLM/Thor",
+            "declared_repository_license": "CC-BY-SA-4.0",
+            "license_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/LICENSE",
+            "obligations": [
+              "Retain creator, source, revision and license link with derivatives/exports",
+              "Identify modifications/reflections and preserve applicable ShareAlike obligations",
+              "Embedded document metadata conflict remains an attribution review gate",
+              "No RAFTEL company-wide license is selected by this manifest"
+            ]
+          },
+          "worker_batch_limit": 8,
+          "qualification": {
+            "native_cached_BRep_validated": false,
+            "feature_history_rebuilt": false,
+            "exact_Art1_migration_accepted": false,
+            "mesh_topology_or_fidelity_accepted": false,
+            "mounted_transform_recovered": false,
+            "physical_mass_or_inertia_known": false,
+            "manufacturing_released": false
+          }
+        },
+        "upstream_stl_reference": null
+      },
+      {
+        "selection_id": "print-20-art4bearingfix-body-nominal",
+        "source_file": "freecad-src/Art4BearingFix.fcstd",
+        "source_sha256": "248a21d01617b0e784a9743d186ab698d6406a9eeba6e6a27c2c426baf8dca55",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "4a41fee26bae52f21a372b86177a0dfb53501b2270c2ee2bbd0416aab09b6535",
+        "xml_placement": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "selection_evidence": "Read-only original-archive saved Shape descriptor; no history rebuild/native geometry validity or print qualification",
+        "uniform_density": null,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-20-art4bearingfix-body-nominal-cached-native-draft.stl"
+        },
+        "reference_capture": {
+          "evidence_class": "full_print_registry_host_preparation_not_native_export",
+          "input_canonical_sha256": {
+            "printable_asset_manifest": "4a0deebe94a6da554fc3ce7d56d749e0a639c2d2a127eb8f59cea0a360b4128d",
+            "source_inspection": "063784958f351e6ef676cf9be3145544b6ebd73d1bdcb1b74d22e645ea563a3b",
+            "mounted_inventory": "e52e699ff7c0d9e1dc3eedf9416e7e1da84ae6e13a5152cb5be6cd4f14b29c31"
+          },
+          "canonical_variant_registry_sha256": "6a77fe8cb3063ad2329b10e80c35de8c161312d4f7ed16afa853945718a3f49b",
+          "counts": {
+            "installed_printed_leaves": 65,
+            "unique_source_assets": 46,
+            "export_geometry_variants": 47,
+            "reflected_installed_leaves": 1
+          },
+          "original_archive_count_verified": 57,
+          "original_archive_set_canonical_sha256": "8f6c072e46870388020b30a73430b7700ff49dbca7abafbc21598fbcd6a6dadb",
+          "original_archive_bytes_verified_before_after": true,
+          "asset_id": "Art4BearingFix::Body",
+          "geometry_variant": "nominal",
+          "quantity_required": 2,
+          "source_asset_canonical_sha256": "bb651a826b46d722163d5e16de969ef3b0b6ed8ddb1f8cd592750888e0e49898",
+          "installed_instances": [
+            {
+              "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4BearingFix_Art4BearingFix",
+              "linked_object": "Art4BearingFix::Body",
+              "variant_id": "nominal",
+              "geometry_operation": "source_shape",
+              "preserved_installed_volume_mm3": 885.5804357599254,
+              "preserved_installed_COM_m": [
+                -7.751620707758567e-10,
+                0.052776499106458985,
+                0.5559122103699283
+              ],
+              "installed_coordinate_frame": "native Assembly::Model zero-pose frame, metres",
+              "source_to_installed_transform": null
+            },
+            {
+              "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4BearingFix_Art4BearingFix001",
+              "linked_object": "Art4BearingFix::Body",
+              "variant_id": "nominal",
+              "geometry_operation": "source_shape",
+              "preserved_installed_volume_mm3": 885.5804357599255,
+              "preserved_installed_COM_m": [
+                7.751622860893384e-10,
+                -0.05277649910645899,
+                0.55591221036993
+              ],
+              "installed_coordinate_frame": "native Assembly::Model zero-pose frame, metres",
+              "source_to_installed_transform": null
+            }
+          ],
+          "installed_instance_set_canonical_sha256": "ad322f2b6a348d199d05accfcdc3db528813bac081d9d3b67474cd13ba6d9114",
+          "history_status": "cached_final_shape; not_rebuilt_by_this_tool",
+          "frame_policy": "Raw saved BRep coordinates as stored in the selected archive entry. Apply no XML/object/ancestor/link placement while reading. Native worker must record the actual Shape.Placement and compare it separately with XML placement. No source-to-installed transform is inferred from bounds, COM or identity own placement.",
+          "archive_bytes": 72975,
+          "archive_shape_entry_bytes": 68081,
+          "document_xml_sha256": "e739c683636cfc6e841c07b5de7ea2963ae9b1152d1edafb416f73dff3bcc0bd",
+          "raw_xml_placement_attributes": {
+            "A": "0.0000000000000000",
+            "Ox": "0.0000000000000000",
+            "Oy": "0.0000000000000000",
+            "Oz": "1.0000000000000000",
+            "Px": "0.0000000000000000",
+            "Py": "0.0000000000000000",
+            "Pz": "0.0000000000000000",
+            "Q0": "0.0000000000000000",
+            "Q1": "0.0000000000000000",
+            "Q2": "0.0000000000000000",
+            "Q3": "1.0000000000000000"
+          },
+          "saved_xml_context": {
+            "object_saved_properties": {
+              "Placement": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Placement",
+                  "status": "8388608",
+                  "type": "App::PropertyPlacement"
+                },
+                "children": [
+                  {
+                    "tag": "PropertyPlacement",
+                    "attributes": {
+                      "A": "0.0000000000000000",
+                      "Ox": "0.0000000000000000",
+                      "Oy": "0.0000000000000000",
+                      "Oz": "1.0000000000000000",
+                      "Px": "0.0000000000000000",
+                      "Py": "0.0000000000000000",
+                      "Pz": "0.0000000000000000",
+                      "Q0": "0.0000000000000000",
+                      "Q1": "0.0000000000000000",
+                      "Q2": "0.0000000000000000",
+                      "Q3": "1.0000000000000000"
+                    }
+                  }
+                ]
+              },
+              "Tip": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Tip",
+                  "type": "App::PropertyLink"
+                },
+                "children": [
+                  {
+                    "tag": "Link",
+                    "attributes": {
+                      "value": "Groove"
+                    }
+                  }
+                ]
+              },
+              "Group": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Group",
+                  "type": "App::PropertyLinkList"
+                },
+                "children": [
+                  {
+                    "tag": "LinkList",
+                    "attributes": {
+                      "count": "12"
+                    },
+                    "children": [
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pad"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch001"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch002"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket001"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch003"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "DatumLine"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Groove"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_Art4BearingFix"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_1"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_2"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "ExpressionEngine": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "ExpressionEngine",
+                  "status": "67108864",
+                  "type": "App::PropertyExpressionEngine"
+                },
+                "children": [
+                  {
+                    "tag": "ExpressionEngine",
+                    "attributes": {
+                      "count": "0"
+                    }
+                  }
+                ]
+              }
+            },
+            "direct_containing_groups": [],
+            "saved_Source_link_context": [],
+            "context_interpretation": "saved XML only; no attachment evaluation, external-document execution or mounted transform recovery"
+          },
+          "saved_xml_context_canonical_sha256": "3bb96bafa81a1c1b14b14701e5e8e181641b3b27e1e7ef4a3bc039bb648e2be1",
+          "upstream_attribution": {
+            "creator": "AngelLM and Thor contributors",
+            "project": "Thor",
+            "repository": "https://github.com/AngelLM/Thor",
+            "declared_repository_license": "CC-BY-SA-4.0",
+            "license_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/LICENSE",
+            "obligations": [
+              "Retain creator, source, revision and license link with derivatives/exports",
+              "Identify modifications/reflections and preserve applicable ShareAlike obligations",
+              "Embedded document metadata conflict remains an attribution review gate",
+              "No RAFTEL company-wide license is selected by this manifest"
+            ]
+          },
+          "worker_batch_limit": 8,
+          "qualification": {
+            "native_cached_BRep_validated": false,
+            "feature_history_rebuilt": false,
+            "exact_Art1_migration_accepted": false,
+            "mesh_topology_or_fidelity_accepted": false,
+            "mounted_transform_recovered": false,
+            "physical_mass_or_inertia_known": false,
+            "manufacturing_released": false
+          }
+        },
+        "upstream_stl_reference": null
+      },
+      {
+        "selection_id": "print-21-art4bearingring-body-nominal",
+        "source_file": "freecad-src/Art4BearingRing.fcstd",
+        "source_sha256": "e4a84700481629554e0e79de956562f54d46aaeeb60908f4e5aee4c5336d7214",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "8775447900b76c4bfc681acd8e3b5babc36f2ea16c38ffa2983c59b515ee3f1b",
+        "xml_placement": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "selection_evidence": "Read-only original-archive saved Shape descriptor; no history rebuild/native geometry validity or print qualification",
+        "uniform_density": null,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-21-art4bearingring-body-nominal-cached-native-draft.stl"
+        },
+        "reference_capture": {
+          "evidence_class": "full_print_registry_host_preparation_not_native_export",
+          "input_canonical_sha256": {
+            "printable_asset_manifest": "4a0deebe94a6da554fc3ce7d56d749e0a639c2d2a127eb8f59cea0a360b4128d",
+            "source_inspection": "063784958f351e6ef676cf9be3145544b6ebd73d1bdcb1b74d22e645ea563a3b",
+            "mounted_inventory": "e52e699ff7c0d9e1dc3eedf9416e7e1da84ae6e13a5152cb5be6cd4f14b29c31"
+          },
+          "canonical_variant_registry_sha256": "6a77fe8cb3063ad2329b10e80c35de8c161312d4f7ed16afa853945718a3f49b",
+          "counts": {
+            "installed_printed_leaves": 65,
+            "unique_source_assets": 46,
+            "export_geometry_variants": 47,
+            "reflected_installed_leaves": 1
+          },
+          "original_archive_count_verified": 57,
+          "original_archive_set_canonical_sha256": "8f6c072e46870388020b30a73430b7700ff49dbca7abafbc21598fbcd6a6dadb",
+          "original_archive_bytes_verified_before_after": true,
+          "asset_id": "Art4BearingRing::Body",
+          "geometry_variant": "nominal",
+          "quantity_required": 1,
+          "source_asset_canonical_sha256": "6902c93ab87a2615ebedb7acef44057bf0187125002f2c4645c306db85700ff0",
+          "installed_instances": [
+            {
+              "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Art4BearingRing_Art4BearingRing",
+              "linked_object": "Art4BearingRing::Body",
+              "variant_id": "nominal",
+              "geometry_operation": "source_shape",
+              "preserved_installed_volume_mm3": 23451.843718245174,
+              "preserved_installed_COM_m": [
+                -4.55299425891561e-08,
+                -0.0006942543717741109,
+                0.4458832356107917
+              ],
+              "installed_coordinate_frame": "native Assembly::Model zero-pose frame, metres",
+              "source_to_installed_transform": null
+            }
+          ],
+          "installed_instance_set_canonical_sha256": "cd4e87d3e4f4979689c74ac76389aaab973520739a0afa76356d6b95d028fc89",
+          "history_status": "cached_final_shape; not_rebuilt_by_this_tool",
+          "frame_policy": "Raw saved BRep coordinates as stored in the selected archive entry. Apply no XML/object/ancestor/link placement while reading. Native worker must record the actual Shape.Placement and compare it separately with XML placement. No source-to-installed transform is inferred from bounds, COM or identity own placement.",
+          "archive_bytes": 152238,
+          "archive_shape_entry_bytes": 116577,
+          "document_xml_sha256": "4d4871041417c8c872f4d7652e0cd98dced880e798058c70f9e82e9b0e4d7265",
+          "raw_xml_placement_attributes": {
+            "A": "0.0000000000000000",
+            "Ox": "0.0000000000000000",
+            "Oy": "0.0000000000000000",
+            "Oz": "1.0000000000000000",
+            "Px": "0.0000000000000000",
+            "Py": "0.0000000000000000",
+            "Pz": "0.0000000000000000",
+            "Q0": "0.0000000000000000",
+            "Q1": "0.0000000000000000",
+            "Q2": "0.0000000000000000",
+            "Q3": "1.0000000000000000"
+          },
+          "saved_xml_context": {
+            "object_saved_properties": {
+              "Placement": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Placement",
+                  "status": "8388608",
+                  "type": "App::PropertyPlacement"
+                },
+                "children": [
+                  {
+                    "tag": "PropertyPlacement",
+                    "attributes": {
+                      "A": "0.0000000000000000",
+                      "Ox": "0.0000000000000000",
+                      "Oy": "0.0000000000000000",
+                      "Oz": "1.0000000000000000",
+                      "Px": "0.0000000000000000",
+                      "Py": "0.0000000000000000",
+                      "Pz": "0.0000000000000000",
+                      "Q0": "0.0000000000000000",
+                      "Q1": "0.0000000000000000",
+                      "Q2": "0.0000000000000000",
+                      "Q3": "1.0000000000000000"
+                    }
+                  }
+                ]
+              },
+              "Tip": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Tip",
+                  "type": "App::PropertyLink"
+                },
+                "children": [
+                  {
+                    "tag": "Link",
+                    "attributes": {
+                      "value": "Pocket001"
+                    }
+                  }
+                ]
+              },
+              "Group": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Group",
+                  "type": "App::PropertyLinkList"
+                },
+                "children": [
+                  {
+                    "tag": "LinkList",
+                    "attributes": {
+                      "count": "16"
+                    },
+                    "children": [
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Revolution"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "DatumPlane"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch001"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Groove"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch002"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch003"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket001"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_Art4BearingRing"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_Plug"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_BallBearings"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_1"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_2"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_3"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_4"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "ExpressionEngine": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "ExpressionEngine",
+                  "status": "67108864",
+                  "type": "App::PropertyExpressionEngine"
+                },
+                "children": [
+                  {
+                    "tag": "ExpressionEngine",
+                    "attributes": {
+                      "count": "0"
+                    }
+                  }
+                ]
+              }
+            },
+            "direct_containing_groups": [],
+            "saved_Source_link_context": [],
+            "context_interpretation": "saved XML only; no attachment evaluation, external-document execution or mounted transform recovery"
+          },
+          "saved_xml_context_canonical_sha256": "c95054b2e6e64cc772ecee21a29fc0688248728de795dc3b43897a4ba4cb236f",
+          "upstream_attribution": {
+            "creator": "AngelLM and Thor contributors",
+            "project": "Thor",
+            "repository": "https://github.com/AngelLM/Thor",
+            "declared_repository_license": "CC-BY-SA-4.0",
+            "license_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/LICENSE",
+            "obligations": [
+              "Retain creator, source, revision and license link with derivatives/exports",
+              "Identify modifications/reflections and preserve applicable ShareAlike obligations",
+              "Embedded document metadata conflict remains an attribution review gate",
+              "No RAFTEL company-wide license is selected by this manifest"
+            ]
+          },
+          "worker_batch_limit": 8,
+          "qualification": {
+            "native_cached_BRep_validated": false,
+            "feature_history_rebuilt": false,
+            "exact_Art1_migration_accepted": false,
+            "mesh_topology_or_fidelity_accepted": false,
+            "mounted_transform_recovered": false,
+            "physical_mass_or_inertia_known": false,
+            "manufacturing_released": false
+          }
+        },
+        "upstream_stl_reference": null
+      },
+      {
+        "selection_id": "print-22-art4body-body-nominal",
+        "source_file": "freecad-src/Art4Body.fcstd",
+        "source_sha256": "73f6b57135ea18e516d6b3280d91063d3d23c891d809a6ed52ae9594483ddb31",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "e6ab1b314fdf3f45fb8161d1c642a9a13fb92af86feb24a802277f4906130374",
+        "xml_placement": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "selection_evidence": "Read-only original-archive saved Shape descriptor; no history rebuild/native geometry validity or print qualification",
+        "uniform_density": null,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-22-art4body-body-nominal-cached-native-draft.stl"
+        },
+        "reference_capture": {
+          "evidence_class": "full_print_registry_host_preparation_not_native_export",
+          "input_canonical_sha256": {
+            "printable_asset_manifest": "4a0deebe94a6da554fc3ce7d56d749e0a639c2d2a127eb8f59cea0a360b4128d",
+            "source_inspection": "063784958f351e6ef676cf9be3145544b6ebd73d1bdcb1b74d22e645ea563a3b",
+            "mounted_inventory": "e52e699ff7c0d9e1dc3eedf9416e7e1da84ae6e13a5152cb5be6cd4f14b29c31"
+          },
+          "canonical_variant_registry_sha256": "6a77fe8cb3063ad2329b10e80c35de8c161312d4f7ed16afa853945718a3f49b",
+          "counts": {
+            "installed_printed_leaves": 65,
+            "unique_source_assets": 46,
+            "export_geometry_variants": 47,
+            "reflected_installed_leaves": 1
+          },
+          "original_archive_count_verified": 57,
+          "original_archive_set_canonical_sha256": "8f6c072e46870388020b30a73430b7700ff49dbca7abafbc21598fbcd6a6dadb",
+          "original_archive_bytes_verified_before_after": true,
+          "asset_id": "Art4Body::Body",
+          "geometry_variant": "nominal",
+          "quantity_required": 1,
+          "source_asset_canonical_sha256": "0edbca9cb846964bb57ded679c7fb938358779bbc66700de62803a0691e6f2cf",
+          "installed_instances": [
+            {
+              "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4Body_Art4Body",
+              "linked_object": "Art4Body::Body",
+              "variant_id": "nominal",
+              "geometry_operation": "source_shape",
+              "preserved_installed_volume_mm3": 227891.84545239725,
+              "preserved_installed_COM_m": [
+                -0.0001972162795128015,
+                -7.942823794154811e-08,
+                0.5247803298673395
+              ],
+              "installed_coordinate_frame": "native Assembly::Model zero-pose frame, metres",
+              "source_to_installed_transform": null
+            }
+          ],
+          "installed_instance_set_canonical_sha256": "60e12b5de3d60f67a1d07a9efa026bfee3ede2cc7ea47e61e60b864fb5eec988",
+          "history_status": "cached_final_shape; not_rebuilt_by_this_tool",
+          "frame_policy": "Raw saved BRep coordinates as stored in the selected archive entry. Apply no XML/object/ancestor/link placement while reading. Native worker must record the actual Shape.Placement and compare it separately with XML placement. No source-to-installed transform is inferred from bounds, COM or identity own placement.",
+          "archive_bytes": 3328035,
+          "archive_shape_entry_bytes": 855948,
+          "document_xml_sha256": "ccd2b56243ad19181925926e10beaf87e127910edf855e9243f84751a3740cff",
+          "raw_xml_placement_attributes": {
+            "A": "0.0000000000000000",
+            "Ox": "0.0000000000000000",
+            "Oy": "0.0000000000000000",
+            "Oz": "1.0000000000000000",
+            "Px": "0.0000000000000000",
+            "Py": "0.0000000000000000",
+            "Pz": "0.0000000000000000",
+            "Q0": "0.0000000000000000",
+            "Q1": "0.0000000000000000",
+            "Q2": "0.0000000000000000",
+            "Q3": "1.0000000000000000"
+          },
+          "saved_xml_context": {
+            "object_saved_properties": {
+              "Placement": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Placement",
+                  "status": "8388608",
+                  "type": "App::PropertyPlacement"
+                },
+                "children": [
+                  {
+                    "tag": "PropertyPlacement",
+                    "attributes": {
+                      "A": "0.0000000000000000",
+                      "Ox": "0.0000000000000000",
+                      "Oy": "0.0000000000000000",
+                      "Oz": "1.0000000000000000",
+                      "Px": "0.0000000000000000",
+                      "Py": "0.0000000000000000",
+                      "Pz": "0.0000000000000000",
+                      "Q0": "0.0000000000000000",
+                      "Q1": "0.0000000000000000",
+                      "Q2": "0.0000000000000000",
+                      "Q3": "1.0000000000000000"
+                    }
+                  }
+                ]
+              },
+              "Tip": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Tip",
+                  "type": "App::PropertyLink"
+                },
+                "children": [
+                  {
+                    "tag": "Link",
+                    "attributes": {
+                      "value": "Pocket020"
+                    }
+                  }
+                ]
+              },
+              "Group": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Group",
+                  "type": "App::PropertyLinkList"
+                },
+                "children": [
+                  {
+                    "tag": "LinkList",
+                    "attributes": {
+                      "count": "81"
+                    },
+                    "children": [
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Revolution"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch001"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch002"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "DatumLine"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Revolution001"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch003"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket001"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "DatumPlane"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch004"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket002"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch005"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket003"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch006"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket004"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch007"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket005"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Mirrored"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch008"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pad"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch009"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket006"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "PolarPattern"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "DatumPlane001"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch010"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket007"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch011"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket008"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "MultiTransform"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "PolarPattern001"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "PolarPattern002"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch012"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket009"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch013"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket010"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "DatumPlane002"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch014"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket011"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "DatumPlane003"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch018"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket015"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch019"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket016"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Mirrored001"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch020"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket017"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch021"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket018"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "DatumPlane004"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch022"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket019"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_Art4Body"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_Fan1"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_Fan2"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_Bearing1"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_BearingFix1"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_Bearing2"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_BearingFix2"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_MicroSwitch"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_Connector"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_1"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_2"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_3"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_4"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_5"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_6"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_7"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_8"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_9"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_10"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_11"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_12"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_13"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_14"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_15"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_16"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_17"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_18"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch023"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket020"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "ExpressionEngine": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "ExpressionEngine",
+                  "status": "67108864",
+                  "type": "App::PropertyExpressionEngine"
+                },
+                "children": [
+                  {
+                    "tag": "ExpressionEngine",
+                    "attributes": {
+                      "count": "0"
+                    }
+                  }
+                ]
+              }
+            },
+            "direct_containing_groups": [],
+            "saved_Source_link_context": [],
+            "context_interpretation": "saved XML only; no attachment evaluation, external-document execution or mounted transform recovery"
+          },
+          "saved_xml_context_canonical_sha256": "db011d09b07c8449eaa21319ddb4bd7a65093d4c82072aa96021296f4726b737",
+          "upstream_attribution": {
+            "creator": "AngelLM and Thor contributors",
+            "project": "Thor",
+            "repository": "https://github.com/AngelLM/Thor",
+            "declared_repository_license": "CC-BY-SA-4.0",
+            "license_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/LICENSE",
+            "obligations": [
+              "Retain creator, source, revision and license link with derivatives/exports",
+              "Identify modifications/reflections and preserve applicable ShareAlike obligations",
+              "Embedded document metadata conflict remains an attribution review gate",
+              "No RAFTEL company-wide license is selected by this manifest"
+            ]
+          },
+          "worker_batch_limit": 8,
+          "qualification": {
+            "native_cached_BRep_validated": false,
+            "feature_history_rebuilt": false,
+            "exact_Art1_migration_accepted": false,
+            "mesh_topology_or_fidelity_accepted": false,
+            "mounted_transform_recovered": false,
+            "physical_mass_or_inertia_known": false,
+            "manufacturing_released": false
+          }
+        },
+        "upstream_stl_reference": null
+      },
+      {
+        "selection_id": "print-23-art4bodybot-body-nominal",
+        "source_file": "freecad-src/Art4BodyBot.fcstd",
+        "source_sha256": "b7eb908539d3c6c6310c2f64ddb7de758d9f742f5c44ac45bd8dea69925d9413",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "31e07cdecb7dc4e510f0e43450da087a9a4c039be3f87b35e0dec267f74c9c3e",
+        "xml_placement": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "selection_evidence": "Read-only original-archive saved Shape descriptor; no history rebuild/native geometry validity or print qualification",
+        "uniform_density": null,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-23-art4bodybot-body-nominal-cached-native-draft.stl"
+        },
+        "reference_capture": {
+          "evidence_class": "full_print_registry_host_preparation_not_native_export",
+          "input_canonical_sha256": {
+            "printable_asset_manifest": "4a0deebe94a6da554fc3ce7d56d749e0a639c2d2a127eb8f59cea0a360b4128d",
+            "source_inspection": "063784958f351e6ef676cf9be3145544b6ebd73d1bdcb1b74d22e645ea563a3b",
+            "mounted_inventory": "e52e699ff7c0d9e1dc3eedf9416e7e1da84ae6e13a5152cb5be6cd4f14b29c31"
+          },
+          "canonical_variant_registry_sha256": "6a77fe8cb3063ad2329b10e80c35de8c161312d4f7ed16afa853945718a3f49b",
+          "counts": {
+            "installed_printed_leaves": 65,
+            "unique_source_assets": 46,
+            "export_geometry_variants": 47,
+            "reflected_installed_leaves": 1
+          },
+          "original_archive_count_verified": 57,
+          "original_archive_set_canonical_sha256": "8f6c072e46870388020b30a73430b7700ff49dbca7abafbc21598fbcd6a6dadb",
+          "original_archive_bytes_verified_before_after": true,
+          "asset_id": "Art4BodyBot::Body",
+          "geometry_variant": "nominal",
+          "quantity_required": 1,
+          "source_asset_canonical_sha256": "f63cd5a2786d55e923594580d0181ae8020a5b41836504b0a6678f2233c75757",
+          "installed_instances": [
+            {
+              "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4BodyBot_Art4BodyBot",
+              "linked_object": "Art4BodyBot::Body",
+              "variant_id": "nominal",
+              "geometry_operation": "source_shape",
+              "preserved_installed_volume_mm3": 43404.692191083544,
+              "preserved_installed_COM_m": [
+                3.968608711843744e-11,
+                -2.802161199689719e-10,
+                0.454299283019504
+              ],
+              "installed_coordinate_frame": "native Assembly::Model zero-pose frame, metres",
+              "source_to_installed_transform": null
+            }
+          ],
+          "installed_instance_set_canonical_sha256": "146fc9950823e3a9bc187c2b0a6faedaede3062e0d8386b273b701ed0cf4ae79",
+          "history_status": "cached_final_shape; not_rebuilt_by_this_tool",
+          "frame_policy": "Raw saved BRep coordinates as stored in the selected archive entry. Apply no XML/object/ancestor/link placement while reading. Native worker must record the actual Shape.Placement and compare it separately with XML placement. No source-to-installed transform is inferred from bounds, COM or identity own placement.",
+          "archive_bytes": 193632,
+          "archive_shape_entry_bytes": 174330,
+          "document_xml_sha256": "7bd5a32c67c89807666b7fbb437d840dde16e261fb60de5829b46eddebeef532",
+          "raw_xml_placement_attributes": {
+            "A": "0.0000000000000000",
+            "Ox": "0.0000000000000000",
+            "Oy": "0.0000000000000000",
+            "Oz": "1.0000000000000000",
+            "Px": "0.0000000000000000",
+            "Py": "0.0000000000000000",
+            "Pz": "0.0000000000000000",
+            "Q0": "0.0000000000000000",
+            "Q1": "0.0000000000000000",
+            "Q2": "0.0000000000000000",
+            "Q3": "1.0000000000000000"
+          },
+          "saved_xml_context": {
+            "object_saved_properties": {
+              "Placement": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Placement",
+                  "status": "8388608",
+                  "type": "App::PropertyPlacement"
+                },
+                "children": [
+                  {
+                    "tag": "PropertyPlacement",
+                    "attributes": {
+                      "A": "0.0000000000000000",
+                      "Ox": "0.0000000000000000",
+                      "Oy": "0.0000000000000000",
+                      "Oz": "1.0000000000000000",
+                      "Px": "0.0000000000000000",
+                      "Py": "0.0000000000000000",
+                      "Pz": "0.0000000000000000",
+                      "Q0": "0.0000000000000000",
+                      "Q1": "0.0000000000000000",
+                      "Q2": "0.0000000000000000",
+                      "Q3": "1.0000000000000000"
+                    }
+                  }
+                ]
+              },
+              "Tip": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Tip",
+                  "type": "App::PropertyLink"
+                },
+                "children": [
+                  {
+                    "tag": "Link",
+                    "attributes": {
+                      "value": "MultiTransform"
+                    }
+                  }
+                ]
+              },
+              "Group": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Group",
+                  "type": "App::PropertyLinkList"
+                },
+                "children": [
+                  {
+                    "tag": "LinkList",
+                    "attributes": {
+                      "count": "34"
+                    },
+                    "children": [
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Revolution"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch001"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch002"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket001"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch003"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket002"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch004"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pad"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch005"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket003"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "DatumPlane"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch006"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket004"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "MultiTransform"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "PolarPattern"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "PolarPattern001"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_Art4BodyBot"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_Art4Body"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_1"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_2"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_3"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_4"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_5"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_6"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_7"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_8"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_9"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_10"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_11"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_12"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_Motor1A"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_Motor2A"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "ExpressionEngine": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "ExpressionEngine",
+                  "status": "67108864",
+                  "type": "App::PropertyExpressionEngine"
+                },
+                "children": [
+                  {
+                    "tag": "ExpressionEngine",
+                    "attributes": {
+                      "count": "0"
+                    }
+                  }
+                ]
+              }
+            },
+            "direct_containing_groups": [],
+            "saved_Source_link_context": [],
+            "context_interpretation": "saved XML only; no attachment evaluation, external-document execution or mounted transform recovery"
+          },
+          "saved_xml_context_canonical_sha256": "8e0be8bb1a74a6eecdbb3bcef6355539d84d32b186ca81cdc47b221b1881fd90",
+          "upstream_attribution": {
+            "creator": "AngelLM and Thor contributors",
+            "project": "Thor",
+            "repository": "https://github.com/AngelLM/Thor",
+            "declared_repository_license": "CC-BY-SA-4.0",
+            "license_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/LICENSE",
+            "obligations": [
+              "Retain creator, source, revision and license link with derivatives/exports",
+              "Identify modifications/reflections and preserve applicable ShareAlike obligations",
+              "Embedded document metadata conflict remains an attribution review gate",
+              "No RAFTEL company-wide license is selected by this manifest"
+            ]
+          },
+          "worker_batch_limit": 8,
+          "qualification": {
+            "native_cached_BRep_validated": false,
+            "feature_history_rebuilt": false,
+            "exact_Art1_migration_accepted": false,
+            "mesh_topology_or_fidelity_accepted": false,
+            "mounted_transform_recovered": false,
+            "physical_mass_or_inertia_known": false,
+            "manufacturing_released": false
+          }
+        },
+        "upstream_stl_reference": null
+      },
+      {
+        "selection_id": "print-24-art4bodyfan-body-nominal",
+        "source_file": "freecad-src/Art4BodyFan.fcstd",
+        "source_sha256": "6520e13c078f3a9862c98443dc4e9b77f77c429b32f387e82c3f14eaabc8fa16",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "f851081dec326f6e6714b8e25219ea378819a571a22e0991f0d00b9c6b90678e",
+        "xml_placement": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "selection_evidence": "Read-only original-archive saved Shape descriptor; no history rebuild/native geometry validity or print qualification",
+        "uniform_density": null,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-24-art4bodyfan-body-nominal-cached-native-draft.stl"
+        },
+        "reference_capture": {
+          "evidence_class": "full_print_registry_host_preparation_not_native_export",
+          "input_canonical_sha256": {
+            "printable_asset_manifest": "4a0deebe94a6da554fc3ce7d56d749e0a639c2d2a127eb8f59cea0a360b4128d",
+            "source_inspection": "063784958f351e6ef676cf9be3145544b6ebd73d1bdcb1b74d22e645ea563a3b",
+            "mounted_inventory": "e52e699ff7c0d9e1dc3eedf9416e7e1da84ae6e13a5152cb5be6cd4f14b29c31"
+          },
+          "canonical_variant_registry_sha256": "6a77fe8cb3063ad2329b10e80c35de8c161312d4f7ed16afa853945718a3f49b",
+          "counts": {
+            "installed_printed_leaves": 65,
+            "unique_source_assets": 46,
+            "export_geometry_variants": 47,
+            "reflected_installed_leaves": 1
+          },
+          "original_archive_count_verified": 57,
+          "original_archive_set_canonical_sha256": "8f6c072e46870388020b30a73430b7700ff49dbca7abafbc21598fbcd6a6dadb",
+          "original_archive_bytes_verified_before_after": true,
+          "asset_id": "Art4BodyFan::Body",
+          "geometry_variant": "nominal",
+          "quantity_required": 2,
+          "source_asset_canonical_sha256": "4042c43304bec84e3fc0a39f9285c0980ba29a26d6c52e8eb69950fc0021ab51",
+          "installed_instances": [
+            {
+              "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4BodyFan_Art4BodyFan",
+              "linked_object": "Art4BodyFan::Body",
+              "variant_id": "nominal",
+              "geometry_operation": "source_shape",
+              "preserved_installed_volume_mm3": 12547.72860425933,
+              "preserved_installed_COM_m": [
+                -3.4627504935503938e-09,
+                -0.05839866843552956,
+                0.48099999875763416
+              ],
+              "installed_coordinate_frame": "native Assembly::Model zero-pose frame, metres",
+              "source_to_installed_transform": null
+            },
+            {
+              "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4BodyFan_Art4BodyFan001",
+              "linked_object": "Art4BodyFan::Body",
+              "variant_id": "nominal",
+              "geometry_operation": "source_shape",
+              "preserved_installed_volume_mm3": 12547.728604259326,
+              "preserved_installed_COM_m": [
+                3.462750526496434e-09,
+                0.058398668435529585,
+                0.4809999987576341
+              ],
+              "installed_coordinate_frame": "native Assembly::Model zero-pose frame, metres",
+              "source_to_installed_transform": null
+            }
+          ],
+          "installed_instance_set_canonical_sha256": "4cffb13b23c2b479a99127af6b74de389de2f6f868f8701e0c86c64d6566637f",
+          "history_status": "cached_final_shape; not_rebuilt_by_this_tool",
+          "frame_policy": "Raw saved BRep coordinates as stored in the selected archive entry. Apply no XML/object/ancestor/link placement while reading. Native worker must record the actual Shape.Placement and compare it separately with XML placement. No source-to-installed transform is inferred from bounds, COM or identity own placement.",
+          "archive_bytes": 64413,
+          "archive_shape_entry_bytes": 73559,
+          "document_xml_sha256": "c8e0cdf5da95e5da552703ea3ea96f3546dd6dab5708412eef4c6baaab2b863b",
+          "raw_xml_placement_attributes": {
+            "A": "0.0000000000000000",
+            "Ox": "0.0000000000000000",
+            "Oy": "0.0000000000000000",
+            "Oz": "1.0000000000000000",
+            "Px": "0.0000000000000000",
+            "Py": "0.0000000000000000",
+            "Pz": "0.0000000000000000",
+            "Q0": "0.0000000000000000",
+            "Q1": "0.0000000000000000",
+            "Q2": "0.0000000000000000",
+            "Q3": "1.0000000000000000"
+          },
+          "saved_xml_context": {
+            "object_saved_properties": {
+              "Placement": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Placement",
+                  "status": "8388608",
+                  "type": "App::PropertyPlacement"
+                },
+                "children": [
+                  {
+                    "tag": "PropertyPlacement",
+                    "attributes": {
+                      "A": "0.0000000000000000",
+                      "Ox": "0.0000000000000000",
+                      "Oy": "0.0000000000000000",
+                      "Oz": "1.0000000000000000",
+                      "Px": "0.0000000000000000",
+                      "Py": "0.0000000000000000",
+                      "Pz": "0.0000000000000000",
+                      "Q0": "0.0000000000000000",
+                      "Q1": "0.0000000000000000",
+                      "Q2": "0.0000000000000000",
+                      "Q3": "1.0000000000000000"
+                    }
+                  }
+                ]
+              },
+              "Tip": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Tip",
+                  "type": "App::PropertyLink"
+                },
+                "children": [
+                  {
+                    "tag": "Link",
+                    "attributes": {
+                      "value": "Pocket001"
+                    }
+                  }
+                ]
+              },
+              "Group": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Group",
+                  "type": "App::PropertyLinkList"
+                },
+                "children": [
+                  {
+                    "tag": "LinkList",
+                    "attributes": {
+                      "count": "7"
+                    },
+                    "children": [
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pad"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch001"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch002"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket001"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_Art4BodyFan"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "ExpressionEngine": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "ExpressionEngine",
+                  "status": "67108864",
+                  "type": "App::PropertyExpressionEngine"
+                },
+                "children": [
+                  {
+                    "tag": "ExpressionEngine",
+                    "attributes": {
+                      "count": "0"
+                    }
+                  }
+                ]
+              }
+            },
+            "direct_containing_groups": [],
+            "saved_Source_link_context": [],
+            "context_interpretation": "saved XML only; no attachment evaluation, external-document execution or mounted transform recovery"
+          },
+          "saved_xml_context_canonical_sha256": "4b70eaaba52f89d275856bc610620d684d4d0aef0ea42d14f2e5f46e9ad881c8",
+          "upstream_attribution": {
+            "creator": "AngelLM and Thor contributors",
+            "project": "Thor",
+            "repository": "https://github.com/AngelLM/Thor",
+            "declared_repository_license": "CC-BY-SA-4.0",
+            "license_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/LICENSE",
+            "obligations": [
+              "Retain creator, source, revision and license link with derivatives/exports",
+              "Identify modifications/reflections and preserve applicable ShareAlike obligations",
+              "Embedded document metadata conflict remains an attribution review gate",
+              "No RAFTEL company-wide license is selected by this manifest"
+            ]
+          },
+          "worker_batch_limit": 8,
+          "qualification": {
+            "native_cached_BRep_validated": false,
+            "feature_history_rebuilt": false,
+            "exact_Art1_migration_accepted": false,
+            "mesh_topology_or_fidelity_accepted": false,
+            "mounted_transform_recovered": false,
+            "physical_mass_or_inertia_known": false,
+            "manufacturing_released": false
+          }
+        },
+        "upstream_stl_reference": null
+      }
+    ]
+  },
+  "capture_script_sha256": "3175d54684cca3b7eb4fad4490845f926b9c125060afa6d9ad2a64d7fe1d5d34",
+  "runner_declared_executable_sha256": "1692e54224b48989974e8b91d3ac7a38d1d502d3db4dee1d4cf79ba91356e42d",
+  "full_runtime_bundle_verified_by_worker": false,
+  "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+  "cross_asset_aggregation_performed": false,
+  "upstream_attribution": {
+    "project": "Thor / AngelLM and contributors",
+    "repository": "https://github.com/AngelLM/Thor",
+    "revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/LICENSE"
+  },
+  "document_opened_or_recomputed": false,
+  "native_document_saved": false,
+  "source_copy_sha256_before": {
+    "freecad-src/Art3Pulley.fcstd": "d450cc565e722981346fc2b1aa3662474c83d574ca39a5602bacb98d8619fd9e",
+    "freecad-src/Art3TensionerBody.fcstd": "f105e77dbb72523f842e58b9bcd9a54c3ec5f5eaf771a0798851cf7f13752a55",
+    "freecad-src/Art3TensionerPulley.fcstd": "2bbf0c3c522db8b2247ed6f3dbce48cd111d4d21349f05cab5bc01d3812102da",
+    "freecad-src/Art4BearingFix.fcstd": "248a21d01617b0e784a9743d186ab698d6406a9eeba6e6a27c2c426baf8dca55",
+    "freecad-src/Art4BearingRing.fcstd": "e4a84700481629554e0e79de956562f54d46aaeeb60908f4e5aee4c5336d7214",
+    "freecad-src/Art4Body.fcstd": "73f6b57135ea18e516d6b3280d91063d3d23c891d809a6ed52ae9594483ddb31",
+    "freecad-src/Art4BodyBot.fcstd": "b7eb908539d3c6c6310c2f64ddb7de758d9f742f5c44ac45bd8dea69925d9413",
+    "freecad-src/Art4BodyFan.fcstd": "6520e13c078f3a9862c98443dc4e9b77f77c429b32f387e82c3f14eaabc8fa16"
+  },
+  "selections": [
+    {
+      "selection_id": "print-17-art3pulley-body-nominal",
+      "coordinate_frame_id": "saved-brep:freecad-src/Art3Pulley.fcstd::Body@f0185fed78de6bf411c13c5c7b971279990ae06a014621c32cb5642f0f1b1d12",
+      "source_binding": {
+        "source_file": "freecad-src/Art3Pulley.fcstd",
+        "source_sha256": "d450cc565e722981346fc2b1aa3662474c83d574ca39a5602bacb98d8619fd9e",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "f0185fed78de6bf411c13c5c7b971279990ae06a014621c32cb5642f0f1b1d12",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "cached_shape_properties": {
+        "aggregate": {
+          "volume_mm3": 52315.76282019278,
+          "volume_m3": 5.2315762820192785e-05,
+          "com_mm": [
+            1.1052461879152318e-05,
+            3.3556139211413063,
+            8.947595860276282
+          ],
+          "com_m": [
+            1.1052461879152318e-08,
+            0.0033556139211413064,
+            0.008947595860276282
+          ],
+          "centroidal_geometric_inertia_mm5": [
+            [
+              22649311.55477693,
+              -6.983499634272061,
+              3.4046868128902963
+            ],
+            [
+              -6.983499634272061,
+              20272769.13267939,
+              -174072.27023323602
+            ],
+            [
+              3.4046868128902963,
+              -174072.27023323602,
+              39961086.90967434
+            ]
+          ],
+          "centroidal_geometric_inertia_m5": [
+            [
+              2.264931155477693e-08,
+              -6.983499634272061e-15,
+              3.4046868128902967e-15
+            ],
+            [
+              -6.983499634272061e-15,
+              2.0272769132679394e-08,
+              -1.7407227023323604e-10
+            ],
+            [
+              3.4046868128902967e-15,
+              -1.7407227023323604e-10,
+              3.996108690967434e-08
+            ]
+          ],
+          "solid_count": 1,
+          "aggregation_scope": "solids within this one BRep storage frame only",
+          "inter_solid_overlap_check_performed": false,
+          "member_sum_is_union_volume_proven": true
+        },
+        "solids": [
+          {
+            "solid_index": 0,
+            "volume_mm3": 52315.76282019278,
+            "com_mm": [
+              1.1052461879152318e-05,
+              3.3556139211413063,
+              8.947595860276282
+            ],
+            "centroidal_geometric_inertia_mm5": [
+              [
+                22649311.55477693,
+                -6.983499634272061,
+                3.4046868128902963
+              ],
+              [
+                -6.983499634272061,
+                20272769.13267939,
+                -174072.27023323602
+              ],
+              [
+                3.4046868128902963,
+                -174072.27023323602,
+                39961086.90967434
+              ]
+            ],
+            "native_valid": true,
+            "native_closed_flag": true
+          }
+        ],
+        "native_shape_valid": true,
+        "native_bounds_mm": {
+          "XMin": -40.0,
+          "XMax": 40.0,
+          "YMin": -40.0,
+          "YMax": 40.0,
+          "ZMin": -8.875904120751193e-14,
+          "ZMax": 18.00000000000014
+        },
+        "raw_shape_placement_matrix_not_reapplied": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "full_self_intersection_analysis_performed": false
+      },
+      "uniform_density_scenario": null,
+      "physical_or_purchased_internal_or_nonuniform_print_inertia_kg_m2": null,
+      "draft_stl": {
+        "filename": "print-17-art3pulley-body-nominal-cached-native-draft.stl",
+        "sha256": "0b795fe22f4b66c1fbde390ad796b98174836aea6d5801243f9d005d9b6534e9",
+        "bytes": 227984,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 2257,
+        "triangle_count": 4558,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-17-art3pulley-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false
+      },
+      "upstream_STL_is_not_this_native_export": true
+    },
+    {
+      "selection_id": "print-18-art3tensionerbody-body-nominal",
+      "coordinate_frame_id": "saved-brep:freecad-src/Art3TensionerBody.fcstd::Body@e3ddeed778265d533c28e93dcf38af4ca7dbf021c7111cf18175976ef1adefcb",
+      "source_binding": {
+        "source_file": "freecad-src/Art3TensionerBody.fcstd",
+        "source_sha256": "f105e77dbb72523f842e58b9bcd9a54c3ec5f5eaf771a0798851cf7f13752a55",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "e3ddeed778265d533c28e93dcf38af4ca7dbf021c7111cf18175976ef1adefcb",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "cached_shape_properties": {
+        "aggregate": {
+          "volume_mm3": 872.4812942676833,
+          "volume_m3": 8.724812942676834e-07,
+          "com_mm": [
+            -2.8340879474334156e-15,
+            -6.74429550294441,
+            5.2887225288164155
+          ],
+          "com_m": [
+            -2.8340879474334157e-18,
+            -0.00674429550294441,
+            0.005288722528816415
+          ],
+          "centroidal_geometric_inertia_mm5": [
+            [
+              23320.69221305353,
+              -7.755246507026538e-12,
+              -6.319214947070241e-12
+            ],
+            [
+              -7.755246507026538e-12,
+              15027.471248103735,
+              1054.5761482054586
+            ],
+            [
+              -6.319214947070241e-12,
+              1054.5761482054586,
+              19958.47805762096
+            ]
+          ],
+          "centroidal_geometric_inertia_m5": [
+            [
+              2.3320692213053533e-11,
+              -7.755246507026539e-27,
+              -6.3192149470702414e-27
+            ],
+            [
+              -7.755246507026539e-27,
+              1.5027471248103735e-11,
+              1.0545761482054587e-12
+            ],
+            [
+              -6.3192149470702414e-27,
+              1.0545761482054587e-12,
+              1.995847805762096e-11
+            ]
+          ],
+          "solid_count": 1,
+          "aggregation_scope": "solids within this one BRep storage frame only",
+          "inter_solid_overlap_check_performed": false,
+          "member_sum_is_union_volume_proven": true
+        },
+        "solids": [
+          {
+            "solid_index": 0,
+            "volume_mm3": 872.4812942676833,
+            "com_mm": [
+              -2.8340879474334156e-15,
+              -6.74429550294441,
+              5.2887225288164155
+            ],
+            "centroidal_geometric_inertia_mm5": [
+              [
+                23320.69221305353,
+                -7.755246507026538e-12,
+                -6.319214947070241e-12
+              ],
+              [
+                -7.755246507026538e-12,
+                15027.471248103735,
+                1054.5761482054586
+              ],
+              [
+                -6.319214947070241e-12,
+                1054.5761482054586,
+                19958.47805762096
+              ]
+            ],
+            "native_valid": true,
+            "native_closed_flag": true
+          }
+        ],
+        "native_shape_valid": true,
+        "native_bounds_mm": {
+          "XMin": -5.7,
+          "XMax": 5.7,
+          "YMin": -13.5,
+          "YMax": 7.06e-15,
+          "ZMin": 0.0,
+          "ZMax": 10.600000000000009
+        },
+        "raw_shape_placement_matrix_not_reapplied": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "full_self_intersection_analysis_performed": false
+      },
+      "uniform_density_scenario": null,
+      "physical_or_purchased_internal_or_nonuniform_print_inertia_kg_m2": null,
+      "draft_stl": {
+        "filename": "print-18-art3tensionerbody-body-nominal-cached-native-draft.stl",
+        "sha256": "ff90420848c5fb07b472a87cf268039014d000723a57ada408074b7f9f9b10e6",
+        "bytes": 40284,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 400,
+        "triangle_count": 804,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-18-art3tensionerbody-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false
+      },
+      "upstream_STL_is_not_this_native_export": true
+    },
+    {
+      "selection_id": "print-19-art3tensionerpulley-body-nominal",
+      "coordinate_frame_id": "saved-brep:freecad-src/Art3TensionerPulley.fcstd::Body@0cf600a184aea1bae698fb1677ccbe8b73cbb4315f15d2a1c4f6e795393919f0",
+      "source_binding": {
+        "source_file": "freecad-src/Art3TensionerPulley.fcstd",
+        "source_sha256": "2bbf0c3c522db8b2247ed6f3dbce48cd111d4d21349f05cab5bc01d3812102da",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "0cf600a184aea1bae698fb1677ccbe8b73cbb4315f15d2a1c4f6e795393919f0",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "cached_shape_properties": {
+        "aggregate": {
+          "volume_mm3": 1161.2661624545653,
+          "volume_m3": 1.1612661624545654e-06,
+          "com_mm": [
+            -1.5847406435479099e-15,
+            2.613866097197333e-15,
+            3.6122706398750144
+          ],
+          "com_m": [
+            -1.58474064354791e-18,
+            2.613866097197333e-18,
+            0.0036122706398750144
+          ],
+          "centroidal_geometric_inertia_mm5": [
+            [
+              30801.35679013584,
+              -7.456364839059347e-13,
+              1.7352806674161907e-13
+            ],
+            [
+              -7.456364839059347e-13,
+              30801.356790135367,
+              8.522895965144076e-12
+            ],
+            [
+              1.7352806674161907e-13,
+              8.522895965144076e-12,
+              43939.48392809077
+            ]
+          ],
+          "centroidal_geometric_inertia_m5": [
+            [
+              3.080135679013584e-11,
+              -7.456364839059347e-28,
+              1.735280667416191e-28
+            ],
+            [
+              -7.456364839059347e-28,
+              3.080135679013537e-11,
+              8.522895965144076e-27
+            ],
+            [
+              1.735280667416191e-28,
+              8.522895965144076e-27,
+              4.393948392809077e-11
+            ]
+          ],
+          "solid_count": 1,
+          "aggregation_scope": "solids within this one BRep storage frame only",
+          "inter_solid_overlap_check_performed": false,
+          "member_sum_is_union_volume_proven": true
+        },
+        "solids": [
+          {
+            "solid_index": 0,
+            "volume_mm3": 1161.2661624545653,
+            "com_mm": [
+              -1.5847406435479099e-15,
+              2.613866097197333e-15,
+              3.6122706398750144
+            ],
+            "centroidal_geometric_inertia_mm5": [
+              [
+                30801.35679013584,
+                -7.456364839059347e-13,
+                1.7352806674161907e-13
+              ],
+              [
+                -7.456364839059347e-13,
+                30801.356790135367,
+                8.522895965144076e-12
+              ],
+              [
+                1.7352806674161907e-13,
+                8.522895965144076e-12,
+                43939.48392809077
+              ]
+            ],
+            "native_valid": true,
+            "native_closed_flag": true
+          }
+        ],
+        "native_shape_valid": true,
+        "native_bounds_mm": {
+          "XMin": -10.0,
+          "XMax": 10.0,
+          "YMin": -10.0,
+          "YMax": 10.000000000000002,
+          "ZMin": -6.6e-15,
+          "ZMax": 9.000000000000004
+        },
+        "raw_shape_placement_matrix_not_reapplied": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "full_self_intersection_analysis_performed": false
+      },
+      "uniform_density_scenario": null,
+      "physical_or_purchased_internal_or_nonuniform_print_inertia_kg_m2": null,
+      "draft_stl": {
+        "filename": "print-19-art3tensionerpulley-body-nominal-cached-native-draft.stl",
+        "sha256": "a654802c263789a063c422014be30353c8226b59ba7cb4d844b044487e3deec2",
+        "bytes": 63084,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 630,
+        "triangle_count": 1260,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-19-art3tensionerpulley-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false
+      },
+      "upstream_STL_is_not_this_native_export": true
+    },
+    {
+      "selection_id": "print-20-art4bearingfix-body-nominal",
+      "coordinate_frame_id": "saved-brep:freecad-src/Art4BearingFix.fcstd::Body@4a41fee26bae52f21a372b86177a0dfb53501b2270c2ee2bbd0416aab09b6535",
+      "source_binding": {
+        "source_file": "freecad-src/Art4BearingFix.fcstd",
+        "source_sha256": "248a21d01617b0e784a9743d186ab698d6406a9eeba6e6a27c2c426baf8dca55",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "4a41fee26bae52f21a372b86177a0dfb53501b2270c2ee2bbd0416aab09b6535",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "cached_shape_properties": {
+        "aggregate": {
+          "volume_mm3": 885.5804357599253,
+          "volume_m3": 8.855804357599254e-07,
+          "com_mm": [
+            7.751621996855076e-07,
+            -0.08778963006994965,
+            1.776499106459036
+          ],
+          "com_m": [
+            7.751621996855076e-10,
+            -8.778963006994965e-05,
+            0.0017764991064590362
+          ],
+          "centroidal_geometric_inertia_mm5": [
+            [
+              13287.519567516942,
+              -0.02943430423907534,
+              -0.0001452182828550815
+            ],
+            [
+              -0.02943430423907534,
+              30990.340645230026,
+              150.9767578483139
+            ],
+            [
+              -0.0001452182828550815,
+              150.9767578483139,
+              42144.2342357598
+            ]
+          ],
+          "centroidal_geometric_inertia_m5": [
+            [
+              1.3287519567516943e-11,
+              -2.943430423907534e-17,
+              -1.452182828550815e-19
+            ],
+            [
+              -2.943430423907534e-17,
+              3.0990340645230026e-11,
+              1.509767578483139e-13
+            ],
+            [
+              -1.452182828550815e-19,
+              1.509767578483139e-13,
+              4.2144234235759804e-11
+            ]
+          ],
+          "solid_count": 1,
+          "aggregation_scope": "solids within this one BRep storage frame only",
+          "inter_solid_overlap_check_performed": false,
+          "member_sum_is_union_volume_proven": true
+        },
+        "solids": [
+          {
+            "solid_index": 0,
+            "volume_mm3": 885.5804357599253,
+            "com_mm": [
+              7.751621996855076e-07,
+              -0.08778963006994965,
+              1.776499106459036
+            ],
+            "centroidal_geometric_inertia_mm5": [
+              [
+                13287.519567516942,
+                -0.02943430423907534,
+                -0.0001452182828550815
+              ],
+              [
+                -0.02943430423907534,
+                30990.340645230026,
+                150.9767578483139
+              ],
+              [
+                -0.0001452182828550815,
+                150.9767578483139,
+                42144.2342357598
+              ]
+            ],
+            "native_valid": true,
+            "native_closed_flag": true
+          }
+        ],
+        "native_shape_valid": true,
+        "native_bounds_mm": {
+          "XMin": -15.026256797917766,
+          "XMax": 15.026256797917771,
+          "YMin": -7.900000000000003,
+          "YMax": 7.900000000000015,
+          "ZMin": 0.0,
+          "ZMax": 4.0
+        },
+        "raw_shape_placement_matrix_not_reapplied": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "full_self_intersection_analysis_performed": false
+      },
+      "uniform_density_scenario": null,
+      "physical_or_purchased_internal_or_nonuniform_print_inertia_kg_m2": null,
+      "draft_stl": {
+        "filename": "print-20-art4bearingfix-body-nominal-cached-native-draft.stl",
+        "sha256": "7ec802b2109bd5d835b0611a4b59ebd5be8c5516d1b7ca7b1ffef29d591a40e4",
+        "bytes": 67884,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 676,
+        "triangle_count": 1356,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-20-art4bearingfix-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false
+      },
+      "upstream_STL_is_not_this_native_export": true
+    },
+    {
+      "selection_id": "print-21-art4bearingring-body-nominal",
+      "coordinate_frame_id": "saved-brep:freecad-src/Art4BearingRing.fcstd::Body@8775447900b76c4bfc681acd8e3b5babc36f2ea16c38ffa2983c59b515ee3f1b",
+      "source_binding": {
+        "source_file": "freecad-src/Art4BearingRing.fcstd",
+        "source_sha256": "e4a84700481629554e0e79de956562f54d46aaeeb60908f4e5aee4c5336d7214",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "8775447900b76c4bfc681acd8e3b5babc36f2ea16c38ffa2983c59b515ee3f1b",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "cached_shape_properties": {
+        "aggregate": {
+          "volume_mm3": 23451.843718245163,
+          "volume_m3": 2.3451843718245164e-05,
+          "com_mm": [
+            0.6942543717741128,
+            -4.552994257086704e-05,
+            6.383235610791707
+          ],
+          "com_m": [
+            0.0006942543717741127,
+            -4.552994257086704e-08,
+            0.006383235610791707
+          ],
+          "centroidal_geometric_inertia_mm5": [
+            [
+              22684352.74603626,
+              -0.5029969676659174,
+              8982.091509590187
+            ],
+            [
+              -0.5029969676659174,
+              21535455.469254144,
+              -3.3377334367587963
+            ],
+            [
+              8982.091509590187,
+              -3.3377334367587963,
+              43933305.80308333
+            ]
+          ],
+          "centroidal_geometric_inertia_m5": [
+            [
+              2.2684352746036262e-08,
+              -5.029969676659174e-16,
+              8.982091509590188e-12
+            ],
+            [
+              -5.029969676659174e-16,
+              2.1535455469254145e-08,
+              -3.3377334367587966e-15
+            ],
+            [
+              8.982091509590188e-12,
+              -3.3377334367587966e-15,
+              4.3933305803083334e-08
+            ]
+          ],
+          "solid_count": 1,
+          "aggregation_scope": "solids within this one BRep storage frame only",
+          "inter_solid_overlap_check_performed": false,
+          "member_sum_is_union_volume_proven": true
+        },
+        "solids": [
+          {
+            "solid_index": 0,
+            "volume_mm3": 23451.843718245163,
+            "com_mm": [
+              0.6942543717741128,
+              -4.552994257086704e-05,
+              6.383235610791707
+            ],
+            "centroidal_geometric_inertia_mm5": [
+              [
+                22684352.74603626,
+                -0.5029969676659174,
+                8982.091509590187
+              ],
+              [
+                -0.5029969676659174,
+                21535455.469254144,
+                -3.3377334367587963
+              ],
+              [
+                8982.091509590187,
+                -3.3377334367587963,
+                43933305.80308333
+              ]
+            ],
+            "native_valid": true,
+            "native_closed_flag": true
+          }
+        ],
+        "native_shape_valid": true,
+        "native_bounds_mm": {
+          "XMin": -50.00132556809646,
+          "XMax": 50.0,
+          "YMin": -50.0,
+          "YMax": 50.0,
+          "ZMin": -8.8e-15,
+          "ZMax": 10.00000000000001
+        },
+        "raw_shape_placement_matrix_not_reapplied": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "full_self_intersection_analysis_performed": false
+      },
+      "uniform_density_scenario": null,
+      "physical_or_purchased_internal_or_nonuniform_print_inertia_kg_m2": null,
+      "draft_stl": {
+        "filename": "print-21-art4bearingring-body-nominal-cached-native-draft.stl",
+        "sha256": "a588f40777d2ebe24b859570ea94bc1aa98bc5c76667173eb9ecf8cdaee6fa0d",
+        "bytes": 312484,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 3114,
+        "triangle_count": 6248,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-21-art4bearingring-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false
+      },
+      "upstream_STL_is_not_this_native_export": true
+    },
+    {
+      "selection_id": "print-22-art4body-body-nominal",
+      "coordinate_frame_id": "saved-brep:freecad-src/Art4Body.fcstd::Body@e6ab1b314fdf3f45fb8161d1c642a9a13fb92af86feb24a802277f4906130374",
+      "source_binding": {
+        "source_file": "freecad-src/Art4Body.fcstd",
+        "source_sha256": "73f6b57135ea18e516d6b3280d91063d3d23c891d809a6ed52ae9594483ddb31",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "e6ab1b314fdf3f45fb8161d1c642a9a13fb92af86feb24a802277f4906130374",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "cached_shape_properties": {
+        "aggregate": {
+          "volume_mm3": 227891.8454523972,
+          "volume_m3": 0.0002278918454523972,
+          "com_mm": [
+            7.942823794286025e-05,
+            -0.19721627951284273,
+            68.78032986733939
+          ],
+          "com_m": [
+            7.942823794286025e-08,
+            -0.00019721627951284275,
+            0.0687803298673394
+          ],
+          "centroidal_geometric_inertia_mm5": [
+            [
+              681256006.1825018,
+              518962.9160861006,
+              1170.951714374828
+            ],
+            [
+              518962.9160861006,
+              684190235.9579613,
+              -18936.435330466833
+            ],
+            [
+              1170.951714374828,
+              -18936.435330466833,
+              569195174.0920393
+            ]
+          ],
+          "centroidal_geometric_inertia_m5": [
+            [
+              6.812560061825018e-07,
+              5.189629160861006e-10,
+              1.170951714374828e-12
+            ],
+            [
+              5.189629160861006e-10,
+              6.841902359579613e-07,
+              -1.8936435330466834e-11
+            ],
+            [
+              1.170951714374828e-12,
+              -1.8936435330466834e-11,
+              5.691951740920394e-07
+            ]
+          ],
+          "solid_count": 1,
+          "aggregation_scope": "solids within this one BRep storage frame only",
+          "inter_solid_overlap_check_performed": false,
+          "member_sum_is_union_volume_proven": true
+        },
+        "solids": [
+          {
+            "solid_index": 0,
+            "volume_mm3": 227891.8454523972,
+            "com_mm": [
+              7.942823794286025e-05,
+              -0.19721627951284273,
+              68.78032986733939
+            ],
+            "centroidal_geometric_inertia_mm5": [
+              [
+                681256006.1825018,
+                518962.9160861006,
+                1170.951714374828
+              ],
+              [
+                518962.9160861006,
+                684190235.9579613,
+                -18936.435330466833
+              ],
+              [
+                1170.951714374828,
+                -18936.435330466833,
+                569195174.0920393
+              ]
+            ],
+            "native_valid": true,
+            "native_closed_flag": true
+          }
+        ],
+        "native_shape_valid": true,
+        "native_bounds_mm": {
+          "XMin": -55.00000000000001,
+          "XMax": 55.0,
+          "YMin": -55.03219176458691,
+          "YMax": 55.03219176046508,
+          "ZMin": -6.692170943771362e-14,
+          "ZMax": 152.78003476135973
+        },
+        "raw_shape_placement_matrix_not_reapplied": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "full_self_intersection_analysis_performed": false
+      },
+      "uniform_density_scenario": null,
+      "physical_or_purchased_internal_or_nonuniform_print_inertia_kg_m2": null,
+      "draft_stl": {
+        "filename": "print-22-art4body-body-nominal-cached-native-draft.stl",
+        "sha256": "c97de1f935401c225b768e5e14e8b44191b215dd0805a216f5f0b39f5703f7b0",
+        "bytes": 759384,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 7539,
+        "triangle_count": 15186,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-22-art4body-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false
+      },
+      "upstream_STL_is_not_this_native_export": true
+    },
+    {
+      "selection_id": "print-23-art4bodybot-body-nominal",
+      "coordinate_frame_id": "saved-brep:freecad-src/Art4BodyBot.fcstd::Body@31e07cdecb7dc4e510f0e43450da087a9a4c039be3f87b35e0dec267f74c9c3e",
+      "source_binding": {
+        "source_file": "freecad-src/Art4BodyBot.fcstd",
+        "source_sha256": "b7eb908539d3c6c6310c2f64ddb7de758d9f742f5c44ac45bd8dea69925d9413",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "31e07cdecb7dc4e510f0e43450da087a9a4c039be3f87b35e0dec267f74c9c3e",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "cached_shape_properties": {
+        "aggregate": {
+          "volume_mm3": 43404.69219108355,
+          "volume_m3": 4.340469219108355e-05,
+          "com_mm": [
+            2.8021613593218767e-07,
+            3.9686109193597374e-08,
+            2.7992830195039984
+          ],
+          "com_m": [
+            2.8021613593218766e-10,
+            3.9686109193597374e-11,
+            0.0027992830195039983
+          ],
+          "centroidal_geometric_inertia_mm5": [
+            [
+              34833684.231532805,
+              -435527.5779965292,
+              -0.08924391351373406
+            ],
+            [
+              -435527.5779965292,
+              36886117.2098622,
+              -0.010927628150177449
+            ],
+            [
+              -0.08924391351373406,
+              -0.010927628150177449,
+              71212678.0454907
+            ]
+          ],
+          "centroidal_geometric_inertia_m5": [
+            [
+              3.483368423153281e-08,
+              -4.3552757799652923e-10,
+              -8.924391351373407e-17
+            ],
+            [
+              -4.3552757799652923e-10,
+              3.6886117209862204e-08,
+              -1.092762815017745e-17
+            ],
+            [
+              -8.924391351373407e-17,
+              -1.092762815017745e-17,
+              7.12126780454907e-08
+            ]
+          ],
+          "solid_count": 1,
+          "aggregation_scope": "solids within this one BRep storage frame only",
+          "inter_solid_overlap_check_performed": false,
+          "member_sum_is_union_volume_proven": true
+        },
+        "solids": [
+          {
+            "solid_index": 0,
+            "volume_mm3": 43404.69219108355,
+            "com_mm": [
+              2.8021613593218767e-07,
+              3.9686109193597374e-08,
+              2.7992830195039984
+            ],
+            "centroidal_geometric_inertia_mm5": [
+              [
+                34833684.231532805,
+                -435527.5779965292,
+                -0.08924391351373406
+              ],
+              [
+                -435527.5779965292,
+                36886117.2098622,
+                -0.010927628150177449
+              ],
+              [
+                -0.08924391351373406,
+                -0.010927628150177449,
+                71212678.0454907
+              ]
+            ],
+            "native_valid": true,
+            "native_closed_flag": true
+          }
+        ],
+        "native_shape_valid": true,
+        "native_bounds_mm": {
+          "XMin": -55.0,
+          "XMax": 55.0,
+          "YMin": -55.0,
+          "YMax": 55.0,
+          "ZMin": -3.6300000009917036e-14,
+          "ZMax": 14.500000000000103
+        },
+        "raw_shape_placement_matrix_not_reapplied": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "full_self_intersection_analysis_performed": false
+      },
+      "uniform_density_scenario": null,
+      "physical_or_purchased_internal_or_nonuniform_print_inertia_kg_m2": null,
+      "draft_stl": {
+        "filename": "print-23-art4bodybot-body-nominal-cached-native-draft.stl",
+        "sha256": "3a8c3e0ea42afd1ffc14679d3b54175678415c66fcf35d7d07e242c75bf3f01c",
+        "bytes": 299884,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 2966,
+        "triangle_count": 5996,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-23-art4bodybot-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false
+      },
+      "upstream_STL_is_not_this_native_export": true
+    },
+    {
+      "selection_id": "print-24-art4bodyfan-body-nominal",
+      "coordinate_frame_id": "saved-brep:freecad-src/Art4BodyFan.fcstd::Body@f851081dec326f6e6714b8e25219ea378819a571a22e0991f0d00b9c6b90678e",
+      "source_binding": {
+        "source_file": "freecad-src/Art4BodyFan.fcstd",
+        "source_sha256": "6520e13c078f3a9862c98443dc4e9b77f77c429b32f387e82c3f14eaabc8fa16",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "f851081dec326f6e6714b8e25219ea378819a571a22e0991f0d00b9c6b90678e",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "cached_shape_properties": {
+        "aggregate": {
+          "volume_mm3": 12547.728604259315,
+          "volume_m3": 1.2547728604259315e-05,
+          "com_mm": [
+            7.601331564470426,
+            3.4627504875924934e-06,
+            24.999998757634142
+          ],
+          "com_m": [
+            0.007601331564470426,
+            3.4627504875924935e-09,
+            0.024999998757634142
+          ],
+          "centroidal_geometric_inertia_mm5": [
+            [
+              8670599.2409891,
+              -0.3795214655004774,
+              0.06519958423450589
+            ],
+            [
+              -0.3795214655004774,
+              4219683.5772357825,
+              0.27305031303054417
+            ],
+            [
+              0.06519958423450589,
+              0.27305031303054417,
+              4927432.080400567
+            ]
+          ],
+          "centroidal_geometric_inertia_m5": [
+            [
+              8.6705992409891e-09,
+              -3.795214655004774e-16,
+              6.51995842345059e-17
+            ],
+            [
+              -3.795214655004774e-16,
+              4.219683577235783e-09,
+              2.7305031303054417e-16
+            ],
+            [
+              6.51995842345059e-17,
+              2.7305031303054417e-16,
+              4.927432080400567e-09
+            ]
+          ],
+          "solid_count": 1,
+          "aggregation_scope": "solids within this one BRep storage frame only",
+          "inter_solid_overlap_check_performed": false,
+          "member_sum_is_union_volume_proven": true
+        },
+        "solids": [
+          {
+            "solid_index": 0,
+            "volume_mm3": 12547.728604259315,
+            "com_mm": [
+              7.601331564470426,
+              3.4627504875924934e-06,
+              24.999998757634142
+            ],
+            "centroidal_geometric_inertia_mm5": [
+              [
+                8670599.2409891,
+                -0.3795214655004774,
+                0.06519958423450589
+              ],
+              [
+                -0.3795214655004774,
+                4219683.5772357825,
+                0.27305031303054417
+              ],
+              [
+                0.06519958423450589,
+                0.27305031303054417,
+                4927432.080400567
+              ]
+            ],
+            "native_valid": true,
+            "native_closed_flag": true
+          }
+        ],
+        "native_shape_valid": true,
+        "native_bounds_mm": {
+          "XMin": 0.0,
+          "XMax": 16.749999999999993,
+          "YMin": -25.000000000000007,
+          "YMax": 24.999999999999993,
+          "ZMin": 0.0,
+          "ZMax": 50.0
+        },
+        "raw_shape_placement_matrix_not_reapplied": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "full_self_intersection_analysis_performed": false
+      },
+      "uniform_density_scenario": null,
+      "physical_or_purchased_internal_or_nonuniform_print_inertia_kg_m2": null,
+      "draft_stl": {
+        "filename": "print-24-art4bodyfan-body-nominal-cached-native-draft.stl",
+        "sha256": "e025549326bc23eadcf7968c2c9df49a40fce44ca2d58bff3e89b1268c9912ca",
+        "bytes": 72784,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 719,
+        "triangle_count": 1454,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-24-art4bodyfan-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false
+      },
+      "upstream_STL_is_not_this_native_export": true
+    }
+  ],
+  "errors": [],
+  "open_document_count_before": 0,
+  "actual_runtime_paths": {
+    "UserParameter": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-03-run-01\\user.cfg",
+    "SystemParameter": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-03-run-01\\system.cfg",
+    "UserHomePath": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-03-run-01\\user-home",
+    "UserAppData": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-03-run-01\\user-data\\",
+    "AppTempPath": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-03-run-01\\user-temp\\"
+  },
+  "expected_isolated_paths": {
+    "UserParameter": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-03-run-01\\user.cfg",
+    "SystemParameter": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-03-run-01\\system.cfg",
+    "UserHomePath": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-03-run-01\\user-home",
+    "UserAppData": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-03-run-01\\user-data",
+    "AppTempPath": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-03-run-01\\user-temp"
+  },
+  "freecad_version": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "python_version": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:00:26) [MSC v.1944 64 bit (AMD64)]",
+  "opencascade_version": "7.8.1",
+  "runtime_isolated_paths_verified": true,
+  "primitive_fixtures": {
+    "summary": {
+      "verified": true,
+      "case_count": 9,
+      "maximum_relative_volume_error": 2.823443157514334e-16,
+      "maximum_com_error_mm": 8.881784197001252e-16,
+      "maximum_relative_tensor_error": 4.4011999916468124e-15,
+      "contract": "Solid.MatrixOfInertia is centroidal geometric mm^5 in parallel storage-frame axes; aggregate solids in their one common BRep frame"
+    },
+    "records": {
+      "box": {
+        "aggregate": {
+          "volume_mm3": 23.999999999999996,
+          "volume_m3": 2.3999999999999997e-08,
+          "com_mm": [
+            1.0,
+            1.5,
+            2.0
+          ],
+          "com_m": [
+            0.001,
+            0.0015,
+            0.002
+          ],
+          "centroidal_geometric_inertia_mm5": [
+            [
+              49.99999999999997,
+              -7.105427357601002e-15,
+              0.0
+            ],
+            [
+              -7.105427357601002e-15,
+              39.999999999999986,
+              -1.4210854715202004e-14
+            ],
+            [
+              0.0,
+              -1.4210854715202004e-14,
+              26.000000000000014
+            ]
+          ],
+          "centroidal_geometric_inertia_m5": [
+            [
+              4.9999999999999976e-14,
+              -7.105427357601002e-30,
+              0.0
+            ],
+            [
+              -7.105427357601002e-30,
+              3.999999999999999e-14,
+              -1.4210854715202005e-29
+            ],
+            [
+              0.0,
+              -1.4210854715202005e-29,
+              2.6000000000000015e-14
+            ]
+          ],
+          "solid_count": 1,
+          "aggregation_scope": "solids within this one BRep storage frame only",
+          "inter_solid_overlap_check_performed": false,
+          "member_sum_is_union_volume_proven": true
+        },
+        "solids": [
+          {
+            "solid_index": 0,
+            "volume_mm3": 23.999999999999996,
+            "com_mm": [
+              1.0,
+              1.5,
+              2.0
+            ],
+            "centroidal_geometric_inertia_mm5": [
+              [
+                49.99999999999997,
+                -7.105427357601002e-15,
+                0.0
+              ],
+              [
+                -7.105427357601002e-15,
+                39.999999999999986,
+                -1.4210854715202004e-14
+              ],
+              [
+                0.0,
+                -1.4210854715202004e-14,
+                26.000000000000014
+              ]
+            ],
+            "native_valid": true,
+            "native_closed_flag": true
+          }
+        ],
+        "native_shape_valid": true,
+        "native_bounds_mm": {
+          "XMin": 0.0,
+          "XMax": 2.0,
+          "YMin": 0.0,
+          "YMax": 3.0,
+          "ZMin": 0.0,
+          "ZMax": 4.0
+        },
+        "raw_shape_placement_matrix_not_reapplied": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "full_self_intersection_analysis_performed": false
+      },
+      "cylinder": {
+        "aggregate": {
+          "volume_mm3": 62.83185307179585,
+          "volume_m3": 6.283185307179585e-08,
+          "com_mm": [
+            -3.109875688542106e-16,
+            -5.589595809989319e-17,
+            2.5000000000000004
+          ],
+          "com_m": [
+            -3.109875688542106e-19,
+            -5.589595809989319e-20,
+            0.0025000000000000005
+          ],
+          "centroidal_geometric_inertia_mm5": [
+            [
+              193.73154697137142,
+              8.291862374562687e-15,
+              7.99360577730112e-15
+            ],
+            [
+              8.291862374562687e-15,
+              193.73154697137016,
+              -2.72489726406953e-17
+            ],
+            [
+              7.99360577730112e-15,
+              -2.72489726406953e-17,
+              125.66370614359244
+            ]
+          ],
+          "centroidal_geometric_inertia_m5": [
+            [
+              1.9373154697137142e-13,
+              8.291862374562688e-30,
+              7.993605777301121e-30
+            ],
+            [
+              8.291862374562688e-30,
+              1.9373154697137018e-13,
+              -2.72489726406953e-32
+            ],
+            [
+              7.993605777301121e-30,
+              -2.72489726406953e-32,
+              1.2566370614359244e-13
+            ]
+          ],
+          "solid_count": 1,
+          "aggregation_scope": "solids within this one BRep storage frame only",
+          "inter_solid_overlap_check_performed": false,
+          "member_sum_is_union_volume_proven": true
+        },
+        "solids": [
+          {
+            "solid_index": 0,
+            "volume_mm3": 62.83185307179585,
+            "com_mm": [
+              -3.109875688542106e-16,
+              -5.589595809989319e-17,
+              2.5000000000000004
+            ],
+            "centroidal_geometric_inertia_mm5": [
+              [
+                193.73154697137142,
+                8.291862374562687e-15,
+                7.99360577730112e-15
+              ],
+              [
+                8.291862374562687e-15,
+                193.73154697137016,
+                -2.72489726406953e-17
+              ],
+              [
+                7.99360577730112e-15,
+                -2.72489726406953e-17,
+                125.66370614359244
+              ]
+            ],
+            "native_valid": true,
+            "native_closed_flag": true
+          }
+        ],
+        "native_shape_valid": true,
+        "native_bounds_mm": {
+          "XMin": -2.0,
+          "XMax": 2.0,
+          "YMin": -2.0,
+          "YMax": 2.0,
+          "ZMin": 0.0,
+          "ZMax": 5.0
+        },
+        "raw_shape_placement_matrix_not_reapplied": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "full_self_intersection_analysis_performed": false
+      },
+      "compound": {
+        "aggregate": {
+          "volume_mm3": 29.999999999999996,
+          "volume_m3": 3e-08,
+          "com_mm": [
+            2.3000000000000003,
+            0.5999999999999999,
+            2.3000000000000003
+          ],
+          "com_m": [
+            0.0023000000000000004,
+            0.0005999999999999998,
+            0.0023000000000000004
+          ],
+          "centroidal_geometric_inertia_mm5": [
+            [
+              164.49999999999997,
+              140.39999999999998,
+              -46.79999999999999
+            ],
+            [
+              140.39999999999998,
+              258.59999999999997,
+              32.399999999999984
+            ],
+            [
+              -46.79999999999999,
+              32.399999999999984,
+              328.5
+            ]
+          ],
+          "centroidal_geometric_inertia_m5": [
+            [
+              1.6449999999999998e-13,
+              1.404e-13,
+              -4.6799999999999994e-14
+            ],
+            [
+              1.404e-13,
+              2.586e-13,
+              3.239999999999999e-14
+            ],
+            [
+              -4.6799999999999994e-14,
+              3.239999999999999e-14,
+              3.285e-13
+            ]
+          ],
+          "solid_count": 2,
+          "aggregation_scope": "solids within this one BRep storage frame only",
+          "inter_solid_overlap_check_performed": false,
+          "member_sum_is_union_volume_proven": false
+        },
+        "solids": [
+          {
+            "solid_index": 0,
+            "volume_mm3": 23.999999999999996,
+            "com_mm": [
+              1.0,
+              1.5,
+              2.0
+            ],
+            "centroidal_geometric_inertia_mm5": [
+              [
+                49.99999999999997,
+                -7.105427357601002e-15,
+                0.0
+              ],
+              [
+                -7.105427357601002e-15,
+                39.999999999999986,
+                -1.4210854715202004e-14
+              ],
+              [
+                0.0,
+                -1.4210854715202004e-14,
+                26.000000000000014
+              ]
+            ],
+            "native_valid": true,
+            "native_closed_flag": true
+          },
+          {
+            "solid_index": 1,
+            "volume_mm3": 6.0,
+            "com_mm": [
+              7.5,
+              -3.0,
+              3.5
+            ],
+            "centroidal_geometric_inertia_mm5": [
+              [
+                6.5000000000000036,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                5.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                2.5
+              ]
+            ],
+            "native_valid": true,
+            "native_closed_flag": true
+          }
+        ],
+        "native_shape_valid": true,
+        "native_bounds_mm": {
+          "XMin": 0.0,
+          "XMax": 8.0,
+          "YMin": -4.0,
+          "YMax": 3.0,
+          "ZMin": 0.0,
+          "ZMax": 5.0
+        },
+        "raw_shape_placement_matrix_not_reapplied": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "full_self_intersection_analysis_performed": false
+      },
+      "box_scale_0p01": {
+        "aggregate": {
+          "volume_mm3": 2.3999999999999997e-05,
+          "volume_m3": 2.4e-14,
+          "com_mm": [
+            0.01,
+            0.015,
+            0.019999999999999997
+          ],
+          "com_m": [
+            1e-05,
+            1.5e-05,
+            1.9999999999999998e-05
+          ],
+          "centroidal_geometric_inertia_mm5": [
+            [
+              5.000000000000005e-09,
+              -4.1359030627651384e-25,
+              -1.6543612251060553e-24
+            ],
+            [
+              -4.1359030627651384e-25,
+              4.000000000000004e-09,
+              -2.481541837659083e-24
+            ],
+            [
+              -1.6543612251060553e-24,
+              -2.481541837659083e-24,
+              2.6e-09
+            ]
+          ],
+          "centroidal_geometric_inertia_m5": [
+            [
+              5.000000000000006e-24,
+              -4.135903062765139e-40,
+              -1.6543612251060555e-39
+            ],
+            [
+              -4.135903062765139e-40,
+              4.000000000000005e-24,
+              -2.4815418376590832e-39
+            ],
+            [
+              -1.6543612251060555e-39,
+              -2.4815418376590832e-39,
+              2.6000000000000004e-24
+            ]
+          ],
+          "solid_count": 1,
+          "aggregation_scope": "solids within this one BRep storage frame only",
+          "inter_solid_overlap_check_performed": false,
+          "member_sum_is_union_volume_proven": true
+        },
+        "solids": [
+          {
+            "solid_index": 0,
+            "volume_mm3": 2.3999999999999997e-05,
+            "com_mm": [
+              0.01,
+              0.015,
+              0.019999999999999997
+            ],
+            "centroidal_geometric_inertia_mm5": [
+              [
+                5.000000000000005e-09,
+                -4.1359030627651384e-25,
+                -1.6543612251060553e-24
+              ],
+              [
+                -4.1359030627651384e-25,
+                4.000000000000004e-09,
+                -2.481541837659083e-24
+              ],
+              [
+                -1.6543612251060553e-24,
+                -2.481541837659083e-24,
+                2.6e-09
+              ]
+            ],
+            "native_valid": true,
+            "native_closed_flag": true
+          }
+        ],
+        "native_shape_valid": true,
+        "native_bounds_mm": {
+          "XMin": 0.0,
+          "XMax": 0.02,
+          "YMin": 0.0,
+          "YMax": 0.03,
+          "ZMin": 0.0,
+          "ZMax": 0.04
+        },
+        "raw_shape_placement_matrix_not_reapplied": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "full_self_intersection_analysis_performed": false
+      },
+      "box_scale_10": {
+        "aggregate": {
+          "volume_mm3": 24000.0,
+          "volume_m3": 2.4e-05,
+          "com_mm": [
+            10.0,
+            15.0,
+            20.0
+          ],
+          "com_m": [
+            0.01,
+            0.015,
+            0.02
+          ],
+          "centroidal_geometric_inertia_mm5": [
+            [
+              5000000.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              4000000.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              2600000.0
+            ]
+          ],
+          "centroidal_geometric_inertia_m5": [
+            [
+              5e-09,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              4e-09,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              2.6e-09
+            ]
+          ],
+          "solid_count": 1,
+          "aggregation_scope": "solids within this one BRep storage frame only",
+          "inter_solid_overlap_check_performed": false,
+          "member_sum_is_union_volume_proven": true
+        },
+        "solids": [
+          {
+            "solid_index": 0,
+            "volume_mm3": 24000.0,
+            "com_mm": [
+              10.0,
+              15.0,
+              20.0
+            ],
+            "centroidal_geometric_inertia_mm5": [
+              [
+                5000000.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                4000000.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                2600000.0
+              ]
+            ],
+            "native_valid": true,
+            "native_closed_flag": true
+          }
+        ],
+        "native_shape_valid": true,
+        "native_bounds_mm": {
+          "XMin": 0.0,
+          "XMax": 20.0,
+          "YMin": 0.0,
+          "YMax": 30.0,
+          "ZMin": 0.0,
+          "ZMax": 40.0
+        },
+        "raw_shape_placement_matrix_not_reapplied": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "full_self_intersection_analysis_performed": false
+      },
+      "box_translated": {
+        "aggregate": {
+          "volume_mm3": 23.999999999999996,
+          "volume_m3": 2.3999999999999997e-08,
+          "com_mm": [
+            11.0,
+            -18.5,
+            32.0
+          ],
+          "com_m": [
+            0.011,
+            -0.0185,
+            0.032
+          ],
+          "centroidal_geometric_inertia_mm5": [
+            [
+              49.999999999999915,
+              -7.105427357601002e-15,
+              2.842170943040401e-14
+            ],
+            [
+              -7.105427357601002e-15,
+              39.99999999999993,
+              2.842170943040401e-14
+            ],
+            [
+              2.842170943040401e-14,
+              2.842170943040401e-14,
+              26.0
+            ]
+          ],
+          "centroidal_geometric_inertia_m5": [
+            [
+              4.999999999999992e-14,
+              -7.105427357601002e-30,
+              2.842170943040401e-29
+            ],
+            [
+              -7.105427357601002e-30,
+              3.999999999999993e-14,
+              2.842170943040401e-29
+            ],
+            [
+              2.842170943040401e-29,
+              2.842170943040401e-29,
+              2.6000000000000003e-14
+            ]
+          ],
+          "solid_count": 1,
+          "aggregation_scope": "solids within this one BRep storage frame only",
+          "inter_solid_overlap_check_performed": false,
+          "member_sum_is_union_volume_proven": true
+        },
+        "solids": [
+          {
+            "solid_index": 0,
+            "volume_mm3": 23.999999999999996,
+            "com_mm": [
+              11.0,
+              -18.5,
+              32.0
+            ],
+            "centroidal_geometric_inertia_mm5": [
+              [
+                49.999999999999915,
+                -7.105427357601002e-15,
+                2.842170943040401e-14
+              ],
+              [
+                -7.105427357601002e-15,
+                39.99999999999993,
+                2.842170943040401e-14
+              ],
+              [
+                2.842170943040401e-14,
+                2.842170943040401e-14,
+                26.0
+              ]
+            ],
+            "native_valid": true,
+            "native_closed_flag": true
+          }
+        ],
+        "native_shape_valid": true,
+        "native_bounds_mm": {
+          "XMin": 10.0,
+          "XMax": 12.0,
+          "YMin": -20.0,
+          "YMax": -17.0,
+          "ZMin": 30.0,
+          "ZMax": 34.0
+        },
+        "raw_shape_placement_matrix_not_reapplied": [
+          1.0,
+          0.0,
+          0.0,
+          10.0,
+          0.0,
+          1.0,
+          0.0,
+          -20.0,
+          0.0,
+          0.0,
+          1.0,
+          30.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "full_self_intersection_analysis_performed": false
+      },
+      "box_rotated_translated": {
+        "aggregate": {
+          "volume_mm3": 24.0,
+          "volume_m3": 2.4000000000000003e-08,
+          "com_mm": [
+            10.862046373340355,
+            -18.353541347364594,
+            31.948345440462944
+          ],
+          "com_m": [
+            0.010862046373340355,
+            -0.018353541347364593,
+            0.03194834544046295
+          ],
+          "centroidal_geometric_inertia_mm5": [
+            [
+              44.74654823103165,
+              4.537637710091403,
+              -7.004876980956212
+            ],
+            [
+              4.537637710091403,
+              42.53640079989215,
+              -0.45557492557622936
+            ],
+            [
+              -7.004876980956212,
+              -0.45557492557622936,
+              28.717050969076254
+            ]
+          ],
+          "centroidal_geometric_inertia_m5": [
+            [
+              4.4746548231031657e-14,
+              4.537637710091403e-15,
+              -7.004876980956212e-15
+            ],
+            [
+              4.537637710091403e-15,
+              4.253640079989215e-14,
+              -4.555749255762294e-16
+            ],
+            [
+              -7.004876980956212e-15,
+              -4.555749255762294e-16,
+              2.871705096907626e-14
+            ]
+          ],
+          "solid_count": 1,
+          "aggregation_scope": "solids within this one BRep storage frame only",
+          "inter_solid_overlap_check_performed": false,
+          "member_sum_is_union_volume_proven": true
+        },
+        "solids": [
+          {
+            "solid_index": 0,
+            "volume_mm3": 24.0,
+            "com_mm": [
+              10.862046373340355,
+              -18.353541347364594,
+              31.948345440462944
+            ],
+            "centroidal_geometric_inertia_mm5": [
+              [
+                44.74654823103165,
+                4.537637710091403,
+                -7.004876980956212
+              ],
+              [
+                4.537637710091403,
+                42.53640079989215,
+                -0.45557492557622936
+              ],
+              [
+                -7.004876980956212,
+                -0.45557492557622936,
+                28.717050969076254
+              ]
+            ],
+            "native_valid": true,
+            "native_closed_flag": true
+          }
+        ],
+        "native_shape_valid": true,
+        "native_bounds_mm": {
+          "XMin": 8.63872259272005,
+          "XMax": 13.08537015396066,
+          "YMin": -20.29817105346633,
+          "YMax": -16.408911641262858,
+          "ZMin": 29.442931745165904,
+          "ZMax": 34.45375913575998
+        },
+        "raw_shape_placement_matrix_not_reapplied": [
+          0.8130186879010577,
+          -0.453759135759983,
+          0.36483319453963603,
+          10.0,
+          0.5112918471750422,
+          0.856168221462352,
+          -0.07454276336658214,
+          -20.0,
+          -0.2785341274170473,
+          0.24714089761175964,
+          0.928084110731176,
+          30.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "full_self_intersection_analysis_performed": false
+      },
+      "cylinder_rotated_translated": {
+        "aggregate": {
+          "volume_mm3": 62.83185307179587,
+          "volume_m3": 6.283185307179588e-08,
+          "com_mm": [
+            -7.175536713092625,
+            7.9918986636971745,
+            14.280990696627475
+          ],
+          "com_m": [
+            -0.0071755367130926255,
+            0.007991898663697174,
+            0.014280990696627475
+          ],
+          "centroidal_geometric_inertia_mm5": [
+            [
+              193.3959655716091,
+              -1.9272324950045814,
+              4.36067211999465
+            ],
+            [
+              -1.9272324950045814,
+              182.66351670378958,
+              25.04319075990219
+            ],
+            [
+              4.36067211999465,
+              25.04319075990219,
+              137.0673178109357
+            ]
+          ],
+          "centroidal_geometric_inertia_m5": [
+            [
+              1.9339596557160912e-13,
+              -1.9272324950045816e-15,
+              4.36067211999465e-15
+            ],
+            [
+              -1.9272324950045816e-15,
+              1.826635167037896e-13,
+              2.504319075990219e-14
+            ],
+            [
+              4.36067211999465e-15,
+              2.504319075990219e-14,
+              1.370673178109357e-13
+            ]
+          ],
+          "solid_count": 1,
+          "aggregation_scope": "solids within this one BRep storage frame only",
+          "inter_solid_overlap_check_performed": false,
+          "member_sum_is_union_volume_proven": true
+        },
+        "solids": [
+          {
+            "solid_index": 0,
+            "volume_mm3": 62.83185307179587,
+            "com_mm": [
+              -7.175536713092625,
+              7.9918986636971745,
+              14.280990696627475
+            ],
+            "centroidal_geometric_inertia_mm5": [
+              [
+                193.3959655716091,
+                -1.9272324950045814,
+                4.36067211999465
+              ],
+              [
+                -1.9272324950045814,
+                182.66351670378958,
+                25.04319075990219
+              ],
+              [
+                4.36067211999465,
+                25.04319075990219,
+                137.0673178109357
+              ]
+            ],
+            "native_valid": true,
+            "native_closed_flag": true
+          }
+        ],
+        "native_shape_valid": true,
+        "native_bounds_mm": {
+          "XMin": -9.346137232660684,
+          "XMax": -5.004936193524566,
+          "YMin": 5.153609280969486,
+          "YMax": 10.830188046424862,
+          "ZMin": 11.181384019936516,
+          "ZMax": 17.380597373318434
+        },
+        "raw_shape_placement_matrix_not_reapplied": [
+          0.8247925573019799,
+          -0.5610589411071908,
+          -0.07021468523705025,
+          -7.0,
+          0.4909759640279828,
+          0.7722303244925739,
+          -0.40324053452113046,
+          9.0,
+          0.28046361647467427,
+          0.2981160689023184,
+          0.91239627865099,
+          12.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "full_self_intersection_analysis_performed": false
+      },
+      "compound_rotated_translated": {
+        "aggregate": {
+          "volume_mm3": 30.000000000000007,
+          "volume_m3": 3.000000000000001e-08,
+          "com_mm": [
+            12.398893741085024,
+            17.665129682561304,
+            -2.0775525998695814
+          ],
+          "com_m": [
+            0.012398893741085024,
+            0.017665129682561304,
+            -0.0020775525998695814
+          ],
+          "centroidal_geometric_inertia_mm5": [
+            [
+              72.96115675556135,
+              37.374470701700076,
+              -65.37760035897016
+            ],
+            [
+              37.374470701700076,
+              352.0994806335253,
+              15.54488067325851
+            ],
+            [
+              -65.37760035897016,
+              15.54488067325851,
+              326.5393626109137
+            ]
+          ],
+          "centroidal_geometric_inertia_m5": [
+            [
+              7.296115675556135e-14,
+              3.737447070170008e-14,
+              -6.537760035897016e-14
+            ],
+            [
+              3.737447070170008e-14,
+              3.520994806335253e-13,
+              1.554488067325851e-14
+            ],
+            [
+              -6.537760035897016e-14,
+              1.554488067325851e-14,
+              3.265393626109137e-13
+            ]
+          ],
+          "solid_count": 2,
+          "aggregation_scope": "solids within this one BRep storage frame only",
+          "inter_solid_overlap_check_performed": false,
+          "member_sum_is_union_volume_proven": false
+        },
+        "solids": [
+          {
+            "solid_index": 0,
+            "volume_mm3": 24.000000000000007,
+            "com_mm": [
+              10.842774775167094,
+              17.84284038172458,
+              -2.4475697228698685
+            ],
+            "centroidal_geometric_inertia_mm5": [
+              [
+                46.733806197486274,
+                3.653145508557354,
+                3.210133679860183
+              ],
+              [
+                3.653145508557354,
+                40.1341329709997,
+                6.527821228110682
+              ],
+              [
+                3.210133679860183,
+                6.527821228110682,
+                29.13206083151408
+              ]
+            ],
+            "native_valid": true,
+            "native_closed_flag": true
+          },
+          {
+            "solid_index": 1,
+            "volume_mm3": 6.000000000000001,
+            "com_mm": [
+              18.623369604756746,
+              16.95428688590819,
+              -0.5974841078684332
+            ],
+            "centroidal_geometric_inertia_mm5": [
+              [
+                6.008098888813759,
+                0.5366464634011157,
+                0.5071454989858046
+              ],
+              [
+                0.5366464634011157,
+                4.9550787741775935,
+                1.1263392494559281
+              ],
+              [
+                0.5071454989858046,
+                1.1263392494559281,
+                3.036822337008644
+              ]
+            ],
+            "native_valid": true,
+            "native_closed_flag": true
+          }
+        ],
+        "native_shape_valid": true,
+        "native_bounds_mm": {
+          "XMin": 9.035964435730227,
+          "XMax": 19.7021468523705,
+          "YMin": 15.331707777619929,
+          "YMax": 20.29864290153369,
+          "ZMin": -5.0,
+          "ZMax": 1.2094581872477075
+        },
+        "raw_shape_placement_matrix_not_reapplied": [
+          0.8247925573019799,
+          -0.5610589411071908,
+          -0.07021468523705025,
+          11.0,
+          0.4909759640279828,
+          0.7722303244925739,
+          -0.40324053452113046,
+          17.0,
+          0.28046361647467427,
+          0.2981160689023184,
+          0.91239627865099,
+          -5.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "full_self_intersection_analysis_performed": false
+      }
+    },
+    "independent_expectations": {
+      "box": {
+        "volume_mm3": 24.0,
+        "com_mm": [
+          1.0,
+          1.5,
+          2.0
+        ],
+        "centroidal_geometric_inertia_mm5": [
+          [
+            50,
+            0,
+            0
+          ],
+          [
+            0,
+            40,
+            0
+          ],
+          [
+            0,
+            0,
+            26
+          ]
+        ]
+      },
+      "cylinder": {
+        "volume_mm3": 62.83185307179586,
+        "com_mm": [
+          0,
+          0,
+          2.5
+        ],
+        "centroidal_geometric_inertia_mm5": [
+          [
+            193.73154697137056,
+            0,
+            0
+          ],
+          [
+            0,
+            193.73154697137056,
+            0
+          ],
+          [
+            0,
+            0,
+            125.66370614359172
+          ]
+        ]
+      },
+      "compound": {
+        "volume_mm3": 30.0,
+        "com_mm": [
+          2.3,
+          0.6,
+          2.3
+        ],
+        "centroidal_geometric_inertia_mm5": [
+          [
+            164.5,
+            140.4,
+            -46.8
+          ],
+          [
+            140.4,
+            258.6,
+            32.4
+          ],
+          [
+            -46.8,
+            32.4,
+            328.5
+          ]
+        ]
+      },
+      "box_translated": {
+        "volume_mm3": 24.0,
+        "com_mm": [
+          11.0,
+          -18.5,
+          32.0
+        ],
+        "centroidal_geometric_inertia_mm5": [
+          [
+            50.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            40.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            26.0
+          ]
+        ]
+      },
+      "box_rotated_translated": {
+        "volume_mm3": 24.0,
+        "com_mm": [
+          10.862046373340355,
+          -18.353541347364594,
+          31.948345440462944
+        ],
+        "centroidal_geometric_inertia_mm5": [
+          [
+            44.746548231031625,
+            4.537637710091398,
+            -7.004876980956189
+          ],
+          [
+            4.5376377100914,
+            42.5364007998921,
+            -0.4555749255762416
+          ],
+          [
+            -7.004876980956189,
+            -0.4555749255762416,
+            28.717050969076272
+          ]
+        ]
+      },
+      "cylinder_rotated_translated": {
+        "volume_mm3": 62.83185307179586,
+        "com_mm": [
+          -7.175536713092626,
+          7.9918986636971745,
+          14.280990696627475
+        ],
+        "centroidal_geometric_inertia_mm5": [
+          [
+            193.3959655716085,
+            -1.9272324950051303,
+            4.360672119994446
+          ],
+          [
+            -1.9272324950051307,
+            182.6635167037893,
+            25.043190759902444
+          ],
+          [
+            4.3606721199944385,
+            25.043190759902437,
+            137.06731781093507
+          ]
+        ]
+      },
+      "compound_rotated_translated": {
+        "volume_mm3": 30.0,
+        "com_mm": [
+          12.398893741085024,
+          17.665129682561304,
+          -2.077552599869581
+        ],
+        "centroidal_geometric_inertia_mm5": [
+          [
+            72.96115675556132,
+            37.37447070170002,
+            -65.37760035897013
+          ],
+          [
+            37.37447070170001,
+            352.09948063352516,
+            15.544880673258543
+          ],
+          [
+            -65.37760035897013,
+            15.54488067325854,
+            326.5393626109136
+          ]
+        ]
+      },
+      "box_scale_0p01": {
+        "volume_mm3": 2.4000000000000004e-05,
+        "com_mm": [
+          0.01,
+          0.015,
+          0.02
+        ],
+        "centroidal_geometric_inertia_mm5": [
+          [
+            5.000000000000001e-09,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            4.000000000000001e-09,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            2.6000000000000005e-09
+          ]
+        ]
+      },
+      "box_scale_10": {
+        "volume_mm3": 24000.0,
+        "com_mm": [
+          10.0,
+          15.0,
+          20.0
+        ],
+        "centroidal_geometric_inertia_mm5": [
+          [
+            5000000.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            4000000.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            2600000.0
+          ]
+        ]
+      }
+    }
+  },
+  "open_document_count_after": 0,
+  "source_copy_sha256_after": {
+    "freecad-src/Art3Pulley.fcstd": "d450cc565e722981346fc2b1aa3662474c83d574ca39a5602bacb98d8619fd9e",
+    "freecad-src/Art3TensionerBody.fcstd": "f105e77dbb72523f842e58b9bcd9a54c3ec5f5eaf771a0798851cf7f13752a55",
+    "freecad-src/Art3TensionerPulley.fcstd": "2bbf0c3c522db8b2247ed6f3dbce48cd111d4d21349f05cab5bc01d3812102da",
+    "freecad-src/Art4BearingFix.fcstd": "248a21d01617b0e784a9743d186ab698d6406a9eeba6e6a27c2c426baf8dca55",
+    "freecad-src/Art4BearingRing.fcstd": "e4a84700481629554e0e79de956562f54d46aaeeb60908f4e5aee4c5336d7214",
+    "freecad-src/Art4Body.fcstd": "73f6b57135ea18e516d6b3280d91063d3d23c891d809a6ed52ae9594483ddb31",
+    "freecad-src/Art4BodyBot.fcstd": "b7eb908539d3c6c6310c2f64ddb7de758d9f742f5c44ac45bd8dea69925d9413",
+    "freecad-src/Art4BodyFan.fcstd": "6520e13c078f3a9862c98443dc4e9b77f77c429b32f387e82c3f14eaabc8fa16"
+  },
+  "input_copy_bytes_unchanged": true
+}

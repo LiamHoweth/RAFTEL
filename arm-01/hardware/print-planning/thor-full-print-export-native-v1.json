@@ -1,0 +1,3228 @@
+{
+  "schema_version": 1,
+  "evidence_class": "all_printed_cached_BRep_native_exports_not_history_or_manufacturing_validation",
+  "audit_status": "complete_six_batches_47_cached_geometry_variants_only",
+  "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+  "full_request_path": "arm-01/hardware/print-planning/thor-full-print-export-inputs-v1.json",
+  "full_request_sha256": "d77b59241e0fe9f78aee07b7d14ec4b9d1014f3e0947593a7600d675363e113d",
+  "counts": {
+    "original_archives_preserved": 57,
+    "source_assets": 46,
+    "captured_geometry_variants": 47,
+    "represented_installed_instances": 65,
+    "native_batches": 6,
+    "unique_primitive_fixture_cases": 9,
+    "primitive_fixture_executions": 54,
+    "draft_stl_files": 47,
+    "total_draft_stl_triangles": 325810
+  },
+  "runtime": {
+    "executable_sha256": "1692e54224b48989974e8b91d3ac7a38d1d502d3db4dee1d4cf79ba91356e42d",
+    "worker_sha256": "3175d54684cca3b7eb4fad4490845f926b9c125060afa6d9ad2a64d7fe1d5d34",
+    "freecad_version": [
+      "1",
+      "1",
+      "4",
+      "20260928 (Git shallow)",
+      "Unknown",
+      "2026/09/28 13:46:34",
+      "(HEAD detached at 4fd3bf320)",
+      "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+    ],
+    "opencascade_version": "7.8.1",
+    "complete_runtime_and_OS_library_bundle_verified_by_worker": false
+  },
+  "preservation": {
+    "all57_originals_verified_before_after_each_batch": true,
+    "all_input_copies_unchanged": true,
+    "all_retained_worker_request_launcher_snapshots_unchanged": true,
+    "document_opened_or_recomputed": false,
+    "native_document_saved": false,
+    "original_eight_selection_capture_path": "arm-01/hardware/cad/thor-native-solid-properties-v1.json",
+    "original_eight_selection_capture_sha256": "c8498b9eee2f81a391d6813ef0513cfce2ab3b20d11f750a5daba3b18ccd854c",
+    "original_eight_selection_capture_preserved": true
+  },
+  "coordinate_frame": "separate per-source saved BRep storage coordinates in mm; no extra XML/link placements applied",
+  "source_to_installed_transforms_inferred": false,
+  "cross_asset_inertia_aggregation_performed": false,
+  "density_or_physical_inertia": null,
+  "geometric_volume_reconciliation": {
+    "quantity_weighted_component_volume_mm3": 3485323.1228679037,
+    "preserved_installed_component_volume_mm3": 3485323.122867904,
+    "difference_mm3": -4.656612873077393e-10,
+    "scope": "sum of per-component geometric volumes only; not an assembled union, physical mass, filament usage or print time"
+  },
+  "earlier_eight_repeatability": {
+    "matched_selection_count": 8,
+    "matched_current_selection_ids": [
+      "print-10-art2bodyawindow-body-nominal",
+      "print-18-art3tensionerbody-body-nominal",
+      "print-28-art4transmissioncolumn-body-nominal",
+      "print-34-basebearingfix-body-nominal",
+      "print-38-basetop-body-nominal",
+      "print-39-commonbearingfix-body-nominal",
+      "print-44-gripperfinger-body-nominal",
+      "print-45-assemblyart56-unnamed1_gripperfinger_mirrored-reflected"
+    ],
+    "exact_source_bindings_properties_and_STL_sha256": true,
+    "scope": "cached import/tessellation repeatability, not feature-history or surface-fidelity acceptance"
+  },
+  "batches": [
+    {
+      "batch_index": 1,
+      "selection_count": 8,
+      "selection_ids": [
+        "print-01-art1body-body-nominal",
+        "print-02-art1bot-body001-nominal",
+        "print-03-art1fanholder-body-nominal",
+        "print-04-art1gearmotor-body-nominal",
+        "print-05-art1top-body-nominal",
+        "print-06-art23optodisk-body-nominal",
+        "print-07-art2bodya-body001-nominal",
+        "print-08-art2bodyacover1-body-nominal"
+      ],
+      "raw_capture_path": "arm-01/hardware/print-planning/thor-full-print-export-rawcapture-batch-01-v1.json",
+      "raw_capture_sha256": "b33c8b14842cff48705e95f7777c337a351c920aca76c7fa8773f3c1ed5d2e3d",
+      "raw_runner_path": "arm-01/hardware/print-planning/thor-full-print-export-rawrunner-batch-01-v1.json",
+      "raw_runner_sha256": "88d65cc9b93a56519b6c9b839ff18a4272345ec60cf3e7827abf72cb113ac828",
+      "local_run_directory": ".work/cad/full-print-export-native/batch-01-run-01",
+      "launch_contract_sha256": "24eef5bdec1e090d735ff1238fbadcd19568136a6daf100aaddf43d979fcb8cf",
+      "worker_sha256": "3175d54684cca3b7eb4fad4490845f926b9c125060afa6d9ad2a64d7fe1d5d34",
+      "request_sha256": "b1bcb101fe0c41045a443f10721ff08ff2317c6f2edcaaa611f838d11d2d4c75",
+      "launcher_snapshot_sha256": "31391d277ac8af4b206d8abea334d784bc836f3e62e86982d24ab63a83b4f2b6",
+      "started_utc": "2026-11-11T22:03:46Z",
+      "finished_utc": "2026-11-11T22:03:57Z",
+      "elapsed_seconds": 11.378362499992363,
+      "actual_runtime_paths": {
+        "UserParameter": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-01-run-01\\user.cfg",
+        "SystemParameter": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-01-run-01\\system.cfg",
+        "UserHomePath": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-01-run-01\\user-home",
+        "UserAppData": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-01-run-01\\user-data\\",
+        "AppTempPath": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-01-run-01\\user-temp\\"
+      },
+      "open_documents_before": 0,
+      "open_documents_after": 0,
+      "primitive_fixture_summary": {
+        "verified": true,
+        "case_count": 9,
+        "maximum_relative_volume_error": 2.823443157514334e-16,
+        "maximum_com_error_mm": 8.881784197001252e-16,
+        "maximum_relative_tensor_error": 4.4011999916468124e-15,
+        "contract": "Solid.MatrixOfInertia is centroidal geometric mm^5 in parallel storage-frame axes; aggregate solids in their one common BRep frame"
+      }
+    },
+    {
+      "batch_index": 2,
+      "selection_count": 8,
+      "selection_ids": [
+        "print-09-art2bodyacover2-body-nominal",
+        "print-10-art2bodyawindow-body-nominal",
+        "print-11-art2bodyb-body-nominal",
+        "print-12-art2bodybcover-body-nominal",
+        "print-13-art2bodyunion-body-nominal",
+        "print-14-art2motorgear-body-nominal",
+        "print-15-art2sidecover-body-nominal",
+        "print-16-art3body-body002-nominal"
+      ],
+      "raw_capture_path": "arm-01/hardware/print-planning/thor-full-print-export-rawcapture-batch-02-v1.json",
+      "raw_capture_sha256": "fd54db2506a4a8ab00ba02c441c75ce977d9b5068cf7bd4d162881747865106b",
+      "raw_runner_path": "arm-01/hardware/print-planning/thor-full-print-export-rawrunner-batch-02-v1.json",
+      "raw_runner_sha256": "cc280ed1fae6c16fafb692273de44dc33d62f83c68228a9c2ee3a5ca858606b0",
+      "local_run_directory": ".work/cad/full-print-export-native/batch-02-run-01",
+      "launch_contract_sha256": "2aa4c2bdc4f901be054e121d7834a1bc9b60fd0fe890e30369bdc45b29a15d42",
+      "worker_sha256": "3175d54684cca3b7eb4fad4490845f926b9c125060afa6d9ad2a64d7fe1d5d34",
+      "request_sha256": "d67e573affafd57aec240cdfa981fecbe3c6b0c872f086cbdf03518fc25b0421",
+      "launcher_snapshot_sha256": "31391d277ac8af4b206d8abea334d784bc836f3e62e86982d24ab63a83b4f2b6",
+      "started_utc": "2026-11-11T22:11:36Z",
+      "finished_utc": "2026-11-11T22:11:41Z",
+      "elapsed_seconds": 5.081904200007557,
+      "actual_runtime_paths": {
+        "UserParameter": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-02-run-01\\user.cfg",
+        "SystemParameter": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-02-run-01\\system.cfg",
+        "UserHomePath": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-02-run-01\\user-home",
+        "UserAppData": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-02-run-01\\user-data\\",
+        "AppTempPath": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-02-run-01\\user-temp\\"
+      },
+      "open_documents_before": 0,
+      "open_documents_after": 0,
+      "primitive_fixture_summary": {
+        "verified": true,
+        "case_count": 9,
+        "maximum_relative_volume_error": 2.823443157514334e-16,
+        "maximum_com_error_mm": 8.881784197001252e-16,
+        "maximum_relative_tensor_error": 4.4011999916468124e-15,
+        "contract": "Solid.MatrixOfInertia is centroidal geometric mm^5 in parallel storage-frame axes; aggregate solids in their one common BRep frame"
+      }
+    },
+    {
+      "batch_index": 3,
+      "selection_count": 8,
+      "selection_ids": [
+        "print-17-art3pulley-body-nominal",
+        "print-18-art3tensionerbody-body-nominal",
+        "print-19-art3tensionerpulley-body-nominal",
+        "print-20-art4bearingfix-body-nominal",
+        "print-21-art4bearingring-body-nominal",
+        "print-22-art4body-body-nominal",
+        "print-23-art4bodybot-body-nominal",
+        "print-24-art4bodyfan-body-nominal"
+      ],
+      "raw_capture_path": "arm-01/hardware/print-planning/thor-full-print-export-rawcapture-batch-03-v1.json",
+      "raw_capture_sha256": "01cd9e669efad333ddfad659d05bc3dc6c24fd22c3ca0dc2e86e65be66708926",
+      "raw_runner_path": "arm-01/hardware/print-planning/thor-full-print-export-rawrunner-batch-03-v1.json",
+      "raw_runner_sha256": "87873ea96496611b88a67b1d712811ab666598a45020bc381d21eca0198c1d78",
+      "local_run_directory": ".work/cad/full-print-export-native/batch-03-run-01",
+      "launch_contract_sha256": "2c190efe78023f980e74410c16b11090fdbd74a5e056d95da7040b8f5eac6904",
+      "worker_sha256": "3175d54684cca3b7eb4fad4490845f926b9c125060afa6d9ad2a64d7fe1d5d34",
+      "request_sha256": "d6dc71dd340520f19ab442cd33ad7ed66dd87288aa228a1572ccdb95b1c67746",
+      "launcher_snapshot_sha256": "31391d277ac8af4b206d8abea334d784bc836f3e62e86982d24ab63a83b4f2b6",
+      "started_utc": "2026-11-11T22:11:41Z",
+      "finished_utc": "2026-11-11T22:11:45Z",
+      "elapsed_seconds": 3.6551603999978397,
+      "actual_runtime_paths": {
+        "UserParameter": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-03-run-01\\user.cfg",
+        "SystemParameter": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-03-run-01\\system.cfg",
+        "UserHomePath": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-03-run-01\\user-home",
+        "UserAppData": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-03-run-01\\user-data\\",
+        "AppTempPath": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-03-run-01\\user-temp\\"
+      },
+      "open_documents_before": 0,
+      "open_documents_after": 0,
+      "primitive_fixture_summary": {
+        "verified": true,
+        "case_count": 9,
+        "maximum_relative_volume_error": 2.823443157514334e-16,
+        "maximum_com_error_mm": 8.881784197001252e-16,
+        "maximum_relative_tensor_error": 4.4011999916468124e-15,
+        "contract": "Solid.MatrixOfInertia is centroidal geometric mm^5 in parallel storage-frame axes; aggregate solids in their one common BRep frame"
+      }
+    },
+    {
+      "batch_index": 4,
+      "selection_count": 8,
+      "selection_ids": [
+        "print-25-art4motorfix-body-nominal",
+        "print-26-art4motorgear-body-nominal",
+        "print-27-art4optodisk-body-nominal",
+        "print-28-art4transmissioncolumn-body-nominal",
+        "print-29-art56gearplate-body-nominal",
+        "print-30-art56motorcoverring-body-nominal",
+        "print-31-art56motorholdera-body-nominal",
+        "print-32-art56motorholderb-body-nominal"
+      ],
+      "raw_capture_path": "arm-01/hardware/print-planning/thor-full-print-export-rawcapture-batch-04-v1.json",
+      "raw_capture_sha256": "4c10605e7db57d8ce5ae9187a5d652f6d9d1946ae3771ee3ac160cb0f5e5d269",
+      "raw_runner_path": "arm-01/hardware/print-planning/thor-full-print-export-rawrunner-batch-04-v1.json",
+      "raw_runner_sha256": "ede6e17b9b6048b945972454a18566b97a379437d7746b0fd1821564a7304d6e",
+      "local_run_directory": ".work/cad/full-print-export-native/batch-04-run-01",
+      "launch_contract_sha256": "b89a6d7f59e42572b8e8dc05d8df70b36cd43cf51e7bc1f1cb3d7608e27df4d8",
+      "worker_sha256": "3175d54684cca3b7eb4fad4490845f926b9c125060afa6d9ad2a64d7fe1d5d34",
+      "request_sha256": "ab89dc31783b0b4f957aa49ed4f5f04ba7ec8e058f639f9f67564601ada248cf",
+      "launcher_snapshot_sha256": "31391d277ac8af4b206d8abea334d784bc836f3e62e86982d24ab63a83b4f2b6",
+      "started_utc": "2026-11-11T22:11:46Z",
+      "finished_utc": "2026-11-11T22:11:51Z",
+      "elapsed_seconds": 5.421210399988922,
+      "actual_runtime_paths": {
+        "UserParameter": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-04-run-01\\user.cfg",
+        "SystemParameter": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-04-run-01\\system.cfg",
+        "UserHomePath": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-04-run-01\\user-home",
+        "UserAppData": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-04-run-01\\user-data\\",
+        "AppTempPath": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-04-run-01\\user-temp\\"
+      },
+      "open_documents_before": 0,
+      "open_documents_after": 0,
+      "primitive_fixture_summary": {
+        "verified": true,
+        "case_count": 9,
+        "maximum_relative_volume_error": 2.823443157514334e-16,
+        "maximum_com_error_mm": 8.881784197001252e-16,
+        "maximum_relative_tensor_error": 4.4011999916468124e-15,
+        "contract": "Solid.MatrixOfInertia is centroidal geometric mm^5 in parallel storage-frame axes; aggregate solids in their one common BRep frame"
+      }
+    },
+    {
+      "batch_index": 5,
+      "selection_count": 8,
+      "selection_ids": [
+        "print-33-art56smallgear-body-nominal",
+        "print-34-basebearingfix-body-nominal",
+        "print-35-basebot-body002-nominal",
+        "print-36-baseboxbody-body002-nominal",
+        "print-37-baseboxcover-body-nominal",
+        "print-38-basetop-body-nominal",
+        "print-39-commonbearingfix-body-nominal",
+        "print-40-commonbearingfixthrough-body-nominal"
+      ],
+      "raw_capture_path": "arm-01/hardware/print-planning/thor-full-print-export-rawcapture-batch-05-v1.json",
+      "raw_capture_sha256": "69f7e8a8fc634c7528e701ebf288b8b8468091be3b984e473f9bfb028803970b",
+      "raw_runner_path": "arm-01/hardware/print-planning/thor-full-print-export-rawrunner-batch-05-v1.json",
+      "raw_runner_sha256": "75a3773806ef965beb8c04bfe888bba23535bfb6600b09660513bfdca9dcae9c",
+      "local_run_directory": ".work/cad/full-print-export-native/batch-05-run-01",
+      "launch_contract_sha256": "9a4946bcdf1286d31f052796bb022a0cb9902b1e5f970564799c56c97df91e71",
+      "worker_sha256": "3175d54684cca3b7eb4fad4490845f926b9c125060afa6d9ad2a64d7fe1d5d34",
+      "request_sha256": "0eb89448d531462080a82b7f8734b13340f93daf6a883e8a44ed63399f988609",
+      "launcher_snapshot_sha256": "31391d277ac8af4b206d8abea334d784bc836f3e62e86982d24ab63a83b4f2b6",
+      "started_utc": "2026-11-11T22:11:52Z",
+      "finished_utc": "2026-11-11T22:11:59Z",
+      "elapsed_seconds": 6.89063310000347,
+      "actual_runtime_paths": {
+        "UserParameter": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-05-run-01\\user.cfg",
+        "SystemParameter": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-05-run-01\\system.cfg",
+        "UserHomePath": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-05-run-01\\user-home",
+        "UserAppData": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-05-run-01\\user-data\\",
+        "AppTempPath": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-05-run-01\\user-temp\\"
+      },
+      "open_documents_before": 0,
+      "open_documents_after": 0,
+      "primitive_fixture_summary": {
+        "verified": true,
+        "case_count": 9,
+        "maximum_relative_volume_error": 2.823443157514334e-16,
+        "maximum_com_error_mm": 8.881784197001252e-16,
+        "maximum_relative_tensor_error": 4.4011999916468124e-15,
+        "contract": "Solid.MatrixOfInertia is centroidal geometric mm^5 in parallel storage-frame axes; aggregate solids in their one common BRep frame"
+      }
+    },
+    {
+      "batch_index": 6,
+      "selection_count": 7,
+      "selection_ids": [
+        "print-41-gripperactivearm-body-nominal",
+        "print-42-gripperarm-body-nominal",
+        "print-43-gripperbot-body-nominal",
+        "print-44-gripperfinger-body-nominal",
+        "print-45-assemblyart56-unnamed1_gripperfinger_mirrored-reflected",
+        "print-46-gripperpassivearm-body-nominal",
+        "print-47-grippertop-body-nominal"
+      ],
+      "raw_capture_path": "arm-01/hardware/print-planning/thor-full-print-export-rawcapture-batch-06-v1.json",
+      "raw_capture_sha256": "8852ab43074c679b4046b4a02e23c618fc3ee5295b56b8eb242a070c42cc5f6c",
+      "raw_runner_path": "arm-01/hardware/print-planning/thor-full-print-export-rawrunner-batch-06-v1.json",
+      "raw_runner_sha256": "044cf111832278d518874e75e481f15e559eaa7642b33b2378b45adbd60e0e98",
+      "local_run_directory": ".work/cad/full-print-export-native/batch-06-run-01",
+      "launch_contract_sha256": "18eb1b2d5203f00fc5c315e86a79af64c0a9b63dbc9a508d6948ef6bf3751e99",
+      "worker_sha256": "3175d54684cca3b7eb4fad4490845f926b9c125060afa6d9ad2a64d7fe1d5d34",
+      "request_sha256": "a53f6e809136ebf7c12ae81730f711a485403a7b0718e9994dc3ad97866fcc6c",
+      "launcher_snapshot_sha256": "31391d277ac8af4b206d8abea334d784bc836f3e62e86982d24ab63a83b4f2b6",
+      "started_utc": "2026-11-11T22:12:00Z",
+      "finished_utc": "2026-11-11T22:12:05Z",
+      "elapsed_seconds": 4.629383199993754,
+      "actual_runtime_paths": {
+        "UserParameter": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-06-run-01\\user.cfg",
+        "SystemParameter": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-06-run-01\\system.cfg",
+        "UserHomePath": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-06-run-01\\user-home",
+        "UserAppData": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-06-run-01\\user-data\\",
+        "AppTempPath": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-06-run-01\\user-temp\\"
+      },
+      "open_documents_before": 0,
+      "open_documents_after": 0,
+      "primitive_fixture_summary": {
+        "verified": true,
+        "case_count": 9,
+        "maximum_relative_volume_error": 2.823443157514334e-16,
+        "maximum_com_error_mm": 8.881784197001252e-16,
+        "maximum_relative_tensor_error": 4.4011999916468124e-15,
+        "contract": "Solid.MatrixOfInertia is centroidal geometric mm^5 in parallel storage-frame axes; aggregate solids in their one common BRep frame"
+      }
+    }
+  ],
+  "variants": [
+    {
+      "selection_id": "print-01-art1body-body-nominal",
+      "batch_index": 1,
+      "asset_id": "Art1Body::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 1,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art1Body_Art1Body"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/Art1Body.fcstd",
+        "source_sha256": "8afa16c8ff3adebd87e48b67dfb20d3224402bd517010dc112950a28f219690a",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "d0ed3dcd293f814b6db11e0e29a22e89a6aa4fe6c8d9f8e5c08e508baec2b9db",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 298648.10044680384,
+      "com_mm": [
+        0.000691337281180332,
+        1.8578894916978796,
+        67.83237825168747
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-01-art1body-body-nominal-cached-native-draft.stl",
+        "sha256": "ffe00e424d7d12678dc13d9e366768a167eca793c7a75694c73c38045db3f74e",
+        "bytes": 1618984,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 16109,
+        "triangle_count": 32378,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-01-art1body-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-01-run-01/draft-stl/print-01-art1body-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-02-art1bot-body001-nominal",
+      "batch_index": 1,
+      "asset_id": "Art1Bot::Body001",
+      "geometry_variant": "nominal",
+      "quantity_required": 1,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art1Bot_Art1Bot"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/Art1Bot.fcstd",
+        "source_sha256": "31c8fa13cd2868e68cbcd97ec43970ff120760fad46f0a0e53608a98f29666ca",
+        "object_name": "Body001",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape6.brp",
+        "brep_sha256": "a9d5b2d4127d93f925e52e8a8e692edc3b71ec2e6f8f4318c8954af4303c3f54",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 80464.69601268631,
+      "com_mm": [
+        0.0006719103329902629,
+        0.005202511691622453,
+        23.04924388139538
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-02-art1bot-body001-nominal-cached-native-draft.stl",
+        "sha256": "20aec5738c8dd6e840847baed28c7994cf1a418f3cb1f5ccf4b3b057f43fcae2",
+        "bytes": 335684,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 3350,
+        "triangle_count": 6712,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-02-art1bot-body001-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-01-run-01/draft-stl/print-02-art1bot-body001-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-03-art1fanholder-body-nominal",
+      "batch_index": 1,
+      "asset_id": "Art1FanHolder::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 2,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art1FanHolder_Art1FanHolder",
+        "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art1FanHolder_Art1FanHolder001"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/Art1FanHolder.FCStd",
+        "source_sha256": "df43383d3d3a81f95af8ed3c9c589ac679e3f1eda0c60e642f292480c834e985",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "07b8dde34e22d5f46d42c1b39eb75e85fd99751827002fb84afedbb9ddbbb402",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 1299.1220874183236,
+      "com_mm": [
+        1.9095996769768555e-12,
+        -0.7978623280298368,
+        1.584110439740341
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-03-art1fanholder-body-nominal-cached-native-draft.stl",
+        "sha256": "7240ea58cb690c26a55660527bef91320e82388b11900def8914ea677ff182a9",
+        "bytes": 104184,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 1029,
+        "triangle_count": 2082,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-03-art1fanholder-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-01-run-01/draft-stl/print-03-art1fanholder-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-04-art1gearmotor-body-nominal",
+      "batch_index": 1,
+      "asset_id": "Art1GearMotor::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 1,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Art1GearMotor_Art1GearMotor"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/Art1GearMotor.fcstd",
+        "source_sha256": "7de75d92b15bdfc548002c2bb93ab8192720b7948338b708f34460d55321d3f3",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape1.brp",
+        "brep_sha256": "e2e4ef951b075e83c06d36f6255dc24bc520a6c0a5cf0b8387b950d1fa78070b",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 7462.259151219078,
+      "com_mm": [
+        -0.17394939884409882,
+        0.000242325964646819,
+        -0.07611314513779607
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-04-art1gearmotor-body-nominal-cached-native-draft.stl",
+        "sha256": "46490096bdb2239d673c74304eac698328f1a0fe5750b98cef91d667a6a7b7d0",
+        "bytes": 173284,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 1728,
+        "triangle_count": 3464,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-04-art1gearmotor-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-01-run-01/draft-stl/print-04-art1gearmotor-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-05-art1top-body-nominal",
+      "batch_index": 1,
+      "asset_id": "Art1Top::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 1,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art1Top_Art1Top"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/Art1Top.fcstd",
+        "source_sha256": "0dbfa7c49d0e3ca032e219b306e532fd403a145fb15cf304aa880a8dd3067bd6",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "c0960b2c53c42a8008dfe4b125ffb0cf9b6aa6164bdb3447478a6099e592d5e5",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 154194.32762722234,
+      "com_mm": [
+        -2.919691562623466e-15,
+        6.591424891377219e-15,
+        15.391622149746574
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-05-art1top-body-nominal-cached-native-draft.stl",
+        "sha256": "5ff6f920bbdcc05e4f3ae2ec335d73388cd7d896145eac2101f94fdcb0aed69d",
+        "bytes": 305484,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 3024,
+        "triangle_count": 6108,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-05-art1top-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-01-run-01/draft-stl/print-05-art1top-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-06-art23optodisk-body-nominal",
+      "batch_index": 1,
+      "asset_id": "Art23Optodisk::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 2,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art23Optodisk_Art23Optodisk",
+        "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Art23Optodisk_Art23Optodisk"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/Art23Optodisk.fcstd",
+        "source_sha256": "c81e788792edea63c7e73a12b06dc8073668a6b899f8d46ea5c3d9d399de431c",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "a4a3586db66f88995c904ed5d8622122a38cb1046a086fdf53794f40dbfac5d1",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 1743.496305918541,
+      "com_mm": [
+        4.381859295576585e-14,
+        14.563678764454433,
+        6.531287657642013
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-06-art23optodisk-body-nominal-cached-native-draft.stl",
+        "sha256": "3b0643344bee3baf88a185848769d34d6e2631df05f77250a62a6ca82d726005",
+        "bytes": 68984,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 688,
+        "triangle_count": 1378,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-06-art23optodisk-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-01-run-01/draft-stl/print-06-art23optodisk-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-07-art2bodya-body001-nominal",
+      "batch_index": 1,
+      "asset_id": "Art2BodyA::Body001",
+      "geometry_variant": "nominal",
+      "quantity_required": 1,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art2BodyA_Art2BodyA"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/Art2BodyA.fcstd",
+        "source_sha256": "ddf08ae66dfc767bbce3f3354d8ba8f471f5527e8cdbfec9570933c4fb4e276a",
+        "object_name": "Body001",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape8.brp",
+        "brep_sha256": "efea7ec4bdd414fef4e3b3a2aa49695667645021cb7cbabbf61a01e74cde307d",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 187623.53788952742,
+      "com_mm": [
+        3.831487814849113e-05,
+        80.93970749554438,
+        10.01293485116384
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-07-art2bodya-body001-nominal-cached-native-draft.stl",
+        "sha256": "a2ae24a4bb6794f0cfa370ffff40b09509dea0aaf1d1c9b0c595dfc73e8df1c2",
+        "bytes": 993684,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 9900,
+        "triangle_count": 19872,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-07-art2bodya-body001-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-01-run-01/draft-stl/print-07-art2bodya-body001-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-08-art2bodyacover1-body-nominal",
+      "batch_index": 1,
+      "asset_id": "Art2BodyACover1::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 1,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art2BodyACover1_Art2BodyACover1"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/Art2BodyACover1.fcstd",
+        "source_sha256": "2ed0c298cbd55af72065d8a850f20b23f2dcd72de8c79ee9d6384bc4c537d514",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "be46dd214bc30facd63c60b867ba5e28a69f34868bb510f7f57b5f2757483715",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 48188.74841704854,
+      "com_mm": [
+        1.6906460992602637e-14,
+        6.555653123747503,
+        2.489037852350845
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-08-art2bodyacover1-body-nominal-cached-native-draft.stl",
+        "sha256": "620e488794ffc669c6868004f489de7f770f8d31ff24c838d00132707a240e4c",
+        "bytes": 270484,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 2688,
+        "triangle_count": 5408,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-08-art2bodyacover1-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-01-run-01/draft-stl/print-08-art2bodyacover1-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-09-art2bodyacover2-body-nominal",
+      "batch_index": 2,
+      "asset_id": "Art2BodyACover2::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 1,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art2BodyACover2_Art2BodyACover2"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/Art2BodyACover2.fcstd",
+        "source_sha256": "83dae954cbbab7b380094033d0c689d774862878f809f5f9e2e31c9bbb9bbde3",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "3849a232bb2cf2d2951c8f3ae22ee137f4ab0e32e79b07a80c5c3bb612ba1d24",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 43590.64259336913,
+      "com_mm": [
+        -1.6891726811237317e-14,
+        133.02833115781516,
+        2.523774848304316
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-09-art2bodyacover2-body-nominal-cached-native-draft.stl",
+        "sha256": "77393c9477855f383285cfd7df88fff46cc5aff61dd21bfdd7876dc9ebb91d3d",
+        "bytes": 111084,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 1100,
+        "triangle_count": 2220,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-09-art2bodyacover2-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-02-run-01/draft-stl/print-09-art2bodyacover2-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-10-art2bodyawindow-body-nominal",
+      "batch_index": 2,
+      "asset_id": "Art2BodyAWindow::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 1,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Unnamed_Art2BodyAWindow"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/Art2BodyAWindow.fcstd",
+        "source_sha256": "ced59ddf86e57b3f3615bb4ee44d96b75b7032a9239733845a26e8e334941e98",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "1bf191b3a417f60f6814143f39bb06068f6ac5a39d1a598390ae26edae6d78ba",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 39011.93801416927,
+      "com_mm": [
+        4.236792169250291e-11,
+        1.8045596851162218e-14,
+        2.9357867455168325
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-10-art2bodyawindow-body-nominal-cached-native-draft.stl",
+        "sha256": "280b420e4dcddb8cf14f5aae155534dd511f39b570936558dbf3187ad44aaf41",
+        "bytes": 168584,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 1671,
+        "triangle_count": 3370,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-10-art2bodyawindow-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-02-run-01/draft-stl/print-10-art2bodyawindow-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-11-art2bodyb-body-nominal",
+      "batch_index": 2,
+      "asset_id": "Art2BodyB::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 1,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art2BodyB_Art2BodyB"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/Art2BodyB.fcstd",
+        "source_sha256": "a63e36fd3b27321061ef875da8454e2d787a83fb8737fb1774aa458c8a8c7882",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "60dcd5ab7fb6224fbc887c163ff9cef2d51abca641380840d2e92d1aeb8d79c3",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 257430.4275871655,
+      "com_mm": [
+        2.9471430552772743e-08,
+        80.00000052065934,
+        9.19214615160878
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-11-art2bodyb-body-nominal-cached-native-draft.stl",
+        "sha256": "b4c96cbebb8db68404a46a17f2e948d7681b37b884f26a04113b2999481d6dcf",
+        "bytes": 930084,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 9256,
+        "triangle_count": 18600,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-11-art2bodyb-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-02-run-01/draft-stl/print-11-art2bodyb-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-12-art2bodybcover-body-nominal",
+      "batch_index": 2,
+      "asset_id": "Art2BodyBCover::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 1,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art2BodyBCover_Art2BodyBCover"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/Art2BodyBCover.fcstd",
+        "source_sha256": "b8901be694766792ec0acd9e472d39552a6dfe9e0b69392e2e80ddc7499cdfdf",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "74e139997bd951186fe1eb7f5dbfa4566175d791563876cda26b1de624dc2f9c",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 97915.96879564342,
+      "com_mm": [
+        1.992178063432783e-12,
+        79.99999999999794,
+        2.5211683738187074
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-12-art2bodybcover-body-nominal-cached-native-draft.stl",
+        "sha256": "e7d6f9502f446ae52f372769b43a874b4af2c32b801b5ed69ca51d83e5c38284",
+        "bytes": 158284,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 1568,
+        "triangle_count": 3164,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-12-art2bodybcover-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-02-run-01/draft-stl/print-12-art2bodybcover-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-13-art2bodyunion-body-nominal",
+      "batch_index": 2,
+      "asset_id": "Art2BodyUnion::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 1,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art2BodyUnion_Art2BodyUnion"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/Art2BodyUnion.FCStd",
+        "source_sha256": "238330fcdb1a52d6ccf5e3e2951d49c0a79bd24f42eb24162581727fb769fecc",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "e1d8f616a9daf1af305567eb90c8b73181999278e9499a25187d49e251dfe3d6",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 89862.88542967172,
+      "com_mm": [
+        -4.120477866795069e-15,
+        -1.5655633571340384e-14,
+        -2.898693556123488e-16
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-13-art2bodyunion-body-nominal-cached-native-draft.stl",
+        "sha256": "ce90bc9d0498399684b9208b1a51fa29be64a2967d06de1f1667db26b993241b",
+        "bytes": 223084,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 2216,
+        "triangle_count": 4460,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-13-art2bodyunion-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-02-run-01/draft-stl/print-13-art2bodyunion-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-14-art2motorgear-body-nominal",
+      "batch_index": 2,
+      "asset_id": "Art2MotorGear::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 2,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art2MotorGear_Art2MotorGear",
+        "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art2MotorGear_Art2MotorGear001"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/Art2MotorGear.fcstd",
+        "source_sha256": "a8761b35792888dd679bdc1bab74a353b5893365aff268ae1d35a985a2984fc8",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape1.brp",
+        "brep_sha256": "d294cef5593fceedb2b773ef102e02e6cfeb1fdc5161315ebcbcb7f1cf95998b",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 7178.684897923684,
+      "com_mm": [
+        8.24251019685462e-05,
+        0.22244266059233417,
+        2.444223842122297
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-14-art2motorgear-body-nominal-cached-native-draft.stl",
+        "sha256": "a69fb6b081f767339217e158bfa93e611d1b8ae0f29ebb973d67b3d762853198",
+        "bytes": 192084,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 1916,
+        "triangle_count": 3840,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-14-art2motorgear-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-02-run-01/draft-stl/print-14-art2motorgear-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-15-art2sidecover-body-nominal",
+      "batch_index": 2,
+      "asset_id": "Art2SideCover::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 2,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Unnamed_Art2SideCover",
+        "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Unnamed_Art2SideCover001"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/Art2SideCover.FCStd",
+        "source_sha256": "a618cb1c6f2168340ccc5e49756b1ff8319b91a05b6c5f578275fbfaaffbf14e",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "cbc04bb1eccd2dead730f1f4ff47ab216ee84e38a58f8c88d0f16d548fbb8dfa",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 51779.88728238576,
+      "com_mm": [
+        -1.4336445329379662e-16,
+        79.99999999999999,
+        0.9984106710053451
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-15-art2sidecover-body-nominal-cached-native-draft.stl",
+        "sha256": "c1e411c6389c4ed2fd4971c59189cb609cb8e861abd8f8173236977f31e8bbbf",
+        "bytes": 66884,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 670,
+        "triangle_count": 1336,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-15-art2sidecover-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-02-run-01/draft-stl/print-15-art2sidecover-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-16-art3body-body002-nominal",
+      "batch_index": 2,
+      "asset_id": "Art3Body::Body002",
+      "geometry_variant": "nominal",
+      "quantity_required": 1,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Art3Body_Art3Body"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/Art3Body.fcstd",
+        "source_sha256": "d6e2759daadc02ab36a7b5c6920b7f7b42066f63c2a7600fb4ff86487565e79e",
+        "object_name": "Body002",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape33.brp",
+        "brep_sha256": "a7ac83bca2bf5779c0fe9d09412747c3c85afb67ebf6a5497ff131ecc032cc9d",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 278165.2564076698,
+      "com_mm": [
+        -0.9003307617659155,
+        -0.2522072827221687,
+        73.5668644314222
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-16-art3body-body002-nominal-cached-native-draft.stl",
+        "sha256": "5c6987da0daacc1d54c5c57cd27db133ff7c20d3e2204b3d1004f282f0ba0cd4",
+        "bytes": 1096884,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 10902,
+        "triangle_count": 21936,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-16-art3body-body002-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-02-run-01/draft-stl/print-16-art3body-body002-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-17-art3pulley-body-nominal",
+      "batch_index": 3,
+      "asset_id": "Art3Pulley::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 1,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Art3Pulley_Art3Pulley"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/Art3Pulley.fcstd",
+        "source_sha256": "d450cc565e722981346fc2b1aa3662474c83d574ca39a5602bacb98d8619fd9e",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "f0185fed78de6bf411c13c5c7b971279990ae06a014621c32cb5642f0f1b1d12",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 52315.76282019278,
+      "com_mm": [
+        1.1052461879152318e-05,
+        3.3556139211413063,
+        8.947595860276282
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-17-art3pulley-body-nominal-cached-native-draft.stl",
+        "sha256": "0b795fe22f4b66c1fbde390ad796b98174836aea6d5801243f9d005d9b6534e9",
+        "bytes": 227984,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 2257,
+        "triangle_count": 4558,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-17-art3pulley-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-03-run-01/draft-stl/print-17-art3pulley-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-18-art3tensionerbody-body-nominal",
+      "batch_index": 3,
+      "asset_id": "Art3TensionerBody::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 2,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art3TensionerBody_Art3TensionerBody",
+        "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art3TensionerBody_Art3TensionerBody001"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/Art3TensionerBody.fcstd",
+        "source_sha256": "f105e77dbb72523f842e58b9bcd9a54c3ec5f5eaf771a0798851cf7f13752a55",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "e3ddeed778265d533c28e93dcf38af4ca7dbf021c7111cf18175976ef1adefcb",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 872.4812942676833,
+      "com_mm": [
+        -2.8340879474334156e-15,
+        -6.74429550294441,
+        5.2887225288164155
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-18-art3tensionerbody-body-nominal-cached-native-draft.stl",
+        "sha256": "ff90420848c5fb07b472a87cf268039014d000723a57ada408074b7f9f9b10e6",
+        "bytes": 40284,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 400,
+        "triangle_count": 804,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-18-art3tensionerbody-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-03-run-01/draft-stl/print-18-art3tensionerbody-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-19-art3tensionerpulley-body-nominal",
+      "batch_index": 3,
+      "asset_id": "Art3TensionerPulley::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 2,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art3TensionerPulley_Art3TensionerPulley",
+        "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art3TensionerPulley_Art3TensionerPulley001"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/Art3TensionerPulley.fcstd",
+        "source_sha256": "2bbf0c3c522db8b2247ed6f3dbce48cd111d4d21349f05cab5bc01d3812102da",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "0cf600a184aea1bae698fb1677ccbe8b73cbb4315f15d2a1c4f6e795393919f0",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 1161.2661624545653,
+      "com_mm": [
+        -1.5847406435479099e-15,
+        2.613866097197333e-15,
+        3.6122706398750144
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-19-art3tensionerpulley-body-nominal-cached-native-draft.stl",
+        "sha256": "a654802c263789a063c422014be30353c8226b59ba7cb4d844b044487e3deec2",
+        "bytes": 63084,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 630,
+        "triangle_count": 1260,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-19-art3tensionerpulley-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-03-run-01/draft-stl/print-19-art3tensionerpulley-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-20-art4bearingfix-body-nominal",
+      "batch_index": 3,
+      "asset_id": "Art4BearingFix::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 2,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4BearingFix_Art4BearingFix",
+        "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4BearingFix_Art4BearingFix001"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/Art4BearingFix.fcstd",
+        "source_sha256": "248a21d01617b0e784a9743d186ab698d6406a9eeba6e6a27c2c426baf8dca55",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "4a41fee26bae52f21a372b86177a0dfb53501b2270c2ee2bbd0416aab09b6535",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 885.5804357599253,
+      "com_mm": [
+        7.751621996855076e-07,
+        -0.08778963006994965,
+        1.776499106459036
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-20-art4bearingfix-body-nominal-cached-native-draft.stl",
+        "sha256": "7ec802b2109bd5d835b0611a4b59ebd5be8c5516d1b7ca7b1ffef29d591a40e4",
+        "bytes": 67884,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 676,
+        "triangle_count": 1356,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-20-art4bearingfix-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-03-run-01/draft-stl/print-20-art4bearingfix-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-21-art4bearingring-body-nominal",
+      "batch_index": 3,
+      "asset_id": "Art4BearingRing::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 1,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Art4BearingRing_Art4BearingRing"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/Art4BearingRing.fcstd",
+        "source_sha256": "e4a84700481629554e0e79de956562f54d46aaeeb60908f4e5aee4c5336d7214",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "8775447900b76c4bfc681acd8e3b5babc36f2ea16c38ffa2983c59b515ee3f1b",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 23451.843718245163,
+      "com_mm": [
+        0.6942543717741128,
+        -4.552994257086704e-05,
+        6.383235610791707
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-21-art4bearingring-body-nominal-cached-native-draft.stl",
+        "sha256": "a588f40777d2ebe24b859570ea94bc1aa98bc5c76667173eb9ecf8cdaee6fa0d",
+        "bytes": 312484,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 3114,
+        "triangle_count": 6248,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-21-art4bearingring-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-03-run-01/draft-stl/print-21-art4bearingring-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-22-art4body-body-nominal",
+      "batch_index": 3,
+      "asset_id": "Art4Body::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 1,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4Body_Art4Body"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/Art4Body.fcstd",
+        "source_sha256": "73f6b57135ea18e516d6b3280d91063d3d23c891d809a6ed52ae9594483ddb31",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "e6ab1b314fdf3f45fb8161d1c642a9a13fb92af86feb24a802277f4906130374",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 227891.8454523972,
+      "com_mm": [
+        7.942823794286025e-05,
+        -0.19721627951284273,
+        68.78032986733939
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-22-art4body-body-nominal-cached-native-draft.stl",
+        "sha256": "c97de1f935401c225b768e5e14e8b44191b215dd0805a216f5f0b39f5703f7b0",
+        "bytes": 759384,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 7539,
+        "triangle_count": 15186,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-22-art4body-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-03-run-01/draft-stl/print-22-art4body-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-23-art4bodybot-body-nominal",
+      "batch_index": 3,
+      "asset_id": "Art4BodyBot::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 1,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4BodyBot_Art4BodyBot"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/Art4BodyBot.fcstd",
+        "source_sha256": "b7eb908539d3c6c6310c2f64ddb7de758d9f742f5c44ac45bd8dea69925d9413",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "31e07cdecb7dc4e510f0e43450da087a9a4c039be3f87b35e0dec267f74c9c3e",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 43404.69219108355,
+      "com_mm": [
+        2.8021613593218767e-07,
+        3.9686109193597374e-08,
+        2.7992830195039984
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-23-art4bodybot-body-nominal-cached-native-draft.stl",
+        "sha256": "3a8c3e0ea42afd1ffc14679d3b54175678415c66fcf35d7d07e242c75bf3f01c",
+        "bytes": 299884,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 2966,
+        "triangle_count": 5996,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-23-art4bodybot-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-03-run-01/draft-stl/print-23-art4bodybot-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-24-art4bodyfan-body-nominal",
+      "batch_index": 3,
+      "asset_id": "Art4BodyFan::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 2,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4BodyFan_Art4BodyFan",
+        "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4BodyFan_Art4BodyFan001"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/Art4BodyFan.fcstd",
+        "source_sha256": "6520e13c078f3a9862c98443dc4e9b77f77c429b32f387e82c3f14eaabc8fa16",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "f851081dec326f6e6714b8e25219ea378819a571a22e0991f0d00b9c6b90678e",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 12547.728604259315,
+      "com_mm": [
+        7.601331564470426,
+        3.4627504875924934e-06,
+        24.999998757634142
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-24-art4bodyfan-body-nominal-cached-native-draft.stl",
+        "sha256": "e025549326bc23eadcf7968c2c9df49a40fce44ca2d58bff3e89b1268c9912ca",
+        "bytes": 72784,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 719,
+        "triangle_count": 1454,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-24-art4bodyfan-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-03-run-01/draft-stl/print-24-art4bodyfan-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-25-art4motorfix-body-nominal",
+      "batch_index": 4,
+      "asset_id": "Art4MotorFix::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 1,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Art4MotorFix_Art4MotorFix"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/Art4MotorFix.fcstd",
+        "source_sha256": "976a04a9b3bbf21ea80a9e1e6ac53ef64f0ac7aa93fbcff7184f84b00688e6c4",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "85e80742909d797db2d78a2cb7b3c886cc410fdf7d60ec30799a4c6e8c8eaf25",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 3769.7213348050764,
+      "com_mm": [
+        -1.3445308592002596,
+        -1.2176247699347758e-15,
+        1.8073132219215784
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-25-art4motorfix-body-nominal-cached-native-draft.stl",
+        "sha256": "51d855cab03a83824e5674fcb62b0a356d768320671c278e00eceab03c22ce96",
+        "bytes": 119484,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 1178,
+        "triangle_count": 2388,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-25-art4motorfix-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-04-run-01/draft-stl/print-25-art4motorfix-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-26-art4motorgear-body-nominal",
+      "batch_index": 4,
+      "asset_id": "Art4MotorGear::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 1,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Art4MotorGear_Art4MotorGear"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/Art4MotorGear.fcstd",
+        "source_sha256": "c988a0d9be1fc1312fabc1b6b10108cf05f23fb3298a0ece627cb5eb1d930358",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape1.brp",
+        "brep_sha256": "8d2fd39082274c6dfad62ee20506971d4df5bee1f9bc33c8fa016cbcc4ce2f70",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 6945.125846289586,
+      "com_mm": [
+        0.26610491639779654,
+        0.0003257637373959166,
+        -0.23641425648792908
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-26-art4motorgear-body-nominal-cached-native-draft.stl",
+        "sha256": "bf19545589ee468a9cb90cbbdd75f36baf793eab0a54c68f3e423bf28ed5cb3e",
+        "bytes": 191984,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 1915,
+        "triangle_count": 3838,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-26-art4motorgear-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-04-run-01/draft-stl/print-26-art4motorgear-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-27-art4optodisk-body-nominal",
+      "batch_index": 4,
+      "asset_id": "Art4Optodisk::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 1,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4Optodisk_Art4Optodisk"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/Art4Optodisk.fcstd",
+        "source_sha256": "0822ae9a4a1460e74e05ff068e2662670e9db50991e28d2d0d3da6f73385cbb4",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "ac7a7c8af732ca3dfc5d9ca119911224d12ae90bc01783a58778431f5543cd40",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 8854.474438444182,
+      "com_mm": [
+        -0.03354236347570906,
+        5.221622895582808e-15,
+        4.04742844820733
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-27-art4optodisk-body-nominal-cached-native-draft.stl",
+        "sha256": "30fbc95239cf442694749f6f08ba142058b5184cfbea25b6b35126ae7578f643",
+        "bytes": 140584,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 1397,
+        "triangle_count": 2810,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-27-art4optodisk-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-04-run-01/draft-stl/print-27-art4optodisk-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-28-art4transmissioncolumn-body-nominal",
+      "batch_index": 4,
+      "asset_id": "Art4TransmissionColumn::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 1,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4TransmissionColumn_Art4TransmissionColumn"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/Art4TransmissionColumn.fcstd",
+        "source_sha256": "f31295eaaf973347c73779e69ca33f095656b1e7bc4511eac5ce879aaaddbb2c",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape1.brp",
+        "brep_sha256": "95cc8bc005dead7f10f6c613c38b3b37176188d33fdaf23a09af4a7a693ad038",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 78484.25760901181,
+      "com_mm": [
+        4.3250991503408155e-06,
+        -2.2350809083218857e-05,
+        49.50960266232722
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-28-art4transmissioncolumn-body-nominal-cached-native-draft.stl",
+        "sha256": "dd007abd74dcfd50c6311ea98c7d26bd1f07e2d6267b8ddd303c21f4ed1d2cda",
+        "bytes": 700884,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 6988,
+        "triangle_count": 14016,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-28-art4transmissioncolumn-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-04-run-01/draft-stl/print-28-art4transmissioncolumn-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-29-art56gearplate-body-nominal",
+      "batch_index": 4,
+      "asset_id": "Art56GearPlate::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 1,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Art56GearPlate_Art56GearPlate"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/Art56GearPlate.fcstd",
+        "source_sha256": "38ca5952d4e03e4009f94628d0c435153b980ea558a608fca9ac1c9aaf79d411",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape2.brp",
+        "brep_sha256": "5fe67acd525eb0ebe1900eb1da68f39a5d079a6a2af933078fdae0be87b51dd1",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 42883.5006807928,
+      "com_mm": [
+        -8.1085951861862e-08,
+        -2.5302275622985866e-08,
+        -8.492498476750578
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-29-art56gearplate-body-nominal-cached-native-draft.stl",
+        "sha256": "734fe5c717a7d87bf6f0dc22dbbc4854de404f1af50b253b8496843d0c59da35",
+        "bytes": 573484,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 5722,
+        "triangle_count": 11468,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-29-art56gearplate-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-04-run-01/draft-stl/print-29-art56gearplate-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-30-art56motorcoverring-body-nominal",
+      "batch_index": 4,
+      "asset_id": "Art56MotorCoverRing::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 1,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Art56MotorCoverRing_Art56MotorCoverRing"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/Art56MotorCoverRing.fcstd",
+        "source_sha256": "8d037cf7a3e63ee8f04b39be35836d35c5d6f330497c8df5a735cd05abd071fa",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "9d5ffebaeb12b9f2f41c66e22aaf6ac8a574afc2e94abe59d202154f567e3ab5",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 27847.005739778484,
+      "com_mm": [
+        7.555936967846759e-07,
+        3.2916683007693077,
+        0.12563554347441228
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-30-art56motorcoverring-body-nominal-cached-native-draft.stl",
+        "sha256": "c2b7d4774c957e7399567ef41ca2d6511cf5aa16a70963c3a7f13db86dd86d46",
+        "bytes": 124784,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 1235,
+        "triangle_count": 2494,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-30-art56motorcoverring-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-04-run-01/draft-stl/print-30-art56motorcoverring-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-31-art56motorholdera-body-nominal",
+      "batch_index": 4,
+      "asset_id": "Art56MotorHolderA::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 2,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art56MotorHolderA_Art56MotorHolderA",
+        "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art56MotorHolderA_Art56MotorHolderA001"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/Art56MotorHolderA.fcstd",
+        "source_sha256": "a1355712512d87ac25000ab60eab65d6c9ba454099ebc6761dbf93d6c003c49a",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "655b616d174dae0c26b136f7d2513f58e15f43393717f6270f80feb7ace8fd70",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 5536.724322104634,
+      "com_mm": [
+        -0.35943688081639297,
+        0.612249877382442,
+        2.702764266756386
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-31-art56motorholdera-body-nominal-cached-native-draft.stl",
+        "sha256": "d5b61eb9735156db7b1803d8c179e75dced0bef39cc94f6317617f5511a9ec6d",
+        "bytes": 143384,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 1421,
+        "triangle_count": 2866,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-31-art56motorholdera-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-04-run-01/draft-stl/print-31-art56motorholdera-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-32-art56motorholderb-body-nominal",
+      "batch_index": 4,
+      "asset_id": "Art56MotorHolderB::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 2,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art56MotorHolderB_Art56MotorHolderB",
+        "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art56MotorHolderB_Art56MotorHolderB001"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/Art56MotorHolderB.fcstd",
+        "source_sha256": "d0ae1726649b8b4758b665fe2b01e8d065e57b2c5b916ef4e4b4dc7840fcfd77",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "db490a2d99c3afa606f2896b25d5a0495fe0a96dfa4b45fb7076d04748f13e1e",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 6303.510599855066,
+      "com_mm": [
+        2.3084726556920194,
+        -0.59016986968506,
+        2.6125209230053783
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-32-art56motorholderb-body-nominal-cached-native-draft.stl",
+        "sha256": "233d965c7390156befcdea3393aa85973bee8ce18afd0250780bd1b5c0c50333",
+        "bytes": 137684,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 1364,
+        "triangle_count": 2752,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-32-art56motorholderb-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-04-run-01/draft-stl/print-32-art56motorholderb-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-33-art56smallgear-body-nominal",
+      "batch_index": 5,
+      "asset_id": "Art56SmallGear::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 2,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Art56SmallGear_Art56SmallGear",
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Art56SmallGear_Art56SmallGear001"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/Art56SmallGear.fcstd",
+        "source_sha256": "b737ce24c58bc5ffc3763fcd6cdcfdd425747565c2850054397f066ecd5a63a0",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape1.brp",
+        "brep_sha256": "f9446cad77b14780440b5469c021af4a30af079c69ea901deb0954ac474fc99a",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 7716.78007063262,
+      "com_mm": [
+        0.060927556923694365,
+        -0.1907186913681357,
+        5.030599553084839
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-33-art56smallgear-body-nominal-cached-native-draft.stl",
+        "sha256": "cef19236a9dd021c5efb1ea55501686d3b9893d5d096dcc721a2dd1c8dbd4a6e",
+        "bytes": 347184,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 3469,
+        "triangle_count": 6942,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-33-art56smallgear-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-05-run-01/draft-stl/print-33-art56smallgear-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-34-basebearingfix-body-nominal",
+      "batch_index": 5,
+      "asset_id": "BaseBearingFix::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 1,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::BaseBearingFix_BaseBearingFix"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/BaseBearingFix.fcstd",
+        "source_sha256": "a8ddcd5f8aee6cc4ff33671e3c27e2d3029fe334f4f02baeb579eb6ecaadec82",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "c0f869fab89cb05a4725ca3755924309e17eed89dabf44f23559fb208f272cec",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 50341.94096864344,
+      "com_mm": [
+        2.0482714776081538e-15,
+        -1.833733671243463e-15,
+        2.49673543446024
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-34-basebearingfix-body-nominal-cached-native-draft.stl",
+        "sha256": "12c53ca3815a7ab2614fcfe004978a0a0201551edf03c847950fea9ee30edf19",
+        "bytes": 107684,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 1070,
+        "triangle_count": 2152,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-34-basebearingfix-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-05-run-01/draft-stl/print-34-basebearingfix-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-35-basebot-body002-nominal",
+      "batch_index": 5,
+      "asset_id": "BaseBot::Body002",
+      "geometry_variant": "nominal",
+      "quantity_required": 1,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::BaseBot_BaseBot"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/BaseBot.fcstd",
+        "source_sha256": "c637feec821a886c80c8622cf316de02c05f06d90ff49af9df9b0a0cdff00e5a",
+        "object_name": "Body002",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape72.brp",
+        "brep_sha256": "09af5b2da65f4f1d77e83a3b786ca2430ed9915797b3d277e53c996cb3200b96",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 342083.99108201766,
+      "com_mm": [
+        11.789777014185443,
+        -1.0533476280576597,
+        19.374889034287023
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-35-basebot-body002-nominal-cached-native-draft.stl",
+        "sha256": "201ae14f4762f68f23a7a49a0234e9ca2524975acb2db63d92162d4d5e242eda",
+        "bytes": 1187884,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 11814,
+        "triangle_count": 23756,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-35-basebot-body002-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-05-run-01/draft-stl/print-35-basebot-body002-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-36-baseboxbody-body002-nominal",
+      "batch_index": 5,
+      "asset_id": "BaseBoxBody::Body002",
+      "geometry_variant": "nominal",
+      "quantity_required": 1,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::BaseBoxBody_BaseBoxBody"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/BaseBoxBody.FCStd",
+        "source_sha256": "bf4c86c80ee90bc8e46bea77db6850027c15e45c86e2da1b9cfeffbce9cb6de1",
+        "object_name": "Body002",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape71.brp",
+        "brep_sha256": "841a581af0b7b818990bcc0ef8f80096f4d8a1f2dd738c216423e77c282f5177",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 342256.7348762723,
+      "com_mm": [
+        129.5085147181552,
+        -0.013100048640109814,
+        21.859616680658966
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-36-baseboxbody-body002-nominal-cached-native-draft.stl",
+        "sha256": "4235441f44ddabf35e1552eff8024ad6bafaa4a7dc9c739902b8ac49f123bd7f",
+        "bytes": 975284,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 9668,
+        "triangle_count": 19504,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-36-baseboxbody-body002-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-05-run-01/draft-stl/print-36-baseboxbody-body002-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-37-baseboxcover-body-nominal",
+      "batch_index": 5,
+      "asset_id": "BaseBoxCover::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 1,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::BaseBoxCover_BaseBoxCover"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/BaseBoxCover.FCStd",
+        "source_sha256": "9d1ca5fa12b76b49203f26f440ab47fe9c5a74e921a6267de8d60fa8ac3d7a37",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "bd6d320782adf5bf34609ac29a98cc67b8d06b5ed7991a6bf5113570543e9013",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 144777.22172656943,
+      "com_mm": [
+        137.6446422762927,
+        1.1578564654121915e-15,
+        2.498675652672758
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-37-baseboxcover-body-nominal-cached-native-draft.stl",
+        "sha256": "2b5485d8549b0695912fcea051fcaf113d3a97a5fdcd7efe31f0cb91d5b46154",
+        "bytes": 135084,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 1340,
+        "triangle_count": 2700,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-37-baseboxcover-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-05-run-01/draft-stl/print-37-baseboxcover-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-38-basetop-body-nominal",
+      "batch_index": 5,
+      "asset_id": "BaseTop::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 1,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::BaseTop_BaseTop"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/BaseTop.fcstd",
+        "source_sha256": "cad90f1414909eaa797edb9bc00a685c3f0856cfa4be5abbcd539afb96417490",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "798ede264d95a7bd495aee52a2cb6b08975a3e11eb2536a4b35d95a6527abdb6",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 222336.2316002709,
+      "com_mm": [
+        3.324862026671749e-14,
+        1.2668090598821867e-14,
+        13.998443478287275
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-38-basetop-body-nominal-cached-native-draft.stl",
+        "sha256": "80bda88d73eee0b39e79398dcd243e8fd01ab73e8d6397c182935ffe35880fb8",
+        "bytes": 105284,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 1046,
+        "triangle_count": 2104,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-38-basetop-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-05-run-01/draft-stl/print-38-basetop-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-39-commonbearingfix-body-nominal",
+      "batch_index": 5,
+      "asset_id": "CommonBearingFix::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 4,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::CommonBearingFix_CommonBearingFix",
+        "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::CommonBearingFix_CommonBearingFix001",
+        "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::CommonBearingFix_CommonBearingFix002",
+        "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::CommonBearingFix_CommonBearingFix003"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/CommonBearingFix.fcstd",
+        "source_sha256": "cf0d6322f0c0a947079c2a3782dcf878feb71a0e34b0de220c3722a24ec8e72b",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "d5926a093c6e4f71b844d5eb06a950ffe48bad0df844c2a9d9f1b2e502f9f77a",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 983.1716475189406,
+      "com_mm": [
+        -4.047146121735478e-16,
+        -9.147984369927724e-16,
+        1.944280816035313
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-39-commonbearingfix-body-nominal-cached-native-draft.stl",
+        "sha256": "21e4dce1081e09a15a2189f2800025592f67b4b427b8f4e1e7ae4d6bf5eb2306",
+        "bytes": 61084,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 608,
+        "triangle_count": 1220,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-39-commonbearingfix-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-05-run-01/draft-stl/print-39-commonbearingfix-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-40-commonbearingfixthrough-body-nominal",
+      "batch_index": 5,
+      "asset_id": "CommonBearingFixThrough::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 4,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::CommonBearingFixThrough_CommonBearingFixThrough",
+        "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::CommonBearingFixThrough_CommonBearingFixThrough",
+        "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::CommonBearingFixThrough_CommonBearingFixThrough001",
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::CommonBearingFixThrough_CommonBearingFixThrough"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/CommonBearingFixThrough.fcstd",
+        "source_sha256": "ea66043a24b3b93c3722ad48ce4a0830f1561a6a925818b5d1dcf7d411a25517",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "f9750fa1f27f40b53652e47c196fe96d09b32af811a55515fa9752ee4d8ed9f7",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 669.0123821599614,
+      "com_mm": [
+        -2.0179465043464574e-15,
+        -8.35340167835099e-16,
+        1.9181158325947478
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-40-commonbearingfixthrough-body-nominal-cached-native-draft.stl",
+        "sha256": "ccd0556e1b6a7278c1b52e372546b9d369dd3b1f51d5f1fb7c38ab8a53546ec2",
+        "bytes": 73884,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 734,
+        "triangle_count": 1476,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-40-commonbearingfixthrough-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-05-run-01/draft-stl/print-40-commonbearingfixthrough-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-41-gripperactivearm-body-nominal",
+      "batch_index": 6,
+      "asset_id": "GripperActiveArm::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 1,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::GripperActiveArm_GripperActiveArm"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/GripperActiveArm.FCStd",
+        "source_sha256": "3ba5ba6f74c5d2f45eeca56f28534dc750e7f0ae735b6a0b3e16beeef21adc67",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape1.brp",
+        "brep_sha256": "f6694e589eb6fd8206e40b37ca752404f54e82028402d27ac347ee94808fed04",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 2591.363809825241,
+      "com_mm": [
+        4.991873199465942,
+        -6.681459560588032e-08,
+        2.788992454432012
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-41-gripperactivearm-body-nominal-cached-native-draft.stl",
+        "sha256": "caf2acea8c4c6ec21eb256bbf26886259f0edbfed134134b675ea73dd5c7e1a7",
+        "bytes": 486884,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 4862,
+        "triangle_count": 9736,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-41-gripperactivearm-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-06-run-01/draft-stl/print-41-gripperactivearm-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-42-gripperarm-body-nominal",
+      "batch_index": 6,
+      "asset_id": "GripperArm::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 2,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed2_GripperArm",
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed2_GripperArm001"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/GripperArm.FCStd",
+        "source_sha256": "f1511f4b319a5727cf07771abe4c75002d5527e0a10291d47c1fe8024a44c6fc",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "eb6c4cdffa1eec7f57c9da622858b61f30627b4833e047e95322d7d6e28dd04b",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 839.6484003078497,
+      "com_mm": [
+        -3.506918234545212e-10,
+        17.500000001138442,
+        2.4999999999772564
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-42-gripperarm-body-nominal-cached-native-draft.stl",
+        "sha256": "d40c2b29bf895b2d948fc37741c1c29b88e317057b00e3d12e09ad29a24dbfae",
+        "bytes": 543084,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 5428,
+        "triangle_count": 10860,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-42-gripperarm-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-06-run-01/draft-stl/print-42-gripperarm-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-43-gripperbot-body-nominal",
+      "batch_index": 6,
+      "asset_id": "GripperBot::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 1,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::GripperBot_GripperBot"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/GripperBot.FCStd",
+        "source_sha256": "a65e68644312adee7381e3a640b2b827f9c2c3362bbe4a842ccee9fea969d176",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "677cb02dd9fa77aff228141cb3b5f44929d1bf2f8f25e49c5146a3c9b77e85e1",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 30622.375656273678,
+      "com_mm": [
+        1.9088843934909747,
+        27.39339238964153,
+        7.9650106692395415
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-43-gripperbot-body-nominal-cached-native-draft.stl",
+        "sha256": "a42725169dd947059c5082c0545fe8d50fef8da5aa9a0b191cd96892a85db537",
+        "bytes": 404984,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 4019,
+        "triangle_count": 8098,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-43-gripperbot-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-06-run-01/draft-stl/print-43-gripperbot-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-44-gripperfinger-body-nominal",
+      "batch_index": 6,
+      "asset_id": "GripperFinger::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 1,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed1_GripperFinger"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/GripperFinger.FCStd",
+        "source_sha256": "ab4daca4dd2f447029f4c76150b7f617fbdda74ae467cf6962938efe148d57a6",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "3d0fb39b628be445fc9c72b8b3d4e4d13d357662278b39f6a62e4d170510771b",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 12593.042562615725,
+      "com_mm": [
+        9.682448262842927,
+        32.16773739645597,
+        7.755367225910253
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-44-gripperfinger-body-nominal-cached-native-draft.stl",
+        "sha256": "7af8d717fd7c7bfbfd1b2533ff1a2e0a982f55497f951cb7d81c8632f39333ac",
+        "bytes": 149484,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 1488,
+        "triangle_count": 2988,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-44-gripperfinger-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-06-run-01/draft-stl/print-44-gripperfinger-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-45-assemblyart56-unnamed1_gripperfinger_mirrored-reflected",
+      "batch_index": 6,
+      "asset_id": "GripperFinger::Body",
+      "geometry_variant": "reflected",
+      "quantity_required": 1,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::GripperFinger_sym001/AssemblyArt56::Unnamed1_GripperFinger_mirrored"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/AssemblyArt56.FCStd",
+        "source_sha256": "a04836216dcae82eb033c15daba6e41dedb85b03f86ff21e56b77cdff835a473",
+        "object_name": "Unnamed1_GripperFinger_mirrored",
+        "object_type": "Part::Mirroring",
+        "brep_entry": "PartShape52.brp",
+        "brep_sha256": "72569677844f3cc4632795cafcf3a98f7c60429723cf75de2aa64a27147e682d",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 12593.042562615725,
+      "com_mm": [
+        -9.682448262842927,
+        32.16773739645597,
+        7.755367225910253
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-45-assemblyart56-unnamed1_gripperfinger_mirrored-reflected-cached-native-draft.stl",
+        "sha256": "611ac95463b9c753e49a3d9c09659bbc030e640d99480786d744166991041781",
+        "bytes": 149484,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 1488,
+        "triangle_count": 2988,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-45-assemblyart56-unnamed1_gripperfinger_mirrored-reflected-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-06-run-01/draft-stl/print-45-assemblyart56-unnamed1_gripperfinger_mirrored-reflected-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-46-gripperpassivearm-body-nominal",
+      "batch_index": 6,
+      "asset_id": "GripperPassiveArm::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 1,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed3_GripperPassiveArm"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/GripperPassiveArm.FCStd",
+        "source_sha256": "d14ac1debf67735fd623e052d468a9773066c32356390799b4ea07addcba68d4",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape1.brp",
+        "brep_sha256": "713aa0622d883f8ded16a1d94941b7b1e6280e7135cf8d1beddeb33ec783bf10",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 3532.8022111270066,
+      "com_mm": [
+        3.6124497554974,
+        0.4434554745995075,
+        2.4584089329245913
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-46-gripperpassivearm-body-nominal-cached-native-draft.stl",
+        "sha256": "3bdfeaeae6cf5877e2b987236a05ef867ce6117e044b0326f8e602f787eaf495",
+        "bytes": 411784,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 4115,
+        "triangle_count": 8234,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-46-gripperpassivearm-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-06-run-01/draft-stl/print-46-gripperpassivearm-body-nominal-cached-native-draft.stl"
+      }
+    },
+    {
+      "selection_id": "print-47-grippertop-body-nominal",
+      "batch_index": 6,
+      "asset_id": "GripperTop::Body",
+      "geometry_variant": "nominal",
+      "quantity_required": 1,
+      "installed_instance_ids": [
+        "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed_GripperTop"
+      ],
+      "source_binding": {
+        "source_file": "freecad-src/GripperTop.FCStd",
+        "source_sha256": "10f501e23263c8ddfc37e472fada7d9978d5f6c10cedf6deaa943dde87bdea56",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape2.brp",
+        "brep_sha256": "32b49e8d306cbef1658db0300664823832686ba0d07556b6b20bd292167301df",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "native_cached_shape_valid": true,
+      "volume_mm3": 20848.800563144217,
+      "com_mm": [
+        0.07189451007996228,
+        23.3308524964423,
+        4.972610805389538
+      ],
+      "geometric_inertia_reference": "raw capture selection cached_shape_properties; centroidal mm^5/m^5, not physical inertia",
+      "density_or_physical_inertia": null,
+      "draft_stl": {
+        "filename": "print-47-grippertop-body-nominal-cached-native-draft.stl",
+        "sha256": "fbfe1d367fc196c092a67c75c69df19eead375d1d653e11517e2f28a40f97003",
+        "bytes": 361584,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 3603,
+        "triangle_count": 7230,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-47-grippertop-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false,
+        "local_path": ".work/cad/full-print-export-native/batch-06-run-01/draft-stl/print-47-grippertop-body-nominal-cached-native-draft.stl"
+      }
+    }
+  ],
+  "process_elapsed_seconds_sum": 37.056653799983906,
+  "qualification": {
+    "feature_history_rebuilt": false,
+    "Art1_exact_migration_accepted": false,
+    "all_53_reference_meanings_verified": false,
+    "surface_equivalence_qualified": false,
+    "mesh_topology_or_self_intersections_qualified": false,
+    "orientation_or_supports_selected": false,
+    "Anycubic_import_observed": false,
+    "physical_fit_strength_or_capacity_qualified": false,
+    "manufacturing_released": false
+  }
+}

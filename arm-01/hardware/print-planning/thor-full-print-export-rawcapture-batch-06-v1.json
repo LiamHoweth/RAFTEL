@@ -1,0 +1,4744 @@
+{
+  "schema_version": 1,
+  "evidence_class": "native_selected_cached_BRep_geometric_properties_not_history_or_physical_validation",
+  "audit_status": "complete_selected_cached_geometry_only",
+  "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+  "declared_revision_not_independently_authenticated_by_worker": true,
+  "source_authentication_boundary": "Worker checks requested archive/BRep/XML pins; launcher and independent audit must authenticate those hashes against the declared upstream revision.",
+  "request_sha256": "a53f6e809136ebf7c12ae81730f711a485403a7b0718e9994dc3ad97866fcc6c",
+  "request": {
+    "schema_version": 1,
+    "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+    "evidence_class": "selected_saved_BRep_properties_request",
+    "selections": [
+      {
+        "selection_id": "print-41-gripperactivearm-body-nominal",
+        "source_file": "freecad-src/GripperActiveArm.FCStd",
+        "source_sha256": "3ba5ba6f74c5d2f45eeca56f28534dc750e7f0ae735b6a0b3e16beeef21adc67",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape1.brp",
+        "brep_sha256": "f6694e589eb6fd8206e40b37ca752404f54e82028402d27ac347ee94808fed04",
+        "xml_placement": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "selection_evidence": "Read-only original-archive saved Shape descriptor; no history rebuild/native geometry validity or print qualification",
+        "uniform_density": null,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-41-gripperactivearm-body-nominal-cached-native-draft.stl"
+        },
+        "reference_capture": {
+          "evidence_class": "full_print_registry_host_preparation_not_native_export",
+          "input_canonical_sha256": {
+            "printable_asset_manifest": "4a0deebe94a6da554fc3ce7d56d749e0a639c2d2a127eb8f59cea0a360b4128d",
+            "source_inspection": "063784958f351e6ef676cf9be3145544b6ebd73d1bdcb1b74d22e645ea563a3b",
+            "mounted_inventory": "e52e699ff7c0d9e1dc3eedf9416e7e1da84ae6e13a5152cb5be6cd4f14b29c31"
+          },
+          "canonical_variant_registry_sha256": "6a77fe8cb3063ad2329b10e80c35de8c161312d4f7ed16afa853945718a3f49b",
+          "counts": {
+            "installed_printed_leaves": 65,
+            "unique_source_assets": 46,
+            "export_geometry_variants": 47,
+            "reflected_installed_leaves": 1
+          },
+          "original_archive_count_verified": 57,
+          "original_archive_set_canonical_sha256": "8f6c072e46870388020b30a73430b7700ff49dbca7abafbc21598fbcd6a6dadb",
+          "original_archive_bytes_verified_before_after": true,
+          "asset_id": "GripperActiveArm::Body",
+          "geometry_variant": "nominal",
+          "quantity_required": 1,
+          "source_asset_canonical_sha256": "4e0a82e6e342432ad0f0b833463db88d904c0ccf42b4e76264ea74506f3cfb3c",
+          "installed_instances": [
+            {
+              "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::GripperActiveArm_GripperActiveArm",
+              "linked_object": "GripperActiveArm::Body",
+              "variant_id": "nominal",
+              "geometry_operation": "source_shape",
+              "preserved_installed_volume_mm3": 2591.363809825241,
+              "preserved_installed_COM_m": [
+                -0.00039207183320565326,
+                0.019505819082214493,
+                0.645024363262996
+              ],
+              "installed_coordinate_frame": "native Assembly::Model zero-pose frame, metres",
+              "source_to_installed_transform": null
+            }
+          ],
+          "installed_instance_set_canonical_sha256": "eabac398df31e9ee87410ced45b24010fb6e0b048b35e6fb8ca0f310d066a9ce",
+          "history_status": "cached_final_shape; not_rebuilt_by_this_tool",
+          "frame_policy": "Raw saved BRep coordinates as stored in the selected archive entry. Apply no XML/object/ancestor/link placement while reading. Native worker must record the actual Shape.Placement and compare it separately with XML placement. No source-to-installed transform is inferred from bounds, COM or identity own placement.",
+          "archive_bytes": 2546921,
+          "archive_shape_entry_bytes": 926333,
+          "document_xml_sha256": "9e82ca86d72dc43849b90697d3ebe6df8eed7f93c8dd142995bd1f7d67e057a2",
+          "raw_xml_placement_attributes": {
+            "A": "0.0000000000000000",
+            "Ox": "0.0000000000000000",
+            "Oy": "0.0000000000000000",
+            "Oz": "1.0000000000000000",
+            "Px": "0.0000000000000000",
+            "Py": "0.0000000000000000",
+            "Pz": "0.0000000000000000",
+            "Q0": "0.0000000000000000",
+            "Q1": "0.0000000000000000",
+            "Q2": "0.0000000000000000",
+            "Q3": "1.0000000000000000"
+          },
+          "saved_xml_context": {
+            "object_saved_properties": {
+              "Placement": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Placement",
+                  "status": "8388608",
+                  "type": "App::PropertyPlacement"
+                },
+                "children": [
+                  {
+                    "tag": "PropertyPlacement",
+                    "attributes": {
+                      "A": "0.0000000000000000",
+                      "Ox": "0.0000000000000000",
+                      "Oy": "0.0000000000000000",
+                      "Oz": "1.0000000000000000",
+                      "Px": "0.0000000000000000",
+                      "Py": "0.0000000000000000",
+                      "Pz": "0.0000000000000000",
+                      "Q0": "0.0000000000000000",
+                      "Q1": "0.0000000000000000",
+                      "Q2": "0.0000000000000000",
+                      "Q3": "1.0000000000000000"
+                    }
+                  }
+                ]
+              },
+              "Tip": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Tip",
+                  "type": "App::PropertyLink"
+                },
+                "children": [
+                  {
+                    "tag": "Link",
+                    "attributes": {
+                      "value": "Pocket004"
+                    }
+                  }
+                ]
+              },
+              "Group": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Group",
+                  "type": "App::PropertyLinkList"
+                },
+                "children": [
+                  {
+                    "tag": "LinkList",
+                    "attributes": {
+                      "count": "19"
+                    },
+                    "children": [
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "BaseFeature"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Groove"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Boolean"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch002"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch003"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket001"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch004"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket002"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch005"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket003"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch006"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket004"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_GripperActiveArm"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_GripperActiveArm_1"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_1"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_2"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_3"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "ExpressionEngine": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "ExpressionEngine",
+                  "status": "67108864",
+                  "type": "App::PropertyExpressionEngine"
+                },
+                "children": [
+                  {
+                    "tag": "ExpressionEngine",
+                    "attributes": {
+                      "count": "0"
+                    }
+                  }
+                ]
+              }
+            },
+            "direct_containing_groups": [],
+            "saved_Source_link_context": [],
+            "context_interpretation": "saved XML only; no attachment evaluation, external-document execution or mounted transform recovery"
+          },
+          "saved_xml_context_canonical_sha256": "4ea0550c25930124284e2525e4b900d97dc042607fe0da04bc230a2f23a3ca9a",
+          "upstream_attribution": {
+            "creator": "AngelLM and Thor contributors",
+            "project": "Thor",
+            "repository": "https://github.com/AngelLM/Thor",
+            "declared_repository_license": "CC-BY-SA-4.0",
+            "license_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/LICENSE",
+            "obligations": [
+              "Retain creator, source, revision and license link with derivatives/exports",
+              "Identify modifications/reflections and preserve applicable ShareAlike obligations",
+              "Embedded document metadata conflict remains an attribution review gate",
+              "No RAFTEL company-wide license is selected by this manifest"
+            ]
+          },
+          "worker_batch_limit": 8,
+          "qualification": {
+            "native_cached_BRep_validated": false,
+            "feature_history_rebuilt": false,
+            "exact_Art1_migration_accepted": false,
+            "mesh_topology_or_fidelity_accepted": false,
+            "mounted_transform_recovered": false,
+            "physical_mass_or_inertia_known": false,
+            "manufacturing_released": false
+          }
+        },
+        "upstream_stl_reference": null
+      },
+      {
+        "selection_id": "print-42-gripperarm-body-nominal",
+        "source_file": "freecad-src/GripperArm.FCStd",
+        "source_sha256": "f1511f4b319a5727cf07771abe4c75002d5527e0a10291d47c1fe8024a44c6fc",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "eb6c4cdffa1eec7f57c9da622858b61f30627b4833e047e95322d7d6e28dd04b",
+        "xml_placement": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "selection_evidence": "Read-only original-archive saved Shape descriptor; no history rebuild/native geometry validity or print qualification",
+        "uniform_density": null,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-42-gripperarm-body-nominal-cached-native-draft.stl"
+        },
+        "reference_capture": {
+          "evidence_class": "full_print_registry_host_preparation_not_native_export",
+          "input_canonical_sha256": {
+            "printable_asset_manifest": "4a0deebe94a6da554fc3ce7d56d749e0a639c2d2a127eb8f59cea0a360b4128d",
+            "source_inspection": "063784958f351e6ef676cf9be3145544b6ebd73d1bdcb1b74d22e645ea563a3b",
+            "mounted_inventory": "e52e699ff7c0d9e1dc3eedf9416e7e1da84ae6e13a5152cb5be6cd4f14b29c31"
+          },
+          "canonical_variant_registry_sha256": "6a77fe8cb3063ad2329b10e80c35de8c161312d4f7ed16afa853945718a3f49b",
+          "counts": {
+            "installed_printed_leaves": 65,
+            "unique_source_assets": 46,
+            "export_geometry_variants": 47,
+            "reflected_installed_leaves": 1
+          },
+          "original_archive_count_verified": 57,
+          "original_archive_set_canonical_sha256": "8f6c072e46870388020b30a73430b7700ff49dbca7abafbc21598fbcd6a6dadb",
+          "original_archive_bytes_verified_before_after": true,
+          "asset_id": "GripperArm::Body",
+          "geometry_variant": "nominal",
+          "quantity_required": 2,
+          "source_asset_canonical_sha256": "724d5a919bd23b9c53cd687b2fb1a38ef4e4f8caf21b1bb3fcc0b8987993504f",
+          "installed_instances": [
+            {
+              "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed2_GripperArm",
+              "linked_object": "GripperArm::Body",
+              "variant_id": "nominal",
+              "geometry_operation": "source_shape",
+              "preserved_installed_volume_mm3": 839.6484003078498,
+              "preserved_installed_COM_m": [
+                0.0002139460692350835,
+                -0.023499504827399532,
+                0.6635000000003507
+              ],
+              "installed_coordinate_frame": "native Assembly::Model zero-pose frame, metres",
+              "source_to_installed_transform": null
+            },
+            {
+              "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed2_GripperArm001",
+              "linked_object": "GripperArm::Body",
+              "variant_id": "nominal",
+              "geometry_operation": "source_shape",
+              "preserved_installed_volume_mm3": 839.6484003078494,
+              "preserved_installed_COM_m": [
+                8.6052820123602e-05,
+                0.023500321167287484,
+                0.6634999999996493
+              ],
+              "installed_coordinate_frame": "native Assembly::Model zero-pose frame, metres",
+              "source_to_installed_transform": null
+            }
+          ],
+          "installed_instance_set_canonical_sha256": "b17b701f53ba1bad5ba5cbc1ec04a63a08af9b0893fa29b15bce83fccb6406b6",
+          "history_status": "cached_final_shape; not_rebuilt_by_this_tool",
+          "frame_policy": "Raw saved BRep coordinates as stored in the selected archive entry. Apply no XML/object/ancestor/link placement while reading. Native worker must record the actual Shape.Placement and compare it separately with XML placement. No source-to-installed transform is inferred from bounds, COM or identity own placement.",
+          "archive_bytes": 35961,
+          "archive_shape_entry_bytes": 47144,
+          "document_xml_sha256": "1d10cb4d5c8199c6e78a04be687e96aeb29b692435ffa979e493fa970bfc1809",
+          "raw_xml_placement_attributes": {
+            "A": "0.0000000000000000",
+            "Ox": "0.0000000000000000",
+            "Oy": "0.0000000000000000",
+            "Oz": "1.0000000000000000",
+            "Px": "0.0000000000000000",
+            "Py": "0.0000000000000000",
+            "Pz": "0.0000000000000000",
+            "Q0": "0.0000000000000000",
+            "Q1": "0.0000000000000000",
+            "Q2": "0.0000000000000000",
+            "Q3": "1.0000000000000000"
+          },
+          "saved_xml_context": {
+            "object_saved_properties": {
+              "Placement": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Placement",
+                  "status": "8388608",
+                  "type": "App::PropertyPlacement"
+                },
+                "children": [
+                  {
+                    "tag": "PropertyPlacement",
+                    "attributes": {
+                      "A": "0.0000000000000000",
+                      "Ox": "0.0000000000000000",
+                      "Oy": "0.0000000000000000",
+                      "Oz": "1.0000000000000000",
+                      "Px": "0.0000000000000000",
+                      "Py": "0.0000000000000000",
+                      "Pz": "0.0000000000000000",
+                      "Q0": "0.0000000000000000",
+                      "Q1": "0.0000000000000000",
+                      "Q2": "0.0000000000000000",
+                      "Q3": "1.0000000000000000"
+                    }
+                  }
+                ]
+              },
+              "Tip": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Tip",
+                  "type": "App::PropertyLink"
+                },
+                "children": [
+                  {
+                    "tag": "Link",
+                    "attributes": {
+                      "value": "Fillet"
+                    }
+                  }
+                ]
+              },
+              "Group": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Group",
+                  "type": "App::PropertyLinkList"
+                },
+                "children": [
+                  {
+                    "tag": "LinkList",
+                    "attributes": {
+                      "count": "5"
+                    },
+                    "children": [
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pad"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Fillet"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_GripperArm"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_GripperArm_1"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "ExpressionEngine": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "ExpressionEngine",
+                  "status": "67108864",
+                  "type": "App::PropertyExpressionEngine"
+                },
+                "children": [
+                  {
+                    "tag": "ExpressionEngine",
+                    "attributes": {
+                      "count": "0"
+                    }
+                  }
+                ]
+              }
+            },
+            "direct_containing_groups": [],
+            "saved_Source_link_context": [],
+            "context_interpretation": "saved XML only; no attachment evaluation, external-document execution or mounted transform recovery"
+          },
+          "saved_xml_context_canonical_sha256": "9131d814c6072a2b7711428e9cd50c80ad545fe5ee7a1d5574d3b800a0b6acdf",
+          "upstream_attribution": {
+            "creator": "AngelLM and Thor contributors",
+            "project": "Thor",
+            "repository": "https://github.com/AngelLM/Thor",
+            "declared_repository_license": "CC-BY-SA-4.0",
+            "license_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/LICENSE",
+            "obligations": [
+              "Retain creator, source, revision and license link with derivatives/exports",
+              "Identify modifications/reflections and preserve applicable ShareAlike obligations",
+              "Embedded document metadata conflict remains an attribution review gate",
+              "No RAFTEL company-wide license is selected by this manifest"
+            ]
+          },
+          "worker_batch_limit": 8,
+          "qualification": {
+            "native_cached_BRep_validated": false,
+            "feature_history_rebuilt": false,
+            "exact_Art1_migration_accepted": false,
+            "mesh_topology_or_fidelity_accepted": false,
+            "mounted_transform_recovered": false,
+            "physical_mass_or_inertia_known": false,
+            "manufacturing_released": false
+          }
+        },
+        "upstream_stl_reference": null
+      },
+      {
+        "selection_id": "print-43-gripperbot-body-nominal",
+        "source_file": "freecad-src/GripperBot.FCStd",
+        "source_sha256": "a65e68644312adee7381e3a640b2b827f9c2c3362bbe4a842ccee9fea969d176",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "677cb02dd9fa77aff228141cb3b5f44929d1bf2f8f25e49c5146a3c9b77e85e1",
+        "xml_placement": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "selection_evidence": "Read-only original-archive saved Shape descriptor; no history rebuild/native geometry validity or print qualification",
+        "uniform_density": null,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-43-gripperbot-body-nominal-cached-native-draft.stl"
+        },
+        "reference_capture": {
+          "evidence_class": "full_print_registry_host_preparation_not_native_export",
+          "input_canonical_sha256": {
+            "printable_asset_manifest": "4a0deebe94a6da554fc3ce7d56d749e0a639c2d2a127eb8f59cea0a360b4128d",
+            "source_inspection": "063784958f351e6ef676cf9be3145544b6ebd73d1bdcb1b74d22e645ea563a3b",
+            "mounted_inventory": "e52e699ff7c0d9e1dc3eedf9416e7e1da84ae6e13a5152cb5be6cd4f14b29c31"
+          },
+          "canonical_variant_registry_sha256": "6a77fe8cb3063ad2329b10e80c35de8c161312d4f7ed16afa853945718a3f49b",
+          "counts": {
+            "installed_printed_leaves": 65,
+            "unique_source_assets": 46,
+            "export_geometry_variants": 47,
+            "reflected_installed_leaves": 1
+          },
+          "original_archive_count_verified": 57,
+          "original_archive_set_canonical_sha256": "8f6c072e46870388020b30a73430b7700ff49dbca7abafbc21598fbcd6a6dadb",
+          "original_archive_bytes_verified_before_after": true,
+          "asset_id": "GripperBot::Body",
+          "geometry_variant": "nominal",
+          "quantity_required": 1,
+          "source_asset_canonical_sha256": "128044d0ec830787a0e6193ad480fa16ac351e240c0b45802db3b26ddfb2f8ef",
+          "installed_instances": [
+            {
+              "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::GripperBot_GripperBot",
+              "linked_object": "GripperBot::Body",
+              "variant_id": "nominal",
+              "geometry_operation": "source_shape",
+              "preserved_installed_volume_mm3": 30622.375656273696,
+              "preserved_installed_COM_m": [
+                0.009190149653513493,
+                -0.0018838837490467231,
+                0.6398933923896416
+              ],
+              "installed_coordinate_frame": "native Assembly::Model zero-pose frame, metres",
+              "source_to_installed_transform": null
+            }
+          ],
+          "installed_instance_set_canonical_sha256": "15e444fd2e6dc5c59ce6818a81cdd52666427888156f3c6e9faafa144eb52f6c",
+          "history_status": "cached_final_shape; not_rebuilt_by_this_tool",
+          "frame_policy": "Raw saved BRep coordinates as stored in the selected archive entry. Apply no XML/object/ancestor/link placement while reading. Native worker must record the actual Shape.Placement and compare it separately with XML placement. No source-to-installed transform is inferred from bounds, COM or identity own placement.",
+          "archive_bytes": 700820,
+          "archive_shape_entry_bytes": 268299,
+          "document_xml_sha256": "0527c47d5b80eec75b567c9cfee66c339571a14a90d85e4ee77049d75fc24784",
+          "raw_xml_placement_attributes": {
+            "A": "0.0000000000000000",
+            "Ox": "0.0000000000000000",
+            "Oy": "0.0000000000000000",
+            "Oz": "1.0000000000000000",
+            "Px": "0.0000000000000000",
+            "Py": "0.0000000000000000",
+            "Pz": "0.0000000000000000",
+            "Q0": "0.0000000000000000",
+            "Q1": "0.0000000000000000",
+            "Q2": "0.0000000000000000",
+            "Q3": "1.0000000000000000"
+          },
+          "saved_xml_context": {
+            "object_saved_properties": {
+              "Placement": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Placement",
+                  "status": "8388608",
+                  "type": "App::PropertyPlacement"
+                },
+                "children": [
+                  {
+                    "tag": "PropertyPlacement",
+                    "attributes": {
+                      "A": "0.0000000000000000",
+                      "Ox": "0.0000000000000000",
+                      "Oy": "0.0000000000000000",
+                      "Oz": "1.0000000000000000",
+                      "Px": "0.0000000000000000",
+                      "Py": "0.0000000000000000",
+                      "Pz": "0.0000000000000000",
+                      "Q0": "0.0000000000000000",
+                      "Q1": "0.0000000000000000",
+                      "Q2": "0.0000000000000000",
+                      "Q3": "1.0000000000000000"
+                    }
+                  }
+                ]
+              },
+              "Tip": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Tip",
+                  "type": "App::PropertyLink"
+                },
+                "children": [
+                  {
+                    "tag": "Link",
+                    "attributes": {
+                      "value": "Pocket011"
+                    }
+                  }
+                ]
+              },
+              "Group": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Group",
+                  "type": "App::PropertyLinkList"
+                },
+                "children": [
+                  {
+                    "tag": "LinkList",
+                    "attributes": {
+                      "count": "49"
+                    },
+                    "children": [
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pad"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch001"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Chamfer"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch002"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket001"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch003"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket002"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch004"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket003"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "DatumPlane"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch005"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket004"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Fillet"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch006"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket005"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch007"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket006"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch008"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket007"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "DatumPlane001"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch009"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket008"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "DatumPlane002"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch010"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket009"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Mirrored"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch011"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket010"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch012"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket011"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_GripperBot"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_GripperTop"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_PassiveArm"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_Arm1"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_Arm2"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_Servomotor"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_1"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_2"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_3"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_4"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_5"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_6"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_7"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_8"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_9"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_10"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_11"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "ExpressionEngine": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "ExpressionEngine",
+                  "status": "67108864",
+                  "type": "App::PropertyExpressionEngine"
+                },
+                "children": [
+                  {
+                    "tag": "ExpressionEngine",
+                    "attributes": {
+                      "count": "0"
+                    }
+                  }
+                ]
+              }
+            },
+            "direct_containing_groups": [],
+            "saved_Source_link_context": [],
+            "context_interpretation": "saved XML only; no attachment evaluation, external-document execution or mounted transform recovery"
+          },
+          "saved_xml_context_canonical_sha256": "e703da6c40ad42bb082c9c01012343bb84f43aea3841019fe0ac13df1c0a94e9",
+          "upstream_attribution": {
+            "creator": "AngelLM and Thor contributors",
+            "project": "Thor",
+            "repository": "https://github.com/AngelLM/Thor",
+            "declared_repository_license": "CC-BY-SA-4.0",
+            "license_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/LICENSE",
+            "obligations": [
+              "Retain creator, source, revision and license link with derivatives/exports",
+              "Identify modifications/reflections and preserve applicable ShareAlike obligations",
+              "Embedded document metadata conflict remains an attribution review gate",
+              "No RAFTEL company-wide license is selected by this manifest"
+            ]
+          },
+          "worker_batch_limit": 8,
+          "qualification": {
+            "native_cached_BRep_validated": false,
+            "feature_history_rebuilt": false,
+            "exact_Art1_migration_accepted": false,
+            "mesh_topology_or_fidelity_accepted": false,
+            "mounted_transform_recovered": false,
+            "physical_mass_or_inertia_known": false,
+            "manufacturing_released": false
+          }
+        },
+        "upstream_stl_reference": null
+      },
+      {
+        "selection_id": "print-44-gripperfinger-body-nominal",
+        "source_file": "freecad-src/GripperFinger.FCStd",
+        "source_sha256": "ab4daca4dd2f447029f4c76150b7f617fbdda74ae467cf6962938efe148d57a6",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "3d0fb39b628be445fc9c72b8b3d4e4d13d357662278b39f6a62e4d170510771b",
+        "xml_placement": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "selection_evidence": "Read-only original-archive saved Shape descriptor; no history rebuild/native geometry validity or print qualification",
+        "uniform_density": null,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-44-gripperfinger-body-nominal-cached-native-draft.stl"
+        },
+        "reference_capture": {
+          "evidence_class": "full_print_registry_host_preparation_not_native_export",
+          "input_canonical_sha256": {
+            "printable_asset_manifest": "4a0deebe94a6da554fc3ce7d56d749e0a639c2d2a127eb8f59cea0a360b4128d",
+            "source_inspection": "063784958f351e6ef676cf9be3145544b6ebd73d1bdcb1b74d22e645ea563a3b",
+            "mounted_inventory": "e52e699ff7c0d9e1dc3eedf9416e7e1da84ae6e13a5152cb5be6cd4f14b29c31"
+          },
+          "canonical_variant_registry_sha256": "6a77fe8cb3063ad2329b10e80c35de8c161312d4f7ed16afa853945718a3f49b",
+          "counts": {
+            "installed_printed_leaves": 65,
+            "unique_source_assets": 46,
+            "export_geometry_variants": 47,
+            "reflected_installed_leaves": 1
+          },
+          "original_archive_count_verified": 57,
+          "original_archive_set_canonical_sha256": "8f6c072e46870388020b30a73430b7700ff49dbca7abafbc21598fbcd6a6dadb",
+          "original_archive_bytes_verified_before_after": true,
+          "asset_id": "GripperFinger::Body",
+          "geometry_variant": "nominal",
+          "quantity_required": 1,
+          "source_asset_canonical_sha256": "2f583bb0db0a438e7cdde724bedaddc9a1af3f672c3ba2e7783f61f729301600",
+          "installed_instances": [
+            {
+              "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed1_GripperFinger",
+              "linked_object": "GripperFinger::Body",
+              "variant_id": "nominal",
+              "geometry_operation": "source_shape",
+              "preserved_installed_volume_mm3": 12593.04256261573,
+              "preserved_installed_COM_m": [
+                -0.0001496004977267916,
+                0.04381730687865155,
+                0.673167737396456
+              ],
+              "installed_coordinate_frame": "native Assembly::Model zero-pose frame, metres",
+              "source_to_installed_transform": null
+            }
+          ],
+          "installed_instance_set_canonical_sha256": "be79e544b55f3f7303be651b6bfb8c520ed4b3b20f3dd1099e988edaa254c16b",
+          "history_status": "cached_final_shape; not_rebuilt_by_this_tool",
+          "frame_policy": "Raw saved BRep coordinates as stored in the selected archive entry. Apply no XML/object/ancestor/link placement while reading. Native worker must record the actual Shape.Placement and compare it separately with XML placement. No source-to-installed transform is inferred from bounds, COM or identity own placement.",
+          "archive_bytes": 91555,
+          "archive_shape_entry_bytes": 68551,
+          "document_xml_sha256": "5b4f8f67cc57f5417a02a0f40d1bcf5c925b986f1cf5ec1acfc82f3688094f20",
+          "raw_xml_placement_attributes": {
+            "A": "0.0000000000000000",
+            "Ox": "0.0000000000000000",
+            "Oy": "0.0000000000000000",
+            "Oz": "1.0000000000000000",
+            "Px": "0.0000000000000000",
+            "Py": "0.0000000000000000",
+            "Pz": "0.0000000000000000",
+            "Q0": "0.0000000000000000",
+            "Q1": "0.0000000000000000",
+            "Q2": "0.0000000000000000",
+            "Q3": "1.0000000000000000"
+          },
+          "saved_xml_context": {
+            "object_saved_properties": {
+              "Placement": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Placement",
+                  "status": "8388608",
+                  "type": "App::PropertyPlacement"
+                },
+                "children": [
+                  {
+                    "tag": "PropertyPlacement",
+                    "attributes": {
+                      "A": "0.0000000000000000",
+                      "Ox": "0.0000000000000000",
+                      "Oy": "0.0000000000000000",
+                      "Oz": "1.0000000000000000",
+                      "Px": "0.0000000000000000",
+                      "Py": "0.0000000000000000",
+                      "Pz": "0.0000000000000000",
+                      "Q0": "0.0000000000000000",
+                      "Q1": "0.0000000000000000",
+                      "Q2": "0.0000000000000000",
+                      "Q3": "1.0000000000000000"
+                    }
+                  }
+                ]
+              },
+              "Tip": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Tip",
+                  "type": "App::PropertyLink"
+                },
+                "children": [
+                  {
+                    "tag": "Link",
+                    "attributes": {
+                      "value": "Pocket003"
+                    }
+                  }
+                ]
+              },
+              "Group": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Group",
+                  "type": "App::PropertyLinkList"
+                },
+                "children": [
+                  {
+                    "tag": "LinkList",
+                    "attributes": {
+                      "count": "17"
+                    },
+                    "children": [
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pad"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch001"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch002"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket001"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Fillet"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Fillet001"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch003"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket002"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch004"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket003"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_1"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_2"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_3"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_4"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_GripperFinger"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "ExpressionEngine": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "ExpressionEngine",
+                  "status": "67108864",
+                  "type": "App::PropertyExpressionEngine"
+                },
+                "children": [
+                  {
+                    "tag": "ExpressionEngine",
+                    "attributes": {
+                      "count": "0"
+                    }
+                  }
+                ]
+              }
+            },
+            "direct_containing_groups": [],
+            "saved_Source_link_context": [],
+            "context_interpretation": "saved XML only; no attachment evaluation, external-document execution or mounted transform recovery"
+          },
+          "saved_xml_context_canonical_sha256": "a46b7f8ba4b9f14ebb691735dc7d6d65c23ae09ea90270e4c6ba23acdadd5ea1",
+          "upstream_attribution": {
+            "creator": "AngelLM and Thor contributors",
+            "project": "Thor",
+            "repository": "https://github.com/AngelLM/Thor",
+            "declared_repository_license": "CC-BY-SA-4.0",
+            "license_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/LICENSE",
+            "obligations": [
+              "Retain creator, source, revision and license link with derivatives/exports",
+              "Identify modifications/reflections and preserve applicable ShareAlike obligations",
+              "Embedded document metadata conflict remains an attribution review gate",
+              "No RAFTEL company-wide license is selected by this manifest"
+            ]
+          },
+          "worker_batch_limit": 8,
+          "qualification": {
+            "native_cached_BRep_validated": false,
+            "feature_history_rebuilt": false,
+            "exact_Art1_migration_accepted": false,
+            "mesh_topology_or_fidelity_accepted": false,
+            "mounted_transform_recovered": false,
+            "physical_mass_or_inertia_known": false,
+            "manufacturing_released": false
+          }
+        },
+        "upstream_stl_reference": null
+      },
+      {
+        "selection_id": "print-45-assemblyart56-unnamed1_gripperfinger_mirrored-reflected",
+        "source_file": "freecad-src/AssemblyArt56.FCStd",
+        "source_sha256": "a04836216dcae82eb033c15daba6e41dedb85b03f86ff21e56b77cdff835a473",
+        "object_name": "Unnamed1_GripperFinger_mirrored",
+        "object_type": "Part::Mirroring",
+        "brep_entry": "PartShape52.brp",
+        "brep_sha256": "72569677844f3cc4632795cafcf3a98f7c60429723cf75de2aa64a27147e682d",
+        "xml_placement": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "selection_evidence": "Read-only original-archive saved Shape descriptor; no history rebuild/native geometry validity or print qualification",
+        "uniform_density": null,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-45-assemblyart56-unnamed1_gripperfinger_mirrored-reflected-cached-native-draft.stl"
+        },
+        "reference_capture": {
+          "evidence_class": "full_print_registry_host_preparation_not_native_export",
+          "input_canonical_sha256": {
+            "printable_asset_manifest": "4a0deebe94a6da554fc3ce7d56d749e0a639c2d2a127eb8f59cea0a360b4128d",
+            "source_inspection": "063784958f351e6ef676cf9be3145544b6ebd73d1bdcb1b74d22e645ea563a3b",
+            "mounted_inventory": "e52e699ff7c0d9e1dc3eedf9416e7e1da84ae6e13a5152cb5be6cd4f14b29c31"
+          },
+          "canonical_variant_registry_sha256": "6a77fe8cb3063ad2329b10e80c35de8c161312d4f7ed16afa853945718a3f49b",
+          "counts": {
+            "installed_printed_leaves": 65,
+            "unique_source_assets": 46,
+            "export_geometry_variants": 47,
+            "reflected_installed_leaves": 1
+          },
+          "original_archive_count_verified": 57,
+          "original_archive_set_canonical_sha256": "8f6c072e46870388020b30a73430b7700ff49dbca7abafbc21598fbcd6a6dadb",
+          "original_archive_bytes_verified_before_after": true,
+          "asset_id": "GripperFinger::Body",
+          "geometry_variant": "reflected",
+          "quantity_required": 1,
+          "source_asset_canonical_sha256": "2f583bb0db0a438e7cdde724bedaddc9a1af3f672c3ba2e7783f61f729301600",
+          "installed_instances": [
+            {
+              "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::GripperFinger_sym001/AssemblyArt56::Unnamed1_GripperFinger_mirrored",
+              "linked_object": "AssemblyArt56::Unnamed1_GripperFinger_mirrored",
+              "variant_id": "reflected",
+              "geometry_operation": "saved_assembly_reflection",
+              "preserved_installed_volume_mm3": 12593.042562615727,
+              "preserved_installed_COM_m": [
+                8.88662707627379e-05,
+                -0.043817472145170254,
+                0.673167737396456
+              ],
+              "installed_coordinate_frame": "native Assembly::Model zero-pose frame, metres",
+              "source_to_installed_transform": null
+            }
+          ],
+          "installed_instance_set_canonical_sha256": "7f10692911e5906b2951b17b9d467a46b24a19c40a0c0046a5319d814a8f9413",
+          "history_status": "cached_final_shape; not_rebuilt_by_this_tool",
+          "frame_policy": "Raw saved BRep coordinates as stored in the selected archive entry. Apply no XML/object/ancestor/link placement while reading. Native worker must record the actual Shape.Placement and compare it separately with XML placement. No source-to-installed transform is inferred from bounds, COM or identity own placement.",
+          "archive_bytes": 1258035,
+          "archive_shape_entry_bytes": 69252,
+          "document_xml_sha256": "0a17f4d6d11a91664177995cdcf7618fbdf4de1a98e8800a257a271431e11f41",
+          "raw_xml_placement_attributes": {
+            "A": "0.0000000000000000",
+            "Ox": "0.0000000000000000",
+            "Oy": "0.0000000000000000",
+            "Oz": "1.0000000000000000",
+            "Px": "0.0000000000000000",
+            "Py": "0.0000000000000000",
+            "Pz": "0.0000000000000000",
+            "Q0": "0.0000000000000000",
+            "Q1": "0.0000000000000000",
+            "Q2": "0.0000000000000000",
+            "Q3": "1.0000000000000000"
+          },
+          "saved_xml_context": {
+            "object_saved_properties": {
+              "Placement": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Placement",
+                  "status": "8388608",
+                  "type": "App::PropertyPlacement"
+                },
+                "children": [
+                  {
+                    "tag": "PropertyPlacement",
+                    "attributes": {
+                      "A": "0.0000000000000000",
+                      "Ox": "0.0000000000000000",
+                      "Oy": "0.0000000000000000",
+                      "Oz": "1.0000000000000000",
+                      "Px": "0.0000000000000000",
+                      "Py": "0.0000000000000000",
+                      "Pz": "0.0000000000000000",
+                      "Q0": "0.0000000000000000",
+                      "Q1": "0.0000000000000000",
+                      "Q2": "0.0000000000000000",
+                      "Q3": "1.0000000000000000"
+                    }
+                  }
+                ]
+              },
+              "Source": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Source",
+                  "type": "App::PropertyLink"
+                },
+                "children": [
+                  {
+                    "tag": "Link",
+                    "attributes": {
+                      "value": "Unnamed1_GripperFinger_link"
+                    }
+                  }
+                ]
+              },
+              "Base": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Base",
+                  "type": "App::PropertyPosition"
+                },
+                "children": [
+                  {
+                    "tag": "PropertyVector",
+                    "attributes": {
+                      "valueX": "0.0000000000000000",
+                      "valueY": "0.0000000000000000",
+                      "valueZ": "0.0000000000000000"
+                    }
+                  }
+                ]
+              },
+              "Normal": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Normal",
+                  "type": "App::PropertyDirection"
+                },
+                "children": [
+                  {
+                    "tag": "PropertyVector",
+                    "attributes": {
+                      "valueX": "1.0000000000000000",
+                      "valueY": "0.0000000000000000",
+                      "valueZ": "0.0000000000000000"
+                    }
+                  }
+                ]
+              },
+              "ExpressionEngine": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "ExpressionEngine",
+                  "status": "67108864",
+                  "type": "App::PropertyExpressionEngine"
+                },
+                "children": [
+                  {
+                    "tag": "ExpressionEngine",
+                    "attributes": {
+                      "count": "0"
+                    }
+                  }
+                ]
+              }
+            },
+            "direct_containing_groups": [
+              {
+                "name": "GripperFinger_sym",
+                "type": "App::Part",
+                "xml_placement": {
+                  "position_mm": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "quaternion_xyzw": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                },
+                "raw_xml_placement_attributes": {
+                  "A": "0.0000000000000000",
+                  "Ox": "0.0000000000000000",
+                  "Oy": "0.0000000000000000",
+                  "Oz": "1.0000000000000000",
+                  "Px": "0.0000000000000000",
+                  "Py": "0.0000000000000000",
+                  "Pz": "0.0000000000000000",
+                  "Q0": "0.0000000000000000",
+                  "Q1": "0.0000000000000000",
+                  "Q2": "0.0000000000000000",
+                  "Q3": "1.0000000000000000"
+                },
+                "group_members": [
+                  "LCS_GripperFinger_sym",
+                  "Unnamed1_GripperFinger_link",
+                  "Unnamed1_GripperFinger_mirrored",
+                  "LCS_GripperFinger_sym001",
+                  "HoleAxis_5",
+                  "HoleAxis_6",
+                  "HoleAxis_7",
+                  "HoleAxis_8"
+                ]
+              }
+            ],
+            "saved_Source_link_context": [
+              {
+                "name": "Unnamed1_GripperFinger_link",
+                "type": "App::Link",
+                "saved_properties": {
+                  "ExpressionEngine": {
+                    "tag": "Property",
+                    "attributes": {
+                      "name": "ExpressionEngine",
+                      "status": "67108864",
+                      "type": "App::PropertyExpressionEngine"
+                    },
+                    "children": [
+                      {
+                        "tag": "ExpressionEngine",
+                        "attributes": {
+                          "count": "0"
+                        }
+                      }
+                    ]
+                  },
+                  "LinkPlacement": {
+                    "tag": "Property",
+                    "attributes": {
+                      "name": "LinkPlacement",
+                      "status": "264",
+                      "type": "App::PropertyPlacement"
+                    },
+                    "children": [
+                      {
+                        "tag": "PropertyPlacement",
+                        "attributes": {
+                          "A": "0.0000000000000000",
+                          "Ox": "0.0000000000000000",
+                          "Oy": "0.0000000000000000",
+                          "Oz": "1.0000000000000000",
+                          "Px": "0.0000000000000000",
+                          "Py": "0.0000000000000000",
+                          "Pz": "0.0000000000000000",
+                          "Q0": "0.0000000000000000",
+                          "Q1": "0.0000000000000000",
+                          "Q2": "0.0000000000000000",
+                          "Q3": "1.0000000000000000"
+                        }
+                      }
+                    ]
+                  },
+                  "LinkTransform": {
+                    "tag": "Property",
+                    "attributes": {
+                      "name": "LinkTransform",
+                      "status": "256",
+                      "type": "App::PropertyBool"
+                    },
+                    "children": [
+                      {
+                        "tag": "Bool",
+                        "attributes": {
+                          "value": "false"
+                        }
+                      }
+                    ]
+                  },
+                  "LinkedObject": {
+                    "tag": "Property",
+                    "attributes": {
+                      "name": "LinkedObject",
+                      "status": "256",
+                      "type": "App::PropertyXLink"
+                    },
+                    "children": [
+                      {
+                        "tag": "XLink",
+                        "attributes": {
+                          "file": "",
+                          "name": "Unnamed1_GripperFinger",
+                          "stamp": ""
+                        }
+                      }
+                    ]
+                  },
+                  "Placement": {
+                    "tag": "Property",
+                    "attributes": {
+                      "name": "Placement",
+                      "status": "256",
+                      "type": "App::PropertyPlacement"
+                    },
+                    "children": [
+                      {
+                        "tag": "PropertyPlacement",
+                        "attributes": {
+                          "A": "0.0000000000000000",
+                          "Ox": "0.0000000000000000",
+                          "Oy": "0.0000000000000000",
+                          "Oz": "1.0000000000000000",
+                          "Px": "0.0000000000000000",
+                          "Py": "0.0000000000000000",
+                          "Pz": "0.0000000000000000",
+                          "Q0": "0.0000000000000000",
+                          "Q1": "0.0000000000000000",
+                          "Q2": "0.0000000000000000",
+                          "Q3": "1.0000000000000000"
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "context_interpretation": "saved XML only; no attachment evaluation, external-document execution or mounted transform recovery"
+          },
+          "saved_xml_context_canonical_sha256": "62571c3e150f2f5af6ea08ba6ad662671b0a7c4efd7ea8f53e8f918eed7040cf",
+          "upstream_attribution": {
+            "creator": "AngelLM and Thor contributors",
+            "project": "Thor",
+            "repository": "https://github.com/AngelLM/Thor",
+            "declared_repository_license": "CC-BY-SA-4.0",
+            "license_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/LICENSE",
+            "obligations": [
+              "Retain creator, source, revision and license link with derivatives/exports",
+              "Identify modifications/reflections and preserve applicable ShareAlike obligations",
+              "Embedded document metadata conflict remains an attribution review gate",
+              "No RAFTEL company-wide license is selected by this manifest"
+            ]
+          },
+          "worker_batch_limit": 8,
+          "qualification": {
+            "native_cached_BRep_validated": false,
+            "feature_history_rebuilt": false,
+            "exact_Art1_migration_accepted": false,
+            "mesh_topology_or_fidelity_accepted": false,
+            "mounted_transform_recovered": false,
+            "physical_mass_or_inertia_known": false,
+            "manufacturing_released": false
+          }
+        },
+        "upstream_stl_reference": null
+      },
+      {
+        "selection_id": "print-46-gripperpassivearm-body-nominal",
+        "source_file": "freecad-src/GripperPassiveArm.FCStd",
+        "source_sha256": "d14ac1debf67735fd623e052d468a9773066c32356390799b4ea07addcba68d4",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape1.brp",
+        "brep_sha256": "713aa0622d883f8ded16a1d94941b7b1e6280e7135cf8d1beddeb33ec783bf10",
+        "xml_placement": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "selection_evidence": "Read-only original-archive saved Shape descriptor; no history rebuild/native geometry validity or print qualification",
+        "uniform_density": null,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-46-gripperpassivearm-body-nominal-cached-native-draft.stl"
+        },
+        "reference_capture": {
+          "evidence_class": "full_print_registry_host_preparation_not_native_export",
+          "input_canonical_sha256": {
+            "printable_asset_manifest": "4a0deebe94a6da554fc3ce7d56d749e0a639c2d2a127eb8f59cea0a360b4128d",
+            "source_inspection": "063784958f351e6ef676cf9be3145544b6ebd73d1bdcb1b74d22e645ea563a3b",
+            "mounted_inventory": "e52e699ff7c0d9e1dc3eedf9416e7e1da84ae6e13a5152cb5be6cd4f14b29c31"
+          },
+          "canonical_variant_registry_sha256": "6a77fe8cb3063ad2329b10e80c35de8c161312d4f7ed16afa853945718a3f49b",
+          "counts": {
+            "installed_printed_leaves": 65,
+            "unique_source_assets": 46,
+            "export_geometry_variants": 47,
+            "reflected_installed_leaves": 1
+          },
+          "original_archive_count_verified": 57,
+          "original_archive_set_canonical_sha256": "8f6c072e46870388020b30a73430b7700ff49dbca7abafbc21598fbcd6a6dadb",
+          "original_archive_bytes_verified_before_after": true,
+          "asset_id": "GripperPassiveArm::Body",
+          "geometry_variant": "nominal",
+          "quantity_required": 1,
+          "source_asset_canonical_sha256": "26d77e926a41235cd68210f4091c5899c4007e2127f9d7d060f14a23d4e161a9",
+          "installed_instances": [
+            {
+              "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed3_GripperPassiveArm",
+              "linked_object": "GripperPassiveArm::Body",
+              "variant_id": "nominal",
+              "geometry_operation": "source_shape",
+              "preserved_installed_volume_mm3": 3532.8022111270097,
+              "preserved_installed_COM_m": [
+                0.0002409504375276684,
+                -0.018138944004330183,
+                0.6450157837011803
+              ],
+              "installed_coordinate_frame": "native Assembly::Model zero-pose frame, metres",
+              "source_to_installed_transform": null
+            }
+          ],
+          "installed_instance_set_canonical_sha256": "a8e0bff1ae89f5d567c1ccd4b9b741495fa80433b8ab7ad54391d471baedb48b",
+          "history_status": "cached_final_shape; not_rebuilt_by_this_tool",
+          "frame_policy": "Raw saved BRep coordinates as stored in the selected archive entry. Apply no XML/object/ancestor/link placement while reading. Native worker must record the actual Shape.Placement and compare it separately with XML placement. No source-to-installed transform is inferred from bounds, COM or identity own placement.",
+          "archive_bytes": 1731306,
+          "archive_shape_entry_bytes": 915154,
+          "document_xml_sha256": "978902df11a86c3066b80f75439a21df188c66ffaf1f41cf8299d471bbb45157",
+          "raw_xml_placement_attributes": {
+            "A": "0.0000000000000000",
+            "Ox": "0.0000000000000000",
+            "Oy": "0.0000000000000000",
+            "Oz": "1.0000000000000000",
+            "Px": "0.0000000000000000",
+            "Py": "0.0000000000000000",
+            "Pz": "0.0000000000000000",
+            "Q0": "0.0000000000000000",
+            "Q1": "0.0000000000000000",
+            "Q2": "0.0000000000000000",
+            "Q3": "1.0000000000000000"
+          },
+          "saved_xml_context": {
+            "object_saved_properties": {
+              "Placement": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Placement",
+                  "status": "8388608",
+                  "type": "App::PropertyPlacement"
+                },
+                "children": [
+                  {
+                    "tag": "PropertyPlacement",
+                    "attributes": {
+                      "A": "0.0000000000000000",
+                      "Ox": "0.0000000000000000",
+                      "Oy": "0.0000000000000000",
+                      "Oz": "1.0000000000000000",
+                      "Px": "0.0000000000000000",
+                      "Py": "0.0000000000000000",
+                      "Pz": "0.0000000000000000",
+                      "Q0": "0.0000000000000000",
+                      "Q1": "0.0000000000000000",
+                      "Q2": "0.0000000000000000",
+                      "Q3": "1.0000000000000000"
+                    }
+                  }
+                ]
+              },
+              "Tip": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Tip",
+                  "type": "App::PropertyLink"
+                },
+                "children": [
+                  {
+                    "tag": "Link",
+                    "attributes": {
+                      "value": "Pocket"
+                    }
+                  }
+                ]
+              },
+              "Group": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Group",
+                  "type": "App::PropertyLinkList"
+                },
+                "children": [
+                  {
+                    "tag": "LinkList",
+                    "attributes": {
+                      "count": "8"
+                    },
+                    "children": [
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "BaseFeature"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Groove"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Boolean"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch002"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_GripperPassiveArm"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_GripperPassiveArm_1"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "ExpressionEngine": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "ExpressionEngine",
+                  "status": "67108864",
+                  "type": "App::PropertyExpressionEngine"
+                },
+                "children": [
+                  {
+                    "tag": "ExpressionEngine",
+                    "attributes": {
+                      "count": "0"
+                    }
+                  }
+                ]
+              }
+            },
+            "direct_containing_groups": [],
+            "saved_Source_link_context": [],
+            "context_interpretation": "saved XML only; no attachment evaluation, external-document execution or mounted transform recovery"
+          },
+          "saved_xml_context_canonical_sha256": "77fca0fccfc8b3077140d8d33b0135eb5cdd6fa7c72399504c268923370c2e25",
+          "upstream_attribution": {
+            "creator": "AngelLM and Thor contributors",
+            "project": "Thor",
+            "repository": "https://github.com/AngelLM/Thor",
+            "declared_repository_license": "CC-BY-SA-4.0",
+            "license_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/LICENSE",
+            "obligations": [
+              "Retain creator, source, revision and license link with derivatives/exports",
+              "Identify modifications/reflections and preserve applicable ShareAlike obligations",
+              "Embedded document metadata conflict remains an attribution review gate",
+              "No RAFTEL company-wide license is selected by this manifest"
+            ]
+          },
+          "worker_batch_limit": 8,
+          "qualification": {
+            "native_cached_BRep_validated": false,
+            "feature_history_rebuilt": false,
+            "exact_Art1_migration_accepted": false,
+            "mesh_topology_or_fidelity_accepted": false,
+            "mounted_transform_recovered": false,
+            "physical_mass_or_inertia_known": false,
+            "manufacturing_released": false
+          }
+        },
+        "upstream_stl_reference": null
+      },
+      {
+        "selection_id": "print-47-grippertop-body-nominal",
+        "source_file": "freecad-src/GripperTop.FCStd",
+        "source_sha256": "10f501e23263c8ddfc37e472fada7d9978d5f6c10cedf6deaa943dde87bdea56",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape2.brp",
+        "brep_sha256": "32b49e8d306cbef1658db0300664823832686ba0d07556b6b20bd292167301df",
+        "xml_placement": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "selection_evidence": "Read-only original-archive saved Shape descriptor; no history rebuild/native geometry validity or print qualification",
+        "uniform_density": null,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-47-grippertop-body-nominal-cached-native-draft.stl"
+        },
+        "reference_capture": {
+          "evidence_class": "full_print_registry_host_preparation_not_native_export",
+          "input_canonical_sha256": {
+            "printable_asset_manifest": "4a0deebe94a6da554fc3ce7d56d749e0a639c2d2a127eb8f59cea0a360b4128d",
+            "source_inspection": "063784958f351e6ef676cf9be3145544b6ebd73d1bdcb1b74d22e645ea563a3b",
+            "mounted_inventory": "e52e699ff7c0d9e1dc3eedf9416e7e1da84ae6e13a5152cb5be6cd4f14b29c31"
+          },
+          "canonical_variant_registry_sha256": "6a77fe8cb3063ad2329b10e80c35de8c161312d4f7ed16afa853945718a3f49b",
+          "counts": {
+            "installed_printed_leaves": 65,
+            "unique_source_assets": 46,
+            "export_geometry_variants": 47,
+            "reflected_installed_leaves": 1
+          },
+          "original_archive_count_verified": 57,
+          "original_archive_set_canonical_sha256": "8f6c072e46870388020b30a73430b7700ff49dbca7abafbc21598fbcd6a6dadb",
+          "original_archive_bytes_verified_before_after": true,
+          "asset_id": "GripperTop::Body",
+          "geometry_variant": "nominal",
+          "quantity_required": 1,
+          "source_asset_canonical_sha256": "36f03062f1ee65d53a4cf2914bf5a75bbb0f795892f36e89b0e8a9737396faf8",
+          "installed_instances": [
+            {
+              "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed_GripperTop",
+              "linked_object": "GripperTop::Body",
+              "variant_id": "nominal",
+              "geometry_operation": "source_shape",
+              "preserved_installed_volume_mm3": 20848.800563144217,
+              "preserved_installed_COM_m": [
+                -0.007622386949759331,
+                -9.263638140713947e-05,
+                0.6358308524964422
+              ],
+              "installed_coordinate_frame": "native Assembly::Model zero-pose frame, metres",
+              "source_to_installed_transform": null
+            }
+          ],
+          "installed_instance_set_canonical_sha256": "718eff48d365210cfe957b927649fc0b347c8b07d57195031599d22526da6b39",
+          "history_status": "cached_final_shape; not_rebuilt_by_this_tool",
+          "frame_policy": "Raw saved BRep coordinates as stored in the selected archive entry. Apply no XML/object/ancestor/link placement while reading. Native worker must record the actual Shape.Placement and compare it separately with XML placement. No source-to-installed transform is inferred from bounds, COM or identity own placement.",
+          "archive_bytes": 422401,
+          "archive_shape_entry_bytes": 214126,
+          "document_xml_sha256": "fe808ad49aed3ff618ddc44bfbe67fbb3f263c9ab60891821b55773b04f0b9f8",
+          "raw_xml_placement_attributes": {
+            "A": "0.0000000000000000",
+            "Ox": "0.0000000000000000",
+            "Oy": "0.0000000000000000",
+            "Oz": "1.0000000000000000",
+            "Px": "0.0000000000000000",
+            "Py": "0.0000000000000000",
+            "Pz": "0.0000000000000000",
+            "Q0": "0.0000000000000000",
+            "Q1": "0.0000000000000000",
+            "Q2": "0.0000000000000000",
+            "Q3": "1.0000000000000000"
+          },
+          "saved_xml_context": {
+            "object_saved_properties": {
+              "Placement": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Placement",
+                  "status": "8388608",
+                  "type": "App::PropertyPlacement"
+                },
+                "children": [
+                  {
+                    "tag": "PropertyPlacement",
+                    "attributes": {
+                      "A": "0.0000000000000000",
+                      "Ox": "0.0000000000000000",
+                      "Oy": "0.0000000000000000",
+                      "Oz": "1.0000000000000000",
+                      "Px": "0.0000000000000000",
+                      "Py": "0.0000000000000000",
+                      "Pz": "0.0000000000000000",
+                      "Q0": "0.0000000000000000",
+                      "Q1": "0.0000000000000000",
+                      "Q2": "0.0000000000000000",
+                      "Q3": "1.0000000000000000"
+                    }
+                  }
+                ]
+              },
+              "Tip": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Tip",
+                  "type": "App::PropertyLink"
+                },
+                "children": [
+                  {
+                    "tag": "Link",
+                    "attributes": {
+                      "value": "Pocket004"
+                    }
+                  }
+                ]
+              },
+              "Group": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "Group",
+                  "type": "App::PropertyLinkList"
+                },
+                "children": [
+                  {
+                    "tag": "LinkList",
+                    "attributes": {
+                      "count": "20"
+                    },
+                    "children": [
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pad"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch001"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Fillet"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch002"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket001"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch003"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket002"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch004"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket003"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Sketch005"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "Pocket004"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "LCS_GripperTop"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_1"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_2"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_3"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_4"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_5"
+                        }
+                      },
+                      {
+                        "tag": "Link",
+                        "attributes": {
+                          "value": "HoleAxis_6"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "ExpressionEngine": {
+                "tag": "Property",
+                "attributes": {
+                  "name": "ExpressionEngine",
+                  "status": "67108864",
+                  "type": "App::PropertyExpressionEngine"
+                },
+                "children": [
+                  {
+                    "tag": "ExpressionEngine",
+                    "attributes": {
+                      "count": "0"
+                    }
+                  }
+                ]
+              }
+            },
+            "direct_containing_groups": [],
+            "saved_Source_link_context": [],
+            "context_interpretation": "saved XML only; no attachment evaluation, external-document execution or mounted transform recovery"
+          },
+          "saved_xml_context_canonical_sha256": "ed62133f2fc03e5256c9385acd5292ee563e7bd1430479a1ff3dc9ffe98b0511",
+          "upstream_attribution": {
+            "creator": "AngelLM and Thor contributors",
+            "project": "Thor",
+            "repository": "https://github.com/AngelLM/Thor",
+            "declared_repository_license": "CC-BY-SA-4.0",
+            "license_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/LICENSE",
+            "obligations": [
+              "Retain creator, source, revision and license link with derivatives/exports",
+              "Identify modifications/reflections and preserve applicable ShareAlike obligations",
+              "Embedded document metadata conflict remains an attribution review gate",
+              "No RAFTEL company-wide license is selected by this manifest"
+            ]
+          },
+          "worker_batch_limit": 8,
+          "qualification": {
+            "native_cached_BRep_validated": false,
+            "feature_history_rebuilt": false,
+            "exact_Art1_migration_accepted": false,
+            "mesh_topology_or_fidelity_accepted": false,
+            "mounted_transform_recovered": false,
+            "physical_mass_or_inertia_known": false,
+            "manufacturing_released": false
+          }
+        },
+        "upstream_stl_reference": null
+      }
+    ]
+  },
+  "capture_script_sha256": "3175d54684cca3b7eb4fad4490845f926b9c125060afa6d9ad2a64d7fe1d5d34",
+  "runner_declared_executable_sha256": "1692e54224b48989974e8b91d3ac7a38d1d502d3db4dee1d4cf79ba91356e42d",
+  "full_runtime_bundle_verified_by_worker": false,
+  "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+  "cross_asset_aggregation_performed": false,
+  "upstream_attribution": {
+    "project": "Thor / AngelLM and contributors",
+    "repository": "https://github.com/AngelLM/Thor",
+    "revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/LICENSE"
+  },
+  "document_opened_or_recomputed": false,
+  "native_document_saved": false,
+  "source_copy_sha256_before": {
+    "freecad-src/GripperActiveArm.FCStd": "3ba5ba6f74c5d2f45eeca56f28534dc750e7f0ae735b6a0b3e16beeef21adc67",
+    "freecad-src/GripperArm.FCStd": "f1511f4b319a5727cf07771abe4c75002d5527e0a10291d47c1fe8024a44c6fc",
+    "freecad-src/GripperBot.FCStd": "a65e68644312adee7381e3a640b2b827f9c2c3362bbe4a842ccee9fea969d176",
+    "freecad-src/GripperFinger.FCStd": "ab4daca4dd2f447029f4c76150b7f617fbdda74ae467cf6962938efe148d57a6",
+    "freecad-src/AssemblyArt56.FCStd": "a04836216dcae82eb033c15daba6e41dedb85b03f86ff21e56b77cdff835a473",
+    "freecad-src/GripperPassiveArm.FCStd": "d14ac1debf67735fd623e052d468a9773066c32356390799b4ea07addcba68d4",
+    "freecad-src/GripperTop.FCStd": "10f501e23263c8ddfc37e472fada7d9978d5f6c10cedf6deaa943dde87bdea56"
+  },
+  "selections": [
+    {
+      "selection_id": "print-41-gripperactivearm-body-nominal",
+      "coordinate_frame_id": "saved-brep:freecad-src/GripperActiveArm.FCStd::Body@f6694e589eb6fd8206e40b37ca752404f54e82028402d27ac347ee94808fed04",
+      "source_binding": {
+        "source_file": "freecad-src/GripperActiveArm.FCStd",
+        "source_sha256": "3ba5ba6f74c5d2f45eeca56f28534dc750e7f0ae735b6a0b3e16beeef21adc67",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape1.brp",
+        "brep_sha256": "f6694e589eb6fd8206e40b37ca752404f54e82028402d27ac347ee94808fed04",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "cached_shape_properties": {
+        "aggregate": {
+          "volume_mm3": 2591.363809825241,
+          "volume_m3": 2.591363809825241e-06,
+          "com_mm": [
+            4.991873199465942,
+            -6.681459560588032e-08,
+            2.788992454432012
+          ],
+          "com_m": [
+            0.004991873199465943,
+            -6.681459560588031e-11,
+            0.002788992454432012
+          ],
+          "centroidal_geometric_inertia_mm5": [
+            [
+              130782.69463807034,
+              0.000311996015697137,
+              3653.833746669534
+            ],
+            [
+              0.000311996015697137,
+              435056.26202578563,
+              0.0002492468214606813
+            ],
+            [
+              3653.833746669534,
+              0.0002492468214606813,
+              556408.8963657627
+            ]
+          ],
+          "centroidal_geometric_inertia_m5": [
+            [
+              1.3078269463807035e-10,
+              3.11996015697137e-19,
+              3.653833746669534e-12
+            ],
+            [
+              3.11996015697137e-19,
+              4.3505626202578567e-10,
+              2.492468214606813e-19
+            ],
+            [
+              3.653833746669534e-12,
+              2.492468214606813e-19,
+              5.564088963657628e-10
+            ]
+          ],
+          "solid_count": 1,
+          "aggregation_scope": "solids within this one BRep storage frame only",
+          "inter_solid_overlap_check_performed": false,
+          "member_sum_is_union_volume_proven": true
+        },
+        "solids": [
+          {
+            "solid_index": 0,
+            "volume_mm3": 2591.363809825241,
+            "com_mm": [
+              4.991873199465942,
+              -6.681459560588032e-08,
+              2.788992454432012
+            ],
+            "centroidal_geometric_inertia_mm5": [
+              [
+                130782.69463807034,
+                0.000311996015697137,
+                3653.833746669534
+              ],
+              [
+                0.000311996015697137,
+                435056.26202578563,
+                0.0002492468214606813
+              ],
+              [
+                3653.833746669534,
+                0.0002492468214606813,
+                556408.8963657627
+              ]
+            ],
+            "native_valid": true,
+            "native_closed_flag": true
+          }
+        ],
+        "native_shape_valid": true,
+        "native_bounds_mm": {
+          "XMin": -15.399999999999999,
+          "XMax": 38.729082680466774,
+          "YMin": -15.399999999999999,
+          "YMax": 15.399999999999999,
+          "ZMin": -5.999999999062311e-07,
+          "ZMax": 5.000000004982114
+        },
+        "raw_shape_placement_matrix_not_reapplied": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "full_self_intersection_analysis_performed": false
+      },
+      "uniform_density_scenario": null,
+      "physical_or_purchased_internal_or_nonuniform_print_inertia_kg_m2": null,
+      "draft_stl": {
+        "filename": "print-41-gripperactivearm-body-nominal-cached-native-draft.stl",
+        "sha256": "caf2acea8c4c6ec21eb256bbf26886259f0edbfed134134b675ea73dd5c7e1a7",
+        "bytes": 486884,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 4862,
+        "triangle_count": 9736,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-41-gripperactivearm-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false
+      },
+      "upstream_STL_is_not_this_native_export": true
+    },
+    {
+      "selection_id": "print-42-gripperarm-body-nominal",
+      "coordinate_frame_id": "saved-brep:freecad-src/GripperArm.FCStd::Body@eb6c4cdffa1eec7f57c9da622858b61f30627b4833e047e95322d7d6e28dd04b",
+      "source_binding": {
+        "source_file": "freecad-src/GripperArm.FCStd",
+        "source_sha256": "f1511f4b319a5727cf07771abe4c75002d5527e0a10291d47c1fe8024a44c6fc",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "eb6c4cdffa1eec7f57c9da622858b61f30627b4833e047e95322d7d6e28dd04b",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "cached_shape_properties": {
+        "aggregate": {
+          "volume_mm3": 839.6484003078497,
+          "volume_m3": 8.396484003078497e-07,
+          "com_mm": [
+            -3.506918234545212e-10,
+            17.500000001138442,
+            2.4999999999772564
+          ],
+          "com_m": [
+            -3.506918234545212e-13,
+            0.01750000000113844,
+            0.0024999999999772565
+          ],
+          "centroidal_geometric_inertia_mm5": [
+            [
+              127252.40723135194,
+              1.2046864803472807e-06,
+              3.929134718253755e-08
+            ],
+            [
+              1.2046864803472807e-06,
+              3450.5419846868226,
+              1.0247458703815937e-07
+            ],
+            [
+              3.929134718253755e-08,
+              1.0247458703815937e-07,
+              127355.87677148363
+            ]
+          ],
+          "centroidal_geometric_inertia_m5": [
+            [
+              1.2725240723135195e-10,
+              1.2046864803472808e-21,
+              3.9291347182537555e-23
+            ],
+            [
+              1.2046864803472808e-21,
+              3.450541984686823e-12,
+              1.0247458703815938e-22
+            ],
+            [
+              3.9291347182537555e-23,
+              1.0247458703815938e-22,
+              1.2735587677148363e-10
+            ]
+          ],
+          "solid_count": 1,
+          "aggregation_scope": "solids within this one BRep storage frame only",
+          "inter_solid_overlap_check_performed": false,
+          "member_sum_is_union_volume_proven": true
+        },
+        "solids": [
+          {
+            "solid_index": 0,
+            "volume_mm3": 839.6484003078497,
+            "com_mm": [
+              -3.506918234545212e-10,
+              17.500000001138442,
+              2.4999999999772564
+            ],
+            "centroidal_geometric_inertia_mm5": [
+              [
+                127252.40723135194,
+                1.2046864803472807e-06,
+                3.929134718253755e-08
+              ],
+              [
+                1.2046864803472807e-06,
+                3450.5419846868226,
+                1.0247458703815937e-07
+              ],
+              [
+                3.929134718253755e-08,
+                1.0247458703815937e-07,
+                127355.87677148363
+              ]
+            ],
+            "native_valid": true,
+            "native_closed_flag": true
+          }
+        ],
+        "native_shape_valid": true,
+        "native_bounds_mm": {
+          "XMin": -3.7290826804738146,
+          "XMax": 3.7290826804738146,
+          "YMin": -3.7290826804738146,
+          "YMax": 38.729082680466774,
+          "ZMin": -1.1102230246251565e-16,
+          "ZMax": 5.0
+        },
+        "raw_shape_placement_matrix_not_reapplied": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "full_self_intersection_analysis_performed": false
+      },
+      "uniform_density_scenario": null,
+      "physical_or_purchased_internal_or_nonuniform_print_inertia_kg_m2": null,
+      "draft_stl": {
+        "filename": "print-42-gripperarm-body-nominal-cached-native-draft.stl",
+        "sha256": "d40c2b29bf895b2d948fc37741c1c29b88e317057b00e3d12e09ad29a24dbfae",
+        "bytes": 543084,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 5428,
+        "triangle_count": 10860,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-42-gripperarm-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false
+      },
+      "upstream_STL_is_not_this_native_export": true
+    },
+    {
+      "selection_id": "print-43-gripperbot-body-nominal",
+      "coordinate_frame_id": "saved-brep:freecad-src/GripperBot.FCStd::Body@677cb02dd9fa77aff228141cb3b5f44929d1bf2f8f25e49c5146a3c9b77e85e1",
+      "source_binding": {
+        "source_file": "freecad-src/GripperBot.FCStd",
+        "source_sha256": "a65e68644312adee7381e3a640b2b827f9c2c3362bbe4a842ccee9fea969d176",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "677cb02dd9fa77aff228141cb3b5f44929d1bf2f8f25e49c5146a3c9b77e85e1",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "cached_shape_properties": {
+        "aggregate": {
+          "volume_mm3": 30622.375656273678,
+          "volume_m3": 3.062237565627368e-05,
+          "com_mm": [
+            1.9088843934909747,
+            27.39339238964153,
+            7.9650106692395415
+          ],
+          "com_m": [
+            0.0019088843934909748,
+            0.02739339238964153,
+            0.007965010669239542
+          ],
+          "centroidal_geometric_inertia_mm5": [
+            [
+              8518518.116048269,
+              -298509.1334405716,
+              -8975.090641912946
+            ],
+            [
+              -298509.1334405716,
+              10787778.813990263,
+              232844.10856938176
+            ],
+            [
+              -8975.090641912946,
+              232844.10856938176,
+              17847814.267593846
+            ]
+          ],
+          "centroidal_geometric_inertia_m5": [
+            [
+              8.51851811604827e-09,
+              -2.985091334405716e-10,
+              -8.975090641912947e-12
+            ],
+            [
+              -2.985091334405716e-10,
+              1.0787778813990264e-08,
+              2.328441085693818e-10
+            ],
+            [
+              -8.975090641912947e-12,
+              2.328441085693818e-10,
+              1.7847814267593847e-08
+            ]
+          ],
+          "solid_count": 1,
+          "aggregation_scope": "solids within this one BRep storage frame only",
+          "inter_solid_overlap_check_performed": false,
+          "member_sum_is_union_volume_proven": true
+        },
+        "solids": [
+          {
+            "solid_index": 0,
+            "volume_mm3": 30622.375656273678,
+            "com_mm": [
+              1.9088843934909747,
+              27.39339238964153,
+              7.9650106692395415
+            ],
+            "centroidal_geometric_inertia_mm5": [
+              [
+                8518518.116048269,
+                -298509.1334405716,
+                -8975.090641912946
+              ],
+              [
+                -298509.1334405716,
+                10787778.813990263,
+                232844.10856938176
+              ],
+              [
+                -8975.090641912946,
+                232844.10856938176,
+                17847814.267593846
+              ]
+            ],
+            "native_valid": true,
+            "native_closed_flag": true
+          }
+        ],
+        "native_shape_valid": true,
+        "native_bounds_mm": {
+          "XMin": -35.947322617113855,
+          "XMax": 35.947322617113855,
+          "YMin": -1.6477050759278008e-15,
+          "YMax": 56.64784400584788,
+          "ZMin": -2.220446049250313e-16,
+          "ZMax": 19.962180000000004
+        },
+        "raw_shape_placement_matrix_not_reapplied": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "full_self_intersection_analysis_performed": false
+      },
+      "uniform_density_scenario": null,
+      "physical_or_purchased_internal_or_nonuniform_print_inertia_kg_m2": null,
+      "draft_stl": {
+        "filename": "print-43-gripperbot-body-nominal-cached-native-draft.stl",
+        "sha256": "a42725169dd947059c5082c0545fe8d50fef8da5aa9a0b191cd96892a85db537",
+        "bytes": 404984,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 4019,
+        "triangle_count": 8098,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-43-gripperbot-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false
+      },
+      "upstream_STL_is_not_this_native_export": true
+    },
+    {
+      "selection_id": "print-44-gripperfinger-body-nominal",
+      "coordinate_frame_id": "saved-brep:freecad-src/GripperFinger.FCStd::Body@3d0fb39b628be445fc9c72b8b3d4e4d13d357662278b39f6a62e4d170510771b",
+      "source_binding": {
+        "source_file": "freecad-src/GripperFinger.FCStd",
+        "source_sha256": "ab4daca4dd2f447029f4c76150b7f617fbdda74ae467cf6962938efe148d57a6",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape.brp",
+        "brep_sha256": "3d0fb39b628be445fc9c72b8b3d4e4d13d357662278b39f6a62e4d170510771b",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "cached_shape_properties": {
+        "aggregate": {
+          "volume_mm3": 12593.042562615725,
+          "volume_m3": 1.2593042562615726e-05,
+          "com_mm": [
+            9.682448262842927,
+            32.16773739645597,
+            7.755367225910253
+          ],
+          "com_m": [
+            0.009682448262842928,
+            0.03216773739645597,
+            0.007755367225910253
+          ],
+          "centroidal_geometric_inertia_mm5": [
+            [
+              3359895.0285095647,
+              -145016.22447048267,
+              92.94094276963733
+            ],
+            [
+              -145016.22447048267,
+              627571.8880461298,
+              1273.5068202279508
+            ],
+            [
+              92.94094276963733,
+              1273.5068202279508,
+              3411789.917093627
+            ]
+          ],
+          "centroidal_geometric_inertia_m5": [
+            [
+              3.359895028509565e-09,
+              -1.4501622447048268e-10,
+              9.294094276963734e-14
+            ],
+            [
+              -1.4501622447048268e-10,
+              6.275718880461299e-10,
+              1.2735068202279509e-12
+            ],
+            [
+              9.294094276963734e-14,
+              1.2735068202279509e-12,
+              3.4117899170936272e-09
+            ]
+          ],
+          "solid_count": 1,
+          "aggregation_scope": "solids within this one BRep storage frame only",
+          "inter_solid_overlap_check_performed": false,
+          "member_sum_is_union_volume_proven": true
+        },
+        "solids": [
+          {
+            "solid_index": 0,
+            "volume_mm3": 12593.042562615725,
+            "com_mm": [
+              9.682448262842927,
+              32.16773739645597,
+              7.755367225910253
+            ],
+            "centroidal_geometric_inertia_mm5": [
+              [
+                3359895.0285095647,
+                -145016.22447048267,
+                92.94094276963733
+              ],
+              [
+                -145016.22447048267,
+                627571.8880461298,
+                1273.5068202279508
+              ],
+              [
+                92.94094276963733,
+                1273.5068202279508,
+                3411789.917093627
+              ]
+            ],
+            "native_valid": true,
+            "native_closed_flag": true
+          }
+        ],
+        "native_shape_valid": true,
+        "native_bounds_mm": {
+          "XMin": -1.5242557054092885,
+          "XMax": 18.5,
+          "YMin": -1.78000000751573e-15,
+          "YMax": 61.524255705409296,
+          "ZMin": -4.440892098500626e-16,
+          "ZMax": 15.5
+        },
+        "raw_shape_placement_matrix_not_reapplied": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "full_self_intersection_analysis_performed": false
+      },
+      "uniform_density_scenario": null,
+      "physical_or_purchased_internal_or_nonuniform_print_inertia_kg_m2": null,
+      "draft_stl": {
+        "filename": "print-44-gripperfinger-body-nominal-cached-native-draft.stl",
+        "sha256": "7af8d717fd7c7bfbfd1b2533ff1a2e0a982f55497f951cb7d81c8632f39333ac",
+        "bytes": 149484,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 1488,
+        "triangle_count": 2988,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-44-gripperfinger-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false
+      },
+      "upstream_STL_is_not_this_native_export": true
+    },
+    {
+      "selection_id": "print-45-assemblyart56-unnamed1_gripperfinger_mirrored-reflected",
+      "coordinate_frame_id": "saved-brep:freecad-src/AssemblyArt56.FCStd::Unnamed1_GripperFinger_mirrored@72569677844f3cc4632795cafcf3a98f7c60429723cf75de2aa64a27147e682d",
+      "source_binding": {
+        "source_file": "freecad-src/AssemblyArt56.FCStd",
+        "source_sha256": "a04836216dcae82eb033c15daba6e41dedb85b03f86ff21e56b77cdff835a473",
+        "object_name": "Unnamed1_GripperFinger_mirrored",
+        "object_type": "Part::Mirroring",
+        "brep_entry": "PartShape52.brp",
+        "brep_sha256": "72569677844f3cc4632795cafcf3a98f7c60429723cf75de2aa64a27147e682d",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "cached_shape_properties": {
+        "aggregate": {
+          "volume_mm3": 12593.042562615725,
+          "volume_m3": 1.2593042562615726e-05,
+          "com_mm": [
+            -9.682448262842927,
+            32.16773739645597,
+            7.755367225910253
+          ],
+          "com_m": [
+            -0.009682448262842928,
+            0.03216773739645597,
+            0.007755367225910253
+          ],
+          "centroidal_geometric_inertia_mm5": [
+            [
+              3359895.0285095647,
+              145016.22447048267,
+              -92.94094276963733
+            ],
+            [
+              145016.22447048267,
+              627571.8880461298,
+              1273.5068202279508
+            ],
+            [
+              -92.94094276963733,
+              1273.5068202279508,
+              3411789.917093627
+            ]
+          ],
+          "centroidal_geometric_inertia_m5": [
+            [
+              3.359895028509565e-09,
+              1.4501622447048268e-10,
+              -9.294094276963734e-14
+            ],
+            [
+              1.4501622447048268e-10,
+              6.275718880461299e-10,
+              1.2735068202279509e-12
+            ],
+            [
+              -9.294094276963734e-14,
+              1.2735068202279509e-12,
+              3.4117899170936272e-09
+            ]
+          ],
+          "solid_count": 1,
+          "aggregation_scope": "solids within this one BRep storage frame only",
+          "inter_solid_overlap_check_performed": false,
+          "member_sum_is_union_volume_proven": true
+        },
+        "solids": [
+          {
+            "solid_index": 0,
+            "volume_mm3": 12593.042562615725,
+            "com_mm": [
+              -9.682448262842927,
+              32.16773739645597,
+              7.755367225910253
+            ],
+            "centroidal_geometric_inertia_mm5": [
+              [
+                3359895.0285095647,
+                145016.22447048267,
+                -92.94094276963733
+              ],
+              [
+                145016.22447048267,
+                627571.8880461298,
+                1273.5068202279508
+              ],
+              [
+                -92.94094276963733,
+                1273.5068202279508,
+                3411789.917093627
+              ]
+            ],
+            "native_valid": true,
+            "native_closed_flag": true
+          }
+        ],
+        "native_shape_valid": true,
+        "native_bounds_mm": {
+          "XMin": -18.5,
+          "XMax": 1.5242557054092885,
+          "YMin": -1.78000000751573e-15,
+          "YMax": 61.524255705409296,
+          "ZMin": -4.440892098500626e-16,
+          "ZMax": 15.5
+        },
+        "raw_shape_placement_matrix_not_reapplied": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "full_self_intersection_analysis_performed": false
+      },
+      "uniform_density_scenario": null,
+      "physical_or_purchased_internal_or_nonuniform_print_inertia_kg_m2": null,
+      "draft_stl": {
+        "filename": "print-45-assemblyart56-unnamed1_gripperfinger_mirrored-reflected-cached-native-draft.stl",
+        "sha256": "611ac95463b9c753e49a3d9c09659bbc030e640d99480786d744166991041781",
+        "bytes": 149484,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 1488,
+        "triangle_count": 2988,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-45-assemblyart56-unnamed1_gripperfinger_mirrored-reflected-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false
+      },
+      "upstream_STL_is_not_this_native_export": true
+    },
+    {
+      "selection_id": "print-46-gripperpassivearm-body-nominal",
+      "coordinate_frame_id": "saved-brep:freecad-src/GripperPassiveArm.FCStd::Body@713aa0622d883f8ded16a1d94941b7b1e6280e7135cf8d1beddeb33ec783bf10",
+      "source_binding": {
+        "source_file": "freecad-src/GripperPassiveArm.FCStd",
+        "source_sha256": "d14ac1debf67735fd623e052d468a9773066c32356390799b4ea07addcba68d4",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape1.brp",
+        "brep_sha256": "713aa0622d883f8ded16a1d94941b7b1e6280e7135cf8d1beddeb33ec783bf10",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "cached_shape_properties": {
+        "aggregate": {
+          "volume_mm3": 3532.8022111270066,
+          "volume_m3": 3.5328022111270066e-06,
+          "com_mm": [
+            3.6124497554974,
+            0.4434554745995075,
+            2.4584089329245913
+          ],
+          "com_m": [
+            0.0036124497554974,
+            0.0004434554745995075,
+            0.0024584089329245913
+          ],
+          "centroidal_geometric_inertia_mm5": [
+            [
+              167007.7193728002,
+              -38256.41684656628,
+              -624.0664269173758
+            ],
+            [
+              -38256.41684656628,
+              473914.07048529864,
+              -76.76301991258788
+            ],
+            [
+              -624.0664269173758,
+              -76.76301991258788,
+              626615.3731493971
+            ]
+          ],
+          "centroidal_geometric_inertia_m5": [
+            [
+              1.670077193728002e-10,
+              -3.8256416846566286e-11,
+              -6.240664269173758e-13
+            ],
+            [
+              -3.8256416846566286e-11,
+              4.739140704852987e-10,
+              -7.676301991258788e-14
+            ],
+            [
+              -6.240664269173758e-13,
+              -7.676301991258788e-14,
+              6.266153731493971e-10
+            ]
+          ],
+          "solid_count": 1,
+          "aggregation_scope": "solids within this one BRep storage frame only",
+          "inter_solid_overlap_check_performed": false,
+          "member_sum_is_union_volume_proven": true
+        },
+        "solids": [
+          {
+            "solid_index": 0,
+            "volume_mm3": 3532.8022111270066,
+            "com_mm": [
+              3.6124497554974,
+              0.4434554745995075,
+              2.4584089329245913
+            ],
+            "centroidal_geometric_inertia_mm5": [
+              [
+                167007.7193728002,
+                -38256.41684656628,
+                -624.0664269173758
+              ],
+              [
+                -38256.41684656628,
+                473914.07048529864,
+                -76.76301991258788
+              ],
+              [
+                -624.0664269173758,
+                -76.76301991258788,
+                626615.3731493971
+              ]
+            ],
+            "native_valid": true,
+            "native_closed_flag": true
+          }
+        ],
+        "native_shape_valid": true,
+        "native_bounds_mm": {
+          "XMin": -15.399999999999999,
+          "XMax": 38.52176379979863,
+          "YMin": -15.399999999999999,
+          "YMax": 15.399999999999999,
+          "ZMin": -6.000006644302225e-07,
+          "ZMax": 5.000000000000003
+        },
+        "raw_shape_placement_matrix_not_reapplied": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "full_self_intersection_analysis_performed": false
+      },
+      "uniform_density_scenario": null,
+      "physical_or_purchased_internal_or_nonuniform_print_inertia_kg_m2": null,
+      "draft_stl": {
+        "filename": "print-46-gripperpassivearm-body-nominal-cached-native-draft.stl",
+        "sha256": "3bdfeaeae6cf5877e2b987236a05ef867ce6117e044b0326f8e602f787eaf495",
+        "bytes": 411784,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 4115,
+        "triangle_count": 8234,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-46-gripperpassivearm-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false
+      },
+      "upstream_STL_is_not_this_native_export": true
+    },
+    {
+      "selection_id": "print-47-grippertop-body-nominal",
+      "coordinate_frame_id": "saved-brep:freecad-src/GripperTop.FCStd::Body@32b49e8d306cbef1658db0300664823832686ba0d07556b6b20bd292167301df",
+      "source_binding": {
+        "source_file": "freecad-src/GripperTop.FCStd",
+        "source_sha256": "10f501e23263c8ddfc37e472fada7d9978d5f6c10cedf6deaa943dde87bdea56",
+        "object_name": "Body",
+        "object_type": "PartDesign::Body",
+        "brep_entry": "PartShape2.brp",
+        "brep_sha256": "32b49e8d306cbef1658db0300664823832686ba0d07556b6b20bd292167301df",
+        "xml_placement_not_applied": {
+          "position_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+      "cached_shape_properties": {
+        "aggregate": {
+          "volume_mm3": 20848.800563144217,
+          "volume_m3": 2.084880056314422e-05,
+          "com_mm": [
+            0.07189451007996228,
+            23.3308524964423,
+            4.972610805389538
+          ],
+          "com_m": [
+            7.189451007996228e-05,
+            0.0233308524964423,
+            0.004972610805389538
+          ],
+          "centroidal_geometric_inertia_mm5": [
+            [
+              4682112.402278747,
+              -13748.24710653082,
+              4503.324202843811
+            ],
+            [
+              -13748.24710653082,
+              6116552.1093517775,
+              686574.462344259
+            ],
+            [
+              4503.324202843811,
+              686574.462344259,
+              10140911.544198498
+            ]
+          ],
+          "centroidal_geometric_inertia_m5": [
+            [
+              4.682112402278747e-09,
+              -1.374824710653082e-11,
+              4.503324202843811e-12
+            ],
+            [
+              -1.374824710653082e-11,
+              6.116552109351778e-09,
+              6.865744623442591e-10
+            ],
+            [
+              4.503324202843811e-12,
+              6.865744623442591e-10,
+              1.01409115441985e-08
+            ]
+          ],
+          "solid_count": 1,
+          "aggregation_scope": "solids within this one BRep storage frame only",
+          "inter_solid_overlap_check_performed": false,
+          "member_sum_is_union_volume_proven": true
+        },
+        "solids": [
+          {
+            "solid_index": 0,
+            "volume_mm3": 20848.800563144217,
+            "com_mm": [
+              0.07189451007996228,
+              23.3308524964423,
+              4.972610805389538
+            ],
+            "centroidal_geometric_inertia_mm5": [
+              [
+                4682112.402278747,
+                -13748.24710653082,
+                4503.324202843811
+              ],
+              [
+                -13748.24710653082,
+                6116552.1093517775,
+                686574.462344259
+              ],
+              [
+                4503.324202843811,
+                686574.462344259,
+                10140911.544198498
+              ]
+            ],
+            "native_valid": true,
+            "native_closed_flag": true
+          }
+        ],
+        "native_shape_valid": true,
+        "native_bounds_mm": {
+          "XMin": -34.14784400584788,
+          "XMax": 34.14784400584788,
+          "YMin": -2.4000170340682248e-16,
+          "YMax": 56.64784400584788,
+          "ZMin": -4.134470543704083e-13,
+          "ZMax": 15.069882952719485
+        },
+        "raw_shape_placement_matrix_not_reapplied": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "full_self_intersection_analysis_performed": false
+      },
+      "uniform_density_scenario": null,
+      "physical_or_purchased_internal_or_nonuniform_print_inertia_kg_m2": null,
+      "draft_stl": {
+        "filename": "print-47-grippertop-body-nominal-cached-native-draft.stl",
+        "sha256": "fbfe1d367fc196c092a67c75c69df19eead375d1d653e11517e2f28a40f97003",
+        "bytes": 361584,
+        "units": "mm",
+        "frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+        "encoding": "binary_STL",
+        "vertex_count_before_STL_unindexing": 3603,
+        "triangle_count": 7230,
+        "tessellation": {
+          "linear_deflection_mm": 0.1,
+          "angular_deflection_rad": 0.2,
+          "relative": false,
+          "filename": "print-47-grippertop-body-nominal-cached-native-draft.stl"
+        },
+        "mesh_manifoldness_or_winding_independently_verified": false,
+        "mesh_self_intersections_checked": false,
+        "print_or_fit_qualification": false
+      },
+      "upstream_STL_is_not_this_native_export": true
+    }
+  ],
+  "errors": [],
+  "open_document_count_before": 0,
+  "actual_runtime_paths": {
+    "UserParameter": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-06-run-01\\user.cfg",
+    "SystemParameter": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-06-run-01\\system.cfg",
+    "UserHomePath": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-06-run-01\\user-home",
+    "UserAppData": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-06-run-01\\user-data\\",
+    "AppTempPath": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-06-run-01\\user-temp\\"
+  },
+  "expected_isolated_paths": {
+    "UserParameter": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-06-run-01\\user.cfg",
+    "SystemParameter": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-06-run-01\\system.cfg",
+    "UserHomePath": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-06-run-01\\user-home",
+    "UserAppData": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-06-run-01\\user-data",
+    "AppTempPath": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\cad\\full-print-export-native\\batch-06-run-01\\user-temp"
+  },
+  "freecad_version": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "python_version": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:00:26) [MSC v.1944 64 bit (AMD64)]",
+  "opencascade_version": "7.8.1",
+  "runtime_isolated_paths_verified": true,
+  "primitive_fixtures": {
+    "summary": {
+      "verified": true,
+      "case_count": 9,
+      "maximum_relative_volume_error": 2.823443157514334e-16,
+      "maximum_com_error_mm": 8.881784197001252e-16,
+      "maximum_relative_tensor_error": 4.4011999916468124e-15,
+      "contract": "Solid.MatrixOfInertia is centroidal geometric mm^5 in parallel storage-frame axes; aggregate solids in their one common BRep frame"
+    },
+    "records": {
+      "box": {
+        "aggregate": {
+          "volume_mm3": 23.999999999999996,
+          "volume_m3": 2.3999999999999997e-08,
+          "com_mm": [
+            1.0,
+            1.5,
+            2.0
+          ],
+          "com_m": [
+            0.001,
+            0.0015,
+            0.002
+          ],
+          "centroidal_geometric_inertia_mm5": [
+            [
+              49.99999999999997,
+              -7.105427357601002e-15,
+              0.0
+            ],
+            [
+              -7.105427357601002e-15,
+              39.999999999999986,
+              -1.4210854715202004e-14
+            ],
+            [
+              0.0,
+              -1.4210854715202004e-14,
+              26.000000000000014
+            ]
+          ],
+          "centroidal_geometric_inertia_m5": [
+            [
+              4.9999999999999976e-14,
+              -7.105427357601002e-30,
+              0.0
+            ],
+            [
+              -7.105427357601002e-30,
+              3.999999999999999e-14,
+              -1.4210854715202005e-29
+            ],
+            [
+              0.0,
+              -1.4210854715202005e-29,
+              2.6000000000000015e-14
+            ]
+          ],
+          "solid_count": 1,
+          "aggregation_scope": "solids within this one BRep storage frame only",
+          "inter_solid_overlap_check_performed": false,
+          "member_sum_is_union_volume_proven": true
+        },
+        "solids": [
+          {
+            "solid_index": 0,
+            "volume_mm3": 23.999999999999996,
+            "com_mm": [
+              1.0,
+              1.5,
+              2.0
+            ],
+            "centroidal_geometric_inertia_mm5": [
+              [
+                49.99999999999997,
+                -7.105427357601002e-15,
+                0.0
+              ],
+              [
+                -7.105427357601002e-15,
+                39.999999999999986,
+                -1.4210854715202004e-14
+              ],
+              [
+                0.0,
+                -1.4210854715202004e-14,
+                26.000000000000014
+              ]
+            ],
+            "native_valid": true,
+            "native_closed_flag": true
+          }
+        ],
+        "native_shape_valid": true,
+        "native_bounds_mm": {
+          "XMin": 0.0,
+          "XMax": 2.0,
+          "YMin": 0.0,
+          "YMax": 3.0,
+          "ZMin": 0.0,
+          "ZMax": 4.0
+        },
+        "raw_shape_placement_matrix_not_reapplied": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "full_self_intersection_analysis_performed": false
+      },
+      "cylinder": {
+        "aggregate": {
+          "volume_mm3": 62.83185307179585,
+          "volume_m3": 6.283185307179585e-08,
+          "com_mm": [
+            -3.109875688542106e-16,
+            -5.589595809989319e-17,
+            2.5000000000000004
+          ],
+          "com_m": [
+            -3.109875688542106e-19,
+            -5.589595809989319e-20,
+            0.0025000000000000005
+          ],
+          "centroidal_geometric_inertia_mm5": [
+            [
+              193.73154697137142,
+              8.291862374562687e-15,
+              7.99360577730112e-15
+            ],
+            [
+              8.291862374562687e-15,
+              193.73154697137016,
+              -2.72489726406953e-17
+            ],
+            [
+              7.99360577730112e-15,
+              -2.72489726406953e-17,
+              125.66370614359244
+            ]
+          ],
+          "centroidal_geometric_inertia_m5": [
+            [
+              1.9373154697137142e-13,
+              8.291862374562688e-30,
+              7.993605777301121e-30
+            ],
+            [
+              8.291862374562688e-30,
+              1.9373154697137018e-13,
+              -2.72489726406953e-32
+            ],
+            [
+              7.993605777301121e-30,
+              -2.72489726406953e-32,
+              1.2566370614359244e-13
+            ]
+          ],
+          "solid_count": 1,
+          "aggregation_scope": "solids within this one BRep storage frame only",
+          "inter_solid_overlap_check_performed": false,
+          "member_sum_is_union_volume_proven": true
+        },
+        "solids": [
+          {
+            "solid_index": 0,
+            "volume_mm3": 62.83185307179585,
+            "com_mm": [
+              -3.109875688542106e-16,
+              -5.589595809989319e-17,
+              2.5000000000000004
+            ],
+            "centroidal_geometric_inertia_mm5": [
+              [
+                193.73154697137142,
+                8.291862374562687e-15,
+                7.99360577730112e-15
+              ],
+              [
+                8.291862374562687e-15,
+                193.73154697137016,
+                -2.72489726406953e-17
+              ],
+              [
+                7.99360577730112e-15,
+                -2.72489726406953e-17,
+                125.66370614359244
+              ]
+            ],
+            "native_valid": true,
+            "native_closed_flag": true
+          }
+        ],
+        "native_shape_valid": true,
+        "native_bounds_mm": {
+          "XMin": -2.0,
+          "XMax": 2.0,
+          "YMin": -2.0,
+          "YMax": 2.0,
+          "ZMin": 0.0,
+          "ZMax": 5.0
+        },
+        "raw_shape_placement_matrix_not_reapplied": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "full_self_intersection_analysis_performed": false
+      },
+      "compound": {
+        "aggregate": {
+          "volume_mm3": 29.999999999999996,
+          "volume_m3": 3e-08,
+          "com_mm": [
+            2.3000000000000003,
+            0.5999999999999999,
+            2.3000000000000003
+          ],
+          "com_m": [
+            0.0023000000000000004,
+            0.0005999999999999998,
+            0.0023000000000000004
+          ],
+          "centroidal_geometric_inertia_mm5": [
+            [
+              164.49999999999997,
+              140.39999999999998,
+              -46.79999999999999
+            ],
+            [
+              140.39999999999998,
+              258.59999999999997,
+              32.399999999999984
+            ],
+            [
+              -46.79999999999999,
+              32.399999999999984,
+              328.5
+            ]
+          ],
+          "centroidal_geometric_inertia_m5": [
+            [
+              1.6449999999999998e-13,
+              1.404e-13,
+              -4.6799999999999994e-14
+            ],
+            [
+              1.404e-13,
+              2.586e-13,
+              3.239999999999999e-14
+            ],
+            [
+              -4.6799999999999994e-14,
+              3.239999999999999e-14,
+              3.285e-13
+            ]
+          ],
+          "solid_count": 2,
+          "aggregation_scope": "solids within this one BRep storage frame only",
+          "inter_solid_overlap_check_performed": false,
+          "member_sum_is_union_volume_proven": false
+        },
+        "solids": [
+          {
+            "solid_index": 0,
+            "volume_mm3": 23.999999999999996,
+            "com_mm": [
+              1.0,
+              1.5,
+              2.0
+            ],
+            "centroidal_geometric_inertia_mm5": [
+              [
+                49.99999999999997,
+                -7.105427357601002e-15,
+                0.0
+              ],
+              [
+                -7.105427357601002e-15,
+                39.999999999999986,
+                -1.4210854715202004e-14
+              ],
+              [
+                0.0,
+                -1.4210854715202004e-14,
+                26.000000000000014
+              ]
+            ],
+            "native_valid": true,
+            "native_closed_flag": true
+          },
+          {
+            "solid_index": 1,
+            "volume_mm3": 6.0,
+            "com_mm": [
+              7.5,
+              -3.0,
+              3.5
+            ],
+            "centroidal_geometric_inertia_mm5": [
+              [
+                6.5000000000000036,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                5.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                2.5
+              ]
+            ],
+            "native_valid": true,
+            "native_closed_flag": true
+          }
+        ],
+        "native_shape_valid": true,
+        "native_bounds_mm": {
+          "XMin": 0.0,
+          "XMax": 8.0,
+          "YMin": -4.0,
+          "YMax": 3.0,
+          "ZMin": 0.0,
+          "ZMax": 5.0
+        },
+        "raw_shape_placement_matrix_not_reapplied": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "full_self_intersection_analysis_performed": false
+      },
+      "box_scale_0p01": {
+        "aggregate": {
+          "volume_mm3": 2.3999999999999997e-05,
+          "volume_m3": 2.4e-14,
+          "com_mm": [
+            0.01,
+            0.015,
+            0.019999999999999997
+          ],
+          "com_m": [
+            1e-05,
+            1.5e-05,
+            1.9999999999999998e-05
+          ],
+          "centroidal_geometric_inertia_mm5": [
+            [
+              5.000000000000005e-09,
+              -4.1359030627651384e-25,
+              -1.6543612251060553e-24
+            ],
+            [
+              -4.1359030627651384e-25,
+              4.000000000000004e-09,
+              -2.481541837659083e-24
+            ],
+            [
+              -1.6543612251060553e-24,
+              -2.481541837659083e-24,
+              2.6e-09
+            ]
+          ],
+          "centroidal_geometric_inertia_m5": [
+            [
+              5.000000000000006e-24,
+              -4.135903062765139e-40,
+              -1.6543612251060555e-39
+            ],
+            [
+              -4.135903062765139e-40,
+              4.000000000000005e-24,
+              -2.4815418376590832e-39
+            ],
+            [
+              -1.6543612251060555e-39,
+              -2.4815418376590832e-39,
+              2.6000000000000004e-24
+            ]
+          ],
+          "solid_count": 1,
+          "aggregation_scope": "solids within this one BRep storage frame only",
+          "inter_solid_overlap_check_performed": false,
+          "member_sum_is_union_volume_proven": true
+        },
+        "solids": [
+          {
+            "solid_index": 0,
+            "volume_mm3": 2.3999999999999997e-05,
+            "com_mm": [
+              0.01,
+              0.015,
+              0.019999999999999997
+            ],
+            "centroidal_geometric_inertia_mm5": [
+              [
+                5.000000000000005e-09,
+                -4.1359030627651384e-25,
+                -1.6543612251060553e-24
+              ],
+              [
+                -4.1359030627651384e-25,
+                4.000000000000004e-09,
+                -2.481541837659083e-24
+              ],
+              [
+                -1.6543612251060553e-24,
+                -2.481541837659083e-24,
+                2.6e-09
+              ]
+            ],
+            "native_valid": true,
+            "native_closed_flag": true
+          }
+        ],
+        "native_shape_valid": true,
+        "native_bounds_mm": {
+          "XMin": 0.0,
+          "XMax": 0.02,
+          "YMin": 0.0,
+          "YMax": 0.03,
+          "ZMin": 0.0,
+          "ZMax": 0.04
+        },
+        "raw_shape_placement_matrix_not_reapplied": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "full_self_intersection_analysis_performed": false
+      },
+      "box_scale_10": {
+        "aggregate": {
+          "volume_mm3": 24000.0,
+          "volume_m3": 2.4e-05,
+          "com_mm": [
+            10.0,
+            15.0,
+            20.0
+          ],
+          "com_m": [
+            0.01,
+            0.015,
+            0.02
+          ],
+          "centroidal_geometric_inertia_mm5": [
+            [
+              5000000.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              4000000.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              2600000.0
+            ]
+          ],
+          "centroidal_geometric_inertia_m5": [
+            [
+              5e-09,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              4e-09,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              2.6e-09
+            ]
+          ],
+          "solid_count": 1,
+          "aggregation_scope": "solids within this one BRep storage frame only",
+          "inter_solid_overlap_check_performed": false,
+          "member_sum_is_union_volume_proven": true
+        },
+        "solids": [
+          {
+            "solid_index": 0,
+            "volume_mm3": 24000.0,
+            "com_mm": [
+              10.0,
+              15.0,
+              20.0
+            ],
+            "centroidal_geometric_inertia_mm5": [
+              [
+                5000000.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                4000000.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                2600000.0
+              ]
+            ],
+            "native_valid": true,
+            "native_closed_flag": true
+          }
+        ],
+        "native_shape_valid": true,
+        "native_bounds_mm": {
+          "XMin": 0.0,
+          "XMax": 20.0,
+          "YMin": 0.0,
+          "YMax": 30.0,
+          "ZMin": 0.0,
+          "ZMax": 40.0
+        },
+        "raw_shape_placement_matrix_not_reapplied": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "full_self_intersection_analysis_performed": false
+      },
+      "box_translated": {
+        "aggregate": {
+          "volume_mm3": 23.999999999999996,
+          "volume_m3": 2.3999999999999997e-08,
+          "com_mm": [
+            11.0,
+            -18.5,
+            32.0
+          ],
+          "com_m": [
+            0.011,
+            -0.0185,
+            0.032
+          ],
+          "centroidal_geometric_inertia_mm5": [
+            [
+              49.999999999999915,
+              -7.105427357601002e-15,
+              2.842170943040401e-14
+            ],
+            [
+              -7.105427357601002e-15,
+              39.99999999999993,
+              2.842170943040401e-14
+            ],
+            [
+              2.842170943040401e-14,
+              2.842170943040401e-14,
+              26.0
+            ]
+          ],
+          "centroidal_geometric_inertia_m5": [
+            [
+              4.999999999999992e-14,
+              -7.105427357601002e-30,
+              2.842170943040401e-29
+            ],
+            [
+              -7.105427357601002e-30,
+              3.999999999999993e-14,
+              2.842170943040401e-29
+            ],
+            [
+              2.842170943040401e-29,
+              2.842170943040401e-29,
+              2.6000000000000003e-14
+            ]
+          ],
+          "solid_count": 1,
+          "aggregation_scope": "solids within this one BRep storage frame only",
+          "inter_solid_overlap_check_performed": false,
+          "member_sum_is_union_volume_proven": true
+        },
+        "solids": [
+          {
+            "solid_index": 0,
+            "volume_mm3": 23.999999999999996,
+            "com_mm": [
+              11.0,
+              -18.5,
+              32.0
+            ],
+            "centroidal_geometric_inertia_mm5": [
+              [
+                49.999999999999915,
+                -7.105427357601002e-15,
+                2.842170943040401e-14
+              ],
+              [
+                -7.105427357601002e-15,
+                39.99999999999993,
+                2.842170943040401e-14
+              ],
+              [
+                2.842170943040401e-14,
+                2.842170943040401e-14,
+                26.0
+              ]
+            ],
+            "native_valid": true,
+            "native_closed_flag": true
+          }
+        ],
+        "native_shape_valid": true,
+        "native_bounds_mm": {
+          "XMin": 10.0,
+          "XMax": 12.0,
+          "YMin": -20.0,
+          "YMax": -17.0,
+          "ZMin": 30.0,
+          "ZMax": 34.0
+        },
+        "raw_shape_placement_matrix_not_reapplied": [
+          1.0,
+          0.0,
+          0.0,
+          10.0,
+          0.0,
+          1.0,
+          0.0,
+          -20.0,
+          0.0,
+          0.0,
+          1.0,
+          30.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "full_self_intersection_analysis_performed": false
+      },
+      "box_rotated_translated": {
+        "aggregate": {
+          "volume_mm3": 24.0,
+          "volume_m3": 2.4000000000000003e-08,
+          "com_mm": [
+            10.862046373340355,
+            -18.353541347364594,
+            31.948345440462944
+          ],
+          "com_m": [
+            0.010862046373340355,
+            -0.018353541347364593,
+            0.03194834544046295
+          ],
+          "centroidal_geometric_inertia_mm5": [
+            [
+              44.74654823103165,
+              4.537637710091403,
+              -7.004876980956212
+            ],
+            [
+              4.537637710091403,
+              42.53640079989215,
+              -0.45557492557622936
+            ],
+            [
+              -7.004876980956212,
+              -0.45557492557622936,
+              28.717050969076254
+            ]
+          ],
+          "centroidal_geometric_inertia_m5": [
+            [
+              4.4746548231031657e-14,
+              4.537637710091403e-15,
+              -7.004876980956212e-15
+            ],
+            [
+              4.537637710091403e-15,
+              4.253640079989215e-14,
+              -4.555749255762294e-16
+            ],
+            [
+              -7.004876980956212e-15,
+              -4.555749255762294e-16,
+              2.871705096907626e-14
+            ]
+          ],
+          "solid_count": 1,
+          "aggregation_scope": "solids within this one BRep storage frame only",
+          "inter_solid_overlap_check_performed": false,
+          "member_sum_is_union_volume_proven": true
+        },
+        "solids": [
+          {
+            "solid_index": 0,
+            "volume_mm3": 24.0,
+            "com_mm": [
+              10.862046373340355,
+              -18.353541347364594,
+              31.948345440462944
+            ],
+            "centroidal_geometric_inertia_mm5": [
+              [
+                44.74654823103165,
+                4.537637710091403,
+                -7.004876980956212
+              ],
+              [
+                4.537637710091403,
+                42.53640079989215,
+                -0.45557492557622936
+              ],
+              [
+                -7.004876980956212,
+                -0.45557492557622936,
+                28.717050969076254
+              ]
+            ],
+            "native_valid": true,
+            "native_closed_flag": true
+          }
+        ],
+        "native_shape_valid": true,
+        "native_bounds_mm": {
+          "XMin": 8.63872259272005,
+          "XMax": 13.08537015396066,
+          "YMin": -20.29817105346633,
+          "YMax": -16.408911641262858,
+          "ZMin": 29.442931745165904,
+          "ZMax": 34.45375913575998
+        },
+        "raw_shape_placement_matrix_not_reapplied": [
+          0.8130186879010577,
+          -0.453759135759983,
+          0.36483319453963603,
+          10.0,
+          0.5112918471750422,
+          0.856168221462352,
+          -0.07454276336658214,
+          -20.0,
+          -0.2785341274170473,
+          0.24714089761175964,
+          0.928084110731176,
+          30.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "full_self_intersection_analysis_performed": false
+      },
+      "cylinder_rotated_translated": {
+        "aggregate": {
+          "volume_mm3": 62.83185307179587,
+          "volume_m3": 6.283185307179588e-08,
+          "com_mm": [
+            -7.175536713092625,
+            7.9918986636971745,
+            14.280990696627475
+          ],
+          "com_m": [
+            -0.0071755367130926255,
+            0.007991898663697174,
+            0.014280990696627475
+          ],
+          "centroidal_geometric_inertia_mm5": [
+            [
+              193.3959655716091,
+              -1.9272324950045814,
+              4.36067211999465
+            ],
+            [
+              -1.9272324950045814,
+              182.66351670378958,
+              25.04319075990219
+            ],
+            [
+              4.36067211999465,
+              25.04319075990219,
+              137.0673178109357
+            ]
+          ],
+          "centroidal_geometric_inertia_m5": [
+            [
+              1.9339596557160912e-13,
+              -1.9272324950045816e-15,
+              4.36067211999465e-15
+            ],
+            [
+              -1.9272324950045816e-15,
+              1.826635167037896e-13,
+              2.504319075990219e-14
+            ],
+            [
+              4.36067211999465e-15,
+              2.504319075990219e-14,
+              1.370673178109357e-13
+            ]
+          ],
+          "solid_count": 1,
+          "aggregation_scope": "solids within this one BRep storage frame only",
+          "inter_solid_overlap_check_performed": false,
+          "member_sum_is_union_volume_proven": true
+        },
+        "solids": [
+          {
+            "solid_index": 0,
+            "volume_mm3": 62.83185307179587,
+            "com_mm": [
+              -7.175536713092625,
+              7.9918986636971745,
+              14.280990696627475
+            ],
+            "centroidal_geometric_inertia_mm5": [
+              [
+                193.3959655716091,
+                -1.9272324950045814,
+                4.36067211999465
+              ],
+              [
+                -1.9272324950045814,
+                182.66351670378958,
+                25.04319075990219
+              ],
+              [
+                4.36067211999465,
+                25.04319075990219,
+                137.0673178109357
+              ]
+            ],
+            "native_valid": true,
+            "native_closed_flag": true
+          }
+        ],
+        "native_shape_valid": true,
+        "native_bounds_mm": {
+          "XMin": -9.346137232660684,
+          "XMax": -5.004936193524566,
+          "YMin": 5.153609280969486,
+          "YMax": 10.830188046424862,
+          "ZMin": 11.181384019936516,
+          "ZMax": 17.380597373318434
+        },
+        "raw_shape_placement_matrix_not_reapplied": [
+          0.8247925573019799,
+          -0.5610589411071908,
+          -0.07021468523705025,
+          -7.0,
+          0.4909759640279828,
+          0.7722303244925739,
+          -0.40324053452113046,
+          9.0,
+          0.28046361647467427,
+          0.2981160689023184,
+          0.91239627865099,
+          12.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "full_self_intersection_analysis_performed": false
+      },
+      "compound_rotated_translated": {
+        "aggregate": {
+          "volume_mm3": 30.000000000000007,
+          "volume_m3": 3.000000000000001e-08,
+          "com_mm": [
+            12.398893741085024,
+            17.665129682561304,
+            -2.0775525998695814
+          ],
+          "com_m": [
+            0.012398893741085024,
+            0.017665129682561304,
+            -0.0020775525998695814
+          ],
+          "centroidal_geometric_inertia_mm5": [
+            [
+              72.96115675556135,
+              37.374470701700076,
+              -65.37760035897016
+            ],
+            [
+              37.374470701700076,
+              352.0994806335253,
+              15.54488067325851
+            ],
+            [
+              -65.37760035897016,
+              15.54488067325851,
+              326.5393626109137
+            ]
+          ],
+          "centroidal_geometric_inertia_m5": [
+            [
+              7.296115675556135e-14,
+              3.737447070170008e-14,
+              -6.537760035897016e-14
+            ],
+            [
+              3.737447070170008e-14,
+              3.520994806335253e-13,
+              1.554488067325851e-14
+            ],
+            [
+              -6.537760035897016e-14,
+              1.554488067325851e-14,
+              3.265393626109137e-13
+            ]
+          ],
+          "solid_count": 2,
+          "aggregation_scope": "solids within this one BRep storage frame only",
+          "inter_solid_overlap_check_performed": false,
+          "member_sum_is_union_volume_proven": false
+        },
+        "solids": [
+          {
+            "solid_index": 0,
+            "volume_mm3": 24.000000000000007,
+            "com_mm": [
+              10.842774775167094,
+              17.84284038172458,
+              -2.4475697228698685
+            ],
+            "centroidal_geometric_inertia_mm5": [
+              [
+                46.733806197486274,
+                3.653145508557354,
+                3.210133679860183
+              ],
+              [
+                3.653145508557354,
+                40.1341329709997,
+                6.527821228110682
+              ],
+              [
+                3.210133679860183,
+                6.527821228110682,
+                29.13206083151408
+              ]
+            ],
+            "native_valid": true,
+            "native_closed_flag": true
+          },
+          {
+            "solid_index": 1,
+            "volume_mm3": 6.000000000000001,
+            "com_mm": [
+              18.623369604756746,
+              16.95428688590819,
+              -0.5974841078684332
+            ],
+            "centroidal_geometric_inertia_mm5": [
+              [
+                6.008098888813759,
+                0.5366464634011157,
+                0.5071454989858046
+              ],
+              [
+                0.5366464634011157,
+                4.9550787741775935,
+                1.1263392494559281
+              ],
+              [
+                0.5071454989858046,
+                1.1263392494559281,
+                3.036822337008644
+              ]
+            ],
+            "native_valid": true,
+            "native_closed_flag": true
+          }
+        ],
+        "native_shape_valid": true,
+        "native_bounds_mm": {
+          "XMin": 9.035964435730227,
+          "XMax": 19.7021468523705,
+          "YMin": 15.331707777619929,
+          "YMax": 20.29864290153369,
+          "ZMin": -5.0,
+          "ZMax": 1.2094581872477075
+        },
+        "raw_shape_placement_matrix_not_reapplied": [
+          0.8247925573019799,
+          -0.5610589411071908,
+          -0.07021468523705025,
+          11.0,
+          0.4909759640279828,
+          0.7722303244925739,
+          -0.40324053452113046,
+          17.0,
+          0.28046361647467427,
+          0.2981160689023184,
+          0.91239627865099,
+          -5.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "full_self_intersection_analysis_performed": false
+      }
+    },
+    "independent_expectations": {
+      "box": {
+        "volume_mm3": 24.0,
+        "com_mm": [
+          1.0,
+          1.5,
+          2.0
+        ],
+        "centroidal_geometric_inertia_mm5": [
+          [
+            50,
+            0,
+            0
+          ],
+          [
+            0,
+            40,
+            0
+          ],
+          [
+            0,
+            0,
+            26
+          ]
+        ]
+      },
+      "cylinder": {
+        "volume_mm3": 62.83185307179586,
+        "com_mm": [
+          0,
+          0,
+          2.5
+        ],
+        "centroidal_geometric_inertia_mm5": [
+          [
+            193.73154697137056,
+            0,
+            0
+          ],
+          [
+            0,
+            193.73154697137056,
+            0
+          ],
+          [
+            0,
+            0,
+            125.66370614359172
+          ]
+        ]
+      },
+      "compound": {
+        "volume_mm3": 30.0,
+        "com_mm": [
+          2.3,
+          0.6,
+          2.3
+        ],
+        "centroidal_geometric_inertia_mm5": [
+          [
+            164.5,
+            140.4,
+            -46.8
+          ],
+          [
+            140.4,
+            258.6,
+            32.4
+          ],
+          [
+            -46.8,
+            32.4,
+            328.5
+          ]
+        ]
+      },
+      "box_translated": {
+        "volume_mm3": 24.0,
+        "com_mm": [
+          11.0,
+          -18.5,
+          32.0
+        ],
+        "centroidal_geometric_inertia_mm5": [
+          [
+            50.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            40.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            26.0
+          ]
+        ]
+      },
+      "box_rotated_translated": {
+        "volume_mm3": 24.0,
+        "com_mm": [
+          10.862046373340355,
+          -18.353541347364594,
+          31.948345440462944
+        ],
+        "centroidal_geometric_inertia_mm5": [
+          [
+            44.746548231031625,
+            4.537637710091398,
+            -7.004876980956189
+          ],
+          [
+            4.5376377100914,
+            42.5364007998921,
+            -0.4555749255762416
+          ],
+          [
+            -7.004876980956189,
+            -0.4555749255762416,
+            28.717050969076272
+          ]
+        ]
+      },
+      "cylinder_rotated_translated": {
+        "volume_mm3": 62.83185307179586,
+        "com_mm": [
+          -7.175536713092626,
+          7.9918986636971745,
+          14.280990696627475
+        ],
+        "centroidal_geometric_inertia_mm5": [
+          [
+            193.3959655716085,
+            -1.9272324950051303,
+            4.360672119994446
+          ],
+          [
+            -1.9272324950051307,
+            182.6635167037893,
+            25.043190759902444
+          ],
+          [
+            4.3606721199944385,
+            25.043190759902437,
+            137.06731781093507
+          ]
+        ]
+      },
+      "compound_rotated_translated": {
+        "volume_mm3": 30.0,
+        "com_mm": [
+          12.398893741085024,
+          17.665129682561304,
+          -2.077552599869581
+        ],
+        "centroidal_geometric_inertia_mm5": [
+          [
+            72.96115675556132,
+            37.37447070170002,
+            -65.37760035897013
+          ],
+          [
+            37.37447070170001,
+            352.09948063352516,
+            15.544880673258543
+          ],
+          [
+            -65.37760035897013,
+            15.54488067325854,
+            326.5393626109136
+          ]
+        ]
+      },
+      "box_scale_0p01": {
+        "volume_mm3": 2.4000000000000004e-05,
+        "com_mm": [
+          0.01,
+          0.015,
+          0.02
+        ],
+        "centroidal_geometric_inertia_mm5": [
+          [
+            5.000000000000001e-09,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            4.000000000000001e-09,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            2.6000000000000005e-09
+          ]
+        ]
+      },
+      "box_scale_10": {
+        "volume_mm3": 24000.0,
+        "com_mm": [
+          10.0,
+          15.0,
+          20.0
+        ],
+        "centroidal_geometric_inertia_mm5": [
+          [
+            5000000.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            4000000.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            2600000.0
+          ]
+        ]
+      }
+    }
+  },
+  "open_document_count_after": 0,
+  "source_copy_sha256_after": {
+    "freecad-src/GripperActiveArm.FCStd": "3ba5ba6f74c5d2f45eeca56f28534dc750e7f0ae735b6a0b3e16beeef21adc67",
+    "freecad-src/GripperArm.FCStd": "f1511f4b319a5727cf07771abe4c75002d5527e0a10291d47c1fe8024a44c6fc",
+    "freecad-src/GripperBot.FCStd": "a65e68644312adee7381e3a640b2b827f9c2c3362bbe4a842ccee9fea969d176",
+    "freecad-src/GripperFinger.FCStd": "ab4daca4dd2f447029f4c76150b7f617fbdda74ae467cf6962938efe148d57a6",
+    "freecad-src/AssemblyArt56.FCStd": "a04836216dcae82eb033c15daba6e41dedb85b03f86ff21e56b77cdff835a473",
+    "freecad-src/GripperPassiveArm.FCStd": "d14ac1debf67735fd623e052d468a9773066c32356390799b4ea07addcba68d4",
+    "freecad-src/GripperTop.FCStd": "10f501e23263c8ddfc37e472fada7d9978d5f6c10cedf6deaa943dde87bdea56"
+  },
+  "input_copy_bytes_unchanged": true
+}

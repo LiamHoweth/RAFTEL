@@ -63,7 +63,8 @@ def _matrix(value) -> list[list[float]]:
         # Standalone worker mirrors the core's bounded symmetric eigenvalue
         # check; no editable package import is required by the native snapshot.
         m = [
-            [(matrix[i][j] / 2 + matrix[j][i] / 2) / magnitude for j in range(3)] for i in range(3)
+            [(matrix[i][j] / magnitude + matrix[j][i] / magnitude) / 2 for j in range(3)]
+            for i in range(3)
         ]
         for _ in range(24):
             p, q = max(((0, 1), (0, 2), (1, 2)), key=lambda pair: abs(m[pair[0]][pair[1]]))
@@ -88,9 +89,10 @@ def _matrix(value) -> list[list[float]]:
             >= -1e-12
         )
 
-    half_trace = math.fsum(result[i][i] / 2 for i in range(3))
+    normalized = [[item / scale if scale else 0.0 for item in row] for row in result]
+    half_trace = math.fsum(normalized[i][i] / 2 for i in range(3))
     covariance = [
-        [(half_trace if i == j else 0) - result[i][j] for j in range(3)] for i in range(3)
+        [(half_trace if i == j else 0) - normalized[i][j] for j in range(3)] for i in range(3)
     ]
     if not positive_semidefinite(result) or not positive_semidefinite(covariance):
         raise ValueError(
@@ -635,6 +637,8 @@ def _isolated_paths() -> tuple[Path, Path, Path, Path, dict]:
 
 
 def native_capture() -> dict:
+    if os.environ.get("RAFTEL_RUN_FREECAD_AUDIT") == "1":
+        raise ValueError("generic audit entry flag conflicts with selected solid-properties worker")
     root, request_path, source_root, output, paths = _isolated_paths()
     request = validate_request(
         json.loads(request_path.read_text(encoding="utf-8"), object_pairs_hook=_unique_object)
