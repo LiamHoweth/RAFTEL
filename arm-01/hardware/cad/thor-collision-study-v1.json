@@ -1,0 +1,303 @@
+{
+  "schema_version": 1,
+  "evidence_class": "collision_proxy_mathematics_and_source_binding_gap_audit_only",
+  "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+  "input_bindings": {
+    "mounted_inventory": {
+      "path": "hardware/cad/thor-mounted-geometry-v2.json",
+      "raw_sha256": "64dbcf86439afffd11f63181259cba048008a3bedf103997603a24d23b49fa3e"
+    },
+    "wrist_membership": {
+      "path": "hardware/cad/thor-wrist-membership-v2.json",
+      "raw_sha256": "07b3aaaf2a6a6257eef1b7fefbddecf34378016873c9d867ce0bfb77d990e6dd"
+    },
+    "frame_manifest": {
+      "path": "config/thor-frames-v1.json",
+      "raw_sha256": "834a227228612e3662ade03b1ada0d0f7f8e86b8e1c8c08d652173a50db418a4"
+    },
+    "metric_semantics_source_audit": {
+      "path": "hardware/cad/thor-native-metric-semantics.json",
+      "raw_sha256": "1f20cf56580faf02d31727861de9f3b263ac36602803a0e1f5f73a9e81092557"
+    },
+    "nominal_model_implementation": {
+      "path": "src/raftel_arm01/kinematics/thor_model.py",
+      "raw_sha256": "cacff6468912f22fe053131ff9388f850c65d94a32b86d5845fe1112ca533998"
+    },
+    "frame_implementation": {
+      "path": "src/raftel_arm01/kinematics/thor_frames.py",
+      "raw_sha256": "bfcc6a76a2c057a4284c7d24fd6da51efa4d799e04c7681cc314c10e2f9f81ec"
+    },
+    "wrist_motion_implementation": {
+      "path": "src/raftel_arm01/kinematics/thor_wrist.py",
+      "raw_sha256": "f772d52caf2a4b6eb47d75ef4f7b10d13c3413fd315b27c176689a54aab487ca"
+    },
+    "proxy_implementation": {
+      "path": "src/raftel_arm01/kinematics/thor_collision.py",
+      "raw_sha256": "e5629d68c21689dc96b042eeb0af51438182504fbf97d5f4994c3115ee3ac670"
+    }
+  },
+  "source_coverage": {
+    "installed_leaf_count": 518,
+    "wrist_motion_class_counts": {
+      "bearing_fold_axis_com": 1,
+      "bearing_roll_axis_com": 1,
+      "fold_carrier": 7,
+      "input_pulley_negative_y": 2,
+      "input_pulley_positive_y": 2,
+      "roll_tool": 47,
+      "side_rotor_negative_y": 5,
+      "side_rotor_positive_y": 5,
+      "uniform_circulating_wrist_belt": 2,
+      "upstream_nonwrist": 446
+    },
+    "inventory_coordinate_frame": "native Assembly::Model zero-pose frame, metres",
+    "inventory_record_fields": [
+      "active_joint_count_assumption",
+      "geometry_derivation",
+      "instance_id",
+      "label",
+      "linked_object",
+      "native_state",
+      "object_reference",
+      "object_type",
+      "root_subassembly",
+      "shape_valid",
+      "solid_count",
+      "volume_mm3",
+      "wrist_roll_membership_resolved",
+      "zero_world_com_m"
+    ],
+    "mounted_full_shape_proxy_bindings_verified": 0,
+    "robot_geometry_proxies_constructed": 0,
+    "source_geometry_enclosure_verified": false,
+    "source_boxes_assumed_conservative": false,
+    "robot_pair_exclusions": [],
+    "robot_intended_contact_exclusion_audit_complete": false,
+    "automatic_adjacent_joint_exclusions": false,
+    "nonzero_robot_collision_witnesses": [],
+    "unknown_static_frames": [
+      {
+        "parent": "world",
+        "child": "bench",
+        "evidence": "No measured workstation transform"
+      },
+      {
+        "parent": "bench",
+        "child": "arm_base",
+        "evidence": "No measured removable mount transform; arm_base is the logical sorter frame"
+      },
+      {
+        "parent": "arm_base",
+        "child": "base_link",
+        "evidence": "No physical calibration relating logical arm_base to nominal source base_link"
+      },
+      {
+        "parent": "gripper_mid_point",
+        "child": "tcp",
+        "evidence": "No calibrated grasp/contact TCP"
+      },
+      {
+        "parent": "bench",
+        "child": "camera",
+        "evidence": "No camera extrinsic calibration"
+      }
+    ]
+  },
+  "binding_gates": [
+    "Acquire per-installed-leaf full-shape geometry and a traceable source-to-installed transform ledger; COM and volume do not determine orientation or shape.",
+    "Prove the numerical proxy encloses the intended solid in its declared frame, including geometry/tessellation/serialization error allowances; saved BoundBox/mesh extrema are not accepted enclosure proof here.",
+    "Audit every moving body's rigid ownership at zero and nonzero poses; COM-only bearing classes and circulating belts cannot silently become rigid body transforms.",
+    "Reconcile wrist/jaw/rotor articulation and identify intended contact pairs with exact IDs, reasons and native evidence; adjacency is not a blanket exclusion.",
+    "Measure and bind bench, bins, tool, held objects, wiring and other obstacles to the same expression frame; unavailable geometry remains missing.",
+    "After discrete pose screening, add swept/intersample checks and validated physical margins; endpoint results do not establish an entire path."
+  ],
+  "source_motion_boundary": {
+    "motion_steps_valid_as_declared_COM_model": true,
+    "full_shape_rigid_articulation_proved_by_COM_model": false,
+    "unresolved_membership_evidence": [
+      "Saved bevel solids intersect and source pitch apex/module differ; intended phase is supported by arrangement, not validated conjugate articulation.",
+      "Motor internal rotor mass/eccentricity, actual belt density/mass/tension distribution and physical drive signs remain unmeasured.",
+      "Jaw mass is included at saved pose; jaw variation and actual parallelism need separate conditional geometry/physical checks.",
+      "Bearing compounds do not provide separated race/cage mass, rotational inertia or contact modeling.",
+      "External wiring, structural COM variation, friction/dynamics, calibration, limits and actuator capacity remain unqualified."
+    ],
+    "nominal_model_source_revision": "e11a56b5aa0d89f0b68a3ea7bd084eab4a050952",
+    "nominal_model_path": "ws_thor/src/thor_urdf/urdf/thor.urdf.xacro"
+  },
+  "synthetic_witnesses": {
+    "fixture_geometry_not_source_derived": true,
+    "scene": {
+      "evidence_class": "declared_box_proxy_mathematics_not_physical_collision_screening",
+      "proxy_count": 3,
+      "pair_count": 3,
+      "explicit_exclusion_count": 1,
+      "automatic_adjacency_exclusions": false,
+      "pairs": [
+        {
+          "intersection": {
+            "left_id": "synthetic_box_a",
+            "right_id": "synthetic_box_b",
+            "relation": "proxy_overlap_or_contact",
+            "contact_classification": "within_numerical_tolerance",
+            "maximum_axis_gap_m": -1.734723475976807e-18,
+            "witness_axis_unit": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "axes_tested": 12,
+            "numerical_tolerance_m": 1e-12,
+            "physical_clearance_established": false
+          },
+          "policy_exclusion": {
+            "left_id": "synthetic_box_a",
+            "right_id": "synthetic_box_b",
+            "reason": "Deliberate face-contact fixture only",
+            "evidence": "Explicit synthetic policy example; not a Thor bearing/gear contact decision"
+          },
+          "screening_policy": "excluded_raw_intersection_retained"
+        },
+        {
+          "intersection": {
+            "left_id": "synthetic_box_a",
+            "right_id": "synthetic_obstacle",
+            "relation": "no_proxy_overlap",
+            "contact_classification": "separated",
+            "maximum_axis_gap_m": 0.06000000000000001,
+            "witness_axis_unit": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "axes_tested": 12,
+            "numerical_tolerance_m": 1e-12,
+            "physical_clearance_established": false
+          },
+          "policy_exclusion": null,
+          "screening_policy": "evaluate"
+        },
+        {
+          "intersection": {
+            "left_id": "synthetic_box_b",
+            "right_id": "synthetic_obstacle",
+            "relation": "no_proxy_overlap",
+            "contact_classification": "separated",
+            "maximum_axis_gap_m": 0.04000000000000001,
+            "witness_axis_unit": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "axes_tested": 12,
+            "numerical_tolerance_m": 1e-12,
+            "physical_clearance_established": false
+          },
+          "policy_exclusion": null,
+          "screening_policy": "evaluate"
+        }
+      ],
+      "source_geometry_enclosure_verified": false,
+      "complete_robot_obstacle_or_swept_coverage": false,
+      "physical_collision_free": null
+    },
+    "nominal_fk_transform_example": {
+      "joint_angles_rad": [
+        0.3,
+        -0.2,
+        0.4,
+        0.1,
+        0.0,
+        0.0
+      ],
+      "proxy": {
+        "proxy_id": "synthetic_target_cube",
+        "frame_id": "base_link",
+        "half_extents_m": [
+          0.005,
+          0.005,
+          0.005
+        ],
+        "frame_from_box": [
+          [
+            0.9216490856090721,
+            -0.38355704238148136,
+            0.058710801693826524,
+            0.0027887630804567603
+          ],
+          [
+            0.38751720202221734,
+            0.902113004769273,
+            -0.18979606097868745,
+            -0.009015312896487656
+          ],
+          [
+            0.019833838076209875,
+            0.19767681165408388,
+            0.9800665778412417,
+            0.5621744673566563
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "evidence": "Arbitrary 10mm cube at nominal source link_6; no robot enclosure",
+        "enclosure_status": "synthetic_exact_box"
+      },
+      "aabb_m": {
+        "minimum_m": [
+          -0.004030821567965141,
+          -0.016412444235338546,
+          0.5561865812187986
+        ],
+        "maximum_m": [
+          0.00960834772887866,
+          -0.0016181815576367664,
+          0.568162353494514
+        ]
+      },
+      "real_body_frame_binding": null,
+      "physical_or_source_robot_collision_result": null
+    },
+    "tangent_pair": {
+      "left_id": "synthetic_box_a",
+      "right_id": "synthetic_box_b",
+      "relation": "proxy_overlap_or_contact",
+      "contact_classification": "within_numerical_tolerance",
+      "maximum_axis_gap_m": -1.734723475976807e-18,
+      "witness_axis_unit": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "axes_tested": 12,
+      "numerical_tolerance_m": 1e-12,
+      "physical_clearance_established": false
+    },
+    "separated_pair": {
+      "left_id": "synthetic_box_a",
+      "right_id": "synthetic_obstacle",
+      "relation": "no_proxy_overlap",
+      "contact_classification": "separated",
+      "maximum_axis_gap_m": 0.06000000000000001,
+      "witness_axis_unit": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "axes_tested": 12,
+      "numerical_tolerance_m": 1e-12,
+      "physical_clearance_established": false
+    }
+  },
+  "qualification": {
+    "conservative_robot_enclosure": false,
+    "complete_geometry_coverage": false,
+    "physical_collision_clearance": false,
+    "swept_path_clearance": false,
+    "hardware_motion_authorized": false,
+    "manufacturing_release": false
+  }
+}
