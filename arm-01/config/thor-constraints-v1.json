@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "revision": "thor-source-study-constraints-v1",
+  "units": "m_rad_s",
+  "validation_class": "source_limits_and_provisional_study_not_hardware_permission",
+  "source": {
+    "repository": "https://github.com/AngelLM/Thor-ROS",
+    "revision": "e11a56b5aa0d89f0b68a3ea7bd084eab4a050952",
+    "path": "ws_thor/src/thor_urdf/urdf/thor.urdf.xacro",
+    "sha256": "19b83e26f86aae15fda5c21418f768d0e3ed1b0d1daa6d149abd9b45ceccd8b9"
+  },
+  "mechanical_stops": null,
+  "coupled_feasible_region": null,
+  "collision_clearance": null,
+  "calibrated_zeros": null,
+  "joints": [
+    {
+      "name": "joint_1",
+      "source": {
+        "lower_rad": -2.967,
+        "upper_rad": 2.967,
+        "max_velocity_rad_s": 0.58,
+        "max_acceleration_rad_s2": null,
+        "evidence": "Pinned thor.urdf.xacro joint_1 limit; PI literal is 3.14159265359; effort=4.0 placeholder excluded"
+      },
+      "study": {
+        "lower_rad": -2.967,
+        "upper_rad": 2.967,
+        "max_velocity_rad_s": 0.58,
+        "max_acceleration_rad_s2": null,
+        "evidence": "Numerical study uses the source position/velocity box, with no added clearance or physical safety claim; acceleration unknown"
+      },
+      "calibrated": null
+    },
+    {
+      "name": "joint_2",
+      "source": {
+        "lower_rad": -1.570796326795,
+        "upper_rad": 1.570796326795,
+        "max_velocity_rad_s": 0.23,
+        "max_acceleration_rad_s2": null,
+        "evidence": "Pinned thor.urdf.xacro joint_2 limit; PI literal is 3.14159265359; effort=4.0 placeholder excluded"
+      },
+      "study": {
+        "lower_rad": -1.570796326795,
+        "upper_rad": 1.570796326795,
+        "max_velocity_rad_s": 0.23,
+        "max_acceleration_rad_s2": null,
+        "evidence": "Numerical study uses the source position/velocity box, with no added clearance or physical safety claim; acceleration unknown"
+      },
+      "calibrated": null
+    },
+    {
+      "name": "joint_3",
+      "source": {
+        "lower_rad": -1.570796326795,
+        "upper_rad": 1.570796326795,
+        "max_velocity_rad_s": 0.23,
+        "max_acceleration_rad_s2": null,
+        "evidence": "Pinned thor.urdf.xacro joint_3 limit; PI literal is 3.14159265359; effort=4.0 placeholder excluded"
+      },
+      "study": {
+        "lower_rad": -1.570796326795,
+        "upper_rad": 1.570796326795,
+        "max_velocity_rad_s": 0.23,
+        "max_acceleration_rad_s2": null,
+        "evidence": "Numerical study uses the source position/velocity box, with no added clearance or physical safety claim; acceleration unknown"
+      },
+      "calibrated": null
+    },
+    {
+      "name": "joint_4",
+      "source": {
+        "lower_rad": -2.967,
+        "upper_rad": 2.967,
+        "max_velocity_rad_s": 0.58,
+        "max_acceleration_rad_s2": null,
+        "evidence": "Pinned thor.urdf.xacro joint_4 limit; PI literal is 3.14159265359; effort=4.0 placeholder excluded"
+      },
+      "study": {
+        "lower_rad": -2.967,
+        "upper_rad": 2.967,
+        "max_velocity_rad_s": 0.58,
+        "max_acceleration_rad_s2": null,
+        "evidence": "Numerical study uses the source position/velocity box, with no added clearance or physical safety claim; acceleration unknown"
+      },
+      "calibrated": null
+    },
+    {
+      "name": "joint_5",
+      "source": {
+        "lower_rad": -1.570796326795,
+        "upper_rad": 1.570796326795,
+        "max_velocity_rad_s": 1.45,
+        "max_acceleration_rad_s2": null,
+        "evidence": "Pinned thor.urdf.xacro joint_5 limit; PI literal is 3.14159265359; effort=4.0 placeholder excluded"
+      },
+      "study": {
+        "lower_rad": -1.570796326795,
+        "upper_rad": 1.570796326795,
+        "max_velocity_rad_s": 1.45,
+        "max_acceleration_rad_s2": null,
+        "evidence": "Numerical study uses the source position/velocity box, with no added clearance or physical safety claim; acceleration unknown"
+      },
+      "calibrated": null
+    },
+    {
+      "name": "joint_6",
+      "source": {
+        "lower_rad": -2.967,
+        "upper_rad": 2.967,
+        "max_velocity_rad_s": 1.45,
+        "max_acceleration_rad_s2": null,
+        "evidence": "Pinned thor.urdf.xacro joint_6 limit; PI literal is 3.14159265359; effort=4.0 placeholder excluded"
+      },
+      "study": {
+        "lower_rad": -2.967,
+        "upper_rad": 2.967,
+        "max_velocity_rad_s": 1.45,
+        "max_acceleration_rad_s2": null,
+        "evidence": "Numerical study uses the source position/velocity box, with no added clearance or physical safety claim; acceleration unknown"
+      },
+      "calibrated": null
+    }
+  ]
+}
