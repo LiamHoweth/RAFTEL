@@ -14,7 +14,14 @@ import os
 import runpy
 from pathlib import Path
 
-PROBE = runpy.run_path(str(Path(__file__).with_name("probe_thor_art1_freecad.py")))
+
+def _load_probe() -> dict:
+    if os.environ.get("RAFTEL_RUN_THOR_ART1_PROBE") == "1":
+        raise ValueError("conflicting native helper opt-in must be unset before loading")
+    return runpy.run_path(str(Path(__file__).with_name("probe_thor_art1_freecad.py")))
+
+
+PROBE = _load_probe()
 FLAG = "RAFTEL_PREPARE_THOR_ART1_CANDIDATE"
 CLASS = "native_unaccepted_derived_Art1_candidate_partial_A6"
 

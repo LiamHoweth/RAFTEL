@@ -1,10 +1,11 @@
 # Source-linked fabrication preparation
 
-This checkpoint prepares reviewable source drawings, a printable-asset ledger and
+The initial checkpoint prepared reviewable source drawings, a printable-asset ledger and
 offline observation imports. It does not export meshes, slice parts, qualify
-material/fit, repair Art1 history or release fabrication. The Windows host has no
-verified FreeCAD runtime. The preserved native captures remain historical native
-evidence; this run adds JSON reconciliation and analytical transform checks only.
+material/fit, repair Art1 history or release fabrication. FreeCAD was unavailable
+at that initial checkpoint. The later [Windows native foundation](thor-windows-native-foundation.md)
+and [native mesh draft audit](thor-native-mesh-audit.md) provide separate evidence;
+they do not qualify these drawings or release fabrication.
 
 ## Assets and export variants
 

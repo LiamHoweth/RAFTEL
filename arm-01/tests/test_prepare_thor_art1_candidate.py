@@ -10,6 +10,17 @@ import pytest
 TOOLS = runpy.run_path(str(Path(__file__).parents[1] / "tools/prepare_thor_art1_candidate.py"))
 
 
+def test_conflicting_opt_in_rejects_before_probe_helper_load(monkeypatch):
+    monkeypatch.setenv("RAFTEL_RUN_THOR_ART1_PROBE", "1")
+
+    def unexpected(*args, **kwargs):
+        pytest.fail("helper was loaded before its inherited opt-in was rejected")
+
+    monkeypatch.setattr(runpy, "run_path", unexpected)
+    with pytest.raises(ValueError, match="conflicting native helper"):
+        TOOLS["_load_probe"]()
+
+
 def test_candidate_path_is_fresh_scoped_and_visibly_unaccepted(tmp_path):
     run = tmp_path / "cad" / "new-run"
     output = tmp_path / "cad" / "candidates" / "Art1-UNACCEPTED.FCStd"

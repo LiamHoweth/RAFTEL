@@ -1,0 +1,1619 @@
+{
+  "schema_version": 1,
+  "evidence_class": "column_mesh_host_native_precision_and_primary_source_diagnostic_not_repair",
+  "diagnostic": {
+    "schema_version": 1,
+    "evidence_class": "host_exact_mesh_incidence_diagnostics_not_repair_or_fabrication_qualification",
+    "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+    "input_bindings": {
+      "capture_raw_sha256": "c8498b9eee2f81a391d6813ef0513cfce2ab3b20d11f750a5daba3b18ccd854c",
+      "host_audit_raw_sha256": "74e82d136de667304e1ff5733b2c46aa450ca27210ef3762ca9fd10663d13379"
+    },
+    "source_binding": {
+      "source_file": "freecad-src/Art4TransmissionColumn.fcstd",
+      "source_sha256": "f31295eaaf973347c73779e69ca33f095656b1e7bc4511eac5ce879aaaddbb2c",
+      "object_name": "Body",
+      "object_type": "PartDesign::Body",
+      "brep_entry": "PartShape1.brp",
+      "brep_sha256": "95cc8bc005dead7f10f6c613c38b3b37176188d33fdaf23a09af4a7a693ad038",
+      "xml_placement_not_applied": {
+        "position_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    },
+    "coordinate_frame": "saved_BRep_storage_frame_as_read_mm; no extra XML/object/link placement applied",
+    "native_capture_reported_shape_properties": {
+      "aggregate": {
+        "volume_mm3": 78484.25760901181,
+        "volume_m3": 7.848425760901182e-05,
+        "com_mm": [
+          4.3250991503408155e-06,
+          -2.2350809083218857e-05,
+          49.50960266232722
+        ],
+        "com_m": [
+          4.325099150340816e-09,
+          -2.2350809083218858e-08,
+          0.04950960266232722
+        ],
+        "centroidal_geometric_inertia_mm5": [
+          [
+            60583669.33867952,
+            0.17934808391391882,
+            12.683755814426892
+          ],
+          [
+            0.17934808391391882,
+            60583667.82393703,
+            -72.44938577800914
+          ],
+          [
+            12.683755814426892,
+            -72.44938577800914,
+            31615943.557502296
+          ]
+        ],
+        "centroidal_geometric_inertia_m5": [
+          [
+            6.058366933867953e-08,
+            1.7934808391391883e-16,
+            1.2683755814426893e-14
+          ],
+          [
+            1.7934808391391883e-16,
+            6.058366782393704e-08,
+            -7.244938577800915e-14
+          ],
+          [
+            1.2683755814426893e-14,
+            -7.244938577800915e-14,
+            3.16159435575023e-08
+          ]
+        ],
+        "solid_count": 1,
+        "aggregation_scope": "solids within this one BRep storage frame only",
+        "inter_solid_overlap_check_performed": false,
+        "member_sum_is_union_volume_proven": true
+      },
+      "solids": [
+        {
+          "solid_index": 0,
+          "volume_mm3": 78484.25760901181,
+          "com_mm": [
+            4.3250991503408155e-06,
+            -2.2350809083218857e-05,
+            49.50960266232722
+          ],
+          "centroidal_geometric_inertia_mm5": [
+            [
+              60583669.33867952,
+              0.17934808391391882,
+              12.683755814426892
+            ],
+            [
+              0.17934808391391882,
+              60583667.82393703,
+              -72.44938577800914
+            ],
+            [
+              12.683755814426892,
+              -72.44938577800914,
+              31615943.557502296
+            ]
+          ],
+          "native_valid": true,
+          "native_closed_flag": true
+        }
+      ],
+      "native_shape_valid": true,
+      "native_bounds_mm": {
+        "XMin": -37.88372701023379,
+        "XMax": 37.88372701023379,
+        "YMin": -37.88372701023378,
+        "YMax": 37.883727010233805,
+        "ZMin": -3.55e-15,
+        "ZMax": 76.00000000000001
+      },
+      "raw_shape_placement_matrix_not_reapplied": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "full_self_intersection_analysis_performed": false
+    },
+    "native_stl": {
+      "sha256": "dd007abd74dcfd50c6311ea98c7d26bd1f07e2d6267b8ddd303c21f4ed1d2cda",
+      "bytes": 700884,
+      "encoding": "binary",
+      "existing_parser_audit": {
+        "encoding": "binary",
+        "triangle_count": 14016,
+        "exact_vertex_count": 6988,
+        "connected_components_by_vertex": 1,
+        "bounds_interpreted_mm": {
+          "min": [
+            -34.95649337768555,
+            -34.98912048339844,
+            -4.000000014509975e-15
+          ],
+          "max": [
+            35.0,
+            34.98912048339844,
+            76.0
+          ]
+        },
+        "envelope_xyz_interpreted_mm": [
+          69.95649337768555,
+          69.97824096679688,
+          76.0
+        ],
+        "surface_area_interpreted_mm2": 26545.39903093673,
+        "algebraic_signed_volume_interpreted_mm3": 78300.861160232,
+        "absolute_signed_volume_interpreted_mm3": 78300.861160232,
+        "topology": {
+          "boundary_edges": 0,
+          "nonmanifold_edges": 3,
+          "nonmanifold_vertices": 4,
+          "inconsistent_winding_edges": 0,
+          "duplicate_facets": 0,
+          "zero_area_facets": 0,
+          "closed_consistently_oriented_two_manifold": false,
+          "exact_vertex_matching_no_weld": true
+        },
+        "stored_normal_warnings": {
+          "zero_normals": 0,
+          "opposed_to_winding": 0
+        },
+        "nonzero_binary_attribute_words": 0,
+        "self_intersections": "not_checked",
+        "units": "STL_unitless_coordinates_explicitly_interpreted_as_mm_not_encoded_units",
+        "solid_fidelity": "not_established_by_topology_bounds_or_volume"
+      },
+      "incidence_diagnostic": {
+        "indexed_point_count": 6988,
+        "used_index_count": 6988,
+        "exact_coordinate_count": 6988,
+        "used_exact_coordinate_count": 6988,
+        "triangle_count": 14016,
+        "boundary_edge_count": 0,
+        "nonmanifold_edge_count": 3,
+        "duplicate_facet_count": 0,
+        "nonmanifold_edges": [
+          {
+            "endpoints_mm": [
+              [
+                8.603719711303711,
+                5.0966668128967285,
+                17.0
+              ],
+              [
+                8.605233192443848,
+                5.094111442565918,
+                17.0
+              ]
+            ],
+            "length_mm": 0.0029699398460467756,
+            "incidence_count": 4,
+            "incident_facets": [
+              {
+                "facet_index_zero_based": 593,
+                "triangle_mm": [
+                  [
+                    12.74686336517334,
+                    9.250909805297852,
+                    16.999961853027344
+                  ],
+                  [
+                    8.603719711303711,
+                    5.0966668128967285,
+                    17.0
+                  ],
+                  [
+                    8.605233192443848,
+                    5.094111442565918,
+                    17.0
+                  ]
+                ],
+                "edge_direction_relative_to_sorted_endpoints": 1,
+                "area_mm2": 0.0084373173951545,
+                "geometric_unit_normal": [
+                  5.7766964054241e-06,
+                  3.4213910040709263e-06,
+                  0.999999999977462
+                ]
+              },
+              {
+                "facet_index_zero_based": 3400,
+                "triangle_mm": [
+                  [
+                    8.605233192443848,
+                    5.094111442565918,
+                    17.0
+                  ],
+                  [
+                    8.603719711303711,
+                    5.0966668128967285,
+                    17.0
+                  ],
+                  [
+                    8.78221607208252,
+                    4.7825398445129395,
+                    -1.0521587043326374e-15
+                  ]
+                ],
+                "edge_direction_relative_to_sorted_endpoints": -1,
+                "area_mm2": 0.025244490535989247,
+                "geometric_unit_normal": [
+                  -0.8604114145589149,
+                  -0.5095998936014174,
+                  0.0003822801996706822
+                ]
+              },
+              {
+                "facet_index_zero_based": 3407,
+                "triangle_mm": [
+                  [
+                    8.605233192443848,
+                    5.094111442565918,
+                    17.0
+                  ],
+                  [
+                    8.78221607208252,
+                    4.7825398445129395,
+                    76.0
+                  ],
+                  [
+                    8.603719711303711,
+                    5.0966668128967285,
+                    17.0
+                  ]
+                ],
+                "edge_direction_relative_to_sorted_endpoints": 1,
+                "area_mm2": 0.08761322598987241,
+                "geometric_unit_normal": [
+                  -0.860411472208831,
+                  -0.5095999277460029,
+                  -0.00011014853948875432
+                ]
+              },
+              {
+                "facet_index_zero_based": 3550,
+                "triangle_mm": [
+                  [
+                    17.56443214416504,
+                    9.565079689025879,
+                    17.0
+                  ],
+                  [
+                    8.605233192443848,
+                    5.094111442565918,
+                    17.0
+                  ],
+                  [
+                    8.603719711303711,
+                    5.0966668128967285,
+                    17.0
+                  ]
+                ],
+                "edge_direction_relative_to_sorted_endpoints": -1,
+                "area_mm2": 0.014830398654112287,
+                "geometric_unit_normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              }
+            ]
+          },
+          {
+            "endpoints_mm": [
+              [
+                8.605233192443848,
+                5.094111442565918,
+                17.0
+              ],
+              [
+                8.606745719909668,
+                5.091555118560791,
+                17.0
+              ]
+            ],
+            "length_mm": 0.002970274693365771,
+            "incidence_count": 4,
+            "incident_facets": [
+              {
+                "facet_index_zero_based": 592,
+                "triangle_mm": [
+                  [
+                    12.74686336517334,
+                    9.250909805297852,
+                    16.999961853027344
+                  ],
+                  [
+                    8.605233192443848,
+                    5.094111442565918,
+                    17.0
+                  ],
+                  [
+                    8.606745719909668,
+                    5.091555118560791,
+                    17.0
+                  ]
+                ],
+                "edge_direction_relative_to_sorted_endpoints": 1,
+                "area_mm2": 0.008437310162397927,
+                "geometric_unit_normal": [
+                  5.778857245208751e-06,
+                  3.41923804920764e-06,
+                  0.9999999999774568
+                ]
+              },
+              {
+                "facet_index_zero_based": 3399,
+                "triangle_mm": [
+                  [
+                    8.606745719909668,
+                    5.091555118560791,
+                    17.0
+                  ],
+                  [
+                    8.605233192443848,
+                    5.094111442565918,
+                    17.0
+                  ],
+                  [
+                    8.78221607208252,
+                    4.7825398445129395,
+                    -1.0521587043326374e-15
+                  ]
+                ],
+                "edge_direction_relative_to_sorted_endpoints": -1,
+                "area_mm2": 0.02524733665002123,
+                "geometric_unit_normal": [
+                  -0.8606354937466575,
+                  -0.509221374028054,
+                  0.0003730099568306267
+                ]
+              },
+              {
+                "facet_index_zero_based": 3406,
+                "triangle_mm": [
+                  [
+                    8.606745719909668,
+                    5.091555118560791,
+                    17.0
+                  ],
+                  [
+                    8.78221607208252,
+                    4.7825398445129395,
+                    76.0
+                  ],
+                  [
+                    8.605233192443848,
+                    5.094111442565918,
+                    17.0
+                  ]
+                ],
+                "edge_direction_relative_to_sorted_endpoints": 1,
+                "area_mm2": 0.08762310396037512,
+                "geometric_unit_normal": [
+                  -0.8606355486487639,
+                  -0.5092214065125684,
+                  -0.00010747745204474266
+                ]
+              },
+              {
+                "facet_index_zero_based": 3551,
+                "triangle_mm": [
+                  [
+                    17.56443214416504,
+                    9.565079689025879,
+                    17.0
+                  ],
+                  [
+                    8.606745719909668,
+                    5.091555118560791,
+                    17.0
+                  ],
+                  [
+                    8.605233192443848,
+                    5.094111442565918,
+                    17.0
+                  ]
+                ],
+                "edge_direction_relative_to_sorted_endpoints": -1,
+                "area_mm2": 0.014832538809287144,
+                "geometric_unit_normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              }
+            ]
+          },
+          {
+            "endpoints_mm": [
+              [
+                8.606745719909668,
+                5.091555118560791,
+                17.0
+              ],
+              [
+                8.608257293701172,
+                5.088998794555664,
+                17.0
+              ]
+            ],
+            "length_mm": 0.0029697891754045104,
+            "incidence_count": 4,
+            "incident_facets": [
+              {
+                "facet_index_zero_based": 575,
+                "triangle_mm": [
+                  [
+                    14.243782043457031,
+                    6.721445083618164,
+                    16.999961853027344
+                  ],
+                  [
+                    8.606745719909668,
+                    5.091555118560791,
+                    17.0
+                  ],
+                  [
+                    8.608257293701172,
+                    5.088998794555664,
+                    17.0
+                  ]
+                ],
+                "edge_direction_relative_to_sorted_endpoints": 1,
+                "area_mm2": 0.008436895113126478,
+                "geometric_unit_normal": [
+                  5.779141533499321e-06,
+                  3.417250263233137e-06,
+                  0.9999999999774619
+                ]
+              },
+              {
+                "facet_index_zero_based": 3398,
+                "triangle_mm": [
+                  [
+                    8.608257293701172,
+                    5.088998794555664,
+                    17.0
+                  ],
+                  [
+                    8.606745719909668,
+                    5.091555118560791,
+                    17.0
+                  ],
+                  [
+                    8.78221607208252,
+                    4.7825398445129395,
+                    -1.0521587043326374e-15
+                  ]
+                ],
+                "edge_direction_relative_to_sorted_endpoints": -1,
+                "area_mm2": 0.025243209693095733,
+                "geometric_unit_normal": [
+                  -0.8607761971538085,
+                  -0.5089835002756151,
+                  0.0003672337274657216
+                ]
+              },
+              {
+                "facet_index_zero_based": 3405,
+                "triangle_mm": [
+                  [
+                    8.608257293701172,
+                    5.088998794555664,
+                    17.0
+                  ],
+                  [
+                    8.78221607208252,
+                    4.7825398445129395,
+                    76.0
+                  ],
+                  [
+                    8.606745719909668,
+                    5.091555118560791,
+                    17.0
+                  ]
+                ],
+                "edge_direction_relative_to_sorted_endpoints": 1,
+                "area_mm2": 0.0876087811648852,
+                "geometric_unit_normal": [
+                  -0.860776250377412,
+                  -0.508983531747136,
+                  -0.00010581311445649911
+                ]
+              },
+              {
+                "facet_index_zero_based": 3552,
+                "triangle_mm": [
+                  [
+                    17.56443214416504,
+                    9.565079689025879,
+                    17.0
+                  ],
+                  [
+                    8.608257293701172,
+                    5.088998794555664,
+                    17.0
+                  ],
+                  [
+                    8.606745719909668,
+                    5.091555118560791,
+                    17.0
+                  ]
+                ],
+                "edge_direction_relative_to_sorted_endpoints": -1,
+                "area_mm2": 0.014830405666543811,
+                "geometric_unit_normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              }
+            ]
+          }
+        ],
+        "defect_vertices_mm": [
+          [
+            8.603719711303711,
+            5.0966668128967285,
+            17.0
+          ],
+          [
+            8.605233192443848,
+            5.094111442565918,
+            17.0
+          ],
+          [
+            8.606745719909668,
+            5.091555118560791,
+            17.0
+          ],
+          [
+            8.608257293701172,
+            5.088998794555664,
+            17.0
+          ]
+        ],
+        "defect_chain_total_length_mm": 0.008910003714817056,
+        "source_geometry_changed": false,
+        "self_intersections_checked": false
+      }
+    },
+    "preserved_upstream_stl": {
+      "sha256": "f62c1a9b123f354d3796c7610339678e283a51ea651351c7138fde3e8268530e",
+      "bytes": 2130284,
+      "encoding": "binary",
+      "existing_parser_audit": {
+        "encoding": "binary",
+        "triangle_count": 42604,
+        "exact_vertex_count": 21282,
+        "connected_components_by_vertex": 1,
+        "bounds_interpreted_mm": {
+          "min": [
+            -35.0,
+            -34.98912048339844,
+            -4.000000014509975e-15
+          ],
+          "max": [
+            35.0,
+            34.98912048339844,
+            76.0
+          ]
+        },
+        "envelope_xyz_interpreted_mm": [
+          70.0,
+          69.97824096679688,
+          76.0
+        ],
+        "surface_area_interpreted_mm2": 26567.846977455516,
+        "algebraic_signed_volume_interpreted_mm3": 78420.22836871957,
+        "absolute_signed_volume_interpreted_mm3": 78420.22836871957,
+        "topology": {
+          "boundary_edges": 0,
+          "nonmanifold_edges": 3,
+          "nonmanifold_vertices": 4,
+          "inconsistent_winding_edges": 0,
+          "duplicate_facets": 0,
+          "zero_area_facets": 0,
+          "closed_consistently_oriented_two_manifold": false,
+          "exact_vertex_matching_no_weld": true
+        },
+        "stored_normal_warnings": {
+          "zero_normals": 0,
+          "opposed_to_winding": 0
+        },
+        "nonzero_binary_attribute_words": 0,
+        "self_intersections": "not_checked",
+        "units": "STL_unitless_coordinates_explicitly_interpreted_as_mm_not_encoded_units",
+        "solid_fidelity": "not_established_by_topology_bounds_or_volume"
+      },
+      "incidence_diagnostic": {
+        "indexed_point_count": 21282,
+        "used_index_count": 21282,
+        "exact_coordinate_count": 21282,
+        "used_exact_coordinate_count": 21282,
+        "triangle_count": 42604,
+        "boundary_edge_count": 0,
+        "nonmanifold_edge_count": 3,
+        "duplicate_facet_count": 0,
+        "nonmanifold_edges": [
+          {
+            "endpoints_mm": [
+              [
+                8.603719711303711,
+                5.0966668128967285,
+                17.0
+              ],
+              [
+                8.605233192443848,
+                5.094111442565918,
+                17.0
+              ]
+            ],
+            "length_mm": 0.0029699398460467756,
+            "incidence_count": 4,
+            "incident_facets": [
+              {
+                "facet_index_zero_based": 1095,
+                "triangle_mm": [
+                  [
+                    12.74686336517334,
+                    9.250909805297852,
+                    16.999961853027344
+                  ],
+                  [
+                    8.603719711303711,
+                    5.0966668128967285,
+                    17.0
+                  ],
+                  [
+                    8.605233192443848,
+                    5.094111442565918,
+                    17.0
+                  ]
+                ],
+                "edge_direction_relative_to_sorted_endpoints": 1,
+                "area_mm2": 0.0084373173951545,
+                "geometric_unit_normal": [
+                  5.7766964054241e-06,
+                  3.4213910040709263e-06,
+                  0.999999999977462
+                ]
+              },
+              {
+                "facet_index_zero_based": 9605,
+                "triangle_mm": [
+                  [
+                    8.605233192443848,
+                    5.094111442565918,
+                    17.0
+                  ],
+                  [
+                    8.603719711303711,
+                    5.0966668128967285,
+                    17.0
+                  ],
+                  [
+                    8.53290843963623,
+                    5.214352130889893,
+                    -1.1471574727737067e-15
+                  ]
+                ],
+                "edge_direction_relative_to_sorted_endpoints": -1,
+                "area_mm2": 0.025244488731180865,
+                "geometric_unit_normal": [
+                  -0.8604114760724496,
+                  -0.5095999300343264,
+                  5.614123309413193e-05
+                ]
+              },
+              {
+                "facet_index_zero_based": 9613,
+                "triangle_mm": [
+                  [
+                    8.605233192443848,
+                    5.094111442565918,
+                    17.0
+                  ],
+                  [
+                    8.53290843963623,
+                    5.214352130889893,
+                    76.0
+                  ],
+                  [
+                    8.603719711303711,
+                    5.0966668128967285,
+                    17.0
+                  ]
+                ],
+                "edge_direction_relative_to_sorted_endpoints": 1,
+                "area_mm2": 0.08761322546984286,
+                "geometric_unit_normal": [
+                  -0.8604114773158156,
+                  -0.5095999307707405,
+                  -1.6176287525075108e-05
+                ]
+              },
+              {
+                "facet_index_zero_based": 9894,
+                "triangle_mm": [
+                  [
+                    17.06581687927246,
+                    10.428704261779785,
+                    17.0
+                  ],
+                  [
+                    8.605233192443848,
+                    5.094111442565918,
+                    17.0
+                  ],
+                  [
+                    8.603719711303711,
+                    5.0966668128967285,
+                    17.0
+                  ]
+                ],
+                "edge_direction_relative_to_sorted_endpoints": -1,
+                "area_mm2": 0.014846865078425253,
+                "geometric_unit_normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              }
+            ]
+          },
+          {
+            "endpoints_mm": [
+              [
+                8.605233192443848,
+                5.094111442565918,
+                17.0
+              ],
+              [
+                8.606745719909668,
+                5.091555118560791,
+                17.0
+              ]
+            ],
+            "length_mm": 0.002970274693365771,
+            "incidence_count": 4,
+            "incident_facets": [
+              {
+                "facet_index_zero_based": 1094,
+                "triangle_mm": [
+                  [
+                    12.74686336517334,
+                    9.250909805297852,
+                    16.999961853027344
+                  ],
+                  [
+                    8.605233192443848,
+                    5.094111442565918,
+                    17.0
+                  ],
+                  [
+                    8.606745719909668,
+                    5.091555118560791,
+                    17.0
+                  ]
+                ],
+                "edge_direction_relative_to_sorted_endpoints": 1,
+                "area_mm2": 0.008437310162397927,
+                "geometric_unit_normal": [
+                  5.778857245208751e-06,
+                  3.41923804920764e-06,
+                  0.9999999999774568
+                ]
+              },
+              {
+                "facet_index_zero_based": 9604,
+                "triangle_mm": [
+                  [
+                    8.606745719909668,
+                    5.091555118560791,
+                    17.0
+                  ],
+                  [
+                    8.605233192443848,
+                    5.094111442565918,
+                    17.0
+                  ],
+                  [
+                    8.53290843963623,
+                    5.214352130889893,
+                    -1.1471574727737067e-15
+                  ]
+                ],
+                "edge_direction_relative_to_sorted_endpoints": -1,
+                "area_mm2": 0.02524733493870925,
+                "geometric_unit_normal": [
+                  -0.8606355520821545,
+                  -0.5092214085440392,
+                  5.977181700881264e-05
+                ]
+              },
+              {
+                "facet_index_zero_based": 9612,
+                "triangle_mm": [
+                  [
+                    8.606745719909668,
+                    5.091555118560791,
+                    17.0
+                  ],
+                  [
+                    8.53290843963623,
+                    5.214352130889893,
+                    76.0
+                  ],
+                  [
+                    8.605233192443848,
+                    5.094111442565918,
+                    17.0
+                  ]
+                ],
+                "edge_direction_relative_to_sorted_endpoints": 1,
+                "area_mm2": 0.0876231034672852,
+                "geometric_unit_normal": [
+                  -0.860635553491901,
+                  -0.509221409378159,
+                  -1.722238797990256e-05
+                ]
+              },
+              {
+                "facet_index_zero_based": 9895,
+                "triangle_mm": [
+                  [
+                    17.06581687927246,
+                    10.428704261779785,
+                    17.0
+                  ],
+                  [
+                    8.606745719909668,
+                    5.091555118560791,
+                    17.0
+                  ],
+                  [
+                    8.605233192443848,
+                    5.094111442565918,
+                    17.0
+                  ]
+                ],
+                "edge_direction_relative_to_sorted_endpoints": -1,
+                "area_mm2": 0.014848355667027135,
+                "geometric_unit_normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              }
+            ]
+          },
+          {
+            "endpoints_mm": [
+              [
+                8.606745719909668,
+                5.091555118560791,
+                17.0
+              ],
+              [
+                8.608257293701172,
+                5.088998794555664,
+                17.0
+              ]
+            ],
+            "length_mm": 0.0029697891754045104,
+            "incidence_count": 4,
+            "incident_facets": [
+              {
+                "facet_index_zero_based": 1071,
+                "triangle_mm": [
+                  [
+                    14.243782043457031,
+                    6.721445083618164,
+                    16.999961853027344
+                  ],
+                  [
+                    8.606745719909668,
+                    5.091555118560791,
+                    17.0
+                  ],
+                  [
+                    8.608257293701172,
+                    5.088998794555664,
+                    17.0
+                  ]
+                ],
+                "edge_direction_relative_to_sorted_endpoints": 1,
+                "area_mm2": 0.008436895113126478,
+                "geometric_unit_normal": [
+                  5.779141533499321e-06,
+                  3.417250263233137e-06,
+                  0.9999999999774619
+                ]
+              },
+              {
+                "facet_index_zero_based": 9603,
+                "triangle_mm": [
+                  [
+                    8.608257293701172,
+                    5.088998794555664,
+                    17.0
+                  ],
+                  [
+                    8.606745719909668,
+                    5.091555118560791,
+                    17.0
+                  ],
+                  [
+                    8.53290843963623,
+                    5.214352130889893,
+                    -1.1471574727737067e-15
+                  ]
+                ],
+                "edge_direction_relative_to_sorted_endpoints": -1,
+                "area_mm2": 0.025243208039614284,
+                "geometric_unit_normal": [
+                  -0.8607762535363994,
+                  -0.5089835336150692,
+                  6.210119014395793e-05
+                ]
+              },
+              {
+                "facet_index_zero_based": 9611,
+                "triangle_mm": [
+                  [
+                    8.608257293701172,
+                    5.088998794555664,
+                    17.0
+                  ],
+                  [
+                    8.53290843963623,
+                    5.214352130889893,
+                    76.0
+                  ],
+                  [
+                    8.606745719909668,
+                    5.091555118560791,
+                    17.0
+                  ]
+                ],
+                "edge_direction_relative_to_sorted_endpoints": 1,
+                "area_mm2": 0.08760878068845833,
+                "geometric_unit_normal": [
+                  -0.8607762550584146,
+                  -0.5089835345150484,
+                  -1.789356329345759e-05
+                ]
+              },
+              {
+                "facet_index_zero_based": 9908,
+                "triangle_mm": [
+                  [
+                    17.06581687927246,
+                    10.428704261779785,
+                    17.0
+                  ],
+                  [
+                    8.608257293701172,
+                    5.088998794555664,
+                    17.0
+                  ],
+                  [
+                    8.606745719909668,
+                    5.091555118560791,
+                    17.0
+                  ]
+                ],
+                "edge_direction_relative_to_sorted_endpoints": -1,
+                "area_mm2": 0.014845810715996777,
+                "geometric_unit_normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              }
+            ]
+          }
+        ],
+        "defect_vertices_mm": [
+          [
+            8.603719711303711,
+            5.0966668128967285,
+            17.0
+          ],
+          [
+            8.605233192443848,
+            5.094111442565918,
+            17.0
+          ],
+          [
+            8.606745719909668,
+            5.091555118560791,
+            17.0
+          ],
+          [
+            8.608257293701172,
+            5.088998794555664,
+            17.0
+          ]
+        ],
+        "defect_chain_total_length_mm": 0.008910003714817056,
+        "source_geometry_changed": false,
+        "self_intersections_checked": false
+      }
+    },
+    "defect_coordinate_binary32_neighborhoods": [
+      {
+        "vertex_mm": [
+          8.603719711303711,
+          5.0966668128967285,
+          17.0
+        ],
+        "coordinates": [
+          {
+            "value": 8.603719711303711,
+            "rounded_binary32": 8.603719711303711,
+            "rounding_absolute_error": 0.0,
+            "previous_binary32": 8.603718757629395,
+            "next_binary32": 8.603720664978027,
+            "adjacent_spacing_max": 9.5367431640625e-07
+          },
+          {
+            "value": 5.0966668128967285,
+            "rounded_binary32": 5.0966668128967285,
+            "rounding_absolute_error": 0.0,
+            "previous_binary32": 5.09666633605957,
+            "next_binary32": 5.096667289733887,
+            "adjacent_spacing_max": 4.76837158203125e-07
+          },
+          {
+            "value": 17.0,
+            "rounded_binary32": 17.0,
+            "rounding_absolute_error": 0.0,
+            "previous_binary32": 16.999998092651367,
+            "next_binary32": 17.000001907348633,
+            "adjacent_spacing_max": 1.9073486328125e-06
+          }
+        ]
+      },
+      {
+        "vertex_mm": [
+          8.605233192443848,
+          5.094111442565918,
+          17.0
+        ],
+        "coordinates": [
+          {
+            "value": 8.605233192443848,
+            "rounded_binary32": 8.605233192443848,
+            "rounding_absolute_error": 0.0,
+            "previous_binary32": 8.605232238769531,
+            "next_binary32": 8.605234146118164,
+            "adjacent_spacing_max": 9.5367431640625e-07
+          },
+          {
+            "value": 5.094111442565918,
+            "rounded_binary32": 5.094111442565918,
+            "rounding_absolute_error": 0.0,
+            "previous_binary32": 5.09411096572876,
+            "next_binary32": 5.094111919403076,
+            "adjacent_spacing_max": 4.76837158203125e-07
+          },
+          {
+            "value": 17.0,
+            "rounded_binary32": 17.0,
+            "rounding_absolute_error": 0.0,
+            "previous_binary32": 16.999998092651367,
+            "next_binary32": 17.000001907348633,
+            "adjacent_spacing_max": 1.9073486328125e-06
+          }
+        ]
+      },
+      {
+        "vertex_mm": [
+          8.606745719909668,
+          5.091555118560791,
+          17.0
+        ],
+        "coordinates": [
+          {
+            "value": 8.606745719909668,
+            "rounded_binary32": 8.606745719909668,
+            "rounding_absolute_error": 0.0,
+            "previous_binary32": 8.606744766235352,
+            "next_binary32": 8.606746673583984,
+            "adjacent_spacing_max": 9.5367431640625e-07
+          },
+          {
+            "value": 5.091555118560791,
+            "rounded_binary32": 5.091555118560791,
+            "rounding_absolute_error": 0.0,
+            "previous_binary32": 5.091554641723633,
+            "next_binary32": 5.091555595397949,
+            "adjacent_spacing_max": 4.76837158203125e-07
+          },
+          {
+            "value": 17.0,
+            "rounded_binary32": 17.0,
+            "rounding_absolute_error": 0.0,
+            "previous_binary32": 16.999998092651367,
+            "next_binary32": 17.000001907348633,
+            "adjacent_spacing_max": 1.9073486328125e-06
+          }
+        ]
+      },
+      {
+        "vertex_mm": [
+          8.608257293701172,
+          5.088998794555664,
+          17.0
+        ],
+        "coordinates": [
+          {
+            "value": 8.608257293701172,
+            "rounded_binary32": 8.608257293701172,
+            "rounding_absolute_error": 0.0,
+            "previous_binary32": 8.608256340026855,
+            "next_binary32": 8.608258247375488,
+            "adjacent_spacing_max": 9.5367431640625e-07
+          },
+          {
+            "value": 5.088998794555664,
+            "rounded_binary32": 5.088998794555664,
+            "rounding_absolute_error": 0.0,
+            "previous_binary32": 5.088998317718506,
+            "next_binary32": 5.088999271392822,
+            "adjacent_spacing_max": 4.76837158203125e-07
+          },
+          {
+            "value": 17.0,
+            "rounded_binary32": 17.0,
+            "rounding_absolute_error": 0.0,
+            "previous_binary32": 16.999998092651367,
+            "next_binary32": 17.000001907348633,
+            "adjacent_spacing_max": 1.9073486328125e-06
+          }
+        ]
+      }
+    ],
+    "pre_final_serialization_vertex_count_reported_by_capture": 6988,
+    "native_precision_probe": {
+      "capture_raw_sha256": "269909922734fd425e8a21d68897cf1c1f330a5e2b6e92a0ca93a51cd7625dc5",
+      "launcher_raw_sha256": "9ad8894991e500a9e39f216360bc80fa5002ec58e65043ae75c17c14a9ca559a",
+      "contract_raw_sha256": "244c2590d6850691542330ff7aa5b24c0de3ae005b00eb59c9d7b93db80f748e",
+      "executed_capture_script_sha256": "bac93a63143526d423970ab96f660c0be64c9f46c2dda0296e62712c0017b59d",
+      "runtime_isolation": {
+        "requested": true,
+        "verified": true,
+        "root": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\column-mesh-diagnostics\\native-02",
+        "actual_paths": {
+          "UserParameter": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\column-mesh-diagnostics\\native-02\\user.cfg",
+          "SystemParameter": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\column-mesh-diagnostics\\native-02\\system.cfg",
+          "UserHomePath": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\column-mesh-diagnostics\\native-02\\home",
+          "UserAppData": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\column-mesh-diagnostics\\native-02\\data\\",
+          "AppTempPath": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\column-mesh-diagnostics\\native-02\\temp\\"
+        }
+      },
+      "freecad_version": [
+        "1",
+        "1",
+        "4",
+        "20260928 (Git shallow)",
+        "Unknown",
+        "2026/09/28 13:46:34",
+        "(HEAD detached at 4fd3bf320)",
+        "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+      ],
+      "opencascade_version": "7.8.1",
+      "open_document_count_before": 0,
+      "open_document_count_after": 0,
+      "source_unchanged": true,
+      "original_57_source_files_unchanged_reported_by_launcher": true,
+      "routes": [
+        {
+          "route": "MeshPart_same_settings",
+          "settings_comparability": "same requested settings as Run03",
+          "native_shape_valid": true,
+          "coordinate_count": 20964,
+          "coordinates_already_binary32_count": 20964,
+          "raw_topology": {
+            "indexed_point_count": 6988,
+            "used_index_count": 6988,
+            "exact_coordinate_count": 6988,
+            "used_exact_coordinate_count": 6988,
+            "triangle_count": 14016,
+            "boundary_edge_count": 0,
+            "nonmanifold_edge_count": 3,
+            "duplicate_facet_count": 0,
+            "defect_vertices_mm": [
+              [
+                8.603719711303711,
+                5.0966668128967285,
+                17.0
+              ],
+              [
+                8.605233192443848,
+                5.094111442565918,
+                17.0
+              ],
+              [
+                8.606745719909668,
+                5.091555118560791,
+                17.0
+              ],
+              [
+                8.608257293701172,
+                5.088998794555664,
+                17.0
+              ]
+            ],
+            "defect_chain_total_length_mm": 0.008910003714817056,
+            "source_geometry_changed": false,
+            "self_intersections_checked": false
+          },
+          "binary32_rounded_topology": {
+            "indexed_point_count": 6988,
+            "used_index_count": 6988,
+            "exact_coordinate_count": 6988,
+            "used_exact_coordinate_count": 6988,
+            "triangle_count": 14016,
+            "boundary_edge_count": 0,
+            "nonmanifold_edge_count": 3,
+            "duplicate_facet_count": 0,
+            "defect_vertices_mm": [
+              [
+                8.603719711303711,
+                5.0966668128967285,
+                17.0
+              ],
+              [
+                8.605233192443848,
+                5.094111442565918,
+                17.0
+              ],
+              [
+                8.606745719909668,
+                5.091555118560791,
+                17.0
+              ],
+              [
+                8.608257293701172,
+                5.088998794555664,
+                17.0
+              ]
+            ],
+            "defect_chain_total_length_mm": 0.008910003714817056,
+            "source_geometry_changed": false,
+            "self_intersections_checked": false
+          }
+        },
+        {
+          "route": "Part_tessellate_linear_only",
+          "settings_comparability": "linear deflection0.1 only; angular/default meshing behavior differs",
+          "native_shape_valid": true,
+          "coordinate_count": 62316,
+          "coordinates_already_binary32_count": 3506,
+          "raw_topology": {
+            "indexed_point_count": 20772,
+            "used_index_count": 20772,
+            "exact_coordinate_count": 20772,
+            "used_exact_coordinate_count": 20772,
+            "triangle_count": 41584,
+            "boundary_edge_count": 0,
+            "nonmanifold_edge_count": 3,
+            "duplicate_facet_count": 0,
+            "defect_vertices_mm": [
+              [
+                8.603719340955939,
+                5.096666901226796,
+                17.00000000000336
+              ],
+              [
+                8.605232750422616,
+                5.09411123858265,
+                17.0
+              ],
+              [
+                8.60674540075117,
+                5.091555126545191,
+                17.0
+              ],
+              [
+                8.60825729180816,
+                5.088998565339914,
+                17.00000000000336
+              ]
+            ],
+            "defect_chain_total_length_mm": 0.008910464515427567,
+            "source_geometry_changed": false,
+            "self_intersections_checked": false
+          },
+          "binary32_rounded_topology": {
+            "indexed_point_count": 20772,
+            "used_index_count": 20772,
+            "exact_coordinate_count": 20772,
+            "used_exact_coordinate_count": 20772,
+            "triangle_count": 41584,
+            "boundary_edge_count": 0,
+            "nonmanifold_edge_count": 3,
+            "duplicate_facet_count": 0,
+            "defect_vertices_mm": [
+              [
+                8.603719711303711,
+                5.0966668128967285,
+                17.0
+              ],
+              [
+                8.605233192443848,
+                5.094111442565918,
+                17.0
+              ],
+              [
+                8.606745719909668,
+                5.091555118560791,
+                17.0
+              ],
+              [
+                8.608257293701172,
+                5.088998794555664,
+                17.0
+              ]
+            ],
+            "defect_chain_total_length_mm": 0.008910003714817056,
+            "source_geometry_changed": false,
+            "self_intersections_checked": false
+          }
+        }
+      ],
+      "coherent_receipts_alone_authenticate_native_execution": false,
+      "underlying_defect_cause_proven": false,
+      "mesh_repaired": false,
+      "fabrication_release": false
+    },
+    "interpretation": {
+      "four_triangles_per_defect_edge_is_observed": true,
+      "origin_of_defect_proven": false,
+      "original_native_topology_cannot_be_recovered_from_STL_alone": true,
+      "equal_point_counts_do_not_exclude_earlier_quantization": true,
+      "mesh_repaired": false,
+      "native_solid_equivalence_proven": false,
+      "print_or_fit_qualification": false,
+      "fabrication_release": false
+    }
+  },
+  "source_definition_audit": {
+    "schema_version": 1,
+    "evidence_class": "primary_source_mesh_precision_definition_audit_not_runtime_reconstruction",
+    "source_revision": "4fd3bf320d9566a27e60069fc8387448aaa3a094",
+    "sources": [
+      {
+        "local_source": ".work/column-mesh-diagnostics/source-audit/MeshKernel.h",
+        "revision": "4fd3bf320d9566a27e60069fc8387448aaa3a094",
+        "path": "src/Mod/Mesh/App/Core/MeshKernel.h",
+        "bytes": 27062,
+        "sha256": "468987324ab02ba920e88c79be6f1a3b0bd0b9a075d80fbfa2660d76ba44ad21",
+        "exact_commit_url": "https://github.com/FreeCAD/FreeCAD/blob/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Mod/Mesh/App/Core/MeshKernel.h",
+        "raw_url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Mod/Mesh/App/Core/MeshKernel.h",
+        "repeat_exact_commit_fetch_matches": true
+      },
+      {
+        "local_source": ".work/column-mesh-diagnostics/source-audit/AppMeshPartPy.cpp",
+        "revision": "4fd3bf320d9566a27e60069fc8387448aaa3a094",
+        "path": "src/Mod/MeshPart/App/AppMeshPartPy.cpp",
+        "bytes": 29365,
+        "sha256": "613cd04ce0a1069c5f48a34fb764472e995bcc17a4dbc4153165223f1286258e",
+        "exact_commit_url": "https://github.com/FreeCAD/FreeCAD/blob/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Mod/MeshPart/App/AppMeshPartPy.cpp",
+        "raw_url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Mod/MeshPart/App/AppMeshPartPy.cpp",
+        "repeat_exact_commit_fetch_matches": true
+      },
+      {
+        "local_source": ".work/column-mesh-diagnostics/source-audit/Elements.h",
+        "revision": "4fd3bf320d9566a27e60069fc8387448aaa3a094",
+        "path": "src/Mod/Mesh/App/Core/Elements.h",
+        "bytes": 44104,
+        "sha256": "cec5db4b853edcaf4eeb495640822ee1d121d6a12159ac1da898ed335f4e2309",
+        "exact_commit_url": "https://github.com/FreeCAD/FreeCAD/blob/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Mod/Mesh/App/Core/Elements.h",
+        "raw_url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Mod/Mesh/App/Core/Elements.h",
+        "repeat_exact_commit_fetch_matches": true
+      },
+      {
+        "local_source": ".work/column-mesh-diagnostics/source-audit/Mesher.cpp",
+        "revision": "4fd3bf320d9566a27e60069fc8387448aaa3a094",
+        "path": "src/Mod/MeshPart/App/Mesher.cpp",
+        "bytes": 20537,
+        "sha256": "a3bb8e1421ad12a7fe02cb35deadc5296a26aeaab84e58c977c3071f6811937b",
+        "exact_commit_url": "https://github.com/FreeCAD/FreeCAD/blob/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Mod/MeshPart/App/Mesher.cpp",
+        "raw_url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Mod/MeshPart/App/Mesher.cpp",
+        "repeat_exact_commit_fetch_matches": true
+      },
+      {
+        "local_source": ".work/column-mesh-diagnostics/source-audit/MeshPyImp.cpp",
+        "revision": "4fd3bf320d9566a27e60069fc8387448aaa3a094",
+        "path": "src/Mod/Mesh/App/MeshPyImp.cpp",
+        "bytes": 66266,
+        "sha256": "44caa5522ed673becc4cfaef8783463d410787ab3f6d3028510f5a24f5dbdeaa",
+        "exact_commit_url": "https://github.com/FreeCAD/FreeCAD/blob/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Mod/Mesh/App/MeshPyImp.cpp",
+        "raw_url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Mod/Mesh/App/MeshPyImp.cpp",
+        "repeat_exact_commit_fetch_matches": true
+      },
+      {
+        "local_source": ".work/column-mesh-diagnostics/source-audit/Vector3D.h",
+        "revision": "4fd3bf320d9566a27e60069fc8387448aaa3a094",
+        "path": "src/Base/Vector3D.h",
+        "bytes": 12007,
+        "sha256": "19454d3b05c34e809dc7b8e3c586a95024abde5b2d1cb55f9034d22266b2a10c",
+        "exact_commit_url": "https://github.com/FreeCAD/FreeCAD/blob/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Base/Vector3D.h",
+        "raw_url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Base/Vector3D.h",
+        "repeat_exact_commit_fetch_matches": true
+      },
+      {
+        "local_source": ".work\\cad\\metric-semantics\\sources\\FreeCAD-TopoShapePyImp.cpp",
+        "repository": "https://github.com/FreeCAD/FreeCAD",
+        "revision": "4fd3bf320d9566a27e60069fc8387448aaa3a094",
+        "path": "src/Mod/Part/App/TopoShapePyImp.cpp",
+        "bytes": 91331,
+        "sha256": "071c16bf50c931e8f3a6abf14f779c016cd5537a89d59f9dcf78254609cfa497",
+        "exact_commit_url": "https://github.com/FreeCAD/FreeCAD/blob/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Mod/Part/App/TopoShapePyImp.cpp",
+        "raw_url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Mod/Part/App/TopoShapePyImp.cpp",
+        "bytes_verified_against_exact_commit": true,
+        "license_boundary": "Preserved per-file FreeCAD LGPL notices; no RAFTEL-wide license selection"
+      },
+      {
+        "local_source": ".work\\cad\\metric-semantics\\sources\\FreeCAD-TopoShape.cpp",
+        "repository": "https://github.com/FreeCAD/FreeCAD",
+        "revision": "4fd3bf320d9566a27e60069fc8387448aaa3a094",
+        "path": "src/Mod/Part/App/TopoShape.cpp",
+        "bytes": 156898,
+        "sha256": "e89d7afab77fb43cb46be22ad07c32cad4bfbe84e126bbde6f2401f5fcda9701",
+        "exact_commit_url": "https://github.com/FreeCAD/FreeCAD/blob/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Mod/Part/App/TopoShape.cpp",
+        "raw_url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Mod/Part/App/TopoShape.cpp",
+        "bytes_verified_against_exact_commit": true,
+        "license_boundary": "Preserved per-file FreeCAD LGPL notices; no RAFTEL-wide license selection"
+      }
+    ],
+    "observations": [
+      {
+        "source_path": "src/Mod/MeshPart/App/AppMeshPartPy.cpp",
+        "lines": [
+          493,
+          520
+        ],
+        "observation": "Requested linear/angular settings select Standard mesher."
+      },
+      {
+        "source_path": "src/Mod/MeshPart/App/Mesher.cpp",
+        "lines": [
+          154,
+          162
+        ],
+        "observation": "Extracted double points are cast to float before mesh kernel adoption."
+      },
+      {
+        "source_path": "src/Mod/Mesh/App/Core/Elements.h",
+        "lines": [
+          106,
+          106
+        ],
+        "observation": "MeshPoint inherits Base::Vector3f."
+      },
+      {
+        "source_path": "src/Base/Vector3D.h",
+        "lines": [
+          286,
+          286
+        ],
+        "observation": "Vector3f aliases Vector3<float>."
+      },
+      {
+        "source_path": "src/Mod/Mesh/App/MeshPyImp.cpp",
+        "lines": [
+          2347,
+          2367
+        ],
+        "observation": "Topology accessor returns Python vectors through a double-point container; earlier float precision cannot be recovered."
+      },
+      {
+        "source_path": "src/Mod/Part/App/TopoShapePyImp.cpp",
+        "lines": [
+          1683,
+          1713
+        ],
+        "observation": "Shape.tessellate accepts linear tolerance and optional boolean clean flag, returning double-point containers."
+      },
+      {
+        "source_path": "src/Mod/Part/App/TopoShape.cpp",
+        "lines": [
+          3650,
+          3669
+        ],
+        "observation": "Shape getFaces uses its defaultAngularDeflection(accuracy), a different argument path from the explicit MeshPart angular input."
+      }
+    ],
+    "runtime_boundary": "Reported runtime source identity matches; binaries/distributor patches not independently rebuilt or exhaustively source-authenticated. Source definitions alone do not prove actual defect cause.",
+    "license_boundary": "Original LGPL source headers preserved only in ignored scratch; no third-party source copied into tracked diagnostic code."
+  },
+  "local_raw_evidence": [
+    {
+      "path": ".work/column-mesh-diagnostics/host-01/report.json",
+      "bytes": 34988,
+      "sha256": "b51aa924ddac0217ac1b27eb6e9efa745a0450f8a272c43ef44ee8210e39150c"
+    },
+    {
+      "path": ".work/column-mesh-diagnostics/host-02/report.json",
+      "bytes": 41466,
+      "sha256": "3af99522a1d00ed8539e85fcac6f37d24db3dcfffb7972211df31a8c0a9db4a7"
+    },
+    {
+      "path": ".work/column-mesh-diagnostics/native-02/probe.json",
+      "bytes": 6835821,
+      "sha256": "269909922734fd425e8a21d68897cf1c1f330a5e2b6e92a0ca93a51cd7625dc5"
+    },
+    {
+      "path": ".work/column-mesh-diagnostics/native-02/launch-result.json",
+      "bytes": 1178,
+      "sha256": "9ad8894991e500a9e39f216360bc80fa5002ec58e65043ae75c17c14a9ca559a"
+    },
+    {
+      "path": ".work/column-mesh-diagnostics/native-02/launch-contract.json",
+      "bytes": 7622,
+      "sha256": "244c2590d6850691542330ff7aa5b24c0de3ae005b00eb59c9d7b93db80f748e"
+    },
+    {
+      "path": ".work/column-mesh-diagnostics/native-02/scripts/diagnose_thor_column_mesh.py",
+      "bytes": 16398,
+      "sha256": "bac93a63143526d423970ab96f660c0be64c9f46c2dda0296e62712c0017b59d"
+    },
+    {
+      "path": ".work/column-mesh-diagnostics/native-02/scripts/audit_freecad_assembly.py",
+      "bytes": 19385,
+      "sha256": "224c6b45aa7d32aaee54d5de7b17f5446b6df865c6870fe5de5fdd9bd2c58c10"
+    },
+    {
+      "path": ".work/column-mesh-diagnostics/native-02/scripts/launcher.py",
+      "bytes": 5568,
+      "sha256": "bb813519535aa2e4a5732b37459429c0a19b3d137e11e153c4b759c99667ce05"
+    },
+    {
+      "path": ".work/column-mesh-diagnostics/source-audit/receipt.json",
+      "bytes": 7655,
+      "sha256": "26b1044646e8c1c9c5c8381f1630f4de46073f2f795abe1daa7019b76bb093df"
+    }
+  ],
+  "executed_snapshot_boundary": "Native02 retained worker predates a reviewed conflicting-helper-opt-in rejection added to the current tool after execution. Native02 actual isolation/docs/source observations remain unchanged; later host-only summary code rechecks the raw arrays and scope flags.",
+  "qualification": {
+    "source_cause_proven": false,
+    "mesh_repaired": false,
+    "native_solid_equivalence_proven": false,
+    "self_intersections_checked": false,
+    "fabrication_release": false
+  }
+}

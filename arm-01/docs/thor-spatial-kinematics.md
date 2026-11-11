@@ -7,9 +7,11 @@ physical travel limit or fabrication release. The mathematical model remains
 the pinned [Thor-ROS source](https://github.com/AngelLM/Thor-ROS/blob/e11a56b5aa0d89f0b68a3ea7bd084eab4a050952/ws_thor/src/thor_urdf/urdf/thor.urdf.xacro).
 Its byte SHA256 is
 `19b83e26f86aae15fda5c21418f768d0e3ed1b0d1daa6d149abd9b45ceccd8b9`.
-The separate [native zero-axis evidence](../hardware/cad/thor-axis-evidence.json)
-still corroborates unsigned zero-pose lines only. No native nonzero-pose run
-was available on this Windows host.
+The original [native zero-axis evidence](../hardware/cad/thor-axis-evidence.json)
+corroborates unsigned zero-pose lines. The later [Windows pose-frame check](thor-native-pose-frames.md)
+also verifies three nonzero proximal-four-axis study poses with q5/q6 fixed at
+zero. It checks axis lines, a fold frame and refreshed shape markers; 39 touched
+objects remain, and full six-axis geometry, calibration and clearance are unverified.
 
 ## Frames and provenance
 
@@ -30,15 +32,15 @@ The following are **null**, rather than guessed identities:
 
 | Edge | Missing evidence |
 | --- | --- |
-| `world` → `bench` | Workstation pose |
-| `bench` → logical `arm_base` | Removable mount survey |
-| logical `arm_base` → nominal `base_link` | Physical/source frame registration |
-| `bench` → `camera` | Camera extrinsics |
-| source `gripper_mid_point` → `tcp` | Measured grasp/contact TCP |
+| `world` â†’ `bench` | Workstation pose |
+| `bench` â†’ logical `arm_base` | Removable mount survey |
+| logical `arm_base` â†’ nominal `base_link` | Physical/source frame registration |
+| `bench` â†’ `camera` | Camera extrinsics |
+| source `gripper_mid_point` â†’ `tcp` | Measured grasp/contact TCP |
 
 `FrameGraph.transform(target, source)` returns `target_from_source`; a query
 whose path contains a null edge fails. A static graph deliberately does not
-freeze the moving `base_link`→`link_6` edge. `with_nominal_pose(graph,q)` returns
+freeze the moving `base_link`â†’`link_6` edge. `with_nominal_pose(graph,q)` returns
 a separate graph with the existing FK at the supplied six angles; it retains
 all unknown extrinsics. That operation is mathematical articulation, not a
 native-CAD or physical articulation test.
@@ -84,10 +86,10 @@ optional byte audit independently checks actual source contents.
 
 ## Geometric Jacobian and singularity study
 
-`spatial_jacobian(q,target="link_6",point_offset_m=(0,0,0))` returns a 6×6
+`spatial_jacobian(q,target="link_6",point_offset_m=(0,0,0))` returns a 6Ã—6
 geometric Jacobian expressed in nominal `base_link`. Top rows are the chosen
 target point's linear velocity in m/rad; bottom rows are spatial angular
-velocity in rad/rad. Column `j` is `[axis_j × (point-origin_j); axis_j]`.
+velocity in rad/rad. Column `j` is `[axis_j Ã— (point-origin_j); axis_j]`.
 This is neither an Euler-angle derivative nor a spatial twist's translational
 component referenced at the base origin. Targets are the three existing FK
 targets. A supplied offset is fixed in the selected target frame and is an
@@ -157,7 +159,7 @@ reason rather than treating process exit 0 as an IK success.
 Tests check analytic planar columns, seeded position and `Rdot R^T` angular
 finite differences at off-axis points, differential virtual work, scaled-unit
 invariance, known singular/full-rank cases, frame direction/inverse/composition,
-covariance lever arms, input/provenance failures and FK→IK→FK residuals.
+covariance lever arms, input/provenance failures and FKâ†’IKâ†’FK residuals.
 Independent review uses separate FK difference calculations. These checks
 verify the declared mathematics and software behavior. Native nonzero-pose
 geometry, calibrated transforms, real joint limits, collision screening and

@@ -376,3 +376,204 @@ that numerical integration explains the entire difference, that all surfaces
 coincide, or that the candidate is acceptable. The existing datum, reference,
 volume and failed radius-roundtrip gates remain intact. No original/historical
 report was rewritten and no CAD, physical or fabrication acceptance was granted.
+
+## Subsequent numerical and source checkpoints
+
+Covariance validation now normalizes before Schur products. Independent tests
+cover 8,400 known-spectrum matrices using separate Householder rotations and
+seven scales from 1e-300 to 1e300. Valid full-rank and semidefinite matrices pass;
+negative spectra fail without changing the returned SI values. The 86 focused
+frame/observation tests pass. A separate inertia fix normalizes before symmetric
+averaging and triangle checks: 15,032 independent cases include positive and
+negative true-minimum subnormal identities, a valid 1.7e308 identity, rank/triangle
+controls and 600 rotations over five spectra and five scales. These checks close
+the reproduced overflow/underflow bugs; they do not establish measured inertia.
+
+The standalone native property worker passes the same 15,032 independent
+extreme/spectral cases. A fresh matching-worker capture additionally repeats
+all eight selected property/mesh records and all nine native fixtures exactly.
+Its tracked normalized report is byte-identical to the actual capture, with
+isolated paths, zero documents and preserved runtime/source/code/request/output
+pins. The prior v1 and all six full-print batch captures remain unchanged and
+bound to their earlier executed worker; the new capture does not retroactively
+replace their code identities.
+
+The copied-source GRBL warning candidate changes only `gcode.c`: it introduces
+a defined uint32 value-word mask, widens the local value-word accumulator and
+changes its three dynamic value-path masks. Independent token normalization
+confirms that command masks, global `bit`, axis dispatch and other source files
+are unchanged. All 72 baseline source blobs match their pins. A separate ELF
+reader verifies four compiler-only AVR objects and the 22 static probe values,
+including 17 distinct masks and Y/Z duplicate/cleanup controls. Twelve focused
+tests pass. The remaining M95 warning is retained; no parser execution, linked
+candidate, firmware installation or runtime repair is claimed.
+
+Independent coupon review finds all three stepped annular meshes closed under
+the declared exact-edge/vertex-link checks, with 576 vertices, 1,152 facets and
+Euler characteristic zero each. Facet normals and the analytic polygonal annulus
+volumes agree. Bore diameters 5.9/6.0/6.1 mm are dimension studies; outer diameter
+and upper depth remain explicitly assumed. Strict source/profile/schema guards,
+fresh output preservation and unchanged mesh/report reproduction pass 45 tests.
+Blank measurements and physical fit remain unknown; coupon mass cannot become
+installed arm mass.
+
+The third-party notice audit passes 45 focused tests and separate negative
+reprobes for receipt schema, source revision, path traversal, release identity,
+incomplete creator attribution and nonfinite draft JSON. Its full report
+reproduces exactly. The 57 native XML notices, 540 Fasteners entries, 49 Gears
+entries and 17 retained generic drafts remain separately attributable. Root,
+header, package and embedded declarations are observations, not a decision about
+license applicability, company licensing or release permission.
+
+## Limited native wrist and pose evidence
+
+The native three-pose wrist diagnostic is explicitly partial and failed closed.
+Its raw capture and runner match the published byte hashes; all 57 original
+source files and retained scripts remain unchanged. The three source gear
+matrices agree with the historical handedness capture within 3.802e-18 per
+element. Seven of ten pair rows, three of four rigid-fold checks and 11 of 14
+planned Boolean operations were recorded. Independent checks reproduce each
+side-angle equation and the three fold-volume residuals, whose maximum is
+7.689e-9 mm³. The next common operation reported a negative volume before its
+value or topology was checkpointed. They remain unknown in that original capture.
+The final
+in-memory placement comparison was not reached; its initial false flag does
+not demonstrate a mutation. Forty-eight host tests pass. No contact, mesh,
+constraint, retention or physical qualification follows from these observations.
+
+A separate one-pair capture preserves the original operand order and pose:
+plate fold -20 degrees, carried roll -15 degrees, positive-Y pinion +10 degrees.
+It records aggregate signed volume -0.5552516265803887 mm³, while three Forward
+solids have positive volumes summing to +0.10630907314212505 mm³. The difference
+is -0.6615606997225137 mm³. The common reports Compound/Forward and native
+`isValid=True`; this is a BRepCheck observation, not material-orientation proof.
+Constituent membership, per-solid face/shell counts and the resulting common
+BRep were not captured. Four primary source blobs support a possible volume
+integration mechanism, but cannot establish this result's cause or exact
+packaged-DLL/source correspondence.
+
+All 57 originals, 57 compatible copies, 589 addon files, runtime and four
+executed snapshots match their pins; the raw capture/runner copies match exactly,
+five paths remain isolated and document counts are zero. Ninety-four combined
+host tests pass. The source and diagnostic gates preserve negative/invalid
+observations without reversing/healing shapes, substituting absolute volume or
+accepting geometric intersection, physical mesh or fabrication.
+
+The separate copied-assembly K1 capture uses four cases, including saved zero
+and three bounded proximal-joint increments, with q5/q6 fixed at zero. Review
+parses the pinned Xacro directly and uses an independent fixed-space
+product-of-exponentials calculation, without the production chain/frame
+helpers. Across 24 native axis observations, maximum axis-line error is
+2.831e-16 m and direction error is 2.231e-15. The four observed fold matrices
+agree within 8.327e-16 in matrix/translation components. A raw linked-shape
+vertex moves with the observed parent delta within 2.275e-13 mm, with 6,129
+vertices preserved; this guards against accepting placement-only stale geometry.
+
+All 16 right-increment offset readbacks and unchanged placement expressions
+were independently checked, with exact nominal reset. All 57 compatible source
+and copied-file hashes, retained/current worker, helper, request, executable
+and imported module pins match. The five actual paths resolve to their isolated
+destinations; zero documents remain open. The fresh matching-worker run retains
+53 documents/3,001 final object records, including 39 Touched states and no
+Invalid/Error states. Eighteen host tests pass, including preserving documents
+that caused the fresh-process guard to reject. This is limited source-frame
+evidence, not a full six-axis forced-history rebuild or physical calibration.
+
+## Full printed-variant preparation and native batches
+
+Independent review authenticates all 57 original archives against the pinned
+upstream Git tree and verifies all 47 requested XML objects, types, Shape entries,
+BRep hashes and placements. The installed ID set independently equals the load
+classifier's 65 printed instances. Art1 retains original source `8afa16…`, and
+the reflected finger is the actual saved `Part::Mirroring` geometry. The six
+requests preserve selections exactly in batches of 8/8/8/8/8/7 and pass the
+unchanged eight-selection worker. Strict manifest schema negatives and the
+focused preparation/source/worker suite pass 67 tests.
+
+All six actual batches independently verify 47 distinct cached-geometry exports,
+covering 65 installed instances and 325,810 triangles. Each run verifies nine
+primitive fixtures, all source/copy/runtime/script/request/STL pins, five
+isolated paths and zero CAD documents. Fixture tensor error is at most
+4.402e-15 relative; unit conversions and positive-semidefinite/triangle checks
+pass for every selected tensor. The eight overlapping earlier captures reproduce
+both properties and STL bytes exactly. The reflected finger is the distinct
+saved mirrored BRep, with matching X-reflection COM/tensor signs, rather than a
+replacement invented by the export tool.
+
+All twelve published capture/runner files are byte-identical to their retained
+actual reports. Aggregate variant rows cover the same 47 IDs and 65 unique
+installed IDs, with quantity-weighted cached volume 3,485,323.1228679037 mm³;
+the difference from the prior inventory sum is -4.657e-10 mm³. Per-source tensor
+frames remain distinct, density remains null and no cross-frame whole-arm tensor
+is formed. These checks establish the declared cached exports and accounting,
+not triangle topology, continuous surface fidelity or fabrication readiness.
+
+## Transmission-column mesh diagnostic
+
+Independent struct-only STL parsing confirms 14,016 facets/6,988 exact vertices
+in the selected native mesh and 42,604 facets/21,282 vertices upstream. Both
+contain the same three four-facet nonmanifold edges at z=17 mm, with total chain
+length 0.008910003714817056 mm. The selected native mesh has no boundary,
+duplicate or zero-area facets. Its retained native point/facet arrays reproduce
+every prior binary STL triangle in the same order.
+
+The actual isolated native precision experiment completes in 5.53 seconds with
+zero CAD documents and preserved original/copy/runtime/script/helper/launcher
+pins. MeshPart's 20,964 coordinate components are already binary32-exact. The
+separate `Part.tessellate` route returns double-coordinate arrays yet also has
+three four-facet edges before explicit binary32 rounding. Rounding loses no
+exact points and does not change incidence in that route. This excludes final
+STL packing as the sole origin of the observed defect; it does not identify an
+underlying mesher or source-surface cause. The two meshing routes have different
+settings and are not controlled equivalents.
+
+Eight exact-commit source files support the precision/API descriptions. The
+full host report reproduces exactly, all nine retained raw-evidence hashes and
+all eight source hashes match, and 54 focused tests pass. Future-run guards now
+reject a conflicting generic-audit opt-in before helper execution and reject
+contradictory repaired/release flags. Those guard patches remain distinct from
+the immutable earlier executed snapshot. No mesh repair, continuous surface
+fidelity, collision enclosure or fabrication release is established.
+
+## Box-proxy mathematics fallback
+
+The K4 fallback supplies reusable declared-box mathematics while reporting zero
+verified mounted-body proxy bindings. Independent review uses corner/segment
+clipping against the other box's local slabs, rather than another SAT
+implementation. All 1,250 random oriented-box pairs agree across five scales
+from 1e-100 to 1e100; swapping the pair preserves classification. Independent
+corner projections reproduce the reported normalized-axis support gap within
+8.882e-16 times the fixture scale. Forty-six focused tests cover the required
+edge-cross-edge separator, tangency, near-parallel axes, tiny/large inputs,
+overflow rejection, rigid-frame covariance, exact-pair exclusions and source
+contract negatives.
+
+Inventory/membership schema, revision, evidence classes and coordinate frames
+are checked before reporting 518-identity coverage. Exact input bytes remain
+hash-bound. A common supplied frame ID does not authenticate registration; a
+caller must provide any required known transform. Intended-contact exclusions
+retain their raw pair result and evidence, without automatic adjacency skips.
+Synthetic fixture geometry and the arbitrary nominal-FK cube remain visibly
+separate from real robot enclosures. No mounted collision witness, conservative
+source enclosure, obstacle coverage or intersample swept-path result is claimed.
+
+## Installed cached-geometry bounds
+
+The separate mounted-bounds capture covers all 518 unique installed identities.
+Independent review authenticates all 57 originals, the 57 compatible copies,
+589 addon files, retained worker/helper/request/launcher/runtime pins and three
+raw report references. Five nested/rotated LinkTransform fixtures pass before
+source capture. All 518 quaternion/matrix and ancestor-times-own-placement
+identities agree within 1.137e-13 mm; independent eight-corner SI AABBs agree
+within 2.776e-17 m. Native-copy COMs agree with the walker within 3.615e-16 m and
+the historical inventory within 3.332e-16 m. There are no missing identities,
+five actual paths remain isolated and zero CAD documents remain open.
+
+The curated receipt preserves every numeric/state/matrix/bounds field from the
+raw capture and references its exact bytes. Twenty-nine host tests pass,
+including the 50 GiB plus 128 MiB reserve guards and preservation failures.
+The capture deliberately does not force histories: final states include 1,147
+Up-to-date and 1,854 Touched objects. Observed default/optimal extrema differ
+by as much as 28.4118 mm. This adds a zero-pose numerical transform/bounds
+ledger without establishing a conservative solid enclosure, nonzero rigid
+ownership, collision margins or physical coverage.

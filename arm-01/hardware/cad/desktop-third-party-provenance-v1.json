@@ -1,0 +1,1042 @@
+{
+  "schema_version": 1,
+  "evidence_class": "pinned_source_notice_and_saved_metadata_observation",
+  "components": [
+    {
+      "id": "thor",
+      "repository": "https://github.com/AngelLM/Thor",
+      "revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+      "git_tree_file_count": 236,
+      "notices": [
+        {
+          "path": "LICENSE",
+          "bytes": 20131,
+          "sha256": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+          "observed_declaration": "CC-BY-SA-4.0 repository license text",
+          "text_decoding": "utf-8",
+          "evidence_lines": [
+            1,
+            57,
+            62
+          ],
+          "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/LICENSE"
+        }
+      ],
+      "applicable_distribution_terms_resolved": null,
+      "native_document_license_metadata": [
+        {
+          "path": "freecad-src/Art1Body.fcstd",
+          "sha256": "8afa16c8ff3adebd87e48b67dfb20d3224402bd517010dc112950a28f219690a",
+          "document_xml_sha256": "9d1d8104837d8c282c93cf28ff3b8827d7d1e2f3a1a02129cec851d3c979a996",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/Art1Bot.fcstd",
+          "sha256": "31c8fa13cd2868e68cbcd97ec43970ff120760fad46f0a0e53608a98f29666ca",
+          "document_xml_sha256": "9ccd9cf0b0a3cd443f97daefd730ecc1680df07018b96b99294abb1c1e735218",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/Art1FanHolder.FCStd",
+          "sha256": "df43383d3d3a81f95af8ed3c9c589ac679e3f1eda0c60e642f292480c834e985",
+          "document_xml_sha256": "421c870b6279b511e2b007d1e561436c7b1b2d2876dba3747f25cbbc28ccaf92",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/Art1GearMotor.fcstd",
+          "sha256": "7de75d92b15bdfc548002c2bb93ab8192720b7948338b708f34460d55321d3f3",
+          "document_xml_sha256": "69fd27246762c8ee70bd372a535dfa78865f97789dd6e01d3afe73a37b26b543",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/Art1OptoFix.fcstd",
+          "sha256": "ffedf6c188e641a8d46bbd93ee81a3cef1aff8dd908b7ee3c4c3191fa400e26b",
+          "document_xml_sha256": "008210b6e5898e81a89321f3d604fb20f1a78f86be786e38b437c4d7db9a73f8",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/Art1Top.fcstd",
+          "sha256": "0dbfa7c49d0e3ca032e219b306e532fd403a145fb15cf304aa880a8dd3067bd6",
+          "document_xml_sha256": "3fda67da8b58ace12e55d67aed45288b4436fdc4b8abe47a46f0001233fd9513",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/Art23Optodisk.fcstd",
+          "sha256": "c81e788792edea63c7e73a12b06dc8073668a6b899f8d46ea5c3d9d399de431c",
+          "document_xml_sha256": "42da8913f48ed265483c5a73ba28c5e215776f018e3040915fa3d3d40a73d1ca",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/Art2BodyA.fcstd",
+          "sha256": "ddf08ae66dfc767bbce3f3354d8ba8f471f5527e8cdbfec9570933c4fb4e276a",
+          "document_xml_sha256": "128391bf9ecd018bd3b7253886de2942aa2e91fd3d8938f51ee74d1d3cf34839",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/Art2BodyACover1.fcstd",
+          "sha256": "2ed0c298cbd55af72065d8a850f20b23f2dcd72de8c79ee9d6384bc4c537d514",
+          "document_xml_sha256": "b8e4fc9df13796cb1482e9e1f072e4b3887cd79b82f91b43e8de36f8f4c01e17",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/Art2BodyACover2.fcstd",
+          "sha256": "83dae954cbbab7b380094033d0c689d774862878f809f5f9e2e31c9bbb9bbde3",
+          "document_xml_sha256": "e46c1d352aad91e2536e7096bd7203d8604eeadb8773807145a136c90663fcb8",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/Art2BodyAWindow.fcstd",
+          "sha256": "ced59ddf86e57b3f3615bb4ee44d96b75b7032a9239733845a26e8e334941e98",
+          "document_xml_sha256": "704c4125f963240a70a84807044a56f73487d089e481019d0ffe13b8437d3444",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/Art2BodyB.fcstd",
+          "sha256": "a63e36fd3b27321061ef875da8454e2d787a83fb8737fb1774aa458c8a8c7882",
+          "document_xml_sha256": "5238942235eb37337940db46649466d75f3317b758c7e938b979d3d90089549c",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/Art2BodyBCover.fcstd",
+          "sha256": "b8901be694766792ec0acd9e472d39552a6dfe9e0b69392e2e80ddc7499cdfdf",
+          "document_xml_sha256": "b6fb908ef67963d7ec29a2233976ce6684035d1b2dfdb687c4c9de5dd5df5d78",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/Art2BodyUnion.FCStd",
+          "sha256": "238330fcdb1a52d6ccf5e3e2951d49c0a79bd24f42eb24162581727fb769fecc",
+          "document_xml_sha256": "b6019931d85ebec10e4f0d85fce5cab9d968870c42d1b5dc8655c88e8bb41a1b",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/Art2MotorGear.fcstd",
+          "sha256": "a8761b35792888dd679bdc1bab74a353b5893365aff268ae1d35a985a2984fc8",
+          "document_xml_sha256": "dadb3a75e67eae0b9a7a60b17b0b1cbe7755396e616c4d8f061c8eac486b83b7",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/Art2SideCover.FCStd",
+          "sha256": "a618cb1c6f2168340ccc5e49756b1ff8319b91a05b6c5f578275fbfaaffbf14e",
+          "document_xml_sha256": "9d9bbee7c57a025f93c159c3868871cd53b56f8e1d1f7927830434cd96ebf829",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/Art3Body.fcstd",
+          "sha256": "d6e2759daadc02ab36a7b5c6920b7f7b42066f63c2a7600fb4ff86487565e79e",
+          "document_xml_sha256": "b675185bf7442a5fd2570b9051a24d230fbf9097b636c61c883da18a732bef00",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/Art3Body2.FCStd",
+          "sha256": "b911d8799e8630bbe1a3affa771e1042ea166d0b6f81c79f2fa6a9df61b68c1a",
+          "document_xml_sha256": "aee2053582251f7ceb06d618282ca756a216afeaa7acc2227768fb988d5d445b",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/Art3Pulley.fcstd",
+          "sha256": "d450cc565e722981346fc2b1aa3662474c83d574ca39a5602bacb98d8619fd9e",
+          "document_xml_sha256": "e72ef05905a845c822faccb118b7bdf1bef62de24b8b70766b0773a737b6dce9",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/Art3TensionerBody.fcstd",
+          "sha256": "f105e77dbb72523f842e58b9bcd9a54c3ec5f5eaf771a0798851cf7f13752a55",
+          "document_xml_sha256": "e0da25d4415c4131ad351d39d10341eb5a19b1ed6355a1044f8bc8b311c4533d",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/Art3TensionerPulley.fcstd",
+          "sha256": "2bbf0c3c522db8b2247ed6f3dbce48cd111d4d21349f05cab5bc01d3812102da",
+          "document_xml_sha256": "c743d1c011663132158dc7c028420367d64a9060c1302ecd21e42833149ab515",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/Art4BearingFix.fcstd",
+          "sha256": "248a21d01617b0e784a9743d186ab698d6406a9eeba6e6a27c2c426baf8dca55",
+          "document_xml_sha256": "e739c683636cfc6e841c07b5de7ea2963ae9b1152d1edafb416f73dff3bcc0bd",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/Art4BearingPlug.fcstd",
+          "sha256": "b85db4631074bb3a2ac49162874e6915d4727ee4d5327309dcbdeaec664ebebc",
+          "document_xml_sha256": "676c56ed91e9447195211662ce8fd6feaca806a74788ca241fd068542eab2902",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/Art4BearingRing.fcstd",
+          "sha256": "e4a84700481629554e0e79de956562f54d46aaeeb60908f4e5aee4c5336d7214",
+          "document_xml_sha256": "4d4871041417c8c872f4d7652e0cd98dced880e798058c70f9e82e9b0e4d7265",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/Art4Body.fcstd",
+          "sha256": "73f6b57135ea18e516d6b3280d91063d3d23c891d809a6ed52ae9594483ddb31",
+          "document_xml_sha256": "ccd2b56243ad19181925926e10beaf87e127910edf855e9243f84751a3740cff",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/Art4BodyBot.fcstd",
+          "sha256": "b7eb908539d3c6c6310c2f64ddb7de758d9f742f5c44ac45bd8dea69925d9413",
+          "document_xml_sha256": "7bd5a32c67c89807666b7fbb437d840dde16e261fb60de5829b46eddebeef532",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/Art4BodyFan.fcstd",
+          "sha256": "6520e13c078f3a9862c98443dc4e9b77f77c429b32f387e82c3f14eaabc8fa16",
+          "document_xml_sha256": "c8e0cdf5da95e5da552703ea3ea96f3546dd6dab5708412eef4c6baaab2b863b",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/Art4MotorFix.fcstd",
+          "sha256": "976a04a9b3bbf21ea80a9e1e6ac53ef64f0ac7aa93fbcff7184f84b00688e6c4",
+          "document_xml_sha256": "e650f6b2490c8a0cd92e8208a9368f4ac88791671ae17a6723f4ffe798519b3d",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/Art4MotorGear.fcstd",
+          "sha256": "c988a0d9be1fc1312fabc1b6b10108cf05f23fb3298a0ece627cb5eb1d930358",
+          "document_xml_sha256": "98878385ec5a3d43cb2b40d3e43ec27b2e55728c5d6d89882a44c08ebc2f4cff",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/Art4Optodisk.fcstd",
+          "sha256": "0822ae9a4a1460e74e05ff068e2662670e9db50991e28d2d0d3da6f73385cbb4",
+          "document_xml_sha256": "a8efe782579f6472edd4ff07d1eb0aca80b9085b1c3f914f6312f5f8c1186ce0",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/Art4TransmissionColumn.fcstd",
+          "sha256": "f31295eaaf973347c73779e69ca33f095656b1e7bc4511eac5ce879aaaddbb2c",
+          "document_xml_sha256": "06bbf6f5ac8f618ae08e0ce29ed6d4dfca1614f4ae2f28f4e0123ab15ab2a8a6",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/Art56GearPlate.fcstd",
+          "sha256": "38ca5952d4e03e4009f94628d0c435153b980ea558a608fca9ac1c9aaf79d411",
+          "document_xml_sha256": "ef649caf469cc331aa729fee71194fbeecfaf3d45555ec9716a8ad94b93fe4bb",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/Art56Interface.fcstd",
+          "sha256": "dccf452b3eb1f0e00bd6db6d1286e2cbbc06b5e47b828e9008f9bbd4d4830737",
+          "document_xml_sha256": "d6bcf4bf46037e41e4bbafffa4b49bd900dd564fb9652bb6740e5b6df368b157",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/Art56MotorCoverRing.fcstd",
+          "sha256": "8d037cf7a3e63ee8f04b39be35836d35c5d6f330497c8df5a735cd05abd071fa",
+          "document_xml_sha256": "44ecb7c6140b59b77cd2b05d857f4554ec846e4e30bdde651dad40dc880326bf",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/Art56MotorHolderA.fcstd",
+          "sha256": "a1355712512d87ac25000ab60eab65d6c9ba454099ebc6761dbf93d6c003c49a",
+          "document_xml_sha256": "6d84a81045576383eb2f226b279efd24f3d69bd74c3db88becf110c542c654e3",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/Art56MotorHolderB.fcstd",
+          "sha256": "d0ae1726649b8b4758b665fe2b01e8d065e57b2c5b916ef4e4b4dc7840fcfd77",
+          "document_xml_sha256": "491ad44017b7c3f2fdc00acbcafcc316218822bb875dd58255e6512e585e4d72",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/Art56SmallGear.fcstd",
+          "sha256": "b737ce24c58bc5ffc3763fcd6cdcfdd425747565c2850054397f066ecd5a63a0",
+          "document_xml_sha256": "41622a896e3d97ce37109f1607f65efb52bd351ca7b4e24f63cbe5327836ac59",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/Assembly.FCStd",
+          "sha256": "5ee729246229e7494466010ab68e2c2367ba4ec1361b7701df21c0f8b00c2c1b",
+          "document_xml_sha256": "c22232d4e2efd44898407e35eaf0a9560144b12e850adb57812a1e4e17302813",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/AssemblyArt1.FCStd",
+          "sha256": "79f823e0a2d4a3581815305e41a0bb0693db4652206923a7d03d947c8a47085b",
+          "document_xml_sha256": "f82bbf0684121f8533a7061288aca9e362fab9035c35759cb3b056bc8db66be7",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/AssemblyArt2.FCStd",
+          "sha256": "96a41e5eaa728a89e8e7a3340ec10a8c71034ff30b76f8679d23ed435574638f",
+          "document_xml_sha256": "bc2054faf1140f959e736b1b78e07f1e9f3d39474faa3338aa6b90ad4d9a5b12",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/AssemblyArt3.FCStd",
+          "sha256": "8b5b8ba6da66f9deb1ec1f03ec1ff75f2ea10e02ca67a7e2b5e5f955aaec4398",
+          "document_xml_sha256": "22d9b91baef20b1c94934dbce3bbb2a4f6921d0762bff4dea76be5dea4219383",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/AssemblyArt4.FCStd",
+          "sha256": "9306c0461c1a979526c8f73554ddef8fa89b8880e613b42beed7ac19feb401da",
+          "document_xml_sha256": "44f3126975fc4653ccd7f1a0f55bb6881b057e1187267c39d2747a435e1b6470",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/AssemblyArt56.FCStd",
+          "sha256": "a04836216dcae82eb033c15daba6e41dedb85b03f86ff21e56b77cdff835a473",
+          "document_xml_sha256": "0a17f4d6d11a91664177995cdcf7618fbdf4de1a98e8800a257a271431e11f41",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/AssemblyBase.FCStd",
+          "sha256": "1964b144c772608a716e40f4e7bbfb61b55b5e46c9079221b079cbce570dbdc7",
+          "document_xml_sha256": "d7e358a8793f36ca2d44f8cd2d292a5b35770f5801bfde2c903f67138e9c8dd3",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/BaseBearingFix.fcstd",
+          "sha256": "a8ddcd5f8aee6cc4ff33671e3c27e2d3029fe334f4f02baeb579eb6ecaadec82",
+          "document_xml_sha256": "9021fbf5a533c1e38842158ccd3c7c4b71996e9e98a7cfccbcddf8dd74a3d0f7",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/BaseBot.fcstd",
+          "sha256": "c637feec821a886c80c8622cf316de02c05f06d90ff49af9df9b0a0cdff00e5a",
+          "document_xml_sha256": "80dffb7d6ee855fa130af4db8a308d509180cbdb96cf6187945c64613cca7d9d",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/BaseBoxBody.FCStd",
+          "sha256": "bf4c86c80ee90bc8e46bea77db6850027c15e45c86e2da1b9cfeffbce9cb6de1",
+          "document_xml_sha256": "4a2dcbc33d315cab04ca19cfb45fa8f1c7950e051a2cae32f648995437393a14",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/BaseBoxCover.FCStd",
+          "sha256": "9d1ca5fa12b76b49203f26f440ab47fe9c5a74e921a6267de8d60fa8ac3d7a37",
+          "document_xml_sha256": "5cf9c8a9da2e78d9544031ac8ced5ce419faf1c220f54eb4397e538be9fe1fd2",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/BaseTop.fcstd",
+          "sha256": "cad90f1414909eaa797edb9bc00a685c3f0856cfa4be5abbcd539afb96417490",
+          "document_xml_sha256": "919b096a8248852032c31776b80fe6e98d4b6f37be2376ed29f5e77a7026deb8",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/CommonBearingFix.fcstd",
+          "sha256": "cf0d6322f0c0a947079c2a3782dcf878feb71a0e34b0de220c3722a24ec8e72b",
+          "document_xml_sha256": "6c3c8f8b76432828505153435e93fbdf4cf0ffddf0a4e8df4abf246a95335cf3",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/CommonBearingFixThrough.fcstd",
+          "sha256": "ea66043a24b3b93c3722ad48ce4a0830f1561a6a925818b5d1dcf7d411a25517",
+          "document_xml_sha256": "e3a3dc339b0992465e513853df9f1f1a3de400a510eb9929939aa62041388634",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/GripperActiveArm.FCStd",
+          "sha256": "3ba5ba6f74c5d2f45eeca56f28534dc750e7f0ae735b6a0b3e16beeef21adc67",
+          "document_xml_sha256": "9e82ca86d72dc43849b90697d3ebe6df8eed7f93c8dd142995bd1f7d67e057a2",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/GripperArm.FCStd",
+          "sha256": "f1511f4b319a5727cf07771abe4c75002d5527e0a10291d47c1fe8024a44c6fc",
+          "document_xml_sha256": "1d10cb4d5c8199c6e78a04be687e96aeb29b692435ffa979e493fa970bfc1809",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/GripperBot.FCStd",
+          "sha256": "a65e68644312adee7381e3a640b2b827f9c2c3362bbe4a842ccee9fea969d176",
+          "document_xml_sha256": "0527c47d5b80eec75b567c9cfee66c339571a14a90d85e4ee77049d75fc24784",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/GripperFinger.FCStd",
+          "sha256": "ab4daca4dd2f447029f4c76150b7f617fbdda74ae467cf6962938efe148d57a6",
+          "document_xml_sha256": "5b4f8f67cc57f5417a02a0f40d1bcf5c925b986f1cf5ec1acfc82f3688094f20",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/GripperPassiveArm.FCStd",
+          "sha256": "d14ac1debf67735fd623e052d468a9773066c32356390799b4ea07addcba68d4",
+          "document_xml_sha256": "978902df11a86c3066b80f75439a21df188c66ffaf1f41cf8299d471bbb45157",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        },
+        {
+          "path": "freecad-src/GripperTop.FCStd",
+          "sha256": "10f501e23263c8ddfc37e472fada7d9978d5f6c10cedf6deaa943dde87bdea56",
+          "document_xml_sha256": "fe808ad49aed3ff618ddc44bfbe67fbb3f263c9ab60891821b55773b04f0b9f8",
+          "saved_properties": {
+            "License": "All rights reserved",
+            "LicenseURL": "http://en.wikipedia.org/wiki/All_rights_reserved"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fasteners",
+      "repository": "https://github.com/shaise/FreeCAD_FastenersWB",
+      "revision": "fddd07af422b7d3a69098b32333711c5eeae184c",
+      "git_tree_file_count": 540,
+      "notices": [
+        {
+          "path": "LICENSE",
+          "bytes": 18047,
+          "sha256": "c03cea027b4b40e4402fabd08557736727ec3d5bc54ad64ab6472de432198cad",
+          "observed_declaration": "GPL version 2 license text",
+          "text_decoding": "utf-8",
+          "evidence_lines": [
+            1,
+            2,
+            59
+          ],
+          "source_url": "https://github.com/shaise/FreeCAD_FastenersWB/blob/fddd07af422b7d3a69098b32333711c5eeae184c/LICENSE"
+        },
+        {
+          "path": "package.xml",
+          "bytes": 840,
+          "sha256": "76b190b97139790d19b06aeed2cc51178260165d9792b20f22375d54993cfbca",
+          "observed_declaration": "GPL-2.0-or-later package declaration",
+          "text_decoding": "utf-8",
+          "evidence_lines": [
+            8
+          ],
+          "source_url": "https://github.com/shaise/FreeCAD_FastenersWB/blob/fddd07af422b7d3a69098b32333711c5eeae184c/package.xml"
+        },
+        {
+          "path": "FastenersCmd.py",
+          "bytes": 60326,
+          "sha256": "89f3ef5d38bee30fed839168741c004e1a86cf88dc9310883a0b69e1f83d0abf",
+          "observed_declaration": "GPL version 2 or later file header",
+          "text_decoding": "utf-8",
+          "evidence_lines": [
+            10,
+            11,
+            12,
+            17,
+            19
+          ],
+          "source_url": "https://github.com/shaise/FreeCAD_FastenersWB/blob/fddd07af422b7d3a69098b32333711c5eeae184c/FastenersCmd.py"
+        },
+        {
+          "path": "screw_maker.py",
+          "bytes": 40950,
+          "sha256": "d3f957d0331e08ebd162c02925cb0172f5536946f737ee7bd473d9afe5488754",
+          "observed_declaration": "LGPL version 2 or later file header",
+          "text_decoding": "utf-8",
+          "evidence_lines": [
+            69,
+            71
+          ],
+          "source_url": "https://github.com/shaise/FreeCAD_FastenersWB/blob/fddd07af422b7d3a69098b32333711c5eeae184c/screw_maker.py"
+        }
+      ],
+      "applicable_distribution_terms_resolved": null
+    },
+    {
+      "id": "gears",
+      "repository": "https://github.com/looooo/freecad.gears",
+      "revision": "ffe86c85e8061546a3fbaa598993d8e1be2b0de2",
+      "git_tree_file_count": 49,
+      "notices": [
+        {
+          "path": "LICENSE",
+          "bytes": 35149,
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+          "observed_declaration": "GPL version 3 license text",
+          "text_decoding": "utf-8",
+          "evidence_lines": [
+            1,
+            2
+          ],
+          "source_url": "https://github.com/looooo/freecad.gears/blob/ffe86c85e8061546a3fbaa598993d8e1be2b0de2/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "bytes": 3133,
+          "sha256": "a886fad094678eba0e76ab92870a5326f58acaccac79f47f76561f19e10b7281",
+          "observed_declaration": "GPL version 3 README declaration",
+          "text_decoding": "utf-8",
+          "evidence_lines": [
+            97
+          ],
+          "source_url": "https://github.com/looooo/freecad.gears/blob/ffe86c85e8061546a3fbaa598993d8e1be2b0de2/README.md"
+        },
+        {
+          "path": "freecad/gears/features.py",
+          "bytes": 47181,
+          "sha256": "f4281f0b56e7f5f514b4f185ae8bd5718e34f82902680c63e0ecfbf9a3d45eb7",
+          "observed_declaration": "LGPL version 2 or later file header",
+          "text_decoding": "utf-8",
+          "evidence_lines": [
+            5,
+            7
+          ],
+          "source_url": "https://github.com/looooo/freecad.gears/blob/ffe86c85e8061546a3fbaa598993d8e1be2b0de2/freecad/gears/features.py"
+        },
+        {
+          "path": "pygears/__init__.py",
+          "bytes": 1528,
+          "sha256": "7c65b7c13d23c30a68fe069a94b50dedce97d33ce33d066215d5f8381987ea3e",
+          "observed_declaration": "LGPL version 2 or later file header",
+          "text_decoding": "utf-8",
+          "evidence_lines": [
+            5,
+            7
+          ],
+          "source_url": "https://github.com/looooo/freecad.gears/blob/ffe86c85e8061546a3fbaa598993d8e1be2b0de2/pygears/__init__.py"
+        }
+      ],
+      "applicable_distribution_terms_resolved": null
+    },
+    {
+      "id": "grbl",
+      "repository": "https://github.com/AngelLM/grbl",
+      "revision": "1f6437a77e3abcb652d3f8ce718faf7e041ae6ff",
+      "git_tree_file_count": 72,
+      "notices": [
+        {
+          "path": "COPYING",
+          "bytes": 35285,
+          "sha256": "ad370acdba3ebfb015919bb70cdd474d370a6cca956790becf86ea3c0bf2f5b9",
+          "observed_declaration": "GPL version 3 or later with author notices",
+          "text_decoding": "utf-8",
+          "evidence_lines": [
+            2,
+            61
+          ],
+          "source_url": "https://github.com/AngelLM/grbl/blob/1f6437a77e3abcb652d3f8ce718faf7e041ae6ff/COPYING"
+        },
+        {
+          "path": "grbl/main.c",
+          "bytes": 3262,
+          "sha256": "301098133af49bdafddb046237b308859761f4015e5d17f67cccdc5521c1dfee",
+          "observed_declaration": "GPL version 3 or later file header",
+          "text_decoding": "utf-8",
+          "evidence_lines": [
+            9,
+            11,
+            16,
+            18
+          ],
+          "source_url": "https://github.com/AngelLM/grbl/blob/1f6437a77e3abcb652d3f8ce718faf7e041ae6ff/grbl/main.c"
+        }
+      ],
+      "applicable_distribution_terms_resolved": null
+    }
+  ],
+  "captured_reference_notices": [
+    {
+      "component": "ros",
+      "repository": "https://github.com/AngelLM/Thor-ROS",
+      "revision": "e11a56b5aa0d89f0b68a3ea7bd084eab4a050952",
+      "source_url": "https://github.com/AngelLM/Thor-ROS/blob/e11a56b5aa0d89f0b68a3ea7bd084eab4a050952/LICENSE",
+      "path": "LICENSE",
+      "bytes": 20131,
+      "sha256": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+      "observed_declaration": "CC-BY-SA-4.0 repository license text",
+      "text_decoding": "utf-8",
+      "evidence_lines": [
+        1,
+        57,
+        62
+      ]
+    },
+    {
+      "component": "ros",
+      "repository": "https://github.com/AngelLM/Thor-ROS",
+      "revision": "e11a56b5aa0d89f0b68a3ea7bd084eab4a050952",
+      "source_url": "https://github.com/AngelLM/Thor-ROS/blob/e11a56b5aa0d89f0b68a3ea7bd084eab4a050952/ws_thor/src/thor_controller/package.xml",
+      "path": "ws_thor/src/thor_controller/package.xml",
+      "bytes": 933,
+      "sha256": "217edb7be38806babd71e178a89eb71ca1df1278621bc9e1e386f177df79bbf6",
+      "observed_declaration": "Apache-2.0 package declaration",
+      "text_decoding": "utf-8",
+      "evidence_lines": [
+        8
+      ]
+    },
+    {
+      "component": "asgard",
+      "repository": "https://github.com/AngelLM/Asgard",
+      "revision": "30bf2f8850670f728a0f4c3e2e5d22db4f57d8c6",
+      "source_url": "https://github.com/AngelLM/Asgard/blob/30bf2f8850670f728a0f4c3e2e5d22db4f57d8c6/LICENSE",
+      "path": "LICENSE",
+      "bytes": 20131,
+      "sha256": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+      "observed_declaration": "CC-BY-SA-4.0 repository license text",
+      "text_decoding": "utf-8",
+      "evidence_lines": [
+        1,
+        57,
+        62
+      ]
+    }
+  ],
+  "runtime_notice_observation": {
+    "version": "1.1.4",
+    "release_url": "https://github.com/FreeCAD/FreeCAD/releases/tag/1.1.4",
+    "release_receipt_sha256": "1368d1eba630a5ca554d179285320135465e3dfb54e5e36b7fb46e5440db1939",
+    "official_archive_sha256": "4828741fc91ee37fafcdb97a1abacb18b04ba451ac4372d9ff7a7349b36f4d6d",
+    "archive_hash_rechecked_by_this_audit": false,
+    "notices": [
+      {
+        "path": "extracted/FreeCAD_1.1.4-Windows-x86_64-py311/doc/LICENSE.html",
+        "bytes": 25763,
+        "sha256": "6a7cfddf089b4ac290c04c2786d0b3197ffc6386b1c6b298d87aedcef3f07614",
+        "observed_declaration": "Bundled FreeCAD notice declares LGPL2+",
+        "text_decoding": "utf-8",
+        "evidence_lines": [
+          9
+        ]
+      },
+      {
+        "path": "extracted/FreeCAD_1.1.4-Windows-x86_64-py311/doc/ThirdPartyLibraries.html",
+        "bytes": 9733,
+        "sha256": "64df690c499c55548c807f8ada5e26f4ef732d640330d2995956f7815399242b",
+        "observed_declaration": "Bundled third-party component notice index; not a complete SBOM",
+        "text_decoding": "utf-8",
+        "evidence_lines": [
+          2
+        ]
+      }
+    ],
+    "all_bundled_dependency_licenses_audited": false
+  },
+  "toolchain_notice_observation": {
+    "version": "7.3.0-atmel3.6.1-arduino7",
+    "official_url": "https://downloads.arduino.cc/tools/avr-gcc-7.3.0-atmel3.6.1-arduino7-i686-w64-mingw32.zip",
+    "archive_sha256": "a54f64755fff4cb792a1495e5defdd789902a2a3503982e81b898299cf39800e",
+    "archive_hash_rechecked_by_this_audit": true,
+    "selected_headers": [
+      {
+        "path": "avr/avr/include/stdio.h",
+        "bytes": 36387,
+        "sha256": "159624cbb19fe730c6038bbf2c15daa8dc6a8fcbf21e67a44ccda9f22e0201b2",
+        "observed_declaration": "avr-libc copyright and three-clause redistribution notice",
+        "text_decoding": "latin-1 byte-preserving fallback for notice search",
+        "evidence_lines": [
+          9,
+          20
+        ]
+      },
+      {
+        "path": "avr/lib/gcc/avr/7.3.0/include/stddef.h",
+        "bytes": 14140,
+        "sha256": "1ec68deac2c5c0f846949de67d8266c02964132fa216165ea2ec4e70c8fcb930",
+        "observed_declaration": "GPL version 3 or later header with GCC Runtime Library Exception version 3.1",
+        "text_decoding": "utf-8",
+        "evidence_lines": [
+          6,
+          13,
+          16,
+          17,
+          19,
+          20
+        ]
+      }
+    ],
+    "standalone_notice_named_members": [],
+    "all_toolchain_component_licenses_audited": false,
+    "binary_distribution_approved": null
+  },
+  "bound_engineering_receipts": [
+    {
+      "path": "arm-01/hardware/cad/thor-windows-native-foundation-v1.json",
+      "sha256": "d6120d2cfee23f19a9dd1a7d5f90246d69ee787250c33a7035ad3c91aea185a1"
+    },
+    {
+      "path": "arm-01/hardware/cad/thor-grbl-build-feasibility.json",
+      "sha256": "121d8acaa5caae08fe9fb1633e5e8db47821838480562572c215d23147324ac9"
+    }
+  ],
+  "draft_projects_observed": [
+    {
+      "path": ".work/print-planning/projects/DRAFT_unqualified_BaseBearingFix_01-of-01.3mf",
+      "archive_sha256": "7999522e84c45e6ddfc4b946f9a8f7a860cf57d07eb20ad310d8802952656a44",
+      "designer": "AngelLM and Thor contributors; RAFTEL draft planning transcription",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/stl/BaseBearingFix.stl",
+      "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+      "license_sha256": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+      "modification_statement": "Source mesh transcribed without repairing/welding/reflecting geometry; separate identity-rotation build translation only",
+      "mesh_origin": "upstream_published_STL",
+      "geometry_or_process_accepted": false,
+      "manufacturing_release": false
+    },
+    {
+      "path": ".work/print-planning/projects/DRAFT_unqualified_BaseTop_01-of-01.3mf",
+      "archive_sha256": "f1ed1e4e7952802a60131b45fd03a6fc2763915c2e3d6f184ab6d70817dd7d8d",
+      "designer": "AngelLM and Thor contributors; RAFTEL draft planning transcription",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/stl/BaseTop.stl",
+      "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+      "license_sha256": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+      "modification_statement": "Source mesh transcribed without repairing/welding/reflecting geometry; separate identity-rotation build translation only",
+      "mesh_origin": "upstream_published_STL",
+      "geometry_or_process_accepted": false,
+      "manufacturing_release": false
+    },
+    {
+      "path": ".work/print-planning/projects/DRAFT_unqualified_CommonBearingFix_01-of-04.3mf",
+      "archive_sha256": "d797c07563e03e0adc83adb5693f85718405ae74fc11b6f8360b6256860873d5",
+      "designer": "AngelLM and Thor contributors; RAFTEL draft planning transcription",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/stl/CommonBearingFix.stl",
+      "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+      "license_sha256": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+      "modification_statement": "Source mesh transcribed without repairing/welding/reflecting geometry; separate identity-rotation build translation only",
+      "mesh_origin": "upstream_published_STL",
+      "geometry_or_process_accepted": false,
+      "manufacturing_release": false
+    },
+    {
+      "path": ".work/print-planning/projects/DRAFT_unqualified_CommonBearingFix_02-of-04.3mf",
+      "archive_sha256": "d9a76fc7b737128f82e72446a4d0d13695154d53ee30bac58b0c5ca008a70b4e",
+      "designer": "AngelLM and Thor contributors; RAFTEL draft planning transcription",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/stl/CommonBearingFix.stl",
+      "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+      "license_sha256": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+      "modification_statement": "Source mesh transcribed without repairing/welding/reflecting geometry; separate identity-rotation build translation only",
+      "mesh_origin": "upstream_published_STL",
+      "geometry_or_process_accepted": false,
+      "manufacturing_release": false
+    },
+    {
+      "path": ".work/print-planning/projects/DRAFT_unqualified_CommonBearingFix_03-of-04.3mf",
+      "archive_sha256": "5291e2775e4ed0e6770c3eab27ed6950edfd09b54b24fbd60857d2858bcf7d96",
+      "designer": "AngelLM and Thor contributors; RAFTEL draft planning transcription",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/stl/CommonBearingFix.stl",
+      "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+      "license_sha256": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+      "modification_statement": "Source mesh transcribed without repairing/welding/reflecting geometry; separate identity-rotation build translation only",
+      "mesh_origin": "upstream_published_STL",
+      "geometry_or_process_accepted": false,
+      "manufacturing_release": false
+    },
+    {
+      "path": ".work/print-planning/projects/DRAFT_unqualified_CommonBearingFix_04-of-04.3mf",
+      "archive_sha256": "a9dc8f2caa9f56a5275429cde8050bb6c8499141389874de3f018d4468cf66c1",
+      "designer": "AngelLM and Thor contributors; RAFTEL draft planning transcription",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/stl/CommonBearingFix.stl",
+      "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+      "license_sha256": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+      "modification_statement": "Source mesh transcribed without repairing/welding/reflecting geometry; separate identity-rotation build translation only",
+      "mesh_origin": "upstream_published_STL",
+      "geometry_or_process_accepted": false,
+      "manufacturing_release": false
+    },
+    {
+      "path": ".work/print-planning/projects-native-run03/DRAFT_unqualified_NATIVE_CACHED_Art2BodyAWindow_nominal_01-of-01.3mf",
+      "archive_sha256": "3a16131cebaccfd1478733d57d35771dc608df803b9ea50348816f3952cb865b",
+      "designer": "AngelLM and Thor contributors; RAFTEL draft planning transcription",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/Art2BodyAWindow.fcstd",
+      "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+      "license_sha256": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+      "modification_statement": "Source mesh transcribed without repairing/welding/reflecting geometry; separate identity-rotation build translation only",
+      "mesh_origin": "selected_saved_BRep_native_tessellation",
+      "geometry_or_process_accepted": false,
+      "manufacturing_release": false
+    },
+    {
+      "path": ".work/print-planning/projects-native-run03/DRAFT_unqualified_NATIVE_CACHED_Art3TensionerBody_nominal_01-of-02.3mf",
+      "archive_sha256": "93e38781959e4e1e2dfd413fd4a8025889aa592e0e9d598d8cd909072b61ace7",
+      "designer": "AngelLM and Thor contributors; RAFTEL draft planning transcription",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/Art3TensionerBody.fcstd",
+      "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+      "license_sha256": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+      "modification_statement": "Source mesh transcribed without repairing/welding/reflecting geometry; separate identity-rotation build translation only",
+      "mesh_origin": "selected_saved_BRep_native_tessellation",
+      "geometry_or_process_accepted": false,
+      "manufacturing_release": false
+    },
+    {
+      "path": ".work/print-planning/projects-native-run03/DRAFT_unqualified_NATIVE_CACHED_Art3TensionerBody_nominal_02-of-02.3mf",
+      "archive_sha256": "d9efea30731fc97b23e2cf6c201cc584d4a64f5e825c0d063d5f1a1f479b17d6",
+      "designer": "AngelLM and Thor contributors; RAFTEL draft planning transcription",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/Art3TensionerBody.fcstd",
+      "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+      "license_sha256": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+      "modification_statement": "Source mesh transcribed without repairing/welding/reflecting geometry; separate identity-rotation build translation only",
+      "mesh_origin": "selected_saved_BRep_native_tessellation",
+      "geometry_or_process_accepted": false,
+      "manufacturing_release": false
+    },
+    {
+      "path": ".work/print-planning/projects-native-run03/DRAFT_unqualified_NATIVE_CACHED_BaseBearingFix_nominal_01-of-01.3mf",
+      "archive_sha256": "050bf475f47383d61d1d55b2f7cf41b469dc132f0c53b63f1d960097521808a0",
+      "designer": "AngelLM and Thor contributors; RAFTEL draft planning transcription",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/BaseBearingFix.fcstd",
+      "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+      "license_sha256": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+      "modification_statement": "Source mesh transcribed without repairing/welding/reflecting geometry; separate identity-rotation build translation only",
+      "mesh_origin": "selected_saved_BRep_native_tessellation",
+      "geometry_or_process_accepted": false,
+      "manufacturing_release": false
+    },
+    {
+      "path": ".work/print-planning/projects-native-run03/DRAFT_unqualified_NATIVE_CACHED_BaseTop_nominal_01-of-01.3mf",
+      "archive_sha256": "e648a335c0fa300b3242371401c2fba8ff05d455f6d6c9542086986cd89c4666",
+      "designer": "AngelLM and Thor contributors; RAFTEL draft planning transcription",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/BaseTop.fcstd",
+      "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+      "license_sha256": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+      "modification_statement": "Source mesh transcribed without repairing/welding/reflecting geometry; separate identity-rotation build translation only",
+      "mesh_origin": "selected_saved_BRep_native_tessellation",
+      "geometry_or_process_accepted": false,
+      "manufacturing_release": false
+    },
+    {
+      "path": ".work/print-planning/projects-native-run03/DRAFT_unqualified_NATIVE_CACHED_CommonBearingFix_nominal_01-of-04.3mf",
+      "archive_sha256": "b4680506029612b08fc41fc720836a6e48a72f48a1bc062ac9670359c8c89a38",
+      "designer": "AngelLM and Thor contributors; RAFTEL draft planning transcription",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/CommonBearingFix.fcstd",
+      "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+      "license_sha256": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+      "modification_statement": "Source mesh transcribed without repairing/welding/reflecting geometry; separate identity-rotation build translation only",
+      "mesh_origin": "selected_saved_BRep_native_tessellation",
+      "geometry_or_process_accepted": false,
+      "manufacturing_release": false
+    },
+    {
+      "path": ".work/print-planning/projects-native-run03/DRAFT_unqualified_NATIVE_CACHED_CommonBearingFix_nominal_02-of-04.3mf",
+      "archive_sha256": "2d20a985932e766581972c29d797e2e4b1f35a176fafb0b93fa5832ec49bd7fd",
+      "designer": "AngelLM and Thor contributors; RAFTEL draft planning transcription",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/CommonBearingFix.fcstd",
+      "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+      "license_sha256": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+      "modification_statement": "Source mesh transcribed without repairing/welding/reflecting geometry; separate identity-rotation build translation only",
+      "mesh_origin": "selected_saved_BRep_native_tessellation",
+      "geometry_or_process_accepted": false,
+      "manufacturing_release": false
+    },
+    {
+      "path": ".work/print-planning/projects-native-run03/DRAFT_unqualified_NATIVE_CACHED_CommonBearingFix_nominal_03-of-04.3mf",
+      "archive_sha256": "970a73a01d79b32d703f66709309a3b506a279d73c62bd399cbf9c164eba13b1",
+      "designer": "AngelLM and Thor contributors; RAFTEL draft planning transcription",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/CommonBearingFix.fcstd",
+      "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+      "license_sha256": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+      "modification_statement": "Source mesh transcribed without repairing/welding/reflecting geometry; separate identity-rotation build translation only",
+      "mesh_origin": "selected_saved_BRep_native_tessellation",
+      "geometry_or_process_accepted": false,
+      "manufacturing_release": false
+    },
+    {
+      "path": ".work/print-planning/projects-native-run03/DRAFT_unqualified_NATIVE_CACHED_CommonBearingFix_nominal_04-of-04.3mf",
+      "archive_sha256": "cfd52673e46a0e1e250b55396b81ecc3a7245fb743e470bebb7fb555184b2f60",
+      "designer": "AngelLM and Thor contributors; RAFTEL draft planning transcription",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/CommonBearingFix.fcstd",
+      "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+      "license_sha256": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+      "modification_statement": "Source mesh transcribed without repairing/welding/reflecting geometry; separate identity-rotation build translation only",
+      "mesh_origin": "selected_saved_BRep_native_tessellation",
+      "geometry_or_process_accepted": false,
+      "manufacturing_release": false
+    },
+    {
+      "path": ".work/print-planning/projects-native-run03/DRAFT_unqualified_NATIVE_CACHED_GripperFinger_nominal_01-of-01.3mf",
+      "archive_sha256": "c34091d0e417dc15002cb87d7d301eec610da9ceb5dc28f91193ca7c7c0ddf7c",
+      "designer": "AngelLM and Thor contributors; RAFTEL draft planning transcription",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/GripperFinger.FCStd",
+      "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+      "license_sha256": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+      "modification_statement": "Source mesh transcribed without repairing/welding/reflecting geometry; separate identity-rotation build translation only",
+      "mesh_origin": "selected_saved_BRep_native_tessellation",
+      "geometry_or_process_accepted": false,
+      "manufacturing_release": false
+    },
+    {
+      "path": ".work/print-planning/projects-native-run03/DRAFT_unqualified_NATIVE_CACHED_GripperFinger_reflected_01-of-01.3mf",
+      "archive_sha256": "31abc5ef68a5211d9453ac229f2069cbe558d7869ab5e4cac02c156f5f70412c",
+      "designer": "AngelLM and Thor contributors; RAFTEL draft planning transcription",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/AssemblyArt56.FCStd",
+      "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+      "license_sha256": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+      "modification_statement": "Source mesh transcribed without repairing/welding/reflecting geometry; separate identity-rotation build translation only",
+      "mesh_origin": "selected_saved_BRep_native_tessellation",
+      "geometry_or_process_accepted": false,
+      "manufacturing_release": false
+    }
+  ],
+  "scope": {
+    "all_57_native_license_properties_observed": true,
+    "selected_notice_files_match_pinned_git_blobs": true,
+    "all_addon_noncode_asset_licenses_audited": false,
+    "all_runtime_toolchain_dependency_licenses_audited": false
+  },
+  "release_gates": {
+    "company_license_selected": null,
+    "license_metadata_differences_resolved": null,
+    "external_distribution_approved": null,
+    "manufacturing_release": false
+  },
+  "limitations": [
+    "Repository, package, file-header and saved-document declarations remain separate.",
+    "This report does not determine legal applicability or approve a distribution.",
+    "Draft metadata checks do not qualify geometry, slicing, fit or printed performance."
+  ]
+}

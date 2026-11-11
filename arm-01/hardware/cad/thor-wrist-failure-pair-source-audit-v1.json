@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "validation_class": "pinned_primary_source_inspection_not_native_cause_or_binary_rebuild_proof",
+  "accessed_on": "2026-11-11",
+  "FreeCAD_source": {
+    "repository": "FreeCAD/FreeCAD",
+    "revision": "4fd3bf320d9566a27e60069fc8387448aaa3a094",
+    "path": "src/Mod/Part/App/TopoShapePyImp.cpp",
+    "git_blob_sha": "b93fa6c9ade4cf263f9dcbabb95c719faa9332e7",
+    "line_range": [
+      2848,
+      2856
+    ],
+    "url": "https://github.com/FreeCAD/FreeCAD/blob/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Mod/Part/App/TopoShapePyImp.cpp#L2848",
+    "finding": "TopoShapePy::getVolume calls the two-argument BRepGProp::VolumeProperties and returns props.Mass()."
+  },
+  "OCCT_source": {
+    "repository": "Open-Cascade-SAS/OCCT",
+    "tag": "V7_8_1",
+    "revision": "bd2a789f15235755ce4d1a3b07379a2e062fdc2e",
+    "tag_resolved_by": "git ls-remote, lightweight tag points directly to this commit",
+    "files": [
+      {
+        "path": "src/BRepGProp/BRepGProp.hxx",
+        "git_blob_sha": "977b5affb78665cf3a033fc46e0890a346b7e37d",
+        "line_ranges": [
+          [
+            177,
+            197
+          ],
+          [
+            199,
+            201
+          ]
+        ],
+        "url": "https://github.com/Open-Cascade-SAS/OCCT/blob/bd2a789f15235755ce4d1a3b07379a2e062fdc2e/src/BRepGProp/BRepGProp.hxx#L177",
+        "finding": "The relevant overload defaults OnlyClosed and SkipShared to false; documentation requires coherent finite volume geometry without free boundaries and notes that this condition is not checked."
+      },
+      {
+        "path": "src/BRepGProp/BRepGProp.cxx",
+        "git_blob_sha": "43c9d08129c913e1eb83963c53d889dc60582146",
+        "line_ranges": [
+          [
+            233,
+            252
+          ],
+          [
+            309,
+            326
+          ]
+        ],
+        "url": "https://github.com/Open-Cascade-SAS/OCCT/blob/bd2a789f15235755ce4d1a3b07379a2e062fdc2e/src/BRepGProp/BRepGProp.cxx#L309",
+        "finding": "OnlyClosed true explores closed shells; false passes the whole shape into volume integration, whose helper explores faces with forward/reversed orientation."
+      }
+    ]
+  },
+  "interpretation": {
+    "source_behavior_verified": true,
+    "actual_DLL_compiled_from_exact_source_commit_proven": false,
+    "full_binary_source_correspondence_verified": false,
+    "standalone_common_faces_or_shells_proven": false,
+    "negative_result_cause_proven": false,
+    "mechanism_status": "Open or mixed-dimensional face integration is a source-supported possibility; current captured membership is insufficient to establish it.",
+    "loaded_OCCT_DLL_path_independently_observed": false
+  },
+  "captured_topology_limits": {
+    "common_face_count": 11,
+    "common_shell_count": 3,
+    "common_solid_count": 3,
+    "per_solid_face_or_shell_counts": null,
+    "isSame_membership": null,
+    "raw_common_BRep_retained": false
+  },
+  "no_native_followup_launched_for_source_audit": true,
+  "no_absolute_or_solid_sum_replacement_accepted": true,
+  "next_required_evidence": "In a separately approved fresh slot retain the exact common BRep, per-solid face/shell counts and isSame constituent membership before interpreting aggregate Volume; no shape healing or source save.",
+  "packaged_OCCT_DLL_metadata": {
+    "version": "7.8.1",
+    "observation_method": "Windows FileVersion/ProductVersion metadata; no native process",
+    "files": [
+      {
+        "path": "TKBRep.dll",
+        "sha256": "a420f8a8d360f270518039a06254f45d3064e4e7a63bcfd33cf862cb514be12e",
+        "file_version": "7.8.1",
+        "product_version": "7.8.1"
+      },
+      {
+        "path": "TKTopAlgo.dll",
+        "sha256": "ba847ff7845c88a1d567857340c50905a8b6b0ea850136832ebde44bd028e76f",
+        "file_version": "7.8.1",
+        "product_version": "7.8.1"
+      }
+    ]
+  }
+}

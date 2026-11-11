@@ -1,0 +1,281 @@
+{
+  "schema_version": 1,
+  "validation_class": "native_single_Boolean_signed_result_diagnostic",
+  "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+  "coordinate_frame": "native_CAD_world_mm",
+  "freecad_version": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "runtime_isolation": {
+    "requested": true,
+    "verified": true,
+    "root": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\native-wrist-failure-pair-01",
+    "actual_paths": {
+      "UserParameter": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\native-wrist-failure-pair-01\\user.cfg",
+      "SystemParameter": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\native-wrist-failure-pair-01\\system.cfg",
+      "UserHomePath": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\native-wrist-failure-pair-01\\home",
+      "UserAppData": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\native-wrist-failure-pair-01\\data\\",
+      "AppTempPath": "C:\\Users\\howet\\Desktop\\claudex\\RAFTEL\\.work\\native-wrist-failure-pair-01\\temp\\"
+    }
+  },
+  "worker_sha256": "8ab64dd31219ec50ccc72dc754141fb17c25090587aa20a1223f2ecbaf2bcdd5",
+  "wrist_helper_sha256": "c0f586c2ce845489581fc73fae6483521b3afc7ca286ab1074aff7229ae16eb3",
+  "audit_helper_sha256": "224c6b45aa7d32aaee54d5de7b17f5446b6df865c6870fe5de5fdd9bd2c58c10",
+  "source_sha256_before": {
+    "Art1Body.fcstd": "142d754d3551352ffd2338d940cc3edecb9d272b2401f70aea9f89fea164c140",
+    "Art1Bot.fcstd": "31c8fa13cd2868e68cbcd97ec43970ff120760fad46f0a0e53608a98f29666ca",
+    "Art1FanHolder.FCStd": "df43383d3d3a81f95af8ed3c9c589ac679e3f1eda0c60e642f292480c834e985",
+    "Art1GearMotor.fcstd": "7de75d92b15bdfc548002c2bb93ab8192720b7948338b708f34460d55321d3f3",
+    "Art1OptoFix.fcstd": "ffedf6c188e641a8d46bbd93ee81a3cef1aff8dd908b7ee3c4c3191fa400e26b",
+    "Art1Top.fcstd": "0dbfa7c49d0e3ca032e219b306e532fd403a145fb15cf304aa880a8dd3067bd6",
+    "Art23Optodisk.fcstd": "c81e788792edea63c7e73a12b06dc8073668a6b899f8d46ea5c3d9d399de431c",
+    "Art2BodyA.fcstd": "ddf08ae66dfc767bbce3f3354d8ba8f471f5527e8cdbfec9570933c4fb4e276a",
+    "Art2BodyACover1.fcstd": "2ed0c298cbd55af72065d8a850f20b23f2dcd72de8c79ee9d6384bc4c537d514",
+    "Art2BodyACover2.fcstd": "83dae954cbbab7b380094033d0c689d774862878f809f5f9e2e31c9bbb9bbde3",
+    "Art2BodyAWindow.fcstd": "ced59ddf86e57b3f3615bb4ee44d96b75b7032a9239733845a26e8e334941e98",
+    "Art2BodyB.fcstd": "a63e36fd3b27321061ef875da8454e2d787a83fb8737fb1774aa458c8a8c7882",
+    "Art2BodyBCover.fcstd": "b8901be694766792ec0acd9e472d39552a6dfe9e0b69392e2e80ddc7499cdfdf",
+    "Art2BodyUnion.FCStd": "238330fcdb1a52d6ccf5e3e2951d49c0a79bd24f42eb24162581727fb769fecc",
+    "Art2MotorGear.fcstd": "a8761b35792888dd679bdc1bab74a353b5893365aff268ae1d35a985a2984fc8",
+    "Art2SideCover.FCStd": "a618cb1c6f2168340ccc5e49756b1ff8319b91a05b6c5f578275fbfaaffbf14e",
+    "Art3Body.fcstd": "d6e2759daadc02ab36a7b5c6920b7f7b42066f63c2a7600fb4ff86487565e79e",
+    "Art3Body2.FCStd": "b911d8799e8630bbe1a3affa771e1042ea166d0b6f81c79f2fa6a9df61b68c1a",
+    "Art3Pulley.fcstd": "d450cc565e722981346fc2b1aa3662474c83d574ca39a5602bacb98d8619fd9e",
+    "Art3TensionerBody.fcstd": "f105e77dbb72523f842e58b9bcd9a54c3ec5f5eaf771a0798851cf7f13752a55",
+    "Art3TensionerPulley.fcstd": "2bbf0c3c522db8b2247ed6f3dbce48cd111d4d21349f05cab5bc01d3812102da",
+    "Art4BearingFix.fcstd": "248a21d01617b0e784a9743d186ab698d6406a9eeba6e6a27c2c426baf8dca55",
+    "Art4BearingPlug.fcstd": "b85db4631074bb3a2ac49162874e6915d4727ee4d5327309dcbdeaec664ebebc",
+    "Art4BearingRing.fcstd": "e4a84700481629554e0e79de956562f54d46aaeeb60908f4e5aee4c5336d7214",
+    "Art4Body.fcstd": "73f6b57135ea18e516d6b3280d91063d3d23c891d809a6ed52ae9594483ddb31",
+    "Art4BodyBot.fcstd": "b7eb908539d3c6c6310c2f64ddb7de758d9f742f5c44ac45bd8dea69925d9413",
+    "Art4BodyFan.fcstd": "6520e13c078f3a9862c98443dc4e9b77f77c429b32f387e82c3f14eaabc8fa16",
+    "Art4MotorFix.fcstd": "976a04a9b3bbf21ea80a9e1e6ac53ef64f0ac7aa93fbcff7184f84b00688e6c4",
+    "Art4MotorGear.fcstd": "c988a0d9be1fc1312fabc1b6b10108cf05f23fb3298a0ece627cb5eb1d930358",
+    "Art4Optodisk.fcstd": "0822ae9a4a1460e74e05ff068e2662670e9db50991e28d2d0d3da6f73385cbb4",
+    "Art4TransmissionColumn.fcstd": "f31295eaaf973347c73779e69ca33f095656b1e7bc4511eac5ce879aaaddbb2c",
+    "Art56GearPlate.fcstd": "38ca5952d4e03e4009f94628d0c435153b980ea558a608fca9ac1c9aaf79d411",
+    "Art56Interface.fcstd": "dccf452b3eb1f0e00bd6db6d1286e2cbbc06b5e47b828e9008f9bbd4d4830737",
+    "Art56MotorCoverRing.fcstd": "8d037cf7a3e63ee8f04b39be35836d35c5d6f330497c8df5a735cd05abd071fa",
+    "Art56MotorHolderA.fcstd": "a1355712512d87ac25000ab60eab65d6c9ba454099ebc6761dbf93d6c003c49a",
+    "Art56MotorHolderB.fcstd": "d0ae1726649b8b4758b665fe2b01e8d065e57b2c5b916ef4e4b4dc7840fcfd77",
+    "Art56SmallGear.fcstd": "b737ce24c58bc5ffc3763fcd6cdcfdd425747565c2850054397f066ecd5a63a0",
+    "Assembly.FCStd": "5ee729246229e7494466010ab68e2c2367ba4ec1361b7701df21c0f8b00c2c1b",
+    "AssemblyArt1.FCStd": "79f823e0a2d4a3581815305e41a0bb0693db4652206923a7d03d947c8a47085b",
+    "AssemblyArt2.FCStd": "96a41e5eaa728a89e8e7a3340ec10a8c71034ff30b76f8679d23ed435574638f",
+    "AssemblyArt3.FCStd": "8b5b8ba6da66f9deb1ec1f03ec1ff75f2ea10e02ca67a7e2b5e5f955aaec4398",
+    "AssemblyArt4.FCStd": "9306c0461c1a979526c8f73554ddef8fa89b8880e613b42beed7ac19feb401da",
+    "AssemblyArt56.FCStd": "a04836216dcae82eb033c15daba6e41dedb85b03f86ff21e56b77cdff835a473",
+    "AssemblyBase.FCStd": "1964b144c772608a716e40f4e7bbfb61b55b5e46c9079221b079cbce570dbdc7",
+    "BaseBearingFix.fcstd": "a8ddcd5f8aee6cc4ff33671e3c27e2d3029fe334f4f02baeb579eb6ecaadec82",
+    "BaseBot.fcstd": "c637feec821a886c80c8622cf316de02c05f06d90ff49af9df9b0a0cdff00e5a",
+    "BaseBoxBody.FCStd": "bf4c86c80ee90bc8e46bea77db6850027c15e45c86e2da1b9cfeffbce9cb6de1",
+    "BaseBoxCover.FCStd": "9d1ca5fa12b76b49203f26f440ab47fe9c5a74e921a6267de8d60fa8ac3d7a37",
+    "BaseTop.fcstd": "cad90f1414909eaa797edb9bc00a685c3f0856cfa4be5abbcd539afb96417490",
+    "CommonBearingFix.fcstd": "cf0d6322f0c0a947079c2a3782dcf878feb71a0e34b0de220c3722a24ec8e72b",
+    "CommonBearingFixThrough.fcstd": "ea66043a24b3b93c3722ad48ce4a0830f1561a6a925818b5d1dcf7d411a25517",
+    "GripperActiveArm.FCStd": "3ba5ba6f74c5d2f45eeca56f28534dc750e7f0ae735b6a0b3e16beeef21adc67",
+    "GripperArm.FCStd": "f1511f4b319a5727cf07771abe4c75002d5527e0a10291d47c1fe8024a44c6fc",
+    "GripperBot.FCStd": "a65e68644312adee7381e3a640b2b827f9c2c3362bbe4a842ccee9fea969d176",
+    "GripperFinger.FCStd": "ab4daca4dd2f447029f4c76150b7f617fbdda74ae467cf6962938efe148d57a6",
+    "GripperPassiveArm.FCStd": "d14ac1debf67735fd623e052d468a9773066c32356390799b4ea07addcba68d4",
+    "GripperTop.FCStd": "10f501e23263c8ddfc37e472fada7d9978d5f6c10cedf6deaa943dde87bdea56"
+  },
+  "source_sha256_after": {
+    "Art1Body.fcstd": "142d754d3551352ffd2338d940cc3edecb9d272b2401f70aea9f89fea164c140",
+    "Art1Bot.fcstd": "31c8fa13cd2868e68cbcd97ec43970ff120760fad46f0a0e53608a98f29666ca",
+    "Art1FanHolder.FCStd": "df43383d3d3a81f95af8ed3c9c589ac679e3f1eda0c60e642f292480c834e985",
+    "Art1GearMotor.fcstd": "7de75d92b15bdfc548002c2bb93ab8192720b7948338b708f34460d55321d3f3",
+    "Art1OptoFix.fcstd": "ffedf6c188e641a8d46bbd93ee81a3cef1aff8dd908b7ee3c4c3191fa400e26b",
+    "Art1Top.fcstd": "0dbfa7c49d0e3ca032e219b306e532fd403a145fb15cf304aa880a8dd3067bd6",
+    "Art23Optodisk.fcstd": "c81e788792edea63c7e73a12b06dc8073668a6b899f8d46ea5c3d9d399de431c",
+    "Art2BodyA.fcstd": "ddf08ae66dfc767bbce3f3354d8ba8f471f5527e8cdbfec9570933c4fb4e276a",
+    "Art2BodyACover1.fcstd": "2ed0c298cbd55af72065d8a850f20b23f2dcd72de8c79ee9d6384bc4c537d514",
+    "Art2BodyACover2.fcstd": "83dae954cbbab7b380094033d0c689d774862878f809f5f9e2e31c9bbb9bbde3",
+    "Art2BodyAWindow.fcstd": "ced59ddf86e57b3f3615bb4ee44d96b75b7032a9239733845a26e8e334941e98",
+    "Art2BodyB.fcstd": "a63e36fd3b27321061ef875da8454e2d787a83fb8737fb1774aa458c8a8c7882",
+    "Art2BodyBCover.fcstd": "b8901be694766792ec0acd9e472d39552a6dfe9e0b69392e2e80ddc7499cdfdf",
+    "Art2BodyUnion.FCStd": "238330fcdb1a52d6ccf5e3e2951d49c0a79bd24f42eb24162581727fb769fecc",
+    "Art2MotorGear.fcstd": "a8761b35792888dd679bdc1bab74a353b5893365aff268ae1d35a985a2984fc8",
+    "Art2SideCover.FCStd": "a618cb1c6f2168340ccc5e49756b1ff8319b91a05b6c5f578275fbfaaffbf14e",
+    "Art3Body.fcstd": "d6e2759daadc02ab36a7b5c6920b7f7b42066f63c2a7600fb4ff86487565e79e",
+    "Art3Body2.FCStd": "b911d8799e8630bbe1a3affa771e1042ea166d0b6f81c79f2fa6a9df61b68c1a",
+    "Art3Pulley.fcstd": "d450cc565e722981346fc2b1aa3662474c83d574ca39a5602bacb98d8619fd9e",
+    "Art3TensionerBody.fcstd": "f105e77dbb72523f842e58b9bcd9a54c3ec5f5eaf771a0798851cf7f13752a55",
+    "Art3TensionerPulley.fcstd": "2bbf0c3c522db8b2247ed6f3dbce48cd111d4d21349f05cab5bc01d3812102da",
+    "Art4BearingFix.fcstd": "248a21d01617b0e784a9743d186ab698d6406a9eeba6e6a27c2c426baf8dca55",
+    "Art4BearingPlug.fcstd": "b85db4631074bb3a2ac49162874e6915d4727ee4d5327309dcbdeaec664ebebc",
+    "Art4BearingRing.fcstd": "e4a84700481629554e0e79de956562f54d46aaeeb60908f4e5aee4c5336d7214",
+    "Art4Body.fcstd": "73f6b57135ea18e516d6b3280d91063d3d23c891d809a6ed52ae9594483ddb31",
+    "Art4BodyBot.fcstd": "b7eb908539d3c6c6310c2f64ddb7de758d9f742f5c44ac45bd8dea69925d9413",
+    "Art4BodyFan.fcstd": "6520e13c078f3a9862c98443dc4e9b77f77c429b32f387e82c3f14eaabc8fa16",
+    "Art4MotorFix.fcstd": "976a04a9b3bbf21ea80a9e1e6ac53ef64f0ac7aa93fbcff7184f84b00688e6c4",
+    "Art4MotorGear.fcstd": "c988a0d9be1fc1312fabc1b6b10108cf05f23fb3298a0ece627cb5eb1d930358",
+    "Art4Optodisk.fcstd": "0822ae9a4a1460e74e05ff068e2662670e9db50991e28d2d0d3da6f73385cbb4",
+    "Art4TransmissionColumn.fcstd": "f31295eaaf973347c73779e69ca33f095656b1e7bc4511eac5ce879aaaddbb2c",
+    "Art56GearPlate.fcstd": "38ca5952d4e03e4009f94628d0c435153b980ea558a608fca9ac1c9aaf79d411",
+    "Art56Interface.fcstd": "dccf452b3eb1f0e00bd6db6d1286e2cbbc06b5e47b828e9008f9bbd4d4830737",
+    "Art56MotorCoverRing.fcstd": "8d037cf7a3e63ee8f04b39be35836d35c5d6f330497c8df5a735cd05abd071fa",
+    "Art56MotorHolderA.fcstd": "a1355712512d87ac25000ab60eab65d6c9ba454099ebc6761dbf93d6c003c49a",
+    "Art56MotorHolderB.fcstd": "d0ae1726649b8b4758b665fe2b01e8d065e57b2c5b916ef4e4b4dc7840fcfd77",
+    "Art56SmallGear.fcstd": "b737ce24c58bc5ffc3763fcd6cdcfdd425747565c2850054397f066ecd5a63a0",
+    "Assembly.FCStd": "5ee729246229e7494466010ab68e2c2367ba4ec1361b7701df21c0f8b00c2c1b",
+    "AssemblyArt1.FCStd": "79f823e0a2d4a3581815305e41a0bb0693db4652206923a7d03d947c8a47085b",
+    "AssemblyArt2.FCStd": "96a41e5eaa728a89e8e7a3340ec10a8c71034ff30b76f8679d23ed435574638f",
+    "AssemblyArt3.FCStd": "8b5b8ba6da66f9deb1ec1f03ec1ff75f2ea10e02ca67a7e2b5e5f955aaec4398",
+    "AssemblyArt4.FCStd": "9306c0461c1a979526c8f73554ddef8fa89b8880e613b42beed7ac19feb401da",
+    "AssemblyArt56.FCStd": "a04836216dcae82eb033c15daba6e41dedb85b03f86ff21e56b77cdff835a473",
+    "AssemblyBase.FCStd": "1964b144c772608a716e40f4e7bbfb61b55b5e46c9079221b079cbce570dbdc7",
+    "BaseBearingFix.fcstd": "a8ddcd5f8aee6cc4ff33671e3c27e2d3029fe334f4f02baeb579eb6ecaadec82",
+    "BaseBot.fcstd": "c637feec821a886c80c8622cf316de02c05f06d90ff49af9df9b0a0cdff00e5a",
+    "BaseBoxBody.FCStd": "bf4c86c80ee90bc8e46bea77db6850027c15e45c86e2da1b9cfeffbce9cb6de1",
+    "BaseBoxCover.FCStd": "9d1ca5fa12b76b49203f26f440ab47fe9c5a74e921a6267de8d60fa8ac3d7a37",
+    "BaseTop.fcstd": "cad90f1414909eaa797edb9bc00a685c3f0856cfa4be5abbcd539afb96417490",
+    "CommonBearingFix.fcstd": "cf0d6322f0c0a947079c2a3782dcf878feb71a0e34b0de220c3722a24ec8e72b",
+    "CommonBearingFixThrough.fcstd": "ea66043a24b3b93c3722ad48ce4a0830f1561a6a925818b5d1dcf7d411a25517",
+    "GripperActiveArm.FCStd": "3ba5ba6f74c5d2f45eeca56f28534dc750e7f0ae735b6a0b3e16beeef21adc67",
+    "GripperArm.FCStd": "f1511f4b319a5727cf07771abe4c75002d5527e0a10291d47c1fe8024a44c6fc",
+    "GripperBot.FCStd": "a65e68644312adee7381e3a640b2b827f9c2c3362bbe4a842ccee9fea969d176",
+    "GripperFinger.FCStd": "ab4daca4dd2f447029f4c76150b7f617fbdda74ae467cf6962938efe148d57a6",
+    "GripperPassiveArm.FCStd": "d14ac1debf67735fd623e052d468a9773066c32356390799b4ea07addcba68d4",
+    "GripperTop.FCStd": "10f501e23263c8ddfc37e472fada7d9978d5f6c10cedf6deaa943dde87bdea56"
+  },
+  "source_bytes_unchanged": true,
+  "pose": {
+    "q5_deg": -20.0,
+    "q6_deg": -15.0,
+    "candidate_s": 1,
+    "side_y": 1,
+    "rotor_deg": 10.0
+  },
+  "source_geometry_mode": "saved cached BReps and declared rigid copied-shape pose",
+  "inputs": [
+    {
+      "object_reference": "AssemblyArt56::Art56GearPlate_Art56GearPlate",
+      "saved_restore_state": [
+        "Up-to-date"
+      ],
+      "saved": {
+        "signed_volume_mm3": 42883.5006807928,
+        "shape_type": "Solid",
+        "orientation": "Forward",
+        "null_shape": false,
+        "solid_count": 1,
+        "shell_count": 1,
+        "face_count": 186,
+        "solids": [
+          {
+            "signed_volume_mm3": 42883.5006807928,
+            "orientation": "Forward"
+          }
+        ],
+        "validity_evaluated": true,
+        "valid": true
+      },
+      "posed": {
+        "signed_volume_mm3": 42883.50068079276,
+        "shape_type": "Solid",
+        "orientation": "Forward",
+        "null_shape": false,
+        "solid_count": 1,
+        "shell_count": 1,
+        "face_count": 186,
+        "solids": [
+          {
+            "signed_volume_mm3": 42883.50068079276,
+            "orientation": "Forward"
+          }
+        ],
+        "validity_evaluated": true,
+        "valid": true
+      }
+    },
+    {
+      "object_reference": "AssemblyArt56::Art56SmallGear_Art56SmallGear001",
+      "saved_restore_state": [
+        "Up-to-date"
+      ],
+      "saved": {
+        "signed_volume_mm3": 7716.7800706326225,
+        "shape_type": "Solid",
+        "orientation": "Forward",
+        "null_shape": false,
+        "solid_count": 1,
+        "shell_count": 1,
+        "face_count": 105,
+        "solids": [
+          {
+            "signed_volume_mm3": 7716.7800706326225,
+            "orientation": "Forward"
+          }
+        ],
+        "validity_evaluated": true,
+        "valid": true
+      },
+      "posed": {
+        "signed_volume_mm3": 7716.7800706326225,
+        "shape_type": "Solid",
+        "orientation": "Forward",
+        "null_shape": false,
+        "solid_count": 1,
+        "shell_count": 1,
+        "face_count": 105,
+        "solids": [
+          {
+            "signed_volume_mm3": 7716.7800706326225,
+            "orientation": "Forward"
+          }
+        ],
+        "validity_evaluated": true,
+        "valid": true
+      }
+    }
+  ],
+  "common": {
+    "signed_volume_mm3": -0.5552516265803887,
+    "shape_type": "Compound",
+    "orientation": "Forward",
+    "null_shape": false,
+    "solid_count": 3,
+    "shell_count": 3,
+    "face_count": 11,
+    "solids": [
+      {
+        "signed_volume_mm3": 0.10539411058939224,
+        "orientation": "Forward"
+      },
+      {
+        "signed_volume_mm3": 0.0007651983078344402,
+        "orientation": "Forward"
+      },
+      {
+        "signed_volume_mm3": 0.00014976424489836237,
+        "orientation": "Forward"
+      }
+    ],
+    "validity_evaluated": true,
+    "valid": true
+  },
+  "boolean_operations_executed": 1,
+  "diagnostic_outcome": "negative_signed_volume_reproduced",
+  "absolute_volume_substituted": false,
+  "shape_reversed_or_healed": false,
+  "source_saved": false,
+  "feature_history_recomputed": false,
+  "constraint_kinematics_solved": false,
+  "geometric_intersection_accepted": false,
+  "exact_conjugate_mesh_qualified": false,
+  "physical_calibration_qualified": false,
+  "fabrication_released": false,
+  "open_document_count_before": 0,
+  "audit_status": "complete",
+  "errors": [],
+  "elapsed_s": 41.40600000000268,
+  "open_document_count_after_close": 0
+}
