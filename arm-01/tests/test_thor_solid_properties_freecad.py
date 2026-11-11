@@ -404,19 +404,24 @@ def test_retained_actual_native_capture_replays_units_fixtures_and_source_contra
 
 
 def test_normalized_worker_native_replay_preserves_prior_geometry_and_matches_current_code():
-    original = json.loads(
-        (ROOT / "hardware/cad/thor-native-solid-properties-v1.json").read_text()
-    )
+    original = json.loads((ROOT / "hardware/cad/thor-native-solid-properties-v1.json").read_text())
     replay = json.loads(
         (ROOT / "hardware/cad/thor-native-solid-properties-normalized-v1.json").read_text()
     )
-    assert replay["capture_script_sha256"] == hashlib.sha256(
-        (ROOT / "tools/probe_thor_solid_properties_freecad.py").read_bytes()
-    ).hexdigest()
+    assert (
+        replay["capture_script_sha256"]
+        == hashlib.sha256(
+            (ROOT / "tools/probe_thor_solid_properties_freecad.py").read_bytes()
+        ).hexdigest()
+    )
     assert replay["capture_script_sha256"] != original["capture_script_sha256"]
     for key in (
-        "request", "request_sha256", "selections", "primitive_fixtures",
-        "source_copy_sha256_before", "source_copy_sha256_after",
+        "request",
+        "request_sha256",
+        "selections",
+        "primitive_fixtures",
+        "source_copy_sha256_before",
+        "source_copy_sha256_after",
     ):
         assert replay[key] == original[key]
     assert replay["audit_status"] == "complete_selected_cached_geometry_only"
