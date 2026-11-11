@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 720 540" role="img" aria-labelledby="title description">
+<title id="title">Thor source base interface and proposed adapter blank</title>
+<desc id="description">Asymmetric four-hole source pattern, bounding envelope and separate dashed proposed blank. Dimensions in millimetres. No fabrication release.</desc>
+<metadata>{&quot;actual_bench_extrinsics_or_plate_thickness&quot;: null, &quot;datum_LCS_Bot_matrix_row_major&quot;: [1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0], &quot;evidence_class&quot;: &quot;source_dimensions_and_proposed_blank_not_manufacturing_drawing&quot;, &quot;frame&quot;: &quot;BaseBot source mm; drawing x=source x, drawing y=-source y&quot;, &quot;hole_centers_xy_mm&quot;: [[0, 86], [74.47818472546173, 43], [0, -86], [74.47818472546173, -43]], &quot;interface_capture_canonical_sha256&quot;: &quot;6eb6b42ace8b0093c9718ec034565a37e06aff15fb819d098ef557e1d9c4c691&quot;, &quot;proposed_blank_dimensions_mm&quot;: [300.0, 320.0], &quot;source_file&quot;: &quot;BaseBot.fcstd&quot;, &quot;source_object&quot;: &quot;BaseBot::Body002&quot;, &quot;source_revision&quot;: &quot;286b081fe6f056d87c379b884781ef77ff6a0159&quot;, &quot;source_sha256&quot;: &quot;c637feec821a886c80c8622cf316de02c05f06d90ff49af9df9b0a0cdff00e5a&quot;}</metadata>
+<rect width="720" height="540" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#15212b;font-size:10px}.dim{stroke:#526170;stroke-width:.7;fill:none}.proposal{stroke:#276ac2;stroke-dasharray:5 3;stroke-width:1.4;fill:none}.source{stroke:#15212b;stroke-width:1;fill:none}.recess{stroke:#167a59;stroke-width:.8;fill:none}</style>
+<text x="24" y="26" style="font-size:18px;font-weight:bold">Thor base interface</text>
+<text x="24" y="43">SOURCE DIMENSIONS + STUDY PROPOSAL · all dimensions mm</text>
+<text x="24" y="59" fill="#a33">NO MANUFACTURING RELEASE · not to scale on screen</text>
+<g transform="translate(185 270)">
+<rect id="proposed-blank" class="proposal" x="-100.0" y="-160.0" width="300.0" height="320.0"/>
+<rect id="source-envelope" class="source" stroke-dasharray="2 2" x="-75.0" y="-127.4516815844294" width="202.4516815844294" height="254.9033631688588"/>
+<circle id="hole-A" class="source" cx="0" cy="-86" r="3.0" data-source-x-mm="0" data-source-y-mm="86" data-source-face="6"/>
+<circle class="recess" cx="0" cy="-86" r="7.0"/>
+<path class="dim" d="M -10 -86 H 10 M 0 -96 V -76"/>
+<text x="11" y="-94" style="font-weight:bold">A</text>
+<circle id="hole-B" class="source" cx="74.47818472546173" cy="-43" r="3.0" data-source-x-mm="74.47818472546173" data-source-y-mm="43" data-source-face="9"/>
+<circle class="recess" cx="74.47818472546173" cy="-43" r="7.0"/>
+<path class="dim" d="M 64.47818472546173 -43 H 84.47818472546173 M 74.47818472546173 -53 V -33"/>
+<text x="85.47818472546173" y="-51" style="font-weight:bold">B</text>
+<circle id="hole-C" class="source" cx="0" cy="86" r="3.0" data-source-x-mm="0" data-source-y-mm="-86" data-source-face="11"/>
+<circle class="recess" cx="0" cy="86" r="7.0"/>
+<path class="dim" d="M -10 86 H 10 M 0 76 V 96"/>
+<text x="11" y="78" style="font-weight:bold">C</text>
+<circle id="hole-D" class="source" cx="74.47818472546173" cy="43" r="3.0" data-source-x-mm="74.47818472546173" data-source-y-mm="-43" data-source-face="13"/>
+<circle class="recess" cx="74.47818472546173" cy="43" r="7.0"/>
+<path class="dim" d="M 64.47818472546173 43 H 84.47818472546173 M 74.47818472546173 33 V 53"/>
+<text x="85.47818472546173" y="35" style="font-weight:bold">D</text>
+<path class="dim" d="M 0 12 V -25 M -12 0 H 25"/>
+<text x="27" y="4">+X</text><text x="3" y="-28">+Y</text>
+<text x="-28" y="20">LCS_Bot</text>
+<path class="dim" d="M -100.0 175.0 H 200.0 M -100.0 170.0 V 180.0 M 200.0 170.0 V 180.0"/>
+<text x="-2.0" y="189.0">300 proposed blank</text>
+<path class="dim" d="M -115.0 -160.0 V 160.0 M -120.0 -160.0 H -110.0 M -120.0 160.0 H -110.0"/>
+<text x="-125.0" y="18" transform="rotate(-90 -125.0 18)">320 proposed blank</text>
+</g>
+<text x="412" y="98" style="font-size:13px;font-weight:bold">SOURCE: BaseBot::Body002</text>
+<text x="412" y="116">Four Ø6 bores, source z=0 to 5</text>
+<text x="412" y="132">Ø14 relief starts at z=5</text>
+<text x="412" y="148">Relief top is nonplanar; depth is not uniform</text>
+<text x="412" y="172">Hole    X             Y</text>
+<text x="412" y="188">A</text>
+<text x="440" y="188">0.000000</text>
+<text x="520" y="188">86.000000</text>
+<text x="412" y="204">B</text>
+<text x="440" y="204">74.478185</text>
+<text x="520" y="204">43.000000</text>
+<text x="412" y="220">C</text>
+<text x="440" y="220">0.000000</text>
+<text x="520" y="220">-86.000000</text>
+<text x="412" y="236">D</text>
+<text x="440" y="236">74.478185</text>
+<text x="520" y="236">-43.000000</text>
+<text x="412" y="270">All centers lie on R86</text>
+<text x="412" y="286">Asymmetric pattern; not a square</text>
+<text x="412" y="310">Dotted rectangle: source bounding envelope</text>
+<text x="412" y="326">202.451682 × 254.903363 × 65.5</text>
+<text x="412" y="350" fill="#276ac2">BLUE DASHED: proposed 300 × 320 blank</text>
+<text x="412" y="366">Thickness / finished clearance / clamp pads:</text>
+<text x="412" y="382">UNSELECTED. Requires bench + wrench data.</text>
+<text x="24" y="474">Frame: BaseBot source; LCS_Bot identity. Bench transform unmeasured.</text>
+<text x="24" y="490">Trace: thor-fabrication-interfaces.json · cylinder faces 6/9/11/13; relief faces 63/64/69/70.</text>
+<text x="24" y="506">AngelLM / Thor contributors · CC-BY-SA-4.0 · preserved source; annotations and blank proposal added.</text>
+<text x="24" y="522">Pinned source 286b081fe6f056d87c379b884781ef77ff6a0159 · no slicing, fit or load qualification.</text>
+</svg>

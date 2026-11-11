@@ -1,0 +1,602 @@
+{
+  "schema_version": 1,
+  "evidence_class": "fabrication_observation_records_not_part_or_robot_qualification",
+  "manifest_canonical_sha256": "4a0deebe94a6da554fc3ce7d56d749e0a639c2d2a127eb8f59cea0a360b4128d",
+  "units": {
+    "mass": "kg",
+    "length": "m",
+    "density": "kg/m^3"
+  },
+  "records": [
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art1Body_Art1Body",
+      "asset_id": "Art1Body::Body",
+      "variant_id": "nominal",
+      "source_sha256": "8afa16c8ff3adebd87e48b67dfb20d3224402bd517010dc112950a28f219690a",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art1Bot_Art1Bot",
+      "asset_id": "Art1Bot::Body001",
+      "variant_id": "nominal",
+      "source_sha256": "31c8fa13cd2868e68cbcd97ec43970ff120760fad46f0a0e53608a98f29666ca",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art1FanHolder_Art1FanHolder",
+      "asset_id": "Art1FanHolder::Body",
+      "variant_id": "nominal",
+      "source_sha256": "df43383d3d3a81f95af8ed3c9c589ac679e3f1eda0c60e642f292480c834e985",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art1FanHolder_Art1FanHolder001",
+      "asset_id": "Art1FanHolder::Body",
+      "variant_id": "nominal",
+      "source_sha256": "df43383d3d3a81f95af8ed3c9c589ac679e3f1eda0c60e642f292480c834e985",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art1Top_Art1Top",
+      "asset_id": "Art1Top::Body",
+      "variant_id": "nominal",
+      "source_sha256": "0dbfa7c49d0e3ca032e219b306e532fd403a145fb15cf304aa880a8dd3067bd6",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art23Optodisk_Art23Optodisk",
+      "asset_id": "Art23Optodisk::Body",
+      "variant_id": "nominal",
+      "source_sha256": "c81e788792edea63c7e73a12b06dc8073668a6b899f8d46ea5c3d9d399de431c",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art2BodyACover1_Art2BodyACover1",
+      "asset_id": "Art2BodyACover1::Body",
+      "variant_id": "nominal",
+      "source_sha256": "2ed0c298cbd55af72065d8a850f20b23f2dcd72de8c79ee9d6384bc4c537d514",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art2MotorGear_Art2MotorGear",
+      "asset_id": "Art2MotorGear::Body",
+      "variant_id": "nominal",
+      "source_sha256": "a8761b35792888dd679bdc1bab74a353b5893365aff268ae1d35a985a2984fc8",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art2MotorGear_Art2MotorGear001",
+      "asset_id": "Art2MotorGear::Body",
+      "variant_id": "nominal",
+      "source_sha256": "a8761b35792888dd679bdc1bab74a353b5893365aff268ae1d35a985a2984fc8",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::CommonBearingFixThrough_CommonBearingFixThrough",
+      "asset_id": "CommonBearingFixThrough::Body",
+      "variant_id": "nominal",
+      "source_sha256": "ea66043a24b3b93c3722ad48ce4a0830f1561a6a925818b5d1dcf7d411a25517",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art2BodyACover2_Art2BodyACover2",
+      "asset_id": "Art2BodyACover2::Body",
+      "variant_id": "nominal",
+      "source_sha256": "83dae954cbbab7b380094033d0c689d774862878f809f5f9e2e31c9bbb9bbde3",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art2BodyA_Art2BodyA",
+      "asset_id": "Art2BodyA::Body001",
+      "variant_id": "nominal",
+      "source_sha256": "ddf08ae66dfc767bbce3f3354d8ba8f471f5527e8cdbfec9570933c4fb4e276a",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art2BodyBCover_Art2BodyBCover",
+      "asset_id": "Art2BodyBCover::Body",
+      "variant_id": "nominal",
+      "source_sha256": "b8901be694766792ec0acd9e472d39552a6dfe9e0b69392e2e80ddc7499cdfdf",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art2BodyB_Art2BodyB",
+      "asset_id": "Art2BodyB::Body",
+      "variant_id": "nominal",
+      "source_sha256": "a63e36fd3b27321061ef875da8454e2d787a83fb8737fb1774aa458c8a8c7882",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art2BodyUnion_Art2BodyUnion",
+      "asset_id": "Art2BodyUnion::Body",
+      "variant_id": "nominal",
+      "source_sha256": "238330fcdb1a52d6ccf5e3e2951d49c0a79bd24f42eb24162581727fb769fecc",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art3TensionerBody_Art3TensionerBody",
+      "asset_id": "Art3TensionerBody::Body",
+      "variant_id": "nominal",
+      "source_sha256": "f105e77dbb72523f842e58b9bcd9a54c3ec5f5eaf771a0798851cf7f13752a55",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art3TensionerBody_Art3TensionerBody001",
+      "asset_id": "Art3TensionerBody::Body",
+      "variant_id": "nominal",
+      "source_sha256": "f105e77dbb72523f842e58b9bcd9a54c3ec5f5eaf771a0798851cf7f13752a55",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art3TensionerPulley_Art3TensionerPulley",
+      "asset_id": "Art3TensionerPulley::Body",
+      "variant_id": "nominal",
+      "source_sha256": "2bbf0c3c522db8b2247ed6f3dbce48cd111d4d21349f05cab5bc01d3812102da",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art3TensionerPulley_Art3TensionerPulley001",
+      "asset_id": "Art3TensionerPulley::Body",
+      "variant_id": "nominal",
+      "source_sha256": "2bbf0c3c522db8b2247ed6f3dbce48cd111d4d21349f05cab5bc01d3812102da",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::CommonBearingFix_CommonBearingFix",
+      "asset_id": "CommonBearingFix::Body",
+      "variant_id": "nominal",
+      "source_sha256": "cf0d6322f0c0a947079c2a3782dcf878feb71a0e34b0de220c3722a24ec8e72b",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::CommonBearingFix_CommonBearingFix001",
+      "asset_id": "CommonBearingFix::Body",
+      "variant_id": "nominal",
+      "source_sha256": "cf0d6322f0c0a947079c2a3782dcf878feb71a0e34b0de220c3722a24ec8e72b",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::CommonBearingFix_CommonBearingFix002",
+      "asset_id": "CommonBearingFix::Body",
+      "variant_id": "nominal",
+      "source_sha256": "cf0d6322f0c0a947079c2a3782dcf878feb71a0e34b0de220c3722a24ec8e72b",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::CommonBearingFix_CommonBearingFix003",
+      "asset_id": "CommonBearingFix::Body",
+      "variant_id": "nominal",
+      "source_sha256": "cf0d6322f0c0a947079c2a3782dcf878feb71a0e34b0de220c3722a24ec8e72b",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Unnamed_Art2BodyAWindow",
+      "asset_id": "Art2BodyAWindow::Body",
+      "variant_id": "nominal",
+      "source_sha256": "ced59ddf86e57b3f3615bb4ee44d96b75b7032a9239733845a26e8e334941e98",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Unnamed_Art2SideCover",
+      "asset_id": "Art2SideCover::Body",
+      "variant_id": "nominal",
+      "source_sha256": "a618cb1c6f2168340ccc5e49756b1ff8319b91a05b6c5f578275fbfaaffbf14e",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Unnamed_Art2SideCover001",
+      "asset_id": "Art2SideCover::Body",
+      "variant_id": "nominal",
+      "source_sha256": "a618cb1c6f2168340ccc5e49756b1ff8319b91a05b6c5f578275fbfaaffbf14e",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Art23Optodisk_Art23Optodisk",
+      "asset_id": "Art23Optodisk::Body",
+      "variant_id": "nominal",
+      "source_sha256": "c81e788792edea63c7e73a12b06dc8073668a6b899f8d46ea5c3d9d399de431c",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Art3Body_Art3Body",
+      "asset_id": "Art3Body::Body002",
+      "variant_id": "nominal",
+      "source_sha256": "d6e2759daadc02ab36a7b5c6920b7f7b42066f63c2a7600fb4ff86487565e79e",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Art3Pulley_Art3Pulley",
+      "asset_id": "Art3Pulley::Body",
+      "variant_id": "nominal",
+      "source_sha256": "d450cc565e722981346fc2b1aa3662474c83d574ca39a5602bacb98d8619fd9e",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Art4BearingRing_Art4BearingRing",
+      "asset_id": "Art4BearingRing::Body",
+      "variant_id": "nominal",
+      "source_sha256": "e4a84700481629554e0e79de956562f54d46aaeeb60908f4e5aee4c5336d7214",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Art4MotorFix_Art4MotorFix",
+      "asset_id": "Art4MotorFix::Body",
+      "variant_id": "nominal",
+      "source_sha256": "976a04a9b3bbf21ea80a9e1e6ac53ef64f0ac7aa93fbcff7184f84b00688e6c4",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Art4MotorGear_Art4MotorGear",
+      "asset_id": "Art4MotorGear::Body",
+      "variant_id": "nominal",
+      "source_sha256": "c988a0d9be1fc1312fabc1b6b10108cf05f23fb3298a0ece627cb5eb1d930358",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::CommonBearingFixThrough_CommonBearingFixThrough",
+      "asset_id": "CommonBearingFixThrough::Body",
+      "variant_id": "nominal",
+      "source_sha256": "ea66043a24b3b93c3722ad48ce4a0830f1561a6a925818b5d1dcf7d411a25517",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::CommonBearingFixThrough_CommonBearingFixThrough001",
+      "asset_id": "CommonBearingFixThrough::Body",
+      "variant_id": "nominal",
+      "source_sha256": "ea66043a24b3b93c3722ad48ce4a0830f1561a6a925818b5d1dcf7d411a25517",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4BearingFix_Art4BearingFix",
+      "asset_id": "Art4BearingFix::Body",
+      "variant_id": "nominal",
+      "source_sha256": "248a21d01617b0e784a9743d186ab698d6406a9eeba6e6a27c2c426baf8dca55",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4BearingFix_Art4BearingFix001",
+      "asset_id": "Art4BearingFix::Body",
+      "variant_id": "nominal",
+      "source_sha256": "248a21d01617b0e784a9743d186ab698d6406a9eeba6e6a27c2c426baf8dca55",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4BodyBot_Art4BodyBot",
+      "asset_id": "Art4BodyBot::Body",
+      "variant_id": "nominal",
+      "source_sha256": "b7eb908539d3c6c6310c2f64ddb7de758d9f742f5c44ac45bd8dea69925d9413",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4BodyFan_Art4BodyFan",
+      "asset_id": "Art4BodyFan::Body",
+      "variant_id": "nominal",
+      "source_sha256": "6520e13c078f3a9862c98443dc4e9b77f77c429b32f387e82c3f14eaabc8fa16",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4BodyFan_Art4BodyFan001",
+      "asset_id": "Art4BodyFan::Body",
+      "variant_id": "nominal",
+      "source_sha256": "6520e13c078f3a9862c98443dc4e9b77f77c429b32f387e82c3f14eaabc8fa16",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4Body_Art4Body",
+      "asset_id": "Art4Body::Body",
+      "variant_id": "nominal",
+      "source_sha256": "73f6b57135ea18e516d6b3280d91063d3d23c891d809a6ed52ae9594483ddb31",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4Optodisk_Art4Optodisk",
+      "asset_id": "Art4Optodisk::Body",
+      "variant_id": "nominal",
+      "source_sha256": "0822ae9a4a1460e74e05ff068e2662670e9db50991e28d2d0d3da6f73385cbb4",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4TransmissionColumn_Art4TransmissionColumn",
+      "asset_id": "Art4TransmissionColumn::Body",
+      "variant_id": "nominal",
+      "source_sha256": "f31295eaaf973347c73779e69ca33f095656b1e7bc4511eac5ce879aaaddbb2c",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art56MotorHolderA_Art56MotorHolderA",
+      "asset_id": "Art56MotorHolderA::Body",
+      "variant_id": "nominal",
+      "source_sha256": "a1355712512d87ac25000ab60eab65d6c9ba454099ebc6761dbf93d6c003c49a",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art56MotorHolderA_Art56MotorHolderA001",
+      "asset_id": "Art56MotorHolderA::Body",
+      "variant_id": "nominal",
+      "source_sha256": "a1355712512d87ac25000ab60eab65d6c9ba454099ebc6761dbf93d6c003c49a",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art56MotorHolderB_Art56MotorHolderB",
+      "asset_id": "Art56MotorHolderB::Body",
+      "variant_id": "nominal",
+      "source_sha256": "d0ae1726649b8b4758b665fe2b01e8d065e57b2c5b916ef4e4b4dc7840fcfd77",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art56MotorHolderB_Art56MotorHolderB001",
+      "asset_id": "Art56MotorHolderB::Body",
+      "variant_id": "nominal",
+      "source_sha256": "d0ae1726649b8b4758b665fe2b01e8d065e57b2c5b916ef4e4b4dc7840fcfd77",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Art56GearPlate_Art56GearPlate",
+      "asset_id": "Art56GearPlate::Body",
+      "variant_id": "nominal",
+      "source_sha256": "38ca5952d4e03e4009f94628d0c435153b980ea558a608fca9ac1c9aaf79d411",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Art56MotorCoverRing_Art56MotorCoverRing",
+      "asset_id": "Art56MotorCoverRing::Body",
+      "variant_id": "nominal",
+      "source_sha256": "8d037cf7a3e63ee8f04b39be35836d35c5d6f330497c8df5a735cd05abd071fa",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Art56SmallGear_Art56SmallGear",
+      "asset_id": "Art56SmallGear::Body",
+      "variant_id": "nominal",
+      "source_sha256": "b737ce24c58bc5ffc3763fcd6cdcfdd425747565c2850054397f066ecd5a63a0",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Art56SmallGear_Art56SmallGear001",
+      "asset_id": "Art56SmallGear::Body",
+      "variant_id": "nominal",
+      "source_sha256": "b737ce24c58bc5ffc3763fcd6cdcfdd425747565c2850054397f066ecd5a63a0",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::CommonBearingFixThrough_CommonBearingFixThrough",
+      "asset_id": "CommonBearingFixThrough::Body",
+      "variant_id": "nominal",
+      "source_sha256": "ea66043a24b3b93c3722ad48ce4a0830f1561a6a925818b5d1dcf7d411a25517",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::GripperActiveArm_GripperActiveArm",
+      "asset_id": "GripperActiveArm::Body",
+      "variant_id": "nominal",
+      "source_sha256": "3ba5ba6f74c5d2f45eeca56f28534dc750e7f0ae735b6a0b3e16beeef21adc67",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::GripperBot_GripperBot",
+      "asset_id": "GripperBot::Body",
+      "variant_id": "nominal",
+      "source_sha256": "a65e68644312adee7381e3a640b2b827f9c2c3362bbe4a842ccee9fea969d176",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::GripperFinger_sym001/AssemblyArt56::Unnamed1_GripperFinger_mirrored",
+      "asset_id": "GripperFinger::Body",
+      "variant_id": "reflected",
+      "source_sha256": "ab4daca4dd2f447029f4c76150b7f617fbdda74ae467cf6962938efe148d57a6",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed1_GripperFinger",
+      "asset_id": "GripperFinger::Body",
+      "variant_id": "nominal",
+      "source_sha256": "ab4daca4dd2f447029f4c76150b7f617fbdda74ae467cf6962938efe148d57a6",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed2_GripperArm",
+      "asset_id": "GripperArm::Body",
+      "variant_id": "nominal",
+      "source_sha256": "f1511f4b319a5727cf07771abe4c75002d5527e0a10291d47c1fe8024a44c6fc",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed2_GripperArm001",
+      "asset_id": "GripperArm::Body",
+      "variant_id": "nominal",
+      "source_sha256": "f1511f4b319a5727cf07771abe4c75002d5527e0a10291d47c1fe8024a44c6fc",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed3_GripperPassiveArm",
+      "asset_id": "GripperPassiveArm::Body",
+      "variant_id": "nominal",
+      "source_sha256": "d14ac1debf67735fd623e052d468a9773066c32356390799b4ea07addcba68d4",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed_GripperTop",
+      "asset_id": "GripperTop::Body",
+      "variant_id": "nominal",
+      "source_sha256": "10f501e23263c8ddfc37e472fada7d9978d5f6c10cedf6deaa943dde87bdea56",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Art1GearMotor_Art1GearMotor",
+      "asset_id": "Art1GearMotor::Body",
+      "variant_id": "nominal",
+      "source_sha256": "7de75d92b15bdfc548002c2bb93ab8192720b7948338b708f34460d55321d3f3",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::BaseBearingFix_BaseBearingFix",
+      "asset_id": "BaseBearingFix::Body",
+      "variant_id": "nominal",
+      "source_sha256": "a8ddcd5f8aee6cc4ff33671e3c27e2d3029fe334f4f02baeb579eb6ecaadec82",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::BaseBot_BaseBot",
+      "asset_id": "BaseBot::Body002",
+      "variant_id": "nominal",
+      "source_sha256": "c637feec821a886c80c8622cf316de02c05f06d90ff49af9df9b0a0cdff00e5a",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::BaseBoxBody_BaseBoxBody",
+      "asset_id": "BaseBoxBody::Body002",
+      "variant_id": "nominal",
+      "source_sha256": "bf4c86c80ee90bc8e46bea77db6850027c15e45c86e2da1b9cfeffbce9cb6de1",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::BaseBoxCover_BaseBoxCover",
+      "asset_id": "BaseBoxCover::Body",
+      "variant_id": "nominal",
+      "source_sha256": "9d1ca5fa12b76b49203f26f440ab47fe9c5a74e921a6267de8d60fa8ac3d7a37",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::BaseTop_BaseTop",
+      "asset_id": "BaseTop::Body",
+      "variant_id": "nominal",
+      "source_sha256": "cad90f1414909eaa797edb9bc00a685c3f0856cfa4be5abbcd539afb96417490",
+      "slicer": null,
+      "weighing": null,
+      "fit": []
+    }
+  ],
+  "qualification": {
+    "mass_or_fit_accepted_for_design": false,
+    "manufacturing_release": false,
+    "hardware_operation_authorized": false
+  }
+}

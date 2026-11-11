@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1000" viewBox="0 0 720 600" role="img" aria-labelledby="title description">
+<title id="title">Thor source socket and radial retention interface</title>
+<desc id="description">Source dimensional schematics and saved frame table. Separate diameters are compared without implying a physical fit. No fabrication release.</desc>
+<metadata>{&quot;evidence_class&quot;: &quot;source_dimensions_and_saved_frame_table_not_manufacturing_release&quot;, &quot;interface_capture_canonical_sha256&quot;: &quot;6eb6b42ace8b0093c9718ec034565a37e06aff15fb819d098ef557e1d9c4c691&quot;, &quot;radial_hole_axis_directions&quot;: [[0, -1, 0], [-0.8660254037844386, 0.5, 0], [0.8660254037844386, 0.5, 0]], &quot;radial_hole_source_z_mm&quot;: -38.0, &quot;saved_mating_frames&quot;: {&quot;attachment_offset&quot;: [[0.9396926207859074, -0.3420201433256713, 6.945927106677268e-17, 0.0], [-0.3420201433256713, -0.9396926207859078, 3.9392310120488315e-16, 0.0], [-6.945927106677268e-17, -3.9392310120488315e-16, -1.0000000000000004, 0.001], [0.0, 0.0, 0.0, 1.0]], &quot;evidence_class&quot;: &quot;saved_source_mating_expression_not_calibrated_tool_transform&quot;, &quot;gripper_source_from_LCS_GripperBot&quot;: [[-0.17096774193548492, 0.9852766267487937, -9.755447259195459e-17, 2.1506672062834805e-18], [-1.1455497803631093e-16, -2.220446049250313e-16, -1.0, 0.0085], [-0.9852766267487937, -0.1709677419354849, 0.0, 0.017149999999999995], [0.0, 0.0, 0.0, 1.0]], &quot;physical_TCP&quot;: null, &quot;plate_source_from_LCS_Gripper&quot;: [[1.0, 0.0, 0.0, 9.440000000000002e-18], [0.0, -1.0, 0.0, -1.2434497875801754e-17], [0.0, 0.0, -1.0, -0.042499999999999996], [0.0, 0.0, 0.0, 1.0]], &quot;plate_source_from_gripper_source&quot;: [[-0.4976415785852609, -1.0116201100063448e-16, -0.8673827639878313, 0.01487561440239131], [0.8673827639878317, 1.4608931446486082e-16, -0.4976415785852609, 0.008534553072737205], [2.786934570308454e-16, -1.0000000000000004, -1.3578473940232224e-16, -0.03499999999999999], [0.0, 0.0, 0.0, 1.0]], &quot;saved_expression&quot;: &quot;Art56GearPlate_Art56GearPlate.Placement * Art56GearPlate#LCS_Gripper.Placement * AttachmentOffset * GripperBot#LCS_GripperBot.Placement ^ -1&quot;, &quot;transform_direction&quot;: &quot;parent_from_child; translation in metres&quot;}, &quot;source_files&quot;: {&quot;Art56GearPlate.fcstd&quot;: &quot;38ca5952d4e03e4009f94628d0c435153b980ea558a608fca9ac1c9aaf79d411&quot;, &quot;AssemblyArt56.FCStd&quot;: &quot;a04836216dcae82eb033c15daba6e41dedb85b03f86ff21e56b77cdff835a473&quot;, &quot;GripperBot.FCStd&quot;: &quot;a65e68644312adee7381e3a640b2b827f9c2c3362bbe4a842ccee9fea969d176&quot;}, &quot;source_revision&quot;: &quot;286b081fe6f056d87c379b884781ef77ff6a0159&quot;}</metadata>
+<rect width="720" height="600" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#15212b;font-size:10px}.source{stroke:#15212b;stroke-width:1;fill:none}.dim{stroke:#526170;stroke-width:.7;fill:none}.axis{stroke:#ac3f24;stroke-width:.8;stroke-dasharray:4 2;fill:none}.comparison{stroke:#167a59;stroke-width:.8;stroke-dasharray:3 2;fill:none}</style>
+<text x="24" y="28" style="font-size:18px;font-weight:bold">Thor tool interface</text>
+<text x="24" y="46">SOURCE DIMENSIONS + SAVED MATING FRAMES · all drawing dimensions mm</text>
+<text x="24" y="64">NO MANUFACTURING RELEASE · dimensions schematic, not to screen scale</text>
+<text x="24" y="93" style="font-size:12px;font-weight:bold">Plate XY diameter comparison</text>
+<text x="24" y="109">Dashed socket circle compares sizes; not an assembled overlay</text>
+<g transform="translate(140 195) scale(4 -4)">
+<circle id="male-diameter" class="source" cx="0" cy="0" r="15.0"/>
+<circle id="socket-diameter-comparison" class="comparison" cx="0" cy="0" r="15.5"/>
+<path id="radial-axis-0" class="axis" d="M 0.0 18.0 L 0.0 -18.0" data-source-direction="0,-1,0"/>
+<path id="radial-axis-1" class="axis" d="M 15.588457268119894 -9.0 L -15.588457268119894 9.0" data-source-direction="-0.8660254037844386,0.5,0"/>
+<path id="radial-axis-2" class="axis" d="M -15.588457268119894 -9.0 L 15.588457268119894 9.0" data-source-direction="0.8660254037844386,0.5,0"/>
+</g>
+<text x="24" y="283">Male Ø30; socket Ø31; nominal diameter difference 1</text>
+<text x="24" y="300">Three Ø3.4 radial axis lines at 120°; not an axial bolt circle</text>
+<text x="372" y="93" style="font-size:12px;font-weight:bold">Plate source axial section envelope</text>
+<text x="372" y="109">Horizontal = source Z; vertical = source X</text>
+<g transform="translate(600 195) scale(4)">
+<rect id="male-axial-envelope" class="source" x="-42.5" y="-15.0" width="37.5" height="30.0"/>
+<path id="radial-hole-plane" class="axis" d="M -38.0 -18.0 V 18.0"/>
+<path class="dim" d="M -42.5 18.0 H -38.0 M -42.5 16.0 V 20.0 M -38.0 16.0 V 20.0"/>
+</g>
+<text x="372" y="283">Source z=-42.5 to -5; radial plane z=-38</text>
+<text x="372" y="300">Hole plane 4.5 from gripper-side end</text>
+<text x="24" y="326">The bottom + top gripper halves jointly form the socket. CAD diameter difference is not measured fit.</text>
+<text x="24" y="344">Saved mating: LCS_Gripper × AttachmentOffset × inverse(LCS_GripperBot)</text>
+<text x="24" y="361">Offset includes +1 mm in mating-local Z and 180° tilt. Keep the full transform; axis alignment alone is insufficient.</text>
+<text x="24" y="388" style="font-size:12px;font-weight:bold">Plate source ← gripper source (row-major; translation in metres)</text>
+<text x="40" y="408" style="font-family:monospace" xml:space="preserve">-0.497641579    -0.000000000    -0.867382764     0.014875614</text>
+<text x="40" y="425" style="font-family:monospace" xml:space="preserve"> 0.867382764     0.000000000    -0.497641579     0.008534553</text>
+<text x="40" y="442" style="font-family:monospace" xml:space="preserve"> 0.000000000    -1.000000000    -0.000000000    -0.035000000</text>
+<text x="40" y="459" style="font-family:monospace" xml:space="preserve"> 0.000000000     0.000000000     0.000000000     1.000000000</text>
+<text x="24" y="488">Trace: Art56GearPlate Face157 / radial faces159,161,162; GripperBot Face46; saved AssemblyArt56 attachment.</text>
+<text x="24" y="506">Full source datums and transforms are embedded in SVG metadata. Physical TCP, retention, fit and jaw closure remain unverified.</text>
+<text x="24" y="532">AngelLM / Thor contributors · CC-BY-SA-4.0 · preserved geometry; dimensional annotations added.</text>
+<text x="24" y="550">Pinned source 286b081fe6f056d87c379b884781ef77ff6a0159</text>
+<text x="24" y="568">This report composes saved rigid transforms only; it does not rebuild native CAD or solve a linkage.</text>
+</svg>

@@ -1,0 +1,3259 @@
+{
+  "schema_version": 1,
+  "evidence_class": "source_capture_reconciliation_not_export_or_manufacturing_release",
+  "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+  "input_canonical_sha256": {
+    "inventory": "e52e699ff7c0d9e1dc3eedf9416e7e1da84ae6e13a5152cb5be6cd4f14b29c31",
+    "interfaces": "6eb6b42ace8b0093c9718ec034565a37e06aff15fb819d098ef557e1d9c4c691",
+    "source_inspection": "063784958f351e6ef676cf9be3145544b6ebd73d1bdcb1b74d22e645ea563a3b"
+  },
+  "mass_overlay": {
+    "method": "existing thor_load_analysis.build_thor_snapshot default PLA scenario",
+    "printed_density_kg_m3": 1240,
+    "effective_whole_part_solid_fraction": 0.5,
+    "slicer_infill_setting": null,
+    "measured_mass": false,
+    "printed_mass_kg": 2.1609003361781007
+  },
+  "counts": {
+    "installed_printed_leaves": 65,
+    "unique_source_assets": 46,
+    "export_geometry_variants": 47,
+    "reflected_installed_leaves": 1
+  },
+  "installed_printed_volume_mm3": 3485323.122867904,
+  "assets": [
+    {
+      "asset_id": "Art1Body::Body",
+      "source_file": "freecad-src/Art1Body.fcstd",
+      "source_object": "Art1Body::Body",
+      "source_sha256": "8afa16c8ff3adebd87e48b67dfb20d3224402bd517010dc112950a28f219690a",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/Art1Body.fcstd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -81.17941502192954,
+        "XMax": 81.17941502192954,
+        "YMin": -81.17941502192954,
+        "YMax": 81.17941502192954,
+        "ZMin": -6.0000000023e-07,
+        "ZMax": 161.5614141209609
+      },
+      "source_envelope_xyz_mm": [
+        162.3588300438591,
+        162.3588300438591,
+        161.5614147209609
+      ],
+      "source_volume_mm3": 298648.10044680396,
+      "quantity": 1,
+      "installed_volume_mm3": 298648.1004468039,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art1Body_Art1Body",
+          "linked_object": "Art1Body::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 298648.1004468039,
+          "zero_world_com_m": [
+            3.33644969867854e-07,
+            0.001858196981413608,
+            0.1718323782516877
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.18516182227701844
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 1,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "load-bearing bosses, joint/shaft interfaces and fastener access",
+        "layer_and_support_risks": "tension normal to layers, unsupported bosses and inaccessible internal supports",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "unrepaired_original_history; validated_static_snapshot_separate; export_only_exact_accepted_final_solid_after_hash_and_native_check"
+    },
+    {
+      "asset_id": "Art1Bot::Body001",
+      "source_file": "freecad-src/Art1Bot.fcstd",
+      "source_object": "Art1Bot::Body001",
+      "source_sha256": "31c8fa13cd2868e68cbcd97ec43970ff120760fad46f0a0e53608a98f29666ca",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/Art1Bot.fcstd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -55.068888040451014,
+        "XMax": 55.068888040451014,
+        "YMin": -55.068888040451014,
+        "YMax": 55.06888804045103,
+        "ZMin": -3.6345466329775703e-14,
+        "ZMax": 35.00008288584366
+      },
+      "source_envelope_xyz_mm": [
+        110.13777608090203,
+        110.13777608090204,
+        35.000082885843696
+      ],
+      "source_volume_mm3": 80464.69601268633,
+      "quantity": 1,
+      "installed_volume_mm3": 80464.69601268639,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art1Bot_Art1Bot",
+          "linked_object": "Art1Bot::Body001",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 80464.69601268639,
+          "zero_world_com_m": [
+            -3.1831472632232212e-06,
+            -4.169552121941039e-06,
+            0.07204924388139539
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.04988811152786556
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 1,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "load-bearing bosses, joint/shaft interfaces and fastener access",
+        "layer_and_support_risks": "tension normal to layers, unsupported bosses and inaccessible internal supports",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "Art1FanHolder::Body",
+      "source_file": "freecad-src/Art1FanHolder.FCStd",
+      "source_object": "Art1FanHolder::Body",
+      "source_sha256": "df43383d3d3a81f95af8ed3c9c589ac679e3f1eda0c60e642f292480c834e985",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/Art1FanHolder.FCStd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -30.0,
+        "XMax": 30.0,
+        "YMin": -20.0,
+        "YMax": 20.0,
+        "ZMin": -1.1865047472120699e-15,
+        "ZMax": 3.0
+      },
+      "source_envelope_xyz_mm": [
+        60.0,
+        40.0,
+        3.0000000000000013
+      ],
+      "source_volume_mm3": 1299.1220874183234,
+      "quantity": 2,
+      "installed_volume_mm3": 2598.244174836651,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art1FanHolder_Art1FanHolder",
+          "linked_object": "Art1FanHolder::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 1299.122087418326,
+          "zero_world_com_m": [
+            0.040313025108685875,
+            3.2388702772552913e-07,
+            0.11855365251449615
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.0008054556941993621
+        },
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art1FanHolder_Art1FanHolder001",
+          "linked_object": "Art1FanHolder::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 1299.1220874183252,
+          "zero_world_com_m": [
+            -0.0403137389830318,
+            2.9109184203650453e-07,
+            0.11855365251449607
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.0008054556941993617
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 2,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "thin walls, screw bosses, cable openings and fan/tool access",
+        "layer_and_support_risks": "thin-wall warping, screw-boss splitting and supports trapped in openings",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "Art1GearMotor::Body",
+      "source_file": "freecad-src/Art1GearMotor.fcstd",
+      "source_object": "Art1GearMotor::Body",
+      "source_sha256": "7de75d92b15bdfc548002c2bb93ab8192720b7948338b708f34460d55321d3f3",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/Art1GearMotor.fcstd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -12.11178748019051,
+        "XMax": 12.11377149235427,
+        "YMin": -12.169900390441423,
+        "YMax": 12.171269880082686,
+        "ZMin": -10.000000000000002,
+        "ZMax": 12.001268087165691
+      },
+      "source_envelope_xyz_mm": [
+        24.22555897254478,
+        24.34117027052411,
+        22.00126808716569
+      ],
+      "source_volume_mm3": 7462.259151219078,
+      "quantity": 1,
+      "installed_volume_mm3": 7462.259151219074,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Art1GearMotor_Art1GearMotor",
+          "linked_object": "Art1GearMotor::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 7462.259151219074,
+          "zero_world_com_m": [
+            0.040173949398844104,
+            -2.423259645958914e-07,
+            0.058923886854862204
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.004626600673755826
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 1,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "teeth, hub bore, shaft engagement and radial runout",
+        "layer_and_support_risks": "hub splitting across layers and unsupported tooth/overhang surfaces",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "Art1Top::Body",
+      "source_file": "freecad-src/Art1Top.fcstd",
+      "source_object": "Art1Top::Body",
+      "source_sha256": "0dbfa7c49d0e3ca032e219b306e532fd403a145fb15cf304aa880a8dd3067bd6",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/Art1Top.fcstd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -75.0,
+        "XMax": 75.0,
+        "YMin": -75.0,
+        "YMax": 75.0,
+        "ZMin": -7.86921888376638e-15,
+        "ZMax": 43.000000000000036
+      },
+      "source_envelope_xyz_mm": [
+        150.0,
+        150.0,
+        43.00000000000004
+      ],
+      "source_volume_mm3": 154194.32762722234,
+      "quantity": 1,
+      "installed_volume_mm3": 154194.3276272224,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art1Top_Art1Top",
+          "linked_object": "Art1Top::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 154194.3276272224,
+          "zero_world_com_m": [
+            -3.569371731618933e-07,
+            3.0748943488059e-07,
+            0.10139162214974659
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.0956004831288779
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 1,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "load-bearing bosses, joint/shaft interfaces and fastener access",
+        "layer_and_support_risks": "tension normal to layers, unsupported bosses and inaccessible internal supports",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "Art23Optodisk::Body",
+      "source_file": "freecad-src/Art23Optodisk.fcstd",
+      "source_object": "Art23Optodisk::Body",
+      "source_sha256": "c81e788792edea63c7e73a12b06dc8073668a6b899f8d46ea5c3d9d399de431c",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/Art23Optodisk.fcstd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -29.2,
+        "XMax": 29.2,
+        "YMin": -3.0000000000000067,
+        "YMax": 29.2,
+        "ZMin": 0.0,
+        "ZMax": 15.0
+      },
+      "source_envelope_xyz_mm": [
+        58.4,
+        32.2,
+        15.0
+      ],
+      "source_volume_mm3": 1743.4963059185434,
+      "quantity": 2,
+      "installed_volume_mm3": 3486.9926118370845,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art23Optodisk_Art23Optodisk",
+          "linked_object": "Art23Optodisk::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 1743.4963059185438,
+          "zero_world_com_m": [
+            -3.7383015729334354e-07,
+            0.041531595147083405,
+            0.1874363212355486
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.0010809677096694972
+        },
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Art23Optodisk_Art23Optodisk",
+          "linked_object": "Art23Optodisk::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 1743.4963059185407,
+          "zero_world_com_m": [
+            -2.473414515423e-17,
+            0.04153128765764203,
+            0.3765636787644545
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.0010809677096694952
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 2,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "teeth, hub bore, shaft engagement and radial runout",
+        "layer_and_support_risks": "hub splitting across layers and unsupported tooth/overhang surfaces",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "Art2BodyA::Body001",
+      "source_file": "freecad-src/Art2BodyA.fcstd",
+      "source_object": "Art2BodyA::Body001",
+      "source_sha256": "ddf08ae66dfc767bbce3f3354d8ba8f471f5527e8cdbfec9570933c4fb4e276a",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/Art2BodyA.fcstd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -69.82805749314223,
+        "XMax": 69.82805749314223,
+        "YMin": -69.82805749314221,
+        "YMax": 229.82805749314224,
+        "ZMin": 0.0,
+        "ZMax": 32.0
+      },
+      "source_envelope_xyz_mm": [
+        139.65611498628445,
+        299.6561149862845,
+        32.0
+      ],
+      "source_volume_mm3": 187623.53788952754,
+      "quantity": 1,
+      "installed_volume_mm3": 187623.53788952754,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art2BodyA_Art2BodyA",
+          "linked_object": "Art2BodyA::Body001",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 187623.53788952754,
+          "zero_world_com_m": [
+            -3.83148781645516e-08,
+            -0.05798706514883622,
+            0.28293970749554437
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.11632659349150709
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 1,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "load-bearing bosses, joint/shaft interfaces and fastener access",
+        "layer_and_support_risks": "tension normal to layers, unsupported bosses and inaccessible internal supports",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "Art2BodyACover1::Body",
+      "source_file": "freecad-src/Art2BodyACover1.fcstd",
+      "source_object": "Art2BodyACover1::Body",
+      "source_sha256": "2ed0c298cbd55af72065d8a850f20b23f2dcd72de8c79ee9d6384bc4c537d514",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/Art2BodyACover1.fcstd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -61.0,
+        "XMax": 61.0,
+        "YMin": -61.0,
+        "YMax": 61.0,
+        "ZMin": 0.0,
+        "ZMax": 5.0
+      },
+      "source_envelope_xyz_mm": [
+        122.0,
+        122.0,
+        5.0
+      ],
+      "source_volume_mm3": 48188.74841704854,
+      "quantity": 1,
+      "installed_volume_mm3": 48188.748417048635,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art2BodyACover1_Art2BodyACover1",
+          "linked_object": "Art2BodyACover1::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 48188.748417048635,
+          "zero_world_com_m": [
+            -3.41688392674794e-07,
+            -0.03748873036291285,
+            0.2085556531237475
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.029877024018570154
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 1,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "thin walls, screw bosses, cable openings and fan/tool access",
+        "layer_and_support_risks": "thin-wall warping, screw-boss splitting and supports trapped in openings",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "Art2BodyACover2::Body",
+      "source_file": "freecad-src/Art2BodyACover2.fcstd",
+      "source_object": "Art2BodyACover2::Body",
+      "source_sha256": "83dae954cbbab7b380094033d0c689d774862878f809f5f9e2e31c9bbb9bbde3",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/Art2BodyACover2.fcstd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -60.0,
+        "XMax": 60.0,
+        "YMin": 48.849999999998595,
+        "YMax": 220.0,
+        "ZMin": 0.0,
+        "ZMax": 7.0
+      },
+      "source_envelope_xyz_mm": [
+        120.0,
+        171.1500000000014,
+        7.0
+      ],
+      "source_volume_mm3": 43590.64259336913,
+      "quantity": 1,
+      "installed_volume_mm3": 43590.642593369135,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art2BodyACover2_Art2BodyACover2",
+          "linked_object": "Art2BodyACover2::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 43590.642593369135,
+          "zero_world_com_m": [
+            -1.3606397507174378e-17,
+            -0.038523774848304354,
+            0.33502833115781516
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.027026198407888863
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 1,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "thin walls, screw bosses, cable openings and fan/tool access",
+        "layer_and_support_risks": "thin-wall warping, screw-boss splitting and supports trapped in openings",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "Art2BodyAWindow::Body",
+      "source_file": "freecad-src/Art2BodyAWindow.fcstd",
+      "source_object": "Art2BodyAWindow::Body",
+      "source_sha256": "ced59ddf86e57b3f3615bb4ee44d96b75b7032a9239733845a26e8e334941e98",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/Art2BodyAWindow.fcstd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -48.799999999999955,
+        "XMax": 48.799999999999955,
+        "YMin": -48.799999999999955,
+        "YMax": 48.799999999999976,
+        "ZMin": -1.6250399999999985e-13,
+        "ZMax": 11.000000000000014
+      },
+      "source_envelope_xyz_mm": [
+        97.59999999999991,
+        97.59999999999994,
+        11.000000000000176
+      ],
+      "source_volume_mm3": 39011.93801416927,
+      "quantity": 1,
+      "installed_volume_mm3": 39011.938014169275,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Unnamed_Art2BodyAWindow",
+          "linked_object": "Art2BodyAWindow::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 39011.938014169275,
+          "zero_world_com_m": [
+            -4.240250559418941e-14,
+            -0.06506421325448318,
+            0.362
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.024187401568784954
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 1,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "thin walls, screw bosses, cable openings and fan/tool access",
+        "layer_and_support_risks": "thin-wall warping, screw-boss splitting and supports trapped in openings",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "Art2BodyB::Body",
+      "source_file": "freecad-src/Art2BodyB.fcstd",
+      "source_object": "Art2BodyB::Body",
+      "source_sha256": "a63e36fd3b27321061ef875da8454e2d787a83fb8737fb1774aa458c8a8c7882",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/Art2BodyB.fcstd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -69.82805749313758,
+        "XMax": 69.82805749313758,
+        "YMin": -69.82805749313758,
+        "YMax": 229.82805749313758,
+        "ZMin": -3.9138e-14,
+        "ZMax": 32.0
+      },
+      "source_envelope_xyz_mm": [
+        139.65611498627516,
+        299.65611498627516,
+        32.00000000000004
+      ],
+      "source_volume_mm3": 257430.42758716544,
+      "quantity": 1,
+      "installed_volume_mm3": 257430.42758716576,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art2BodyB_Art2BodyB",
+          "linked_object": "Art2BodyB::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 257430.42758716576,
+          "zero_world_com_m": [
+            2.947147502351439e-11,
+            0.05880785384839126,
+            0.2820000005206592
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.1596068651040428
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 1,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "load-bearing bosses, joint/shaft interfaces and fastener access",
+        "layer_and_support_risks": "tension normal to layers, unsupported bosses and inaccessible internal supports",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "Art2BodyBCover::Body",
+      "source_file": "freecad-src/Art2BodyBCover.fcstd",
+      "source_object": "Art2BodyBCover::Body",
+      "source_sha256": "b8901be694766792ec0acd9e472d39552a6dfe9e0b69392e2e80ddc7499cdfdf",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/Art2BodyBCover.fcstd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -60.0,
+        "XMax": 60.0,
+        "YMin": -60.0,
+        "YMax": 220.0,
+        "ZMin": 0.0,
+        "ZMax": 7.0
+      },
+      "source_envelope_xyz_mm": [
+        120.0,
+        280.0,
+        7.0
+      ],
+      "source_volume_mm3": 97915.96879564342,
+      "quantity": 1,
+      "installed_volume_mm3": 97915.96879564342,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art2BodyBCover_Art2BodyBCover",
+          "linked_object": "Art2BodyBCover::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 97915.96879564342,
+          "zero_world_com_m": [
+            -2.019888422029628e-15,
+            0.03852116837381868,
+            0.28199999999999786
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.060707900653298924
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 1,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "thin walls, screw bosses, cable openings and fan/tool access",
+        "layer_and_support_risks": "thin-wall warping, screw-boss splitting and supports trapped in openings",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "Art2BodyUnion::Body",
+      "source_file": "freecad-src/Art2BodyUnion.FCStd",
+      "source_object": "Art2BodyUnion::Body",
+      "source_sha256": "238330fcdb1a52d6ccf5e3e2951d49c0a79bd24f42eb24162581727fb769fecc",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/Art2BodyUnion.FCStd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -39.500000000000064,
+        "XMax": 39.500000000000014,
+        "YMin": -16.244608071159988,
+        "YMax": 16.24460807116001,
+        "ZMin": -36.0,
+        "ZMax": 36.0
+      },
+      "source_envelope_xyz_mm": [
+        79.00000000000009,
+        32.48921614232,
+        72.0
+      ],
+      "source_volume_mm3": 89862.8854296717,
+      "quantity": 1,
+      "installed_volume_mm3": 89862.88542967169,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art2BodyUnion_Art2BodyUnion",
+          "linked_object": "Art2BodyUnion::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 89862.88542967169,
+          "zero_world_com_m": [
+            1.0043807770636827e-17,
+            -1.4210854715202004e-17,
+            0.2819999999999999
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.05571498896639645
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 1,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "load-bearing bosses, joint/shaft interfaces and fastener access",
+        "layer_and_support_risks": "tension normal to layers, unsupported bosses and inaccessible internal supports",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "Art2MotorGear::Body",
+      "source_file": "freecad-src/Art2MotorGear.fcstd",
+      "source_object": "Art2MotorGear::Body",
+      "source_sha256": "a8761b35792888dd679bdc1bab74a353b5893365aff268ae1d35a985a2984fc8",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/Art2MotorGear.fcstd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -12.206500512600599,
+        "XMax": 12.22358312309175,
+        "YMin": -12.224022899992256,
+        "YMax": 12.225050269152279,
+        "ZMin": -8.0,
+        "ZMax": 15.000044559362411
+      },
+      "source_envelope_xyz_mm": [
+        24.43008363569235,
+        24.449073169144533,
+        23.00004455936241
+      ],
+      "source_volume_mm3": 7178.684897923684,
+      "quantity": 2,
+      "installed_volume_mm3": 14357.369795847386,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art2MotorGear_Art2MotorGear",
+          "linked_object": "Art2MotorGear::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 7178.684897923695,
+          "zero_world_com_m": [
+            -0.0212805345830922,
+            -0.04769392500846844,
+            0.1586658326863416
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.004450784636712691
+        },
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art2MotorGear_Art2MotorGear001",
+          "linked_object": "Art2MotorGear::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 7178.684897923691,
+          "zero_world_com_m": [
+            0.02171946541690425,
+            -0.04769390751808748,
+            0.15866583268634152
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.004450784636712689
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 2,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "teeth, hub bore, shaft engagement and radial runout",
+        "layer_and_support_risks": "hub splitting across layers and unsupported tooth/overhang surfaces",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "Art2SideCover::Body",
+      "source_file": "freecad-src/Art2SideCover.FCStd",
+      "source_object": "Art2SideCover::Body",
+      "source_sha256": "a618cb1c6f2168340ccc5e49756b1ff8319b91a05b6c5f578275fbfaaffbf14e",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/Art2SideCover.FCStd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -60.0,
+        "XMax": 60.0,
+        "YMin": -60.0,
+        "YMax": 220.0,
+        "ZMin": 0.0,
+        "ZMax": 2.0
+      },
+      "source_envelope_xyz_mm": [
+        120.0,
+        280.0,
+        2.0
+      ],
+      "source_volume_mm3": 51779.88728238576,
+      "quantity": 2,
+      "installed_volume_mm3": 103559.7745647715,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Unnamed_Art2SideCover",
+          "linked_object": "Art2SideCover::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 51779.88728238576,
+          "zero_world_com_m": [
+            -1.283583827311589e-17,
+            -0.06900158932899468,
+            0.282
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.032103530115079174
+        },
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Unnamed_Art2SideCover001",
+          "linked_object": "Art2SideCover::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 51779.88728238575,
+          "zero_world_com_m": [
+            5.153246620858433e-17,
+            0.06900158932899468,
+            0.28199999999999986
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.03210353011507917
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 2,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "thin walls, screw bosses, cable openings and fan/tool access",
+        "layer_and_support_risks": "thin-wall warping, screw-boss splitting and supports trapped in openings",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "Art3Body::Body002",
+      "source_file": "freecad-src/Art3Body.fcstd",
+      "source_object": "Art3Body::Body002",
+      "source_sha256": "d6e2759daadc02ab36a7b5c6920b7f7b42066f63c2a7600fb4ff86487565e79e",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/Art3Body.fcstd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -55.05,
+        "XMax": 55.05,
+        "YMin": -55.05,
+        "YMax": 55.05,
+        "ZMin": 0.0,
+        "ZMax": 152.49999996862027
+      },
+      "source_envelope_xyz_mm": [
+        110.1,
+        110.1,
+        152.49999996862027
+      ],
+      "source_volume_mm3": 278165.25640767004,
+      "quantity": 1,
+      "installed_volume_mm3": 278165.25640767004,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Art3Body_Art3Body",
+          "linked_object": "Art3Body::Body002",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 278165.25640767004,
+          "zero_world_com_m": [
+            0.0009003307617659025,
+            -0.00025220728272215456,
+            0.3769331355685781
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.17246245897275542
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 1,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "load-bearing bosses, joint/shaft interfaces and fastener access",
+        "layer_and_support_risks": "tension normal to layers, unsupported bosses and inaccessible internal supports",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "Art3Pulley::Body",
+      "source_file": "freecad-src/Art3Pulley.fcstd",
+      "source_object": "Art3Pulley::Body",
+      "source_sha256": "d450cc565e722981346fc2b1aa3662474c83d574ca39a5602bacb98d8619fd9e",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/Art3Pulley.fcstd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -40.0,
+        "XMax": 40.0,
+        "YMin": -40.0,
+        "YMax": 40.0,
+        "ZMin": -8.875904120751193e-14,
+        "ZMax": 18.00000000000014
+      },
+      "source_envelope_xyz_mm": [
+        80.0,
+        80.0,
+        18.000000000000227
+      ],
+      "source_volume_mm3": 52315.762820192795,
+      "quantity": 1,
+      "installed_volume_mm3": 52315.7628201928,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Art3Pulley_Art3Pulley",
+          "linked_object": "Art3Pulley::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 52315.7628201928,
+          "zero_world_com_m": [
+            -1.1052461867342711e-08,
+            -0.04405240413972371,
+            0.36535561392114124
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.03243577294851954
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 1,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "teeth, hub bore, shaft engagement and radial runout",
+        "layer_and_support_risks": "hub splitting across layers and unsupported tooth/overhang surfaces",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "Art3TensionerBody::Body",
+      "source_file": "freecad-src/Art3TensionerBody.fcstd",
+      "source_object": "Art3TensionerBody::Body",
+      "source_sha256": "f105e77dbb72523f842e58b9bcd9a54c3ec5f5eaf771a0798851cf7f13752a55",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/Art3TensionerBody.fcstd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -5.7,
+        "XMax": 5.7,
+        "YMin": -13.5,
+        "YMax": 7.06e-15,
+        "ZMin": 0.0,
+        "ZMax": 10.600000000000009
+      },
+      "source_envelope_xyz_mm": [
+        11.4,
+        13.500000000000007,
+        10.600000000000009
+      ],
+      "source_volume_mm3": 872.4812942676833,
+      "quantity": 2,
+      "installed_volume_mm3": 1744.9625885353666,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art3TensionerBody_Art3TensionerBody",
+          "linked_object": "Art3TensionerBody::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 872.4812942676833,
+          "zero_world_com_m": [
+            -0.01724429550294443,
+            -0.05771127747118361,
+            0.30185
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.0005409384024459637
+        },
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art3TensionerBody_Art3TensionerBody001",
+          "linked_object": "Art3TensionerBody::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 872.4812942676834,
+          "zero_world_com_m": [
+            0.01724429550294438,
+            -0.05771127747118362,
+            0.30185
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.0005409384024459637
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 2,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "bearing seat, retention lip, bolt bore and tensioner contact",
+        "layer_and_support_risks": "layer separation around press/bolt loading and trapped seat supports",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "Art3TensionerPulley::Body",
+      "source_file": "freecad-src/Art3TensionerPulley.fcstd",
+      "source_object": "Art3TensionerPulley::Body",
+      "source_sha256": "2bbf0c3c522db8b2247ed6f3dbce48cd111d4d21349f05cab5bc01d3812102da",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/Art3TensionerPulley.fcstd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -10.0,
+        "XMax": 10.0,
+        "YMin": -10.0,
+        "YMax": 10.000000000000002,
+        "ZMin": -6.6e-15,
+        "ZMax": 9.000000000000004
+      },
+      "source_envelope_xyz_mm": [
+        20.0,
+        20.0,
+        9.00000000000001
+      ],
+      "source_volume_mm3": 1161.2661624545653,
+      "quantity": 2,
+      "installed_volume_mm3": 2322.5323249091307,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art3TensionerPulley_Art3TensionerPulley",
+          "linked_object": "Art3TensionerPulley::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 1161.2661624545656,
+          "zero_world_com_m": [
+            -0.014500000000000008,
+            -0.04838772936012502,
+            0.30185
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.0007199850207218306
+        },
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art3TensionerPulley_Art3TensionerPulley001",
+          "linked_object": "Art3TensionerPulley::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 1161.2661624545653,
+          "zero_world_com_m": [
+            0.01449999999999996,
+            -0.048387729360125024,
+            0.30184999999999995
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.0007199850207218305
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 2,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "teeth, hub bore, shaft engagement and radial runout",
+        "layer_and_support_risks": "hub splitting across layers and unsupported tooth/overhang surfaces",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "Art4BearingFix::Body",
+      "source_file": "freecad-src/Art4BearingFix.fcstd",
+      "source_object": "Art4BearingFix::Body",
+      "source_sha256": "248a21d01617b0e784a9743d186ab698d6406a9eeba6e6a27c2c426baf8dca55",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/Art4BearingFix.fcstd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -15.026256797917766,
+        "XMax": 15.026256797917771,
+        "YMin": -7.900000000000003,
+        "YMax": 7.900000000000015,
+        "ZMin": 0.0,
+        "ZMax": 4.0
+      },
+      "source_envelope_xyz_mm": [
+        30.052513595835535,
+        15.800000000000018,
+        4.0
+      ],
+      "source_volume_mm3": 885.5804357599253,
+      "quantity": 2,
+      "installed_volume_mm3": 1771.1608715198508,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4BearingFix_Art4BearingFix",
+          "linked_object": "Art4BearingFix::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 885.5804357599254,
+          "zero_world_com_m": [
+            -7.751620707758567e-10,
+            0.052776499106458985,
+            0.5559122103699283
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.0005490598701711537
+        },
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4BearingFix_Art4BearingFix001",
+          "linked_object": "Art4BearingFix::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 885.5804357599255,
+          "zero_world_com_m": [
+            7.751622860893384e-10,
+            -0.05277649910645899,
+            0.55591221036993
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.0005490598701711538
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 2,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "bearing seat, retention lip, bolt bore and tensioner contact",
+        "layer_and_support_risks": "layer separation around press/bolt loading and trapped seat supports",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "Art4BearingRing::Body",
+      "source_file": "freecad-src/Art4BearingRing.fcstd",
+      "source_object": "Art4BearingRing::Body",
+      "source_sha256": "e4a84700481629554e0e79de956562f54d46aaeeb60908f4e5aee4c5336d7214",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/Art4BearingRing.fcstd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -50.00132556809646,
+        "XMax": 50.0,
+        "YMin": -50.0,
+        "YMax": 50.0,
+        "ZMin": -8.8e-15,
+        "ZMax": 10.00000000000001
+      },
+      "source_envelope_xyz_mm": [
+        100.00132556809646,
+        100.0,
+        10.00000000000002
+      ],
+      "source_volume_mm3": 23451.843718245163,
+      "quantity": 1,
+      "installed_volume_mm3": 23451.843718245174,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Art4BearingRing_Art4BearingRing",
+          "linked_object": "Art4BearingRing::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 23451.843718245174,
+          "zero_world_com_m": [
+            -4.55299425891561e-08,
+            -0.0006942543717741109,
+            0.4458832356107917
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.014540143105312008
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 1,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "bearing seat, retention lip, bolt bore and tensioner contact",
+        "layer_and_support_risks": "layer separation around press/bolt loading and trapped seat supports",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "Art4Body::Body",
+      "source_file": "freecad-src/Art4Body.fcstd",
+      "source_object": "Art4Body::Body",
+      "source_sha256": "73f6b57135ea18e516d6b3280d91063d3d23c891d809a6ed52ae9594483ddb31",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/Art4Body.fcstd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -55.00000000000001,
+        "XMax": 55.0,
+        "YMin": -55.03219176458691,
+        "YMax": 55.03219176046508,
+        "ZMin": -6.692170943771362e-14,
+        "ZMax": 152.78003476135973
+      },
+      "source_envelope_xyz_mm": [
+        110.0,
+        110.064383525052,
+        152.7800347613598
+      ],
+      "source_volume_mm3": 227891.8454523972,
+      "quantity": 1,
+      "installed_volume_mm3": 227891.84545239725,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4Body_Art4Body",
+          "linked_object": "Art4Body::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 227891.84545239725,
+          "zero_world_com_m": [
+            -0.0001972162795128015,
+            -7.942823794154811e-08,
+            0.5247803298673395
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.1412929441804863
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 1,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "load-bearing bosses, joint/shaft interfaces and fastener access",
+        "layer_and_support_risks": "tension normal to layers, unsupported bosses and inaccessible internal supports",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "Art4BodyBot::Body",
+      "source_file": "freecad-src/Art4BodyBot.fcstd",
+      "source_object": "Art4BodyBot::Body",
+      "source_sha256": "b7eb908539d3c6c6310c2f64ddb7de758d9f742f5c44ac45bd8dea69925d9413",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/Art4BodyBot.fcstd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -55.0,
+        "XMax": 55.0,
+        "YMin": -55.0,
+        "YMax": 55.0,
+        "ZMin": -3.6300000009917036e-14,
+        "ZMax": 14.500000000000103
+      },
+      "source_envelope_xyz_mm": [
+        110.0,
+        110.0,
+        14.500000000000139
+      ],
+      "source_volume_mm3": 43404.69219108355,
+      "quantity": 1,
+      "installed_volume_mm3": 43404.692191083544,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4BodyBot_Art4BodyBot",
+          "linked_object": "Art4BodyBot::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 43404.692191083544,
+          "zero_world_com_m": [
+            3.968608711843744e-11,
+            -2.802161199689719e-10,
+            0.454299283019504
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.0269109091584718
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 1,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "load-bearing bosses, joint/shaft interfaces and fastener access",
+        "layer_and_support_risks": "tension normal to layers, unsupported bosses and inaccessible internal supports",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "Art4BodyFan::Body",
+      "source_file": "freecad-src/Art4BodyFan.fcstd",
+      "source_object": "Art4BodyFan::Body",
+      "source_sha256": "6520e13c078f3a9862c98443dc4e9b77f77c429b32f387e82c3f14eaabc8fa16",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/Art4BodyFan.fcstd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": 0.0,
+        "XMax": 16.749999999999993,
+        "YMin": -25.000000000000007,
+        "YMax": 24.999999999999993,
+        "ZMin": 0.0,
+        "ZMax": 50.0
+      },
+      "source_envelope_xyz_mm": [
+        16.749999999999993,
+        50.0,
+        50.0
+      ],
+      "source_volume_mm3": 12547.728604259319,
+      "quantity": 2,
+      "installed_volume_mm3": 25095.457208518656,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4BodyFan_Art4BodyFan",
+          "linked_object": "Art4BodyFan::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 12547.72860425933,
+          "zero_world_com_m": [
+            -3.4627504935503938e-09,
+            -0.05839866843552956,
+            0.48099999875763416
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.007779591734640785
+        },
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4BodyFan_Art4BodyFan001",
+          "linked_object": "Art4BodyFan::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 12547.728604259326,
+          "zero_world_com_m": [
+            3.462750526496434e-09,
+            0.058398668435529585,
+            0.4809999987576341
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.007779591734640783
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 2,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "thin walls, screw bosses, cable openings and fan/tool access",
+        "layer_and_support_risks": "thin-wall warping, screw-boss splitting and supports trapped in openings",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "Art4MotorFix::Body",
+      "source_file": "freecad-src/Art4MotorFix.fcstd",
+      "source_object": "Art4MotorFix::Body",
+      "source_sha256": "976a04a9b3bbf21ea80a9e1e6ac53ef64f0ac7aa93fbcff7184f84b00688e6c4",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/Art4MotorFix.fcstd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -21.150000000000002,
+        "XMax": 21.15,
+        "YMin": -20.15,
+        "YMax": 20.15,
+        "ZMin": 0.0,
+        "ZMax": 8.0
+      },
+      "source_envelope_xyz_mm": [
+        42.3,
+        40.3,
+        8.0
+      ],
+      "source_volume_mm3": 3769.721334805076,
+      "quantity": 1,
+      "installed_volume_mm3": 3769.721334805076,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Art4MotorFix_Art4MotorFix",
+          "linked_object": "Art4MotorFix::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 3769.721334805076,
+          "zero_world_com_m": [
+            -0.029194530859200273,
+            -9.144171894542089e-18,
+            0.36270731322192157
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.0023372272275791472
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 1,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "load-bearing bosses, joint/shaft interfaces and fastener access",
+        "layer_and_support_risks": "tension normal to layers, unsupported bosses and inaccessible internal supports",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "Art4MotorGear::Body",
+      "source_file": "freecad-src/Art4MotorGear.fcstd",
+      "source_object": "Art4MotorGear::Body",
+      "source_sha256": "c988a0d9be1fc1312fabc1b6b10108cf05f23fb3298a0ece627cb5eb1d930358",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/Art4MotorGear.fcstd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -12.0,
+        "XMax": 12.0,
+        "YMin": -12.000000000000002,
+        "YMax": 12.0,
+        "ZMin": -10.0,
+        "ZMax": 13.001839891606268
+      },
+      "source_envelope_xyz_mm": [
+        24.0,
+        24.0,
+        23.001839891606267
+      ],
+      "source_volume_mm3": 6945.125846289586,
+      "quantity": 1,
+      "installed_volume_mm3": 6945.1258462895885,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Art4MotorGear_Art4MotorGear",
+          "linked_object": "Art4MotorGear::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 6945.1258462895885,
+          "zero_world_com_m": [
+            -0.02758389508360221,
+            3.257637374306177e-07,
+            0.37666358574351205
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.004305978024699546
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 1,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "teeth, hub bore, shaft engagement and radial runout",
+        "layer_and_support_risks": "hub splitting across layers and unsupported tooth/overhang surfaces",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "Art4Optodisk::Body",
+      "source_file": "freecad-src/Art4Optodisk.fcstd",
+      "source_object": "Art4Optodisk::Body",
+      "source_sha256": "0822ae9a4a1460e74e05ff068e2662670e9db50991e28d2d0d3da6f73385cbb4",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/Art4Optodisk.fcstd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -30.2,
+        "XMax": 30.2,
+        "YMin": -30.2,
+        "YMax": 30.20000000000001,
+        "ZMin": -2.8537e-14,
+        "ZMax": 15.00000000000002
+      },
+      "source_envelope_xyz_mm": [
+        60.4,
+        60.400000000000006,
+        15.000000000000048
+      ],
+      "source_volume_mm3": 8854.474438444186,
+      "quantity": 1,
+      "installed_volume_mm3": 8854.474438444187,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4Optodisk_Art4Optodisk",
+          "linked_object": "Art4Optodisk::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 8854.474438444187,
+          "zero_world_com_m": [
+            -3.354236347574247e-05,
+            8.0721095593904e-18,
+            0.4354525715517927
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.005489774151835396
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 1,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "teeth, hub bore, shaft engagement and radial runout",
+        "layer_and_support_risks": "hub splitting across layers and unsupported tooth/overhang surfaces",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "Art4TransmissionColumn::Body",
+      "source_file": "freecad-src/Art4TransmissionColumn.fcstd",
+      "source_object": "Art4TransmissionColumn::Body",
+      "source_sha256": "f31295eaaf973347c73779e69ca33f095656b1e7bc4511eac5ce879aaaddbb2c",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/Art4TransmissionColumn.fcstd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -37.88372701023379,
+        "XMax": 37.88372701023379,
+        "YMin": -37.88372701023378,
+        "YMax": 37.883727010233805,
+        "ZMin": -3.55e-15,
+        "ZMax": 76.00000000000001
+      },
+      "source_envelope_xyz_mm": [
+        75.76745402046758,
+        75.76745402046758,
+        76.00000000000001
+      ],
+      "source_volume_mm3": 78484.25760901181,
+      "quantity": 1,
+      "installed_volume_mm3": 78484.25760901181,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4TransmissionColumn_Art4TransmissionColumn",
+          "linked_object": "Art4TransmissionColumn::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 78484.25760901181,
+          "zero_world_com_m": [
+            1.8862715586023272e-08,
+            -1.2746101728402854e-08,
+            0.42500960266232723
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.048660239717587324
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 1,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "load-bearing bosses, joint/shaft interfaces and fastener access",
+        "layer_and_support_risks": "tension normal to layers, unsupported bosses and inaccessible internal supports",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "Art56GearPlate::Body",
+      "source_file": "freecad-src/Art56GearPlate.fcstd",
+      "source_object": "Art56GearPlate::Body",
+      "source_sha256": "38ca5952d4e03e4009f94628d0c435153b980ea558a608fca9ac1c9aaf79d411",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/Art56GearPlate.fcstd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -69.27662739934419,
+        "XMax": 69.27662739934422,
+        "YMin": -69.26212807850236,
+        "YMax": 69.26212807850233,
+        "ZMin": -42.50000000000001,
+        "ZMax": 10.200000000000012
+      },
+      "source_envelope_xyz_mm": [
+        138.5532547986884,
+        138.5242561570047,
+        52.70000000000002
+      ],
+      "source_volume_mm3": 42883.5006807928,
+      "quantity": 1,
+      "installed_volume_mm3": 42883.5006807928,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Art56GearPlate_Art56GearPlate",
+          "linked_object": "Art56GearPlate::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 42883.5006807928,
+          "zero_world_com_m": [
+            -8.28736653169323e-11,
+            -1.8630590664841883e-11,
+            0.5859924984767506
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.026587770422091535
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 1,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "teeth, hub bore, shaft engagement and radial runout",
+        "layer_and_support_risks": "hub splitting across layers and unsupported tooth/overhang surfaces",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "Art56MotorCoverRing::Body",
+      "source_file": "freecad-src/Art56MotorCoverRing.fcstd",
+      "source_object": "Art56MotorCoverRing::Body",
+      "source_sha256": "8d037cf7a3e63ee8f04b39be35836d35c5d6f330497c8df5a735cd05abd071fa",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/Art56MotorCoverRing.fcstd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -47.0,
+        "XMax": 47.0,
+        "YMin": -45.93473631142342,
+        "YMax": 47.0,
+        "ZMin": -15.000000000000032,
+        "ZMax": 15.00000000000003
+      },
+      "source_envelope_xyz_mm": [
+        94.0,
+        92.93473631142342,
+        30.000000000000064
+      ],
+      "source_volume_mm3": 27847.00573977849,
+      "quantity": 1,
+      "installed_volume_mm3": 27847.005739778502,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Art56MotorCoverRing_Art56MotorCoverRing",
+          "linked_object": "Art56MotorCoverRing::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 27847.005739778502,
+          "zero_world_com_m": [
+            7.555936773766825e-10,
+            0.0001256355434744051,
+            0.5527083316992307
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.017265143558662672
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 1,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "thin walls, screw bosses, cable openings and fan/tool access",
+        "layer_and_support_risks": "thin-wall warping, screw-boss splitting and supports trapped in openings",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "Art56MotorHolderA::Body",
+      "source_file": "freecad-src/Art56MotorHolderA.fcstd",
+      "source_object": "Art56MotorHolderA::Body",
+      "source_sha256": "a1355712512d87ac25000ab60eab65d6c9ba454099ebc6761dbf93d6c003c49a",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/Art56MotorHolderA.fcstd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -22.9,
+        "XMax": 21.5,
+        "YMin": -21.5,
+        "YMax": 21.5,
+        "ZMin": 0.0,
+        "ZMax": 11.600000000000001
+      },
+      "source_envelope_xyz_mm": [
+        44.4,
+        43.0,
+        11.600000000000001
+      ],
+      "source_volume_mm3": 5536.724322104634,
+      "quantity": 2,
+      "installed_volume_mm3": 11073.44864420927,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art56MotorHolderA_Art56MotorHolderA",
+          "linked_object": "Art56MotorHolderA::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 5536.724322104638,
+          "zero_world_com_m": [
+            0.024359436880816432,
+            -0.013002764266756377,
+            0.4774877501226175
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.003432769079704876
+        },
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art56MotorHolderA_Art56MotorHolderA001",
+          "linked_object": "Art56MotorHolderA::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 5536.724322104631,
+          "zero_world_com_m": [
+            -0.024359436880816366,
+            0.013002764266756398,
+            0.4774877501226176
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.003432769079704871
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 2,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "load-bearing bosses, joint/shaft interfaces and fastener access",
+        "layer_and_support_risks": "tension normal to layers, unsupported bosses and inaccessible internal supports",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "Art56MotorHolderB::Body",
+      "source_file": "freecad-src/Art56MotorHolderB.fcstd",
+      "source_object": "Art56MotorHolderB::Body",
+      "source_sha256": "d0ae1726649b8b4758b665fe2b01e8d065e57b2c5b916ef4e4b4dc7840fcfd77",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/Art56MotorHolderB.fcstd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -17.5,
+        "XMax": 21.5,
+        "YMin": -21.5,
+        "YMax": 21.5,
+        "ZMin": 0.0,
+        "ZMax": 11.6
+      },
+      "source_envelope_xyz_mm": [
+        39.0,
+        43.0,
+        11.6
+      ],
+      "source_volume_mm3": 6303.510599855066,
+      "quantity": 2,
+      "installed_volume_mm3": 12607.021199710136,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art56MotorHolderB_Art56MotorHolderB",
+          "linked_object": "Art56MotorHolderB::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 6303.510599855069,
+          "zero_world_com_m": [
+            0.02169152734430802,
+            0.026312520923005393,
+            0.4775098301303149
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.003908176571910143
+        },
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art56MotorHolderB_Art56MotorHolderB001",
+          "linked_object": "Art56MotorHolderB::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 6303.510599855068,
+          "zero_world_com_m": [
+            -0.021691527344307956,
+            -0.026312520923005366,
+            0.477509830130315
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.003908176571910143
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 2,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "load-bearing bosses, joint/shaft interfaces and fastener access",
+        "layer_and_support_risks": "tension normal to layers, unsupported bosses and inaccessible internal supports",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "Art56SmallGear::Body",
+      "source_file": "freecad-src/Art56SmallGear.fcstd",
+      "source_object": "Art56SmallGear::Body",
+      "source_sha256": "b737ce24c58bc5ffc3763fcd6cdcfdd425747565c2850054397f066ecd5a63a0",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/Art56SmallGear.fcstd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -24.601807062028705,
+        "XMax": 24.414482044774985,
+        "YMin": -24.480851695727438,
+        "YMax": 24.604467061140852,
+        "ZMin": -1.421e-14,
+        "ZMax": 12.400000000000023
+      },
+      "source_envelope_xyz_mm": [
+        49.01628910680369,
+        49.08531875686829,
+        12.400000000000038
+      ],
+      "source_volume_mm3": 7716.780070632618,
+      "quantity": 2,
+      "installed_volume_mm3": 15433.560141265243,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Art56SmallGear_Art56SmallGear",
+          "linked_object": "Art56SmallGear::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 7716.780070632624,
+          "zero_world_com_m": [
+            1.6397499739985697e-05,
+            -0.034369400446915166,
+            0.556199521037488
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.0047844036437922274
+        },
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Art56SmallGear_Art56SmallGear001",
+          "linked_object": "Art56SmallGear::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 7716.780070632619,
+          "zero_world_com_m": [
+            6.085970063069591e-05,
+            0.034369400446915145,
+            0.5558092813086318
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.004784403643792224
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 2,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "teeth, hub bore, shaft engagement and radial runout",
+        "layer_and_support_risks": "hub splitting across layers and unsupported tooth/overhang surfaces",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "BaseBearingFix::Body",
+      "source_file": "freecad-src/BaseBearingFix.fcstd",
+      "source_object": "BaseBearingFix::Body",
+      "source_sha256": "a8ddcd5f8aee6cc4ff33671e3c27e2d3029fe334f4f02baeb579eb6ecaadec82",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/BaseBearingFix.fcstd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -75.0,
+        "XMax": 75.0,
+        "YMin": -75.0,
+        "YMax": 75.0,
+        "ZMin": -1.7763568394002505e-15,
+        "ZMax": 5.000000000000001
+      },
+      "source_envelope_xyz_mm": [
+        150.0,
+        150.0,
+        5.000000000000003
+      ],
+      "source_volume_mm3": 50341.94096864344,
+      "quantity": 1,
+      "installed_volume_mm3": 50341.94096864344,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::BaseBearingFix_BaseBearingFix",
+          "linked_object": "BaseBearingFix::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 50341.94096864344,
+          "zero_world_com_m": [
+            -2.9723367625594246e-18,
+            1.3693153537228829e-17,
+            0.09549673543446023
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.031212003400558935
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 1,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "bearing seat, retention lip, bolt bore and tensioner contact",
+        "layer_and_support_risks": "layer separation around press/bolt loading and trapped seat supports",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "BaseBot::Body002",
+      "source_file": "freecad-src/BaseBot.fcstd",
+      "source_object": "BaseBot::Body002",
+      "source_sha256": "c637feec821a886c80c8622cf316de02c05f06d90ff49af9df9b0a0cdff00e5a",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/BaseBot.fcstd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -75.0,
+        "XMax": 127.4516815844294,
+        "YMin": -127.4516815844294,
+        "YMax": 127.4516815844294,
+        "ZMin": -1.0876000006841853e-13,
+        "ZMax": 65.50000000000006
+      },
+      "source_envelope_xyz_mm": [
+        202.4516815844294,
+        254.9033631688588,
+        65.50000000000017
+      ],
+      "source_volume_mm3": 342083.99108201754,
+      "quantity": 1,
+      "installed_volume_mm3": 342083.99108201754,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::BaseBot_BaseBot",
+          "linked_object": "BaseBot::Body002",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 342083.99108201754,
+          "zero_world_com_m": [
+            0.01178977701418545,
+            -0.0010533476280576704,
+            0.01937488903428701
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.2120920744708509
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 1,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "load-bearing bosses, joint/shaft interfaces and fastener access",
+        "layer_and_support_risks": "tension normal to layers, unsupported bosses and inaccessible internal supports",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "BaseBoxBody::Body002",
+      "source_file": "freecad-src/BaseBoxBody.FCStd",
+      "source_object": "BaseBoxBody::Body002",
+      "source_sha256": "bf4c86c80ee90bc8e46bea77db6850027c15e45c86e2da1b9cfeffbce9cb6de1",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/BaseBoxBody.FCStd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": 24.40000000000001,
+        "XMax": 219.40000000000003,
+        "YMin": -90.00000000000006,
+        "YMax": 90.00000000000001,
+        "ZMin": 0.0,
+        "ZMax": 65.50000000000001
+      },
+      "source_envelope_xyz_mm": [
+        195.00000000000003,
+        180.00000000000006,
+        65.50000000000001
+      ],
+      "source_volume_mm3": 342256.7348762723,
+      "quantity": 1,
+      "installed_volume_mm3": 342256.7348762718,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::BaseBoxBody_BaseBoxBody",
+          "linked_object": "BaseBoxBody::Body002",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 342256.7348762718,
+          "zero_world_com_m": [
+            -0.1295085147181553,
+            1.3100048640169475e-05,
+            0.021859616680658975
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.21219917562328852
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 1,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "thin walls, screw bosses, cable openings and fan/tool access",
+        "layer_and_support_risks": "thin-wall warping, screw-boss splitting and supports trapped in openings",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "BaseBoxCover::Body",
+      "source_file": "freecad-src/BaseBoxCover.FCStd",
+      "source_object": "BaseBoxCover::Body",
+      "source_sha256": "9d1ca5fa12b76b49203f26f440ab47fe9c5a74e921a6267de8d60fa8ac3d7a37",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/BaseBoxCover.FCStd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": 24.39999999999998,
+        "XMax": 219.40000000000003,
+        "YMin": -90.0,
+        "YMax": 90.0,
+        "ZMin": 0.0,
+        "ZMax": 5.0
+      },
+      "source_envelope_xyz_mm": [
+        195.00000000000006,
+        180.0,
+        5.0
+      ],
+      "source_volume_mm3": 144777.22172656943,
+      "quantity": 1,
+      "installed_volume_mm3": 144777.22172656943,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::BaseBoxCover_BaseBoxCover",
+          "linked_object": "BaseBoxCover::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 144777.22172656943,
+          "zero_world_com_m": [
+            -0.13764464227629267,
+            1.3868986125815496e-17,
+            0.06799867565267274
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.08976187747047305
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 1,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "thin walls, screw bosses, cable openings and fan/tool access",
+        "layer_and_support_risks": "thin-wall warping, screw-boss splitting and supports trapped in openings",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "BaseTop::Body",
+      "source_file": "freecad-src/BaseTop.fcstd",
+      "source_object": "BaseTop::Body",
+      "source_sha256": "cad90f1414909eaa797edb9bc00a685c3f0856cfa4be5abbcd539afb96417490",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/BaseTop.fcstd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -75.0,
+        "XMax": 75.0,
+        "YMin": -75.0,
+        "YMax": 75.00000000000001,
+        "ZMin": -4.95e-14,
+        "ZMax": 27.50000000000005
+      },
+      "source_envelope_xyz_mm": [
+        150.0,
+        150.0,
+        27.5000000000001
+      ],
+      "source_volume_mm3": 222336.2316002709,
+      "quantity": 1,
+      "installed_volume_mm3": 222336.2316002709,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::BaseTop_BaseTop",
+          "linked_object": "BaseTop::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 222336.2316002709,
+          "zero_world_com_m": [
+            8.90120542573539e-18,
+            2.5626506782169243e-17,
+            0.07949844347828727
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.13784846359216799
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 1,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "load-bearing bosses, joint/shaft interfaces and fastener access",
+        "layer_and_support_risks": "tension normal to layers, unsupported bosses and inaccessible internal supports",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "CommonBearingFix::Body",
+      "source_file": "freecad-src/CommonBearingFix.fcstd",
+      "source_object": "CommonBearingFix::Body",
+      "source_sha256": "cf0d6322f0c0a947079c2a3782dcf878feb71a0e34b0de220c3722a24ec8e72b",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/CommonBearingFix.fcstd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -15.0,
+        "XMax": 15.0,
+        "YMin": -7.9,
+        "YMax": 7.9,
+        "ZMin": 0.0,
+        "ZMax": 4.0
+      },
+      "source_envelope_xyz_mm": [
+        30.0,
+        15.8,
+        4.0
+      ],
+      "source_volume_mm3": 983.1716475189406,
+      "quantity": 4,
+      "installed_volume_mm3": 3932.6865900757616,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::CommonBearingFix_CommonBearingFix",
+          "linked_object": "CommonBearingFix::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 983.1716475189403,
+          "zero_world_com_m": [
+            1.279749547099781e-16,
+            0.0659442808160354,
+            0.36199999999999993
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.0006095664214617431
+        },
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::CommonBearingFix_CommonBearingFix001",
+          "linked_object": "CommonBearingFix::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 983.1716475189404,
+          "zero_world_com_m": [
+            2.4253818691867615e-18,
+            0.06594428081603532,
+            0.20199999999999987
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.0006095664214617431
+        },
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::CommonBearingFix_CommonBearingFix002",
+          "linked_object": "CommonBearingFix::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 983.1716475189404,
+          "zero_world_com_m": [
+            -2.391726914009909e-17,
+            -0.06594428081603533,
+            0.202
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.0006095664214617431
+        },
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::CommonBearingFix_CommonBearingFix003",
+          "linked_object": "CommonBearingFix::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 983.1716475189406,
+          "zero_world_com_m": [
+            -5.298819878620228e-17,
+            -0.06594428081603533,
+            0.362
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.0006095664214617433
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 4,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "bearing seat, retention lip, bolt bore and tensioner contact",
+        "layer_and_support_risks": "layer separation around press/bolt loading and trapped seat supports",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "CommonBearingFixThrough::Body",
+      "source_file": "freecad-src/CommonBearingFixThrough.fcstd",
+      "source_object": "CommonBearingFixThrough::Body",
+      "source_sha256": "ea66043a24b3b93c3722ad48ce4a0830f1561a6a925818b5d1dcf7d411a25517",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/CommonBearingFixThrough.fcstd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -15.0,
+        "XMax": 15.0,
+        "YMin": -7.9,
+        "YMax": 7.9,
+        "ZMin": 0.0,
+        "ZMax": 4.0
+      },
+      "source_envelope_xyz_mm": [
+        30.0,
+        15.8,
+        4.0
+      ],
+      "source_volume_mm3": 669.0123821599614,
+      "quantity": 4,
+      "installed_volume_mm3": 2676.0495286398445,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::CommonBearingFixThrough_CommonBearingFixThrough",
+          "linked_object": "CommonBearingFixThrough::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 669.0123821599616,
+          "zero_world_com_m": [
+            -3.7276723516812783e-07,
+            0.038918423322031104,
+            0.20199999999999993
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.0004147876769391762
+        },
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::CommonBearingFixThrough_CommonBearingFixThrough",
+          "linked_object": "CommonBearingFixThrough::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 669.0123821599612,
+          "zero_world_com_m": [
+            1.7224472519868847e-17,
+            -0.050918115832594715,
+            0.3619999999999999
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.000414787676939176
+        },
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::CommonBearingFixThrough_CommonBearingFixThrough001",
+          "linked_object": "CommonBearingFixThrough::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 669.0123821599606,
+          "zero_world_com_m": [
+            4.96535947694026e-18,
+            0.03891811583259477,
+            0.362
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.00041478767693917557
+        },
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::CommonBearingFixThrough_CommonBearingFixThrough",
+          "linked_object": "CommonBearingFixThrough::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 669.0123821599614,
+          "zero_world_com_m": [
+            -1.0038539285263168e-17,
+            -0.004918115832594763,
+            0.556
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.00041478767693917606
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 4,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "bearing seat, retention lip, bolt bore and tensioner contact",
+        "layer_and_support_risks": "layer separation around press/bolt loading and trapped seat supports",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "GripperActiveArm::Body",
+      "source_file": "freecad-src/GripperActiveArm.FCStd",
+      "source_object": "GripperActiveArm::Body",
+      "source_sha256": "3ba5ba6f74c5d2f45eeca56f28534dc750e7f0ae735b6a0b3e16beeef21adc67",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/GripperActiveArm.FCStd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -15.399999999999999,
+        "XMax": 38.729082680466774,
+        "YMin": -15.399999999999999,
+        "YMax": 15.399999999999999,
+        "ZMin": -5.999999999062311e-07,
+        "ZMax": 5.000000004982114
+      },
+      "source_envelope_xyz_mm": [
+        54.12908268046677,
+        30.799999999999997,
+        5.000000604982114
+      ],
+      "source_volume_mm3": 2591.363809825242,
+      "quantity": 1,
+      "installed_volume_mm3": 2591.363809825241,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::GripperActiveArm_GripperActiveArm",
+          "linked_object": "GripperActiveArm::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 2591.363809825241,
+          "zero_world_com_m": [
+            -0.00039207183320565326,
+            0.019505819082214493,
+            0.645024363262996
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.0016066455620916496
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 1,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "jaw pivots, finger contact face and socket/radial retention where present",
+        "layer_and_support_risks": "pivot-boss splitting, jaw bending across layers and inaccessible socket supports",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "GripperArm::Body",
+      "source_file": "freecad-src/GripperArm.FCStd",
+      "source_object": "GripperArm::Body",
+      "source_sha256": "f1511f4b319a5727cf07771abe4c75002d5527e0a10291d47c1fe8024a44c6fc",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/GripperArm.FCStd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -3.7290826804738146,
+        "XMax": 3.7290826804738146,
+        "YMin": -3.7290826804738146,
+        "YMax": 38.729082680466774,
+        "ZMin": -1.1102230246251565e-16,
+        "ZMax": 5.0
+      },
+      "source_envelope_xyz_mm": [
+        7.458165360947629,
+        42.45816536094059,
+        5.0
+      ],
+      "source_volume_mm3": 839.6484003078497,
+      "quantity": 2,
+      "installed_volume_mm3": 1679.2968006156993,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed2_GripperArm",
+          "linked_object": "GripperArm::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 839.6484003078498,
+          "zero_world_com_m": [
+            0.0002139460692350835,
+            -0.023499504827399532,
+            0.6635000000003507
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.0005205820081908669
+        },
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed2_GripperArm001",
+          "linked_object": "GripperArm::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 839.6484003078494,
+          "zero_world_com_m": [
+            8.6052820123602e-05,
+            0.023500321167287484,
+            0.6634999999996493
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.0005205820081908666
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 2,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "jaw pivots, finger contact face and socket/radial retention where present",
+        "layer_and_support_risks": "pivot-boss splitting, jaw bending across layers and inaccessible socket supports",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "GripperBot::Body",
+      "source_file": "freecad-src/GripperBot.FCStd",
+      "source_object": "GripperBot::Body",
+      "source_sha256": "a65e68644312adee7381e3a640b2b827f9c2c3362bbe4a842ccee9fea969d176",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/GripperBot.FCStd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -35.947322617113855,
+        "XMax": 35.947322617113855,
+        "YMin": -1.6477050759278008e-15,
+        "YMax": 56.64784400584788,
+        "ZMin": -2.220446049250313e-16,
+        "ZMax": 19.962180000000004
+      },
+      "source_envelope_xyz_mm": [
+        71.89464523422771,
+        56.64784400584788,
+        19.962180000000004
+      ],
+      "source_volume_mm3": 30622.375656273678,
+      "quantity": 1,
+      "installed_volume_mm3": 30622.375656273696,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::GripperBot_GripperBot",
+          "linked_object": "GripperBot::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 30622.375656273696,
+          "zero_world_com_m": [
+            0.009190149653513493,
+            -0.0018838837490467231,
+            0.6398933923896416
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.018985872906889693
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 1,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "jaw pivots, finger contact face and socket/radial retention where present",
+        "layer_and_support_risks": "pivot-boss splitting, jaw bending across layers and inaccessible socket supports",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "GripperFinger::Body",
+      "source_file": "freecad-src/GripperFinger.FCStd",
+      "source_object": "GripperFinger::Body",
+      "source_sha256": "ab4daca4dd2f447029f4c76150b7f617fbdda74ae467cf6962938efe148d57a6",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/GripperFinger.FCStd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -1.5242557054092885,
+        "XMax": 18.5,
+        "YMin": -1.78000000751573e-15,
+        "YMax": 61.524255705409296,
+        "ZMin": -4.440892098500626e-16,
+        "ZMax": 15.5
+      },
+      "source_envelope_xyz_mm": [
+        20.02425570540929,
+        61.524255705409296,
+        15.5
+      ],
+      "source_volume_mm3": 12593.042562615727,
+      "quantity": 2,
+      "installed_volume_mm3": 25186.085125231457,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::GripperFinger_sym001/AssemblyArt56::Unnamed1_GripperFinger_mirrored",
+          "linked_object": "AssemblyArt56::Unnamed1_GripperFinger_mirrored",
+          "variant_id": "reflected",
+          "geometry_operation": "saved_assembly_reflection",
+          "volume_mm3": 12593.042562615727,
+          "zero_world_com_m": [
+            8.88662707627379e-05,
+            -0.043817472145170254,
+            0.673167737396456
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.007807686388821751
+        },
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed1_GripperFinger",
+          "linked_object": "GripperFinger::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 12593.04256261573,
+          "zero_world_com_m": [
+            -0.0001496004977267916,
+            0.04381730687865155,
+            0.673167737396456
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.007807686388821753
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 1,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        },
+        {
+          "variant_id": "reflected",
+          "quantity": 1,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "saved reflected final solid; exact frame/plane needs native capture",
+          "required_geometry_operation": "saved_reflected_final_solid_not_duplicate_nominal_mesh"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "jaw pivots, finger contact face and socket/radial retention where present",
+        "layer_and_support_risks": "pivot-boss splitting, jaw bending across layers and inaccessible socket supports",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "GripperPassiveArm::Body",
+      "source_file": "freecad-src/GripperPassiveArm.FCStd",
+      "source_object": "GripperPassiveArm::Body",
+      "source_sha256": "d14ac1debf67735fd623e052d468a9773066c32356390799b4ea07addcba68d4",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/GripperPassiveArm.FCStd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -15.399999999999999,
+        "XMax": 38.52176379979863,
+        "YMin": -15.399999999999999,
+        "YMax": 15.399999999999999,
+        "ZMin": -6.000006644302225e-07,
+        "ZMax": 5.000000000000003
+      },
+      "source_envelope_xyz_mm": [
+        53.921763799798626,
+        30.799999999999997,
+        5.000000600000667
+      ],
+      "source_volume_mm3": 3532.8022111270066,
+      "quantity": 1,
+      "installed_volume_mm3": 3532.8022111270097,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed3_GripperPassiveArm",
+          "linked_object": "GripperPassiveArm::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 3532.8022111270097,
+          "zero_world_com_m": [
+            0.0002409504375276684,
+            -0.018138944004330183,
+            0.6450157837011803
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.0021903373708987463
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 1,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "jaw pivots, finger contact face and socket/radial retention where present",
+        "layer_and_support_risks": "pivot-boss splitting, jaw bending across layers and inaccessible socket supports",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    },
+    {
+      "asset_id": "GripperTop::Body",
+      "source_file": "freecad-src/GripperTop.FCStd",
+      "source_object": "GripperTop::Body",
+      "source_sha256": "10f501e23263c8ddfc37e472fada7d9978d5f6c10cedf6deaa943dde87bdea56",
+      "source_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/freecad-src/GripperTop.FCStd",
+      "source_geometry_frame": "native source raw Shape coordinates, mm",
+      "source_bounds_mm": {
+        "XMin": -34.14784400584788,
+        "XMax": 34.14784400584788,
+        "YMin": -2.4000170340682248e-16,
+        "YMax": 56.64784400584788,
+        "ZMin": -4.134470543704083e-13,
+        "ZMax": 15.069882952719485
+      },
+      "source_envelope_xyz_mm": [
+        68.29568801169576,
+        56.64784400584788,
+        15.0698829527199
+      ],
+      "source_volume_mm3": 20848.800563144214,
+      "quantity": 1,
+      "installed_volume_mm3": 20848.800563144217,
+      "instances": [
+        {
+          "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed_GripperTop",
+          "linked_object": "GripperTop::Body",
+          "variant_id": "nominal",
+          "geometry_operation": "source_shape",
+          "volume_mm3": 20848.800563144217,
+          "zero_world_com_m": [
+            -0.007622386949759331,
+            -9.263638140713947e-05,
+            0.6358308524964422
+          ],
+          "installation_frame": "native Assembly::Model zero-pose frame, metres",
+          "source_to_installation_transform": null,
+          "transform_status": "not_recovered_by_this_JSON_only_tool",
+          "baseline_PLA_half_solid_mass_kg": 0.012926256349149417
+        }
+      ],
+      "export_variants": [
+        {
+          "variant_id": "nominal",
+          "quantity": 1,
+          "export_status": "not_exported",
+          "export_sha256": null,
+          "mesh_units": null,
+          "export_frame": "native source raw Shape coordinates, mm; own placement already applied",
+          "required_geometry_operation": "source_final_solid"
+        }
+      ],
+      "orientation_and_inspection": {
+        "status": "inspection_candidates_not_selected_process",
+        "primary": "Compare source +Z up after identifying an actual stable bed-contact face",
+        "alternative": "Compare source +X up; fixture/support feasibility must be inspected",
+        "inspect_features": "jaw pivots, finger contact face and socket/radial retention where present",
+        "layer_and_support_risks": "pivot-boss splitting, jaw bending across layers and inaccessible socket supports",
+        "actual_orientation_or_supports": null,
+        "required_acceptance_source": null
+      },
+      "history_status": "cached_final_shape; not_rebuilt_by_this_tool"
+    }
+  ],
+  "attribution": {
+    "creator": "AngelLM and Thor contributors",
+    "project": "Thor",
+    "repository": "https://github.com/AngelLM/Thor",
+    "declared_repository_license": "CC-BY-SA-4.0",
+    "license_url": "https://github.com/AngelLM/Thor/blob/286b081fe6f056d87c379b884781ef77ff6a0159/LICENSE",
+    "obligations": [
+      "Retain creator, source, revision and license link with derivatives/exports",
+      "Identify modifications/reflections and preserve applicable ShareAlike obligations",
+      "Embedded document metadata conflict remains an attribution review gate",
+      "No RAFTEL company-wide license is selected by this manifest"
+    ]
+  },
+  "qualification": {
+    "native_export_performed": false,
+    "mesh_dimensions_or_manifoldness_validated": false,
+    "source_to_installation_transforms_complete": false,
+    "sliced": false,
+    "physical_mass_or_fit_verified": false,
+    "manufacturing_release": false
+  }
+}
