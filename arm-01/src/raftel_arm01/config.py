@@ -34,7 +34,11 @@ class Config:
 
 
 def load_config(path: Path | None = None) -> Config:
-    raw = path.read_text() if path else files("raftel_arm01").joinpath("defaults.json").read_text()
+    raw = (
+        path.read_text(encoding="utf-8")
+        if path
+        else files("raftel_arm01").joinpath("defaults.json").read_text(encoding="utf-8")
+    )
     data = json.loads(raw)
     if set(data) != {"frame", "bins", "envelope", "clearance_m", "max_attempts"}:
         raise ValueError("unexpected or missing configuration fields")

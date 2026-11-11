@@ -256,14 +256,19 @@ def test_installed_module_entry_point():
     assert json.loads(result.stdout.splitlines()[-1])["sorted"] == 1
 
 
-def test_custom_categories_drive_synthetic_detection(tmp_path, capsys):
+@pytest.mark.parametrize(
+    "categories",
+    [("metal", "wood", "plastic"), ("r\u00e9utilisable", "bl\u00e5", "\u7dd1")],
+)
+def test_custom_categories_drive_synthetic_detection(tmp_path, capsys, categories):
     from importlib.resources import files
 
-    data = json.loads(files("raftel_arm01").joinpath("defaults.json").read_text())
-    for b, category in zip(data["bins"], ("metal", "wood", "plastic"), strict=True):
+    data = json.loads(files("raftel_arm01").joinpath("defaults.json").read_text(encoding="utf-8"))
+    for b, category in zip(data["bins"], categories, strict=True):
         b["category"] = category
     path = tmp_path / "custom.json"
-    path.write_text(json.dumps(data))
+    path.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+    assert tuple(b.category for b in load_config(path).bins) == categories
     assert main(["--config", str(path), "--count", "3"]) == 0
     summary = json.loads(capsys.readouterr().out.splitlines()[-1])
     assert summary["sorted"] == 3 and summary["skipped"] == 0
