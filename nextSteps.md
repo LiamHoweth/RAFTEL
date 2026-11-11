@@ -2,7 +2,7 @@
 
 **Project:** ARM-01 BenchSort
 **Current phase:** Phase 1 — Engineering foundation
-**Last updated:** 2026-11-11 17:09 UTC
+**Last updated:** 2026-11-11 17:10:20 UTC
 **Overall status:** In Progress
 
 ## Current Objective
@@ -19,9 +19,9 @@ Reproduce Thor's existing native CAD baseline before adapting it: open/recompute
 3. **Complete Thor BOM and tooling decision:** reconcile exact motor/controller/driver fits, parallel-jaw mechanism, mount/protection, tax/shipping and licensing. Why: the partial subtotal cannot prove budget feasibility. Dependencies: CAD interfaces and Liam's equipment inventory. Done: complete priced candidate list with remaining uncertainty/status, no orders.
 
 ## In Progress
-- Published branch `codex/arm01-engineering-bootstrap`; [draft PR #1](https://github.com/LiamHoweth/RAFTEL/pull/1) open, not merged. Checkpoints `32518b3` and `5ac3b6d` are pushed.
+- Published branch `codex/arm01-engineering-bootstrap`; [PR #1](https://github.com/LiamHoweth/RAFTEL/pull/1) open, not merged. Latest implementation checkpoint `eb2171a` is pushed and CI passes; session handoff is saved with this follow-up.
 - Official portable FreeCAD 1.1.4 runtime is operational under the workspace tools directory; no system-wide installation or global security-setting changes. Whole-assembly compatibility remains open.
-- Thor coordinate-map and cost-study follow-up pushed as `d89a66f`. Recording native audit evidence and the compatibility blocker; complete assembly remains unverified.
+- Bootstrap session implementation and verification are finished. Complete native assembly compatibility and CAD-derived model/BOM remain the next engineering tasks; no background agent work is implied.
 
 ## Completed and Verified
 - Pure Thor joint/channel conversion utility and 21 tests: paired shoulder validation, differential wrist modes, seeded algebraic round trips, finite input/overflow handling; no hardware commands. See `arm-01/docs/thor-joint-map.md`.
@@ -41,7 +41,7 @@ Reproduce Thor's existing native CAD baseline before adapting it: open/recompute
 No hardware approved, purchased, received, or tested in this session.
 
 ## Validation Results
-94 tests passed locally on macOS/Python 3.14.4. Ruff lint and formatting, compile check, installed editable CLI and separate non-editable wheel smoke passed. Normal demo sorted 10 synthetic objects; unreachable scenario skipped one; injected grasp failure returned exit 1; invalid count returned exit 2. Analysis script ran. Local Markdown links resolve and JSON files parse. GitHub Actions passed on Linux/Python 3.11–3.14 at `5ac3b6d` (70 tests plus static/install/demo/analysis checks). Initial inspector import-order failure was fixed. The additional drive-coordinate and native-audit guard tests pass locally (94 total); final remote rerun pending. Native BaseTop import/recompute passed, but whole-assembly import/recompute did not complete. No hardware, spatial FK/IK or physics validation.
+94 tests passed locally on macOS/Python 3.14.4. Ruff lint and formatting, compile check, installed editable CLI and separate non-editable wheel smoke passed. Normal demo sorted 10 synthetic objects; unreachable scenario skipped one; injected grasp failure returned exit 1; invalid count returned exit 2. Analysis script ran. Local Markdown links resolve and JSON files parse. GitHub Actions passed on Linux/Python 3.11–3.14 at `eb2171a`: package install, 94 tests, Ruff lint/format, compile, mock demo and engineering analysis. [Passing run](https://github.com/LiamHoweth/RAFTEL/actions/runs/43065277693). Initial inspector import-order failure was fixed. Native BaseTop import/recompute passed, but whole-assembly import/recompute did not complete. No hardware, spatial FK/IK or physics validation.
 
 ## Roadmap
 - [ ] Phase 1 — Engineering foundation (CAD-derived model and complete Thor BOM still open)
@@ -59,6 +59,7 @@ No hardware approved, purchased, received, or tested in this session.
 - [ ] Phase 7 — Reliability/mobile readiness
 
 ## Recent Engineering Log
+- 2026-11-11: All four Linux Python CI jobs passed for eb2171a (94 tests). Saved final native diagnostics, preserved source checkouts and active tools, removed superseded installer and scratch helpers; free-space reserve remains above50GiB.
 - 2026-11-11: Verified official FreeCAD1.1.4 download checksum/signature; portable console works. Whole-assembly native attempt timed out with actionable diagnostics; original BaseTop imported/forced-recomputed with one valid solid. No source saved. Added native-audit guard tests (94 total) and retained reports.
 - 2026-11-11: Added verified-source Thor motor coupling algebra and 21 tests (91 total); researched actual linked motor prices and incomplete total. CI at5ac3b6d passed all four Python versions. Continuing native CAD runtime/import study.
 - 2026-11-11: Published requested checkpoint and opened PR #1; added read-only Thor inspector with five tests (70 total). Corrected inspector import formatting discovered by remote CI; all local static checks now pass.
