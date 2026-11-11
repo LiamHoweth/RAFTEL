@@ -1,23 +1,23 @@
 # Sources to watch
 
-Prioritize sources that answer a live RAFTEL question. The current emphasis is a stationary sorting arm, with mobile household manipulation as a later stage.
+Prioritize the next decision in [nextSteps.md](../nextSteps.md). The current baseline is a stationary Thor-derived sorting arm; physical hardware, fabrication and actuator capacity remain unqualified.
 
 ## Useful now
 
-- **Hugging Face / LeRobot:** [documentation](https://huggingface.co/docs/lerobot/index) and [repository](https://github.com/huggingface/lerobot). Watch hardware interfaces, calibration, demonstration recording, dataset formats, policy evaluation, and release compatibility. The [SO-101 guide](https://huggingface.co/docs/lerobot/so101) is an example of an integrated arm workflow, not a hardware selection for RAFTEL.
-- **Physical Intelligence:** [research and announcements](https://www.pi.website/blog). Watch how policies adapt to new hardware, how failures guide data collection, inference latency, and availability of code or models. Hosted services require separate evaluation of data handling, connectivity, cost, and access.
-- **NVIDIA robotics:** [Isaac Lab](https://github.com/isaac-sim/IsaacLab) and [Isaac GR00T](https://github.com/NVIDIA/Isaac-GR00T). Watch manipulation benchmarks, simulation fidelity, model requirements, and demonstrated support for the selected arm. An announcement is not proof that RAFTEL's hardware is supported.
+- **Thor mechanics and source model:** [pinned native CAD](https://github.com/AngelLM/Thor/tree/286b081fe6f056d87c379b884781ef77ff6a0159) and [pinned ROS controller](https://github.com/AngelLM/Thor-ROS/blob/e11a56b5aa0d89f0b68a3ea7bd084eab4a050952/ws_thor/src/thor_controller/src/thor_interface.cpp). Follow actual part membership, wrist coupling, belt paths and datum frames. Read our [geometry](../arm-01/docs/thor-geometry.md) and [transmission](../arm-01/docs/thor-transmission-study.md) evidence first; a controller convention is not physical calibration.
+- **Statics and dynamics:** [Modern Robotics 5.2](https://modernrobotics.northwestern.edu/nu-gm-book-resource/5-2-statics-of-open-chains/), an undated primary teaching resource. Use it to understand joint-load calculations before comparing actuator specifications.
+- **Exact actuator data:** [StepperOnline 17HS13-0404S-PG5](https://www.omc-stepperonline.com/nema-17-stepper-motor-bipolar-l-33mm-w-gear-ratio-5-1-planetary-gearbox-17hs13-0404s-pg5) and the other upstream-linked models in [our load study](../arm-01/docs/thor-load-analysis.md). Track drawings, masses, torque-speed test conditions and gearbox limits; keep supplier claims distinct from measured performance.
+- **Printer and slicer:** [Anycubic Kobra 3 Max specifications](https://us.anycubic3d.com/products/kobra-3-max), [official manual](https://wiki.anycubic.com/k3-max/anycubic_kobra_3_max_combo_user_manual-en-v1.1_compressed.pdf), and [our fabrication record](../arm-01/hardware/fabrication.md). Track exact profile/nozzle, usable print area, part orientation and sliced mass. Do not infer the user's installed configuration from stock specifications.
+- **Filament-specific technical sheets:** [Prusament PLA v1.1](https://prusament.com/wp-content/uploads/2022/10/PLA_Prusament_TDS_2021_10_EN.pdf), [PETG v1.1](https://prusament.com/wp-content/uploads/2022/10/PETG_Prusament_TDS_2021_10_EN.pdf), and the exact ABS edition referenced in [our material study](../arm-01/docs/thor-load-analysis.md). Substitute the actual filament vendor's data when known. Watch print direction, stiffness, creep, thermal test conditions and density—not family labels alone.
+- **FreeCAD and workbench compatibility:** use the pinned sources in [our compatibility record](../arm-01/docs/thor-dependency-compatibility.md). Watch schema/kernel changes affecting saved models; latest-version imports do not prove legacy feature rebuilds.
 
-## Later-stage context
+## Later-stage learning and simulation
 
-- **Figure:** [news and technical write-ups](https://www.figure.ai/news). Watch household manipulation, recovery, unseen-object evaluation, and whole-body coordination. Use evaluation design as inspiration; do not treat a proprietary humanoid demo as a drop-in capability.
+- **Hugging Face / LeRobot:** [documentation](https://huggingface.co/docs/lerobot/index), [repository](https://github.com/huggingface/lerobot), and the [November 5 v0.7.0 release](https://huggingface.co/blog/lerobot/lerobot-release-v070). Prioritize recording, calibration, evaluation and verified selected-hardware support when those gates are reached. Stock SO-101 is a reference, not the chosen six-axis baseline.
+- **NVIDIA robotics:** [November 9 CoRL announcement](https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/), [Isaac Lab](https://github.com/isaac-sim/IsaacLab) and [GR00T](https://github.com/NVIDIA/Isaac-GR00T). Require a traceable model and deployment/support checks before recommending adoption. Keep vendor demonstrations separate from repeatable RAFTEL results.
 
-## Expand from the repository
+## Editorial checks
 
-Once the hardware and stack are documented, add the exact manufacturers' manuals, upstream release/security feeds, relevant robotics papers, and comparable open-source builds. Track companies only when they offer a useful comparison for the current task. Prefer links to the specific announcement or experiment over general news summaries.
+Record publication/event dates separately from verification dates. Identify whether a source is news, a living reference, a pinned code revision or older background. Link each item to an actual project decision. Check licensing, requirements and repeatability before adoption; publish fewer items when no relevant news changes the next action.
 
-## Evaluate every story
-
-Record publication/event dates separately when they differ, what changed, the evidence behind performance claims, and which RAFTEL file or decision makes it relevant. Check licensing, deployment requirements, and repeatability before recommending adoption.
-
-Baseline checked: 2026-11-11 (UTC).
+Refreshed: November 11, 2026. Some manufacturer pages are undated living references. Access failures are limits on verification, not proof that a product or document is unavailable.
