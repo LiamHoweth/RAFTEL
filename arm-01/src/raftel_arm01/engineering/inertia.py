@@ -42,17 +42,35 @@ def _positive_semidefinite(matrix: Matrix3) -> bool:
     scale = max(abs(value) for row in matrix for value in row)
     if scale == 0:
         return True
-    # Normalize before principal-minor checks so microscopic SI inertias are
-    # not mistakenly accepted/rejected by an absolute kilogram-metre tolerance.
-    scaled = tuple(tuple(value / scale for value in row) for row in matrix)
-    tolerance = 1e-12
+    # Principal-minor tolerances square away large eigenvalue defects near
+    # rank deficiency. A bounded symmetric Jacobi solve tests eigenvalues
+    # directly, normalized so microscopic SI tensors receive the same check.
+    scaled = [[(matrix[i][j] / 2 + matrix[j][i] / 2) / scale for j in range(3)] for i in range(3)]
+    for _ in range(24):
+        p, q = max(((0, 1), (0, 2), (1, 2)), key=lambda pair: abs(scaled[pair[0]][pair[1]]))
+        off = scaled[p][q]
+        if abs(off) <= 1e-15:
+            break
+        tau = (scaled[q][q] - scaled[p][p]) / (2 * off)
+        tangent = math.copysign(1.0, tau) / (abs(tau) + math.hypot(1.0, tau))
+        cosine = 1 / math.hypot(1.0, tangent)
+        sine = tangent * cosine
+        scaled[p][p] -= tangent * off
+        scaled[q][q] += tangent * off
+        scaled[p][q] = scaled[q][p] = 0.0
+        for r in range(3):
+            if r not in (p, q):
+                old_p, old_q = scaled[r][p], scaled[r][q]
+                scaled[r][p] = scaled[p][r] = cosine * old_p - sine * old_q
+                scaled[r][q] = scaled[q][r] = sine * old_p + cosine * old_q
+    if max(abs(scaled[i][j]) for i, j in ((0, 1), (0, 2), (1, 2))) > 1e-15:
+        return False
     return (
-        all(scaled[i][i] >= -tolerance for i in range(3))
-        and all(
-            scaled[i][i] * scaled[j][j] - scaled[i][j] ** 2 >= -tolerance
-            for i, j in ((0, 1), (0, 2), (1, 2))
+        min(
+            scaled[i][i] - math.fsum(abs(scaled[i][j]) for j in range(3) if j != i)
+            for i in range(3)
         )
-        and _determinant(scaled) >= -tolerance
+        >= -1e-12
     )
 
 

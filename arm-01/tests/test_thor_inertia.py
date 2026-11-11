@@ -168,6 +168,33 @@ def test_nonphysical_or_nonfinite_tensors_rejected_at_all_si_scales(bad):
             validate_centroidal_inertia(tuple(tuple(x * scale for x in row) for row in bad))
 
 
+@pytest.mark.parametrize("epsilon", [1e-7, 1e-6])
+def test_near_rank_deficient_triangle_violation_cannot_hide_in_small_minors(epsilon):
+    tensor = ((1, -epsilon, 0), (-epsilon, 1, 0), (0, 0, 0))
+    rotation = (
+        (1 / math.sqrt(2), -1 / math.sqrt(2), 0),
+        (1 / math.sqrt(6), 1 / math.sqrt(6), -2 / math.sqrt(6)),
+        (1 / math.sqrt(3), 1 / math.sqrt(3), 1 / math.sqrt(3)),
+    )
+    rotated = tuple(
+        tuple(
+            math.fsum(
+                rotation[i][a] * tensor[a][b] * rotation[j][b] for a in range(3) for b in range(3)
+            )
+            for j in range(3)
+        )
+        for i in range(3)
+    )
+    for scale in (1e-24, 1, 1e24):
+        for candidate in (tensor, rotated):
+            with pytest.raises(ValueError, match="triangle"):
+                validate_centroidal_inertia(
+                    tuple(tuple(x * scale for x in row) for row in candidate)
+                )
+        valid = ((scale, 0, 0), (0, scale, 0), (0, 0, 0))
+        assert validate_centroidal_inertia(valid) == valid
+
+
 @pytest.mark.parametrize(
     "bad", [((1, 0, 0), (0, 1, 0), (0, 0, -1)), ((2, 0, 0), (0, 1, 0), (0, 0, 1))]
 )
