@@ -2,7 +2,7 @@
 
 **Project:** ARM-01 BenchSort
 **Current phase:** Phase 1 — CAD-derived engineering foundation and design gates
-**Last updated:** 2026-11-12 08:06 America/Chicago (14:06 UTC)
+**Last updated:** 2026-11-12 08:43 America/Chicago (14:43 UTC)
 **Overall status:** In Progress
 
 ## Current Objective
@@ -15,9 +15,11 @@ Continue all three design gates: wrist handedness/moving masses/jaw articulation
 
 ## Next Steps for Codex
 
-**Print-preparation request — November 12:** The owner requested preparing the needed prints in Anycubic. Only print preparation resumed; CAD investigation lanes remain closed. The existing installed app opened, but two fresh captures returned `window capture timed out: timed out waiting on channel`. Accessibility could read Home and the keyboard Open dialog; indexed input failed with `coordinate input geometry is unavailable`, and setting the observed filename field failed because the element was unavailable in cached app state. No model import, native project save or slice was verified. Desktop visibility/unlock and actual filament/nozzle confirmation were requested and remain pending.
+**Print preparation — November 12:** The owner confirmed the desktop visible/unlocked, **PLA loaded and a 0.4 mm nozzle**. Window capture still failed after reselection/kernel reset, so live GUI import/Preview remains unobserved. A purpose-built offline Anycubic CLI route now works: native projects and actual sliced G-code are delivered under `C:\Users\howet\Desktop\RAFTEL Prints\2026-11-12 Starter\Sliced PLA 0.4\`. Open `STARTER_8_PARTS_PLA_04mm.3mf` **as a project** to retain settings. Main estimate **10h48m43s / 211.14 g**; optional single-retainer check **4m10s / 0.98 g**, already included in the eight required parts. No printer action occurred. Only print preparation resumed; CAD lanes remain closed.
 
-**Concrete files prepared:** `C:\Users\howet\Desktop\RAFTEL Prints\2026-11-12 Starter\` contains unchanged `DRAFT_01_Scale_Check_30x15.780363x4mm.3mf`, `DRAFT_02_Starter_8_Parts.3mf`, instructions and file hashes. The starter includes four bearing retainers, one base bearing ring, one base top and the nominal/reflected fingers; the separate scale-check model is already included in those eight and is not a ninth required part. All eight original source hashes match. Copied starter SHA is unchanged (`68f4e0b6…313bbb`); fresh structure and exact placed oriented-facet comparison pass with eight leaves. Reports are under `.work/anycubic-desktop-planning/session-2026-11-12-01/`. These are source model packages, not saved/sliced Anycubic jobs. No printer action or G-code was produced. Resume the actual import/save/slice only after window control is available and the loaded process inputs are confirmed.
+**Actual print checkpoint:** See [native CLI starter record](arm-01/docs/thor-anycubic-cli-starter.md) and [curated receipt](arm-01/hardware/print-planning/thor-anycubic-cli-starter-v1.json). Kobra 3 Max non-V2, PLA/0.4, 0.20 mm, four walls, 40% gyroid, five top/bottom layers, tree support from bed, by-layer, assumed textured PEI, **55°C bed / 220°C first / 210°C later nozzle**. Both final native warning lists are empty; 65°C/60°C warning attempts remain preserved and the 60°C warning threshold is unchanged. **81 host tests pass**; actual archive/settings/G-code/identity/footprint checks and independent review pass. All eight mesh repair counters are zero. Exact source coordinate equality fails by at most 1.003137207e-6 mm; the separate bounded-coordinate diagnostic is explicitly labeled, not a waived migration or physical gate. Native projects/G-code remain local; receipts/docs are the publication scope.
+
+**Earlier generic files (preserved):** The parent `2026-11-12 Starter` folder still contains unchanged `DRAFT_01_Scale_Check_30x15.780363x4mm.3mf` and `DRAFT_02_Starter_8_Parts.3mf`. All eight original source hashes match; copied starter SHA remains `68f4e0b6…313bbb`. Source-copy structure/exact placed-facet audits are retained under `session-2026-11-12-01`; actual CLI runs and review records are under `.work/anycubic-desktop-planning/session-2026-11-12-02/`. Use the new **Sliced PLA 0.4** subfolder for native projects/G-code, not these generic source packages.
 
 ### Previous nightly checkpoint
 
@@ -29,7 +31,7 @@ The thirty-agent continuation is **stopped for the night at the owner’s reques
 
 ### Next three executable actions
 
-1. Restore working desktop capture/input and preserve the current Anycubic scene/picker. Verify the small model scale, import the reviewed eight-copy draft, save a fresh local DRAFT, and run the new project/profile/mesh audits on the actual saved file. No upload or printer action.
+1. Open the delivered native Anycubic project as a project and inspect live Preview when desktop control works. Confirm actual textured bed/spool suitability; the owner can print/measure the optional retainer. If that retainer is kept, reduce the main four-retainer quantity by one and re-slice; do not count it as a ninth needed part. No autonomous printer action.
 2. Review the new [Art1 return trace](arm-01/docs/thor-art1-return-trace.md) and [direct engine study](arm-01/docs/thor-art1-attachment-engine.md). Form one separately justified copied-candidate hypothesis for Pocket005 and returned datum drift; retain all failed migration gates, original history and recompute-count limitations.
 3. Review checkpoint CI and merge only after checks pass on its exact head. Reuse the verified [nonzero wrist capture](arm-01/docs/thor-wrist-native-frames.md) for later source-body binding instead of rerunning accepted experiments or inferring physical clearance.
 

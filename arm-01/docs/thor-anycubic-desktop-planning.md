@@ -1,5 +1,16 @@
 # Anycubic desktop inspection plan
 
+**Latest, November 12:** Owner confirmation is now PLA / 0.4 mm and desktop
+visible/unlocked. Capture still fails after fresh selection/kernel reset, but
+actual offline Anycubic CLI projects and slices succeeded. The delivered native
+starter and optional fit check, settings, estimates, retained warning attempts,
+geometry limits and independent verification are recorded in the
+[CLI starter checkpoint](thor-anycubic-cli-starter.md). Open the native starter
+from `Desktop\RAFTEL Prints\2026-11-12 Starter\Sliced PLA 0.4\` as a **project**.
+Live GUI Preview remains unobserved; no printer action occurred.
+
+## Earlier November 12 generic preparation
+
 **November 12, 08:06 America/Chicago:** Print preparation resumed at the owner's
 request. The installed slicer opened, but fresh capture failed twice with
 `window capture timed out: timed out waiting on channel`. Accessibility exposed
@@ -19,7 +30,7 @@ Reports are retained at
 `.work/anycubic-desktop-planning/session-2026-11-12-01/`. These files remain
 generic source packages, without a verified Anycubic process save or G-code.
 
-**Latest checkpoint:** stopped for the night at the owner's request on
+**Earlier nightly checkpoint:** stopped for the night at the owner's request on
 November 11 at approximately 21:15 America/Chicago. The owner confirmed the app
 was visible and maximized, but fresh Sky capture still timed out and coordinate
 input remained unavailable. Accessibility could read Home; keyboard Open

@@ -10,6 +10,8 @@ The [run record](../../docs/arm01-desktop-run-2026-11-11.md) summarizes the owne
 The later [thirty-agent checkpoint](../../docs/arm01-swarm-checkpoint-2026-11-11.md)
 adds actual direct attachment/return and nonzero wrist experiments. It is
 stopped for the night; local checks and pending publication are in nextSteps.
+The November 12 [Anycubic CLI starter](thor-anycubic-cli-starter.md) adds actual
+native saved projects and slices, with live GUI Preview still unobserved.
 
 Native rows identify their actual cached/recompute scope. Host tests validate
 their stated math/input contracts; they do not mean CI executed FreeCAD, a slicer

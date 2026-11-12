@@ -1,5 +1,11 @@
 # Local Anycubic Slicer Next profile audit
 
+**Later evidence:** The November 12 [CLI starter checkpoint](thor-anycubic-cli-starter.md)
+records owner-confirmed PLA/0.4, actual successful isolated project export/slicing
+and saved settings. Its CLI result supersedes the earlier unverified capability
+conclusion below. This original saved-profile snapshot remains unchanged evidence
+of the November 11 observation.
+
 The [allowlisted audit record](../hardware/print-planning/local-profile-audit.json) captures the installed software and last-saved printer/process/filament selection on this Windows host. It contains no account identifiers, credentials, privacy settings, full application configuration, unrelated project names or custom G-code. Original profiles and the configured power/security policies were not edited.
 
 **Installed application:** `C:\Program Files\AnycubicSlicerNext\AnycubicSlicerNext.exe`, Windows PE file/product version **2.0.0.3**. The record includes executable/DLL SHA-256 values. This is an installed-version observation, without an online/latest-version claim.
