@@ -912,3 +912,46 @@ its exact implementation head `8576807` agree with the handoff. Native frame
 capture and separate host reference aggregation are distinguished. Current
 receipt pins are unchanged, and the refresh promotes no cached, logical or
 artifact observation into engine, GUI, physical or release acceptance.
+
+## Refreshed installed-wheel evidence
+
+The final wheel has SHA-256
+`d87ec65b947f5f942a3148a50f5c7d21b1dd5262bf22d7c3e1f5f2b3cb953d12`.
+Independent byte inspection verifies all 51 hashed RECORD entries and all 47
+package files against both current source and the fresh installed tree. Its
+configuration module contains the explicit UTF-8 fix, with SHA-256
+`8aa325dc10a5dda21e2c83b86278db57a761ebe882b43f1cee7dd8589719a5fb`.
+Both declared console entry points and the absence of runtime dependencies
+agree with package metadata.
+
+The retained fresh-environment report records 45 installed module origins and
+eight successful expected-result checks: local no-index/no-dependency install,
+isolated imports and sorter/evaluator CLI exits 0/1/2. Every reported module path
+resolves inside that installed environment and matches wheel bytes. Build
+dependency acquisition is separate from this offline installation result.
+
+The separately hashed Unicode harness and its retained inputs/report agree:
+unescaped French, Scandinavian and Japanese categories survive exactly under
+reported UTF-8 mode 0 and cp1252 locale, followed by three logical sorts. The
+first harness and input remain preserved; its correction supplies the API's
+documented `Path` argument and uses a fresh output filename. This review reads
+the actual artifacts and scripts without rerunning suites. It establishes no
+native, network-service, hardware or physical acceptance.
+
+## Owner-requested closeout
+
+Final read-only review accepts the closing run record and linked handoff/status
+documents. The recorded 19:36:17 UTC start to approximately 01:21 UTC wrap-up is
+5:44:43, correctly described as about 5h45m before publication closeout. The
+seven-hour target is superseded, implementation is stopped and no continuation
+is implied. All 165 local targets inspected across eight closing documents
+resolve; UTF-8/LF and diff checks pass. Ten published PR commit pins and the
+current PR17 head match Git. Current wheel/report pins retain 45 module imports
+and 47 package files; older counts remain historical observations.
+
+Results retain their logical, analytical, cached-native and generic-artifact
+scopes. Live Anycubic import/save/slicing and physical/release acceptance remain
+unverified. The next three actions are executable with their existing evidence
+gates; final publication, synchronization and elapsed closeout time belong to
+the closing receipt and final reply. This acceptance adds no implementation,
+suite execution, native run or UI operation.

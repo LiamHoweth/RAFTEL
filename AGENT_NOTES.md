@@ -1,6 +1,7 @@
 # Durable implementation notes
 
 - Start with AGENTS.md and nextSteps.md. The latter owns current status and next actions.
+- `arm-01/docs/desktop-evidence-index.md` maps implemented claims to checks/gates; `docs/arm01-desktop-run-2026-11-11.md` records the Windows run and local deliverables. Read current publication/desktop availability in nextSteps.md rather than treating a historical snapshot or launch prompt as active work.
 - ARM-01's installed CLI is `raftel-sort`; defaults are packaged in `src/raftel_arm01/defaults.json`. Runtime uses Python standard library only. No hardware backend or real-motion flag exists.
 - The sorter checks abstract points against an envelope; it has no IK, collision checker, camera, or physics. Mock and analytical results cannot validate physical performance.
 - Liam selected Thor as the first existing CAD study baseline and explicitly allowed eight actuators (seven arm motors plus one gripper). Six independent arm axes and parallel-gripper requirement remain. Study permission does not approve fabrication/purchases.

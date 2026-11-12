@@ -2,6 +2,8 @@
 
 Copy the text below into a future Codex session running on the desktop. This document is a handoff, not an active background run. Read the live `main` version of `nextSteps.md` before executing it. The [evidence index](../arm-01/docs/desktop-evidence-index.md) separates implemented studies from physical gates. The [original launch prompt](https://github.com/LiamHoweth/RAFTEL/blob/6608d37/docs/arm01-desktop-handoff.md) remains in Git history.
 
+The [latest desktop run](arm01-desktop-run-2026-11-11.md) was wrapped early at the owner's request. The prompt below is optional future work, not an active goal or authorization to continue after that wrap-up.
+
 ```text
 Continue implementation of ARM-01 BenchSort in the private GitHub repository https://github.com/LiamHoweth/RAFTEL.
 
@@ -9,7 +11,7 @@ Work autonomously for approximately the next SEVEN HOURS of wall-clock time. Imp
 
 Start by finding the existing checkout whose origin is LiamHoweth/RAFTEL. Read AGENTS.md, AGENT_NOTES.md, nextSteps.md, the relevant architecture/requirements and existing implementation. Inspect local changes before fetching current main; preserve user work and do not reset, force-push or replace a dirty checkout. Use a codex/ feature branch. If no checkout exists, create a scoped working checkout and inspect it first.
 
-Current verified implementation baseline: PRs #8–16 are merged, most recently main 8f415ce3c57a45459b50cb4caaf163d61262bb4b. The suite has 2,200 tests; exact PR #16 head 8576807770d68a68239071180aa047e9842824ee passed all eight Linux/Windows Python 3.11–3.14 CI jobs. Fetch current main because later handoff/GUI records may supersede this snapshot. The corrected source inventory has 518 installed CAD leaves and 517 mass records. Logical sorting remains separate from nominal frames/Jacobian/local IK, declared trajectories, synthetic controller replay and conditional engineering studies; no hardware backend exists.
+Current verified implementation baseline: PRs #8–17 are merged, most recently main 5291a57fea82eccb3ec7bf22df97163b5985a76c. The suite has 2,200 tests; exact PR #17 head 67b8317f521d31db7c30120c1456945fe9b8af77 passed all eight Linux/Windows Python 3.11–3.14 CI jobs. Fetch current main because later closeout/GUI records may supersede this snapshot. The corrected source inventory has 518 installed CAD leaves and 517 mass records. Logical sorting remains separate from nominal frames/Jacobian/local IK, declared trajectories, synthetic controller replay and conditional engineering studies; no hardware backend exists.
 
 Native evidence is now available but scoped. Portable FreeCAD 1.1.4 with isolated preferences/pinned addons restored 53 documents/3,001 objects using a separate exact static Art1 wrapper. All 57 original archives and 589 addon files remain preserved. Cached exports cover 47 printed variants/65 installed copies. A separate matrix/marker/moment capture authenticates all 65 printed copies; a host study aggregates only a declared uniform-solid-density reference subset. Saved-zero numerical boxes cover all 518 leaves; enclosure and robot clearance are unqualified. Three nonzero proximal-four-coordinate scenarios retain q5=q6=0, without complete six-axis native articulation.
 

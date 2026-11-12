@@ -7,6 +7,14 @@ rendered plate, native project save or slice has yet been observed**. At
 confirmation remains pending. This record distinguishes actual observations
 from the prepared inputs below.
 
+At **01:07 UTC**, a fresh read-only inventory showed the slicer was no longer
+running. Root reopened the already-installed app using its returned Sky app ID;
+a new window appeared. Its first fresh screenshot request again failed with
+`window capture timed out: timed out waiting on channel`. No model/project input
+was sent after that launch, and UI attempts stopped. The app was left open;
+its current scene remains unobserved. The error alone does not identify its
+cause. No lock/authentication UI or power/security setting was operated.
+
 ## Prepared first inspections
 
 The files are under the retained local directory
@@ -60,7 +68,9 @@ The unchanged single-object projects and fallback receipt remain available.
 ## Live-session procedure and evidence
 
 1. Re-select the actual returned slicer window and obtain a fresh visible
-   capture. Stop if the desktop remains locked or capture/input fails.
+   capture. Stop if the desktop remains locked or capture/input fails. Observe
+   and preserve any existing unsaved/recovered scene before loading a draft;
+   do not assume the last home screen or an old window ID is current.
 2. Import the first generic model as geometry. Check units, object count,
    dimensions, bed position and any repair warning. A repair warning remains
    evidence; do not silently replace the retained source geometry. After that
