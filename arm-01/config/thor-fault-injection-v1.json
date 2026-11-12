@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "pack_revision": "thor-fault-injection-v1",
+  "evidence_class": "logical_fault_injection_not_firmware_or_physical_validation",
+  "seed": 42,
+  "protocol_max_age_s": 1.0,
+  "case_ids": [
+    "stale_status",
+    "partial_status",
+    "out_of_order_status",
+    "shoulder_disagreement",
+    "pending_command_reset",
+    "lost_ack_incremental_retry",
+    "grasp_ack_lost_after_effect",
+    "release_ack_lost_before_effect",
+    "release_ack_lost_after_effect",
+    "reset_during_transfer",
+    "grasp_false_exhaustion"
+  ]
+}
