@@ -2,9 +2,9 @@
 
 The installed Anycubic Slicer Next was opened during this desktop run. Window
 capture timed out while the desktop was unavailable; **no model import,
-rendered plate, native project save or slice has yet been observed**. Liam
-expects to return around 00:10 UTC November 12. The live session remains pending
-an awake/unlocked desktop. This record will distinguish actual observations
+rendered plate, native project save or slice has yet been observed**. At
+23:10 UTC Liam estimated returning in about an hour; actual desktop-ready
+confirmation remains pending. This record distinguishes actual observations
 from the prepared inputs below.
 
 ## Prepared first inspections
@@ -28,13 +28,44 @@ The dimensions shown are rounded for reading. The queue receipt and model
 coordinates retain original precision. These are inspection candidates; no
 stable orientation, support strategy or physical fit is accepted by this list.
 
+## Independently reviewed combined inspection plate
+
+A separate local generic draft is ready at
+`.work/anycubic-desktop-planning/plate-001/DRAFT_INSPECTION_eight_native_copies_source_Z_up.3mf`.
+It contains the four CommonBearingFix copies, one BaseBearingFix, one BaseTop,
+the nominal finger and the actual saved reflected finger: **eight existing
+installed identities**, reused from the 61-project queue. This is another
+representation of that subset, without eight additional parts in the inventory.
+Its SHA-256 is
+`68f4e0b621b3552b80e673125ab6eb98352e795b2bfa063ef9a7cc154f313bbb`.
+
+The [curated artifact receipt](../hardware/print-planning/thor-anycubic-inspection-plate-v1.json)
+binds the ignored raw receipt, separate one-off composer, original projects and
+complete retained metadata/native provenance. The original production writer
+and inspector have a one-object contract and were not used to claim validation
+of this multiobject package. A separate reviewer parsed the actual OPC/Core
+package and compared all **8 resources/build items, 7,524 vertices and 15,112
+triangles**, including indices and winding, exactly against the eight sources.
+All complete original metadata/license maps match. All 63 files in the original
+queue directory remain byte-identical.
+
+Only XY placement changes; identity rotation, source-Z-up and each original
+bottom-to-z=0 correction remain. All 28 mesh-AABB pair distances and the minimum
+margin inside the provisional X=3..423/Y=0..420 mm rectangle are **at least
+20 mm**. Those are mesh-box inspection spacings, without qualified supports,
+brims, purge or toolhead clearance, adhesion or stable contact. This is bounded
+artifact verification, not full 3MF certification or observed slicer behavior.
+The unchanged single-object projects and fallback receipt remain available.
+
 ## Live-session procedure and evidence
 
 1. Re-select the actual returned slicer window and obtain a fresh visible
    capture. Stop if the desktop remains locked or capture/input fails.
 2. Import the first generic model as geometry. Check units, object count,
    dimensions, bed position and any repair warning. A repair warning remains
-   evidence; do not silently replace the retained source geometry.
+   evidence; do not silently replace the retained source geometry. After that
+   scale check, inspect the combined draft for all eight distinct objects and
+   its proposed placements; successful import is a separate observation.
 3. Observe the current machine, nozzle, material and process selectors. The
    [saved audit](thor-local-slicer-profile-audit.md) is software evidence of
    Kobra 3 Max / 0.4 mm / PLA / 0.20 mm Standard, without physical confirmation.

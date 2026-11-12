@@ -1,0 +1,388 @@
+{
+  "schema_version": 1,
+  "evidence_class": "independently_reviewed_generic_inspection_plate_not_slicer_project",
+  "review_state_recorded_at_utc": "2026-11-12T00:51:18+00:00",
+  "source_revision": "286b081fe6f056d87c379b884781ef77ff6a0159",
+  "format_reference": {
+    "project": "3MF Consortium Core Specification",
+    "version": "1.4.0",
+    "revision": "997b385e06f3181cf9aae0c578e0b45ccd48ccb2",
+    "sha256": "4db7a7a13e7f757c6afc1a9ad731b56d8d068b1a766025692ff757d0f7f16940",
+    "sections": [
+      "3.3 affine matrices",
+      "3.4 model/metadata/resources/build",
+      "4.1 mesh objects",
+      "Appendix C OPC"
+    ]
+  },
+  "local_package_path": ".work/anycubic-desktop-planning/plate-001/DRAFT_INSPECTION_eight_native_copies_source_Z_up.3mf",
+  "package_sha256": "68f4e0b621b3552b80e673125ab6eb98352e795b2bfa063ef9a7cc154f313bbb",
+  "retained_composition_receipt": {
+    "local_path": ".work/anycubic-desktop-planning/plate-001/combined-plate-receipt.json",
+    "sha256": "21da71a8e067bbe239188bcfd829adc2dee2f5028ea5d90b181d48a2a419adbd",
+    "creation_time_review_state_preserved": "pending; old single-object inspector does not cover this package"
+  },
+  "retained_composer_sha256": "b65e7f668ca06ed3305b7dd9bdeded809312ca6c0a54446a326548b803e9f0ac",
+  "source_queue_receipt_raw_sha256": "f1fd39b3f6ca4500571637b26f1183652215a2ca1aa7836f9c5830d486274c19",
+  "full_native_aggregate_raw_sha256": "bd8a8aaeb2b4e1231560151ae5576f21000ad554b20aa60073f816339ec82451",
+  "counts": {
+    "objects": 8,
+    "build_items": 8,
+    "vertices": 7524,
+    "triangles": 15112
+  },
+  "copies": [
+    {
+      "object_id": 1,
+      "asset_id": "BaseBearingFix::Body",
+      "geometry_variant": "nominal",
+      "copy_index": 1,
+      "installed_instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::BaseBearingFix_BaseBearingFix",
+      "original_project": ".work/full-print-native-drafts/run-001/DRAFT_full_native_print-34-basebearingfix-body-nominal_01-of-01.3mf",
+      "original_project_sha256": "f83894329853d5eac795564e78cd8bd0740256f156e7f9079b1e6284801e126b",
+      "vertex_count": 1070,
+      "triangle_count": 2152,
+      "translation_mm": [
+        97.95111083984375,
+        94.98777770996094,
+        -0.0
+      ],
+      "identity_rotation": true,
+      "source_Z_up": true,
+      "transformed_bounds_mm": {
+        "min": [
+          23.0,
+          20.0,
+          0.0
+        ],
+        "max": [
+          172.95111083984375,
+          169.97555541992188,
+          5.0
+        ]
+      },
+      "provisional_inner_bed_margins_mm": {
+        "left": 20.0,
+        "right": 250.04888916015625,
+        "bottom": 20.0,
+        "top": 250.02444458007812
+      },
+      "geometry_changes": "none; exact source mesh XML copied; resource ID reassigned; XY build translation only; original Z normalization retained",
+      "complete_original_metadata_canonical_sha256": "4e4f19ef70d05fb0c6c81b61cce013c3b6ec4a33bdb556fd1e4387a74b0bc494",
+      "native_export_binding_canonical_sha256": "b5ad240a105e646feea429e48c3c0df981cc90ca2067fc216e5dc2055465db1b"
+    },
+    {
+      "object_id": 2,
+      "asset_id": "BaseTop::Body",
+      "geometry_variant": "nominal",
+      "copy_index": 1,
+      "installed_instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::BaseTop_BaseTop",
+      "original_project": ".work/full-print-native-drafts/run-001/DRAFT_full_native_print-38-basetop-body-nominal_01-of-01.3mf",
+      "original_project_sha256": "06099836066bb4763d0e277e2c5bdc17461020ee0ca34804f800e7c9f21e9846",
+      "vertex_count": 1046,
+      "triangle_count": 2104,
+      "translation_mm": [
+        267.95111083984375,
+        94.98777770996094,
+        5.699999798330566e-14
+      ],
+      "identity_rotation": true,
+      "source_Z_up": true,
+      "transformed_bounds_mm": {
+        "min": [
+          193.0,
+          20.0,
+          0.0
+        ],
+        "max": [
+          342.95111083984375,
+          169.97555541992188,
+          27.500000000000057
+        ]
+      },
+      "provisional_inner_bed_margins_mm": {
+        "left": 190.0,
+        "right": 80.04888916015625,
+        "bottom": 20.0,
+        "top": 250.02444458007812
+      },
+      "geometry_changes": "none; exact source mesh XML copied; resource ID reassigned; XY build translation only; original Z normalization retained",
+      "complete_original_metadata_canonical_sha256": "0806810c7e13bb89a70c2ddd38d5c90b2252814454ef880282a00340f7d49da9",
+      "native_export_binding_canonical_sha256": "05cd1a393a8dccc692f628e9fc49ce17dc4c03dae0051e68dff0089a2c6aa256"
+    },
+    {
+      "object_id": 3,
+      "asset_id": "CommonBearingFix::Body",
+      "geometry_variant": "nominal",
+      "copy_index": 1,
+      "installed_instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::CommonBearingFix_CommonBearingFix",
+      "original_project": ".work/full-print-native-drafts/run-001/DRAFT_full_native_print-39-commonbearingfix-body-nominal_01-of-04.3mf",
+      "original_project_sha256": "147a93f75c3f8b5915c5b27ca9f252b905140228f83a395db1a99d20e9d7d768",
+      "vertex_count": 608,
+      "triangle_count": 1220,
+      "translation_mm": [
+        38.0,
+        207.89018154144287,
+        -0.0
+      ],
+      "identity_rotation": true,
+      "source_Z_up": true,
+      "transformed_bounds_mm": {
+        "min": [
+          23.0,
+          200.0,
+          0.0
+        ],
+        "max": [
+          53.0,
+          215.78036308288574,
+          4.0
+        ]
+      },
+      "provisional_inner_bed_margins_mm": {
+        "left": 20.0,
+        "right": 370.0,
+        "bottom": 200.0,
+        "top": 204.21963691711426
+      },
+      "geometry_changes": "none; exact source mesh XML copied; resource ID reassigned; XY build translation only; original Z normalization retained",
+      "complete_original_metadata_canonical_sha256": "0bbf7d307e2a4b39834e314dfc972302e3999b83f144412076d3b924c19b970a",
+      "native_export_binding_canonical_sha256": "6f132e38f9ccd716addc0375335bd74d7056e9b229217013966755155ee07648"
+    },
+    {
+      "object_id": 4,
+      "asset_id": "CommonBearingFix::Body",
+      "geometry_variant": "nominal",
+      "copy_index": 2,
+      "installed_instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::CommonBearingFix_CommonBearingFix001",
+      "original_project": ".work/full-print-native-drafts/run-001/DRAFT_full_native_print-39-commonbearingfix-body-nominal_02-of-04.3mf",
+      "original_project_sha256": "3ca5fee89872719ffd5a26c984fd5b41a136eeb4d56109a6adbf17be473d5c4c",
+      "vertex_count": 608,
+      "triangle_count": 1220,
+      "translation_mm": [
+        88.0,
+        207.89018154144287,
+        -0.0
+      ],
+      "identity_rotation": true,
+      "source_Z_up": true,
+      "transformed_bounds_mm": {
+        "min": [
+          73.0,
+          200.0,
+          0.0
+        ],
+        "max": [
+          103.0,
+          215.78036308288574,
+          4.0
+        ]
+      },
+      "provisional_inner_bed_margins_mm": {
+        "left": 70.0,
+        "right": 320.0,
+        "bottom": 200.0,
+        "top": 204.21963691711426
+      },
+      "geometry_changes": "none; exact source mesh XML copied; resource ID reassigned; XY build translation only; original Z normalization retained",
+      "complete_original_metadata_canonical_sha256": "08b7da54daf2d678c20c12cd331db143be75c6cdca84893272dc1bf2f08276e5",
+      "native_export_binding_canonical_sha256": "6f132e38f9ccd716addc0375335bd74d7056e9b229217013966755155ee07648"
+    },
+    {
+      "object_id": 5,
+      "asset_id": "CommonBearingFix::Body",
+      "geometry_variant": "nominal",
+      "copy_index": 3,
+      "installed_instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::CommonBearingFix_CommonBearingFix002",
+      "original_project": ".work/full-print-native-drafts/run-001/DRAFT_full_native_print-39-commonbearingfix-body-nominal_03-of-04.3mf",
+      "original_project_sha256": "31adf24c59b48ad9b3fb87902dba155d4a72693d85c73ecf9aa7dc5e833db3b3",
+      "vertex_count": 608,
+      "triangle_count": 1220,
+      "translation_mm": [
+        138.0,
+        207.89018154144287,
+        -0.0
+      ],
+      "identity_rotation": true,
+      "source_Z_up": true,
+      "transformed_bounds_mm": {
+        "min": [
+          123.0,
+          200.0,
+          0.0
+        ],
+        "max": [
+          153.0,
+          215.78036308288574,
+          4.0
+        ]
+      },
+      "provisional_inner_bed_margins_mm": {
+        "left": 120.0,
+        "right": 270.0,
+        "bottom": 200.0,
+        "top": 204.21963691711426
+      },
+      "geometry_changes": "none; exact source mesh XML copied; resource ID reassigned; XY build translation only; original Z normalization retained",
+      "complete_original_metadata_canonical_sha256": "a286d9d962563cd6e220a3562e85c88cce0f918a780cdeca024ee299a5a49e1d",
+      "native_export_binding_canonical_sha256": "6f132e38f9ccd716addc0375335bd74d7056e9b229217013966755155ee07648"
+    },
+    {
+      "object_id": 6,
+      "asset_id": "CommonBearingFix::Body",
+      "geometry_variant": "nominal",
+      "copy_index": 4,
+      "installed_instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::CommonBearingFix_CommonBearingFix003",
+      "original_project": ".work/full-print-native-drafts/run-001/DRAFT_full_native_print-39-commonbearingfix-body-nominal_04-of-04.3mf",
+      "original_project_sha256": "448975617ebf57195f2d70979ac47f82af371b83e6f9c9609bd2e358c0584c7e",
+      "vertex_count": 608,
+      "triangle_count": 1220,
+      "translation_mm": [
+        188.0,
+        207.89018154144287,
+        -0.0
+      ],
+      "identity_rotation": true,
+      "source_Z_up": true,
+      "transformed_bounds_mm": {
+        "min": [
+          173.0,
+          200.0,
+          0.0
+        ],
+        "max": [
+          203.0,
+          215.78036308288574,
+          4.0
+        ]
+      },
+      "provisional_inner_bed_margins_mm": {
+        "left": 170.0,
+        "right": 220.0,
+        "bottom": 200.0,
+        "top": 204.21963691711426
+      },
+      "geometry_changes": "none; exact source mesh XML copied; resource ID reassigned; XY build translation only; original Z normalization retained",
+      "complete_original_metadata_canonical_sha256": "be43b561a218cbe98a1934600f9046cdacaee7b99ef41cccc3e23dc20844fb8d",
+      "native_export_binding_canonical_sha256": "6f132e38f9ccd716addc0375335bd74d7056e9b229217013966755155ee07648"
+    },
+    {
+      "object_id": 7,
+      "asset_id": "GripperFinger::Body",
+      "geometry_variant": "nominal",
+      "copy_index": 1,
+      "installed_instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed1_GripperFinger",
+      "original_project": ".work/full-print-native-drafts/run-001/DRAFT_full_native_print-44-gripperfinger-body-nominal_01-of-01.3mf",
+      "original_project_sha256": "a51bb4cbfff493dd9a4bc505278cfe7d752e792de9f1696dd6d0c192686fae69",
+      "vertex_count": 1488,
+      "triangle_count": 2988,
+      "translation_mm": [
+        233.0,
+        200.0,
+        -0.0
+      ],
+      "identity_rotation": true,
+      "source_Z_up": true,
+      "transformed_bounds_mm": {
+        "min": [
+          233.0,
+          200.0,
+          0.0
+        ],
+        "max": [
+          251.5,
+          260.0,
+          15.5
+        ]
+      },
+      "provisional_inner_bed_margins_mm": {
+        "left": 230.0,
+        "right": 171.5,
+        "bottom": 200.0,
+        "top": 160.0
+      },
+      "geometry_changes": "none; exact source mesh XML copied; resource ID reassigned; XY build translation only; original Z normalization retained",
+      "complete_original_metadata_canonical_sha256": "5aa8bb67842b10b25915aa1f06193006f9236a2e9b083a24a786a8871d62d3ee",
+      "native_export_binding_canonical_sha256": "7c48e22016af373a67db7cc4ce418fe4e968189f5520364ce7d705b58a3b16c9"
+    },
+    {
+      "object_id": 8,
+      "asset_id": "GripperFinger::Body",
+      "geometry_variant": "reflected",
+      "copy_index": 1,
+      "installed_instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::GripperFinger_sym001/AssemblyArt56::Unnamed1_GripperFinger_mirrored",
+      "original_project": ".work/full-print-native-drafts/run-001/DRAFT_full_native_print-45-assemblyart56-unnamed1_gripperfinger_mirrored-reflected_01-of-01.3mf",
+      "original_project_sha256": "63cd8b5779213a39a781447518b17032a92b04a0b7183844888b58dad46d2797",
+      "vertex_count": 1488,
+      "triangle_count": 2988,
+      "translation_mm": [
+        291.5,
+        200.0,
+        -0.0
+      ],
+      "identity_rotation": true,
+      "source_Z_up": true,
+      "transformed_bounds_mm": {
+        "min": [
+          273.0,
+          200.0,
+          0.0
+        ],
+        "max": [
+          291.5,
+          260.0,
+          15.5
+        ]
+      },
+      "provisional_inner_bed_margins_mm": {
+        "left": 270.0,
+        "right": 131.5,
+        "bottom": 200.0,
+        "top": 160.0
+      },
+      "geometry_changes": "none; exact source mesh XML copied; resource ID reassigned; XY build translation only; original Z normalization retained",
+      "complete_original_metadata_canonical_sha256": "e90e81d6c4e64b53568df187b417b96641f28fe8c25b25b18d0fe8efea053203",
+      "native_export_binding_canonical_sha256": "aa89a57599d80e52b84626408af5a8b46a4754d41bec700006913c194ee3ed99"
+    }
+  ],
+  "provisional_inner_bed_xy_mm": {
+    "x": [
+      3,
+      423
+    ],
+    "y": [
+      0,
+      420
+    ]
+  },
+  "minimum_pairwise_mesh_AABB_gap_mm": 20.0,
+  "minimum_inner_bed_mesh_AABB_margin_mm": 20.0,
+  "clearance_scope": "mesh-AABB inspection spacing only; no supports/brims/purge/adhesion/toolhead clearance qualified",
+  "independent_artifact_review": {
+    "accepted_for_declared_generic_inspection_scope": true,
+    "OPC_Core_relationships_parts_units_checked": true,
+    "exact_source_vertices_indices_winding_and_mesh_XML_checked": true,
+    "unique_installed_copy_identities_checked": true,
+    "complete_original_metadata_license_and_provenance_checked": true,
+    "identity_rotation_and_only_XY_translation_with_retained_Z_correction_checked": true,
+    "all_28_mesh_AABB_pair_gaps_and_bed_margins_checked": true,
+    "separate_parser_not_original_single_object_inspector": true,
+    "full_3MF_conformance_certification": false
+  },
+  "preservation": {
+    "original_source_directory_files": 63,
+    "all_original_bytes_unchanged": true,
+    "retained_preserved_map_canonical_sha256": "472aba85427ef6bea10bb26353a6ba5b43dcb1aa2d9700513b2c0c57ffbc62cf"
+  },
+  "qualification": {
+    "native_geometry_equivalence": false,
+    "self_intersections_checked": false,
+    "selected_orientation_or_supports_qualified": false,
+    "actual_nozzle_or_filament_confirmed": false,
+    "Anycubic_GUI_import_observed": false,
+    "sliced_or_Gcode_generated": false,
+    "printer_or_cloud_contact": false,
+    "manufacturing_release": false
+  },
+  "curator_script_sha256": "d007035e9f353dd39d790ee09379399c46c55f7d5ebad5ab67aea70da56a326f"
+}
