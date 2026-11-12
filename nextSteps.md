@@ -2,7 +2,7 @@
 
 **Project:** ARM-01 BenchSort
 **Current phase:** Phase 1 — CAD-derived engineering foundation and design gates
-**Last updated:** 2026-11-12 00:08 UTC
+**Last updated:** 2026-11-12 00:25 UTC
 **Overall status:** In Progress
 
 ## Current Objective
@@ -68,6 +68,15 @@ Continue all three design gates: wrist handedness/moving masses/jaw articulation
 - **C14 printed inertia:** actual native Run03 completed at 23:43 UTC in 101.968 s. All **47 source variants / 65 installed printed copies** authenticate through actual placement products, 8,612 ordered vertices (maximum 1.947e-13 mm residual) and independent installed native volume/COM/tensor checks. At an explicitly assumed uniform-solid density of **1240 kg/m³**, the printed subset is **4.3218006723562015 kg**; this is not a measured print or whole-arm mass. All original/compatible/private CAD, addons and bound inputs remain unchanged. Independent tensor algebra, guards and actual evidence reviews pass; [printed inertia notes](arm-01/docs/thor-printed-inertia-study.md) retain physical density/nonuniform/purchased/dynamic unknowns. Native queue is free for desktop print planning.
 
 - **Merged print/metrics checkpoint:** [PR #13](https://github.com/LiamHoweth/RAFTEL/pull/13) merged as `30e9f05658fd9d90be7b1f9d010a19f3851e5782`; exact head `709ffb4e740727e1104c1db5913001d038663a11` passed all eight jobs in [run 43121740665](https://github.com/LiamHoweth/RAFTEL/actions/runs/43121740665). C14 integration is on `codex/arm01-native-frame-handoff`, based on that synchronized main. New frame/semantic files are independently accepted. C14 full regression: **2,066 tests pass** (122.26 s); Ruff lint/format passes for 180 Python files, source compilation and 392-text-file LF guard pass. Sorter seed42 and generic engineering CLI succeed. Publication/exact-head CI are the remaining merge gates.
+
+- **Merged frame/semantic checkpoint:** [PR #14](https://github.com/LiamHoweth/RAFTEL/pull/14) merged as 789df9ef647d7e6411cf5ce9ed3ac7aa4f77eb4d after all eight exact-head jobs passed [run 43125133548](https://github.com/LiamHoweth/RAFTEL/actions/runs/43125133548), head 99ba60d2e8e20fae9a559fd2c9d4e6f7241b416f. Current branch is codex/arm01-fault-measurement-handoff from synchronized main. Bounded E3 fault-pack, E5 measurement-readiness sidecar and R5 evidence index are active in exclusive new files; implementation freeze remains 01:05 UTC and final integration starts 01:36 UTC. Live Anycubic remains pending desktop-ready confirmation.
+
+- **E3 accepted offline pack:** eleven deterministic cases reuse the existing replay/mock/sorter contracts; release-before/after worlds have identical observer traces but different fixture truth, both with unknown held state and no successful-sort claim. **35 focused / 136 combined tests** and 110 independent cases across ten extreme seeds pass; retry budgets 1/2/5, persistent faults, repeated stop, bounded config reads and exclusive outputs are reviewed. This adds tool-only bookkeeping, not a transport/backend or physical stop. [Evidence index](arm-01/docs/desktop-evidence-index.md) and [Anycubic inspection shortlist](arm-01/docs/thor-anycubic-desktop-planning.md) are prepared. E5 metadata readiness and M5 drive sensitivity remain active in exclusive new files.
+- **Preservation replay (00:19 UTC):** current hashes match all **57 original CAD / 57 compatible CAD / 589 addon files**; the printed-inertia CLI reproduces its committed study exactly. About **670 GiB** remains free, above the native reserve. No new native process or printer action occurred.
+
+- **E5 accepted metadata sidecar:** 55 new tests / 137 related tests pass. Existing weighing forms gain separate uncertainty, declared calibration-validity/invalidation and local artifact-availability checks without duplicate mass entry or ledger changes. The blank 65-row companion reports **zero ready observations**; synthetic states stay separate and no certificate/metrology/physical acceptance is inferred. [Readiness notes](arm-01/docs/thor-measurement-readiness.md). E3/E5 plus R5/inspection-plan integration is preparing publication; M5 remains separate work in progress.
+
+- **C15 integrated validation:** **2,156 tracked tests pass** (105.98 s); Ruff lint/format passes for 184 Python files, source compilation passes and 402 tracked text files pass the LF guard. This tested snapshot contains the accepted E3/E5 tools and reviewed evidence index/README/Anycubic inspection plan. M5 is not included in this snapshot. Push, PR and exact-head CI are next.
 
 ### Seven-hour desktop run: objective and operating rules
 
@@ -221,7 +230,7 @@ Nominal FK, a spatial Jacobian and bounded local IK exist. Conservative full-rob
 | --- | --- | --- | --- |
 | E1 | Ready | [x] Build an offline JSONL scorer/replayer for presented/detected/eligible/attempted/correct/failed/assisted objects and first-attempt versus retry outcomes. | Hand-counted fixtures agree; skips, misses and timeouts never become successful sorts; evidence class stays in every run. |
 | E2 | Ready | [x] Add seeded multi-layout benchmark fixtures and confidence-interval/layout-level summaries matching the verification plan. | Report coverage and end-to-end outcomes separately; correlated layouts and observed proportions are not physical reliability proofs. |
-| E3 | Ready | [ ] Extend mock fault injection for stale state, partial/out-of-order responses, inconsistent shoulder channels, resets and uncertain held-object state. | Bounded retries, idempotent stop and fault persistence pass; no automatic false recovery or verified physical pose. |
+| E3 | Ready | [x] Extend mock fault injection for stale state, partial/out-of-order responses, inconsistent shoulder channels, resets and uncertain held-object state. | Bounded retries, idempotent stop and fault persistence pass; no automatic false recovery or verified physical pose. |
 | E4 | Dependent | [ ] Add kinematic/vision replay scenario packs and regression comparisons for accepted model revisions. | T4/V4; preserve seed/config/source hashes and separate logical, kinematic, physics and physical results. |
 | E5 | Ready | [ ] Prepare measurement forms and offline validators for zeros/limits, belt increments, jaw closure, fit/mass/COM, thermal duty and outcome observations. | Unknowns stay blank; units, instruments, uncertainty, conditions and invalidation triggers are explicit. Agents can score later supplied measurements. |
 

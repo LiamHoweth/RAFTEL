@@ -778,3 +778,59 @@ A final raw Git-blob audit against starting revision `6608d37` finds all 30
 original CAD-evidence/config JSON or geometry files byte-identical and present.
 This complements the downloaded-original CAD and addon ledgers; new results
 remain separate from the historical inputs and reports.
+
+## Offline fault and retry witnesses
+
+The [fault-injection pack](thor-fault-injection-study.md) receives independent
+review against the existing replay, mock and sorter contracts. Its eleven
+cases preserve five protocol latches, demonstrate the unsafe doubled effect of
+blindly retrying an unacknowledged increment, and distinguish ordinary false
+grasps from aborting faults. Retry budgets 1, 2 and 5 exhaust exactly their
+declared attempts while accounting for the next presented object.
+
+Independent release-before/after-effect fixtures reproduce identical observer
+traces and different privileged held/placement truth. Both abort with unknown
+held state, no sorted claim and the second object pending. Repeated stop,
+rejected operations and rerun preserve each world's oracle state and the pack's
+explicit uncertainty. This bookkeeping is local to the diagnostic pack, not a
+new core sensing or recovery capability. Thirty-five focused and 136 combined
+tests pass; a separate ten-seed sweep reproduces all 110 expected case outcomes.
+Strict bounded configuration, implementation fingerprints and exclusive output
+preservation verify. These are synthetic fault witnesses, without real feedback,
+physical stop validation or full E3 commissioning acceptance.
+
+## Weighing metadata companion
+
+The [measurement-readiness sidecar](thor-measurement-readiness.md) reuses the
+existing fabrication validator and binds the complete fabrication document,
+individual weighing rows and manifest. Independent review reproduces all three
+reported canonical hashes and the unchanged 65-row unknown template. Fifty-five
+focused tests pass independently; the owner reports 137 related tests passing.
+
+Known declarations require finite positive uncertainty, a coverage factor at
+least one, consistent expanded uncertainty and explicit contribution/applicability
+evidence. Calibration windows use the measurement instant, with later expiry
+reported separately; future records and applicable retrospective invalidation
+block readiness. A finding cannot predate the certificate issue. Unknown and
+synthetic support cannot complete observed readiness. Bounded strict UTF-8 JSON,
+contained nonsymlink artifact paths, byte hashes and overwrite refusal verify.
+Readiness means matching declarations and local supporting bytes are available
+for engineering review. It authenticates neither certificate contents nor
+metrology, uncertainty adequacy, actual mass or manufacturing qualification.
+
+## Evidence navigation and pending slicer inspection
+
+The [evidence index](desktop-evidence-index.md) receives factual scope and local
+link review against the C14 artifacts. All 46 local links resolve. In particular,
+typed cached getters do not validate the attachment engine or accept a support
+remap. The index separates 61 native-origin drafts from the two source-optodisk
+drafts and preserves their independent qualification gates.
+
+The [desktop inspection plan](thor-anycubic-desktop-planning.md) has five actual
+one-object millimetre 3MF inputs. Independent ZIP/XML review checks filenames,
+recorded dimensions, identity rotations, bottom placement, attribution and copy
+counts: CommonBearingFix is one of four, and each listed ring, top and distinct
+finger is one of one. The source-Z-up pose remains provisional. No successful
+model import, rendered plate, native project save or slice is claimed by this
+plan review. Live observations require a separate awake-desktop session; the
+prepared inputs do not confer physical fit, print or fabrication acceptance.

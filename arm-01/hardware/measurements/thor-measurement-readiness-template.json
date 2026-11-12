@@ -1,0 +1,342 @@
+{
+  "schema_version": 1,
+  "evidence_class": "cleaned_mass_metadata_readiness_not_measurement_acceptance",
+  "fabrication_records_canonical_sha256": "0fc05116f5680a2c4328a6a105edb9322a5e6a4fc3fed3d08ce4ca36a67c659f",
+  "units": {
+    "mass": "kg"
+  },
+  "instruments": [],
+  "records": [
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art1Body_Art1Body",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art1Bot_Art1Bot",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art1FanHolder_Art1FanHolder",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art1FanHolder_Art1FanHolder001",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art1Top_Art1Top",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art23Optodisk_Art23Optodisk",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art2BodyACover1_Art2BodyACover1",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art2MotorGear_Art2MotorGear",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art2MotorGear_Art2MotorGear001",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::CommonBearingFixThrough_CommonBearingFixThrough",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art2BodyACover2_Art2BodyACover2",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art2BodyA_Art2BodyA",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art2BodyBCover_Art2BodyBCover",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art2BodyB_Art2BodyB",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art2BodyUnion_Art2BodyUnion",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art3TensionerBody_Art3TensionerBody",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art3TensionerBody_Art3TensionerBody001",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art3TensionerPulley_Art3TensionerPulley",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art3TensionerPulley_Art3TensionerPulley001",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::CommonBearingFix_CommonBearingFix",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::CommonBearingFix_CommonBearingFix001",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::CommonBearingFix_CommonBearingFix002",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::CommonBearingFix_CommonBearingFix003",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Unnamed_Art2BodyAWindow",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Unnamed_Art2SideCover",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Unnamed_Art2SideCover001",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Art23Optodisk_Art23Optodisk",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Art3Body_Art3Body",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Art3Pulley_Art3Pulley",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Art4BearingRing_Art4BearingRing",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Art4MotorFix_Art4MotorFix",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Art4MotorGear_Art4MotorGear",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::CommonBearingFixThrough_CommonBearingFixThrough",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::CommonBearingFixThrough_CommonBearingFixThrough001",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4BearingFix_Art4BearingFix",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4BearingFix_Art4BearingFix001",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4BodyBot_Art4BodyBot",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4BodyFan_Art4BodyFan",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4BodyFan_Art4BodyFan001",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4Body_Art4Body",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4Optodisk_Art4Optodisk",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4TransmissionColumn_Art4TransmissionColumn",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art56MotorHolderA_Art56MotorHolderA",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art56MotorHolderA_Art56MotorHolderA001",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art56MotorHolderB_Art56MotorHolderB",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art56MotorHolderB_Art56MotorHolderB001",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Art56GearPlate_Art56GearPlate",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Art56MotorCoverRing_Art56MotorCoverRing",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Art56SmallGear_Art56SmallGear",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Art56SmallGear_Art56SmallGear001",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::CommonBearingFixThrough_CommonBearingFixThrough",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::GripperActiveArm_GripperActiveArm",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::GripperBot_GripperBot",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::GripperFinger_sym001/AssemblyArt56::Unnamed1_GripperFinger_mirrored",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed1_GripperFinger",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed2_GripperArm",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed2_GripperArm001",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed3_GripperPassiveArm",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed_GripperTop",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Art1GearMotor_Art1GearMotor",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::BaseBearingFix_BaseBearingFix",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::BaseBot_BaseBot",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::BaseBoxBody_BaseBoxBody",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::BaseBoxCover_BaseBoxCover",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::BaseTop_BaseTop",
+      "weighing_canonical_sha256": null,
+      "uncertainty": null
+    }
+  ],
+  "qualification": {
+    "physical_measurement_authenticated": false,
+    "mass_ledger_modified": false,
+    "manufacturing_release": false,
+    "hardware_operation_authorized": false
+  }
+}

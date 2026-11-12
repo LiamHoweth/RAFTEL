@@ -1,0 +1,64 @@
+# Desktop evidence index
+
+Reviewer map of bounded claims, their principal artifacts/checks, and remaining
+gates. Scope includes merged PRs #8–14. The
+[C14 checkpoint / PR #14](https://github.com/LiamHoweth/RAFTEL/pull/14) merged as
+`789df9e` after **2,066 local tests and all eight exact-head CI jobs passed**.
+These are checkpoint observations, not statements about a later head.
+[nextSteps.md](../../nextSteps.md) owns current publication and exact-head CI status.
+
+Native rows identify their actual cached/recompute scope. Host tests validate
+their stated math/input contracts; they do not mean CI executed FreeCAD, a slicer
+or hardware. Original CAD and historical captures remain separate from derived
+studies. No row establishes physical manipulation, capacity or fabrication release.
+
+## Logical task and controller studies
+
+| Bounded claim | Principal artifact / check | Remaining gate |
+| --- | --- | --- |
+| Existing logical sorting, honest observation scoring and seeded layout summaries run without hardware. Misses, assistance, retries, timeouts and unresolved outcomes remain explicit. | [Evaluation contract](thor-offline-evaluation.md); [hand-counted replay checks](../tests/test_evaluation_replay.py). | Physical detection/placement verification and the 90% physical target remain open. |
+| Eleven deterministic fault cases reuse existing replay/mock/sorter behavior. Faults persist, false grasps exhaust bounded retries, and indistinguishable release-loss traces retain unknown held state despite different fixture truth. | [Fault pack](thor-fault-injection-study.md); [35 focused checks](../tests/test_thor_fault_injection_study.py). | Unknown-held bookkeeping is tool-only. No transport/backend, physical stop, grasp sensing or autonomous recovery is added. |
+| Supplied observations replay with explicit frame, time domain, age and uncertainty; latest rejected observations do not silently reuse older accepted data. | [Observation replay](offline-observation-replay.md); [replay checks](../tests/test_observation_replay.py). | No camera, tracking, clock synchronization, measured calibration or task eligibility is inferred. |
+| Pinned integer ROS conversions and bounded in-memory GRBL coordinate/protocol replay are tested separately from continuous transmission maps. Synthetic identification and coupled demand preserve declared assumptions. | [Controller replay](thor-controller-replay.md); [protocol checks](../tests/test_thor_protocol_replay.py); [coupled demand](thor-coupled-demand.md). | No transport/backend, commissioned signs/zeros, actual-position feedback or rated moving capacity. Source C-not-B shoulder readback and missing elbow compensation remain explicit. |
+| Pinned AVR cross-compilation succeeds as a host build. A copied mask-warning candidate has compiler-only checks, without promoting it to firmware. | [Build receipt](../hardware/cad/thor-grbl-build-feasibility.json); [warning candidate](thor-grbl-warning-candidate.md). | Warnings, M95/spindle/EEPROM proposals and commissioning remain unresolved. No linking of the warning candidate, execution, flashing or hardware action is claimed. |
+
+## Geometry, frames and source editability
+
+| Bounded claim | Principal artifact / check | Remaining gate |
+| --- | --- | --- |
+| The revised installed inventory has 518 leaves. Copied compatibility restoration/recompute covers 53 documents / 3,001 objects using the exact static Art1 wrapper and unchanged siblings. | [Inventory](../hardware/cad/thor-mounted-geometry-v2.json); [Windows foundation](thor-windows-native-foundation.md). | The foundation's shape scope is `none`; all-Up-to-date state is not whole-shape validity or repaired original Art1 history. |
+| Nominal six-coordinate FK/Jacobian, bounded local IK and timed joint paths have mathematical fixtures. Native saved zero plus three scenarios corroborate the first four source coordinates and fold frame, with q5=q6=0. | [Spatial contract](thor-spatial-kinematics.md); [native pose receipt](../hardware/cad/thor-native-pose-frames.json). | No complete six-coordinate native articulation, physical stops/signs, bench/camera/TCP calibration, collision-aware IK or global reachability proof. |
+| Art1 typed getters read all 90 runtime TypeIds and 69 current Face/Edge owner targets. The 62 unique descriptor cases agree with current property-selected raw indices; 21 different raw indices alone do not prove broken attachments. | [Typed getter receipt](../hardware/cad/thor-art1-semantic-supports-typed-getters-v1.json); [semantic checks](../tests/test_thor_art1_semantic_supports.py). | No attachment-engine validation, support remap or migration acceptance. ThroughAll restores a hole but fails the separate exact-metric/edit-return gates. |
+| Saved and ideal jaw coordinates remain distinct; the ideal overlay moves 18 of 66 Art56 records. Wrist probes preserve negative aggregate common volume and positive component volumes without substituting one for the other. | [Jaw ownership](thor-jaw-body-reconciliation.md); [common topology](../hardware/cad/thor-wrist-common-topology-v1.json). | Gear contact, native jaw loop closure, usable physical opening and servo/grip-force calibration remain unaccepted. Positive component sums do not resolve the aggregate metric discrepancy. |
+| Saved-zero numerical boxes cover all 518 leaves and 133,903 pairs. A separate fixed-orientation, linear-translation swept-box primitive catches between-endpoint overlap in synthetic fixtures. | [Mounted pair study](../hardware/cad/thor-mounted-collision-study-v1.json); [swept-box scope](thor-swept-box-study.md). | Boxes have no accepted conservative-enclosure proof or nonzero moving-body binding. Candidate overlaps are not physical collisions; no robot path is certified clear. |
+
+## Statics, mass and inertia
+
+| Bounded claim | Principal artifact / check | Remaining gate |
+| --- | --- | --- |
+| Hash-bound scenarios reuse the existing load engine and conserve 517 mass records, including seven whole motor assets modeled as 2.120 kg. Twelve cases keep four saved-jaw configurations separate from eight ideal-jaw cases. | [Scenario study](../hardware/cad/thor-scenario-study-v1.json); [seven-coordinate potential checks](../tests/test_thor_jaw_loads.py). | All material/COM assignments remain conditional. Saved-mode jaw effort and complete physical wrist holding remain null; ideal jaw effort is not servo torque or grip force. |
+| Native placement products, 8,612 ordered vertices and independent installed moment checks authenticate 47 cached source variants to 65 installed printed copies. Uniform-solid aggregation at assumed 1240 kg/m³ gives a 4.3218006723562015 kg printed subset. | [Tensor-frame capture](../hardware/cad/thor-printed-tensor-frames-v1.json); [derived inertia study](../hardware/cad/thor-printed-inertia-study-v1.json); [frame checks](../tests/test_thor_printed_tensor_frames.py). | This is not measured print mass/distribution or whole-arm inertia. Purchased internals, nonuniform walls/infill, physical density and full dynamics stay unknown; numerical GProps error is not certified. |
+| Explicit sensitivity witnesses and full-wrench mount equilibrium are reproducible conditional calculations. | [Sensitivity study](../hardware/cad/thor-sensitivity-study-v1.json); [mount study](../hardware/cad/thor-mount-reaction-study-v1.json). | Sampled extrema are not guaranteed worst cases. Moving torque-speed/thermal data, traction, desk/clamp behavior, structural strength and safety acceptance remain open. |
+
+## Mesh, slicer and fabrication preparation
+
+| Bounded claim | Principal artifact / check | Remaining gate |
+| --- | --- | --- |
+| Six serialized cached-BRep export batches cover 47 variants / 65 installed copies. Host topology/winding/unit screens retain 45 variants / 62 instances; the unchanged Art1 composer gate leaves 44 / 61. | [Full native export](../hardware/print-planning/thor-full-print-export-native-v1.json); [host mesh audit](../hardware/print-planning/thor-full-print-mesh-audit-v1.json). | Coarse-native optodisk and transmission-column topology failures remain blocked. Cached export and broad volume sanity checks do not prove continuous-surface fidelity, fit or printability. |
+| The full queue round-trips **61 one-part generic native-origin 3MF drafts**. **Two separate SourceOptodisk projects** use the pinned upstream source-STL plan and retain their source origin. | [Full queue evidence](thor-full-print-mesh-audit.md); [separate optodisk delivery](thor-optodisk-mesh-diagnostics.md); [composer checks](../tests/test_compose_thor_full_print_drafts.py). | These refer to already-counted installed parts. The two source projects do not unblock the old coarse-native optodisk audit; older 6/11 campaigns are not additional physical quantities. Art1/column gates and fabrication release remain open. |
+| Installed Anycubic profile selection and generic 3MF metadata/placement proposals have software evidence. | [Saved profile audit](../hardware/print-planning/local-profile-audit.json); [draft planning scope](thor-slicer-draft-plan.md). | **Live Anycubic import/render/plate arrangement is pending at this snapshot.** Generic 3MFs are not accepted Anycubic process projects or printer jobs; actual nozzle/material, slicing and G-code remain unverified. |
+| Source-linked drawings, three stepped-bore coupon studies and blank measurement imports are prepared. | [Fabrication preparation](thor-fabrication-preparation.md); [coupon contract](thor-fit-coupon-drafts.md); [record checks](../tests/test_fabrication_records.py). | Coupon geometry/offsets are explicit assumptions; bearing-seat evidence, measured fit/mass/COM, print orientation/supports and restrained physical inspection remain gates. |
+| A companion sidecar checks weighing uncertainty declarations, declared instrument-validity windows, retrospective invalidation and matching supporting-file bytes against existing fabrication records. | [Measurement metadata readiness](thor-measurement-readiness.md); [55 focused checks](../tests/test_thor_measurement_readiness.py). | The blank 65-row template has zero ready observations. Available declarations and hashes do not authenticate metrology, certificate contents, actual conditions or physical measurements; no mass ledger is modified. |
+
+## Source, numerical semantics and reproduction
+
+| Bounded claim | Principal artifact / check | Remaining gate |
+| --- | --- | --- |
+| Selected exact-pin notices preserve Thor repository/document and GPL/LGPL file-header differences. The frozen R3 audit covers its selected 17 drafts; later full-queue attribution is checked by its composer. | [Notice inventory](desktop-third-party-notices.md); [observation snapshot](../hardware/cad/desktop-third-party-provenance-v1.json). | This is not a complete license SBOM or applicability decision. Company/distribution decisions remain null; optional OCP/VTK notices are separately recorded in the adaptive study. |
+| Separate distributor/kernel experiments reproduce default raw-BRep metrics and retain method-dependent adaptive results. The original 18-row gate stays failed; protocol-v2 default/GK uses its separate 12-check gate. | [Adaptive study](../hardware/cad/thor-adaptive-metric-study-v1.json); [metric semantics](thor-native-metric-semantics.md). | Matching version labels are not identical binaries. Complex GK estimates exceed requests; attained accuracy, exact geometry equivalence and an Art1 migration acceptance are not established. |
+| Raw byte bindings, UTF-8/LF checks, clean-source tests and fresh-wheel/no-index CLI smokes support reproducibility. Historical analytical reports remain separately reproducible. | [Wheel verifier](../tools/verify_installed_wheel.py); [LF checks](../tests/test_evidence_line_endings.py); [independent review](desktop-independent-review.md); [CI workflow](../../.github/workflows/arm01.yml). | Retained native payloads/archives are separate from portable CI. Local success is not exact-head remote CI success; use [nextSteps.md](../../nextSteps.md) for the publication gate. |
+
+The next acceptance changes require their own evidence: an awake live-slicer
+import/inspection record, actual task/backend commissioning, and the remaining native,
+calibration, material and physical design gates. None is inferred from the rows
+above.
