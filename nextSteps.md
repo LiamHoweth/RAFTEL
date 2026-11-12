@@ -17,8 +17,10 @@ both CLIs' exit 0/1/2 behavior. Reused FreeCAD 1.1.4 completes changed recompute
 with **53 documents / 3,001 objects all Up-to-date**, shape scope `none`, no audit
 errors; all 703 checked source/copy/addon files are unchanged. About 53 GiB is
 free. Evidence is retained under ignored `.work`; local native paths are in
-ignored `.raftel-local.mk`. Setup work is local on `codex/mac-workflow-setup`,
-not pushed or merged. No engineering backlog, hardware, ROS, camera or printer
+ignored `.raftel-local.mk`. Setup work is published on `codex/mac-workflow-setup`
+in [PR #20](https://github.com/LiamHoweth/RAFTEL/pull/20), which records current
+CI and merge status; the owner authorized merging after all checks pass.
+No engineering backlog, hardware, ROS, camera or printer
 integration was started; the next design actions below remain open.
 
 ## Current Objective
