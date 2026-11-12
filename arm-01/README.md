@@ -6,6 +6,8 @@ BenchSort is RAFTEL's first stationary manipulation project. Proposed targets ar
 
 Separate offline engineering tools now provide nominal spatial frames/Jacobians, bounded local IK, declared-study trajectories, saved-zero box-pair screening, conditional loads and authenticated printed-copy inertia. These tools do not execute sorter motions or qualify physical paths. The [desktop evidence index](docs/desktop-evidence-index.md) maps implemented studies to their artifacts, checks and remaining gates; [nextSteps.md](../nextSteps.md) records current validation and publication.
 
+The [desktop run record](../docs/arm01-desktop-run-2026-11-11.md) records the current 2,200-test implementation, refreshed offline wheel, native evidence scopes and pending live Anycubic inspection. The run was wrapped at the owner's request; no continuing background work is implied.
+
 ## Setup
 
 Use Python 3.11 or newer. From this directory on macOS, Linux, or WSL:

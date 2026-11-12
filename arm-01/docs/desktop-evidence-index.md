@@ -1,11 +1,12 @@
 # Desktop evidence index
 
 Reviewer map of bounded claims, their principal artifacts/checks, and remaining
-gates. Scope includes merged PRs #8–16 and separately reviewed local inspection
-artifacts. The [PR #16 checkpoint](https://github.com/LiamHoweth/RAFTEL/pull/16)
-merged as `8f415ce` after **2,200 local tests and all eight exact-head CI jobs passed**.
+gates. Scope includes merged PRs #8–17 and separately reviewed local inspection
+artifacts. The [PR #17 checkpoint](https://github.com/LiamHoweth/RAFTEL/pull/17)
+merged as `5291a57` after **2,200 local tests and all eight exact-head CI jobs passed**.
 These are checkpoint observations, not statements about a later head.
 [nextSteps.md](../../nextSteps.md) owns current publication and exact-head CI status.
+The [run record](../../docs/arm01-desktop-run-2026-11-11.md) summarizes the owner-requested wrap-up, fresh offline wheel and still-pending live slicer gate.
 
 Native rows identify their actual cached/recompute scope. Host tests validate
 their stated math/input contracts; they do not mean CI executed FreeCAD, a slicer
