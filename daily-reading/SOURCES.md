@@ -16,8 +16,13 @@ Prioritize the next decision in [nextSteps.md](../nextSteps.md). The current bas
 - **Hugging Face / LeRobot:** [documentation](https://huggingface.co/docs/lerobot/index), [repository](https://github.com/huggingface/lerobot), and the [November 5 v0.7.0 release](https://huggingface.co/blog/lerobot/lerobot-release-v070). Prioritize recording, calibration, evaluation and verified selected-hardware support when those gates are reached. Stock SO-101 is a reference, not the chosen six-axis baseline.
 - **NVIDIA robotics:** [November 9 CoRL announcement](https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/), [Isaac Lab](https://github.com/isaac-sim/IsaacLab) and [GR00T](https://github.com/NVIDIA/Isaac-GR00T). Require a traceable model and deployment/support checks before recommending adoption. Keep vendor demonstrations separate from repeatable RAFTEL results.
 
+## Evaluation and recent research
+
+- **PRISM / University of Michigan:** [November 10 CoRL coverage](https://news.engin.umich.edu/2026/11/prism-a-neural-network-component-for-better-robotic-motor-control/), [paper history](https://arxiv.org/abs/2607.23473) and [author protocols/results](https://lsh3163.github.io/prism/). Watch explicit success definitions, denominators, shared recovery states and physical-versus-simulated evidence. The paper was submitted July 26 and revised October 16; November coverage is not a new paper release. Policy adoption belongs after the current mechanical/sensing gates.
+- **Google DeepMind robotics:** [Gemini Robotics 2.5 announcement, November 10](https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/). Kitting is a relevant task comparison; require trial denominators, actual access/hardware support and comparable conditions before drawing performance conclusions. Company-reported demonstrations do not validate ARM-01.
+
 ## Editorial checks
 
 Record publication/event dates separately from verification dates. Identify whether a source is news, a living reference, a pinned code revision or older background. Link each item to an actual project decision. Check licensing, requirements and repeatability before adoption; publish fewer items when no relevant news changes the next action.
 
-Refreshed: November 11, 2026. Some manufacturer pages are undated living references. Access failures are limits on verification, not proof that a product or document is unavailable.
+Watchlist updated: November 12, 2026. PRISM and Gemini Robotics 2.5 links were verified today; the earlier reference entries retain their previous verification scope. Some manufacturer pages are undated living references. Access failures are limits on verification, not proof that a product or document is unavailable.

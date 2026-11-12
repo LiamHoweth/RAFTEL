@@ -2,13 +2,13 @@
 
 A short reading room for staying current without losing focus on the build.
 
-**[Latest briefing: November 11, 2026](2026-11-11.md)**
+**[Latest briefing: November 12, 2026](2026-11-12.md)**
 
 ## Current focus
 
-ARM-01 BenchSort now uses Thor as the existing-CAD analysis baseline: six arm axes, eight actuators allowed, a stationary clamped workstation and three sorting boxes. The immediate reading priorities are wrist/transmission load paths, fabrication on Liam's Kobra 3 Max, and material/print assumptions. PLA, PETG and ABS are available; physical qualification remains open.
+ARM-01 BenchSort uses Thor as the existing-CAD analysis baseline: six arm axes, eight actuators allowed, a stationary clamped workstation and three sorting boxes. The current reading priorities are the first observed Anycubic slicer import, native wrist/Art1 evidence, measurement quality and coupled-drive assumptions. The reviewed print drafts and offline software studies do not release fabrication or establish physical performance.
 
-Use [nextSteps.md](../nextSteps.md), the [geometry study](../arm-01/docs/thor-geometry.md) and the [load study](../arm-01/docs/thor-load-analysis.md) to select reading. The reading room complements the engineering roadmap and does not claim simulated or analytical results are physical performance.
+Use [nextSteps.md](../nextSteps.md), the [evidence index](../arm-01/docs/desktop-evidence-index.md) and the [Anycubic inspection plan](../arm-01/docs/thor-anycubic-desktop-planning.md) to select reading. The reading room complements the engineering roadmap and does not claim simulated or analytical results are physical performance.
 
 ## What each briefing covers
 
@@ -33,6 +33,7 @@ Aim for a five-minute read. Fewer strong items are better than a padded news fee
 
 ## Archive
 
+- [2026-11-12: Check the first slicer import](2026-11-12.md)
 - [2026-11-11: Turn Thor’s load model into a print plan](2026-11-11.md)
 
 ## Source watchlist
