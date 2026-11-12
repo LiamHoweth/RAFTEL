@@ -1,5 +1,11 @@
 # Anycubic PLA starter projects — November 12, 2026
 
+**Later owner report:** Parts detached and sometimes became spaghetti; the exact
+failed job/settings are not yet established. Software acceptance below never
+established adhesion. Use the [small adhesion diagnostic](thor-anycubic-adhesion-test.md)
+and physical cleaning/leveling before retrying a full batch. The original
+55°C files and this historical receipt remain unchanged.
+
 The owner confirmed an awake/unlocked desktop, loaded PLA and a 0.4 mm nozzle.
 Fresh Sky captures still timed out after window reselection and a JavaScript
 kernel reset. Live GUI import/Preview remains unobserved. The installed

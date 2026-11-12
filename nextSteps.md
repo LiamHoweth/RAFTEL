@@ -2,7 +2,7 @@
 
 **Project:** ARM-01 BenchSort
 **Current phase:** Phase 1 — CAD-derived engineering foundation and design gates
-**Last updated:** 2026-11-12 08:43 America/Chicago (14:43 UTC)
+**Last updated:** 2026-11-12 10:34 America/Chicago (16:34 UTC)
 **Overall status:** In Progress
 
 ## Current Objective
@@ -14,6 +14,10 @@ Continue all three design gates: wrist handedness/moving masses/jaw articulation
 3. Review [load assumptions](arm-01/docs/thor-load-analysis.md), [material comparison](arm-01/hardware/cad/thor-material-comparison.json) and [incomplete Thor cost study](arm-01/hardware/thor-cost-study.md) before any purchase or fabrication decision. No orders or powered tests are approved by these calculations.
 
 ## Next Steps for Codex
+
+**Adhesion failure report — November 12, 10:34:** The owner reports parts coming loose and sometimes spaghetti; failed job identity/actual temperatures and physical plate finish remain unconfirmed. Their screenshots establish that the native eight-part project loaded in Prepare with expected software selectors, not a successful physical first layer. Do not infer adhesion from the earlier warning-free 55°C slice or retry the full batch unchanged. A separate [single-retainer diagnostic](arm-01/docs/thor-anycubic-adhesion-test.md) is ready in `Desktop\RAFTEL Prints\2026-11-12 Adhesion Test\ADHESION_TEST_ONE_RETAINER_60C.3mf`: **60°C bed, 20 mm/s first layer, 8 mm forced outer brim**, estimate **5m45s / 1.16 g**. Actual native output/settings/G-code speed/geometry/preservation checks pass; the known bed>=60°C warning is retained with its threshold unchanged. It is a diagnostic, not a physical pass. Original jobs remain unchanged. Clean/reinstall/preheat/level and observe this small test before another full batch; photograph failures rather than guessing Z-offset. Prior bed-clear confirmation predates the failures and is not evidence that failed plastic has since been removed. No automated start was sent.
+
+**Remote start request — November 12, 08:57:** The owner explicitly authorized starting the prepared print on the connected Kobra 3 Max, then confirmed the build plate installed/clean/empty and at least about 250 g PLA available. This authorizes sending/starting this prepared print; it is not a physical qualification of the arm. Do not ask for the same start permission, nozzle/material or bed-clear facts again absent changed conditions. A fresh accessibility observation shows the cloud Kobra 3 Max as **Free**, rack PLA, nozzle 22°C/target 0 and bed 20°C/target 0, with **Start Print** available. No device identifier or account data is published here. Both fresh captures still time out; the observed-button click failed with `call get_window_state before using this window`. No automated start was sent. The owner has been asked to click Workbench **Start Print** and report the dialog so the remaining steps can be guided from observed controls. Both delivered project/G-code hashes still match the accepted receipt. The official [Slicer Next guide](https://wiki.anycubic.com/en/software-and-app/new-page-anycubic-slicer-beta%28orca-version%29/anycubic-slicer-next-slicing-software-quick-start-guide) confirms remote printing via cloud or LAN. Preserve the current scene and verify the exact eight-part job and selected printer before final start.
 
 **Print preparation — November 12:** The owner confirmed the desktop visible/unlocked, **PLA loaded and a 0.4 mm nozzle**. Window capture still failed after reselection/kernel reset, so live GUI import/Preview remains unobserved. A purpose-built offline Anycubic CLI route now works: native projects and actual sliced G-code are delivered under `C:\Users\howet\Desktop\RAFTEL Prints\2026-11-12 Starter\Sliced PLA 0.4\`. Open `STARTER_8_PARTS_PLA_04mm.3mf` **as a project** to retain settings. Main estimate **10h48m43s / 211.14 g**; optional single-retainer check **4m10s / 0.98 g**, already included in the eight required parts. No printer action occurred. Only print preparation resumed; CAD lanes remain closed.
 
@@ -31,7 +35,7 @@ The thirty-agent continuation is **stopped for the night at the owner’s reques
 
 ### Next three executable actions
 
-1. Open the delivered native Anycubic project as a project and inspect live Preview when desktop control works. Confirm actual textured bed/spool suitability; the owner can print/measure the optional retainer. If that retainer is kept, reduce the main four-retainer quantity by one and re-slice; do not count it as a ninth needed part. No autonomous printer action.
+1. Address the reported detachment first: clean/reinstall/preheat/level the physical sheet, open the separate one-retainer adhesion diagnostic as a project, check spool/surface suitability and watch its first layer. Obtain a failed-layer photo if it releases. Resume a full-batch print only after a small test holds; then verify the exact job/printer and actual heating/progress. Live desktop clicking remains blocked. Keep all failed evidence and account for a retained test retainer in the main quantity.
 2. Review the new [Art1 return trace](arm-01/docs/thor-art1-return-trace.md) and [direct engine study](arm-01/docs/thor-art1-attachment-engine.md). Form one separately justified copied-candidate hypothesis for Pocket005 and returned datum drift; retain all failed migration gates, original history and recompute-count limitations.
 3. Review checkpoint CI and merge only after checks pass on its exact head. Reuse the verified [nonzero wrist capture](arm-01/docs/thor-wrist-native-frames.md) for later source-body binding instead of rerunning accepted experiments or inferring physical clearance.
 
