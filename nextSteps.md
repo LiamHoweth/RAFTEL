@@ -2,7 +2,7 @@
 
 **Project:** ARM-01 BenchSort
 **Current phase:** Phase 1 — CAD-derived engineering foundation and design gates
-**Last updated:** 2026-11-11 23:40 UTC
+**Last updated:** 2026-11-12 00:08 UTC
 **Overall status:** In Progress
 
 ## Current Objective
@@ -64,8 +64,10 @@ Continue all three design gates: wrist handedness/moving masses/jaw articulation
 - **Desktop availability update (23:10 UTC):** Liam expects to be home in approximately one hour. Reserve about **00:10–01:10 UTC** for live Anycubic import/inspection/plate arrangement once the desktop is awake and unlocked; continue software/metric checks meanwhile. The final integration hour remains **01:36–02:36 UTC**. No print start, upload or fabrication release is authorized.
 
 - **23:40 UTC tested checkpoint:** **1,950 tracked tests pass** (114.11 s); Ruff lint/format passes for 174 Python files, compilation passes, and 379 tracked text files pass LF checks. The independently accepted full-mesh queue, saved-zero pair study, conditional swept-box primitive, wrist topology, optodisk routes and isolated adaptive studies are committed on `codex/arm01-print-metrics-followup` for publication; exact-head CI remains the merge gate. UTF-8 loading now preserves unescaped Unicode sorting categories on Windows; only affected Markdown symbols were repaired, with CAD/data bytes untouched.
-- Art1 semantic work confirms **53 dependent owners / 80 references** (69 Face/Edge and 11 whole datum/axis), rather than 53 individual references. Its restored/cache-only descriptor run found 62 unique candidates, six no matches, one unsupported primitive and 11 unsupported whole references. **21 different raw indices do not prove attachment errors**; public getter/persistent-name observations are a separate pending replay. No support is remapped and original migration gates remain open.
-- M3's next bounded task is actual matrix/marker authentication from the 47 BRep tensor frames to 65 installed printed copies, followed only by a declared uniform-reference-density subset study if every required binding passes. No COM-only frame fitting, purchased/internal tensor invention or whole-arm physical aggregate is permitted. Target native completion before about **00:05 UTC**, leaving the expected **00:10 UTC** desktop return for live slicer work.
+- **C14 Art1 semantic audit:** three actual copied/cache-only runs confirm **53 dependent owners / 80 references**, including 69 Face/Edge and 11 whole datum/axis references. Descriptor matching finds 62 unique candidates, six unmatched and one unsupported primitive. The final typed/schema-aware replay observes all 90 runtime TypeIds matching saved XML, and all 69 current owner targets (50 explicit `Support` → `AttachmentSupport` renames plus 19 unchanged external-geometry reads). All 62 unique matches agree with current property selectors. The 21 different raw indices therefore do **not** establish broken attachments. No engine execution, support remap, repaired feature history or migration acceptance is claimed. See [semantic support evidence](arm-01/docs/thor-art1-semantic-supports.md).
+- **C14 printed inertia:** actual native Run03 completed at 23:43 UTC in 101.968 s. All **47 source variants / 65 installed printed copies** authenticate through actual placement products, 8,612 ordered vertices (maximum 1.947e-13 mm residual) and independent installed native volume/COM/tensor checks. At an explicitly assumed uniform-solid density of **1240 kg/m³**, the printed subset is **4.3218006723562015 kg**; this is not a measured print or whole-arm mass. All original/compatible/private CAD, addons and bound inputs remain unchanged. Independent tensor algebra, guards and actual evidence reviews pass; [printed inertia notes](arm-01/docs/thor-printed-inertia-study.md) retain physical density/nonuniform/purchased/dynamic unknowns. Native queue is free for desktop print planning.
+
+- **Merged print/metrics checkpoint:** [PR #13](https://github.com/LiamHoweth/RAFTEL/pull/13) merged as `30e9f05658fd9d90be7b1f9d010a19f3851e5782`; exact head `709ffb4e740727e1104c1db5913001d038663a11` passed all eight jobs in [run 43121740665](https://github.com/LiamHoweth/RAFTEL/actions/runs/43121740665). C14 integration is on `codex/arm01-native-frame-handoff`, based on that synchronized main. New frame/semantic files are independently accepted. C14 full regression: **2,066 tests pass** (122.26 s); Ruff lint/format passes for 180 Python files, source compilation and 392-text-file LF guard pass. Sorter seed42 and generic engineering CLI succeed. Publication/exact-head CI are the remaining merge gates.
 
 ### Seven-hour desktop run: objective and operating rules
 
@@ -108,7 +110,7 @@ If tool/session availability ends the run early, report actual elapsed work and 
 
 **Readiness:** **Ready** can start with current repository/source evidence; **Conditional** can proceed with explicit modeled inputs; **Dependent** follows the stated prerequisite; **Input** allows preparation now but final acceptance needs external measurements or exact hardware data. Unchecked items below may have partial artifacts listed above; their remaining completion criteria are still open. Do not attempt the entire backlog in seven hours; use the selected lanes above and pull fallback work from this list.
 
-**Checkbox scope:** checked entries close the bounded source/software deliverable only. They do not close physical, calibration, conservative-enclosure, fabrication or release gates. M3, M5 and F1 remain partial against their full written criteria (installed tensor aggregation; omitted sensitivity axes; cable-access views).
+**Checkbox scope:** checked entries close the bounded source/software deliverable only. They do not close physical, calibration, conservative-enclosure, fabrication or release gates. M3, M5 and F1 remain partial against their full written criteria (complete dynamic body/purchased and nonuniform inertia bindings; omitted sensitivity axes; cable-access views). The installed 65-copy printed geometric subset is now aggregated separately under a declared uniform-solid density.
 
 #### A — Restore Art1 source editability
 
