@@ -1,0 +1,2374 @@
+{
+  "schema_version": 1,
+  "evidence_class": "conditional_uniform_solid_printed_subset_inertia_not_physical_prints",
+  "status": "complete_conditional_printed_subset_only",
+  "coordinate_frame": "native master assembly saved-zero Cartesian frame, metres",
+  "reference_uniform_density_kg_m3": 1240.0,
+  "density_evidence": "caller-declared uniform-solid reference assumption; not measured filament or installed print density",
+  "uniform_solid_model_is_slicer_infill": false,
+  "geometry_variants": 47,
+  "printed_instance_count": 65,
+  "authenticated_instance_count": 65,
+  "physical_printed_subset_inertia": null,
+  "nonuniform_printed_subset_inertia": null,
+  "purchased_internal_inertia": null,
+  "whole_arm_inertia": null,
+  "default_native_geometric_integration_error_bound": null,
+  "continuous_surface_deviation_certified": false,
+  "feature_history_rebuild_accepted": false,
+  "fabrication_release": false,
+  "components": [
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art1Body_Art1Body",
+      "selection_id": "print-01-art1body-body-nominal",
+      "root_subassembly": "AssemblyArt1",
+      "volume_m3": 0.00029864810044680386,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.37032364455403677,
+        "com_m": [
+          3.336449698838834e-07,
+          0.0018581969814136158,
+          0.17183237825168746
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            0.0013906508586764672,
+            5.775316201512602e-09,
+            1.016703461122054e-08
+          ],
+          [
+            5.775316201512602e-09,
+            0.0014955899176186988,
+            9.896582653819362e-06
+          ],
+          [
+            1.016703461122054e-08,
+            9.896582653819362e-06,
+            0.0011550460219725937
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art1Bot_Art1Bot",
+      "selection_id": "print-02-art1bot-body001-nominal",
+      "root_subassembly": "AssemblyArt1",
+      "volume_m3": 8.046469601268632e-05,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.09977622305573104,
+        "com_m": [
+          -3.183147263239461e-06,
+          -4.1695521219424615e-06,
+          0.07204924388139539
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            0.00010236095930082407,
+            1.439293537769808e-08,
+            -5.337428717029058e-09
+          ],
+          [
+            1.4392935377704857e-08,
+            0.0001023775712524629,
+            -9.313439843943305e-09
+          ],
+          [
+            -5.337428717029058e-09,
+            -9.313439843943305e-09,
+            0.00019447097215669957
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art1FanHolder_Art1FanHolder",
+      "selection_id": "print-03-art1fanholder-body-nominal",
+      "root_subassembly": "AssemblyArt1",
+      "volume_m3": 1.2991220874183237e-06,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.0016109113883987214,
+        "com_m": [
+          0.040313025108685875,
+          3.2388702772239823e-07,
+          0.11855365251449616
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            6.632606743729121e-07,
+            1.5939115308909933e-13,
+            -1.3447153175434227e-07
+          ],
+          [
+            1.5939115308909933e-13,
+            2.7139837954182083e-07,
+            -5.469673425709226e-14
+          ],
+          [
+            -1.3447153175434222e-07,
+            -5.4696734257092234e-14,
+            6.66301906666042e-07
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art1FanHolder_Art1FanHolder001",
+      "selection_id": "print-03-art1fanholder-body-nominal",
+      "root_subassembly": "AssemblyArt1",
+      "volume_m3": 1.2991220874183237e-06,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.0016109113883987214,
+        "com_m": [
+          -0.04031373898303179,
+          2.9109184204504183e-07,
+          0.11855365251449607
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            6.632606743729757e-07,
+            1.5939115273901003e-13,
+            1.3447153175434288e-07
+          ],
+          [
+            1.5939115273901003e-13,
+            2.7139837954182104e-07,
+            5.469673420957979e-14
+          ],
+          [
+            1.3447153175434288e-07,
+            5.4696734209579767e-14,
+            6.663019066659786e-07
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::Art1GearMotor_Art1GearMotor",
+      "selection_id": "print-04-art1gearmotor-body-nominal",
+      "root_subassembly": "AssemblyBase",
+      "volume_m3": 7.4622591512190786e-06,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.009253201347511657,
+        "com_m": [
+          0.0401739493988441,
+          -2.423259645951951e-07,
+          0.058923886854862204
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            6.891212443675345e-07,
+            -3.9117339155256964e-13,
+            9.222165039786546e-09
+          ],
+          [
+            -3.9117339155256964e-13,
+            6.774183620575022e-07,
+            1.5360290167063887e-11
+          ],
+          [
+            9.222165039786546e-09,
+            1.5360290167063887e-11,
+            6.309642032790372e-07
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art1Top_Art1Top",
+      "selection_id": "print-05-art1top-body-nominal",
+      "root_subassembly": "AssemblyArt1",
+      "volume_m3": 0.00015419432762722236,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.19120096625775573,
+        "com_m": [
+          -3.5693717316400864e-07,
+          3.074894348861197e-07,
+          0.10139162214974659
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            0.0002485489860697937,
+            -8.919755432711391e-12,
+            5.52700752229438e-20
+          ],
+          [
+            -8.919755432711378e-12,
+            0.0002704781529834513,
+            9.776362220999207e-22
+          ],
+          [
+            5.52700752229438e-20,
+            9.776362220999207e-22,
+            0.0004991425152918029
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art23Optodisk_Art23Optodisk",
+      "selection_id": "print-06-art23optodisk-body-nominal",
+      "root_subassembly": "AssemblyArt1",
+      "volume_m3": 1.7434963059185411e-06,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.002161935419338991,
+        "com_m": [
+          -3.73830157280723e-07,
+          0.04153159514708342,
+          0.18743632123554857
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            2.725960583218091e-07,
+            -3.9026437912652013e-13,
+            -9.074620248356988e-15
+          ],
+          [
+            -3.9026437912652013e-13,
+            1.232058397499524e-06,
+            2.230989008812141e-08
+          ],
+          [
+            -9.074620248356988e-15,
+            2.230989008812141e-08,
+            1.0458132348675923e-06
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Art23Optodisk_Art23Optodisk",
+      "selection_id": "print-06-art23optodisk-body-nominal",
+      "root_subassembly": "AssemblyArt3",
+      "volume_m3": 1.7434963059185411e-06,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.002161935419338991,
+        "com_m": [
+          -2.3821257800984864e-17,
+          0.041531287657642045,
+          0.3765636787644544
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            2.7259605832165037e-07,
+            8.660675499937148e-23,
+            -1.1044426252709197e-21
+          ],
+          [
+            8.660675499937148e-23,
+            1.2320583974997045e-06,
+            -2.2309890088035364e-08
+          ],
+          [
+            -1.1044426252709197e-21,
+            -2.2309890088035364e-08,
+            1.0458132348675717e-06
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art2BodyA_Art2BodyA",
+      "selection_id": "print-07-art2bodya-body001-nominal",
+      "root_subassembly": "AssemblyArt2",
+      "volume_m3": 0.00018762353788952742,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.23265318698301402,
+        "com_m": [
+          -3.83148781605331e-08,
+          -0.0579870651488362,
+          0.2829397074955444
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            0.0016714710894948101,
+            -2.0097338958637382e-11,
+            -6.251749028648916e-11
+          ],
+          [
+            -2.0097338958637382e-11,
+            0.0020180355184866105,
+            -3.768054440806179e-05
+          ],
+          [
+            -6.251749028648916e-11,
+            -3.768054440806179e-05,
+            0.0003867703872347739
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art2BodyACover1_Art2BodyACover1",
+      "selection_id": "print-08-art2bodyacover1-body-nominal",
+      "root_subassembly": "AssemblyArt1",
+      "volume_m3": 4.818874841704854e-05,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.05975404803714019,
+        "com_m": [
+          -3.416883926741471e-07,
+          -0.03748873036291286,
+          0.20855565312374752
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            4.782912325746989e-05,
+            -2.5250075285874468e-11,
+            -6.08106364430671e-15
+          ],
+          [
+            -2.5250075285874468e-11,
+            0.00010990628668544909,
+            1.4950361639001974e-08
+          ],
+          [
+            -6.081063644306709e-15,
+            1.4950361639001974e-08,
+            6.2326560955489e-05
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art2BodyACover2_Art2BodyACover2",
+      "selection_id": "print-09-art2bodyacover2-body-nominal",
+      "root_subassembly": "AssemblyArt2",
+      "volume_m3": 4.359064259336913e-05,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.05405239681577772,
+        "com_m": [
+          -4.595888414443122e-17,
+          -0.03852377484830435,
+          0.3350283311578151
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            0.00012672908418945826,
+            4.6301811057870184e-21,
+            -3.1743994656706907e-20
+          ],
+          [
+            4.63018110578702e-21,
+            0.00018269292781193482,
+            1.0205597714610099e-07
+          ],
+          [
+            -3.1743994656706907e-20,
+            1.0205597714610099e-07,
+            5.619634907376332e-05
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Unnamed_Art2BodyAWindow",
+      "selection_id": "print-10-art2bodyawindow-body-nominal",
+      "root_subassembly": "AssemblyArt2",
+      "volume_m3": 3.901193801416927e-05,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.048374803137569894,
+        "com_m": [
+          -4.240192276317149e-14,
+          -0.06506421325448318,
+          0.362
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            2.815953312140162e-05,
+            1.1657985038002783e-17,
+            2.9258454191977013e-21
+          ],
+          [
+            1.1657985038002783e-17,
+            5.5815786190960044e-05,
+            5.893228368837344e-20
+          ],
+          [
+            2.9258454191977013e-21,
+            5.893228368837344e-20,
+            2.8050713179832184e-05
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art2BodyB_Art2BodyB",
+      "selection_id": "print-11-art2bodyb-body-nominal",
+      "root_subassembly": "AssemblyArt2",
+      "volume_m3": 0.0002574304275871655,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.3192137302080852,
+        "com_m": [
+          2.9471407406127167e-11,
+          0.05880785384839122,
+          0.2820000005206592
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            0.0024484521011803764,
+            -1.077415566024695e-15,
+            -7.6661392726636e-07
+          ],
+          [
+            -1.077415566024695e-15,
+            0.0028703619652163353,
+            -2.683919133320485e-13
+          ],
+          [
+            -7.6661392726636e-07,
+            -2.683919133320485e-13,
+            0.000475347447725321
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art2BodyBCover_Art2BodyBCover",
+      "selection_id": "print-12-art2bodybcover-body-nominal",
+      "root_subassembly": "AssemblyArt2",
+      "volume_m3": 9.791596879564343e-05,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.12141580130659785,
+        "com_m": [
+          -2.0251814467956088e-15,
+          0.03852116837381867,
+          0.28199999999999786
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            0.0007711850990282143,
+            1.1830278374521097e-19,
+            8.590331165842969e-18
+          ],
+          [
+            1.18302783745211e-19,
+            0.0008969066103189658,
+            -1.6251358895990397e-19
+          ],
+          [
+            8.590331165842969e-18,
+            -1.6251358895990397e-19,
+            0.00012624199812349678
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art2BodyUnion_Art2BodyUnion",
+      "selection_id": "print-13-art2bodyunion-body-nominal",
+      "root_subassembly": "AssemblyArt2",
+      "volume_m3": 8.986288542967172e-05,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.11142997793279294,
+        "com_m": [
+          1.1981330599312492e-17,
+          -1.805343774961484e-17,
+          0.2819999999999999
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            5.159601027732438e-05,
+            2.693383751589234e-21,
+            1.529562549842647e-20
+          ],
+          [
+            2.6933837515892323e-21,
+            7.59561269704783e-05,
+            -4.3421562352902125e-20
+          ],
+          [
+            1.529562549842647e-20,
+            -4.3421562352902125e-20,
+            0.00011965751866189651
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art2MotorGear_Art2MotorGear",
+      "selection_id": "print-14-art2motorgear-body-nominal",
+      "root_subassembly": "AssemblyArt1",
+      "volume_m3": 7.1786848979236845e-06,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.008901569273425369,
+        "com_m": [
+          -0.0212805345830922,
+          -0.04769392500846844,
+          0.15866583268634157
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            7.131468117447535e-07,
+            -1.3891744809446202e-08,
+            -2.554943452452169e-09
+          ],
+          [
+            -1.3891744809446202e-08,
+            6.027151830392637e-07,
+            2.1584930906398713e-09
+          ],
+          [
+            -2.554943452452169e-09,
+            2.1584930906398717e-09,
+            6.970896197565656e-07
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::Art2MotorGear_Art2MotorGear001",
+      "selection_id": "print-14-art2motorgear-body-nominal",
+      "root_subassembly": "AssemblyArt1",
+      "volume_m3": 7.1786848979236845e-06,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.008901569273425369,
+        "com_m": [
+          0.02171946541690425,
+          -0.04769390751808748,
+          0.15866583268634152
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            7.131468117447535e-07,
+            -1.3891744809446202e-08,
+            -2.554943452452169e-09
+          ],
+          [
+            -1.3891744809446202e-08,
+            6.027151830392637e-07,
+            2.1584930906398713e-09
+          ],
+          [
+            -2.554943452452169e-09,
+            2.1584930906398717e-09,
+            6.970896197565656e-07
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Unnamed_Art2SideCover",
+      "selection_id": "print-15-art2sidecover-body-nominal",
+      "root_subassembly": "AssemblyArt2",
+      "volume_m3": 5.177988728238576e-05,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.06420706023015835,
+        "com_m": [
+          -1.2771017231120527e-17,
+          -0.0690015893289947,
+          0.28200000000000003
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            0.0004088006225413002,
+            4.705046205759028e-21,
+            2.972120346829328e-20
+          ],
+          [
+            4.705046205759028e-21,
+            0.0004633266863810182,
+            -1.1499591683546727e-19
+          ],
+          [
+            2.9721203468293287e-20,
+            -1.1499591683546727e-19,
+            5.4568881828320865e-05
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Unnamed_Art2SideCover001",
+      "selection_id": "print-15-art2sidecover-body-nominal",
+      "root_subassembly": "AssemblyArt2",
+      "volume_m3": 5.177988728238576e-05,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.06420706023015835,
+        "com_m": [
+          -1.2607277303844655e-17,
+          0.06900158932899465,
+          0.28199999999999986
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            0.0004088006225413002,
+            4.7050462057590275e-21,
+            3.1628620767955765e-20
+          ],
+          [
+            4.7050462057590275e-21,
+            0.0004633266863810182,
+            -1.1499591683546727e-19
+          ],
+          [
+            3.162862076795577e-20,
+            -1.1499591683546727e-19,
+            5.4568881828320865e-05
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Art3Body_Art3Body",
+      "selection_id": "print-16-art3body-body002-nominal",
+      "root_subassembly": "AssemblyArt3",
+      "volume_m3": 0.0002781652564076698,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.34492491794551056,
+        "com_m": [
+          0.0009003307617659094,
+          -0.000252207282722166,
+          0.3769331355685778
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            0.0010693744803026003,
+            -7.80082368252129e-08,
+            5.500269478563615e-06
+          ],
+          [
+            -7.80082368252129e-08,
+            0.0011739050743308976,
+            -1.3770221608217315e-06
+          ],
+          [
+            5.500269478563615e-06,
+            -1.3770221608217315e-06,
+            0.000632519015820285
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Art3Pulley_Art3Pulley",
+      "selection_id": "print-17-art3pulley-body-nominal",
+      "root_subassembly": "AssemblyArt3",
+      "volume_m3": 5.2315762820192785e-05,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.06487154589703906,
+        "com_m": [
+          -1.1052461863982391e-08,
+          -0.044052404139723694,
+          0.36535561392114124
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            2.8085146327923394e-05,
+            -4.221811647957576e-12,
+            8.659539546858227e-12
+          ],
+          [
+            -4.221811647957576e-12,
+            4.955174776799618e-05,
+            -2.1584961508909344e-07
+          ],
+          [
+            8.659539546858227e-12,
+            -2.1584961508909344e-07,
+            2.5138233724522445e-05
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art3TensionerBody_Art3TensionerBody",
+      "selection_id": "print-18-art3tensionerbody-body-nominal",
+      "root_subassembly": "AssemblyArt2",
+      "volume_m3": 8.724812942676834e-07,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.0010818768048919275,
+        "com_m": [
+          -0.01724429550294443,
+          -0.057711277471183625,
+          0.30185
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            1.863406434764865e-08,
+            1.3076744237747702e-09,
+            -4.162350541293121e-23
+          ],
+          [
+            1.3076744237747702e-09,
+            2.4748512791450005e-08,
+            -1.5718983757565302e-23
+          ],
+          [
+            -4.162350541293121e-23,
+            -1.5718983757565302e-23,
+            2.8917658344186393e-08
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art3TensionerBody_Art3TensionerBody001",
+      "selection_id": "print-18-art3tensionerbody-body-nominal",
+      "root_subassembly": "AssemblyArt2",
+      "volume_m3": 8.724812942676834e-07,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.0010818768048919275,
+        "com_m": [
+          0.01724429550294438,
+          -0.057711277471183625,
+          0.30185
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            1.863406434764865e-08,
+            -1.307674423774769e-09,
+            -4.4025201576696296e-24
+          ],
+          [
+            -1.307674423774769e-09,
+            2.4748512791450005e-08,
+            7.353358951216286e-24
+          ],
+          [
+            -4.4025201576696296e-24,
+            7.353358951216298e-24,
+            2.8917658344186393e-08
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art3TensionerPulley_Art3TensionerPulley",
+      "selection_id": "print-19-art3tensionerpulley-body-nominal",
+      "root_subassembly": "AssemblyArt2",
+      "volume_m3": 1.1612661624545654e-06,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.001439970041443661,
+        "com_m": [
+          -0.014500000000000008,
+          -0.04838772936012501,
+          0.30185
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            3.81936824197679e-08,
+            1.1979144051354004e-23,
+            -9.245892400449498e-25
+          ],
+          [
+            1.1979144051354005e-23,
+            5.448496007083258e-08,
+            -2.0363617754054085e-23
+          ],
+          [
+            -9.245892400449498e-25,
+            -2.0363617754054085e-23,
+            3.8193682419768454e-08
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::Art3TensionerPulley_Art3TensionerPulley001",
+      "selection_id": "print-19-art3tensionerpulley-body-nominal",
+      "root_subassembly": "AssemblyArt2",
+      "volume_m3": 1.1612661624545654e-06,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.001439970041443661,
+        "com_m": [
+          0.014499999999999963,
+          -0.04838772936012502,
+          0.30184999999999995
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            3.81936824197679e-08,
+            -9.157637942203332e-24,
+            -9.24589240043253e-25
+          ],
+          [
+            -9.157637942203332e-24,
+            5.448496007083258e-08,
+            -6.640954478255286e-23
+          ],
+          [
+            -9.24589240043253e-25,
+            -6.640954478255286e-23,
+            3.8193682419768454e-08
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4BearingFix_Art4BearingFix",
+      "selection_id": "print-20-art4bearingfix-body-nominal",
+      "root_subassembly": "AssemblyArt4",
+      "volume_m3": 8.855804357599254e-07,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.0010981197403423075,
+        "com_m": [
+          -7.751620704855076e-10,
+          0.052776499106458985,
+          0.5559122103699283
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            1.647652426372101e-08,
+            1.80070670774716e-16,
+            3.6498537256453254e-14
+          ],
+          [
+            1.80070670774716e-16,
+            5.225885045234251e-08,
+            1.8721117971887378e-10
+          ],
+          [
+            3.6498537256453254e-14,
+            1.8721117971887378e-10,
+            3.842802240008488e-08
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4BearingFix_Art4BearingFix001",
+      "selection_id": "print-20-art4bearingfix-body-nominal",
+      "root_subassembly": "AssemblyArt4",
+      "volume_m3": 8.855804357599254e-07,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.0010981197403423075,
+        "com_m": [
+          7.751622875626021e-10,
+          -0.05277649910645899,
+          0.5559122103699301
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            1.647652426372101e-08,
+            1.8007067047819734e-16,
+            -3.649853722572133e-14
+          ],
+          [
+            1.8007067047819734e-16,
+            5.225885045234216e-08,
+            -1.8721117973191232e-10
+          ],
+          [
+            -3.649853722572133e-14,
+            -1.8721117973191232e-10,
+            3.842802240008523e-08
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Art4BearingRing_Art4BearingRing",
+      "selection_id": "print-21-art4bearingring-body-nominal",
+      "root_subassembly": "AssemblyArt3",
+      "volume_m3": 2.3451843718245164e-05,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.029080286210624005,
+        "com_m": [
+          -4.5529942591713056e-08,
+          -0.0006942543717741127,
+          0.4458832356107917
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            2.670396478187514e-05,
+            6.237162402234336e-13,
+            -4.138789464984633e-12
+          ],
+          [
+            6.237162402234336e-13,
+            2.8128597405084964e-05,
+            -1.1137793471891833e-08
+          ],
+          [
+            -4.138789464984633e-12,
+            -1.1137793471891833e-08,
+            5.4477299195823336e-05
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4Body_Art4Body",
+      "selection_id": "print-22-art4body-body-nominal",
+      "root_subassembly": "AssemblyArt4",
+      "volume_m3": 0.0002278918454523972,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.28258588836097254,
+        "com_m": [
+          -0.00019721627951279106,
+          -7.942823793100404e-08,
+          0.5247803298673395
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            0.000848395892587872,
+            -6.43514015946764e-07,
+            -2.3481179809921467e-08
+          ],
+          [
+            -6.43514015946764e-07,
+            0.0008447574476663023,
+            -1.4519801258241484e-09
+          ],
+          [
+            -2.3481179809921467e-08,
+            -1.4519801258241484e-09,
+            0.0007058020158741289
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4BodyBot_Art4BodyBot",
+      "selection_id": "print-23-art4bodybot-body-nominal",
+      "root_subassembly": "AssemblyArt4",
+      "volume_m3": 4.340469219108355e-05,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.053821818316943604,
+        "com_m": [
+          3.968608727280876e-11,
+          -2.8021612353218764e-10,
+          0.454299283019504
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            4.5738785340229136e-05,
+            5.400541967156968e-07,
+            -1.3550212084791083e-14
+          ],
+          [
+            5.400541967156968e-07,
+            4.319376844710068e-05,
+            1.1066245216297063e-13
+          ],
+          [
+            -1.3550212084791083e-14,
+            1.1066245216297063e-13,
+            8.830372077640847e-05
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4BodyFan_Art4BodyFan",
+      "selection_id": "print-24-art4bodyfan-body-nominal",
+      "root_subassembly": "AssemblyArt4",
+      "volume_m3": 1.2547728604259315e-05,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.01555918346928155,
+        "com_m": [
+          -3.462750515921568e-09,
+          -0.05839866843552955,
+          0.48099999875763416
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            5.23240763577237e-06,
+            4.706066251863045e-13,
+            -3.385823881578747e-13
+          ],
+          [
+            4.706066251863045e-13,
+            1.0751543058826485e-05,
+            8.08474844507878e-14
+          ],
+          [
+            -3.385823881578747e-13,
+            8.08474844507878e-14,
+            6.110015779696703e-06
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4BodyFan_Art4BodyFan001",
+      "selection_id": "print-24-art4bodyfan-body-nominal",
+      "root_subassembly": "AssemblyArt4",
+      "volume_m3": 1.2547728604259315e-05,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.01555918346928155,
+        "com_m": [
+          3.462750530553319e-09,
+          0.058398668435529585,
+          0.48099999875763416
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            5.23240763577237e-06,
+            4.706066233480636e-13,
+            3.385823891232429e-13
+          ],
+          [
+            4.706066233480636e-13,
+            1.0751543058826485e-05,
+            -8.084749141307912e-14
+          ],
+          [
+            3.385823891232429e-13,
+            -8.084749141307912e-14,
+            6.110015779696703e-06
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Art4MotorFix_Art4MotorFix",
+      "selection_id": "print-25-art4motorfix-body-nominal",
+      "root_subassembly": "AssemblyArt3",
+      "volume_m3": 3.7697213348050766e-06,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.004674454455158295,
+        "com_m": [
+          -0.029194530859200273,
+          -9.39568510417004e-18,
+          0.36270731322192157
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            7.251129372444482e-07,
+            7.828454541680567e-23,
+            2.4859681245805255e-08
+          ],
+          [
+            7.828454541680567e-23,
+            9.007586767118668e-07,
+            2.1046020622302744e-21
+          ],
+          [
+            2.4859681245805255e-08,
+            2.1046020622302744e-21,
+            1.6068493847690765e-06
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::Art4MotorGear_Art4MotorGear",
+      "selection_id": "print-26-art4motorgear-body-nominal",
+      "root_subassembly": "AssemblyArt3",
+      "volume_m3": 6.945125846289586e-06,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.008611956049399086,
+        "com_m": [
+          -0.02758389508360221,
+          3.2576373743015465e-07,
+          0.37666358574351205
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            6.548452931397775e-07,
+            4.08121987746609e-13,
+            1.129758747696317e-08
+          ],
+          [
+            4.08121987746609e-13,
+            6.362822287526811e-07,
+            -2.048773014621973e-11
+          ],
+          [
+            1.129758747696317e-08,
+            -2.048773014621973e-11,
+            5.537772062203023e-07
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4Optodisk_Art4Optodisk",
+      "selection_id": "print-27-art4optodisk-body-nominal",
+      "root_subassembly": "AssemblyArt4",
+      "volume_m3": 8.854474438444183e-06,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.010979548303670787,
+        "com_m": [
+          -3.354236347572516e-05,
+          5.102538737850075e-18,
+          0.4354525715517927
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            4.12081137395908e-06,
+            5.526048731182198e-22,
+            -2.1922130510986703e-09
+          ],
+          [
+            5.526048731182198e-22,
+            4.109861621753868e-06,
+            7.723489084722228e-21
+          ],
+          [
+            -2.1922130510986703e-09,
+            7.723489084722228e-21,
+            7.949629192232813e-06
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art4TransmissionColumn_Art4TransmissionColumn",
+      "selection_id": "print-28-art4transmissioncolumn-body-nominal",
+      "root_subassembly": "AssemblyArt4",
+      "volume_m3": 7.848425760901182e-05,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.09732047943517465,
+        "com_m": [
+          1.88627155852601e-08,
+          -1.2746101729239766e-08,
+          0.42500960266232723
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            7.512374881843065e-05,
+            9.391403467070602e-13,
+            7.46457949374203e-11
+          ],
+          [
+            9.391403467070602e-13,
+            7.512374926321388e-05,
+            -5.240324596412729e-11
+          ],
+          [
+            7.46457949374203e-11,
+            -5.240324596412729e-11,
+            3.920377001130285e-05
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Art56GearPlate_Art56GearPlate",
+      "selection_id": "print-29-art56gearplate-body-nominal",
+      "root_subassembly": "AssemblyArt56",
+      "volume_m3": 4.28835006807928e-05,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.05317554084418307,
+        "com_m": [
+          -8.287366681315742e-11,
+          -1.8630589767119147e-11,
+          0.5859924984767506
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            2.2936342180136577e-05,
+            -1.675223418048097e-13,
+            2.8837418313968073e-13
+          ],
+          [
+            -1.675223418048097e-13,
+            2.293634145315736e-05,
+            9.67535427720181e-13
+          ],
+          [
+            2.8837418313968073e-13,
+            9.67535427720181e-13,
+            2.313092450492838e-05
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Art56MotorCoverRing_Art56MotorCoverRing",
+      "selection_id": "print-30-art56motorcoverring-body-nominal",
+      "root_subassembly": "AssemblyArt56",
+      "volume_m3": 2.7847005739778484e-05,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.03453028711732532,
+        "com_m": [
+          7.555936664696361e-10,
+          0.00012563554347439892,
+          0.5527083316992307
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            2.0639312970395747e-05,
+            2.0875376185506944e-14,
+            -2.14333109103796e-12
+          ],
+          [
+            2.0875376185506944e-14,
+            4.5551565606255725e-05,
+            -1.3086165688927867e-08
+          ],
+          [
+            -2.14333109103796e-12,
+            -1.3086165688927867e-08,
+            2.834717162011304e-05
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art56MotorHolderA_Art56MotorHolderA",
+      "selection_id": "print-31-art56motorholdera-body-nominal",
+      "root_subassembly": "AssemblyArt4",
+      "volume_m3": 5.536724322104634e-06,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.006865538159409746,
+        "com_m": [
+          0.024359436880816432,
+          -0.013002764266756379,
+          0.47748775012261746
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            1.200066506696679e-06,
+            -5.278679134845029e-09,
+            -7.129642080246539e-08
+          ],
+          [
+            -5.278679134845029e-09,
+            2.670371229387816e-06,
+            -1.9891382511335075e-08
+          ],
+          [
+            -7.129642080246539e-08,
+            -1.9891382511335075e-08,
+            1.5436961853748421e-06
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art56MotorHolderA_Art56MotorHolderA001",
+      "selection_id": "print-31-art56motorholdera-body-nominal",
+      "root_subassembly": "AssemblyArt4",
+      "volume_m3": 5.536724322104634e-06,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.006865538159409746,
+        "com_m": [
+          -0.024359436880816362,
+          0.0130027642667564,
+          0.47748775012261757
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            1.2000665066966797e-06,
+            -5.278679134844971e-09,
+            7.129642080246694e-08
+          ],
+          [
+            -5.278679134844971e-09,
+            2.670371229387816e-06,
+            1.9891382511335597e-08
+          ],
+          [
+            7.129642080246694e-08,
+            1.9891382511335597e-08,
+            1.5436961853748415e-06
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art56MotorHolderB_Art56MotorHolderB",
+      "selection_id": "print-32-art56motorholderb-body-nominal",
+      "root_subassembly": "AssemblyArt4",
+      "volume_m3": 6.303510599855067e-06,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.007816353143820284,
+        "com_m": [
+          0.02169152734430802,
+          0.02631252092300539,
+          0.4775098301303149
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            1.1832758878859762e-06,
+            1.3252004299818794e-08,
+            -6.546517669312295e-08
+          ],
+          [
+            1.3252004299818794e-08,
+            2.2582230799473706e-06,
+            2.2262328527969185e-08
+          ],
+          [
+            -6.546517669312295e-08,
+            2.2262328527969185e-08,
+            1.1531167677713463e-06
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt4/AssemblyArt4::Art56MotorHolderB_Art56MotorHolderB001",
+      "selection_id": "print-32-art56motorholderb-body-nominal",
+      "root_subassembly": "AssemblyArt4",
+      "volume_m3": 6.303510599855067e-06,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.007816353143820284,
+        "com_m": [
+          -0.02169152734430796,
+          -0.026312520923005366,
+          0.47750983013031495
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            1.1832758878859768e-06,
+            1.325200429981872e-08,
+            6.54651766931228e-08
+          ],
+          [
+            1.325200429981872e-08,
+            2.2582230799473706e-06,
+            -2.2262328527969738e-08
+          ],
+          [
+            6.54651766931228e-08,
+            -2.2262328527969738e-08,
+            1.1531167677713459e-06
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Art56SmallGear_Art56SmallGear",
+      "selection_id": "print-33-art56smallgear-body-nominal",
+      "root_subassembly": "AssemblyArt56",
+      "volume_m3": 7.71678007063262e-06,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.009568807287584448,
+        "com_m": [
+          1.6397499739984457e-05,
+          -0.034369400446915166,
+          0.5561995210374879
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            8.89384313437599e-07,
+            -4.51122550413397e-10,
+            2.0641252354823186e-09
+          ],
+          [
+            -4.51122550413397e-10,
+            1.598860260944304e-06,
+            -5.93746057529551e-09
+          ],
+          [
+            2.0641252354823186e-09,
+            -5.93746057529551e-09,
+            9.129154045140483e-07
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Art56SmallGear_Art56SmallGear001",
+      "selection_id": "print-33-art56smallgear-body-nominal",
+      "root_subassembly": "AssemblyArt56",
+      "volume_m3": 7.71678007063262e-06,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.009568807287584448,
+        "com_m": [
+          6.085970063069365e-05,
+          0.034369400446915145,
+          0.5558092813086319
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            8.914799096412004e-07,
+            1.7751983252109043e-09,
+            -7.01289916265795e-09
+          ],
+          [
+            1.7751983252109043e-09,
+            1.5988602609443044e-06,
+            -5.683803352056745e-09
+          ],
+          [
+            -7.01289916265795e-09,
+            -5.683803352056745e-09,
+            9.108198083104472e-07
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::BaseBearingFix_BaseBearingFix",
+      "selection_id": "print-34-basebearingfix-body-nominal",
+      "root_subassembly": "AssemblyBase",
+      "volume_m3": 5.034194096864344e-05,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.06242400680111787,
+        "com_m": [
+          -2.012195681875818e-18,
+          1.714301170216598e-17,
+          0.09549673543446024
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            0.00012528195042249657,
+            1.1323490522829882e-18,
+            3.167432573171532e-23
+          ],
+          [
+            1.1255727887049538e-18,
+            0.00012528195042249787,
+            -1.8532623806239444e-22
+          ],
+          [
+            3.167432573171532e-23,
+            -1.8532623806239444e-22,
+            0.00025030366628903594
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::BaseBot_BaseBot",
+      "selection_id": "print-35-basebot-body002-nominal",
+      "root_subassembly": "AssemblyBase",
+      "volume_m3": 0.0003420839910820177,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.4241841489417019,
+        "com_m": [
+          0.011789777014185444,
+          -0.0010533476280576597,
+          0.019374889034287024
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            0.0012953898859190008,
+            4.3943405439773635e-05,
+            4.944282036663349e-05
+          ],
+          [
+            4.3943405439773635e-05,
+            0.0010207814523494477,
+            5.209984078694369e-06
+          ],
+          [
+            4.944282036663349e-05,
+            5.209984078694369e-06,
+            0.0019964622814541886
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::BaseBoxBody_BaseBoxBody",
+      "selection_id": "print-36-baseboxbody-body002-nominal",
+      "root_subassembly": "AssemblyBase",
+      "volume_m3": 0.00034225673487627234,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.4243983512465777,
+        "com_m": [
+          -0.1295085147181552,
+          1.3100048640109815e-05,
+          0.02185961668065897
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            0.0018337337897019162,
+            3.571411694607823e-07,
+            -4.564047569520105e-05
+          ],
+          [
+            3.571411694607823e-07,
+            0.0019086096288000278,
+            7.151082797433994e-08
+          ],
+          [
+            -4.564047569520105e-05,
+            7.151082797433994e-08,
+            0.003336255984402931
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::BaseBoxCover_BaseBoxCover",
+      "selection_id": "print-37-baseboxcover-body-nominal",
+      "root_subassembly": "AssemblyBase",
+      "volume_m3": 0.00014477722172656944,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.1795237549409461,
+        "com_m": [
+          -0.13764464227629267,
+          5.66421435345878e-17,
+          0.0679986756526728
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            0.0005200029314580357,
+            3.0363752449048665e-20,
+            3.267813510682881e-09
+          ],
+          [
+            3.0363752449048665e-20,
+            0.0004200875382056524,
+            -4.190381262305946e-26
+          ],
+          [
+            3.267813510682881e-09,
+            -4.190381262305946e-26,
+            0.000939342137645428
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyBase/AssemblyBase::BaseTop_BaseTop",
+      "selection_id": "print-38-basetop-body-nominal",
+      "root_subassembly": "AssemblyBase",
+      "volume_m3": 0.00022233623160027092,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.27569692718433597,
+        "com_m": [
+          5.653421857336189e-18,
+          4.962819509117042e-17,
+          0.07949844347828727
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            0.0006126562994199993,
+            5.007095460855212e-18,
+            -3.0486200900219727e-19
+          ],
+          [
+            5.007095460855212e-18,
+            0.0006126562994200049,
+            2.188341941361099e-19
+          ],
+          [
+            -3.0486200900219727e-19,
+            2.188341941361099e-19,
+            0.001192025739217255
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::CommonBearingFix_CommonBearingFix",
+      "selection_id": "print-39-commonbearingfix-body-nominal",
+      "root_subassembly": "AssemblyArt2",
+      "volume_m3": 9.831716475189408e-07,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.0012191328429234866,
+        "com_m": [
+          1.2814840382948105e-16,
+          0.06594428081603541,
+          0.36199999999999993
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            1.808737795318043e-08,
+            3.469886128525558e-24,
+            1.3660211529488672e-24
+          ],
+          [
+            3.469886128525557e-24,
+            6.661451032095637e-08,
+            -2.822253797122671e-23
+          ],
+          [
+            1.3660211529488673e-24,
+            -2.822253797122671e-23,
+            5.1861155491834436e-08
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::CommonBearingFix_CommonBearingFix001",
+      "selection_id": "print-39-commonbearingfix-body-nominal",
+      "root_subassembly": "AssemblyArt2",
+      "volume_m3": 9.831716475189408e-07,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.0012191328429234866,
+        "com_m": [
+          2.403700729248893e-18,
+          0.06594428081603533,
+          0.20199999999999987
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            1.808737795318043e-08,
+            3.469886128525558e-24,
+            1.3660211529488672e-24
+          ],
+          [
+            3.469886128525557e-24,
+            6.661451032095637e-08,
+            -2.822253797122671e-23
+          ],
+          [
+            1.3660211529488673e-24,
+            -2.822253797122671e-23,
+            5.1861155491834436e-08
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::CommonBearingFix_CommonBearingFix002",
+      "selection_id": "print-39-commonbearingfix-body-nominal",
+      "root_subassembly": "AssemblyArt2",
+      "volume_m3": 9.831716475189408e-07,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.0012191328429234866,
+        "com_m": [
+          -2.4726698364446186e-17,
+          -0.06594428081603533,
+          0.202
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            1.808737795318043e-08,
+            3.469886128525559e-24,
+            -7.21534259325841e-24
+          ],
+          [
+            3.469886128525559e-24,
+            6.661451032095637e-08,
+            -2.4391226846035627e-23
+          ],
+          [
+            -7.21534259325841e-24,
+            -2.4391226846035627e-23,
+            5.1861155491834436e-08
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt2/AssemblyArt2::CommonBearingFix_CommonBearingFix003",
+      "selection_id": "print-39-commonbearingfix-body-nominal",
+      "root_subassembly": "AssemblyArt2",
+      "volume_m3": 9.831716475189408e-07,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.0012191328429234866,
+        "com_m": [
+          -5.368199526421408e-17,
+          -0.06594428081603533,
+          0.362
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            1.808737795318043e-08,
+            3.469886128525571e-24,
+            -7.215342593258409e-24
+          ],
+          [
+            3.46988612852557e-24,
+            6.661451032095637e-08,
+            2.872085053880339e-23
+          ],
+          [
+            -7.215342593258409e-24,
+            2.8720850538803366e-23,
+            5.1861155491834436e-08
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt1/AssemblyArt1::CommonBearingFixThrough_CommonBearingFixThrough",
+      "selection_id": "print-40-commonbearingfixthrough-body-nominal",
+      "root_subassembly": "AssemblyArt1",
+      "volume_m3": 6.690123821599614e-07,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.0008295753538783521,
+        "com_m": [
+          -3.7276723516890583e-07,
+          0.0389184233220311,
+          0.20199999999999993
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            4.8905233836470445e-08,
+            -5.22263095315436e-15,
+            -1.1403461806228203e-23
+          ],
+          [
+            -5.222630953154363e-15,
+            6.174504170789004e-08,
+            -2.46987187896901e-23
+          ],
+          [
+            -1.1403461806228203e-23,
+            -2.46987187896901e-23,
+            1.51314562978143e-08
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::CommonBearingFixThrough_CommonBearingFixThrough",
+      "selection_id": "print-40-commonbearingfixthrough-body-nominal",
+      "root_subassembly": "AssemblyArt3",
+      "volume_m3": 6.690123821599614e-07,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.0008295753538783521,
+        "com_m": [
+          1.7298817917397394e-17,
+          -0.050918115832594715,
+          0.36199999999999993
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            1.5131456297814294e-08,
+            -6.382669692990505e-25,
+            -1.217970983933336e-23
+          ],
+          [
+            -6.382669692990505e-25,
+            6.174504170789215e-08,
+            9.757949790904864e-23
+          ],
+          [
+            -1.217970983933336e-23,
+            9.757949790904864e-23,
+            4.89052338364683e-08
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt3/AssemblyArt3::CommonBearingFixThrough_CommonBearingFixThrough001",
+      "selection_id": "print-40-commonbearingfixthrough-body-nominal",
+      "root_subassembly": "AssemblyArt3",
+      "volume_m3": 6.690123821599614e-07,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.0008295753538783521,
+        "com_m": [
+          5.803257944761549e-18,
+          0.03891811583259476,
+          0.36200000000000004
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            4.89052338364683e-08,
+            4.784416002146701e-24,
+            -1.8378067003639556e-24
+          ],
+          [
+            4.784416002146701e-24,
+            6.174504170789215e-08,
+            -2.4608888766938515e-22
+          ],
+          [
+            -1.8378067003639556e-24,
+            -2.4608888766938515e-22,
+            1.5131456297814294e-08
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::CommonBearingFixThrough_CommonBearingFixThrough",
+      "selection_id": "print-40-commonbearingfixthrough-body-nominal",
+      "root_subassembly": "AssemblyArt56",
+      "volume_m3": 6.690123821599614e-07,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.0008295753538783521,
+        "com_m": [
+          -1.1366135669701626e-17,
+          -0.004918115832594763,
+          0.556
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            1.5131456297814294e-08,
+            2.0062323343740783e-23,
+            -1.1420992737416014e-23
+          ],
+          [
+            2.0062323343740783e-23,
+            6.174504170789215e-08,
+            5.036314149262874e-25
+          ],
+          [
+            -1.1420992737416014e-23,
+            5.036314149262874e-25,
+            4.89052338364683e-08
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::GripperActiveArm_GripperActiveArm",
+      "selection_id": "print-41-gripperactivearm-body-nominal",
+      "root_subassembly": "AssemblyArt56",
+      "volume_m3": 2.591363809825241e-06,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.003213291124183299,
+        "com_m": [
+          -0.0003920718332056511,
+          0.0195058190822145,
+          0.645024363262996
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            6.899677807872766e-07,
+            -3.094512559919022e-09,
+            -1.7101545523913573e-11
+          ],
+          [
+            -3.094512559919022e-09,
+            1.6215877932207955e-07,
+            -1.8414678056725004e-09
+          ],
+          [
+            -1.7101545523913576e-11,
+            -1.8414678056725e-09,
+            5.394607776473714e-07
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed2_GripperArm",
+      "selection_id": "print-42-gripperarm-body-nominal",
+      "root_subassembly": "AssemblyArt56",
+      "volume_m3": 8.396484003078497e-07,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.0010411640163817337,
+        "com_m": [
+          0.00021394606923508296,
+          -0.02349950482739954,
+          0.6635000000003507
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            1.5792014953997242e-07,
+            4.1808043632466993e-10,
+            4.469135110179358e-20
+          ],
+          [
+            4.1808043632467e-10,
+            4.279809717679025e-09,
+            1.4939581051541217e-18
+          ],
+          [
+            4.469135110179358e-20,
+            1.4939581051541217e-18,
+            1.5779298496687647e-07
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed2_GripperArm001",
+      "selection_id": "print-42-gripperarm-body-nominal",
+      "root_subassembly": "AssemblyArt56",
+      "volume_m3": 8.396484003078497e-07,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.0010411640163817337,
+        "com_m": [
+          8.605282012361147e-05,
+          0.023500321167287504,
+          0.6634999999996493
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            1.5792014953997385e-07,
+            4.1808043607055627e-10,
+            -5.2733283543553006e-20
+          ],
+          [
+            4.180804360705562e-10,
+            4.279809717677643e-09,
+            1.4935884102454187e-18
+          ],
+          [
+            -5.2733283543553006e-20,
+            1.4935884102454187e-18,
+            1.5779298496687658e-07
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::GripperBot_GripperBot",
+      "selection_id": "print-43-gripperbot-body-nominal",
+      "root_subassembly": "AssemblyArt56",
+      "volume_m3": 3.062237565627368e-05,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.037971745813779365,
+        "com_m": [
+          0.009190149653513474,
+          -0.0018838837490467294,
+          0.6398933923896416
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            2.213126460075515e-05,
+            2.03498923806207e-08,
+            -2.897328566481232e-07
+          ],
+          [
+            2.03498923806207e-08,
+            1.0562987554961082e-05,
+            3.6936429133398564e-07
+          ],
+          [
+            -2.897328566481232e-07,
+            3.6936429133398564e-07,
+            1.3376845729347928e-05
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed1_GripperFinger",
+      "selection_id": "print-44-gripperfinger-body-nominal",
+      "root_subassembly": "AssemblyArt56",
+      "volume_m3": 1.2593042562615726e-05,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.0156153727776435,
+        "com_m": [
+          -0.0001496004977268135,
+          0.043817306878651555,
+          0.673167737396456
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            4.23061839351363e-06,
+            2.903483998335174e-10,
+            -2.068457061457139e-09
+          ],
+          [
+            2.903483998335174e-10,
+            4.166270939034329e-06,
+            1.7981515552441176e-07
+          ],
+          [
+            -2.068457061457139e-09,
+            1.7981515552441176e-07,
+            7.781891411772011e-07
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::GripperFinger_sym001/AssemblyArt56::Unnamed1_GripperFinger_mirrored",
+      "selection_id": "print-45-assemblyart56-unnamed1_gripperfinger_mirrored-reflected",
+      "root_subassembly": "AssemblyArt56",
+      "volume_m3": 1.2593042562615726e-05,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.0156153727776435,
+        "com_m": [
+          8.88662707627377e-05,
+          -0.04381747214517024,
+          0.673167737396456
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            4.230619647916112e-06,
+            5.985827517332044e-11,
+            -1.0898281597804338e-09
+          ],
+          [
+            5.985827517332375e-11,
+            4.166269684631847e-06,
+            -1.7982374967024092e-07
+          ],
+          [
+            -1.0898281597804338e-09,
+            -1.7982374967024092e-07,
+            7.781891411772011e-07
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed3_GripperPassiveArm",
+      "selection_id": "print-46-gripperpassivearm-body-nominal",
+      "root_subassembly": "AssemblyArt56",
+      "volume_m3": 3.5328022111270066e-06,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.004380674741797488,
+        "com_m": [
+          0.00024095043752766793,
+          -0.01813894400433018,
+          0.6450157837011804
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            7.7700304281018e-07,
+            7.869776719211287e-10,
+            -1.0735200944359027e-12
+          ],
+          [
+            7.869776719211286e-10,
+            2.0127292589589055e-07,
+            1.706809583428386e-09
+          ],
+          [
+            -1.0735200944359156e-12,
+            1.7068095834283861e-09,
+            5.934701134232251e-07
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    },
+    {
+      "instance_id": "Assembly::Model/Assembly::AssemblyArt56/AssemblyArt56::Unnamed_GripperTop",
+      "selection_id": "print-47-grippertop-body-nominal",
+      "root_subassembly": "AssemblyArt56",
+      "volume_m3": 2.084880056314422e-05,
+      "uniform_solid_mass_properties": {
+        "mass_kg": 0.025852512698298833,
+        "com_m": [
+          -0.007622386949759338,
+          -9.263638140714184e-05,
+          0.6358308524964423
+        ],
+        "centroidal_inertia_kg_m2": [
+          [
+            1.2574649803803549e-05,
+            2.4003077771766276e-08,
+            -8.51395570756719e-07
+          ],
+          [
+            2.4003077771766286e-08,
+            5.805899889828239e-06,
+            1.473112040164753e-08
+          ],
+          [
+            -8.51395570756719e-07,
+            1.473112040164753e-08,
+            7.5845246155962045e-06
+          ]
+        ],
+        "frame": "native master assembly saved-zero Cartesian frame, metres",
+        "evidence": "hash-pinned cached native geometric tensor times declared uniform-solid density; transform: native ordered vertices and actual placement-chain authentication"
+      }
+    }
+  ],
+  "reference_uniform_solid_aggregate": {
+    "mass_kg": 4.3218006723562015,
+    "com_m": [
+      -0.01718382371637,
+      -0.00028499723849310693,
+      0.23423980985378312
+    ],
+    "centroidal_inertia_kg_m2": [
+      [
+        0.15500715327363224,
+        6.784964427636557e-05,
+        -0.014672599737842316
+      ],
+      [
+        6.784964427636557e-05,
+        0.1620421172164639,
+        0.0003916938519447018
+      ],
+      [
+        -0.014672599737842316,
+        0.0003916938519447018,
+        0.025420010009708848
+      ]
+    ],
+    "frame": "native master assembly saved-zero Cartesian frame, metres",
+    "evidence": "all 65 distinct installed printed copies; uniform-solid reference only; default native GProps uncertainty unquantified"
+  },
+  "unresolved_instance_ids": [],
+  "installed_printed_volume_m3": 0.003485323122867904,
+  "subassembly_uniform_solid_aggregates": {
+    "AssemblyArt1": {
+      "mass_kg": 0.7450713540015292,
+      "com_m": [
+        4.861542446009498e-06,
+        -0.0030592403682882584,
+        0.14287238687562095
+      ],
+      "centroidal_inertia_kg_m2": [
+        [
+          0.003327610655093581,
+          1.6666155055017942e-07,
+          -8.952334374755576e-08
+        ],
+        [
+          1.666615505501862e-07,
+          0.0034062399349895378,
+          0.000144610712502885
+        ],
+        [
+          -8.952334374755576e-08,
+          0.000144610712502885,
+          0.0020520069288066716
+        ]
+      ],
+      "frame": "native master assembly saved-zero Cartesian frame, metres",
+      "evidence": "same conditional uniform-solid reference subset"
+    },
+    "AssemblyArt2": {
+      "mass_kg": 1.0254742419085194,
+      "com_m": [
+        -8.68346836128817e-09,
+        0.0043535757467557485,
+        0.28887977892625283
+      ],
+      "centroidal_inertia_kg_m2": [
+        [
+          0.00934039288138237,
+          -5.763201944967196e-10,
+          -7.667293301399772e-07
+        ],
+        [
+          -5.763201944967196e-10,
+          0.007474555942810112,
+          0.0003732770132221423
+        ],
+        [
+          -7.667293301399772e-07,
+          0.0003732770132221423,
+          0.004281545716033802
+        ]
+      ],
+      "frame": "native master assembly saved-zero Cartesian frame, metres",
+      "evidence": "same conditional uniform-solid reference subset"
+    },
+    "AssemblyArt3": {
+      "mass_kg": 0.4559842466848267,
+      "com_m": [
+        -0.0001392050807059131,
+        -0.006327177763527578,
+        0.37947629917761155
+      ],
+      "centroidal_inertia_kg_m2": [
+        [
+          0.0013860027103187245,
+          4.019752045916368e-07,
+          3.3696775099027357e-06
+        ],
+        [
+          4.019752045916368e-07,
+          0.0014105996079007226,
+          -4.0772681508399256e-05
+        ],
+        [
+          3.3696775099027357e-06,
+          -4.0772681508399256e-05,
+          0.000841020918947997
+        ]
+      ],
+      "frame": "native master assembly saved-zero Cartesian frame, metres",
+      "evidence": "same conditional uniform-solid reference subset"
+    },
+    "AssemblyArt4": {
+      "mass_kg": 0.5073861234424694,
+      "com_m": [
+        -0.00011056072897749748,
+        -4.671163942653541e-08,
+        0.4909475663152358
+      ],
+      "centroidal_inertia_kg_m2": [
+        [
+          0.0019843874172447047,
+          -4.660842139300179e-06,
+          1.8396027645968798e-06
+        ],
+        [
+          -4.660842139300179e-06,
+          0.0018845131036828305,
+          -8.272321201132106e-10
+        ],
+        [
+          1.8396027645968798e-06,
+          -8.272321201132106e-10,
+          0.0009998461207880573
+        ]
+      ],
+      "frame": "native master assembly saved-zero Cartesian frame, metres",
+      "evidence": "same conditional uniform-solid reference subset"
+    },
+    "AssemblyArt56": {
+      "mass_kg": 0.21240431585666508,
+      "com_m": [
+        0.0007147081572502364,
+        -0.0004258652856387764,
+        0.6091523684293039
+      ],
+      "centroidal_inertia_kg_m2": [
+        [
+          0.0005699430728768785,
+          8.14454819704859e-07,
+          -6.529174871675446e-06
+        ],
+        [
+          8.14454819704859e-07,
+          0.0004945449082186366,
+          3.3799997780155004e-06
+        ],
+        [
+          -6.529174871675446e-06,
+          3.3799997780155004e-06,
+          0.00016841818017097489
+        ]
+      ],
+      "frame": "native master assembly saved-zero Cartesian frame, metres",
+      "evidence": "same conditional uniform-solid reference subset"
+    },
+    "AssemblyBase": {
+      "mass_kg": 1.3754803904621913,
+      "com_m": [
+        -0.054018152124341,
+        -0.000320801353079219,
+        0.042259478299827236
+      ],
+      "centroidal_inertia_kg_m2": [
+        [
+          0.005467593304192277,
+          7.412431899487653e-05,
+          -0.00037314696363952596
+        ],
+        [
+          7.412431899487652e-05,
+          0.01174736992571908,
+          -4.8301768849581945e-06
+        ],
+        [
+          -0.00037314696363952596,
+          -4.8301768849581945e-06,
+          0.014295115419585445
+        ]
+      ],
+      "frame": "native master assembly saved-zero Cartesian frame, metres",
+      "evidence": "same conditional uniform-solid reference subset"
+    }
+  },
+  "native_capture_sha256": "fa4a2f88e027c17a33c8d092640c747cfbe7d1fc9ad008c151701eb7b0d05a20",
+  "native_capture_input_sha256": {
+    "inspection.json": "f76f1e2e1dc4c9f58b938a748502f89f20064dd373014c37ab1f06ba01412631",
+    "inventory.json": "64dbcf86439afffd11f63181259cba048008a3bedf103997603a24d23b49fa3e",
+    "mounted.json": "d223ce7cb2bb9813b24640be2dc783b1054381624061b23951cf71e9bf067fe4",
+    "full-request.json": "d77b59241e0fe9f78aee07b7d14ec4b9d1014f3e0947593a7600d675363e113d",
+    "full-native.json": "bd8a8aaeb2b4e1231560151ae5576f21000ad554b20aa60073f816339ec82451",
+    "batch-01.json": "b33c8b14842cff48705e95f7777c337a351c920aca76c7fa8773f3c1ed5d2e3d",
+    "batch-02.json": "fd54db2506a4a8ab00ba02c441c75ce977d9b5068cf7bd4d162881747865106b",
+    "batch-03.json": "01cd9e669efad333ddfad659d05bc3dc6c24fd22c3ca0dc2e86e65be66708926",
+    "batch-04.json": "4c10605e7db57d8ce5ae9187a5d652f6d9d1946ae3771ee3ac160cb0f5e5d269",
+    "batch-05.json": "69f7e8a8fc634c7528e701ebf288b8b8468091be3b984e473f9bfb028803970b",
+    "batch-06.json": "8852ab43074c679b4046b4a02e23c618fc3ee5295b56b8eb242a070c42cc5f6c"
+  }
+}

@@ -705,3 +705,76 @@ physical penetration volume, orientation cause or accepted overlap. The final
 reusable context pin is explicitly a later guard patch; immutable executed
 snapshots remain intact. Prior failed migration gates and physical qualification
 limits remain unchanged.
+
+## Art1 semantic-support signatures
+
+The semantic-support capture receives independent source and numerical review.
+The original XML contains 53 dependent owners and 80 unique references: 69
+Face/Edge selectors and 11 whole datum/axis references. All 19 geometry-provider
+BReps match exact source ZIP entries and hashes, and all 19 source/native frame
+traces have zero residual. Four native coordinate fixtures precede candidate-only
+restore. Source/copy/candidate/runtime/nine-snapshot pins, isolated paths and zero
+documents afterward verify; no recompute, save, remap or adoption occurs.
+
+Independent matching arithmetic reproduces 62 unique candidates, six unmatched,
+one unsupported BSpline and 11 whole datum/axis cases. All 80 curated native rows,
+selected/literal descriptor joins and 38 removed-array counts/kinds/canonical
+hashes match the raw report. Forty actual-evidence tests pass. There are 21
+different raw selected indices and 41 literal strict matches; raw `Faces`/`Edges`
+indices are not persistent-name or `getSubObject` resolution. They therefore do
+not establish 21 attachment errors or validate migrated references. Ambiguity,
+unsupported geometry and frame uncertainty remain explicit.
+
+Actual Run02 remains bound to executed snapshot `ca5204…`. A later guard moves
+request containment before its first read and bounds JSON allocation; those
+controls have separate regressions and do not retroactively alter the capture.
+
+Separate Run03 adds literal public getter and owner-property witnesses. Its 50
+misses when reading the old `Support` name are not model defects or measured
+native fallback types: `Part.Feature` in a Python exception is a wrapper class,
+and `openDocument(..., True)` selects hidden mode rather than partial loading.
+Run04 records all 90 native TypeIds, which exactly match the saved candidate XML.
+Independent XML/runtime decoding authenticates 50 `Support`→`AttachmentSupport`
+schema aliases and 19 unchanged `ExternalGeometry` entries. All 69 runtime
+entries equal their saved XML; both public getter paths equal the raw current
+selector, and all 62 unique descriptor matches equal that current selector.
+
+All 80 prior base facts, retained curations and removed-array fingerprints remain
+unchanged. Forty-eight tests and independent provenance/join checks pass. This
+authenticates typed cached/readback behavior and resolves the property-name
+capability question. It does not prove attachment-engine reevaluation, establish
+21 broken attachments, remap supports or accept procedural migration.
+
+## Installed printed-tensor reference model
+
+The actual native capture authenticates all 65 installed printed copies from 47
+source variants, including the actual saved reflected finger. Independent review
+checks all 8,612 ordered vertices, noncollinear witnesses, proper placement
+deltas, source/link identities and moments. Every one of 53 loaded documents
+resolves to the private source path and pinned bytes. Source properties reproduce
+the full47 capture exactly. Maximum vertex residual is 1.947e-13 mm, relative
+volume residual 1.647e-15, COM residual 2.298e-13 mm and relative tensor covariance
+residual 1.051e-14. World COM agrees with the mounted ledger within 2.511e-16 m.
+Originals, compatible/private copies, addons, inputs, scripts, runtime, isolated
+paths and zero-document cleanup verify; no assembly history is recomputed.
+
+Independent fixed-origin scalar quadratic moments, followed by a shift to the
+combined COM, reproduce the uniform-solid reference tensor within 2.78e-17 kg·m².
+At the explicitly assumed density 1,240 kg/m³, this printed subset has reference
+mass 4.3218006723562015 kg and native-world COM approximately
+(-0.01718382371637,-0.00028499723849,0.23423980985378) m. This is not a measured
+print or slicer-infill model. Nonuniform prints, purchased interiors, physical
+and whole-arm inertia remain unknown; the existing gravity ledger is unchanged.
+
+The host gate passes 68 focused tests and independent coherent-poison reprobes
+for schema, class, scopes, preserved maps, path containment, runtime/receipt
+contradictions and COM unit identities. Bounded strict UTF-8 JSON rejects duplicate
+or nonfinite input. Only two diagnostic floats receive a narrow reproduction
+tolerance; the actual marker gate remains independently enforced. Raw/curated
+capture and study bytes remain unchanged. Cached default-GProps uncertainty and
+continuous-surface equivalence are not certified by these frame checks.
+
+A final raw Git-blob audit against starting revision `6608d37` finds all 30
+original CAD-evidence/config JSON or geometry files byte-identical and present.
+This complements the downloaded-original CAD and addon ledgers; new results
+remain separate from the historical inputs and reports.
