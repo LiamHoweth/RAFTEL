@@ -2,7 +2,7 @@
 
 **Project:** ARM-01 BenchSort
 **Current phase:** Phase 1 — CAD-derived engineering foundation and design gates
-**Last updated:** 2026-11-11 21:25 America/Chicago (2026-11-12 03:25 UTC)
+**Last updated:** 2026-11-12 08:06 America/Chicago (14:06 UTC)
 **Overall status:** In Progress
 
 ## Current Objective
@@ -14,6 +14,12 @@ Continue all three design gates: wrist handedness/moving masses/jaw articulation
 3. Review [load assumptions](arm-01/docs/thor-load-analysis.md), [material comparison](arm-01/hardware/cad/thor-material-comparison.json) and [incomplete Thor cost study](arm-01/hardware/thor-cost-study.md) before any purchase or fabrication decision. No orders or powered tests are approved by these calculations.
 
 ## Next Steps for Codex
+
+**Print-preparation request — November 12:** The owner requested preparing the needed prints in Anycubic. Only print preparation resumed; CAD investigation lanes remain closed. The existing installed app opened, but two fresh captures returned `window capture timed out: timed out waiting on channel`. Accessibility could read Home and the keyboard Open dialog; indexed input failed with `coordinate input geometry is unavailable`, and setting the observed filename field failed because the element was unavailable in cached app state. No model import, native project save or slice was verified. Desktop visibility/unlock and actual filament/nozzle confirmation were requested and remain pending.
+
+**Concrete files prepared:** `C:\Users\howet\Desktop\RAFTEL Prints\2026-11-12 Starter\` contains unchanged `DRAFT_01_Scale_Check_30x15.780363x4mm.3mf`, `DRAFT_02_Starter_8_Parts.3mf`, instructions and file hashes. The starter includes four bearing retainers, one base bearing ring, one base top and the nominal/reflected fingers; the separate scale-check model is already included in those eight and is not a ninth required part. All eight original source hashes match. Copied starter SHA is unchanged (`68f4e0b6…313bbb`); fresh structure and exact placed oriented-facet comparison pass with eight leaves. Reports are under `.work/anycubic-desktop-planning/session-2026-11-12-01/`. These are source model packages, not saved/sliced Anycubic jobs. No printer action or G-code was produced. Resume the actual import/save/slice only after window control is available and the loaded process inputs are confirmed.
+
+### Previous nightly checkpoint
 
 The thirty-agent continuation is **stopped for the night at the owner’s request**, November 11 at approximately **21:15 America/Chicago** (03:15 UTC November 12). All lanes are frozen; no autonomous continuation is scheduled. Root is only validating/publishing the checkpoint. See [swarm checkpoint](docs/arm01-swarm-checkpoint-2026-11-11.md) and [historical thirty-agent assignments](docs/arm01-thirty-agent-plan.md). Starting main was c0e7deb; checkpoint branch is codex/arm01-three-step-swarm.
 

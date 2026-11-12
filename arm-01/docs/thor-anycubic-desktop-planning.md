@@ -1,5 +1,24 @@
 # Anycubic desktop inspection plan
 
+**November 12, 08:06 America/Chicago:** Print preparation resumed at the owner's
+request. The installed slicer opened, but fresh capture failed twice with
+`window capture timed out: timed out waiting on channel`. Accessibility exposed
+Home and an Open file picker; indexed clicking failed because coordinate input
+geometry was unavailable, and the observed filename element was unavailable in
+cached app state. No import/save/slice was verified. Desktop visibility/unlock
+and actual loaded filament/nozzle confirmation remain pending.
+
+Verified unchanged copies are now easy to find in
+`C:\Users\howet\Desktop\RAFTEL Prints\2026-11-12 Starter\`:
+`DRAFT_01_Scale_Check_30x15.780363x4mm.3mf` and
+`DRAFT_02_Starter_8_Parts.3mf`, with instructions and hashes. All eight original
+source hashes match; the copied starter's structure and exact placed oriented
+facets pass fresh audits with eight leaves. The scale-check model is included
+in the starter's four bearing retainers, not an additional installed quantity.
+Reports are retained at
+`.work/anycubic-desktop-planning/session-2026-11-12-01/`. These files remain
+generic source packages, without a verified Anycubic process save or G-code.
+
 **Latest checkpoint:** stopped for the night at the owner's request on
 November 11 at approximately 21:15 America/Chicago. The owner confirmed the app
 was visible and maximized, but fresh Sky capture still timed out and coordinate
