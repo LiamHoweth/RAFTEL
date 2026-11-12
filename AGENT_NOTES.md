@@ -1,5 +1,7 @@
 # Durable implementation notes
 
+- Mac workflow: root `Makefile` supplies setup/demo/benchmark/analysis/verify/native-audit. `scripts/verify.sh` mirrors portable CI checks and retains unique evidence under ignored `.work/verification`; native paths stay in ignored `.raftel-local.mk`. Reuse the existing FreeCAD/Thor study files rather than downloading duplicates; see `docs/mac-setup.md` and its setup receipt.
+
 - Start with AGENTS.md and nextSteps.md. The latter owns current status and next actions.
 - `arm-01/docs/desktop-evidence-index.md` maps implemented claims to checks/gates; `docs/arm01-desktop-run-2026-11-11.md` records the Windows run and local deliverables. Read current publication/desktop availability in nextSteps.md rather than treating a historical snapshot or launch prompt as active work.
 - ARM-01's installed CLI is `raftel-sort`; defaults are packaged in `src/raftel_arm01/defaults.json`. Runtime uses Python standard library only. No hardware backend or real-motion flag exists.
