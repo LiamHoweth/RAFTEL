@@ -39,6 +39,7 @@ See the [ARM-01 setup guide](arm-01/README.md) for Windows activation, configura
 | Proposed requirements | [Requirements](arm-01/docs/requirements.md) |
 | Software boundaries and current implementation | [Architecture](arm-01/docs/architecture.md) |
 | Desktop implementation results and next gates | [Run record](docs/arm01-desktop-run-2026-11-11.md), [evidence index](arm-01/docs/desktop-evidence-index.md) |
+| Latest thirty-agent nightly checkpoint | [Swarm checkpoint](docs/arm01-swarm-checkpoint-2026-11-11.md) |
 | Existing mechanical references | [Research](arm-01/docs/research.md) |
 | Reusing proven CAD | [CAD reuse plan](arm-01/docs/cad-reuse.md) |
 | Mechanical selection rationale | [Mechanical ADR](docs/architecture-decisions/0001-mechanical-starting-point.md) |

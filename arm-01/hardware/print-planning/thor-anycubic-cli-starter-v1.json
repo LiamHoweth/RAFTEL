@@ -1,0 +1,354 @@
+{
+  "schema_version": 1,
+  "evidence_class": "actual_installed_anycubic_offline_cli_project_and_slice_not_live_gui_or_physical_qualification",
+  "owner_confirmation": {
+    "date_local": "2026-11-12",
+    "timezone": "America/Chicago",
+    "desktop_visible_unlocked": true,
+    "loaded_material_family": "PLA",
+    "installed_nozzle_mm": 0.4,
+    "filament_brand": null,
+    "physical_bed_type": null,
+    "basis": "explicit_owner_reply_not_device_inspection"
+  },
+  "source_plate": {
+    "path": ".work/anycubic-desktop-planning/plate-001/DRAFT_INSPECTION_eight_native_copies_source_Z_up.3mf",
+    "sha256": "68f4e0b621b3552b80e673125ab6eb98352e795b2bfa063ef9a7cc154f313bbb",
+    "bytes": 205597
+  },
+  "installed_runtime": {
+    "version": "2.0.0.3",
+    "exe_sha256": "8b6a99c9b210de16d0895bf590042638cebc0ef9475af735dcda0ec5caf016cc",
+    "dll_sha256": "88f54971d1ee6ddf56244f618e0dc0ccb747a68e64ceeb195805c0d4741b8d34",
+    "build_matches_pinned_public_source": null
+  },
+  "runs": [
+    {
+      "folder": "cli-export",
+      "record": {
+        "path": ".work/anycubic-desktop-planning/session-2026-11-12-02/cli-export/result.json",
+        "sha256": "27aa901fbfa31868309a6da1837fc8d5c91478b4b750b37544256c8c86b4354d",
+        "bytes": 797
+      },
+      "elapsed_seconds": 0.5110883000015747,
+      "exit_code": 0,
+      "timeout": false,
+      "preservation_passed": true,
+      "warning_state": "no_profile_geometry_export_not_process_acceptance"
+    },
+    {
+      "folder": "small-slice-01",
+      "record": {
+        "path": ".work/anycubic-desktop-planning/session-2026-11-12-02/small-slice-01/result.json",
+        "sha256": "0f7262c54c5feaf5ed0f310182daa97b7c1c8c184e76c0faef29db24ff784dff",
+        "bytes": 5247
+      },
+      "elapsed_seconds": 0.8618308000150137,
+      "exit_code": 0,
+      "timeout": false,
+      "preservation_passed": true,
+      "warning_state": "bed_temperature_too_high_than_filament_1000C001_retained"
+    },
+    {
+      "folder": "starter-slice-01",
+      "record": {
+        "path": ".work/anycubic-desktop-planning/session-2026-11-12-02/starter-slice-01/result.json",
+        "sha256": "6639baa10926e43118f1d239dc305a2d006ef97581da235aa14eb6185d0ee555",
+        "bytes": 5222
+      },
+      "elapsed_seconds": 21.214656700001797,
+      "exit_code": 0,
+      "timeout": false,
+      "preservation_passed": true,
+      "warning_state": "bed_temperature_too_high_than_filament_1000C001_retained"
+    },
+    {
+      "folder": "fit-check-final",
+      "record": {
+        "path": ".work/anycubic-desktop-planning/session-2026-11-12-02/fit-check-final/result.json",
+        "sha256": "345d827a2d17b545c1a10fbbcd79d4b41548c9a3e29fc41d18dfb112df25bf58",
+        "bytes": 5313
+      },
+      "elapsed_seconds": 0.9235826999938581,
+      "exit_code": 0,
+      "timeout": false,
+      "preservation_passed": true,
+      "warning_state": "bed_temperature_too_high_than_filament_1000C001_retained"
+    },
+    {
+      "folder": "starter-final",
+      "record": {
+        "path": ".work/anycubic-desktop-planning/session-2026-11-12-02/starter-final/result.json",
+        "sha256": "b3673b7eabd0e98eebf267c5c80b6fda754758027fc0570e3ab3013de204e0de",
+        "bytes": 5257
+      },
+      "elapsed_seconds": 21.327190799987875,
+      "exit_code": 0,
+      "timeout": false,
+      "preservation_passed": true,
+      "warning_state": "bed_temperature_too_high_than_filament_1000C001_retained"
+    },
+    {
+      "folder": "fit-check-55C",
+      "record": {
+        "path": ".work/anycubic-desktop-planning/session-2026-11-12-02/fit-check-55C/result.json",
+        "sha256": "3edc74473b9be2705207bd2f40c51387ac5dda62e8f6fcebaf7ecf59cad3d239",
+        "bytes": 5309
+      },
+      "elapsed_seconds": 1.2558797000092454,
+      "exit_code": 0,
+      "timeout": false,
+      "preservation_passed": true,
+      "warning_state": "empty_final_warning_list"
+    },
+    {
+      "folder": "starter-55C",
+      "record": {
+        "path": ".work/anycubic-desktop-planning/session-2026-11-12-02/starter-55C/result.json",
+        "sha256": "c66d652b468ee3c538152d736d2c9e43f0a74d4997b4845750798978f4045ed5",
+        "bytes": 5253
+      },
+      "elapsed_seconds": 40.194303399999626,
+      "exit_code": 0,
+      "timeout": false,
+      "preservation_passed": true,
+      "warning_state": "empty_final_warning_list"
+    }
+  ],
+  "total_native_elapsed_seconds": 86.28853240000899,
+  "final_outputs": {
+    "fit_check": {
+      "project": "PLA_04mm_FIT_CHECK_1_RETAINER.3mf",
+      "project_sha256": "54d4a593996500891943d9440e2d7215c1c326ab869826fcce62b416239b9c19",
+      "project_bytes": 98597,
+      "gcode_sha256": "3d29a3eb819acb3c3127c61a4d370c058ca7cd33011ade888b9d619df66e9cbd",
+      "gcode_bytes": 472229,
+      "embedded_gcode_and_external_md5_match": true,
+      "objects": 1,
+      "identities_by_native_parent_object_id": {
+        "2": {
+          "source_object_index": 0,
+          "name": "DRAFT_unqualified_NATIVE_CACHED_CommonBearingFix_nominal_01-of-04"
+        }
+      },
+      "all_mesh_repair_counters_zero": true,
+      "selected_settings": {
+        "printer_settings_id": "Anycubic Kobra 3 Max 0.4 nozzle",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "layer_height": "0.2",
+        "wall_loops": "4",
+        "sparse_infill_density": "40%",
+        "sparse_infill_pattern": "gyroid",
+        "top_shell_layers": "5",
+        "bottom_shell_layers": "5",
+        "enable_support": "1",
+        "support_type": "tree(auto)",
+        "support_on_build_plate_only": "1",
+        "curr_bed_type": "Textured PEI Plate",
+        "textured_plate_temp": [
+          "55"
+        ],
+        "textured_plate_temp_initial_layer": [
+          "55"
+        ],
+        "filament_type": [
+          "PLA"
+        ],
+        "nozzle_temperature": [
+          "210"
+        ],
+        "nozzle_temperature_initial_layer": [
+          "220"
+        ],
+        "print_sequence": "by layer"
+      },
+      "slicer_summary": {
+        "index": "1",
+        "printer_model_id": "Anycubic Kobra 3 Max",
+        "nozzle_diameters": "0.4",
+        "timelapse_type": "0",
+        "prediction": "250",
+        "weight": "0.98",
+        "outside": "false",
+        "support_used": "true",
+        "label_object_enabled": "false",
+        "filament_maps": "1"
+      },
+      "slicer_warnings": [],
+      "linear_deposition_endpoint_bounds_mm": [
+        [
+          205.32,
+          195.21,
+          0.2
+        ],
+        [
+          220.68,
+          224.79,
+          4.0
+        ]
+      ],
+      "deposition_moves_by_object": {
+        "DRAFT_unqualified_NATIVE_CACHED_CommonBearingFix_nominal_01-of-04_id_0_copy_0": 12514
+      },
+      "deposition_arcs": 0,
+      "native_gui_import_or_preview_observed": false,
+      "physical_fit_or_strength_accepted": false,
+      "printer_command_sent": false,
+      "custom_start_end_macros_or_hardware_behavior_validated": false
+    },
+    "starter": {
+      "project": "PLA_04mm_STARTER_8_PARTS.3mf",
+      "project_sha256": "6215c474122597970cdf84e05267fca9a2c41f87b00afa3219b82dce842c9188",
+      "project_bytes": 14661582,
+      "gcode_sha256": "0dca3a86535b45899d7e828369adc8dbf353b32402e40c8d6fae742e49aabc89",
+      "gcode_bytes": 80258674,
+      "embedded_gcode_and_external_md5_match": true,
+      "objects": 8,
+      "identities_by_native_parent_object_id": {
+        "6": {
+          "source_object_index": 2,
+          "name": "DRAFT_unqualified_NATIVE_CACHED_CommonBearingFix_nominal_01-of-04"
+        },
+        "2": {
+          "source_object_index": 0,
+          "name": "DRAFT_unqualified_NATIVE_CACHED_BaseBearingFix_nominal_01-of-01"
+        },
+        "12": {
+          "source_object_index": 5,
+          "name": "DRAFT_unqualified_NATIVE_CACHED_CommonBearingFix_nominal_04-of-04"
+        },
+        "14": {
+          "source_object_index": 6,
+          "name": "DRAFT_unqualified_NATIVE_CACHED_GripperFinger_nominal_01-of-01"
+        },
+        "8": {
+          "source_object_index": 3,
+          "name": "DRAFT_unqualified_NATIVE_CACHED_CommonBearingFix_nominal_02-of-04"
+        },
+        "10": {
+          "source_object_index": 4,
+          "name": "DRAFT_unqualified_NATIVE_CACHED_CommonBearingFix_nominal_03-of-04"
+        },
+        "16": {
+          "source_object_index": 7,
+          "name": "DRAFT_unqualified_NATIVE_CACHED_GripperFinger_reflected_01-of-01"
+        },
+        "4": {
+          "source_object_index": 1,
+          "name": "DRAFT_unqualified_NATIVE_CACHED_BaseTop_nominal_01-of-01"
+        }
+      },
+      "all_mesh_repair_counters_zero": true,
+      "selected_settings": {
+        "printer_settings_id": "Anycubic Kobra 3 Max 0.4 nozzle",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "layer_height": "0.2",
+        "wall_loops": "4",
+        "sparse_infill_density": "40%",
+        "sparse_infill_pattern": "gyroid",
+        "top_shell_layers": "5",
+        "bottom_shell_layers": "5",
+        "enable_support": "1",
+        "support_type": "tree(auto)",
+        "support_on_build_plate_only": "1",
+        "curr_bed_type": "Textured PEI Plate",
+        "textured_plate_temp": [
+          "55"
+        ],
+        "textured_plate_temp_initial_layer": [
+          "55"
+        ],
+        "filament_type": [
+          "PLA"
+        ],
+        "nozzle_temperature": [
+          "210"
+        ],
+        "nozzle_temperature_initial_layer": [
+          "220"
+        ],
+        "print_sequence": "by layer"
+      },
+      "slicer_summary": {
+        "index": "1",
+        "printer_model_id": "Anycubic Kobra 3 Max",
+        "nozzle_diameters": "0.4",
+        "timelapse_type": "0",
+        "prediction": "38923",
+        "weight": "211.14",
+        "outside": "false",
+        "support_used": "true",
+        "label_object_enabled": "false",
+        "filament_maps": "1"
+      },
+      "slicer_warnings": [],
+      "linear_deposition_endpoint_bounds_mm": [
+        [
+          23.21,
+          20.21,
+          0.2
+        ],
+        [
+          342.741,
+          259.779,
+          27.6
+        ]
+      ],
+      "deposition_moves_by_object": {
+        "DRAFT_unqualified_NATIVE_CACHED_BaseTop_nominal_01-of-01_id_1_copy_0": 2111712,
+        "DRAFT_unqualified_NATIVE_CACHED_GripperFinger_reflected_01-of-01_id_7_copy_0": 135139,
+        "DRAFT_unqualified_NATIVE_CACHED_GripperFinger_nominal_01-of-01_id_6_copy_0": 134923,
+        "DRAFT_unqualified_NATIVE_CACHED_CommonBearingFix_nominal_04-of-04_id_5_copy_0": 12605,
+        "DRAFT_unqualified_NATIVE_CACHED_CommonBearingFix_nominal_03-of-04_id_4_copy_0": 12605,
+        "DRAFT_unqualified_NATIVE_CACHED_CommonBearingFix_nominal_02-of-04_id_3_copy_0": 12605,
+        "DRAFT_unqualified_NATIVE_CACHED_CommonBearingFix_nominal_01-of-04_id_2_copy_0": 12605,
+        "DRAFT_unqualified_NATIVE_CACHED_BaseBearingFix_nominal_01-of-01_id_0_copy_0": 338493
+      },
+      "deposition_arcs": 0,
+      "native_gui_import_or_preview_observed": false,
+      "physical_fit_or_strength_accepted": false,
+      "printer_command_sent": false,
+      "custom_start_end_macros_or_hardware_behavior_validated": false
+    }
+  },
+  "geometry_review": {
+    "record": {
+      "path": ".work/anycubic-desktop-planning/session-2026-11-12-02/starter-55C/placed-geometry-review.json",
+      "sha256": "416305b2008d2e2eaab35270c1b3772e0132857cf8a516e5d2bf9c80037f7a01",
+      "bytes": 6480
+    },
+    "same_ordered_triangle_indices_and_winding": true,
+    "vertices": 7524,
+    "triangles": 15112,
+    "maximum_placed_coordinate_residual_mm": 1.003137207e-06,
+    "exact_source_geometry_preserved": false,
+    "source_60C_and_55C_saved_geometry_exactly_equal_after_semantic_join": true,
+    "initial_fixed_1e_6_diagnostic_exceeded": true,
+    "later_diagnostic_budget": "one_float32_ULP_at_maximum_saved_local_coordinate_plus_1e-7_mm_translation_serialization_budget",
+    "continuous_surface_or_physical_acceptance": false
+  },
+  "review_scope": {
+    "independent_reviewer": "s10_acceptance",
+    "actual_cli_artifact_scope_accepted": true,
+    "all_81_host_audit_tests_passed": true,
+    "live_gui_project_import_or_preview_observed": false,
+    "printer_connected_or_command_sent": false,
+    "physical_fit_strength_calibration_or_fabrication_qualification": false,
+    "slicer_warning_threshold_unchanged_C": 60,
+    "final_textured_bed_C": 55,
+    "earlier_65_and_60_C_warnings_preserved": true
+  },
+  "delivery": {
+    "folder": "C:\\Users\\howet\\Desktop\\RAFTEL Prints\\2026-11-12 Starter\\Sliced PLA 0.4",
+    "record": {
+      "path": ".work/anycubic-desktop-planning/session-2026-11-12-02/desktop-delivery.json",
+      "sha256": "2b115188ad7640716f2b35fb48caf8ba630cc04fce64866f1598e5dd7b1ce7e6",
+      "bytes": 1231
+    }
+  },
+  "raw_large_projects_and_gcode_committed": false
+}

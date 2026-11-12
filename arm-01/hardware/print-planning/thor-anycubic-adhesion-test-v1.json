@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "evidence_class": "offline_single_retainer_adhesion_diagnostic_not_physical_success",
+  "owner_report": {
+    "date": "2026-11-12",
+    "symptoms": [
+      "parts_detach",
+      "spaghetti"
+    ],
+    "failed_job_identity_and_actual_settings_confirmed": false,
+    "root_cause_confirmed": false
+  },
+  "process_changes_from_delivered_55C_fit_job": {
+    "textured_bed_C": [
+      55,
+      60
+    ],
+    "first_layer_outline_and_infill_mm_s": [
+      45,
+      20
+    ],
+    "brim_type": [
+      "auto_brim",
+      "outer_only"
+    ],
+    "brim_width_mm": [
+      5,
+      8
+    ]
+  },
+  "native": {
+    "project_sha256": "dca0fb5d9c787fd627c8d43a460c10649598270aca0ae00877cb9ec9b21d1c87",
+    "gcode_sha256": "fa190cf857083481304f0b59e4e14c8c9a30a2f5ac2d944a9a36470d85af5b86",
+    "settings": {
+      "printer_settings_id": "Anycubic Kobra 3 Max 0.4 nozzle",
+      "nozzle_diameter": [
+        "0.4"
+      ],
+      "filament_type": [
+        "PLA"
+      ],
+      "layer_height": "0.2",
+      "initial_layer_speed": "20",
+      "initial_layer_infill_speed": "20",
+      "brim_type": "outer_only",
+      "brim_width": "8",
+      "curr_bed_type": "Textured PEI Plate",
+      "textured_plate_temp": [
+        "60"
+      ],
+      "textured_plate_temp_initial_layer": [
+        "60"
+      ],
+      "close_fan_the_first_x_layers": [
+        "1"
+      ],
+      "temperature_vitrification": [
+        "60"
+      ]
+    },
+    "summary": {
+      "index": "1",
+      "printer_model_id": "Anycubic Kobra 3 Max",
+      "nozzle_diameters": "0.4",
+      "timelapse_type": "0",
+      "prediction": "345",
+      "weight": "1.16",
+      "outside": "false",
+      "support_used": "true",
+      "label_object_enabled": "false",
+      "filament_maps": "1"
+    },
+    "warnings_preserved": [
+      {
+        "msg": "bed_temperature_too_high_than_filament",
+        "level": "1",
+        "error_code": "1000C001"
+      }
+    ],
+    "native_warning_free": false,
+    "bed_temperature_or_fan_warning_limits_modified": false,
+    "physical_adhesion_verified": false,
+    "printer_command_sent": false
+  },
+  "native_execution_seconds": 0.7981348000175785,
+  "protected_inputs_unchanged": true,
+  "placed_mesh_exactly_matches_previous_reviewed_fit_project": true,
+  "first_layer_positive_extrusion_XY_move_count": 2247,
+  "maximum_first_layer_extrusion_feed_mm_s": 20.0,
+  "delivery_folder": "C:\\Users\\howet\\Desktop\\RAFTEL Prints\\2026-11-12 Adhesion Test",
+  "large_files_committed": false,
+  "hardware_commands_sent": false,
+  "original_eight_part_jobs_modified": false,
+  "physical_result": null
+}
