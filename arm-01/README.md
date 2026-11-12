@@ -8,6 +8,8 @@ Separate offline engineering tools now provide nominal spatial frames/Jacobians,
 
 The [desktop run record](../docs/arm01-desktop-run-2026-11-11.md) records the current 2,200-test implementation, refreshed offline wheel, native evidence scopes and pending live Anycubic inspection. The run was wrapped at the owner's request; no continuing background work is implied.
 
+The later [thirty-agent nightly checkpoint](../docs/arm01-swarm-checkpoint-2026-11-11.md) records direct Art1 attachment/return diagnostics and a verified imposed nonzero wrist experiment. Live Anycubic import/save remains unfinished. All lanes stopped at the owner's request.
+
 ## Setup
 
 Use Python 3.11 or newer. From this directory on macOS, Linux, or WSL:

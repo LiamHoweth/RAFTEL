@@ -2,7 +2,7 @@
 
 **Project:** ARM-01 BenchSort
 **Current phase:** Phase 1 — CAD-derived engineering foundation and design gates
-**Last updated:** 2026-11-12 01:27 UTC
+**Last updated:** 2026-11-11 21:24 America/Chicago (2026-11-12 03:24 UTC)
 **Overall status:** In Progress
 
 ## Current Objective
@@ -15,24 +15,21 @@ Continue all three design gates: wrist handedness/moving masses/jaw articulation
 
 ## Next Steps for Codex
 
-The owner requested wrap-up at approximately **01:21 UTC November 12**, ending
-the original seven-hour work budget early. All specialist implementation work is
-closed. This turn completes documentation, verified publication and repository
-synchronization; no autonomous continuation is scheduled. See the
-[desktop run record](docs/arm01-desktop-run-2026-11-11.md) for implemented results,
-test/native evidence, merged checkpoints and unresolved gates. The final reply
-and retained `.work/desktop-run-closeout.json` include elapsed closeout time and
-the final synchronized Git/CI state.
+The thirty-agent continuation is **stopped for the night at the owner’s request**, November 11 at approximately **21:15 America/Chicago** (03:15 UTC November 12). All lanes are frozen; no autonomous continuation is scheduled. Root is only validating/publishing the checkpoint. See [swarm checkpoint](docs/arm01-swarm-checkpoint-2026-11-11.md) and [historical thirty-agent assignments](docs/arm01-thirty-agent-plan.md). Starting main was c0e7deb; checkpoint branch is codex/arm01-three-step-swarm.
+
+**Three-step status:** Art1 actual attachment/return diagnostics and the nonzero wrist experiment are complete and independently reviewed within their diagnostic scope. Exact Art1 migration still fails. The live Anycubic import/save is unfinished: capture and coordinate-input failures persisted even with the visible maximized window; keyboard opened a picker but no file import/save was verified. Computer Use was stopped with Escape; no further UI actions occurred. Resume by preserving the current app/picker state.
+
+**Nightly validation:** **2,473 tests pass** in 139.10 seconds on Windows/Python 3.14.6. Ruff lint/format passes for all **205 Python files**, source compilation passes, and **437 text files** pass the LF guard. The logical sorter seed-42 smoke check sorted 10/10 and the existing preliminary engineering CLI passed. Thirty specialist assignments and independent reviews are closed. Publication is a draft checkpoint on `codex/arm01-three-step-swarm`; its exact-head CI must pass before any merge. Main remains `c0e7deb` until a verified merge is separately recorded.
 
 ### Next three executable actions
 
-1. Once the desktop is awake/unlocked, follow the [Anycubic inspection record](arm-01/docs/thor-anycubic-desktop-planning.md): verify one small model's scale, import the reviewed eight-copy draft, inspect eight identities/placements, and save a fresh local `DRAFT_` project with observed software selectors/warnings. If capture remains unavailable, retain the exact failure and proceed to action 2. No upload or printer action.
-2. Prepare a fresh copied Art1 study from the [typed support evidence](arm-01/docs/thor-art1-semantic-supports.md) and [migration gate](arm-01/docs/thor-art1-editability-gate.md). Collect actual attachment-engine/parameter-return witnesses against the documented failed A6 return, preserving originals, current schema names and every raw metric; do not remap raw indices or waive acceptance.
-3. Extend one copied native wrist-coordinate marker/body-frame experiment from `arm-01/tools/probe_thor_pose_frames_desktop.py` and the [spatial contract](arm-01/docs/thor-spatial-kinematics.md). Authenticate source/link identities and fresh nonzero wrist frames before using them in full-body screening; cached boxes and nominal IK do not certify clearance. Serialize native runs and preserve all input hashes.
+1. Restore working desktop capture/input and preserve the current Anycubic scene/picker. Verify the small model scale, import the reviewed eight-copy draft, save a fresh local DRAFT, and run the new project/profile/mesh audits on the actual saved file. No upload or printer action.
+2. Review the new [Art1 return trace](arm-01/docs/thor-art1-return-trace.md) and [direct engine study](arm-01/docs/thor-art1-attachment-engine.md). Form one separately justified copied-candidate hypothesis for Pocket005 and returned datum drift; retain all failed migration gates, original history and recompute-count limitations.
+3. Review checkpoint CI and merge only after checks pass on its exact head. Reuse the verified [nonzero wrist capture](arm-01/docs/thor-wrist-native-frames.md) for later source-body binding instead of rerunning accepted experiments or inferring physical clearance.
 
 ### Desktop run wrap-up — 2026-11-11
 
-**Current integrated baseline:** main 5291a57fea82eccb3ec7bf22df97163b5985a76c, through merged [PR #17](https://github.com/LiamHoweth/RAFTEL/pull/17). Exact head 67b8317f521d31db7c30120c1456945fe9b8af77 passed all eight Linux/Windows Python 3.11–3.14 jobs in [run 43131396938](https://github.com/LiamHoweth/RAFTEL/actions/runs/43131396938). Local snapshot: **2,200 tracked tests** plus lint/format/compile/LF checks. Current working branch: codex/arm01-desktop-run-record. Production implementation is frozen. The separate ignored eight-object generic inspection plate and tracked receipt are independently accepted for artifact scope; live Anycubic import/save/slicing remains pending desktop-ready confirmation. The entries below retain chronological checkpoint evidence.
+**Earlier integrated checkpoint (historical):** main 5291a57fea82eccb3ec7bf22df97163b5985a76c, through merged [PR #17](https://github.com/LiamHoweth/RAFTEL/pull/17). Exact head 67b8317f521d31db7c30120c1456945fe9b8af77 passed all eight Linux/Windows Python 3.11–3.14 jobs in [run 43131396938](https://github.com/LiamHoweth/RAFTEL/actions/runs/43131396938). That local snapshot had **2,200 tracked tests** plus lint/format/compile/LF checks on codex/arm01-desktop-run-record; PR #18 subsequently merged that record as `c0e7deb`. The separate ignored eight-object generic inspection plate and tracked receipt are independently accepted for artifact scope; live Anycubic import/save/slicing remains unverified. Current branch, validation and stop status are recorded above. The entries below retain chronological checkpoint evidence.
 
 - Started at **19:36:17 UTC** (13:36 America/Chicago). The original approximately-seven-hour target was superseded by the owner's wrap-up request around **01:21 UTC November 12**, after about **5h45m**. Implementation stopped; final documentation/CI/publication closeout is recorded separately from that implementation window.
 - No existing RAFTEL checkout was found on this Windows host after checking the current workspace, project/worktree locations and user-directory checkout names/origins. Created `C:\Users\howet\Desktop\claudex\RAFTEL` from current `main` **6608d37**, fetched `origin/main`, and started `codex/arm01-desktop-seven-hour`. No pre-existing local changes were replaced.

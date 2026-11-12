@@ -1,5 +1,21 @@
 # Anycubic desktop inspection plan
 
+**Latest checkpoint:** stopped for the night at the owner's request on
+November 11 at approximately 21:15 America/Chicago. The owner confirmed the app
+was visible and maximized, but fresh Sky capture still timed out and coordinate
+input remained unavailable. Accessibility could read Home; keyboard Open
+produced a picker, but filename entry, model import and native Save As were not
+verified. Computer Use was stopped with Escape; no further UI input followed.
+The final picker/scene state is unobserved and must be preserved on resume.
+See the [swarm checkpoint](../../docs/arm01-swarm-checkpoint-2026-11-11.md).
+
+The new [project auditor](thor-anycubic-project-audit.md) and source-to-saved
+mesh/profile tools passed host/source review, but still need an actual freshly
+saved Anycubic project. They do not turn the generic source draft into GUI
+acceptance. No upload, printer start, physical fit or fabrication is approved.
+
+## Earlier desktop observations
+
 The installed Anycubic Slicer Next was opened during this desktop run. Window
 capture timed out while the desktop was unavailable; **no model import,
 rendered plate, native project save or slice has yet been observed**. At

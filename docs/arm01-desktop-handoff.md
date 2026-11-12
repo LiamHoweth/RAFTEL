@@ -4,6 +4,11 @@ Copy the text below into a future Codex session running on the desktop. This doc
 
 The [latest desktop run](arm01-desktop-run-2026-11-11.md) was wrapped early at the owner's request. The prompt below is optional future work, not an active goal or authorization to continue after that wrap-up.
 
+Read the newer [thirty-agent nightly checkpoint](arm01-swarm-checkpoint-2026-11-11.md)
+and current nextSteps first: Art1 direct engine/return and imposed nonzero wrist
+experiments now exist. The dated baseline inside the historical prompt below
+does not supersede those later captures. All work is stopped for the night.
+
 ```text
 Continue implementation of ARM-01 BenchSort in the private GitHub repository https://github.com/LiamHoweth/RAFTEL.
 
