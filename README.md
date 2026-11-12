@@ -30,6 +30,10 @@ python tools/engineering_analysis.py
 
 See the [ARM-01 setup guide](arm-01/README.md) for Windows activation, configuration, failure scenarios, and evidence limits. Installing dependencies needs package-index access; the installed mock demonstration runs offline.
 
+For the configured Mac workflow, see [Mac setup](docs/mac-setup.md). From the
+repository root, use `make demo`, `make benchmark`, `make analysis`, or
+`make verify`; `make` lists all targets, including the isolated native CAD audit.
+
 ## Engineering navigation
 
 | Topic | Document |

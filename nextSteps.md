@@ -2,8 +2,24 @@
 
 **Project:** ARM-01 BenchSort
 **Current phase:** Phase 1 — CAD-derived engineering foundation and design gates
-**Last updated:** 2026-11-12 01:27 UTC
+**Last updated:** 2026-11-12 (Mac workflow setup)
 **Overall status:** In Progress
+
+## Mac workflow setup — November 12
+
+The portable development workflow is now configured in
+`/Users/howeth/Desktop/claudex/RAFTEL`; see [usage](docs/mac-setup.md) and
+[setup receipt](docs/mac-setup-2026-11-12.md). Root `make` lists setup, demo,
+benchmark, analysis, full verification and isolated native CAD audit commands.
+Python 3.14.4: **2,200 tests pass**, Ruff/format/compile/LF and all portable CI
+engineering CLI checks pass. Fresh offline wheel imports 45 modules and verifies
+both CLIs' exit 0/1/2 behavior. Reused FreeCAD 1.1.4 completes changed recompute
+with **53 documents / 3,001 objects all Up-to-date**, shape scope `none`, no audit
+errors; all 703 checked source/copy/addon files are unchanged. About 53 GiB is
+free. Evidence is retained under ignored `.work`; local native paths are in
+ignored `.raftel-local.mk`. Setup work is local on `codex/mac-workflow-setup`,
+not pushed or merged. No engineering backlog, hardware, ROS, camera or printer
+integration was started; the next design actions below remain open.
 
 ## Current Objective
 Continue all three design gates: wrist handedness/moving masses/jaw articulation, elbow pitch/routing/controller compensation and actuator capacity, and dimensioned fabrication interfaces/source editability. Preserve source CAD and previous reports; produce revised evidence where the expanded audit finds omissions. The analysis baseline does not establish physical performance, safe payload, printable-part release or repaired original Art1 history.
