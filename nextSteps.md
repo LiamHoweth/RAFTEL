@@ -20,6 +20,12 @@ free. Evidence is retained under ignored `.work`; local native paths are in
 ignored `.raftel-local.mk`. Setup work is published on `codex/mac-workflow-setup`
 in [PR #20](https://github.com/LiamHoweth/RAFTEL/pull/20), which records current
 CI and merge status; the owner authorized merging after all checks pass.
+The eight-job Linux/Windows Python 3.11–3.14 PR matrix passed on exact head
+`34c3ec23a29ee09aa393cf19e65da79c1b4cf5ed` in
+[run 43275771024](https://github.com/LiamHoweth/RAFTEL/actions/runs/43275771024).
+The duplicate push run completed every step successfully but stalled in GitHub
+job finalization; cancellation was requested. This documentation checkpoint
+triggers fresh checks, which must pass before merge.
 No engineering backlog, hardware, ROS, camera or printer
 integration was started; the next design actions below remain open.
 
