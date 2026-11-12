@@ -43,8 +43,10 @@ Those properties establish source intent, not an independently rebuilt BRep.
 The [jaw ownership reconciliation](thor-jaw-body-reconciliation.md) owns the
 moving-body interpretation. The later [native mesh audit](thor-native-mesh-audit.md)
 now captures the actual saved reflected solid separately, with its storage frame,
-winding and topology checks. Installed/world correspondence, continuous surface
-fidelity, fit and process qualification remain open.
+winding and topology checks. The [printed-copy frame study](thor-printed-inertia-study.md)
+now authenticates all 65 cached printed copies in the native master saved-zero
+frame, including the reflected finger. Physical bench/world calibration,
+continuous surface fidelity, fit and process qualification remain open.
 
 Art1Body is explicitly marked as **unrepaired original history**, with the exact
 accepted static snapshot separate. Do not export the failed Intersection candidate
@@ -176,9 +178,12 @@ does not choose a company-wide RAFTEL license.
 
 ## Next acceptance gates
 
-1. In a pinned native environment, export the accepted final solids and the saved
-   reflected finger variant; capture units, frame, tessellation/hash, dimensions,
-   manifoldness and attribution. Art1 history acceptance remains separate.
+1. Reuse the [full 47-variant cached export](thor-full-print-export-plan.md) and
+   [host mesh/61-draft review](thor-full-print-mesh-audit.md), including the saved
+   reflected finger. Resolve the coarse-native Art23Optodisk boundary and
+   transmission-column nonmanifold findings; preserve the separate optodisk
+   source-mode drafts. Refresh exports only for changed, accepted geometry.
+   Art1 history acceptance remains separate.
 2. Supply the real machine/nozzle/material profile and bench/clamp geometry; use
    those inputs for slicing/orientation and full-wrench mount checks. Leave the
    present blank observation form unknown until actual outputs exist.

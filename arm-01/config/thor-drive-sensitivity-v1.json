@@ -1,0 +1,192 @@
+{
+  "schema_version": 1,
+  "revision": "thor-drive-sensitivity-v1",
+  "evidence_class": "conditional_analytical_drive_sensitivity",
+  "units": {
+    "radius": "m",
+    "effort": "N*m",
+    "rate": "rad/s",
+    "power": "W"
+  },
+  "source_load_study": {
+    "path": "hardware/cad/thor-scenario-study-v1.json",
+    "sha256": "e6adabfe70a052c92c66fc872a128f00edb13bfcc41af8eb2bdf8d8dd797c63f",
+    "canonical_sha256": "405d62229431a6a8e7c89fbb1f4235978fbd9a0b0b548312493ce61bd4a1ece0"
+  },
+  "transmission": {
+    "driver_radius_m": 0.006366197723675814,
+    "elbow_gearbox_ratio": 5.18,
+    "shoulder_branch_ratio": 31.08,
+    "carrier_coupling": 1.0,
+    "belt_sign": 1,
+    "evidence": "Existing explicit 20T/2mm driver and 5.18/31.08 scenario; carrier +1/belt +1 are conditional model conventions, not calibration."
+  },
+  "reference_parameter_id": "reference",
+  "parameter_points": [
+    {
+      "id": "reference",
+      "drum_radius_m": 0.037,
+      "gearbox_efficiencies": {
+        "B": 0.8,
+        "C": 0.8,
+        "E": 0.8
+      },
+      "shoulder_b_fraction": 0.5,
+      "evidence": "Caller-declared numerical sensitivity point. Effective pitch radius, directional gearbox efficiency and actual shoulder sharing are unmeasured; values are not certified ranges."
+    },
+    {
+      "id": "radius_30mm",
+      "drum_radius_m": 0.03,
+      "gearbox_efficiencies": {
+        "B": 0.8,
+        "C": 0.8,
+        "E": 0.8
+      },
+      "shoulder_b_fraction": 0.5,
+      "evidence": "Caller-declared numerical sensitivity point. Effective pitch radius, directional gearbox efficiency and actual shoulder sharing are unmeasured; values are not certified ranges."
+    },
+    {
+      "id": "radius_45mm",
+      "drum_radius_m": 0.045,
+      "gearbox_efficiencies": {
+        "B": 0.8,
+        "C": 0.8,
+        "E": 0.8
+      },
+      "shoulder_b_fraction": 0.5,
+      "evidence": "Caller-declared numerical sensitivity point. Effective pitch radius, directional gearbox efficiency and actual shoulder sharing are unmeasured; values are not certified ranges."
+    },
+    {
+      "id": "efficiency_60pct",
+      "drum_radius_m": 0.037,
+      "gearbox_efficiencies": {
+        "B": 0.6,
+        "C": 0.6,
+        "E": 0.6
+      },
+      "shoulder_b_fraction": 0.5,
+      "evidence": "Caller-declared numerical sensitivity point. Effective pitch radius, directional gearbox efficiency and actual shoulder sharing are unmeasured; values are not certified ranges."
+    },
+    {
+      "id": "lossless_efficiency",
+      "drum_radius_m": 0.037,
+      "gearbox_efficiencies": {
+        "B": 1.0,
+        "C": 1.0,
+        "E": 1.0
+      },
+      "shoulder_b_fraction": 0.5,
+      "evidence": "Caller-declared numerical sensitivity point. Effective pitch radius, directional gearbox efficiency and actual shoulder sharing are unmeasured; values are not certified ranges."
+    },
+    {
+      "id": "shoulder_B_zero_share",
+      "drum_radius_m": 0.037,
+      "gearbox_efficiencies": {
+        "B": 0.8,
+        "C": 0.8,
+        "E": 0.8
+      },
+      "shoulder_b_fraction": 0,
+      "evidence": "Caller-declared numerical sensitivity point. Effective pitch radius, directional gearbox efficiency and actual shoulder sharing are unmeasured; values are not certified ranges."
+    },
+    {
+      "id": "shoulder_B_all_share",
+      "drum_radius_m": 0.037,
+      "gearbox_efficiencies": {
+        "B": 0.8,
+        "C": 0.8,
+        "E": 0.8
+      },
+      "shoulder_b_fraction": 1,
+      "evidence": "Caller-declared numerical sensitivity point. Effective pitch radius, directional gearbox efficiency and actual shoulder sharing are unmeasured; values are not certified ranges."
+    },
+    {
+      "id": "combined_low_radius_low_efficiency_B_all",
+      "drum_radius_m": 0.03,
+      "gearbox_efficiencies": {
+        "B": 0.6,
+        "C": 0.6,
+        "E": 0.6
+      },
+      "shoulder_b_fraction": 1,
+      "evidence": "Caller-declared numerical sensitivity point. Effective pitch radius, directional gearbox efficiency and actual shoulder sharing are unmeasured; values are not certified ranges."
+    },
+    {
+      "id": "combined_high_radius_lossless_B_zero",
+      "drum_radius_m": 0.045,
+      "gearbox_efficiencies": {
+        "B": 1.0,
+        "C": 1.0,
+        "E": 1.0
+      },
+      "shoulder_b_fraction": 0,
+      "evidence": "Caller-declared numerical sensitivity point. Effective pitch radius, directional gearbox efficiency and actual shoulder sharing are unmeasured; values are not certified ranges."
+    }
+  ],
+  "operating_points": [
+    {
+      "id": "positive_rates",
+      "load_case": "shoulder_horizontal_saved",
+      "joint_rates_rad_s": [
+        0.05,
+        0.05
+      ],
+      "evidence": "Explicit quasi-static numerical rates applied to frozen gravity countertorques; no inertial/rate/collision/trajectory qualification."
+    },
+    {
+      "id": "negative_rates",
+      "load_case": "shoulder_horizontal_saved",
+      "joint_rates_rad_s": [
+        -0.05,
+        -0.05
+      ],
+      "evidence": "Explicit quasi-static numerical rates applied to frozen gravity countertorques; no inertial/rate/collision/trajectory qualification."
+    },
+    {
+      "id": "mixed_positive_shoulder",
+      "load_case": "shoulder_horizontal_saved",
+      "joint_rates_rad_s": [
+        0.05,
+        -0.02
+      ],
+      "evidence": "Explicit quasi-static numerical rates applied to frozen gravity countertorques; no inertial/rate/collision/trajectory qualification."
+    },
+    {
+      "id": "mixed_negative_shoulder",
+      "load_case": "shoulder_horizontal_saved",
+      "joint_rates_rad_s": [
+        -0.05,
+        0.02
+      ],
+      "evidence": "Explicit quasi-static numerical rates applied to frozen gravity countertorques; no inertial/rate/collision/trajectory qualification."
+    },
+    {
+      "id": "joint_power_cancellation",
+      "load_case": "shoulder_horizontal_saved",
+      "joint_rates_rad_s": [
+        0.05,
+        -0.12432845897601037
+      ],
+      "evidence": "Rates chosen from bound t2/t3 ratio so modeled total joint power nearly cancels while individual coupled port powers remain nonzero; not a physical motion."
+    },
+    {
+      "id": "held_shoulder_moving_elbow",
+      "load_case": "shoulder_horizontal_saved",
+      "joint_rates_rad_s": [
+        0,
+        -0.05
+      ],
+      "evidence": "Explicit quasi-static numerical rates applied to frozen gravity countertorques; no inertial/rate/collision/trajectory qualification."
+    },
+    {
+      "id": "static_nonzero_load",
+      "load_case": "shoulder_horizontal_saved",
+      "joint_rates_rad_s": [
+        0,
+        0
+      ],
+      "evidence": "Explicit quasi-static numerical rates applied to frozen gravity countertorques; no inertial/rate/collision/trajectory qualification."
+    }
+  ],
+  "model_scope": "Three independent gearbox two-port efficiency hypotheses around a lossless constant-radius belt/carrier map. Output efforts use required_ideal_holding_torque_nm unchanged as instantaneous gravity-compensating countertorques; no inertial or thermal capacity model."
+}

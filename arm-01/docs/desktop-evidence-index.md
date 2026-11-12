@@ -1,9 +1,9 @@
 # Desktop evidence index
 
 Reviewer map of bounded claims, their principal artifacts/checks, and remaining
-gates. Scope includes merged PRs #8–14. The
-[C14 checkpoint / PR #14](https://github.com/LiamHoweth/RAFTEL/pull/14) merged as
-`789df9e` after **2,066 local tests and all eight exact-head CI jobs passed**.
+gates. Scope includes merged PRs #8–15 and the separately validated drive-study
+integration. The [PR #15 checkpoint](https://github.com/LiamHoweth/RAFTEL/pull/15)
+merged as `05c3e93` after **2,156 local tests and all eight exact-head CI jobs passed**.
 These are checkpoint observations, not statements about a later head.
 [nextSteps.md](../../nextSteps.md) owns current publication and exact-head CI status.
 
@@ -39,6 +39,7 @@ studies. No row establishes physical manipulation, capacity or fabrication relea
 | Hash-bound scenarios reuse the existing load engine and conserve 517 mass records, including seven whole motor assets modeled as 2.120 kg. Twelve cases keep four saved-jaw configurations separate from eight ideal-jaw cases. | [Scenario study](../hardware/cad/thor-scenario-study-v1.json); [seven-coordinate potential checks](../tests/test_thor_jaw_loads.py). | All material/COM assignments remain conditional. Saved-mode jaw effort and complete physical wrist holding remain null; ideal jaw effort is not servo torque or grip force. |
 | Native placement products, 8,612 ordered vertices and independent installed moment checks authenticate 47 cached source variants to 65 installed printed copies. Uniform-solid aggregation at assumed 1240 kg/m³ gives a 4.3218006723562015 kg printed subset. | [Tensor-frame capture](../hardware/cad/thor-printed-tensor-frames-v1.json); [derived inertia study](../hardware/cad/thor-printed-inertia-study-v1.json); [frame checks](../tests/test_thor_printed_tensor_frames.py). | This is not measured print mass/distribution or whole-arm inertia. Purchased internals, nonuniform walls/infill, physical density and full dynamics stay unknown; numerical GProps error is not certified. |
 | Explicit sensitivity witnesses and full-wrench mount equilibrium are reproducible conditional calculations. | [Sensitivity study](../hardware/cad/thor-sensitivity-study-v1.json); [mount study](../hardware/cad/thor-mount-reaction-study-v1.json). | Sampled extrema are not guaranteed worst cases. Moving torque-speed/thermal data, traction, desk/clamp behavior, structural strength and safety acceptance remain open. |
+| A sparse 63-case drive study varies declared pitch radius, moving efficiency and shoulder sharing. Per-port motoring/backdrive power retains losses even at zero net joint power; static nonzero-effort input demands remain unknown. | [Drive sensitivity](thor-drive-sensitivity-study.md); [44 focused checks](../tests/test_thor_drive_sensitivity_study.py). | One bound gravity row and nine parameter points do not certify a continuous or combined load/drive envelope. Inertia, friction, duty, measured ranges and rated capacity remain unknown. |
 
 ## Mesh, slicer and fabrication preparation
 

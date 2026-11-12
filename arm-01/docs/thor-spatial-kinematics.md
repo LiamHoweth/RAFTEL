@@ -161,6 +161,7 @@ finite differences at off-axis points, differential virtual work, scaled-unit
 invariance, known singular/full-rank cases, frame direction/inverse/composition,
 covariance lever arms, input/provenance failures and FK→IK→FK residuals.
 Independent review uses separate FK difference calculations. These checks
-verify the declared mathematics and software behavior. Native nonzero-pose
-geometry, calibrated transforms, real joint limits, collision screening and
-physical operation remain separate gates.
+verify the declared mathematics and software behavior. The separate native
+capture corroborates three nonzero proximal-four-coordinate scenarios with
+q5=q6=0. Full six-axis/nonzero body geometry, calibrated transforms, real joint
+limits, conservative collision screening and physical operation remain gates.
