@@ -876,3 +876,39 @@ The evidence index separates the merged PR15 snapshot from the independently
 accepted drive integration; the current handoff retains pending exact-head CI.
 The accepted drive-report byte pin is unchanged. This sweep changes no code or
 historical evidence and adds no native, UI or physical acceptance.
+
+## Combined inspection-plate artifact
+
+A separate ignored one-off composer prepares an eight-object generic Core 3MF
+inspection plate; it does not extend or reuse the accepted single-object
+inspector as a multiobject validator. Independent OPC/XML parsing checks its
+three package parts, relationship/content types, millimetre units, eight unique
+resource/build-item and installed-copy identities, and all 7,524 vertices and
+15,112 triangles. Every source mesh XML, index order and winding is unchanged.
+Identity rotations, XY-only rearrangement and the original zero-bottom Z
+corrections verify. All eight complete source metadata/license/provenance maps
+and nominal/reflected copy bindings remain intact.
+
+Independent interval calculations check all 28 mesh-AABB pairs: minimum gap is
+20 mm, and minimum margin inside the provisional saved-profile bed rectangle is
+20 mm. All 63 original draft-directory files match the reviewer's separate
+before snapshot. Package SHA-256 is
+`68f4e0b621b3552b80e673125ab6eb98352e795b2bfa063ef9a7cc154f313bbb`.
+The creation-time pending-review receipt remains unchanged; this record supplies
+the separate artifact review. No process settings, G-code, GUI import, slice,
+physical fit, support/toolhead clearance or fabrication qualification is obtained.
+
+The tracked inspection-plate curation independently matches the immutable raw
+receipt and package, composer/curator byte pins, all eight copy subsets and
+metadata/native-binding digests, counts, translations and spacing. Its 63-file
+preservation-map digest agrees with the separate before snapshot. The raw
+creation-time pending review state is retained; GUI, slicing, physical and full
+format-certification flags remain false.
+
+The refreshed desktop handoff, inspection plan and evidence index pass a
+read-only scope review with all 58 local links resolving. The original launch
+prompt exists at Git revision `6608d37`; current merged commit `8f415ce` and
+its exact implementation head `8576807` agree with the handoff. Native frame
+capture and separate host reference aggregation are distinguished. Current
+receipt pins are unchanged, and the refresh promotes no cached, logical or
+artifact observation into engine, GUI, physical or release acceptance.

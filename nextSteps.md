@@ -2,7 +2,7 @@
 
 **Project:** ARM-01 BenchSort
 **Current phase:** Phase 1 — CAD-derived engineering foundation and design gates
-**Last updated:** 2026-11-12 00:41 UTC
+**Last updated:** 2026-11-12 00:59 UTC
 **Overall status:** In Progress
 
 ## Current Objective
@@ -15,9 +15,15 @@ Continue all three design gates: wrist handedness/moving masses/jaw articulation
 
 ## Next Steps for Codex
 
+### Next three executable actions
+
+1. Once the desktop is awake/unlocked, follow the [Anycubic inspection record](arm-01/docs/thor-anycubic-desktop-planning.md): verify one small model's scale, import the reviewed eight-copy draft, inspect eight identities/placements, and save a fresh local `DRAFT_` project with observed software selectors/warnings. If capture remains unavailable, retain the exact failure and proceed to action 2. No upload or printer action.
+2. Prepare a fresh copied Art1 study from the [typed support evidence](arm-01/docs/thor-art1-semantic-supports.md) and [migration gate](arm-01/docs/thor-art1-editability-gate.md). Collect actual attachment-engine/parameter-return witnesses against the documented failed A6 return, preserving originals, current schema names and every raw metric; do not remap raw indices or waive acceptance.
+3. Extend one copied native wrist-coordinate marker/body-frame experiment from `arm-01/tools/probe_thor_pose_frames_desktop.py` and the [spatial contract](arm-01/docs/thor-spatial-kinematics.md). Authenticate source/link identities and fresh nonzero wrist frames before using them in full-body screening; cached boxes and nominal IK do not certify clearance. Serialize native runs and preserve all input hashes.
+
 ### Active desktop run — 2026-11-11
 
-**Current integrated baseline:** main 05c3e93603417bafcb5162ecd7649bcebdea7993, through merged [PR #15](https://github.com/LiamHoweth/RAFTEL/pull/15). Exact head 3804d3f23f98578641985f373da693fec6171971 passed all eight Linux/Windows Python 3.11–3.14 jobs in [run 43127255858](https://github.com/LiamHoweth/RAFTEL/actions/runs/43127255858). Local snapshot: **2,156 tracked tests** plus lint/format/compile/LF checks. Current working branch: codex/arm01-drive-slicer-integration; M5 is independently accepted for publication; exact-head CI remains pending. Live Anycubic work awaits desktop-ready confirmation. The entries below retain chronological checkpoint evidence.
+**Current integrated baseline:** main 8f415ce3c57a45459b50cb4caaf163d61262bb4b, through merged [PR #16](https://github.com/LiamHoweth/RAFTEL/pull/16). Exact head 8576807770d68a68239071180aa047e9842824ee passed all eight Linux/Windows Python 3.11–3.14 jobs in [run 43129112563](https://github.com/LiamHoweth/RAFTEL/actions/runs/43129112563). Local snapshot: **2,200 tracked tests** plus lint/format/compile/LF checks. Current working branch: codex/arm01-desktop-final-handoff. Production implementation is frozen. The separate ignored eight-object generic inspection plate and tracked receipt are independently accepted for artifact scope; live Anycubic import/save/slicing remains pending desktop-ready confirmation. The entries below retain chronological checkpoint evidence.
 
 - Started at **19:36 UTC** (13:36 America/Chicago); target integration freeze **01:36 UTC November 12**, final handoff approximately **02:36 UTC**. Actual elapsed time will be recorded at completion.
 - No existing RAFTEL checkout was found on this Windows host after checking the current workspace, project/worktree locations and user-directory checkout names/origins. Created `C:\Users\howet\Desktop\claudex\RAFTEL` from current `main` **6608d37**, fetched `origin/main`, and started `codex/arm01-desktop-seven-hour`. No pre-existing local changes were replaced.
@@ -85,11 +91,14 @@ Continue all three design gates: wrist handedness/moving masses/jaw articulation
 
 - **C16 integrated validation:** **2,200 tracked tests pass** (112.18 s); Ruff lint/format passes for 186 Python files, compilation and 407-text-file LF guard pass. A fresh subprocess CLI reproduces the accepted drive study byte for byte. Independent final-doc review checks 154 local links and scope/count consistency. This snapshot is ready for push/PR; exact-head CI remains required before merge.
 
-### Seven-hour desktop run: objective and operating rules
+- **Merged C16:** [PR #16](https://github.com/LiamHoweth/RAFTEL/pull/16) merged as 8f415ce3c57a45459b50cb4caaf163d61262bb4b after all eight exact-head jobs passed run43129112563. The working tree was clean before creating the final-handoff branch. M5 remains partial against combined load/drive coverage and justified physical ranges; its new sparse numerical sampler is implemented and tested.
+- **Bounded source refresh:** the actuator primary-source check produced no new qualifying running-data evidence; applicable PG5 curve revision/conditions and actual driver-carrier identity remain unresolved. No new document or numerical rating was manufactured. A generic combined eight-piece inspection plate is now an artifact-only task, separately reviewed because the existing accepted writer/inspector deliberately supports one object. Deadline01:10 UTC, with the unchanged eight source projects retained as fallback. No live GUI success is claimed.
+
+### Original seven-hour run plan and operating rules
 
 **Planned work, not a claim that these features exist.** Spend approximately seven hours of wall-clock time advancing the highest-value software/CAD work below, with at least five agents and one integration owner. The aim is a reviewed, reproducible improvement to the Thor model and engineering tools, with tested milestones pushed and merged. A seven-hour window is a work budget, not a promise to solve every mechanical or physical uncertainty.
 
-Start from current GitHub `main`, read `AGENTS.md`, `AGENT_NOTES.md` and this file, inspect local changes, and verify available tools. The current implementation baseline is [PR #6](https://github.com/LiamHoweth/RAFTEL/pull/6): 325 passing tests,518 installed CAD leaves,517 mass records, source-supported ideal wrist handedness, offline transmission/jaw models and explicit remaining gates. Reuse these implementations. Preserve untouched upstream CAD, historical reports, user changes and the distinction between source inspection, conditional analysis and physical evidence.
+The original launch baseline was [PR #6](https://github.com/LiamHoweth/RAFTEL/pull/6): 325 passing tests,518 installed CAD leaves,517 mass records, source-supported ideal wrist handedness, offline transmission/jaw models and explicit remaining gates. This paragraph preserves the run's starting scope; the current integrated baseline and next actions are above. Future sessions start from fetched current `main`, read `AGENTS.md`, `AGENT_NOTES.md` and this file, and preserve local changes, upstream CAD and historical reports. Reuse the implemented studies and distinguish source inspection, conditional analysis and physical evidence.
 
 - **Ownership:** give each agent a bounded task and exclusive files. Root owns shared manifests, `nextSteps.md`, cross-lane integration and Git. Independent review checks evidence and math rather than merely repeating implementation tests. Coordinate schema changes before producing dependent reports.
 - **Native tooling:** reuse the pinned portable FreeCAD/addons when available. Permit one whole-assembly run at a time; prefer small selected-shape/feature probes. Use isolated preferences, fresh output paths and copied documents. Verify hashes before/after. If the runtime is absent, record the capability gap and advance pure-Python/report/drawing work; do not spend the run reinstalling an entire robotics stack.

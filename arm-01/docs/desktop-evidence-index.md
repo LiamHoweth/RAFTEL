@@ -1,9 +1,9 @@
 # Desktop evidence index
 
 Reviewer map of bounded claims, their principal artifacts/checks, and remaining
-gates. Scope includes merged PRs #8–15 and the separately validated drive-study
-integration. The [PR #15 checkpoint](https://github.com/LiamHoweth/RAFTEL/pull/15)
-merged as `05c3e93` after **2,156 local tests and all eight exact-head CI jobs passed**.
+gates. Scope includes merged PRs #8–16 and separately reviewed local inspection
+artifacts. The [PR #16 checkpoint](https://github.com/LiamHoweth/RAFTEL/pull/16)
+merged as `8f415ce` after **2,200 local tests and all eight exact-head CI jobs passed**.
 These are checkpoint observations, not statements about a later head.
 [nextSteps.md](../../nextSteps.md) owns current publication and exact-head CI status.
 
@@ -48,6 +48,7 @@ studies. No row establishes physical manipulation, capacity or fabrication relea
 | Six serialized cached-BRep export batches cover 47 variants / 65 installed copies. Host topology/winding/unit screens retain 45 variants / 62 instances; the unchanged Art1 composer gate leaves 44 / 61. | [Full native export](../hardware/print-planning/thor-full-print-export-native-v1.json); [host mesh audit](../hardware/print-planning/thor-full-print-mesh-audit-v1.json). | Coarse-native optodisk and transmission-column topology failures remain blocked. Cached export and broad volume sanity checks do not prove continuous-surface fidelity, fit or printability. |
 | The full queue round-trips **61 one-part generic native-origin 3MF drafts**. **Two separate SourceOptodisk projects** use the pinned upstream source-STL plan and retain their source origin. | [Full queue evidence](thor-full-print-mesh-audit.md); [separate optodisk delivery](thor-optodisk-mesh-diagnostics.md); [composer checks](../tests/test_compose_thor_full_print_drafts.py). | These refer to already-counted installed parts. The two source projects do not unblock the old coarse-native optodisk audit; older 6/11 campaigns are not additional physical quantities. Art1/column gates and fabrication release remain open. |
 | Installed Anycubic profile selection and generic 3MF metadata/placement proposals have software evidence. | [Saved profile audit](../hardware/print-planning/local-profile-audit.json); [draft planning scope](thor-slicer-draft-plan.md). | **Live Anycubic import/render/plate arrangement is pending at this snapshot.** Generic 3MFs are not accepted Anycubic process projects or printer jobs; actual nozzle/material, slicing and G-code remain unverified. |
+| A separately composed eight-copy generic inspection plate preserves all 15,112 source triangles and complete attribution. Independent parsing checks identities, placements and 20 mm minimum mesh-box spacing/bed margins. | [Combined plate scope](thor-anycubic-desktop-planning.md); [artifact receipt](../hardware/print-planning/thor-anycubic-inspection-plate-v1.json). | It reuses eight identities from the existing queue. This is not another physical quantity, observed Anycubic project, support/toolhead-clearance qualification or fabrication release. |
 | Source-linked drawings, three stepped-bore coupon studies and blank measurement imports are prepared. | [Fabrication preparation](thor-fabrication-preparation.md); [coupon contract](thor-fit-coupon-drafts.md); [record checks](../tests/test_fabrication_records.py). | Coupon geometry/offsets are explicit assumptions; bearing-seat evidence, measured fit/mass/COM, print orientation/supports and restrained physical inspection remain gates. |
 | A companion sidecar checks weighing uncertainty declarations, declared instrument-validity windows, retrospective invalidation and matching supporting-file bytes against existing fabrication records. | [Measurement metadata readiness](thor-measurement-readiness.md); [55 focused checks](../tests/test_thor_measurement_readiness.py). | The blank 65-row template has zero ready observations. Available declarations and hashes do not authenticate metrology, certificate contents, actual conditions or physical measurements; no mass ledger is modified. |
 
