@@ -2,7 +2,7 @@
 
 **Project:** ARM-01 BenchSort
 **Current phase:** Phase 1 — CAD-derived engineering foundation and design gates
-**Last updated:** 2026-11-12 00:25 UTC
+**Last updated:** 2026-11-12 00:41 UTC
 **Overall status:** In Progress
 
 ## Current Objective
@@ -16,6 +16,8 @@ Continue all three design gates: wrist handedness/moving masses/jaw articulation
 ## Next Steps for Codex
 
 ### Active desktop run — 2026-11-11
+
+**Current integrated baseline:** main 05c3e93603417bafcb5162ecd7649bcebdea7993, through merged [PR #15](https://github.com/LiamHoweth/RAFTEL/pull/15). Exact head 3804d3f23f98578641985f373da693fec6171971 passed all eight Linux/Windows Python 3.11–3.14 jobs in [run 43127255858](https://github.com/LiamHoweth/RAFTEL/actions/runs/43127255858). Local snapshot: **2,156 tracked tests** plus lint/format/compile/LF checks. Current working branch: codex/arm01-drive-slicer-integration; M5 is independently accepted for publication; exact-head CI remains pending. Live Anycubic work awaits desktop-ready confirmation. The entries below retain chronological checkpoint evidence.
 
 - Started at **19:36 UTC** (13:36 America/Chicago); target integration freeze **01:36 UTC November 12**, final handoff approximately **02:36 UTC**. Actual elapsed time will be recorded at completion.
 - No existing RAFTEL checkout was found on this Windows host after checking the current workspace, project/worktree locations and user-directory checkout names/origins. Created `C:\Users\howet\Desktop\claudex\RAFTEL` from current `main` **6608d37**, fetched `origin/main`, and started `codex/arm01-desktop-seven-hour`. No pre-existing local changes were replaced.
@@ -78,6 +80,11 @@ Continue all three design gates: wrist handedness/moving masses/jaw articulation
 
 - **C15 integrated validation:** **2,156 tracked tests pass** (105.98 s); Ruff lint/format passes for 184 Python files, source compilation passes and 402 tracked text files pass the LF guard. This tested snapshot contains the accepted E3/E5 tools and reviewed evidence index/README/Anycubic inspection plan. M5 is not included in this snapshot. Push, PR and exact-head CI are next.
 
+- **M5 drive study independently accepted:** **63 samples** (nine declared radius/efficiency/sharing points × seven rate cases from one bound shoulder-horizontal gravity row), **44 focused / 88 combined tests**, 1,200 independent rational power checks and exact-byte report reproduction pass. Port-specific motoring/backdrive efficiency retains positive losses in a zero-net-joint-power witness; static input effort stays unknown in 14/14/9 B/C/E cases. Capacity margins remain null. [Study and assumptions](arm-01/docs/thor-drive-sensitivity-study.md). Underflow, strict source identity and malformed input failures are tested; original mass/holding reports are unchanged.
+- **R5 integration audit:** current README inventory is corrected to 518 leaves, architecture names existing separate nominal IK/constraints/trajectories/evaluation, and fabrication docs acknowledge full exports, host mesh screening and saved-zero printed frames. Historical captures remain untouched. Existing H3 stop/restart/gravity requirements already cover their traceability; actual physical evidence remains open.
+
+- **C16 integrated validation:** **2,200 tracked tests pass** (112.18 s); Ruff lint/format passes for 186 Python files, compilation and 407-text-file LF guard pass. A fresh subprocess CLI reproduces the accepted drive study byte for byte. Independent final-doc review checks 154 local links and scope/count consistency. This snapshot is ready for push/PR; exact-head CI remains required before merge.
+
 ### Seven-hour desktop run: objective and operating rules
 
 **Planned work, not a claim that these features exist.** Spend approximately seven hours of wall-clock time advancing the highest-value software/CAD work below, with at least five agents and one integration owner. The aim is a reviewed, reproducible improvement to the Thor model and engineering tools, with tested milestones pushed and merged. A seven-hour window is a work budget, not a promise to solve every mechanical or physical uncertainty.
@@ -119,7 +126,7 @@ If tool/session availability ends the run early, report actual elapsed work and 
 
 **Readiness:** **Ready** can start with current repository/source evidence; **Conditional** can proceed with explicit modeled inputs; **Dependent** follows the stated prerequisite; **Input** allows preparation now but final acceptance needs external measurements or exact hardware data. Unchecked items below may have partial artifacts listed above; their remaining completion criteria are still open. Do not attempt the entire backlog in seven hours; use the selected lanes above and pull fallback work from this list.
 
-**Checkbox scope:** checked entries close the bounded source/software deliverable only. They do not close physical, calibration, conservative-enclosure, fabrication or release gates. M3, M5 and F1 remain partial against their full written criteria (complete dynamic body/purchased and nonuniform inertia bindings; omitted sensitivity axes; cable-access views). The installed 65-copy printed geometric subset is now aggregated separately under a declared uniform-solid density.
+**Checkbox scope:** checked entries close the bounded source/software deliverable only. They do not close physical, calibration, conservative-enclosure, fabrication or release gates. M3, M5 and F1 remain partial against their full written criteria (complete dynamic body/purchased and nonuniform inertia bindings; combined load/drive coverage and justified physical input ranges; cable-access views). The installed 65-copy printed geometric subset is now aggregated separately under a declared uniform-solid density.
 
 #### A — Restore Art1 source editability
 

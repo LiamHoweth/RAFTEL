@@ -811,7 +811,7 @@ Known declarations require finite positive uncertainty, a coverage factor at
 least one, consistent expanded uncertainty and explicit contribution/applicability
 evidence. Calibration windows use the measurement instant, with later expiry
 reported separately; future records and applicable retrospective invalidation
-block readiness. A finding cannot predate the certificate issue. Unknown and
+block readiness. A finding cannot predate the declared calibration time. Unknown and
 synthetic support cannot complete observed readiness. Bounded strict UTF-8 JSON,
 contained nonsymlink artifact paths, byte hashes and overwrite refusal verify.
 Readiness means matching declarations and local supporting bytes are available
@@ -834,3 +834,45 @@ finger is one of one. The source-Z-up pose remains provisional. No successful
 model import, rendered plate, native project save or slice is claimed by this
 plan review. Live observations require a separate awake-desktop session; the
 prepared inputs do not confer physical fit, print or fabrication acceptance.
+
+## Declared radius, efficiency and sharing sensitivity
+
+The [drive sensitivity study](thor-drive-sensitivity-study.md) adds 63 explicit
+samples: nine parameter points and seven instantaneous rate cases for one
+`shoulder_horizontal_saved` gravity row. Source countertorques retain their
+signs. Independent rational arithmetic verifies 1,200 cases spanning both belt
+signs, carrier coefficients, shoulder allocations and individual efficiencies.
+Output virtual work and per-port input power agree; carrier reaction uses the
+elbow output effort rather than a loss-scaled rotor effort. Mixed power flow and
+zero-net-joint-power cases still retain their nonnegative modeled losses.
+
+Forty-four focused and 88 combined tests pass. Independent report reconstruction
+matches SHA-256 `50d0fe2b2e4b65d373f29f87866493a77410a9cd5d89137b49b71661df2a01c2`.
+All four code pins, raw/canonical source hashes, 63 unchanged source effort
+pairs, mass summary and five-file UTF-8/LF boundaries verify. Coherently rebound
+inputs with changed units, revisions or qualification claims reject. Excessive
+nesting and nonrepresentable moving/static intermediates fail clearly instead
+of turning a nonzero demand into a known zero.
+
+Independent maxima and witness joins reproduce B 0.286597450018833, C
+0.21874236480542295 and E 0.16044372546060848 N·m among known samples. Their
+14/14/9 unknown static samples remain visible and are not bounded by those
+maxima. Nonzero effort at zero port rate has null input effort; zero mechanical
+power supplies no holding-current or thermal-loss model. Explicit zero branch
+allocation is a zero contribution only within this partial model. These are
+declared quasi-static gravity contributions, without inertia, duty, measured
+radius/sharing/efficiency, regeneration qualification or rated capacity.
+
+## Current-document integration review
+
+The final read-only documentation sweep verifies 154 local Markdown targets
+across the 14 staged checkpoint files, with no missing targets. README,
+architecture, spatial and fabrication descriptions distinguish implemented
+offline studies from physical integration, preserve the 518/516 inventory
+history and reconcile 47/65 exports, 45/62 host screening and 44/61 draft counts.
+Saved-zero printed frames and three proximal-four-coordinate native cases do
+not imply bench calibration, full six-axis geometry or accepted fabrication.
+The evidence index separates the merged PR15 snapshot from the independently
+accepted drive integration; the current handoff retains pending exact-head CI.
+The accepted drive-report byte pin is unchanged. This sweep changes no code or
+historical evidence and adds no native, UI or physical acceptance.

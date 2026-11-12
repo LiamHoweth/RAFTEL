@@ -134,10 +134,13 @@ cached import/tessellation repeatability, not feature-history or surface-fidelit
 acceptance. The original eight-selection report remains unchanged.
 
 **Current capture coverage: 6/6 batches, 47/47 variants, 65/65 represented instances.**
-This closes cached export coverage only. Full-registry host topology/fidelity
-audit, actual slicer import/process behavior, orientation/support selection,
-physical fit/strength and fabrication release remain separate gates. All such
-qualification flags remain false; the original Art1 history gates remain open.
+This closes cached export coverage only. The later [full host mesh screen](thor-full-print-mesh-audit.md)
+retains 45 variants / 62 instances under its declared topology checks; two
+variants / three instances remain topology-blocked. The separate Art1 composer
+gate leaves 44 variants / 61 one-part generic drafts. Continuous-surface
+fidelity, actual slicer import/process behavior, orientation/support selection,
+physical fit/strength and fabrication release remain open. Export qualification
+flags and the original Art1 history gates are not changed by that host screen.
 
 ## Variant quantities
 
