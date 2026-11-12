@@ -101,7 +101,10 @@ Final local integration: **2,473 tests passed in 139.10 seconds** on
 Windows/Python 3.14.6; Ruff lint/format passed for all **205 Python files**, and
 source compilation passed. All **437 text files** pass the LF guard; the seed-42
 logical sorter sorted 10/10 and the preliminary engineering CLI passed.
-All specialist lanes are complete/frozen. Publication
-is a draft checkpoint on `codex/arm01-three-step-swarm`; exact-head CI and merge
-status are recorded in `nextSteps.md` and the closing reply. A pushed draft
-checkpoint with pending CI is not a verified merge. Main remains `c0e7deb`.
+All specialist lanes are complete/frozen. Implementation commit `3d32276` is
+pushed in **draft [PR #19](https://github.com/LiamHoweth/RAFTEL/pull/19)** on
+`codex/arm01-three-step-swarm`; the final publication note follows it. Exact-head
+CI acceptance remains pending for resume; no new merge was performed tonight.
+Main remains `c0e7deb`. The continuation lasted approximately 54 minutes including
+final local checks/publication through approximately 21:26 America/Chicago;
+implementation had already stopped around 21:15 at the owner's request.

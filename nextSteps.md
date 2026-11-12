@@ -2,7 +2,7 @@
 
 **Project:** ARM-01 BenchSort
 **Current phase:** Phase 1 — CAD-derived engineering foundation and design gates
-**Last updated:** 2026-11-11 21:24 America/Chicago (2026-11-12 03:24 UTC)
+**Last updated:** 2026-11-11 21:25 America/Chicago (2026-11-12 03:25 UTC)
 **Overall status:** In Progress
 
 ## Current Objective
@@ -19,7 +19,7 @@ The thirty-agent continuation is **stopped for the night at the owner’s reques
 
 **Three-step status:** Art1 actual attachment/return diagnostics and the nonzero wrist experiment are complete and independently reviewed within their diagnostic scope. Exact Art1 migration still fails. The live Anycubic import/save is unfinished: capture and coordinate-input failures persisted even with the visible maximized window; keyboard opened a picker but no file import/save was verified. Computer Use was stopped with Escape; no further UI actions occurred. Resume by preserving the current app/picker state.
 
-**Nightly validation:** **2,473 tests pass** in 139.10 seconds on Windows/Python 3.14.6. Ruff lint/format passes for all **205 Python files**, source compilation passes, and **437 text files** pass the LF guard. The logical sorter seed-42 smoke check sorted 10/10 and the existing preliminary engineering CLI passed. Thirty specialist assignments and independent reviews are closed. Publication is a draft checkpoint on `codex/arm01-three-step-swarm`; its exact-head CI must pass before any merge. Main remains `c0e7deb` until a verified merge is separately recorded.
+**Nightly validation/publication:** **2,473 tests pass** in 139.10 seconds on Windows/Python 3.14.6. Ruff lint/format passes for all **205 Python files**, source compilation passes, and **437 text files** pass the LF guard. The logical sorter seed-42 smoke check sorted 10/10 and the existing preliminary engineering CLI passed. Changed Markdown has 183 valid local link targets. Thirty specialist assignments and independent reviews are closed. Implementation commit `3d32276` is pushed in **draft [PR #19](https://github.com/LiamHoweth/RAFTEL/pull/19)** on `codex/arm01-three-step-swarm`; this final publication note follows it. Exact-head CI acceptance is pending and is deliberately left for resume. **No new merge tonight**; main remains `c0e7deb`. The continuation began at approximately 20:32; implementation stopped around 21:15 and local verification/publication continued until approximately 21:26 (about 54 minutes including closeout).
 
 ### Next three executable actions
 
