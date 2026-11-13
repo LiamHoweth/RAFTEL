@@ -2,13 +2,13 @@
 
 A short reading room for staying current without losing focus on the build.
 
-**[Latest briefing: November 12, 2026](2026-11-12.md)**
+**[Latest briefing: November 13, 2026](2026-11-13.md)**
 
 ## Current focus
 
-ARM-01 BenchSort uses Thor as the existing-CAD analysis baseline: six arm axes, eight actuators allowed, a stationary clamped workstation and three sorting boxes. The current reading priorities are the first observed Anycubic slicer import, native wrist/Art1 evidence, measurement quality and coupled-drive assumptions. The reviewed print drafts and offline software studies do not release fabrication or establish physical performance.
+ARM-01 BenchSort uses Thor as the existing-CAD analysis baseline: six arm axes, eight actuators allowed, a stationary clamped workstation and three sorting boxes. The current reading priorities are first-layer adhesion evidence, native wrist/Art1 gates and the repeatable Mac workflow. Keep the merged baseline distinct from open draft PR evidence; prepared slices and offline studies do not establish physical performance.
 
-Use [nextSteps.md](../nextSteps.md), the [evidence index](../arm-01/docs/desktop-evidence-index.md) and the [Anycubic inspection plan](../arm-01/docs/thor-anycubic-desktop-planning.md) to select reading. The reading room complements the engineering roadmap and does not claim simulated or analytical results are physical performance.
+Use [nextSteps.md](../nextSteps.md), the [evidence index](../arm-01/docs/desktop-evidence-index.md) and the [Mac guide](../docs/mac-setup.md), together with the latest briefing's explicitly labeled draft links, to select reading. The reading room complements the engineering roadmap and does not claim simulated or analytical results are physical performance.
 
 ## What each briefing covers
 
@@ -29,10 +29,11 @@ Aim for a five-minute read. Fewer strong items are better than a padded news fee
 - Connect each item to an actual project choice. Do not assume a robot, motor, camera, software stack, budget, or compute setup that the project has not selected.
 - If nothing important changed, publish a short dated “no material update” note with what was checked. Do not invent news.
 - Keep dated entries as an archive. Preserve manual additions and clearly label substantive corrections.
-- Keep updates inside `daily-reading/`. The root README link is the entry point; leave implementation, hardware configuration, and the roadmap untouched.
+- Keep updates inside `daily-reading/`. Use this page's latest-briefing link and archive to navigate; leave implementation, hardware configuration, and the roadmap untouched.
 
 ## Archive
 
+- [2026-11-13: Close the first-layer evidence gap](2026-11-13.md)
 - [2026-11-12: Check the first slicer import](2026-11-12.md)
 - [2026-11-11: Turn Thor’s load model into a print plan](2026-11-11.md)
 
