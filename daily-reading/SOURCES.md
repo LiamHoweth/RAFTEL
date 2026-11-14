@@ -23,8 +23,11 @@ Prioritize the next decision in [nextSteps.md](../nextSteps.md). The current bas
 
 - **NTT physical AI:** [November 11 candidate-action world-model announcement](https://group.ntt/en/newsrelease/2026/11/11/261111b.html). Watch predicted-versus-observed outcomes and explicit task conditions. Small-robot shelf-loading results are company-reported; planned airport trials and a ready-to-integrate Thor implementation are not established by the release.
 
+- **Cerulion replay:** [November 12 v2.0.0 release](https://github.com/cerulion-inc/cerulion/releases/tag/v2.0.0) and [versioned ROS replay contract](https://github.com/cerulion-inc/cerulion/blob/v2.0.0/docs/ros2_replay.md). Compare consumed-input preservation, explicit refusal and output-divergence reporting. Replay can publish live outputs; it is not inherently isolated from hardware. This is architecture reading, not an ARM-01 adoption decision.
+- **MERL manipulation evaluation:** [TacSushi, TR2026-173, November 13](https://www.merl.com/publications/docs/TR2026-173.pdf). Watch trial denominators, held-out conditions and evaluator uncertainty. Its visual-quality success rule and food-handling embodiment do not transfer directly to BenchSort.
+
 ## Editorial checks
 
 Record publication/event dates separately from verification dates. Identify whether a source is news, a living reference, a pinned code revision or older background. Link each item to an actual project decision. Check licensing, requirements and repeatability before adoption; publish fewer items when no relevant news changes the next action.
 
-Watchlist updated: November 13, 2026. The NTT announcement was verified today; PRISM and Gemini Robotics 2.5 were verified November 12. Earlier reference entries retain their previous verification scope. Some manufacturer pages are undated living references. Access failures are limits on verification, not proof that a product or document is unavailable.
+Watchlist updated: November 14, 2026. Cerulion release/documentation and the TacSushi report were verified today; NTT was verified November 13, and PRISM/Gemini Robotics 2.5 on November 12. Earlier reference entries retain their previous verification scope. Some manufacturer pages are undated living references. Access failures are limits on verification, not proof that a product or document is unavailable.

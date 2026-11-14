@@ -2,7 +2,7 @@
 
 A short reading room for staying current without losing focus on the build.
 
-**[Latest briefing: November 13, 2026](2026-11-13.md)**
+**[Latest briefing: November 14, 2026](2026-11-14.md)**
 
 ## Current focus
 
@@ -33,6 +33,7 @@ Aim for a five-minute read. Fewer strong items are better than a padded news fee
 
 ## Archive
 
+- [2026-11-14: Reproducible checks and honest success rates](2026-11-14.md)
 - [2026-11-13: Close the first-layer evidence gap](2026-11-13.md)
 - [2026-11-12: Check the first slicer import](2026-11-12.md)
 - [2026-11-11: Turn Thor’s load model into a print plan](2026-11-11.md)
