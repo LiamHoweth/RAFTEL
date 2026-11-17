@@ -28,6 +28,8 @@ Prioritize the next decision in [nextSteps.md](../nextSteps.md). The current bas
 
 - **ASUS Gallop:** [November 13 workstation-development post](https://press.asus.com/blog/factory-proven-physical-ai-asus-gallop-humanoid-robot). Watch whole-job acceptance criteria and fixed subsystem interfaces. Its 99.5%/20-second figure is a target, not a measured reliability result; factory setting and humanoid branding do not establish household suitability.
 
+- **NVIDIA SimReady task walkthrough:** [November 13 pick-and-place tutorial](https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place), verified November 17. Compare asset-profile checks with assembled-scene and whole-task evidence. This is later-stage reference reading, not an ARM-01 stack or hardware selection.
+
 ## Editorial checks
 
 Record publication/event dates separately from verification dates. Identify whether a source is news, a living reference, a pinned code revision or older background. Link each item to an actual project decision. Check licensing, requirements and repeatability before adoption; publish fewer items when no relevant news changes the next action.
