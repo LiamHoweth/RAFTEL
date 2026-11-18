@@ -2,7 +2,7 @@
 
 A short reading room for staying current without losing focus on the build.
 
-**[Latest briefing: November 17, 2026](2026-11-17.md)**
+**[Latest briefing: November 18, 2026](2026-11-18.md)**
 
 ## Current focus
 
@@ -33,6 +33,7 @@ Aim for a five-minute read. Fewer strong items are better than a padded news fee
 
 ## Archive
 
+- [2026-11-18: Borrow the learning loop, not the complexity](2026-11-18.md)
 - [2026-11-17: A validated asset is not a validated task](2026-11-17.md)
 - [2026-11-15: Keep the job measurable](2026-11-15.md)
 - [2026-11-14: Reproducible checks and honest success rates](2026-11-14.md)

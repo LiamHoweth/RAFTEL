@@ -30,8 +30,10 @@ Prioritize the next decision in [nextSteps.md](../nextSteps.md). The current bas
 
 - **NVIDIA SimReady task walkthrough:** [November 13 pick-and-place tutorial](https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place), verified November 17. Compare asset-profile checks with assembled-scene and whole-task evidence. This is later-stage reference reading, not an ARM-01 stack or hardware selection.
 
+- **Genesis AI / Eno:** [November 17 funding and systems-strategy release](https://www.prnewswire.com/news-releases/genesis-ai-raises-500m-series-a-at-3-5b-valuation-to-master-human-level-dexterity-in-general-purpose-robots-and-deploy-at-scale-302941249.html), verified November 18. Watch the demonstration-to-deployment feedback loop and industrial-first scope. Funding, human-level capability language and deployment plans are company statements, not comparable household reliability measurements.
+
 ## Editorial checks
 
 Record publication/event dates separately from verification dates. Identify whether a source is news, a living reference, a pinned code revision or older background. Link each item to an actual project decision. Check licensing, requirements and repeatability before adoption; publish fewer items when no relevant news changes the next action.
 
-Watchlist updated: November 15, 2026. ASUS's November 13 post was verified today; Cerulion release/documentation and the TacSushi report were verified November 14; NTT was verified November 13, and PRISM/Gemini Robotics 2.5 on November 12. Earlier reference entries retain their previous verification scope. Some manufacturer pages are undated living references. Access failures are limits on verification, not proof that a product or document is unavailable.
+Watchlist updated: November 18, 2026. Genesis's November 17 announcement was verified today; NVIDIA's November 13 tutorial was verified November 17; ASUS's November 13 post was verified November 15; Cerulion release/documentation and the TacSushi report were verified November 14; NTT was verified November 13, and PRISM/Gemini Robotics 2.5 on November 12. Earlier reference entries retain their previous verification scope. Some manufacturer pages are undated living references. Access failures are limits on verification, not proof that a product or document is unavailable.
