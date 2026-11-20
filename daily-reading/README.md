@@ -2,7 +2,7 @@
 
 A short reading room for staying current without losing focus on the build.
 
-**[Latest briefing: November 19, 2026](2026-11-19.md)**
+**[Latest briefing: November 20, 2026](2026-11-20.md)**
 
 ## Current focus
 
@@ -33,6 +33,7 @@ Aim for a five-minute read. Fewer strong items are better than a padded news fee
 
 ## Archive
 
+- [2026-11-20: Ask what the controller can actually observe](2026-11-20.md)
 - [2026-11-19: Specify the grasp before upgrading the hand](2026-11-19.md)
 - [2026-11-18: Borrow the learning loop, not the complexity](2026-11-18.md)
 - [2026-11-17: A validated asset is not a validated task](2026-11-17.md)
