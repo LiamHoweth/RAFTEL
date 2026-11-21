@@ -21,6 +21,10 @@ CLI checks and offline wheel smoke tests. The [PR checks](https://github.com/Lia
 matrix. Local evidence is under `.work/verification` and
 `.work/version-runs`.
 
+The root README now includes a render of the three locally generated mount-fit
+coupon meshes and a build-log section for Liam's own physical photos. The
+figure shows draft digital geometry. Measured fit remains a future gate.
+
 ### Next actions for Liam
 
 1. Review the [license decision checklist](docs/licensing.md) and select the
