@@ -1,10 +1,12 @@
 # Durable implementation notes
 
-- Mac workflow: root `Makefile` supplies setup/demo/benchmark/analysis/verify/native-audit. `scripts/verify.sh` mirrors portable CI checks and retains unique evidence under ignored `.work/verification`; native paths stay in ignored `.raftel-local.mk`. Reuse the existing FreeCAD/Thor study files rather than downloading duplicates; see `docs/mac-setup.md` and its setup receipt.
+- Mac workflow: root `Makefile` supplies setup/demo/benchmark/analysis/verify/native-audit. `scripts/verify.py` is the shared Windows, POSIX and CI verification path. The shell wrapper delegates to it. Runs retain unique evidence under ignored `.work/verification`. Native paths stay in ignored `.raftel-local.mk`. Reuse the existing FreeCAD/Thor study files. See `docs/mac-setup.md` and its setup receipt.
 
 - Start with AGENTS.md and nextSteps.md. The latter owns current status and next actions.
 - `arm-01/docs/desktop-evidence-index.md` maps implemented claims to checks/gates; `docs/arm01-desktop-run-2026-11-11.md` records the Windows run and local deliverables. Read current publication/desktop availability in nextSteps.md rather than treating a historical snapshot or launch prompt as active work.
 - ARM-01's installed CLI is `raftel-sort`; defaults are packaged in `src/raftel_arm01/defaults.json`. Runtime uses Python standard library only. No hardware backend or real-motion flag exists.
+- `raftel-sort --scene` accepts versioned `arm_base` input. `--report` preserves expanded inputs and actual mock placement positions. `--svg` projects those results in XY. Evaluation derives the observed logical bin from the mock backend's placement coordinates. Keep that evidence independent of the expected category.
+- `python -m raftel_arm01.learning` fits and evaluates a one-step waypoint screening classifier on disjoint synthetic layout seeds. It does not participate in the sorter or backend. Its metrics describe agreement with the logical planner.
 - The sorter checks abstract points against an envelope; it has no IK, collision checker, camera, or physics. Mock and analytical results cannot validate physical performance.
 - Liam selected Thor as the first existing CAD study baseline and explicitly allowed eight actuators (seven arm motors plus one gripper). Six independent arm axes and parallel-gripper requirement remain. Study permission does not approve fabrication/purchases.
 - CAD provenance is pinned in `arm-01/hardware/cad/references.json`. Keep upstream originals separate from modifications. Thor assembly references sibling native documents; a top-level file alone is insufficient.

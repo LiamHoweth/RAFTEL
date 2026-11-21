@@ -12,7 +12,13 @@ No robot CAD binary has been copied into this repository. All references pin imm
 
 The baseline is **not frozen**. Do not issue prints, alter link lengths, or buy components from these references without the outstanding engineering decisions in `nextSteps.md`.
 
-## Thor baseline acquired; CAD import remains pending
+## Thor baseline and local compatibility study
+
+A separate [compatible assembly](../../docs/thor-assembly-compatibility.md)
+restored and recalculated with pinned workbenches and a static Art1 snapshot.
+The original [Art1 feature history](../../docs/thor-art1-editability-gate.md) and full
+mechanical qualification remain open. The acquisition steps below reproduce the
+unchanged upstream reference, which is required before preparing a study copy.
 
 1. Acquire the exact revision in the manifest into a local reference checkout. Preserve the entire `freecad-src/` directory and the upstream license. `Assembly.FCStd` depends on `AssemblyBase.FCStd` and `AssemblyArt1` … `AssemblyArt56.FCStd`, which in turn depend on component files; downloading only the master assembly will leave missing references.
 2. Keep that checkout unchanged. Start RAFTEL adaptations in a separate working folder/feature branch, with a provenance manifest recording source commit and modified parts. Keep binary working files outside Git until a deliberate CAD storage policy is selected.

@@ -20,6 +20,7 @@ from .replay import _integer, score_replay, wilson_interval
 def implementation_fingerprint() -> dict:
     """Pin the installed Python sources affecting this logical benchmark."""
     paths = (
+        "_validation.py",
         "config.py",
         "models.py",
         "defaults.json",
@@ -100,7 +101,8 @@ def logical_layout(
         "max_attempts": config.max_attempts,
         "objects": declared,
     }
-    result = Sorter(MockArm(config.envelope, failures), config).run(objects)
+    arm = MockArm(config.envelope, failures)
+    result = Sorter(arm, config).run(objects)
     records = []
 
     def emit(identifier, kind, **fields):
@@ -109,7 +111,6 @@ def logical_layout(
     for obj in objects:
         emit(obj.identifier, "detected")
     active = {}
-    categories = {obj.identifier: obj.category for obj in objects}
     for event in result.events:
         if event.state == "approach":
             if event.object_id in active:
@@ -122,21 +123,30 @@ def logical_layout(
             active[event.object_id] = event.attempt
             emit(event.object_id, "attempted", attempt=event.attempt)
         elif event.state == "sorted":
-            emit(
-                event.object_id,
-                "verified",
-                attempt=active.pop(event.object_id),
-                observed_bin=categories[event.object_id],
-                independent_verification=True,
-                detail="logical mock verification only",
-            )
+            attempt = active.pop(event.object_id)
+            position = arm.placements.get(event.object_id)
+            observed_bin = config.bin_at(position) if position is not None else None
+            if observed_bin is None:
+                emit(
+                    event.object_id,
+                    "failed",
+                    attempt=attempt,
+                    detail="mock backend has no placement at a declared bin",
+                )
+            else:
+                emit(
+                    event.object_id,
+                    "verified",
+                    attempt=attempt,
+                    observed_bin=observed_bin.category,
+                    independent_verification=True,
+                    detail="placement read from logical mock backend state",
+                )
         elif event.state in {"failed", "aborted"} and event.object_id in active:
             emit(
                 event.object_id, "failed", attempt=active.pop(event.object_id), detail=event.detail
             )
-    score = score_replay(manifest, records)
-    if score["counts"]["correct"] != len(result.sorted_ids):
-        raise ValueError("logical replay disagrees with original task outcome")
+    score_replay(manifest, records)
     return (
         manifest,
         records,

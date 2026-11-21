@@ -2,12 +2,16 @@
 
 import copy
 import json
+from dataclasses import replace
 
 import pytest
 
+from raftel_arm01.config import load_config
 from raftel_arm01.evaluation.benchmark import canonical_sha256, logical_layout, summarize_runs
 from raftel_arm01.evaluation.cli import main
 from raftel_arm01.evaluation.replay import read_manifest, score_replay, wilson_interval
+from raftel_arm01.models import Position
+from raftel_arm01.tasks import sorter
 
 
 def test_seeded_adapter_preserves_original_results_and_provenance():
@@ -27,6 +31,33 @@ def test_seeded_adapter_preserves_original_results_and_provenance():
     assert metadata["events_canonical_sha256"] == canonical_sha256(events)
     assert "tasks/sorter.py" in metadata["inputs"]["implementation"]["installed_file_sha256"]
     assert logical_layout(43)[2]["input_canonical_sha256"] != metadata["input_canonical_sha256"]
+
+
+@pytest.mark.parametrize("in_declared_bin", [True, False])
+def test_replay_uses_backend_placement_instead_of_expected_category(monkeypatch, in_declared_bin):
+    config = load_config()
+    alternate = config.bins[1]
+    placement = alternate.position if in_declared_bin else Position(0, 0.27, 0.02)
+    correct_planner = sorter.plan
+
+    def misroute(obj, config):
+        above = placement.above(config.clearance_m)
+        return replace(
+            correct_planner(obj, config), transit=above, placement=placement, retreat=above
+        )
+
+    monkeypatch.setattr(sorter, "plan", misroute)
+    manifest, events, metadata = logical_layout(42, count=1, config=config)
+    report = score_replay(manifest, events)
+    assert metadata["original_summary"]["sorted"] == 1
+    assert report["counts"]["correct"] == 0
+    assert report["counts"]["failed_attempts"] == 1
+    if in_declared_bin:
+        assert report["counts"]["misroutes"] == 1
+        assert events[-1]["observed_bin"] == alternate.category
+    else:
+        assert events[-1]["event"] == "failed"
+        assert "observed_bin" not in events[-1]
 
 
 def test_layout_summary_pools_counts_and_bootstraps_whole_layouts():

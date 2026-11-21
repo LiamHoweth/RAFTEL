@@ -10,6 +10,8 @@ from collections.abc import Iterable, Mapping
 from dataclasses import dataclass
 from pathlib import Path
 
+from raftel_arm01._validation import unique_object
+
 EVIDENCE_CLASSES = frozenset(
     {"logical_only", "kinematic_simulation", "physics_simulation", "physical"}
 )
@@ -322,14 +324,6 @@ def score_replay(manifest: RunManifest | Mapping, events: Iterable[Mapping]) -> 
 
 
 def _json_object(raw: bytes) -> dict:
-    def pairs(items):
-        result = {}
-        for key, value in items:
-            if key in result:
-                raise ValueError(f"duplicate JSON key: {key}")
-            result[key] = value
-        return result
-
     def number(value):
         parsed = float(value)
         if not math.isfinite(parsed):
@@ -342,7 +336,7 @@ def _json_object(raw: bytes) -> dict:
     try:
         record = json.loads(
             raw.decode("utf-8"),
-            object_pairs_hook=pairs,
+            object_pairs_hook=unique_object,
             parse_float=number,
             parse_constant=invalid_constant,
         )

@@ -20,9 +20,10 @@ raftel-evaluate --help
 ```
 
 Use `arm-01/.venv/bin/python` as the interpreter in your editor. Runtime uses the
-standard library; pytest/Ruff and the build backend use the repository's pinned
-versions. `make setup` and wheel building may access the package index. Installed
-sorter/evaluation commands and offline engineering studies need no network,
+standard library. The development lock pins pytest, Ruff, their applicable
+dependencies and the build backend. `make setup` uses the package index. The
+verifier builds the wheel using the installed backend with index acquisition
+disabled. Installed sorter/evaluation commands and offline engineering studies need no network,
 camera, GPU or robotics middleware. The wheel smoke check installs with
 `--no-index --no-deps` into a temporary environment and verifies all packaged
 modules, defaults and both CLIs' success/failure/invalid-input behavior.

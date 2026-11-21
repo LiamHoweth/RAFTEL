@@ -152,13 +152,13 @@ def test_duplicate_ids_rejected_before_motion():
     assert arm.position is None
 
 
-@pytest.mark.parametrize("value", [float("nan"), float("inf"), -float("inf")])
-def test_nonfinite_positions_rejected(value):
+@pytest.mark.parametrize("value", [float("nan"), float("inf"), -float("inf"), True, "1", 10**400])
+def test_non_real_or_nonfinite_positions_rejected(value):
     with pytest.raises(ValueError, match="finite"):
         Position(value, 0, 0)
 
 
-@pytest.mark.parametrize("mass", [0, -1, float("nan"), float("inf")])
+@pytest.mark.parametrize("mass", [0, -1, float("nan"), float("inf"), True, "0.02", 10**400])
 def test_invalid_mass_rejected(mass):
     with pytest.raises(ValueError):
         ObjectPose("test", "red", Position(0, 0.2, 0), mass)
@@ -171,6 +171,7 @@ def test_invalid_mass_rejected(mass):
         {"max_payload_kg": 0},
         {"min_z_m": 1},
         {"max_radius_m": float("nan")},
+        {"max_payload_kg": True},
     ],
 )
 def test_invalid_envelopes_rejected(kwargs):
@@ -186,6 +187,7 @@ def test_invalid_envelopes_rejected(kwargs):
         {"max_attempts": 1.5},
         {"clearance_m": -1},
         {"clearance_m": float("nan")},
+        {"clearance_m": True},
         {"bins": ()},
     ],
 )
@@ -201,6 +203,15 @@ def test_bin_approach_checked():
         replace(config, bins=invalid_bins)
 
 
+def test_bin_positions_uniquely_identify_logical_placements():
+    config = load_config()
+    first, second, third = config.bins
+    assert config.bin_at(first.position) == first
+    assert config.bin_at(first.position.above(config.clearance_m)) is None
+    with pytest.raises(ValueError, match="distinct positions"):
+        replace(config, bins=(first, replace(second, position=first.position), third))
+
+
 def test_config_roundtrip_and_frame_validation(tmp_path):
     from importlib.resources import files
 
@@ -212,6 +223,51 @@ def test_config_roundtrip_and_frame_validation(tmp_path):
     path.write_text(json.dumps(data))
     with pytest.raises(ValueError, match="frame"):
         load_config(path)
+
+
+@pytest.mark.parametrize(
+    "change, error",
+    [
+        (lambda data: data["bins"][0].update(label="ignored before"), "category and position"),
+        (lambda data: data["bins"][0]["position"].update(x=True), "position coordinate"),
+        (lambda data: data["bins"][0]["position"].update(x=10**400), "position coordinate"),
+        (lambda data: data["bins"][0]["position"].update(frame="camera"), "x, y and z"),
+        (lambda data: data.update(bins="wrong shape"), "three sorting bins"),
+    ],
+)
+def test_invalid_nested_config_is_an_input_error(tmp_path, capsys, change, error):
+    from importlib.resources import files
+
+    raw = files("raftel_arm01").joinpath("defaults.json").read_text(encoding="utf-8")
+    data = json.loads(raw)
+    change(data)
+    path = tmp_path / "config.json"
+    path.write_text(json.dumps(data), encoding="utf-8")
+    assert main(["--config", str(path)]) == 2
+    captured = capsys.readouterr()
+    assert error in captured.err
+    assert not captured.out
+
+
+def test_duplicate_config_keys_rejected_even_when_last_value_is_valid(tmp_path):
+    from importlib.resources import files
+
+    raw = files("raftel_arm01").joinpath("defaults.json").read_text(encoding="utf-8")
+    path = tmp_path / "config.json"
+    path.write_text(raw.replace('"x": -0.23', '"x": 1e309, "x": -0.23'), encoding="utf-8")
+    with pytest.raises(ValueError, match="duplicate JSON key: x"):
+        load_config(path)
+
+
+def test_missing_optional_envelope_fields_keep_class_defaults(tmp_path):
+    from importlib.resources import files
+
+    raw = files("raftel_arm01").joinpath("defaults.json").read_text(encoding="utf-8")
+    data = json.loads(raw)
+    data["envelope"] = {"max_payload_kg": 0.2}
+    path = tmp_path / "config.json"
+    path.write_text(json.dumps(data), encoding="utf-8")
+    assert load_config(path).envelope == Envelope(max_payload_kg=0.2)
 
 
 def test_plan_tracks_changed_object_pose():
@@ -274,10 +330,16 @@ def test_custom_categories_drive_synthetic_detection(tmp_path, capsys, categorie
     assert summary["sorted"] == 3 and summary["skipped"] == 0
 
 
-@pytest.mark.parametrize("count", [-1, 0, 1001])
+@pytest.mark.parametrize("count", [-1, 0, 1001, True, 2.5])
 def test_synthetic_count_limits(count):
     with pytest.raises(ValueError):
         generate_objects(1, count)
+
+
+@pytest.mark.parametrize("kwargs", [{"unreachable": 1}, {"categories": "red"}])
+def test_invalid_synthetic_inputs_reject_implicit_boolean_and_string_iteration(kwargs):
+    with pytest.raises(ValueError):
+        generate_objects(1, **kwargs)
 
 
 def test_empty_scene_finishes_without_motion():

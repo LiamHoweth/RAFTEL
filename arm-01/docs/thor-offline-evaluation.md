@@ -58,10 +58,11 @@ record provenance or correct observations.
 
 ## Logical adapter and uncertainty
 
-The adapter reuses `generate_objects`, the existing point-envelope planner,
-`MockArm` and `Sorter`; it does not introduce another task controller. All
-synthetic objects are detected, eligibility is computed before execution, and
-existing retry/terminal outcomes become explicitly logical replay observations.
+The adapter uses `generate_objects`, the point-envelope planner, `MockArm` and
+`Sorter`. All synthetic objects are detected, and eligibility is computed before
+execution. After a completed placement, the simulated observer resolves the
+recorded mock position to a configured bin. A different configured bin is
+reported as a misroute even when the task reports completion.
 Input hashes cover the expanded configuration, scene, injected faults and exact
 installed source-file hashes; manifest/event canonical hashes accompany each run.
 The scorer CLI hashes its validated manifest model and parsed event list, avoiding

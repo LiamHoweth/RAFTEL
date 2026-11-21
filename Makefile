@@ -15,7 +15,7 @@ help:
 
 setup:
 	python3 -m venv arm-01/.venv
-	"$(PYTHON)" -m pip install -r arm-01/requirements-dev.lock -e 'arm-01[dev]'
+	"$(PYTHON)" -m pip install --only-binary :all: -r arm-01/requirements-dev.lock -e 'arm-01[dev]'
 
 verify:
 	/bin/sh scripts/verify.sh

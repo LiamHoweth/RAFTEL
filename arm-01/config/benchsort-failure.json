@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "frame": "arm_base",
+  "objects": [
+    {
+      "identifier": "blue-at-edge",
+      "category": "blue",
+      "position": {"x": 0.28, "y": 0.2, "z": 0.02},
+      "mass_kg": 0.02
+    },
+    {
+      "identifier": "green-overweight",
+      "category": "green",
+      "position": {"x": 0, "y": 0.19, "z": 0.02},
+      "mass_kg": 0.12
+    },
+    {
+      "identifier": "red-outside",
+      "category": "red",
+      "position": {"x": 0, "y": 0.7, "z": 0.02},
+      "mass_kg": 0.02
+    },
+    {
+      "identifier": "red-retry",
+      "category": "red",
+      "position": {"x": -0.1, "y": 0.23, "z": 0.02},
+      "mass_kg": 0.02
+    }
+  ]
+}

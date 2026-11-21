@@ -1,7 +1,9 @@
 """SI-unit task models; positions are in the stationary arm_base frame."""
 
 from dataclasses import dataclass
-from math import dist, isfinite
+from math import dist
+
+from raftel_arm01._validation import finite
 
 
 @dataclass(frozen=True)
@@ -11,8 +13,8 @@ class Position:
     z: float
 
     def __post_init__(self) -> None:
-        if not all(isfinite(v) for v in (self.x, self.y, self.z)):
-            raise ValueError("position must contain finite metres")
+        for coordinate in (self.x, self.y, self.z):
+            finite(coordinate, "position coordinate in metres")
 
     def distance(self, other: "Position") -> float:
         return dist((self.x, self.y, self.z), (other.x, other.y, other.z))
@@ -36,11 +38,19 @@ class ObjectPose:
             or not self.category.strip()
         ):
             raise ValueError("object ID and category must be nonempty")
-        if not isfinite(self.mass_kg) or self.mass_kg <= 0:
-            raise ValueError("mass must be finite and positive")
+        if not isinstance(self.position, Position):
+            raise ValueError("object position must be a Position in arm_base")
+        if finite(self.mass_kg, "mass in kilograms") <= 0:
+            raise ValueError("mass must be positive")
 
 
 @dataclass(frozen=True)
 class Bin:
     category: str
     position: Position
+
+    def __post_init__(self) -> None:
+        if not isinstance(self.category, str) or not self.category.strip():
+            raise ValueError("bin category must be a nonempty string")
+        if not isinstance(self.position, Position):
+            raise ValueError("bin position must be a Position in arm_base")

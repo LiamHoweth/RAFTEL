@@ -7,10 +7,10 @@ The first implementation is a lightweight Python task prototype. It accepts synt
 | Area | Location | Responsibility |
 | --- | --- | --- |
 | Models | `src/raftel_arm01/models.py` | Small typed object, bin and position values using explicit SI units |
-| Configuration | `src/raftel_arm01/config.py`, `defaults.json` | Load and validate structured scenario/bin settings |
+| Configuration and scenes | `src/raftel_arm01/config.py`, `defaults.json`, `scene.py` | Validate bin and workspace settings, duplicate keys, explicit scene version and frame, and finite SI inputs |
 | Safety screening | `src/raftel_arm01/safety/envelope.py` | Validate positions and the mock operating envelope; no physical safety certification |
 | Hardware interface | `src/raftel_arm01/control/interface.py` | Backend contract for abstract arm operations and outcome reporting |
-| Mock control | `src/raftel_arm01/control/mock.py` | Deterministic logical motion/grasp/place behavior and injected failures |
+| Mock control | `src/raftel_arm01/control/mock.py` | Deterministic logical motion/grasp/place behavior, injected failures and resulting placement positions |
 | Synthetic observations | `src/raftel_arm01/perception/synthetic.py` | Seeded object positions/categories; no camera or image interpretation |
 | Planning | `src/raftel_arm01/planning/sorting.py` | Category/bin routing, reachable-target screening and abstract waypoints |
 | Nominal Thor FK | `src/raftel_arm01/kinematics/thor_model.py` | Pinned source forward transforms; native zero-pose axis-line cross-check, no calibrated limits or IK |
@@ -20,8 +20,9 @@ The first implementation is a lightweight Python task prototype. It accepts synt
 | Conditional physical transmissions | `src/raftel_arm01/kinematics/thor_transmission.py` | Explicit wrist shaft signs and elbow carrier forward/inverse coordinates with virtual-work effort maps; no calibrated addresses |
 | Ideal jaw linkage | `src/raftel_arm01/kinematics/thor_gripper.py` | Conditional parallelogram geometry and derivatives; saved native loop closure and servo calibration remain unresolved |
 | Task execution | `src/raftel_arm01/tasks/sorter.py` | Sorting progression, bounded handling of failures and recorded outcomes |
-| Sorting CLI | `src/raftel_arm01/cli.py` | Logical scenario setup, structured events and run summary |
-| Evaluation CLI | `src/raftel_arm01/evaluation/cli.py` | Separate observation scoring and seeded logical benchmark commands; no physical reliability claim |
+| Sorting CLI and reports | `src/raftel_arm01/cli.py`, `demo.py`, `demo_svg.py` | Run the existing task on seeded or supplied objects. Export task events, structured outcome evidence and an XY projection. |
+| Evaluation | `src/raftel_arm01/evaluation/` | Score observation replay and benchmark seeded logical layouts using mock placement positions as the synthetic observer. |
+| Learning experiment | `src/raftel_arm01/learning.py` | Fit and score a one-step classifier against logical planner decisions on disjoint scenes. Predictions stay within the experiment. |
 
 The exact tested behavior and entry-point options are established by code, tests, CLI help, and [nextSteps.md](../../nextSteps.md). Implementation and validation may evolve together; do not infer functionality from a planned layer name.
 
@@ -30,12 +31,14 @@ The exact tested behavior and entry-point options are established by code, tests
 ```mermaid
 flowchart LR
   Config[Validated configuration] --> Planner[Sorting planner]
-  Scene[Synthetic observations] --> Task[Sorting task]
+  Scene[Seeded or supplied observations] --> Task[Sorting task]
   Task --> Planner
   Planner --> Screening[Envelope screening]
   Task --> Arm[Arm interface]
   Arm --> Mock[Mock backend]
   Task --> Events[Structured events and outcomes]
+  Mock --> Report[Logical run report and XY projection]
+  Events --> Report
 ```
 
 Object observations supply pickup positions; configured bins supply destination positions. A real observer must later transform calibrated camera observations into the same robot-relative frame and expose uncertainty. Selection and sorting behavior should not need a camera-specific or actuator-specific rewrite.
@@ -64,7 +67,7 @@ The synthetic `arm_base` frame remains separate from the nominal Thor source `ba
 2. Build on the existing offline kinematics, constraint validators and quintic trajectory representation. Establish accepted source-body/obstacle bindings and physical frame/limit inputs before integrating paths with task execution; preserve logical sorting tests.
 3. Add camera capture/calibration and simple object detection using NumPy/OpenCV when needed. Validate pose error and transform directions against known measurements.
 4. On an independently validated hardware platform, add an explicitly armed driver with calibration, feedback freshness, velocity/current constraints, fault latching and independent motor-stop protection.
-5. Evaluate ROS 2 Jazzy and MoveIt 2 for integration after the robot model is stable. Prefer a Linux/Ubuntu integration environment; keep the core mock package portable. Add LeRobot separately for recording, teleoperation or policy experiments when appropriate.
+5. Evaluate ROS 2 Jazzy and MoveIt 2 for integration after the robot model is stable. Prefer a Linux/Ubuntu integration environment and keep the core mock package portable. Use the [learning research track](learning-research.md) to define what recorded data and action interfaces are needed before selecting an integration.
 6. Introduce a physics environment only with documented model assumptions and comparison against physical measurements.
 
 No optional integration is claimed installed or functioning by this architecture. Add dependencies only when their feature, version compatibility, license and tests are concrete.
