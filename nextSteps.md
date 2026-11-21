@@ -3,8 +3,8 @@
 - **Project** ARM-01 BenchSort
 - **Current phase** Reproducible BenchSort and nominal kinematics
 - **Last updated** 2026-11-21
-- **Working branch** `codex/raftel-research-reproducibility`
-- **Publication** Local branch based on `origin/main` at `9917163`
+- **Delivery branch** `codex/raftel-research-reproducibility`
+- **Publication and merge record** [PR #21](https://github.com/LiamHoweth/RAFTEL/pull/21)
 
 ## Current handoff
 
@@ -17,8 +17,8 @@ records acceptance criteria.
 
 The portable verifier passed **2,249 tests each** on Windows CPython 3.11.18,
 3.12.16, 3.13.18 and 3.14.6, plus lint, formatting, compilation, LF, engineering
-CLI checks and offline wheel smoke tests. The GitHub-hosted matrix for this
-branch has yet to run. Local evidence is under `.work/verification` and
+CLI checks and offline wheel smoke tests. The [PR checks](https://github.com/LiamHoweth/RAFTEL/pull/21/checks) record the hosted
+matrix. Local evidence is under `.work/verification` and
 `.work/version-runs`.
 
 ### Next actions for Liam

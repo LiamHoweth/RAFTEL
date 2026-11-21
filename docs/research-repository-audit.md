@@ -76,8 +76,8 @@ the portable suite from the pinned development environment.
 | Additional engineering studies | The nominal trajectory example with documented synthetic rate limits, the offline fault injection study and the sparse Thor drive sensitivity study each produced a fresh report on Python 3.14.6. |
 | Workflow and independent review | Actionlint passed and all three GitHub Actions pins matched their upstream release refs. Independent review exercised a lean source install, 42 focused regressions and link checks. It found an invalid-scene exit-code issue and a stale documentation anchor, both fixed and retested. The final scan checked 620 relative links and local anchors. |
 
-The GitHub-hosted matrix for this branch has yet to run. This work used host
-software and retained engineering evidence. Native CAD, printer, and powered
+The [PR checks](https://github.com/LiamHoweth/RAFTEL/pull/21/checks) record the hosted
+matrix. The local run used host software and retained engineering evidence. Native CAD, printer, and powered
 robot experiments were outside this verification run.
 
 ## Remaining limitations
