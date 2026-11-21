@@ -1,6 +1,7 @@
 """Seeded known object poses, never presented as camera observations."""
 
 import random
+from collections.abc import Sequence
 
 from raftel_arm01.models import ObjectPose, Position
 
@@ -9,11 +10,20 @@ def generate_objects(
     seed: int,
     count: int = 10,
     unreachable: bool = False,
-    categories: tuple[str, ...] = ("red", "green", "blue"),
+    categories: Sequence[str] = ("red", "green", "blue"),
 ) -> list[ObjectPose]:
-    if not 1 <= count <= 1000:
-        raise ValueError("count must be 1..1000")
-    if not categories or any(not isinstance(c, str) or not c for c in categories):
+    if type(seed) is not int:
+        raise ValueError("seed must be an integer")
+    if type(count) is not int or not 1 <= count <= 1000:
+        raise ValueError("count must be integer 1..1000")
+    if type(unreachable) is not bool:
+        raise ValueError("unreachable must be boolean")
+    if (
+        not isinstance(categories, Sequence)
+        or isinstance(categories, str)
+        or not categories
+        or any(not isinstance(c, str) or not c.strip() for c in categories)
+    ):
         raise ValueError("categories must be nonempty strings")
     rng = random.Random(seed)
     objects = [

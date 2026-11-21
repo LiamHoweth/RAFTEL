@@ -1,8 +1,8 @@
 """Logical envelope guard only: not IK, joint limits, or collision checking."""
 
 from dataclasses import dataclass
-from math import isfinite
 
+from raftel_arm01._validation import finite
 from raftel_arm01.models import Position
 
 
@@ -15,17 +15,8 @@ class Envelope:
     max_payload_kg: float = 0.10
 
     def __post_init__(self) -> None:
-        if not all(
-            isfinite(v)
-            for v in (
-                self.min_radius_m,
-                self.max_radius_m,
-                self.min_z_m,
-                self.max_z_m,
-                self.max_payload_kg,
-            )
-        ):
-            raise ValueError("envelope values must be finite")
+        for field in ("min_radius_m", "max_radius_m", "min_z_m", "max_z_m", "max_payload_kg"):
+            finite(getattr(self, field), field)
         if not (
             0 <= self.min_radius_m < self.max_radius_m
             and 0 <= self.min_z_m < self.max_z_m
@@ -34,6 +25,8 @@ class Envelope:
             raise ValueError("invalid envelope bounds")
 
     def contains(self, position: Position) -> bool:
+        if not isinstance(position, Position):
+            raise ValueError("envelope position must be a Position in arm_base")
         radius = position.distance(Position(0, 0, 0))
         return (
             self.min_radius_m <= radius <= self.max_radius_m
