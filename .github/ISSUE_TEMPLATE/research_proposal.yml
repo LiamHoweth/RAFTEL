@@ -1,0 +1,22 @@
+name: Research or engineering proposal
+description: Propose a bounded experiment, design change, or contribution.
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective and scope
+      description: Explain the question, relevant roadmap milestone, and existing work this extends.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Method and acceptance criteria
+      description: List the inputs, evidence class, measurable result, and failure criteria.
+    validations:
+      required: true
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints and open decisions
+      description: Include assumptions, upstream obligations, dependencies, hardware gates, or prerequisites as applicable.

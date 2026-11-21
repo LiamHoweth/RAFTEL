@@ -17,7 +17,7 @@ def fixture(tmp_path, *, mutation=None):
     prefix = "raftel_arm01-0.1.0.dist-info/"
     files = {
         prefix + "METADATA": (
-            'Name: raftel-arm01\nVersion: 0.1.0\nRequires-Dist: pytest==8.4.2; extra == "dev"\n'
+            'Name: raftel-arm01\nVersion: 0.1.0\nRequires-Dist: pytest==9.0.3; extra == "dev"\n'
         ),
         prefix + "entry_points.txt": (
             "[console_scripts]\nraftel-sort = raftel_arm01.cli:main\n"

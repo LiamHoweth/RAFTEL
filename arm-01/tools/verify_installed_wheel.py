@@ -54,7 +54,7 @@ def inspect_wheel_bytes(wheel_bytes: bytes) -> dict:
             raise ValueError("wheel metadata identity must be unambiguous")
         if metadata["Name"] != "raftel-arm01" or metadata["Version"] != "0.1.0":
             raise ValueError("unexpected wheel identity/version")
-        allowed = {'pytest==8.4.2; extra == "dev"', 'ruff==0.14.4; extra == "dev"'}
+        allowed = {'pytest==9.0.3; extra == "dev"', 'ruff==0.14.4; extra == "dev"'}
         requirements = metadata.get_all("Requires-Dist", [])
         if set(requirements) - allowed:
             raise ValueError("wheel introduces unexpected/runtime dependencies")
@@ -174,7 +174,21 @@ def verify_wheel(wheel: Path, run_dir: Path, *, timeout_s: int = 120) -> dict:
         raise ValueError("smoke imported a module outside the fresh wheel environment")
     sorter = binary / ("raftel-sort" + suffix)
     evaluator = binary / ("raftel-evaluate" + suffix)
-    result = run("installed_sorter", [str(sorter), "--seed", "42", "--count", "10"], 0)
+    result = run(
+        "installed_sorter",
+        [
+            str(sorter),
+            "--seed",
+            "42",
+            "--count",
+            "10",
+            "--report",
+            "benchsort.json",
+            "--svg",
+            "benchsort.svg",
+        ],
+        0,
+    )
     summary = json.loads(result.strip().splitlines()[-1])
     if summary != {
         "simulation": "logical_only",
@@ -185,6 +199,11 @@ def verify_wheel(wheel: Path, run_dir: Path, *, timeout_s: int = 120) -> dict:
         "pending": 0,
     }:
         raise ValueError("unexpected installed logical sorter outcome")
+    report = json.loads((run_dir / "benchsort.json").read_text(encoding="utf-8"))
+    if report["summary"] != summary or report["evidence_class"] != "logical_only":
+        raise ValueError("unexpected installed BenchSort report")
+    if not (run_dir / "benchsort.svg").is_file():
+        raise ValueError("missing installed BenchSort illustration")
     run("installed_sorter_failure", [str(sorter), "--seed", "42", "--fail-grasp", "object-00"], 1)
     run("installed_sorter_invalid_input", [str(sorter), "--count", "0"], 2)
     result = run(
@@ -210,6 +229,27 @@ def verify_wheel(wheel: Path, run_dir: Path, *, timeout_s: int = 120) -> dict:
         1,
     )
     run("installed_evaluator_invalid_input", [str(evaluator), "benchmark", "--layouts", "0"], 2)
+    research_command = [
+        str(python),
+        "-I",
+        "-m",
+        "raftel_arm01.learning",
+        "--train-seed",
+        "42",
+        "--train-layouts",
+        "3",
+        "--eval-seed",
+        "1000",
+        "--eval-layouts",
+        "2",
+    ]
+    learning = run("installed_learning_baseline", research_command, 0)
+    learning_repeat = run("installed_learning_baseline_repeat", research_command, 0)
+    if learning != learning_repeat:
+        raise ValueError("installed learning baseline results changed for identical inputs")
+    if json.loads(learning)["evidence_class"] != "synthetic_logical_screening":
+        raise ValueError("unexpected installed learning evidence class")
+    (run_dir / "learning-baseline.json").write_text(learning, encoding="utf-8", newline="\n")
     if hashlib.sha256(read_wheel(staged_wheel)).hexdigest() != identity["wheel_sha256"]:
         raise ValueError("staged wheel bytes changed during verification")
     report = {
@@ -224,7 +264,7 @@ def verify_wheel(wheel: Path, run_dir: Path, *, timeout_s: int = 120) -> dict:
         "hardware_or_native_cad_validation": False,
     }
     (run_dir / "verification.json").write_text(
-        json.dumps(report, indent=2) + "\n", encoding="utf-8"
+        json.dumps(report, indent=2) + "\n", encoding="utf-8", newline="\n"
     )
     return report
 

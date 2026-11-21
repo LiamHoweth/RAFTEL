@@ -1,45 +1,40 @@
 name: ARM-01 software
 on:
   push:
+    branches: [main]
   pull_request:
   workflow_dispatch:
 permissions:
   contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   test:
     runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
     strategy:
+      fail-fast: false
       matrix:
         os: [ubuntu-latest, windows-latest]
         python-version: ['3.11', '3.12', '3.13', '3.14']
-    defaults:
-      run:
-        working-directory: arm-01
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
         with:
           python-version: ${{ matrix.python-version }}
-      - run: python -m pip install -r requirements-dev.lock -e '.[dev]'
-      - run: ruff check .
-      - run: ruff format --check .
-      - run: python -m compileall -q src
-      - run: python tools/check_evidence_line_endings.py
-      - run: python -m pytest
-      - run: raftel-sort --seed 42 --log demo.jsonl
-      - run: raftel-evaluate benchmark --seed 42 --layouts 10 --output logical-evaluation-ci.json
-      - run: python tools/engineering_analysis.py
-      - run: python tools/thor_load_analysis.py --cad-inventory hardware/cad/thor-mounted-geometry.json --output thor-load-ci.json
-      - run: python tools/thor_load_analysis.py --cad-inventory hardware/cad/thor-mounted-geometry.json --compare-materials --output thor-material-ci.json
-      - run: python tools/thor_load_analysis.py --cad-inventory hardware/cad/thor-mounted-geometry.json --wrist-membership hardware/cad/thor-wrist-membership.json --output thor-wrist-ci.json
-      - run: python tools/thor_load_analysis.py --cad-inventory hardware/cad/thor-mounted-geometry-v2.json --wrist-membership hardware/cad/thor-wrist-membership-v2.json --output thor-wrist-v2-ci.json
-      - run: python tools/thor_elbow_loads.py --load-study hardware/cad/thor-load-study.json --drum-pitch-radius-mm 37 --carrier-coupling 1 --belt-sign 1 --shoulder-b-fraction 0.5 --geometry-evidence "Explicit CAD-surface-radius scenario; not calibrated pitch radius" --output thor-elbow-ci.json
-      - run: python tools/thor_art1_diagnostics.py history hardware/cad/thor-art1-migration-evidence.json --output thor-art1-ci.json
-      - run: python tools/thor_jaw_reconciliation.py --check-ledger hardware/cad/thor-jaw-body-ledger.json
-      - run: python tools/thor_kinematics.py --output thor-kinematics-ci.json
-      - run: python tools/thor_scenario_analysis.py config/thor-scenario-v1.json --output thor-scenario-ci.json
-      - run: python tools/thor_controller_replay.py --calibration config/thor-calibration-template.json --output thor-controller-ci.json
-      - run: python tools/thor_fabrication_assets.py --validate-records hardware/measurements/thor-fabrication-template.json --output thor-fabrication-ci.json
-      - run: python tools/review_desktop_evidence.py --math-checks --output desktop-evidence-ci.json
-      - run: python -m pip wheel --no-deps --wheel-dir wheel-ci .
-      - run: python tools/verify_installed_wheel.py --wheel wheel-ci/raftel_arm01-0.1.0-py3-none-any.whl --run-dir wheel-offline-ci
+      - name: Install pinned development dependencies
+        run: >-
+          python -m pip install --only-binary :all:
+          -r arm-01/requirements-dev.lock -e 'arm-01[dev]'
+      - name: Run tests, studies and offline wheel checks
+        run: python scripts/verify.py --output-root '${{ runner.temp }}/raftel-verification'
+      - name: Retain verification evidence
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6.0.0
+        with:
+          name: arm01-${{ matrix.os }}-py${{ matrix.python-version }}
+          path: ${{ runner.temp }}/raftel-verification/
+          if-no-files-found: error
+          retention-days: 14
