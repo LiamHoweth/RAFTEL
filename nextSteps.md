@@ -1,11 +1,49 @@
 # RAFTEL — Engineering Next Steps
 
-**Project:** ARM-01 BenchSort
-**Current phase:** Phase 1 — CAD-derived engineering foundation and design gates
-**Last updated:** 2026-11-12 (Mac workflow setup)
-**Overall status:** In Progress
+- **Project** ARM-01 BenchSort
+- **Current phase** Reproducible BenchSort and nominal kinematics
+- **Last updated** 2026-11-21
+- **Working branch** `codex/raftel-research-reproducibility`
+- **Publication** Local branch based on `origin/main` at `9917163`
 
-## Mac workflow setup — November 12
+## Current handoff
+
+The branch adds a repeatable logical demo with explicit scenes, JSON and an SVG
+projection, plus independent scoring of mock placements against logical bins.
+The separate learning experiment fits a classifier to planner decisions on
+synthetic examples and scores held-out layouts. Read the [technical audit](docs/research-repository-audit.md)
+for verification and remaining gates. The [research roadmap](docs/roadmap.md)
+records acceptance criteria.
+
+The portable verifier passed **2,249 tests each** on Windows CPython 3.11.18,
+3.12.16, 3.13.18 and 3.14.6, plus lint, formatting, compilation, LF, engineering
+CLI checks and offline wheel smoke tests. The GitHub-hosted matrix for this
+branch has yet to run. Local evidence is under `.work/verification` and
+`.work/version-runs`.
+
+### Next actions for Liam
+
+1. Review the [license decision checklist](docs/licensing.md) and select the
+   scope and license for original software once third-party material is accounted for.
+2. Measure the bench, desk thickness and material, rear clamp clearance and
+   camera mounting clearance. These constrain the mount and workspace registration.
+3. Review the [draft hardware work](https://github.com/LiamHoweth/RAFTEL/pull/19)
+   separately, including its print observations and remaining Art1 and wrist
+   gates. Record actual nozzle and material evidence before a fabrication decision.
+
+### Next engineering actions
+
+1. Publish a versioned nominal `base_link` target set with FK/IK residual thresholds,
+   solver seeds and preserved singular or limit failures. Use the
+   [spatial contract](arm-01/docs/thor-spatial-kinematics.md) and keep the logical
+   scene frame separate until a measured registration exists.
+2. Obtain independent full-chain and nonzero wrist witnesses, then bind accepted
+   moving geometry to the declared collision model. Reconcile draft PR #19 in
+   its own review before using results from that work as an integrated baseline.
+3. Track Art1 editability, wrist/jaw contact, elbow pitch and retention, actuator
+   capacity and print fit against the [design and commissioning gates](docs/roadmap.md#physical-dependencies).
+
+## Mac workflow setup · November 12, historical
 
 The portable development workflow is now configured in
 `/Users/howeth/Desktop/claudex/RAFTEL`; see [usage](docs/mac-setup.md) and
@@ -16,33 +54,27 @@ engineering CLI checks pass. Fresh offline wheel imports 45 modules and verifies
 both CLIs' exit 0/1/2 behavior. Reused FreeCAD 1.1.4 completes changed recompute
 with **53 documents / 3,001 objects all Up-to-date**, shape scope `none`, no audit
 errors; all 703 checked source/copy/addon files are unchanged. About 53 GiB is
-free. Evidence is retained under ignored `.work`; local native paths are in
-ignored `.raftel-local.mk`. Setup work is published on `codex/mac-workflow-setup`
-in [PR #20](https://github.com/LiamHoweth/RAFTEL/pull/20), which records current
-CI and merge status; the owner authorized merging after all checks pass.
-The eight-job Linux/Windows Python 3.11–3.14 PR matrix passed on exact head
-`34c3ec23a29ee09aa393cf19e65da79c1b4cf5ed` in
-[run 43275771024](https://github.com/LiamHoweth/RAFTEL/actions/runs/43275771024).
-The duplicate push run completed every step successfully but stalled in GitHub
-job finalization; cancellation was requested. This documentation checkpoint
-triggers fresh checks, which must pass before merge.
-No engineering backlog, hardware, ROS, camera or printer
-integration was started; the next design actions below remain open.
+free. Evidence is retained under ignored `.work`. Native paths are in
+ignored `.raftel-local.mk`. [PR #20](https://github.com/LiamHoweth/RAFTEL/pull/20)
+merged as `8223f1d` after both Linux/Windows Python 3.11–3.14 matrices passed
+on exact head `0d559e9`. [PR checks](https://github.com/LiamHoweth/RAFTEL/actions/runs/43277961844)
 
-## Current Objective
+## November 11–12 desktop record
+
+### Objective at the prior handoff
 Continue all three design gates: wrist handedness/moving masses/jaw articulation, elbow pitch/routing/controller compensation and actuator capacity, and dimensioned fabrication interfaces/source editability. Preserve source CAD and previous reports; produce revised evidence where the expanded audit finds omissions. The analysis baseline does not establish physical performance, safe payload, printable-part release or repaired original Art1 history.
 
-## Next 3 Actions for Liam
+### Owner actions recorded at the prior handoff
 1. Measure bench dimensions, desk thickness/material, rear clamp clearance and camera mounting clearance. These determine the removable mount and reachable workstation layout.
 2. Printer identified: **Anycubic Kobra 3 Max**, nominal **420 × 420 × 500 mm** build volume. Provide actual nozzle/slicer profile and PLA/PETG/ABS brands; see [fabrication record](arm-01/hardware/fabrication.md). All three material families are confirmed available; actual densities, sliced part masses, dimensional fit and printed strength remain unverified.
 3. Review [load assumptions](arm-01/docs/thor-load-analysis.md), [material comparison](arm-01/hardware/cad/thor-material-comparison.json) and [incomplete Thor cost study](arm-01/hardware/thor-cost-study.md) before any purchase or fabrication decision. No orders or powered tests are approved by these calculations.
 
-## Next Steps for Codex
+### Prior agent handoff
 
 The owner requested wrap-up at approximately **01:21 UTC November 12**, ending
 the original seven-hour work budget early. All specialist implementation work is
-closed. This turn completes documentation, verified publication and repository
-synchronization; no autonomous continuation is scheduled. See the
+closed. That effort completed documentation, verified publication and repository
+synchronization. See the
 [desktop run record](docs/arm01-desktop-run-2026-11-11.md) for implemented results,
 test/native evidence, merged checkpoints and unresolved gates. The final reply
 and retained `.work/desktop-run-closeout.json` include elapsed closeout time and
@@ -50,13 +82,15 @@ the final synchronized Git/CI state.
 
 ### Next three executable actions
 
+These November 11 actions are retained for the historical readings that cited them.
+
 1. Once the desktop is awake/unlocked, follow the [Anycubic inspection record](arm-01/docs/thor-anycubic-desktop-planning.md): verify one small model's scale, import the reviewed eight-copy draft, inspect eight identities/placements, and save a fresh local `DRAFT_` project with observed software selectors/warnings. If capture remains unavailable, retain the exact failure and proceed to action 2. No upload or printer action.
 2. Prepare a fresh copied Art1 study from the [typed support evidence](arm-01/docs/thor-art1-semantic-supports.md) and [migration gate](arm-01/docs/thor-art1-editability-gate.md). Collect actual attachment-engine/parameter-return witnesses against the documented failed A6 return, preserving originals, current schema names and every raw metric; do not remap raw indices or waive acceptance.
 3. Extend one copied native wrist-coordinate marker/body-frame experiment from `arm-01/tools/probe_thor_pose_frames_desktop.py` and the [spatial contract](arm-01/docs/thor-spatial-kinematics.md). Authenticate source/link identities and fresh nonzero wrist frames before using them in full-body screening; cached boxes and nominal IK do not certify clearance. Serialize native runs and preserve all input hashes.
 
 ### Desktop run wrap-up — 2026-11-11
 
-**Current integrated baseline:** main 5291a57fea82eccb3ec7bf22df97163b5985a76c, through merged [PR #17](https://github.com/LiamHoweth/RAFTEL/pull/17). Exact head 67b8317f521d31db7c30120c1456945fe9b8af77 passed all eight Linux/Windows Python 3.11–3.14 jobs in [run 43131396938](https://github.com/LiamHoweth/RAFTEL/actions/runs/43131396938). Local snapshot: **2,200 tracked tests** plus lint/format/compile/LF checks. Current working branch: codex/arm01-desktop-run-record. Production implementation is frozen. The separate ignored eight-object generic inspection plate and tracked receipt are independently accepted for artifact scope; live Anycubic import/save/slicing remains pending desktop-ready confirmation. The entries below retain chronological checkpoint evidence.
+**Baseline at that checkpoint:** main 5291a57fea82eccb3ec7bf22df97163b5985a76c, through merged [PR #17](https://github.com/LiamHoweth/RAFTEL/pull/17). Exact head 67b8317f521d31db7c30120c1456945fe9b8af77 passed all eight Linux/Windows Python 3.11–3.14 jobs in [run 43131396938](https://github.com/LiamHoweth/RAFTEL/actions/runs/43131396938). Local snapshot: **2,200 tracked tests** plus lint/format/compile/LF checks. Working branch at that checkpoint: codex/arm01-desktop-run-record. The separate ignored eight-object generic inspection plate and tracked receipt are independently accepted for artifact scope; live Anycubic import/save/slicing was pending at that point. The entries below retain chronological checkpoint evidence.
 
 - Started at **19:36:17 UTC** (13:36 America/Chicago). The original approximately-seven-hour target was superseded by the owner's wrap-up request around **01:21 UTC November 12**, after about **5h45m**. Implementation stopped; final documentation/CI/publication closeout is recorded separately from that implementation window.
 - No existing RAFTEL checkout was found on this Windows host after checking the current workspace, project/worktree locations and user-directory checkout names/origins. Created `C:\Users\howet\Desktop\claudex\RAFTEL` from current `main` **6608d37**, fetched `origin/main`, and started `codex/arm01-desktop-seven-hour`. No pre-existing local changes were replaced.

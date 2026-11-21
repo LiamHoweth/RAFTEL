@@ -1,66 +1,91 @@
 # RAFTEL
 
-RAFTEL is developing affordable, modular robots that can perform useful household chores and assist people. The long-term goal is an accessible general-purpose household robot; the current project is a stationary manipulation testbed.
+RAFTEL develops affordable, modular, repairable robots and reproducible embodied-AI experiments for household manipulation.
 
-## ARM-01 — BenchSort
+## Why RAFTEL exists
 
-[ARM-01](arm-01/README.md) targets an articulated arm with **six independent arm joints and one motorized parallel gripper**. Liam has allowed **up to eight actuators** and directed the team to **study Thor first** as the existing editable CAD baseline: seven arm motors (including a coupled shoulder drive) for six arm axes, plus one gripper motor. This supersedes the initial seven-total-actuator target. It is a study direction, not a fabrication or purchase approval. The proposed demonstration is to identify and sort ten lightweight objects, placed at variable positions, into three boxes on a workstation.
+A useful robot has to locate objects, choose grasps, move within limits and verify what happened. Housing these experiments in a documented bench platform gives students and independent researchers a way to reproduce each result and investigate where the system fails.
 
-The repository includes a runnable **logical sorting simulation** and separate offline engineering studies, including nominal spatial kinematics, bounded local IK, conditional loads and print-draft preparation. Final CAD, actuator sizing, camera perception, calibrated robot kinematics, collision-aware physical trajectories and physical validation remain engineering milestones. Design targets and research references are not verified performance specifications.
+## Current project · ARM-01 BenchSort
 
-The Thor compatibility assembly restores and recalculates with pinned addons and an exact static Art1 snapshot. The [corrected geometry inventory](arm-01/docs/thor-geometry-completeness.md) contains **518 installed solid leaves**, including two wrist belts omitted from the historical 516-leaf inventory. Source joint-axis checks and conditional mass/load scenarios are reproducible; the original Art1 feature history and physical qualification remain separate gates. The [evidence index](arm-01/docs/desktop-evidence-index.md) maps current studies to their bounded checks and unresolved inputs.
+ARM-01 is a stationary, removable bench arm designed to identify and sort ten lightweight objects from variable positions into three bins. The design calls for six independent arm axes and a motorized parallel gripper. The Thor-first CAD study allows up to eight actuators, with seven arm motors including the coupled shoulder and one gripper motor. Reach, payload and cost remain [design targets](arm-01/docs/requirements.md).
 
-Start with [nextSteps.md](nextSteps.md) for current evidence, blockers, and the next three actions for Liam and Codex. Future agents must follow [AGENTS.md](AGENTS.md).
+![Seed 42 logical sorting run, showing generated pickup locations, three bins and recorded mock destinations](docs/assets/benchsort-seed42.svg)
 
-## Run the software
+This top-down view comes from the seed-42 mock run. It shows logical routing from pickup points to configured destinations. The lines denote assignments in the report.
 
-Requires Python 3.11 or newer. No robot, camera, ROS installation, or GPU is needed.
+## Current capabilities
+
+| Evidence | Available today | Open gates |
+| --- | --- | --- |
+| Logical simulation | Seeded or supplied scenes, category routing, workspace and payload screening, mock grasp retries, recorded outcomes, JSON/JSONL/SVG export and layout benchmarks | Camera input, geometric grasp selection and observed physical outcomes |
+| Nominal kinematics | Thor frame transforms, FK, Jacobian, bounded local IK and timed quintic joint paths under declared study constraints | Calibrated frames and limits, a conservative moving-body collision model and full native articulation checks |
+| Conditional engineering studies | Provenance-linked CAD inventories, load and transmission models, saved-pose box screening, print drafts and a compatible FreeCAD assembly study | Original Art1 feature history, wrist/jaw closure, actuator capacity, fit and fabrication release |
+| Learning experiment | A classifier fitted to synthetic planner decisions, evaluated on held-out layouts against deterministic baselines | Image perception, learning a manipulation policy, physics simulation and sim-to-real evaluation |
+| Physical ARM-01 | Proposed workstation, design requirements and commissioning procedures | Reviewed hardware, independently measured motion and supervised physical sorting |
+
+See the [engineering evidence index](arm-01/docs/desktop-evidence-index.md) for study artifacts and exact limits.
+
+## Quick start
+
+Use Python 3.11–3.14. Run these commands from the cloned repository on macOS or Linux.
 
 ```sh
-cd arm-01
 python3 -m venv .venv
-. .venv/bin/activate
-python -m pip install -r requirements-dev.lock -e '.[dev]'
-raftel-sort --seed 42
-python -m pytest
-ruff check .
-ruff format --check .
-python tools/engineering_analysis.py
+.venv/bin/python -m pip install ./arm-01
+.venv/bin/raftel-sort --seed 42 --report benchsort.json --svg benchsort.svg
 ```
 
-See the [ARM-01 setup guide](arm-01/README.md) for Windows activation, configuration, failure scenarios, and evidence limits. Installing dependencies needs package-index access; the installed mock demonstration runs offline.
+Use these commands in Windows PowerShell.
 
-For the configured Mac workflow, see [Mac setup](docs/mac-setup.md). From the
-repository root, use `make demo`, `make benchmark`, `make analysis`, or
-`make verify`; `make` lists all targets, including the isolated native CAD audit.
+```powershell
+py -3 -m venv .venv
+.\.venv\Scripts\python.exe -m pip install .\arm-01
+.\.venv\Scripts\raftel-sort.exe --seed 42 --report benchsort.json --svg benchsort.svg
+```
 
-## Engineering navigation
+Open `benchsort.svg` in a browser. The default demonstration should report ten sorted objects. The [BenchSort guide](arm-01/README.md) covers custom scenes, a deliberate failure, and the multi-layout benchmark.
 
-| Topic | Document |
-| --- | --- |
-| Mission and design principles | [Vision](docs/vision.md) |
-| Phased development and acceptance gates | [Roadmap](docs/roadmap.md) |
-| Proposed requirements | [Requirements](arm-01/docs/requirements.md) |
-| Software boundaries and current implementation | [Architecture](arm-01/docs/architecture.md) |
-| Desktop implementation results and next gates | [Run record](docs/arm01-desktop-run-2026-11-11.md), [evidence index](arm-01/docs/desktop-evidence-index.md) |
-| Existing mechanical references | [Research](arm-01/docs/research.md) |
-| Reusing proven CAD | [CAD reuse plan](arm-01/docs/cad-reuse.md) |
-| Mechanical selection rationale | [Mechanical ADR](docs/architecture-decisions/0001-mechanical-starting-point.md) |
-| Compatible Thor assembly | [Compatibility baseline](arm-01/docs/thor-assembly-compatibility.md) |
-| Thor geometry and frames | [Geometry study](arm-01/docs/thor-geometry.md) |
-| Thor mass and static loads | [Load study](arm-01/docs/thor-load-analysis.md) |
-| Thor transmissions | [Transmission study](arm-01/docs/thor-transmission-study.md) |
-| Thor joint/motor coordinates | [Joint map](arm-01/docs/thor-joint-map.md) |
-| Thor native CAD evidence | [Native validation](arm-01/docs/thor-native-validation.md) |
-| Thor cost evidence | [Cost study](arm-01/hardware/thor-cost-study.md) |
-| Load estimates | [Mechanical analysis](arm-01/docs/mechanical-analysis.md) |
-| Parts and purchasing status | [Candidate BOM](arm-01/hardware/bom.md) |
-| Workstation and safety | [Workstation](arm-01/docs/workstation.md), [Safety](arm-01/docs/safety.md) |
-| Future detachable/mobile interface | [Mobile integration](arm-01/docs/mobile-integration.md) |
-| Test methods and evidence categories | [Verification plan](arm-01/docs/verification-plan.md) |
+Installing from source needs access to the pinned build backend. The installed demo runs offline using Python's standard library. No robot, camera, ROS or GPU is required.
 
-## Contribution and licensing
+## System architecture
 
-Preserve existing work, use feature branches, and keep implementation and handoff documentation together. Every physical design change needs explicit assumptions, relevant calculations, and validation appropriate to its risk. No purchases or hardware motion are authorized by the mock software.
+```mermaid
+flowchart LR
+    Scene["Seeded or explicit scene"] --> Task["Sort task"]
+    Config["Workspace, bins and limits"] --> Plan["Point and payload screening"]
+    Task --> Plan
+    Plan --> Task
+    Task --> Control["Abstract arm interface"]
+    Control --> Mock["Mock backend"]
+    Task --> Results["Events and outcomes"]
+    Mock --> Results
+    Results --> Demo["Demo report and SVG"]
+    Results --> Eval["Logical benchmark"]
 
-RAFTEL's own distribution license has not been selected. Do not assume that public source availability grants reuse rights. Upstream mechanical, firmware, and software licenses must be checked separately before importing or distributing any assets or derivatives.
+    Thor["Pinned Thor source and CAD evidence"] --> Study["Nominal kinematics and offline studies"]
+    Study -. "future calibration and validation" .-> Physical["Supervised physical integration"]
+    Control -. "future commissioned backend" .-> Physical
+```
+
+The sorter uses `arm_base` coordinates in metres. Thor studies use nominal source frames. A measured transform between those frames remains open. Physical integration requires calibrated limits, feedback, fault handling and an independent motor-energy stop. See the [software architecture](arm-01/docs/architecture.md) and [commissioning gates](arm-01/docs/safety.md).
+
+## Robotics and machine learning
+
+The mock sorter isolates task logic and recovery from hardware. The offline learner studies whether a small model can imitate the planner's logical screen/defer decision and counts false accepts on held-out scenes. It has no control authority. Future experiments need calibrated camera observations and uncertainty, versioned demonstrations, and an environment with contact and actuator dynamics. A learned proposal must pass deterministic limits and path checks before any future physical execution. [Learning research track](arm-01/docs/learning-research.md)
+
+## Research roadmap
+
+The next software milestone is to measure nominal kinematic coverage against a declared set of BenchSort targets and expose local solver failures. Mechanical and electrical acceptance proceeds through a separate set of owner-reviewed gates. The [roadmap](docs/roadmap.md) tracks reproducible simulation, validated kinematics, motion planning, perception, learning and physical ARM-01 with acceptance evidence for each.
+
+## Contributing
+
+Good starting points include reproducing the demo on another host, adding a numerical regression or prerecorded calibration fixture, and checking a Thor study against its pinned inputs. Use the [contributor guide](CONTRIBUTING.md) for setup, checks and how to report findings. The [current handoff](nextSteps.md) tracks active work and decisions.
+
+## Documentation
+
+See the [engineering documentation index](docs/README.md) for hardware, architecture, research decisions, simulations and verification.
+
+## License and attribution
+
+RAFTEL's distribution license is undecided. The repository is publicly visible and has no project-wide reuse grant. Thor and other upstream sources retain their own terms. See the [licensing review and owner checklist](docs/licensing.md) and [upstream notice inventory](arm-01/docs/desktop-third-party-notices.md).
