@@ -2,7 +2,7 @@
 
 A short reading room for staying current without losing focus on the build.
 
-**[Latest briefing: November 22, 2026](2026-11-22.md)**
+**[Latest briefing: November 23, 2026](2026-11-23.md)**
 
 ## Current focus
 
@@ -33,6 +33,7 @@ Aim for a five-minute read. Fewer strong items are better than a padded news fee
 
 ## Archive
 
+- [2026-11-23: Test the space between the poses](2026-11-23.md)
 - [2026-11-22: Separate planner agreement from task success](2026-11-22.md)
 - [2026-11-21: Pin the draft without calling it released](2026-11-21.md)
 - [2026-11-20: Ask what the controller can actually observe](2026-11-20.md)
