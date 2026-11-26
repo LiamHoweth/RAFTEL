@@ -2,7 +2,7 @@
 
 A short reading room for staying current without losing focus on the build.
 
-**[Latest briefing: November 25, 2026](2026-11-25.md)**
+**[Latest briefing: November 26, 2026](2026-11-26.md)**
 
 ## Current focus
 
@@ -33,6 +33,7 @@ Aim for a five-minute read. Fewer strong items are better than a padded news fee
 
 ## Archive
 
+- [2026-11-26: Count the object that stays in the bin](2026-11-26.md)
 - [2026-11-25: Tell a hidden object from a visible one](2026-11-25.md)
 - [2026-11-24: Make one demonstration replayable before training](2026-11-24.md)
 - [2026-11-23: Test the space between the poses](2026-11-23.md)
