@@ -3,13 +3,14 @@
 import copy
 import json
 from dataclasses import replace
+from pathlib import Path
 
 import pytest
 
 from raftel_arm01.config import load_config
 from raftel_arm01.evaluation.benchmark import canonical_sha256, logical_layout, summarize_runs
 from raftel_arm01.evaluation.cli import main
-from raftel_arm01.evaluation.replay import read_manifest, score_replay, wilson_interval
+from raftel_arm01.evaluation.replay import read_jsonl, read_manifest, score_replay, wilson_interval
 from raftel_arm01.models import Position
 from raftel_arm01.tasks import sorter
 
@@ -120,19 +121,17 @@ def test_invalid_logical_layout_inputs_fail(kwargs):
         logical_layout(**parameters)
 
 
-def test_score_cli_returns_failures_and_preserves_existing_output(tmp_path, capsys):
-    manifest, events, _ = logical_layout(42, count=2, failed_grasp_ids=("object-00",))
-    manifest_path, events_path, output = (
-        tmp_path / name for name in ("manifest.json", "events.jsonl", "report.json")
-    )
-    manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
-    events_path.write_text("".join(json.dumps(event) + "\n" for event in events), encoding="utf-8")
+def test_score_cli_distinguishes_settled_bounced_out_and_unobserved(tmp_path, capsys):
+    fixtures = Path(__file__).with_name("fixtures")
+    manifest = fixtures / "benchsort-placement-manifest-v1.json"
+    events = fixtures / "benchsort-placement-events-v1.jsonl"
+    output = tmp_path / "report.json"
     args = [
         "score",
         "--manifest",
-        str(manifest_path),
+        str(manifest),
         "--events",
-        str(events_path),
+        str(events),
         "--output",
         str(output),
     ]
@@ -140,9 +139,24 @@ def test_score_cli_returns_failures_and_preserves_existing_output(tmp_path, caps
     original = output.read_bytes()
     report = json.loads(original)
     assert report["evidence_class"] == "logical_only"
-    assert report["counts"]["correct"] == 1
-    assert report["counts"]["failed"] == 1
-    assert report["input_provenance"]["events_canonical_sha256"] == canonical_sha256(events)
+    counts = report["counts"]
+    assert counts["presented"] == counts["eligible"] == counts["attempted"] == 3
+    assert counts["correct"] == counts["failed"] == counts["unresolved"] == 1
+    assert counts["misroutes"] == 0
+    assert report["metrics"]["eligible_end_to_end_completion"] == pytest.approx(1 / 3)
+
+    objects = {row["id"]: row for row in report["objects"]}
+    assert objects["settled"]["first_attempt_correct"]
+    assert not objects["bounced-out"]["autonomous_correct"]
+    assert objects["bounced-out"]["failed"]
+    assert not objects["bounced-out"]["unresolved"]
+    assert not objects["unobserved"]["autonomous_correct"]
+    assert objects["unobserved"]["unresolved"]
+    assert not objects["unobserved"]["failed"]
+    assert objects["unobserved"]["failed_attempts"] == 0
+    assert report["input_provenance"]["events_canonical_sha256"] == canonical_sha256(
+        read_jsonl(events)
+    )
     assert main(args) == 2
     assert output.read_bytes() == original
     assert "error" in capsys.readouterr().err

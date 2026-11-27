@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "run_id": "synthetic-placement-v1",
+  "layout_id": "synthetic-placement-layout",
+  "evidence_class": "logical_only",
+  "provenance": "Hand-authored synthetic outcomes for replay scoring",
+  "max_attempts": 1,
+  "objects": [
+    {"id": "settled", "expected_bin": "red", "eligible": true},
+    {"id": "bounced-out", "expected_bin": "red", "eligible": true},
+    {"id": "unobserved", "expected_bin": "red", "eligible": true}
+  ]
+}
