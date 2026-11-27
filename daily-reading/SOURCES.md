@@ -48,6 +48,9 @@ Prioritize the next decision in [nextSteps.md](../nextSteps.md). The current bas
 
 - **Dynamic task scoring:** [RoboDyna v1](https://arxiv.org/html/2611.26969v1), submitted November 20, and [Zheng et al. v1](https://arxiv.org/html/2609.31606v1), submitted September 25; both checked November 26. Watch separate partial-progress and completion scores, and distinguish offline verification from a training objective. Neither paper establishes ARM-01 dynamics or hardware performance.
 
+- **Pose-solver reporting:** [PolicyIK v1](https://arxiv.org/html/2611.05372v1#A3), submitted November 3 and checked November 27. Watch first-attempt versus retry-budget success and failure breakdowns near joint limits. This is an evaluation reference, not a learned-controller recommendation.
+- **XPENG IRON:** [November 25 AI Day announcement](https://www.xpeng.com/pressroom/news/01a212b0d830a1e838d68a02a2110174), checked November 27. Track evidence from the planned store-assistant use case separately from launch targets and household claims.
+
 ## Editorial checks
 
 Record publication/event dates separately from verification dates. Identify whether a source is news, a living reference, a pinned code revision or older background. Link each item to an actual project decision. Check licensing, requirements and repeatability before adoption; publish fewer items when no relevant news changes the next action.
