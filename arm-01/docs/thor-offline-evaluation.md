@@ -56,6 +56,30 @@ to one million. The benchmark CLI bounds presented objects to 100,000. It reject
 oversized requests before generating scenes. Valid parsing alone does not prove
 record provenance or correct observations.
 
+## Replay a synthetic placement fixture
+
+From the repository root, run the installed scorer against the hand-authored fixture.
+
+```sh
+raftel-evaluate score \
+  --manifest arm-01/tests/fixtures/benchsort-placement-manifest-v1.json \
+  --events arm-01/tests/fixtures/benchsort-placement-events-v1.jsonl
+```
+
+The report has three eligible, attempted objects and exits 1.
+
+| Object | Final observation | Scored outcome |
+| --- | --- | --- |
+| `settled` | At rest in the target bin | First-attempt success |
+| `bounced-out` | At rest outside all bins after entering the target bin | Failed attempt |
+| `unobserved` | Missing | Unresolved, with the attempt still in the denominator |
+
+Use `verified` for an independent observation of the object's final bin. An
+observed bounce-out ending outside all bins uses `failed` with the observation
+in `detail`. With no final observation or other terminal evidence, leave the
+attempt open. The scorer consumes outcome records and the fixture is
+`logical_only`. Physical placement verification requires its own observations.
+
 ## Logical adapter and uncertainty
 
 The adapter uses `generate_objects`, the point-envelope planner, `MockArm` and

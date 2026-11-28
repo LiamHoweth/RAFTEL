@@ -2,13 +2,27 @@
 
 - **Project** ARM-01 BenchSort
 - **Current phase** Reproducible BenchSort and nominal kinematics
-- **Last updated** 2026-11-21
-- **Delivery branch** `codex/raftel-research-reproducibility`
-- **Publication and merge record** [PR #21](https://github.com/LiamHoweth/RAFTEL/pull/21)
+- **Last updated** 2026-11-27
+- **Delivery branch** `codex/benchsort-placement-evidence`
+- **Review** [BenchSort placement evidence pull request](https://github.com/LiamHoweth/RAFTEL/pulls?q=is%3Apr+head%3Acodex%2Fbenchsort-placement-evidence)
 
 ## Current handoff
 
-The branch adds a repeatable logical demo with explicit scenes, JSON and an SVG
+The [synthetic placement fixture](arm-01/docs/thor-offline-evaluation.md#replay-a-synthetic-placement-fixture)
+exercises `raftel-evaluate score` with one object at rest in the correct bin,
+one observed outside all bins after a bounce, and one without a final
+observation. The respective outcomes are correct, failed and unresolved. This
+is `logical_only` evidence. Physical placement verification remains open.
+
+On macOS arm64 with Python 3.14.4, `python -m pytest -q tests/test_evaluation_replay.py
+tests/test_evaluation_benchmark.py` passed **47 tests** from `arm-01`.
+`make verify` passed **2,249 tests**, lint, format, compilation, LF checks,
+offline engineering CLI checks and the installed-wheel smoke checks. The
+separately installed offline wheel ran `raftel-evaluate score` on the fixture and
+returned the expected exit 1 with one correct, one failed and one unresolved
+object. Local evidence is under `.work/verification` and `.work/placement-evidence`.
+
+[PR #21](https://github.com/LiamHoweth/RAFTEL/pull/21) added a repeatable logical demo with explicit scenes, JSON and an SVG
 projection, plus independent scoring of mock placements against logical bins.
 The separate learning experiment fits a classifier to planner decisions on
 synthetic examples and scores held-out layouts. Read the [technical audit](docs/research-repository-audit.md)

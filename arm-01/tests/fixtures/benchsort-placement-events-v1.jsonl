@@ -1,0 +1,8 @@
+{"sequence":0,"object_id":"settled","event":"detected"}
+{"sequence":1,"object_id":"settled","event":"attempted","attempt":1}
+{"sequence":2,"object_id":"settled","event":"verified","attempt":1,"observed_bin":"red","independent_verification":true,"detail":"Synthetic observer saw the object at rest in the red bin"}
+{"sequence":3,"object_id":"bounced-out","event":"detected"}
+{"sequence":4,"object_id":"bounced-out","event":"attempted","attempt":1}
+{"sequence":5,"object_id":"bounced-out","event":"failed","attempt":1,"detail":"Synthetic observer saw the object enter the red bin, bounce out and come to rest outside all bins"}
+{"sequence":6,"object_id":"unobserved","event":"detected"}
+{"sequence":7,"object_id":"unobserved","event":"attempted","attempt":1}
