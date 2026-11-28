@@ -51,6 +51,9 @@ Prioritize the next decision in [nextSteps.md](../nextSteps.md). The current bas
 - **Pose-solver reporting:** [PolicyIK v1](https://arxiv.org/html/2611.05372v1#A3), submitted November 3 and checked November 27. Watch first-attempt versus retry-budget success and failure breakdowns near joint limits. This is an evaluation reference, not a learned-controller recommendation.
 - **XPENG IRON:** [November 25 AI Day announcement](https://www.xpeng.com/pressroom/news/01a212b0d830a1e838d68a02a2110174), checked November 27. Track evidence from the planned store-assistant use case separately from launch targets and household claims.
 
+- **ManipScope:** [preprint v1](https://arxiv.org/html/2611.27305v1#A7.SS2), submitted November 20 and checked November 28. Watch same-state target reassignment as a check against fixed preferences. Simulation results do not establish RAFTEL capability.
+- **Kawasaki / Beckhoff controls:** [November 26 memorandum announcement](https://www.beckhoff.com/en-gb/company/news/open-control-technologies-for-next-generation-robot-systems.html), checked November 28. Watch actual integration availability separately from a commitment to explore it; no ARM-01 stack decision.
+
 ## Editorial checks
 
 Record publication/event dates separately from verification dates. Identify whether a source is news, a living reference, a pinned code revision or older background. Link each item to an actual project decision. Check licensing, requirements and repeatability before adoption; publish fewer items when no relevant news changes the next action.
